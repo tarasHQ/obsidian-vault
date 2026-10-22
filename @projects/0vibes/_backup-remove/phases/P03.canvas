@@ -1,0 +1,80 @@
+{
+	"nodes":[
+		{"id":"55d3724b7a90a29c","type":"file","file":"@projects/0vibes/_backup-remove/_0vibes.canvas","x":-260,"y":-480,"width":380,"height":440},
+		{
+			"id":"bed8892c6075e3c6",
+			"type":"text",
+			"text":"# Phase 03 \n# Finishing basic functionality",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-320,
+			"y":200,
+			"width":500,
+			"height":130
+		},
+		{
+			"id":"1984e147d78df0c3",
+			"type":"text",
+			"text":"## Setting Constraints",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-480,
+			"y":440,
+			"width":320,
+			"height":80
+		},
+		{
+			"id":"9f12895a2b5819bd",
+			"type":"text",
+			"text":"#### Minimap\n- ##### Do I need it now? \n- ##### Client's button-hover logic?\n- ##### Internal functionality",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-1060,
+			"y":1060,
+			"width":330,
+			"height":180
+		},
+		{
+			"id":"99f971c401a45d1c",
+			"type":"text",
+			"text":"#### Input box\n- ##### Client's layout? \n- ##### Do I need it as compact as possible?\n- ##### CM6 - no Markdown? ",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-710,
+			"y":1060,
+			"width":330,
+			"height":180
+		},
+		{
+			"id":"f3418a764c0bf4c8",
+			"type":"text",
+			"text":"#### Chat\n- ##### Log-like layout? \n- ##### How to highlight user msg?\n- ##### Density",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-360,
+			"y":1060,
+			"width":330,
+			"height":180
+		},
+		{
+			"id":"959d4ae5134507e1",
+			"type":"text",
+			"text":"### What do I need?\n- Chat\n- Input box\n- Minimap\n\n### Rules\n- Basic = no rounding\n\t- Like with game. Simple first, then make it nice\n- Basic = no colors\n- Basic = no animations",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-772,
+			"y":660,
+			"width":465,
+			"height":340
+		},
+		{
+			"id":"b3971020d33d7298",
+			"type":"text",
+			"text":"### High level\n- Decide if you plan to do full-screen app. \n\t- Because imagine flow, when you can work on document when it'll be shown in the right editor tab, while you'll be in left tab in chat.\n\t- And what if you'll need to check multiple tasks of the project? Like should it be open task, than open menu again, open task again, open menu again, open task again\n- Chat\n\t- Here's a thing. If you're doing branching - what if you'll render chat as nodes on 2d canvas? \n\t\t- Nah. Hard to do. Little to gain. \n\t- So just do simple log-like structure. ",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-160,
+			"y":580,
+			"width":920,
+			"height":400
+		}
+	],
+	"edges":[],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

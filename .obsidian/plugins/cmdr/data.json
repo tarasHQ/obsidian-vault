@@ -1,0 +1,43 @@
+{
+  "confirmDeletion": true,
+  "showAddCommand": false,
+  "debug": false,
+  "editorMenu": [],
+  "fileMenu": [],
+  "leftRibbon": [],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [],
+  "pageHeader": [
+    {
+      "id": "app:open-settings",
+      "icon": "lucide-settings",
+      "name": "Open settings",
+      "mode": "any",
+      "color": "#75736f"
+    }
+  ],
+  "macros": [],
+  "explorer": [],
+  "textToolbarCommands": [],
+  "hide": {
+    "statusbar": [
+      "properties"
+    ],
+    "leftRibbon": [],
+    "editorMenuItems": [],
+    "fileMenuItems": []
+  },
+  "spacing": 0,
+  "advancedToolbar": {
+    "rowHeight": 48,
+    "rowCount": 1,
+    "spacing": 0,
+    "buttonWidth": 48,
+    "columnLayout": false,
+    "mappedIcons": [],
+    "tooltips": false,
+    "heightOffset": 0
+  },
+  "spacingReset": true
+}
