@@ -1,0 +1,15 @@
+{
+  "interfaceFontFamily": "Atkinson Hyperlegible Next",
+  "cssTheme": "Minimal",
+  "theme": "system",
+  "textFontFamily": "Atkinson Hyperlegible Next,Inter",
+  "monospaceFontFamily": "JetBrains Mono",
+  "baseFontSize": 17,
+  "baseFontSizeAction": true,
+  "accentColor": "#8c7c5a",
+  "nativeMenus": false,
+  "enabledCssSnippets": [
+    "common"
+  ],
+  "showRibbon": false
+}

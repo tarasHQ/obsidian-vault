@@ -1,0 +1,96 @@
+{
+	"nodes":[
+		{
+			"id":"f2fd9cef58a17f54",
+			"type":"text",
+			"text":"# [The Plan - Sleep](ThePlan.canvas)",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-246,
+			"y":-50,
+			"width":492,
+			"height":100
+		},
+		{
+			"id":"76f674db232fa280",
+			"type":"text",
+			"text":"# Circadian Rhythms",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-780,
+			"y":260,
+			"width":460,
+			"height":80
+		},
+		{
+			"id":"510eb954f189c955",
+			"type":"text",
+			"text":"## When They're Messed Up\n- You sleep 3-4 hours, then wake up half dead without being able to fall back to sleep.\n  \n- Random \"sleepiness\" waves that can occur at any time\n  \n- Headaches that are caused by poor rest.\n  \n- Far less cognitive/will power capacity, which can derail the whole day and then turn a day into a week. ",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-1140,
+			"y":500,
+			"width":540,
+			"height":620
+		},
+		{
+			"id":"15fe1326a724c687",
+			"type":"text",
+			"text":"## When They're Healthy\n- Negatives don't happen, while there's a few positives.",
+			"styleAttributes":{"textAlign":"center"},
+			"x":-516,
+			"y":500,
+			"width":540,
+			"height":620
+		},
+		{
+			"id":"f947a95cdd9a1329",
+			"type":"text",
+			"text":"Red light everywhere\nSleep 2-3 hours after sun goes down. It seems to easier to fall asleep later in night, because of prolonged absence of bright light, compared to going to sleep at like 8pm \n \niOS - white point + night light + color filters\n \nIf you can’t fall asleep for 20-40 minutes don’t just lay down\n \nNo screen time/gamees/videos before sleep - throws out of the sleep mood if interesting\n \nRead sitting. Get sleepy and then slowly move to laying down. Seems like is better approach to actually read something and to fall asleep easier\n \nClose windows, drop down shades, make room pitch black, any light before make me wake up sooner\n \nEasier to wake up when I’m warm/hot\n\nCollapse the bed to avoid temptation of the nap that can fuck the whole sleep schedule\n\n### Melatonin\ntakes 1.5-2 hours to recover from prolonged light exposure. So don't go night-light too soon, or it'll make you too calm and drowsy. ",
+			"styleAttributes":{
+				"textAlign":null
+			},
+			"x":80,
+			"y":240,
+			"width":500,
+			"height":800
+		},
+		{
+			"id":"53661cb992507cba",
+			"type":"text",
+			"text":"Huberman\nWhen you go to sleep - you must loose sense of your body position. Look in different directions",
+			"styleAttributes":{"textAlign":"center"},
+			"x":740,
+			"y":700,
+			"width":260,
+			"height":160
+		}
+	],
+	"edges":[
+		{
+			"id":"9dd68026442eddd3",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"fromNode":"f2fd9cef58a17f54",
+			"fromSide":"bottom",
+			"toNode":"76f674db232fa280",
+			"toSide":"top"
+		},
+		{
+			"id":"d199939be51be204",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"fromNode":"76f674db232fa280",
+			"fromSide":"bottom",
+			"toNode":"510eb954f189c955",
+			"toSide":"top"
+		},
+		{
+			"id":"46184778ac188c65",
+			"styleAttributes":{"pathfindingMethod":"square"},
+			"fromNode":"76f674db232fa280",
+			"fromSide":"bottom",
+			"toNode":"15fe1326a724c687",
+			"toSide":"top"
+		}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

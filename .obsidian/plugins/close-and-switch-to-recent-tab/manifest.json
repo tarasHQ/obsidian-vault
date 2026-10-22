@@ -1,0 +1,10 @@
+{
+  "id": "close-and-switch-to-recent-tab",
+  "name": "Close and Switch to Recent Tab",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Auto-switch to the most recently used tab when closing the current one.关闭当前标签页后，自动切换到最近所在的标签页",
+  "author": "Xzhi",
+  "authorUrl": "https://github.com/GitHub-Xzhi/",
+  "isDesktopOnly": true
+}

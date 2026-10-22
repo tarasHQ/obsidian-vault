@@ -1,0 +1,631 @@
+body {
+    --text-selection: #2b2f1e !important;
+    --max-width: 95% !important; /* making it a bit wider (default is 88%) */
+}
+
+/* Bold font styling (editor and canvas renderer) */
+.cm-strong,
+.markdown-rendered strong {
+    color: #d1a6a6 !important;
+}
+
+/* Custom strikethrough styling (with canvas renderer)*/
+.cm-strikethrough,
+.markdown-rendered del {
+    text-decoration-color: #acacac; /* Change line color */
+    text-decoration-thickness: 2px; /* Change line thickness */
+    text-decoration-style: solid; /* Options: solid, dashed, dotted, wavy */
+    opacity: 0.7; /* Dim completed text optional */
+}
+
+/* Highlight text styling light/dark theme friendly*/
+.cm-highlight {
+    background-color: #9fa340 !important;
+    color: black !important;
+}
+.cm-highlight-red {
+    background-color: #ce6c6cd5 !important;
+    color: #000000 !important;
+}
+.cm-highlight-orange {
+    background-color: #e3a355b6 !important;
+    color: #000000 !important;
+}
+.cm-highlight-yellow {
+    background-color: #ffea00 !important;
+    color: #000000 !important;
+}
+.cm-highlight-blue {
+    background-color: #63a0d6c9 !important;
+    color: #000000 !important;
+}
+
+.cm-highlight-green {
+    background-color: #59a05cc7 !important;
+    color: #000000 !important;
+}
+
+/* Hide side menu tab header if there's single tab*/
+.mod-sidedock
+    .workspace-tab-header-container:has(
+        .workspace-tab-header-container-inner > :only-child
+    ) {
+    display: none !important;
+}
+
+/* hide bottom vault profile block with settings button */
+.workspace-sidedock-vault-profile {
+    display: none !important;
+}
+
+/* hide horizontal scrollbar on notes because it's bugged and shows 1px of horizontal scroll */
+.cm-scroller::-webkit-scrollbar:horizontal {
+    display: none;
+}
+
+/* fit full width of mermaid diagrams */
+.mermaid svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Inline code styling for Reading Mode & Live Preview */
+.markdown-rendered code,
+.cm-inline-code {
+    /* WHY? - it never used as primary thing, so it shouldn't be big and bright as it was before */
+    color: #ca6e6e !important;
+    font-size: 0.7em !important;
+    background-color: #2b2b2b !important;
+    padding-top: 0.05em !important; /* a bit smaller vertical padding to avoid multiline overlap */
+    padding-bottom: 0.05em !important; /* a bit smaller vertical padding to avoid multiline overlap */
+}
+
+/* Styles for highlight when outliner side panel selects a heading */
+.is-flashing {
+    color: black !important;
+    background-color: #22ff00fa !important;
+}
+
+/* hide nav buttons on top of file explorer/bookmarks, you never use them */
+.workspace-leaf-content:is([data-type="file-explorer"], [data-type="bookmarks"], [data-type="outline"])
+    .nav-header {
+    display: none !important;
+}
+
+/* remove left padding on recent files */
+.workspace-leaf-content:is([data-type="recent-files"]) .nav-folder-children {
+    padding-left: 0 !important;
+}
+.workspace-leaf-content:is([data-type="outline"]) .tree-item {
+    margin-left: -20px !important;
+}
+/* male callouts content more compact */
+.callout-content > :is(p, h1, h2, h3, h4, h5, h6) {
+    margin-block-start: 4px !important;
+    margin-block-end: 4px !important;
+}
+
+/* Add a bit of empty space after tabs for dragging the window */
+.workspace-tab-header-container-inner {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+/* Center path to file block on top of the file */
+.view-header-title-container {
+    justify-content: center !important;
+}
+
+/* 1. Hide the inline title globally across all notes */
+.workspace-leaf-content .iconic-title-wrapper {
+    display: none;
+}
+/* 
+2. Show it ONLY if the leaf contains a breadcrumb with your folder name 
+*/
+.workspace-leaf-content:has(.view-header-breadcrumb[aria-label="_reflections"])
+    .iconic-title-wrapper,
+.workspace-leaf-content:has(.view-header-breadcrumb[aria-label="steps"])
+    .iconic-title-wrapper,
+.workspace-leaf-content:has(.view-header-breadcrumb[aria-label="Journal"])
+    .iconic-title-wrapper,
+.workspace-leaf-content:has(.view-header-breadcrumb[aria-label="README"])
+    .iconic-title-wrapper {
+    display: flex !important;
+}
+
+/* ===============================================================
+   Compact Tabs
+   =============================================================== */
+.workspace-tab-header-inner-icon svg {
+    height: 10px !important;
+    width: 10px !important;
+}
+.workspace-tab-header-inner-icon {
+    padding-inline-end: 1px !important;
+}
+/* ===============================================================
+   Compact properties
+   =============================================================== */
+
+/* Remove padding and margin of the whole properties block */
+.cm-sizer > .metadata-container {
+    padding: 0px !important;
+    margin-block-end: 0px !important;
+}
+
+/* Hide the properties heading and add button */
+.cm-sizer > .metadata-container > .metadata-properties-heading,
+.cm-sizer > .metadata-container .metadata-add-button {
+    display: none !important;
+}
+
+/* ===============================================================
+   Audio player styles
+   =============================================================== */
+/* Make the whole player more compact */
+.markdown-preview-view audio,
+.markdown-source-view.mod-cm6 audio,
+.cm-embed-block audio {
+    height: 32px !important;
+    max-height: 32px !important;
+    border-radius: 8px !important;
+    margin: 0.2em 0 !important;
+    overflow: hidden;
+}
+
+/* Main control panel background */
+audio::-webkit-media-controls-panel {
+    background-color: var(--background-secondary) !important;
+    border-radius: 8px !important;
+    padding: 0 6px !important;
+    height: 32px !important;
+}
+
+/* Outer enclosure */
+audio::-webkit-media-controls-enclosure {
+    background-color: var(--background-secondary) !important;
+    border-radius: 6px !important;
+    border: 1px solid var(--background-modifier-border) !important;
+}
+
+/* Play / Pause button */
+audio::-webkit-media-controls-play-button {
+    background-color: transparent !important;
+    border-radius: 6px !important;
+    height: 20px !important;
+    width: 20px !important;
+    transition:
+        background-color 0.15s ease,
+        transform 0.15s ease;
+}
+
+audio::-webkit-media-controls-play-button:hover {
+    background-color: var(--interactive-accent) !important;
+    transform: scale(1.15);
+}
+
+/* Mute button */
+audio::-webkit-media-controls-mute-button {
+    border-radius: 50% !important;
+    transition: background-color 0.15s ease;
+}
+audio::-webkit-media-controls-mute-button:hover {
+    background-color: var(--background-modifier-hover) !important;
+}
+
+/* Timeline (progress bar) */
+audio::-webkit-media-controls-timeline {
+    background-color: transparent !important;
+    border-radius: 4px !important;
+    margin: 0 6px !important;
+    height: 4px !important;
+}
+
+/* Current time + remaining time */
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: var(--text-muted) !important;
+    font-size: 11px !important;
+    text-shadow: none !important;
+}
+
+/* Slightly reduce the overall visual weight */
+audio {
+    display: block !important;
+    filter: brightness(0.95) contrast(1.05);
+}
+
+/* 1. Turn the parent editor line into a flex container */
+.cm-line:has(.media-embed.audio-embed) {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+/* 2. Allow text node to take its natural size */
+.cm-line:has(audio) > span:not(.media-embed, .cm-formatting-link) {
+    width: 200px !important;
+    flex-grow: 0 !important;
+    flex-shrink: 1 !important; /* Allows it to shrink if necessary */
+    flex-basis: auto !important; /* Takes its natural size */
+}
+.cm-line:has(audio) .cm-formatting-link {
+    display: none !important;
+}
+/* 3. Make the audio embed take all remaining free space */
+.cm-line:has(audio) .media-embed.audio-embed {
+    width: 400px !important;
+}
+
+/* ===============================================================
+   Comments styles %%comment%%
+   =============================================================== */
+
+/* Hide comments tags %% */
+.cm-line:not(.cm-active) .cm-comment.cm-comment-start,
+.cm-line:not(.cm-active) .cm-comment.cm-comment-end {
+    display: none;
+}
+
+/* Make comments more compact (excluding templater syntax highlight)*/
+:not(.templater-command-bg).cm-line:has(.cm-comment) {
+    font-size: 0.8em !important;
+}
+
+/* ===============================================================
+   Custom styles for Collapse Icon (heading/lists)
+   =============================================================== */
+
+/* Increase clickable area of collapse icon */
+.collapse-icon svg.svg-icon {
+    width: 20px !important;
+}
+
+/* Make collapse icon always visible ONLY for headers */
+.HyperMD-header .heading-collapse-indicator,
+.HyperMD-header .cm-fold-indicator .collapse-indicator {
+    padding-inline-end: unset !important;
+    opacity: 0.5 !important;
+}
+
+/* Make collapse icon cursor as pointer ONLY for headers
+   Long selectors used to override !important of Outliner plugin  */
+body
+    .app-container
+    .markdown-source-view
+    .cm-scroller
+    .cm-sizer
+    .cm-contentContainer
+    .HyperMD-header
+    .cm-fold-indicator,
+body
+    .app-container
+    .markdown-source-view
+    .cm-scroller
+    .cm-sizer
+    .cm-contentContainer
+    .HyperMD-header
+    .collapse-indicator,
+body
+    .app-container
+    .markdown-source-view
+    .cm-scroller
+    .cm-sizer
+    .cm-contentContainer
+    .HyperMD-header
+    .heading-collapse-indicator {
+    cursor: pointer !important;
+}
+
+/* ===============================================================
+   Custom styles for Calendar from Journals plugin
+   =============================================================== */
+/* Make calendar cell text (day numbers) smaller */
+.notes-calendar-cell.notes-month-view__day > span {
+    font-size: 0.8rem !important;
+}
+
+/* ===============================================================
+   Custom styles for Advanced Canvas plugin
+   =============================================================== */
+
+/* On canvas, when a note is embedded, the preview of that note is centered by default. (vertically)
+This CSS rule overrides that behavior and aligns the content to the start (left) of the container. */
+.markdown-preview-sizer.markdown-preview-section:has(
+        .internal-embed.markdown-embed.inline-embed.is-loaded
+    ) {
+    justify-content: start !important;
+    text-align: left !important;
+}
+
+/* ===============================================================
+   Custom Canvas Styles
+   =============================================================== */
+
+/* 1. Hide non-heading elements ONLY on canvas nodes with a dotted border */
+.canvas-node[data-border="dashed"]
+    .markdown-preview-sizer
+    > :not(
+        .el-h1,
+        .el-h2,
+        .el-h3,
+        .el-h4,
+        .el-h5,
+        .el-h6,
+        .el-ul,
+        :has(.canvas-embed),
+        .markdown-preview-pusher
+    ) {
+    display: none !important;
+}
+
+/* 2. Hide sub-content inside .el-ul on dotted nodes (except h1-h3) */
+.canvas-node[data-border="dashed"]
+    .el-ul
+    > ul
+    > li
+    > :not(h1, h2, h3, .list-bullet, .list-collapse-indicator) {
+    display: none !important;
+}
+/* 2.5 Hide sub-content inside .el-ul on dotted nodes (except h1-h3) */
+.canvas-node[data-border="dashed"] .el-ul > ul > li:not(:has(h1, h2, h3)) {
+    display: none !important;
+}
+/* 3. Hide task lists entirely on dotted nodes */
+.canvas-node[data-border="dashed"] .el-ul > ul.contains-task-list {
+    display: none !important;
+}
+
+/* remove heading margins when in bullet list */
+.canvas-node li > h6 {
+    margin-block-start: 0px !important;
+    margin-block-end: 0px !important;
+}
+
+/* remove margins for read-only renderer */
+.el-h1 > h1,
+.el-h2 > h2,
+.el-h3 > h3,
+.el-h4 > h4,
+.el-h5 > h5,
+.el-h6 > h6,
+.el-ul > ul,
+.el-ol > ol,
+.el-p > p {
+    margin-block-start: unset !important;
+    margin-block-end: unset !important;
+}
+
+/* START- When border is invisible - dim/scratch node to mark it as "completed **/
+/* Dim the text and contents of invisible canvas nodes */
+.canvas-node[data-border="invisible"]:not(.is-editing) .canvas-node-content {
+    opacity: 0.5;
+}
+
+/* Place the scratched pattern on TOP of node contents */
+.canvas-node[data-border="invisible"]:not(.is-editing)
+    .canvas-node-content::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    /* Repeating crosshatch / diagonal scratch line effect */
+    background: rgba(152, 144, 144, 0.491);
+
+    opacity: 0.7; /* Controls how dark the scratch lines appear */
+    pointer-events: none; /* Allows clicking/selecting text through the overlay */
+    z-index: 99; /* Places the scratch pattern strictly above all inner elements */
+}
+/* END - When border is invisible - dim/scratch node to mark it as "completed **/
+
+/* That class capture first click, a bit PIA with bases where you have to double click
+And on top of that during double click formatting can change and shift the context
+That's why I hide that class. Moving/editing nodes still work */
+.canvas-node-container:has(.bases-view) .canvas-node-content-blocker {
+    display: none;
+}
+
+/* ===============================================================
+   Other Custom Styles
+   =============================================================== */
+
+/* For canvas-smith plugin, offsets cursor to left so it's centered between letters */
+.cm-editor canvas {
+    left: 0px;
+}
+
+/* Custom styling for embedded canvas's node labels */
+.canvas-node-label {
+    font-size: 1em !important;
+    cursor: pointer !important;
+    width: 100%; /* to make clickable full width of the node's header */
+
+    border: 2px solid #3f3f3f;
+    background: oklch(0.2 0 0 / 1);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+
+    top: 2px;
+    padding: 2px;
+}
+
+/* remove padding of headings in live preview editing */
+.cm-s-obsidian .cm-line.HyperMD-header {
+    padding: 0px !important;
+}
+
+/* ===============================================================
+   Canvas + Bases (fix bugged positioning)
+   =============================================================== */
+
+/* Strip out the absolute positioning forced by the plugin's inline javascript */
+.canvas .bases-list-group-list .bases-list-item {
+    position: relative !important;
+    top: auto !important;
+    height: auto !important;
+}
+
+/* Avoid bugged height calculation by enforcing fixed height that's more than enough */
+.canvas .bases-view {
+    height: 500px !important;
+}
+
+/* Hide the scrollbar for canvas nodes with bases, but keep the scroll functionality */
+.canvas .markdown-preview-view:has(.bases-view)::-webkit-scrollbar {
+    display: none !important;
+}
+
+/* ===============================================================
+   Custom Sidebar styles
+   =============================================================== */
+
+/*start*/
+/* Making properties side window compact */
+.metadata-container .metadata-properties .metadata-property {
+    flex-wrap: nowrap !important;
+}
+.metadata-container .metadata-properties .metadata-property-key {
+    width: min-content !important;
+    min-width: unset !important;
+    border-bottom: var(--metadata-divider-width) solid
+        var(--metadata-divider-color);
+}
+.metadata-container .metadata-properties .metadata-property-value {
+    margin-top: 0 !important;
+    padding-inline-start: 0 !important;
+}
+input.metadata-property-key-input {
+    flex-grow: 0 !important; /* Stops it from absorbing extra space */
+    flex-shrink: 1 !important; /* Optional: lets it shrink on small screens */
+    width: auto !important; /* Allows size to be driven by field-sizing/content instead of 100% */
+    field-sizing: content !important; /* Shrinks the input to fit the actual text */
+}
+/*end*/
+
+/*start*/
+/* prevent overshrinking side tabs when window's height is resized */
+.workspace-tabs {
+    min-height: 210px !important;
+}
+
+/* makes metadata container a little more compact */
+.workspace-tabs:has(.metadata-container) {
+    min-height: unset !important;
+}
+
+/* adds up to the style above by removing unnecessary padding */
+.workspace-tabs .workspace-leaf-content .view-content {
+    padding-bottom: 0px;
+}
+/*end*/
+
+/* ===============================================================
+   Explorer view
+   =============================================================== */
+
+/* Indentation lines alignment with icons */
+.workspace-leaf-content:is([data-type="file-explorer"]) .nav-folder-children,
+.workspace-leaf-content:is([data-type="file-explorer"]) .tree-item-children {
+    /* Pull the whole block (and its border) to the left */
+    margin-inline-start: 1px;
+    /* Push the content back so text stays in the original place */
+    padding-inline-start: calc(var(--nav-item-children-padding-start) + 10px);
+}
+
+/* folder item/file item - more compact */
+.nav-folder .tree-item-self,
+.nav-file .tree-item-self {
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+    margin-bottom: 0px !important;
+    padding-left: 10px !important;
+}
+
+/* title of folder - more distance from icon */
+.tree-item-inner.nav-folder-title-content {
+    padding-left: 3px !important;
+}
+
+/* folder arrow closer to text */
+.nav-folder .tree-item-icon {
+    width: unset !important;
+    padding-left: 1px !important;
+}
+/* Hide the "canvas" and "base" pills, since they're obvious because of their icon */
+.nav-file-title[data-path$=".canvas"] .nav-file-tag,
+.nav-file-title[data-path$=".base"] .nav-file-tag {
+    display: none;
+}
+
+/* folder arrow better color, 
+overrides all default icons, 
+but iconic plugin overrides this selector */
+.nav-folder > .nav-folder-title > .tree-item-icon svg {
+    color: rgb(79, 79, 79);
+}
+
+/* Iconic plugin offset for files */
+.nav-folder .tree-item.nav-file.iconic-item {
+    margin-left: 4px !important;
+}
+
+/* Moving left ONLY top-level files */
+.nav-files-container > div > .tree-item.nav-file.iconic-item {
+    margin-left: 4px !important;
+}
+
+
+
+/* things above break hovering container position, this fixes is */
+@media (hover: hover) {
+    /* Make the item a positioning anchor */
+    body:not(.is-grabbing) .tree-item-self.is-clickable {
+        position: relative;
+    }
+
+    body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
+        color: var(--nav-item-color-hover);
+        font-weight: var(--nav-item-weight-hover);
+        background-color: transparent; /* Keep the element background clean */
+    }
+
+    /* Stretch a background layer behind the content */
+    body:not(.is-grabbing) .tree-item-self.is-clickable:hover::before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        /* Adjust these negative values (-10px) to match your exact sidebar padding */
+        left: -50px;
+        right: -20px;
+        background-color: var(--nav-item-background-hover);
+    }
+}
+
+/* remove border for wrong selection size when element is focused */
+body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
+    box-shadow: unset !important;
+}
+
+/* same issue as hovering but also adds for item being actively selected */
+/* makes initial selection transparent */
+body:not(.is-grabbing) .workspace-leaf .tree-item-self.is-clickable.is-active {
+    position: relative;
+    color: var(--nav-item-color-active, var(--nav-item-color-hover));
+    font-weight: var(--nav-item-weight-active, var(--nav-item-weight-hover));
+    background-color: transparent !important;
+}
+/* adds pseudo element for highlight instead of previous logic */
+body:not(.is-grabbing) .workspace-leaf .tree-item-self.is-clickable.is-active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -50px;
+    right: -20px;
+    background-color: var(--nav-item-background-active, var(--nav-item-background-hover));
+    border-radius: var(--nav-item-radius, 4px);
+    z-index: -1;
+}

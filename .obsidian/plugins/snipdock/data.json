@@ -1,0 +1,15 @@
+{
+  "menuWidth": 330,
+  "menuMaxHeightVh": 70,
+  "autoOpenOnCreate": true,
+  "enableNewByDefault": false,
+  "defaultSnippetTemplate": "",
+  "rememberedEnabled": [
+    "common"
+  ],
+  "anchorToStatusBar": false,
+  "enableSearch": false,
+  "multiColumn": false,
+  "columnCount": 2,
+  "columnFirstSort": false
+}

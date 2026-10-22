@@ -1,0 +1,6 @@
+{
+  "startupScripts": [
+    "_static/scripts/reflection_helpers.js"
+  ],
+  "disableStatusbar": false
+}

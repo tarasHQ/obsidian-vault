@@ -1,0 +1,21 @@
+# I'm transparent for 99.9%, this folder is for 0.1%
+_private/
+
+# The Project, but not ready yet to make it public.
+0vibes/*
+
+# very small single file, contains a few personal things of other people
+Social/
+
+# "the project"'s configuration
+.axon/
+# to exclude workspace cache
+.obsidian/workspace.json
+# to exclude workspaceS cache
+.obsidian/workspaces.json
+# to exclude workspace cache specific to mobile devices
+.obsidian/workspace-mobile.json
+
+# below lines to exclude OS settings and caches
+.trash/
+.DS_Store
