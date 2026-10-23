@@ -97,12 +97,17 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 
 ### Remark42
 Comments.
-1. Self hosted as standalone binary on LXC. Accessed to internet through cloudflare tunnel + caddy reroute. 
-2. Done as systemd service
-3. Backups. Handled by proxmox daily/weekly vzdumps with rsync offsite
-4. Health - UptimeRobot, pings both taras.life and `https://comments.taras.life/api/v1/ping`
-5. Tied to the id in frontmatter. No id - no comments. 
-6. (crucial for free worker on cloudflare) web analytics injects beacon.js into remark42 oauth icons, which breaks them. Workaround is to use rule configuration to disable RUM when host == the public host of the remark42
-7. oauth apps, for now, only google and gmail
-8. admin is identified by github account internal remark42 id
-9. no smtp/telegram/others.
+1. Self hosted as standalone binary on LXC. Accessed to internet through cloudflare tunnel at caddy + local reroute. 
+	- caddy rewires some headers too.
+2. Configuration `/etc/remark42.env`, 
+	- `/etc/systemd/system/remark42.service`; runs as `nobody:nogroup`, `WorkingDirectory=/var/www/remark42`.
+	- `/var/www/remark42/var` - boltdb dir
+3. Done as systemd service
+4. Backups. Handled by proxmox daily/weekly vzdumps with rsync offsite
+5. Health - UptimeRobot, pings both taras.life and `https://comments.taras.life/api/v1/ping`
+	- comments live under blog domain, not infra. 
+6. Tied to the id in frontmatter. No id - no comments. 
+7. (crucial for free worker on cloudflare) web analytics injects beacon.js into remark42 oauth icons, which breaks them. Workaround is to use rule configuration to disable RUM when host == the public host of the remark42
+8. oauth apps, for now, only google and gmail
+9. admin is identified by github account internal remark42 id
+10. no smtp/telegram/others

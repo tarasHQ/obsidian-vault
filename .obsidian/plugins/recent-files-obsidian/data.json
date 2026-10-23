@@ -1,10 +1,6 @@
 {
   "recentFiles": [
     {
-      "basename": "proxmox",
-      "path": "Maintenance/proxmox.md"
-    },
-    {
       "basename": "REMARK42 1",
       "path": "@projects/taras.life/__obsidian__/OLD/REMARK42 1.md"
     },
@@ -15,6 +11,10 @@
     {
       "basename": "AGENTS",
       "path": "@projects/0vibes/__obsidian__/docs/AGENTS.md"
+    },
+    {
+      "basename": "proxmox",
+      "path": "Maintenance/proxmox.md"
     },
     {
       "basename": "DEV_COMMANDS",
