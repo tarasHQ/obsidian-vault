@@ -30,7 +30,7 @@ It makes things monumental. Was stupid for the plan. But for phases... Maybe?
 
 ### Phase 004 - UNTITLED_PHASE [open](_plan_004.md)
 
-#### ==[ACTIVE] Phase 001 - ARCHITECTURE OF PLANNING== [open](_plan_001.md)
+#### ==[ACTIVE] Phase 001 - ARCHITECTURE OF PLANNING== [open](@projects/0vibes/__obsidian__/phases/001/_plan_001.md)
 
 
 

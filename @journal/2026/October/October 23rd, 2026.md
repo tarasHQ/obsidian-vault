@@ -54,8 +54,9 @@ action:
 	- [ ] You need a to select a block of text, press hotkey and save it as a reflection with link that replace selected text. (also it should have same frontmatter as current flow)
 		- [ ] On top of it, current flow of templated reflections probably should force copy link into clipboard as well. These shouldn't be in the journaling, because they give constraints on the size. 
 			- or maybe you just use initial `_reflections` flow instead of limiting yourself within the journal entry? 
-	- [ ] 🔴when I updated junctions - obsidian updated ALL links in my project. Which means all links in all symlinked `__obsidian__/` folders will instantly get broken. So you can't use any markdown/wiki links in there to prevent massive headache in the future. give plain links inside `inline codeblock`
 - ### Doing now
+	- [ ] 🔴when I updated junctions - obsidian updated ALL links in my project. Which means all links in all symlinked `__obsidian__/` folders will instantly get broken. So you can't use any markdown/wiki links in there to prevent massive headache in the future. give plain links inside `inline codeblock`
+		- [ ] You have to test this shit, expriment with it, and find what works on practice. That's it.
 	- [ ] Rewrite plugin. But after the other things are good.
 	- [ ] You hate it, but you must go through all of that llm generated mess on docs and extract/rewrite our agents.md as the main entry point for the LLM tasks.
 - ### Completed
@@ -104,6 +105,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 18:25
+	- Got off-track again. Yeah...
 - ###### 17:59
 	- Ok, that's puer's flow state, after I snap out of it - 3 hours disappeared, and not much is done. It's like some kind of procrastination, where I'm being productively unproductive. Let's see if I can to snap out of it, and get back into the morning's flow. 
 - ###### 17:36

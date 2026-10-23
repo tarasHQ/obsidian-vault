@@ -120,5 +120,21 @@
       ],
       "key": "D"
     }
+  ],
+  "templater-obsidian:create-new-note-from-template": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "N"
+    }
+  ],
+  "templater-obsidian:insert-templater": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "E"
+    }
   ]
 }

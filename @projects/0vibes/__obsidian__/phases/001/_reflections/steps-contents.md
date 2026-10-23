@@ -3,7 +3,7 @@ isIntegrated: true
 ctime: 2026-10-04 15:06
 ---
 
-[← Plan](_plan_001.md)
+[← Plan](@projects/0vibes/__obsidian__/phases/001/_plan_001.md)
 
 ## Problems & Goals
 %% To prevent drift from the initial target and ending the reflection without answering on what it was about%%

@@ -10,7 +10,7 @@
 			"width":385,
 			"height":110
 		},
-		{"id":"7e92e3933a6bcb55","type":"file","file":"System/SystemOfPlans.md","x":-840,"y":80,"width":720,"height":920},
+		{"id":"7e92e3933a6bcb55","type":"file","file":"@system/SystemOfPlans.md","x":-840,"y":80,"width":720,"height":920},
 		{
 			"id":"b367d6030700eded",
 			"type":"text",
@@ -63,7 +63,7 @@
 			"width":360,
 			"height":80
 		},
-		{"id":"f16dc78f043514e4","type":"file","file":"System/Plans.md","x":165,"y":123,"width":720,"height":920},
+		{"id":"f16dc78f043514e4","type":"file","file":"@system/Plans.md","x":165,"y":123,"width":720,"height":920},
 		{
 			"id":"b70b3c5b10c9dd40",
 			"type":"text",

@@ -3,7 +3,7 @@ isIntegrated: true
 ctime: 2026-10-03 11:14
 ---
 
-[← Plan](_plan_001.md)
+[← Plan](@projects/0vibes/__obsidian__/phases/001/_plan_001.md)
 
 ## Problems & Goals
 > [!abstract] To prevent drift, specify exactly the problem you are addressing
