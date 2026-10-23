@@ -103,3 +103,6 @@ Comments.
 4. Health - UptimeRobot, pings both taras.life and `https://comments.taras.life/api/v1/ping`
 5. Tied to the id in frontmatter. No id - no comments. 
 6. (crucial for free worker on cloudflare) web analytics injects beacon.js into remark42 oauth icons, which breaks them. Workaround is to use rule configuration to disable RUM when host == the public host of the remark42
+7. oauth apps, for now, only google and gmail
+8. admin is identified by github account internal remark42 id
+9. no smtp/telegram/others.

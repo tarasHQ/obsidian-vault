@@ -46,7 +46,7 @@ Concise context so new tasks don't need to re-derive it. Master progress is trac
       plus avatars/images) — worst-case comment loss window ≈ 24h, accepted. The `remark42
     backup` subcommand is a user-data export needing `ADMIN_PASSWD` — NOT used.
       `/etc/remark42.env` is inside daily vzdump archives. Restore uses `remark42 restore -f
-    <file.gz> -s <site>`, which DELETES existing comments first (destructive — run on a
+    <file.gz> -s site`, which DELETES existing comments first (destructive — run on a
       clean install).
 - [ ] Optional: point Remark42 LXC DNS at AdGuard.
 - [ ] Migrate internal prox.bar hostnames to taras.life subdomains; prox.bar is not being renewed. Actual expiry date and migration status were not rechecked in this session.
@@ -114,7 +114,7 @@ SITE=taras-life
 ALLOWED_HOSTS=taras.life
 TRUSTED_PROXY=192.168.1.12
 REMARK_URL=https://comments.taras.life
-ADMIN_SHARED_ID=<configured provider-prefixed user ID>
+ADMIN_SHARED_ID=configured provider-prefixed user ID
 ADMIN_SHARED_EMAIL=
 ```
 
