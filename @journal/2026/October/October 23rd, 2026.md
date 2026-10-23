@@ -56,11 +56,12 @@ action:
 			- or maybe you just use initial `_reflections` flow instead of limiting yourself within the journal entry? 
 - ### Doing now
 	- [ ] 🔴when I updated junctions - obsidian updated ALL links in my project. Which means all links in all symlinked `__obsidian__/` folders will instantly get broken. So you can't use any markdown/wiki links in there to prevent massive headache in the future. give plain links inside `inline codeblock`
-		- [ ] You have to test this shit, expriment with it, and find what works on practice. That's it.
+		- [ ] You have to test this shit, experiment with it, and find what works on practice. That's it.
 	- [ ] Rewrite plugin. But after the other things are good.
 	- [ ] You hate it, but you must go through all of that llm generated mess on docs and extract/rewrite our agents.md as the main entry point for the LLM tasks.
 - ### Completed
 	- [ ] copy from here
+	- [x] fixed broken outline css (but again not what I should be doing)
 	- [x] fixed all github-related issues (+dependabot)
 	- [x] setup proper gmail flow to reduce cognitive complexity in there
 	- [x] fixed another nasty issue
@@ -105,6 +106,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 19:25
+	- When I lay down in the chair - that's where peak "productive unproductivity" happens. But that's not the reason, but the symptom. I'm too late when this happened. So I can't prevent it, but only think about how to fix it. 
+- ###### 19:19
+	- I don't know anymore. Like I'm without meaning right now. Is it because I indulged puer OR because I didn't follow that path of meaning? I don't know...
 - ###### 18:51
 	- ==Ok. I'm getting more aware about how puer gets involved into this, which leads to absence of meaning==
 	- So I need to have some counter actions. But the thing is - even thinking about counter actions are like stem from the puer. I must do the main thing first...

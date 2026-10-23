@@ -2,7 +2,8 @@
 
 ## YOUR reasons to work on it
 
-- You already proved that publicity civilizes you and keeps in check. Even right now when no one watches those videos - there's still lots of productive energy comes out of it.
+- Website is the public face of your project. If it's bad - people will leave this idea long before they read a single page about it on the website
+- It's nice to be a part of community. If you want to create one - you must be smart about it, without this project OR this flow of planning - you'll be doing rushed and poor decisions that definitely won't help anyone.
 
 
 ## Docs
@@ -14,7 +15,3 @@ await cJS(c => c.RenderReflectionHelpers.renderColumns(dv, this.container));
 ## Phases
 
 ### Phase 001 - UNTITLED_PHASE [open](@projects/taras.life/__obsidian__/phases/001/_plan_001.md)
-
-NONE
-
-[test](@projects/taras.life/__obsidian__/docs/AGENTS.md) 
