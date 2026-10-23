@@ -30,8 +30,6 @@
 ## Database
 - `pnpm db:baseline` — Re-generates Drizzle SQLite schema baseline whenever DB tables change.
 
----
-
-# GIT
+# Git
 
 - `git push --force-with-lease` - just to create a habit to use force push with lease
