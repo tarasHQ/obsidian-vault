@@ -96,9 +96,7 @@ body {
 .workspace-leaf-content:is([data-type="recent-files"]) .nav-folder-children {
     padding-left: 0 !important;
 }
-.workspace-leaf-content:is([data-type="outline"]) .tree-item {
-    margin-left: -20px !important;
-}
+
 /* male callouts content more compact */
 .callout-content > :is(p, h1, h2, h3, h4, h5, h6) {
     margin-block-start: 4px !important;

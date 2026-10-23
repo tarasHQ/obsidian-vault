@@ -105,6 +105,9 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 18:51
+	- ==Ok. I'm getting more aware about how puer gets involved into this, which leads to absence of meaning==
+	- So I need to have some counter actions. But the thing is - even thinking about counter actions are like stem from the puer. I must do the main thing first...
 - ###### 18:25
 	- Got off-track again. Yeah...
 - ###### 17:59
