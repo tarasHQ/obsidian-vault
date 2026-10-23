@@ -1,8 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "Ideas",
+      "path": "@projects/taras.life/Social/Ideas.md"
+    },
+    {
+      "basename": "Notes",
+      "path": "@projects/taras.life/YouTube/Notes.md"
+    },
+    {
       "basename": "_plan_001",
       "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
+    },
+    {
+      "basename": "_project",
+      "path": "@projects/taras.life/__obsidian__/_project.md"
     },
     {
       "basename": "99-end",
@@ -15,10 +27,6 @@
     {
       "basename": "parking",
       "path": "@projects/taras.life/__obsidian__/phases/001/ideas/parking.md"
-    },
-    {
-      "basename": "_project",
-      "path": "@projects/taras.life/__obsidian__/_project.md"
     },
     {
       "basename": "_project",
