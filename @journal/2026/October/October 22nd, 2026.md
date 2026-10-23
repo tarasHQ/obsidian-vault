@@ -73,7 +73,7 @@ action:
 	- Seems like puer aeternus is involved. I don't want to go to sleep on the schedule. I don't want to do task I need to do, and prefer to do tasks I WANT to do. 
 	- Maybe I need bring back screenshotting. And spend 1 hours before the sleep analyzing video/screenshots of my desktop. Why? So I can see where puer took control. Get more awareness over it. 
 	- Today definitely was a lot of "work" where I was kinda half-assing and avoiding. If instead you write that stuff down, focus on main task, and do secondary when there's time for that - you could have higher speed. 
-	- ==🔴you should split recordings right before you're going into the bed. and check/upload on the next day. Gives continuity, makes more aware to not repeat mistakes, more convenient, so I'm not overwhelmed towards the night=
+	- ==🔴you should split recordings right before you're going into the bed. and check/upload on the next day. Gives continuity, makes more aware to not repeat mistakes, more convenient, so I'm not overwhelmed towards the night==
 	- like make it practical, “ok, I can’t get shit done”, you take those screenshots and video. And see minute by minute what you were doing. Chances are 80% of that time was kinda wasted or used poorly
 - ###### 00:59
 	- Yeah... I'm doing something seriously wrong. It won't be able to keep being consistent. It's just sad honestly... really sad. I can't keep up even with this. Like how all those plans can be realized, if I'm struggling even at current point? Nothing gets done...

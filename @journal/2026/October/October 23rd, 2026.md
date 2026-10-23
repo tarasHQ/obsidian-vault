@@ -56,12 +56,12 @@ action:
 			- or maybe you just use initial `_reflections` flow instead of limiting yourself within the journal entry? 
 	- [ ] Deskflow - don'y intercept switch hotkey? can ahk do it? just run in parallel.
 - ### Doing now
-	- [ ] 🔴when I updated junctions - obsidian updated ALL links in my project. Which means all links in all symlinked `__obsidian__/` folders will instantly get broken. So you can't use any markdown/wiki links in there to prevent massive headache in the future. give plain links inside `inline codeblock`
-		- [ ] You have to test this shit, experiment with it, and find what works on practice. That's it.
-	- [ ] Rewrite plugin. But after the other things are good.
+	- [ ] Rewrite remark42 plugin. But after the other things are good.
 	- [ ] You hate it, but you must go through all of that llm generated mess on docs and extract/rewrite our agents.md as the main entry point for the LLM tasks.
 - ### Completed
 	- [ ] copy from here
+	- [x] 🔴when I updated junctions - obsidian updated ALL links in my project. Which means all links in all symlinked `__obsidian__/` folders will instantly get broken. So you can't use any markdown/wiki links in there to prevent massive headache in the future. give plain links inside `inline codeblock`
+		- [x] You have to test this shit, experiment with it, and find what works on practice. That's it.
 	- [x] fixed broken outline css (but again not what I should be doing)
 	- [x] fixed all github-related issues (+dependabot)
 	- [x] setup proper gmail flow to reduce cognitive complexity in there
@@ -80,7 +80,8 @@ action:
 
 ## REFLECTIONS
 %%Thinking through writing is much better - there must be low-friction place to do so%%
-- [[Obsidian Links and Junctions]]
+- [[@system/_reflections/Obsidian Links and Junctions|Obsidian Links and Junctions]]
+- 
 
 
 ---
@@ -107,6 +108,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 21:01
+	- So what PMO does is promises some meaningfulness, which is temporary. But then it kinda withdraws that promise post factum. I don't know. When I'm alone like that without anything social going on - there's just no meaning period. 
+- ###### 20:18
+	- Those walking reflections are damn expensive... Wasn't that long, and I'm done. And hungry. Want to sleep really bad...
 - ###### 19:25
 	- When I lay down in the chair - that's where peak "productive unproductivity" happens. But that's not the reason, but the symptom. I'm too late when this happened. So I can't prevent it, but only think about how to fix it. 
 - ###### 19:19
