@@ -8,7 +8,7 @@
   "showInlineTitle": true,
   "strictLineBreaks": false,
   "promptDelete": false,
-  "alwaysUpdateLinks": true,
+  "alwaysUpdateLinks": false,
   "showLineNumber": true,
   "attachmentFolderPath": "./_attachments",
   "focusNewTab": false,
