@@ -103,8 +103,8 @@
       "conditions": [
         {
           "source": "name",
-          "operator": "is",
-          "value": "__obsidian__"
+          "operator": "contains",
+          "value": "__obsidian"
         }
       ],
       "enabled": true,
