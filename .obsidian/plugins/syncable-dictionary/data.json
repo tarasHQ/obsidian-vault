@@ -1,5 +1,6 @@
 {
   "globalWords": [
+    "AdGuard",
     "aeternus",
     "ahk",
     "amd",
@@ -112,6 +113,7 @@
     "zstd"
   ],
   "lastSnapshot": [
+    "AdGuard",
     "aeternus",
     "ahk",
     "amd",
@@ -223,6 +225,6 @@
     "youtube",
     "zstd"
   ],
-  "warningThreshold": 5,
+  "warningThreshold": 2,
   "syncPollingRate": 15000
 }

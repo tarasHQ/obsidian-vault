@@ -59,7 +59,8 @@ action:
 	- [ ] Rewrite remark42 plugin. But after the other things are good.
 	- [ ] You hate it, but you must go through all of that llm generated mess on docs and extract/rewrite our agents.md as the main entry point for the LLM tasks.
 		- [x] dev commands - done
-		- [ ] 
+		- [x] backups - done (+ prepared route for cloud backups)
+		- [x] plan - done
 - ### Completed
 	- [ ] copy from here
 	- [x] 🔴when I updated junctions - obsidian updated ALL links in my project. Which means all links in all symlinked `__obsidian__/` folders will instantly get broken. So you can't use any markdown/wiki links in there to prevent massive headache in the future. give plain links inside `inline codeblock`
@@ -110,6 +111,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 00:02
+	- I'm moving. Finally. 1 hour till sleep. But at least something. 
 - ###### 23:06
 	- Through the meal got the perception shift. And now there's speed. Not like subjective, but objective. 0 resistance. I'm just actively solving what was bugging me for days.
 - ###### 21:01
