@@ -1,6 +1,6 @@
 ---
 ctime: 2026-10-23 19:38
-isIntegrated: false
+isIntegrated: true
 ---
 
 
@@ -50,4 +50,14 @@ isIntegrated: false
 
 ---
 
-- I found solution. Disable autoupdates BUT  it doesn't disable tracking. I need to update links rarely. I mean when that logic needs to be invoked. So. I just keep it in the manual mode. Disable/hide/minimalize button to enable auto update. To not press accidentally. (through css). And will handle those links manually. When stuff in project changes - I don't update links. But when I move stuff in obsidian vault - I update links "j"
+- I found solution. Disable autoupdates BUT  it doesn't disable tracking. I need to update links rarely. I mean when that logic needs to be invoked. So. I just keep it in the manual mode. Disable/hide/minimalize button to enable auto update. To not press accidentally. (through css). And will handle those links manually. When stuff in project changes - I don't update links. But when I move stuff in obsidian vault - I update links "just once".
+- Is it solved? I think so. I need to refine with LLM in that task. But probably It's the best I can get here. 
+---
+
+- So that + absolute paths for links. And now it's solved. Kind of. any links I do within the symlinked folder - have to be manual. Soooo. I can use relative links. 
+- Ok. Seems like relative links is the best. And maybe walking-thinking in the evening on an empty stomach isn't. 
+- So I keep automatic links updates. Use relative links. And it'll work everywhere. Only issue is that if I move stuff behind obsidian, then some links might get broken and I'll have to manually fix them. But that's a bit unlikely considering my modularizes approach. so yeah. that'll be it for now.
+- also it's especially nice to move big folders without breaking any links. Everything is self-contained. But that's for the projects
+---
+
+What about learning framework I plan to do? I don't know. But there's definitely tracking would be involved. Maybe. But like it's fine, I won't change that stuff with external programs, so obsidian will track and update those with no issues. 
