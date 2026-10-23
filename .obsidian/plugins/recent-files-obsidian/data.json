@@ -1,32 +1,40 @@
 {
   "recentFiles": [
     {
+      "basename": "_project",
+      "path": "@projects/taras.life/__obsidian__/_project.md"
+    },
+    {
+      "basename": "_plan_001",
+      "path": "@projects/taras.life/__obsidian__/phases/002/_plan_001.md"
+    },
+    {
+      "basename": "Obsidian Links and Junctions",
+      "path": "@system/_reflections/Obsidian Links and Junctions.md"
+    },
+    {
+      "basename": "October 23rd, 2026",
+      "path": "@journal/2026/October/October 23rd, 2026.md"
+    },
+    {
+      "basename": "on-discouragement-again",
+      "path": "Psychoanalysis/_reflections/on-discouragement-again.md"
+    },
+    {
+      "basename": "October 22nd, 2026",
+      "path": "@journal/2026/October/October 22nd, 2026.md"
+    },
+    {
+      "basename": "proxmox",
+      "path": "Maintenance/proxmox.md"
+    },
+    {
       "basename": "Ideas",
       "path": "@projects/taras.life/Social/Ideas.md"
     },
     {
       "basename": "Notes",
       "path": "@projects/taras.life/YouTube/Notes.md"
-    },
-    {
-      "basename": "_plan_001",
-      "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
-    },
-    {
-      "basename": "_project",
-      "path": "@projects/taras.life/__obsidian__/_project.md"
-    },
-    {
-      "basename": "99-end",
-      "path": "@projects/taras.life/__obsidian__/phases/001/steps/99-end.md"
-    },
-    {
-      "basename": "00-start",
-      "path": "@projects/taras.life/__obsidian__/phases/001/steps/00-start.md"
-    },
-    {
-      "basename": "parking",
-      "path": "@projects/taras.life/__obsidian__/phases/001/ideas/parking.md"
     },
     {
       "basename": "_project",
@@ -37,24 +45,8 @@
       "path": "README.md"
     },
     {
-      "basename": "October 23rd, 2026",
-      "path": "@journal/2026/October/October 23rd, 2026.md"
-    },
-    {
-      "basename": "proxmox",
-      "path": "Maintenance/proxmox.md"
-    },
-    {
-      "basename": "October 22nd, 2026",
-      "path": "@journal/2026/October/October 22nd, 2026.md"
-    },
-    {
       "basename": "windows-reinstall-notes",
       "path": "Maintenance/windows-reinstall-notes.md"
-    },
-    {
-      "basename": "on-discouragement-again",
-      "path": "Psychoanalysis/_reflections/on-discouragement-again.md"
     },
     {
       "basename": "README",

@@ -1,12 +1,12 @@
 ---
-ctime: 2026-10-23 18:26
+ctime: 2026-10-23 20:05
 isIntegrated: false
 status: waiting
 state: placeholder
 reviewedAtStep: ""
 ---
 
-[← PLAN](@projects/taras.life/__obsidian__/phases/001/_plan_001.md)
+[← PLAN](../_plan_001.md)
 
 ## Description
 PLACEHOLDER — one paragraph in simple words: what this preparation step does and why the phase starts with it.
