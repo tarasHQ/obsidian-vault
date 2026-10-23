@@ -54,7 +54,6 @@ action:
 	- [ ] You need a to select a block of text, press hotkey and save it as a reflection with link that replace selected text. (also it should have same frontmatter as current flow)
 		- [ ] On top of it, current flow of templated reflections probably should force copy link into clipboard as well. These shouldn't be in the journaling, because they give constraints on the size. 
 			- or maybe you just use initial `_reflections` flow instead of limiting yourself within the journal entry? 
-	- [ ] Deskflow - don'y intercept switch hotkey? can ahk do it? just run in parallel.
 - ### Doing now
 	- [ ] Rewrite remark42 plugin. But after the other things are good.
 	- [ ] You hate it, but you must go through all of that llm generated mess on docs and extract/rewrite our agents.md as the main entry point for the LLM tasks.
@@ -62,6 +61,7 @@ action:
 		- [x] backups - done (+ prepared route for cloud backups)
 		- [x] plan - done
 - ### Completed
+	- [x] Deskflow - don'y intercept switch hotkey? can ahk do it? just run in parallel.
 	- [ ] copy from here
 	- [x] 🔴when I updated junctions - obsidian updated ALL links in my project. Which means all links in all symlinked `__obsidian__/` folders will instantly get broken. So you can't use any markdown/wiki links in there to prevent massive headache in the future. give plain links inside `inline codeblock`
 		- [x] You have to test this shit, experiment with it, and find what works on practice. That's it.
