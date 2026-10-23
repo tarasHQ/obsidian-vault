@@ -58,6 +58,8 @@ action:
 - ### Doing now
 	- [ ] Rewrite remark42 plugin. But after the other things are good.
 	- [ ] You hate it, but you must go through all of that llm generated mess on docs and extract/rewrite our agents.md as the main entry point for the LLM tasks.
+		- [x] dev commands - done
+		- [ ] 
 - ### Completed
 	- [ ] copy from here
 	- [x] 🔴when I updated junctions - obsidian updated ALL links in my project. Which means all links in all symlinked `__obsidian__/` folders will instantly get broken. So you can't use any markdown/wiki links in there to prevent massive headache in the future. give plain links inside `inline codeblock`
@@ -81,7 +83,7 @@ action:
 ## REFLECTIONS
 %%Thinking through writing is much better - there must be low-friction place to do so%%
 - [[@system/_reflections/Obsidian Links and Junctions|Obsidian Links and Junctions]]
-- 
+- [[../../../Productivity/_reflections/how-to-approach-resistance|how-to-approach-resistance]]
 
 
 ---
@@ -108,6 +110,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 23:06
+	- Through the meal got the perception shift. And now there's speed. Not like subjective, but objective. 0 resistance. I'm just actively solving what was bugging me for days.
 - ###### 21:01
 	- So what PMO does is promises some meaningfulness, which is temporary. But then it kinda withdraws that promise post factum. I don't know. When I'm alone like that without anything social going on - there's just no meaning period. 
 - ###### 20:18
