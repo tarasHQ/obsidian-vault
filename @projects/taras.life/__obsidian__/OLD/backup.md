@@ -1,31 +1,3 @@
-# Backups — design (LOCKED, implementation pending)
-
-> Purpose: record the decided backup design and its implementation status so a future
-> session can operate/verify without re-deriving. **Design locked; implementation COMPLETE
-> except the test restore (declined by user — recorded as accepted gap).** Companion to
-> `PLAN.md` (Phase 6) and `docs/REMARK42.md`.
-> Working agreement applies: one change at a time, verify after each, rollback before every change.
-
-## Decided architecture (locked)
-
-```
-Proxmox host (192.168.1.111) — always-on mini PC
-├─ 1. vzdump job (existing job backup-540c66f0-ce04, retargeted/tuned):
-│       all guests mode (no explicit VMID list), zstd, mode snapshot
-│       → local storage (plaintext), retention keep-daily=2 + keep-weekly=1
-│       (~25 GB local footprint; ~7 GB compressed per full pass)
-│
-├─ 2. remark42 LXC: built-in automatic backups — every 24h writes
-│       backup-remark-YYYYMMDD.gz to var/backup, keeps last 10. NO extra timer,
-│       NO host sweep (decision A). Avatars/images + live DB protected by vzdump.
-│
-├─ 3. sync (every 15–30 min, flock, idempotent, failure-tolerant):
-│       rsync -a --ignore-existing --delete   local ──► CIFS mount
-│       + sha256 manifest of uploaded files (kept on host ONLY)
-│
-└─ 5. SMB machine (Windows, 24/7 in theory, ~80% real uptime):
-        second copy of everything; NOT a Proxmox storage — see "SMB access" below
-```
 
 ### Decisions and rationale (compressed history)
 
@@ -90,26 +62,7 @@ Proxmox host (192.168.1.111) — always-on mini PC
   Note: a 4h sweep does NOT produce 4h comment dumps; comment granularity stays 24h unless
   remark's auto-backup interval itself is configurable (not documented in what we read).
 
-## Encryption decision (dropped — full reasoning preserved)
 
-- vzdump has no native encryption (that's PBS) — hence age was planned in the sync step.
-- age X25519 stanzas provide confidentiality only — unauthenticated ephemeral share means
-  anyone knowing the recipient pubkey can forge a decryptable backup (silent poisoning vs
-  loud deletion). Analysis was done and recorded here as context; it is **moot** while
-  encryption is dropped.
-- Why dropped: share is already credentialed (`pve-smb`); all sensitive content in archives
-  is **rotatable** (CF token, remark42 SECRET, OAuth secrets) → compromise = rotate tokens,
-  an annoying afternoon, not a disaster; encryption bought defense-in-depth for a
-  low-probability recoverable event at the cost of: age key custody, staging dir,
-  lost CIFS-storage UI indexing, forgery caveats.
-- **KEPT despite dropping encryption:** the sha256 manifest (corruption detection).
-- **ACCEPTED RISK (explicit):** compromise of the Windows box exposes plaintext backup
-  contents → response is rotating CF_API_TOKEN, remark42 SECRET, OAuth secrets.
-  Deletion by a valid share credential remains unaddressed (Windows-side shadow copies /
-  second copy is the future fix, whenever it matters).
-- **REVISIT TRIGGER:** if an offsite tier is ever added (rclone → cloud), encryption becomes
-  **mandatory** there — a cloud bucket is a fundamentally different exposure than a
-  credentialed LAN share. age (and the forgery discussion) comes back at that point.
 
 ## SMB access (SSOT)
 
@@ -219,26 +172,3 @@ Backups must target `local` (dir), not `local-lvm` — vzdump archives are files
 - [ ] Step 8 — final doc status update (done alongside this entry; see status note below).
 
 (Steps 1–2 superseded by the verified inventory above and the completed Windows share.)
-
-## Implementation plan (next steps, one at a time, verify each)
-
-1. Record VMID↔guest mapping (`pct list` / `qm list` on host) + free space check on `local`.
-2. Windows side: create share folder, grant only `pve-smb`.
-3. Proxmox side: add CIFS storage (pve-smb creds, `content: backups`), verify mount.
-4. Retune existing vzdump job: all-guests, keep-daily=2 + keep-weekly=1, confirm
-   zstd + snapshot mode (snapshot mode guarantees consistent BoltDB inside archives).
-5. remark42 LXC: systemd timer for `remark42 backup` (4h); verify dumps appear.
-6. Host: sync script (rsync --ignore-existing --delete, flock, warning-not-failure on
-   unreachable SMB) + manifest update + timers (sync 15–30 min; sweep 4h).
-7. **Verification: one test restore** — restore a guest from local AND decrypt-check
-   (extract a file from) the SMB copy. A backup never restored is a hope, not a backup.
-8. Update `PLAN.md` and `docs/REMARK42.md` status lines to "implemented + verified".
-
-## Historical context (preserved from the earlier draft, superseded decisions)
-
-- The original draft proposed two tiers: vzdump → Windows SMB (tier 1) + rclone crypt →
-  Google Drive (tier 2). GDrive tier was never decided; SMB tier survived in modified form
-  (local-primary, no encryption). rclone/B2/Wasabi/USB-rotation options remain documented
-  candidates for any future offsite tier.
-- Open questions from the original draft, now all answered: Windows 24/7 → ~80% real uptime,
-  24/7 in theory; GDrive → deferred with the whole offsite tier; retention → 2d+1w confirmed.

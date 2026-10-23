@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "proxmox",
+      "path": "Maintenance/proxmox.md"
+    },
+    {
+      "basename": "backup",
+      "path": "@projects/taras.life/__obsidian__/OLD/backup.md"
+    },
+    {
       "basename": "AGENTS",
       "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
     },
     {
       "basename": "AGENTS",
       "path": "@projects/0vibes/__obsidian__/docs/AGENTS.md"
-    },
-    {
-      "basename": "backup",
-      "path": "@projects/taras.life/__obsidian__/OLD/backup.md"
     },
     {
       "basename": "DEV_COMMANDS",
@@ -43,10 +47,6 @@
     {
       "basename": "PLANNING",
       "path": "_static/projects/PLANNING.md"
-    },
-    {
-      "basename": "proxmox",
-      "path": "Maintenance/proxmox.md"
     },
     {
       "basename": "Ideas",

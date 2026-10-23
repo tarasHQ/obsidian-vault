@@ -48,14 +48,50 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 - Local `README.md` files provide high-level design rationale, submodule structure, domain quirks, future features and controversial decisions that are not immediately obvious from code alone.
 - Some modules may not have `README.md` - then LLM must inform the dev to create one.
 ### 8.2 Reference Materials & Vendor Docs (docs/)
-- External library documentation and architectural guidelines (e.g. React best practices, most of 3rd party key packages docs, OpenAI SDK references) reside in the `docs/` directory.
+- External library documentation and architectural guidelines (e.g. remark42 or quartz itself) reside in the `docs/` directory.
 - Due to the size of documentation files under `docs/`, avoid reading them entirely into context with direct read tools.
 - Always use the `explore` tool with focused queries to extract specific sections from `docs/` without bloating the context window.
 ---
 
+## 9. Knowledge & Planning 
+
+### 9.1 Location & File structure
+- __obsidian__/ follder in the root of the project should contain all plans/reflections
+- __obsidian__/phases/999/ folder structure separates plans and reflections by phase number
+- Name format for plan .md files: `DD-MM-YYYY - NAME.md` (e.g., `22-09-2026 - CHAT_VIEW.md`).
+### 9.2 Flow of the planning
+- First, discuss with the high level structure of the plan. When it's locked, write a skeleton that consists of X steps to achieve the goal of the plan.
+- Second, go step-by-step through the plan, and enrich it with more detailed implementation tasks/invariants/decisions/etc.
+
+## 10. Maintaining AGENTS.md
+
+### 10.1 Purpose & Role
+- AGENTS.md is the durable, high-level reference for Axon's architecture, philosophy, and system invariants.
+- It is designed to be loaded into context during exploration, discussion, and high-level planning without consuming excessive token budget.
+- It must remain low-churn and free of ephemeral implementation noise.
+### 10.2 What Belongs Here
+- High-level system philosophy and product vision.
+- Key tech stack choices, runtime requirements, and OS prerequisites.
+- Monorepo package topology and package boundaries.
+- High-level domain concepts (Workspace, Project, Task, Branch, Message, Response, Tool Use).
+- Architectural invariants (server authority, sync protocol, worker execution boundaries, auth models).
+- Codebase navigation rules (README.md conventions and docs/ exploration).
+### 10.3 What Does NOT Belong Here
+- Low-level coding style rules, JSDoc formatting, and React hook rules (these belong in `DEV_RULES.md`).
+- File-by-file refactor notes, changelogs, and temporary migration diaries.
+- Sprint task checklists, implementation roadmaps, and step-by-step feature guides.
+- Detailed database schemas, exhaustive SQL queries, or individual function signatures (code and local READMEs are self-documenting).
+- Fleeting bug workarounds or transient environment hacks.
+### 10.4 Update Protocol
+- Update this document only when a change alters system invariants, introduces new packages, modifies communication transports, or changes core architectural boundaries.
+- When an invariant or boundary changes, update` AGENTS.md` in the same session to prevent architectural documentation drift.
+- If an instruction or invariant in `AGENTS.md` conflicts with the codebase, resolve the contradiction immediately rather than allowing drift to accumulate.
 
 
 
+
+
+---
 
 # Not sure if it should be in agents (or at all)
 
