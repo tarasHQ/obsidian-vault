@@ -3,7 +3,7 @@ ctime: 2026-10-23 18:26
 isIntegrated: false
 ---
 
-[← Project](../../_project.md)
+[← Project](@projects/taras.life/__obsidian__/_project.md)
 
 # Phase 001 - NAME_OF_THE_PLAN
 

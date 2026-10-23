@@ -6,7 +6,7 @@ state: placeholder
 reviewedAtStep: ""
 ---
 
-[← PLAN](../_plan_001.md)
+[← PLAN](@projects/taras.life/__obsidian__/phases/001/_plan_001.md)
 
 ## Description
 PLACEHOLDER — one paragraph in simple words: this step closes the phase safely and captures meta-planning lessons.
