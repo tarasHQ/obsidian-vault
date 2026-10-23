@@ -59,7 +59,7 @@
 			"width":460,
 			"height":100
 		},
-		{"id":"532aba74bc42d432","type":"file","file":"System/_system.canvas","x":-850,"y":-1380,"width":400,"height":400},
+		{"id":"532aba74bc42d432","type":"file","file":"@system/_system.canvas","x":-850,"y":-1380,"width":400,"height":400},
 		{
 			"id":"63fd9bb4ecf495b9",
 			"type":"file",

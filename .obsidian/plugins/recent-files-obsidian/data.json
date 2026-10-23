@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "_plan_001",
+      "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
+    },
+    {
+      "basename": "99-end",
+      "path": "@projects/taras.life/__obsidian__/phases/001/steps/99-end.md"
+    },
+    {
+      "basename": "00-start",
+      "path": "@projects/taras.life/__obsidian__/phases/001/steps/00-start.md"
+    },
+    {
+      "basename": "initial-reflection",
+      "path": "@projects/taras.life/__obsidian__/phases/001/_reflections/initial-reflection.md"
+    },
+    {
+      "basename": "parking",
+      "path": "@projects/taras.life/__obsidian__/phases/001/ideas/parking.md"
+    },
+    {
+      "basename": "_project",
+      "path": "@projects/taras.life/__obsidian__/_project.md"
+    },
+    {
+      "basename": "_project",
+      "path": "Health/__obsidian__/_project.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
       "basename": "October 23rd, 2026",
       "path": "@journal/2026/October/October 23rd, 2026.md"
     },
@@ -39,10 +71,6 @@
     {
       "basename": "October 20th, 2026",
       "path": "@journal/2026/October/October 20th, 2026.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     },
     {
       "basename": "README",
@@ -99,10 +127,6 @@
     {
       "basename": "_sleep",
       "path": "Sleep/_sleep.canvas"
-    },
-    {
-      "basename": "oct10-what-to-do-next",
-      "path": "System/_reflections/oct10-what-to-do-next.md"
     },
     {
       "basename": "journal-remove-checklist",
