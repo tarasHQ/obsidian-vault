@@ -6,3 +6,7 @@
 	- `@reboot (sleep 60 && echo "conservative" | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor)`— CPU frequency governor set to `conservative` at every boot (mini-PC fan/noise/heat choice)
 	- `*/5 * * * * /root/ha_post_temp.sh` — script run every 5 minutes posts temperature data related to haos
 - for caddy and https I was doing something with ACME on proxmox for both accounts and challenge plugins.
+
+
+## Reinstall notes
+- Figure out proper networking rules. Don't use dhcp. use static IPs outside of the dhcp range. 

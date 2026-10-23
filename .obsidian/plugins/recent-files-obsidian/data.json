@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "October 23rd, 2026",
+      "path": "@journal/2026/October/October 23rd, 2026.md"
+    },
+    {
+      "basename": "proxmox",
+      "path": "Maintenance/proxmox.md"
+    },
+    {
       "basename": "October 22nd, 2026",
       "path": "@journal/2026/October/October 22nd, 2026.md"
     },
@@ -9,20 +17,16 @@
       "path": "Maintenance/windows-reinstall-notes.md"
     },
     {
+      "basename": "on-discouragement-again",
+      "path": "Psychoanalysis/_reflections/on-discouragement-again.md"
+    },
+    {
       "basename": "README",
       "path": "_static/README.md"
     },
     {
       "basename": "October 21st, 2026",
       "path": "@journal/2026/October/October 21st, 2026.md"
-    },
-    {
-      "basename": "proxmox",
-      "path": "Maintenance/proxmox.md"
-    },
-    {
-      "basename": "on-discouragement-again",
-      "path": "Psychoanalysis/_reflections/on-discouragement-again.md"
     },
     {
       "basename": "deep-learning",

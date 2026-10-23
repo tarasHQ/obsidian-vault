@@ -15,34 +15,6 @@ actions:
 
 ---
 
-```meta-bind-button
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-    - ###### AFTER NEW RECORDING
-        - [ ] Check audio delay to webcam
-        - [ ] Night scene
-        - [ ] Check IP cam (quality, delay)
-        - [ ] Check TickTick schedule (correct day, scheduled)
-        - [ ] Set time of next sleep for stager timer.
-        - [ ] Create and prefill next journal entry
-    - ###### AFTER UPLOAD
-        - [ ] Blur
-        - [ ] Chapters
-    - ###### BEFORE SLEEP
-        - [ ] Write overview of the current day
-        - [ ] Create journal for the next day
-        - [ ] Move uncompleted tasks
-        - [ ] Make sure all day's reflections are linked under reflections
-
----
-
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
 
@@ -51,15 +23,8 @@ action:
 
 ## TASKS
 %%Cognitive offload for the day, to not keep these in my mind for the whole time%%
-- ### Active
-	- [ ] You need simple back/forward(automatic visibility if exists) navigation between journal entries.
-	- [ ] You need a to select a block of text, press hotkey and save it as a reflection with link that replace selected text. (also it should have same frontmatter as current flow)
-		- [ ] On top of it, current flow of templated reflections probably should force copy link into clipboard as well. These shouldn't be in the journaling, because they give constraints on the size. 
-			- or maybe you just use initial `_reflections` flow instead of limiting yourself within the journal entry? 
-	- [ ] [IMPORTANT] when I updated junctions - obsidian updated ALL links in my project. Which means all links in all symlinked `__obsidian__/` folders will instantly get broken. So you can't use any markdown/wiki links in there to prevent massive headache in the future. give plain links inside `inline codeblock`
-- ### Doing now
-	- [ ] You hate it, but you must go through all of that llm generated mess on docs and extract/rewrite our agents.md as the main entry point for the LLM tasks.
 - ### Completed
+	- [x] removed all personal data from public repos. it's absolutely BS that it by default automatically includes email and all committs.
 	- [x] Youtube - wrong order of timestamps. You need to offset by one chapter
 	- [x] vscode + reconfiguring project + npm/pnpm/node/test runs/etc.
 	- [x] Installing and configuring all apps I need
@@ -103,6 +68,19 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 01:09
+	- ==🟡Please, re-read last few entries in the morning, you must figure out how to get shit done==
+	- Seems like puer aeternus is involved. I don't want to go to sleep on the schedule. I don't want to do task I need to do, and prefer to do tasks I WANT to do. 
+	- Maybe I need bring back screenshotting. And spend 1 hours before the sleep analyzing video/screenshots of my desktop. Why? So I can see where puer took control. Get more awareness over it. 
+	- Today definitely was a lot of "work" where I was kinda half-assing and avoiding. If instead you write that stuff down, focus on main task, and do secondary when there's time for that - you could have higher speed. 
+	- ==🔴you should split recordings right before you're going into the bed. and check/upload on the next day. Gives continuity, makes more aware to not repeat mistakes, more convenient, so I'm not overwhelmed towards the night=
+	- like make it practical, “ok, I can’t get shit done”, you take those screenshots and video. And see minute by minute what you were doing. Chances are 80% of that time was kinda wasted or used poorly
+- ###### 00:59
+	- Yeah... I'm doing something seriously wrong. It won't be able to keep being consistent. It's just sad honestly... really sad. I can't keep up even with this. Like how all those plans can be realized, if I'm struggling even at current point? Nothing gets done...
+	- ==🟠Fucking hell this shit is depressing. ==
+	- And now during the sleep there was not-nice angle. And like it's another PIA to fix it. It needs proper workflow for cutting stuff without re-encoding... Man... it's just too much. Like I had 100 task to do, and now it's 110. Like how it's even possible to deal with this? 
+- ###### 00:38
+	- It's just overwhelming. Like I have to make videos better, figure out timelapses... at the same time there's 15 tasks on website, 10 tasks on obsidian vault. 50 miscellaneous tasks around those two. Privacy issues as well. Like how to do all of that for god's sake? It's just too much.... Oh, and yeah, a few apps on windows to setup, which are a bit PIA too. 
 - ###### 00:13
 	- Time flies... it's sad really that when I have a bunch of it - I discouraged and struggle to do anything. But as soon as there's 45 minutes left to sleep - all of a sudden I can/want work for longer... 
 - ###### 23:26
