@@ -1,8 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "how-to-approach-resistance",
-      "path": "Productivity/_reflections/how-to-approach-resistance.md"
+      "basename": "AGENTS",
+      "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
+    },
+    {
+      "basename": "AGENTS",
+      "path": "@projects/0vibes/__obsidian__/docs/AGENTS.md"
+    },
+    {
+      "basename": "backup",
+      "path": "@projects/taras.life/__obsidian__/OLD/backup.md"
+    },
+    {
+      "basename": "DEV_COMMANDS",
+      "path": "@projects/0vibes/__obsidian__/docs/DEV_COMMANDS.md"
+    },
+    {
+      "basename": "DEV_COMMANDS",
+      "path": "@projects/taras.life/__obsidian__/docs/DEV_COMMANDS.md"
     },
     {
       "basename": "October 23rd, 2026",
@@ -13,12 +29,20 @@
       "path": "@system/_reflections/Obsidian Links and Junctions.md"
     },
     {
-      "basename": "October 22nd, 2026",
-      "path": "@journal/2026/October/October 22nd, 2026.md"
+      "basename": "how-to-approach-resistance",
+      "path": "Productivity/_reflections/how-to-approach-resistance.md"
     },
     {
       "basename": "on-discouragement-again",
       "path": "Psychoanalysis/_reflections/on-discouragement-again.md"
+    },
+    {
+      "basename": "October 22nd, 2026",
+      "path": "@journal/2026/October/October 22nd, 2026.md"
+    },
+    {
+      "basename": "PLANNING",
+      "path": "_static/projects/PLANNING.md"
     },
     {
       "basename": "proxmox",
@@ -175,14 +199,6 @@
     {
       "basename": "28-09-2026 Indulgence is overwhelming",
       "path": "Temptations/_reflections/28-09-2026 Indulgence is overwhelming.md"
-    },
-    {
-      "basename": "[T]journal-task-plan",
-      "path": "_static/templater/inline/[T]journal-task-plan.md"
-    },
-    {
-      "basename": "reflection_helpers",
-      "path": "_static/scripts/reflection_helpers.js"
     }
   ],
   "omittedPaths": [],
