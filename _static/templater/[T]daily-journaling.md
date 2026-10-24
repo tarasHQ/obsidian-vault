@@ -95,7 +95,7 @@ action:
 
 ## TASKS
 %%Cognitive offload for the day, to not keep these in my mind for the whole time%%
-- ### Active
+- ### TODO
 	- [ ] 
 - ### Priority
 	- [ ] 

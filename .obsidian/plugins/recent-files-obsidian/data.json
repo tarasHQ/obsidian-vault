@@ -5,6 +5,22 @@
       "path": "@journal/2026/October/October 24th, 2026.md"
     },
     {
+      "basename": "Project's start and end steps",
+      "path": "@system/_reflections/Project's start and end steps.md"
+    },
+    {
+      "basename": "on-discouragement-again",
+      "path": "Psychoanalysis/_reflections/on-discouragement-again.md"
+    },
+    {
+      "basename": "[T]daily-journaling",
+      "path": "_static/templater/[T]daily-journaling.md"
+    },
+    {
+      "basename": "Can't start to work in the morning!",
+      "path": "Productivity/_reflections/Can't start to work in the morning!.md"
+    },
+    {
       "basename": "00-start",
       "path": "@projects/taras.life/__obsidian__/phases/001/steps/00-start.md"
     },
@@ -53,10 +69,6 @@
       "path": "@projects/0vibes/__obsidian__/docs/DEV_RULES.md"
     },
     {
-      "basename": "Project's start and end steps",
-      "path": "@system/_reflections/Project's start and end steps.md"
-    },
-    {
       "basename": "[T]step-end",
       "path": "_static/templater/project/[T]step-end.md"
     },
@@ -97,10 +109,6 @@
       "path": "Home.md"
     },
     {
-      "basename": "Can't start to work in the morning!",
-      "path": "Productivity/_reflections/Can't start to work in the morning!.md"
-    },
-    {
       "basename": "obsidian",
       "path": "@system/obsidian/obsidian.md"
     },
@@ -129,10 +137,6 @@
       "path": "Obsidian.md"
     },
     {
-      "basename": "[T]daily-journaling",
-      "path": "_static/templater/[T]daily-journaling.md"
-    },
-    {
       "basename": "_project",
       "path": "@projects/0vibes/__obsidian__/_project.md"
     },
@@ -159,10 +163,6 @@
     {
       "basename": "how-to-approach-resistance",
       "path": "Productivity/_reflections/how-to-approach-resistance.md"
-    },
-    {
-      "basename": "on-discouragement-again",
-      "path": "Psychoanalysis/_reflections/on-discouragement-again.md"
     },
     {
       "basename": "October 22nd, 2026",
