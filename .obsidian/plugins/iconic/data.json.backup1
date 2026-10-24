@@ -168,8 +168,7 @@
         }
       ],
       "enabled": true,
-      "icon": "lucide-notebook",
-      "color": "#a1977d"
+      "icon": "lucide-notebook"
     },
     {
       "id": "00tsM",
