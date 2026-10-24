@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "00-start",
+      "path": "@projects/taras.life/__obsidian__/phases/001/steps/00-start.md"
+    },
+    {
+      "basename": "_plan_001",
+      "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
+    },
+    {
+      "basename": "_project",
+      "path": "@projects/taras.life/__obsidian__/_project.md"
+    },
+    {
+      "basename": "DEV_RULES",
+      "path": "@projects/0vibes/__obsidian__/docs/DEV_RULES.md"
+    },
+    {
+      "basename": "DEV_RULES",
+      "path": "@projects/taras.life/__obsidian__/docs/DEV_RULES.md"
+    },
+    {
       "basename": "README",
       "path": "_static/projects/README.md"
     },
@@ -19,10 +39,6 @@
     {
       "basename": "AGENTS",
       "path": "@projects/0vibes/__obsidian__/docs/AGENTS.md"
-    },
-    {
-      "basename": "_project",
-      "path": "@projects/taras.life/__obsidian__/_project.md"
     },
     {
       "basename": "About",
@@ -79,10 +95,6 @@
     {
       "basename": "PHILOSOPHY",
       "path": "@projects/0vibes/__obsidian__/docs/PHILOSOPHY.md"
-    },
-    {
-      "basename": "DEV_RULES",
-      "path": "@projects/0vibes/__obsidian__/docs/DEV_RULES.md"
     },
     {
       "basename": "proxmox",
@@ -187,14 +199,6 @@
     {
       "basename": "proxmox-backup-plan",
       "path": "@journal/2026/October/plans/proxmox-backup-plan.md"
-    },
-    {
-      "basename": "quartz-website-plan",
-      "path": "@journal/2026/October/plans/quartz-website-plan.md"
-    },
-    {
-      "basename": "better-schedule-plan",
-      "path": "@journal/2026/October/plans/better-schedule-plan.md"
     }
   ],
   "omittedPaths": [],
