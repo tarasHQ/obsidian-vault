@@ -72,7 +72,9 @@ action:
 		- [ ] After that - you write proper `_project.md`, start phase 001 of rewriting remark42 plugin - and the flow is established and you can move on finally.
 - ### Completed
 	- [ ] copy_from_here
-	- [ ] Clean tech stack/libs section of agents + cleaning up unused stuff
+	- [x] successful optimization
+	- [x] removing plugins/measuring performance
+	- [x] Clean tech stack/libs section of agents + cleaning up unused stuff
 	- [x] fixed worker build time, from 2 minutes to less than 30 seconds.
 	- [x] fixed 404 page
 	- [x] reducing cognitive load of chrome bookmarks (separators idea)
@@ -98,6 +100,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 14:27
+	- Yeah, going fast. Besides rewriting agents doing lots of work around that. 
 - ###### 13:24
 	- Laying down in the chair. Marker. Pattern. 
 - ###### 13:19
