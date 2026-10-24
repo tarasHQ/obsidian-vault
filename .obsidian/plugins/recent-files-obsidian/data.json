@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "AGENTS",
-      "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
-    },
-    {
       "basename": "README",
       "path": "_static/projects/README.md"
+    },
+    {
+      "basename": "AGENTS",
+      "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
     },
     {
       "basename": "README",
@@ -195,10 +195,6 @@
     {
       "basename": "better-schedule-plan",
       "path": "@journal/2026/October/plans/better-schedule-plan.md"
-    },
-    {
-      "basename": "_sleep",
-      "path": "Sleep/_sleep.canvas"
     }
   ],
   "omittedPaths": [],
