@@ -67,10 +67,11 @@ action:
 - ### Priority
 	- [ ] 
 	- [ ] Rewrite remark42 plugin. But after the other things are good.
-	- [ ] 🔴Now time to compose agents.md and figure out where remark42 goes (probably stays in it, since it's small.) 
-		- [ ] After that - you write proper `_project.md`, start phase 001 of rewriting remark42 plugin - and the flow is established and you can move on finally.
 - ### Completed
 	- [ ] copy_from_here
+	- [ ] devrules
+	- [x] 🔴Now time to compose agents.md and figure out where remark42 goes (probably stays in it, since it's small.) 
+	- [x] Fixed another issue with deskflow, when 
 	- [x] successful optimization
 	- [x] removing plugins/measuring performance
 	- [x] Clean tech stack/libs section of agents + cleaning up unused stuff
@@ -100,6 +101,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 17:26
+	- Distracts a lot. Ok. I'll try a rule. Do 
+- ###### 17:22
+	- Again want to PMO. A bit more issues than I expected. Or, well, not a bit. A lot. So pattern of behaviour tries to keep me away from that chaos. And it's a bit harder to control later in the day. But I'll try. 
 - ###### 16:54
 	- A minor health scare. Hopefully it passed.
 - ###### 16:08
