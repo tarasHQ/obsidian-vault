@@ -28,7 +28,7 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 - ##### [DEV_COMMANDS.md](./DEV_COMMANDS.md)
     - to be read only if LLM tinkers with tasks/commands/scripts
 
-### 2.1 Full stack
+## 1. Tech Stack / Key Libraries, Plugins, Services
 
 **Runtime & toolchain**
 
@@ -73,20 +73,26 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 - #### Plugin
 	- `custom-plugins/remark42/`
 - #### Service
-	1. Self hosted as standalone binary on LXC. Accessed to internet through cloudflare tunnel at caddy + local reroute. 
+	- Self hosted as standalone binary on LXC. Accessed to internet through cloudflare tunnel at caddy + local reroute. 
 		- caddy rewires some headers too.
-	2. Configuration `/etc/remark42.env`, 
+	- Configuration `/etc/remark42.env`, 
 		- `/etc/systemd/system/remark42.service`; runs as `nobody:nogroup`, `WorkingDirectory=/var/www/remark42`.
 		- `/var/www/remark42/var` - boltdb directory
-	3. Done as systemd service
-	4. Backups. Handled by proxmox daily/weekly vzdumps with rsync offsite
-	5. Health - UptimeRobot, pings both taras.life and `https://comments.taras.life/api/v1/ping`
+	- Done as `systemd` service
+	- Backups. Handled by `proxmox` daily/weekly `vzdumps` with `rsync` offsite
+	- Health - `UptimeRobot`, pings both taras.life and `https://comments.taras.life/api/v1/ping`
 		- comments live under blog domain, not infra. 
-	6. Tied to the id in frontmatter. No id - no comments. 
-	7. (crucial for free worker on cloudflare) web analytics injects beacon.js into remark42 oauth icons, which breaks them. Workaround is to use rule configuration to disable RUM when host == the public host of the remark42
-	8. oauth apps, for now, only google and gmail
-	9. admin is identified by github account internal remark42 id
-	10. no smtp/telegram/others
+	- Tied to the `id` in frontmatter. No id - no comments. 
+	- (crucial for free worker on cloudflare) web analytics injects beacon.js into remark42 oauth icons, which breaks them. Workaround is to use domain rule configurations to disable `RUM` when host == the public host of the remark42
+	- `oauth` apps, for now, only google and gmail
+	- admin is identified by github account internal remark42 id
+	- no smtp/telegram/others
+
+### Removed plugins
+- 
+
+---
+
 
 (from other project's agents file)
 ## 8. Codebase Exploration & Documentation Guidelines
