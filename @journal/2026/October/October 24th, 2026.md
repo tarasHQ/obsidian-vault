@@ -59,15 +59,14 @@ action:
 ## TASKS
 %%Cognitive offload for the day, to not keep these in my mind for the whole time%%
 - ### Active
-	- [ ] Add other google accounts in family to main one
 	- [ ] Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
 	- [ ] You need simple back/forward(automatic visibility if exists) navigation between journal entries. (or use calendar plugin for the time being)
 	- [ ] You need a to select a block of text, press hotkey and save it as a reflection with link that replace selected text. (also it should have same frontmatter as current flow)
 		- [ ] On top of it, current flow of templated reflections probably should force copy link into clipboard as well. These shouldn't be in the journaling, because they give constraints on the size. 
 			- or maybe you just use initial `_reflections` flow instead of limiting yourself within the journal entry? 
-	- [ ] Rewrite remark42 plugin. But after the other things are good.
 - ### Priority
 	- [ ] 
+	- [ ] Rewrite remark42 plugin. But after the other things are good.
 	- [ ] 🔴Now time to compose agents.md and figure out where remark42 goes (probably stays in it, since it's small.) 
 		- [ ] After that - you write proper `_project.md`, start phase 001 of rewriting remark42 plugin - and the flow is established and you can move on finally.
 - ### Completed
@@ -80,6 +79,7 @@ action:
 	- [x] reducing cognitive load of chrome bookmarks (separators idea)
 	- [x] Fixing more chore-level things in repo
 	- [x] Preserving AHK security + obsidian smart startup minimized (only during boot)
+	- [x] Add other google accounts in family to main one
 
 ---
 
@@ -100,10 +100,22 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 15:05
+	- ==🟡ALL OF THIS HAPPENED BECAUSE I DIDN'T SUCCUMB TO PMO AUTOMATISMS==
 - ###### ==🟠14:54 Meal #1==
 	- 5 hours into the day. I'm happy with the progress. Not super fast, but maybe it's the optimal combination of progress-"good decision making". Website is light. Builds are fast. Lighthouse score is 98. Docs are almost done. 
 	- ==🟠PLANNING TO EASE IN TO THE NEXT SESSION==
-		- 
+		- Docs
+			- Finish Agents. Not much left. Just organize. Number. 
+			- dev rules, to have something going on for writing the same consistent code
+		- Then you move to rewrite remark42 plugin
+			- md files are already there. 
+			- you create phase 001
+			- research/plan/execute
+			- also get feedback/experience on current "alpha" workflow.
+		- When plugin is done
+			- Plan config, skeleton, styles, fonts.
+			- The main thing here is after that is done - you will be able to significantly reduce time-per-day working on website, and can catch up with pending tasks. Major "freedom-checkpoint"
 - ###### 14:27
 	- Yeah, going fast. Besides rewriting agents doing lots of work around that. 
 - ###### 13:24

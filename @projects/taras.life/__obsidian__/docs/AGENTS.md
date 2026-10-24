@@ -32,15 +32,15 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 
 **Runtime & toolchain**
 
-| Layer | Technology | Notes |
-|---|---|---|
-| Runtime | Node.js ≥ 22, ESM (`"type": "module"`) | declared in `engines`; Workers Builds must satisfy it |
-| Language | TypeScript | typechecked by `tsc --noEmit`, but **never compiled by tsc** — esbuild emits JS |
-| Package manager | npm ≥ 10.9.2, committed `package-lock.json` | CI installs with `npm ci`; lockfile drift fails the build |
-| Bundler | esbuild (+ `esbuild-sass-plugin`) | bundles page JS and the local plugin's browser script |
-| CSS toolchain | SCSS → Lightning CSS | compiled and minified at build time |
-| Quality gates | Prettier, `tsx --test`, `tsc --noEmit` | `npm run check`, `npm test` |
-| Deploy CLI | `wrangler` (devDependency) | local preview/deploy; CI path is Workers Builds |
+| Layer           | Technology                                  | Notes                                                                           |
+| --------------- | ------------------------------------------- | ------------------------------------------------------------------------------- |
+| Runtime         | Node.js ≥ 22, ESM (`"type": "module"`)      | declared in `engines`; Workers Builds must satisfy it                           |
+| Language        | TypeScript                                  | typechecked by `tsc --noEmit`, but **never compiled by tsc** — esbuild emits JS |
+| Package manager | npm ≥ 10.9.2, committed `package-lock.json` | CI installs with `npm ci`; lockfile drift fails the build                       |
+| Bundler         | esbuild (+ `esbuild-sass-plugin`)           | bundles page JS and the local plugin's browser script                           |
+| CSS toolchain   | SCSS → Lightning CSS                        | compiled and minified at build time                                             |
+| Quality gates   | Prettier, `tsx --test`, `tsc --noEmit`      | `npm run check`, `npm test`                                                     |
+| Deploy CLI      | `wrangler` (devDependency)                  | local preview/deploy; CI path is Workers Builds                                 |
 
 **Content & generation**
 
