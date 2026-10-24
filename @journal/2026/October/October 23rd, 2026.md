@@ -15,54 +15,23 @@ actions:
 
 ---
 
-```meta-bind-button
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-    - [ ] ==🔴Reduce CQP by 2==
-    - ###### AFTER NEW RECORDING
-        - [ ] Check audio delay to webcam
-        - [ ] Night scene
-        - [ ] Check IP cam (quality, delay)
-        - [ ] Check TickTick schedule (correct day, scheduled)
-        - [ ] Set time of next sleep for stager timer.
-    - ###### BEFORE SLEEP
-        - [ ] Write overview of the current day
-        - [ ] Create journal for the next day
-        - [ ] Move uncompleted tasks
-        - [ ] Make sure all day's reflections are linked under reflections
-
----
-
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
+Better day. Still lots of struggle. But seems like got compensated unexpectedly during the second meal. So the last 2 hours of work justified the day and it is good. 
+I'm not overwhelmed as well. Checklists are super helpful right now. You just don't think about stuff, and blindly go point by point. If only I could manage a whole day like last 2 hours... 
 
+But I need to give myself the credit where credit is due. Day wasn't good indulgence-wise, but still - you give 10+ hours of work every day. You don't watch youtube shorts in bed. You have a good sleep schedule. You meaningfully increase complexity and improve yourself through very little steps forward. So at least there's that. 365 days like last 7-10 days - and what would you achieve? And, hopefully, I'll get better as I go too... Just don't give up.
 
 ---
 
 ## TASKS
 %%Cognitive offload for the day, to not keep these in my mind for the whole time%%
-- ### Active
-	- [ ] Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
-	- [ ] You need simple back/forward(automatic visibility if exists) navigation between journal entries. (or use calendar plugin for the time being)
-	- [ ] You need a to select a block of text, press hotkey and save it as a reflection with link that replace selected text. (also it should have same frontmatter as current flow)
-		- [ ] On top of it, current flow of templated reflections probably should force copy link into clipboard as well. These shouldn't be in the journaling, because they give constraints on the size. 
-			- or maybe you just use initial `_reflections` flow instead of limiting yourself within the journal entry? 
-- ### Doing now
-	- [ ] Rewrite remark42 plugin. But after the other things are good.
-	- [ ] You hate it, but you must go through all of that llm generated mess on docs and extract/rewrite our agents.md as the main entry point for the LLM tasks.
+- ### Completed
+	- [x] You hate it, but you must go through all of that llm generated mess on docs and extract/rewrite our agents.md as the main entry point for the LLM tasks.
 		- [x] dev commands - done
 		- [x] backups - done (+ prepared route for cloud backups)
 		- [x] plan - done
-- ### Completed
-	- [x] Deskflow - don'y intercept switch hotkey? can ahk do it? just run in parallel.
-	- [ ] copy from here
+	- [x] Deskflow - don't intercept switch hotkey? can ahk do it? just run in parallel.
 	- [x] 🔴when I updated junctions - obsidian updated ALL links in my project. Which means all links in all symlinked `__obsidian__/` folders will instantly get broken. So you can't use any markdown/wiki links in there to prevent massive headache in the future. give plain links inside `inline codeblock`
 		- [x] You have to test this shit, experiment with it, and find what works on practice. That's it.
 	- [x] fixed broken outline css (but again not what I should be doing)
@@ -86,7 +55,6 @@ action:
 - [[@system/_reflections/Obsidian Links and Junctions|Obsidian Links and Junctions]]
 - [[../../../Productivity/_reflections/how-to-approach-resistance|how-to-approach-resistance]]
 
-
 ---
 
 >[!tldr] CONTEX
@@ -96,7 +64,6 @@ action:
 > 
 >Approx. Dreams Compensation - **Inspiring**
 >
-
 
 ---
 
@@ -111,6 +78,9 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 00:50
+	- Surprisingly not finishing the day overwhelmed. 10 minutes left and I did what I planned to do. So this speed element has a weird property of time dilution. When I'm productively unproductive - I'm unproductive within the shrunk time perception, so it makes me slow x5. 
+	- Proper productivity doesn't have that nuance. That's how time is gained. Even small discouragement burst cost a lot, because time flies, and you're like 10% as effective. 
 - ###### 00:02
 	- I'm moving. Finally. 1 hour till sleep. But at least something. 
 - ###### 23:06

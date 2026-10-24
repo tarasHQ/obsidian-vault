@@ -45,6 +45,7 @@ action:
     - [ ] Day scene
     - [ ] Check webcam (exposure)
     - [ ] Check IP cam (quality, delay)
+        - [ ] Move to "day position"
     - [ ] Check all elements are present on the canvas
     - [ ] Check TickTick schedule 
         - [ ] correct day, scheduled, scaled
@@ -65,6 +66,7 @@ action:
         - [ ] Check audio delay to webcam
         - [ ] Night scene
         - [ ] Check IP cam (quality, delay)
+            - [ ] Move to "night position"
         - [ ] Check TickTick schedule (correct day, scheduled)
         - [ ] Set time of next sleep for stager timer.
     - ###### BEFORE SLEEP
@@ -72,27 +74,12 @@ action:
         - [ ] Create journal for the next day
         - [ ] Move uncompleted tasks
         - [ ] Make sure all day's reflections are linked under reflections
+        - [ ] monitor contrast/bright. at 0
 
 ---
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-
-
----
-
-## TASKS
-%%Cognitive offload for the day, to not keep these in my mind for the whole time%%
-- ### Active
-	- [ ] 
-- ### Completed
-	- [ ] 
-
----
-
-## REFLECTIONS
-%%Thinking through writing is much better - there must be low-friction place to do so%%
-- 
 
 
 ---
@@ -104,6 +91,23 @@ action:
 > 
 >Approx. Dreams Compensation - **TODO**
 
+---
+
+## TASKS
+%%Cognitive offload for the day, to not keep these in my mind for the whole time%%
+- ### Active
+	- [ ] 
+- ### Priority
+	- [ ] 
+- ### Completed
+	- [ ] copy_from_here
+	- [ ] 
+
+---
+
+## REFLECTIONS
+%%Thinking through writing is much better - there must be low-friction place to do so%%
+- 
 
 ---
 

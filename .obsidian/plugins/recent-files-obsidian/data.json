@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "REMARK42 1",
-      "path": "@projects/taras.life/__obsidian__/OLD/REMARK42 1.md"
+      "basename": "AGENTS",
+      "path": "@projects/0vibes/__obsidian__/docs/AGENTS.md"
     },
     {
       "basename": "AGENTS",
       "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
     },
     {
-      "basename": "AGENTS",
-      "path": "@projects/0vibes/__obsidian__/docs/AGENTS.md"
+      "basename": "_project",
+      "path": "@projects/0vibes/__obsidian__/_project.md"
+    },
+    {
+      "basename": "PHILOSOPHY",
+      "path": "@projects/0vibes/__obsidian__/docs/PHILOSOPHY.md"
+    },
+    {
+      "basename": "DEV_RULES",
+      "path": "@projects/0vibes/__obsidian__/docs/DEV_RULES.md"
     },
     {
       "basename": "proxmox",
@@ -191,10 +199,6 @@
     {
       "basename": "ThePlan",
       "path": "ThePlan/ThePlan.canvas"
-    },
-    {
-      "basename": "On Discouragement",
-      "path": "Psychoanalysis/_reflections/On Discouragement.md"
     }
   ],
   "omittedPaths": [],

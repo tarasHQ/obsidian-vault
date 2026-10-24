@@ -1,0 +1,97 @@
+
+%%[[[T]daily-journaling|Daily Journal Template]]%%
+
+```meta-bind-button
+style: primary
+label: New Journal Entry
+icon: notebook-pen
+cssStyle: "background-color: #363124; font-size: 0.8rem;color: var(--text-normal);"
+actions:
+  - type: templaterCreateNote
+    templateFile: "_static/templater/[T]daily-journaling.md"
+    openNote: true
+    openIfAlreadyExists: true
+```
+
+---
+
+```meta-bind-button
+label: Remove Night Checklist
+style: default
+icon: trash-2
+cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
+action:
+  type: js
+  file: _static/scripts/meta-bind/journal-remove-checklist.js
+```
+- ##### NIGHT CHECKLIST
+    - ###### AFTER NEW RECORDING
+        - [ ] Check audio delay to webcam
+        - [ ] Night scene
+        - [ ] Check IP cam (quality, delay)
+            - [ ] Night position
+        - [ ] Check TickTick schedule (correct day, scheduled)
+        - [ ] Set time of next sleep for stager timer.
+    - ###### BEFORE SLEEP
+        - [ ] Write overview of the current day
+        - [ ] Create journal for the next day
+        - [ ] Move uncompleted tasks
+        - [ ] Make sure all day's reflections are linked under reflections
+        - [ ] monitor contrast/bright. at 0
+
+---
+
+## OVERVIEW
+%%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
+
+
+---
+
+>[!tldr] CONTEX
+>Sleep Duration - **6:53**
+> 
+>Time Spent in Bed - **Medium**
+> 
+>Approx. Dreams Compensation - **As if the ceiling came down and pushed me to the ground**
+
+---
+
+## TASKS
+%%Cognitive offload for the day, to not keep these in my mind for the whole time%%
+- ### Active
+	- [ ] Add other google accounts in family to main one
+	- [ ] Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
+	- [ ] You need simple back/forward(automatic visibility if exists) navigation between journal entries. (or use calendar plugin for the time being)
+	- [ ] You need a to select a block of text, press hotkey and save it as a reflection with link that replace selected text. (also it should have same frontmatter as current flow)
+		- [ ] On top of it, current flow of templated reflections probably should force copy link into clipboard as well. These shouldn't be in the journaling, because they give constraints on the size. 
+			- or maybe you just use initial `_reflections` flow instead of limiting yourself within the journal entry? 
+	- [ ] Rewrite remark42 plugin. But after the other things are good.
+- ### Priority
+	- [ ] 
+	- [ ] 🔴Now time to compose agents.md and figure out where remark42 goes (probably stays in it, since it's small.) 
+		- [ ] After that - you write proper `_project.md`, start phase 001 of rewriting remark42 plugin - and the flow is established and you can move on finally.
+- ### Completed
+	- [ ] copy_from_here
+	- [ ] 
+
+---
+
+## REFLECTIONS
+%%Thinking through writing is much better - there must be low-friction place to do so%%
+- 
+
+---
+
+## TIME LOG
+
+```meta-bind-button
+label: New Log Entry
+style: default
+icon: clock
+cssStyle: "height: 24px; padding: 5px; font-size 11px;"
+action:
+  type: js
+  file: _static/scripts/meta-bind/journal-time-entry.js
+```
+- ###### 01:14
+	- Will make my life easier. For nights will move camera upward a bit, to avoid explicit poses and blurring them out after))
