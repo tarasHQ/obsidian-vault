@@ -100,6 +100,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 16:08
+	- Yeah, want to relax again. Post-meal crash out is huge PIA. If I can squeeze in 45 mins maybe it won't happen as much? Like I have some impulse to work at that time point. Usually. 
+	- What if the unconscious just wants me to relax and take it easy for a while? Like I'll do that for 15 minutes. 
+		- ==🟡It worked. I waited till the second impulse, made sure it's real and not a fantasy, like I really want to do the task I need to do - and seems like it placed me into the right place. Not super enthusiastic, but I'll voluntarily work with the proper attitude.==
 - ###### 15:05
 	- ==🟡ALL OF THIS HAPPENED BECAUSE I DIDN'T SUCCUMB TO PMO AUTOMATISMS==
 - ###### ==🟠14:54 Meal #1==
