@@ -70,10 +70,10 @@ action:
 		- Tick tick becomes PIA. Limited too. Maybe there's something else? Maybe there's self-hosted things? 
 - ### Priority
 	- [ ] 
-	- [ ] Rewrite remark42 plugin. But after the other things are good.
-		- [ ] 
+	- [ ] Rewrite remark42 plugin. Properly. With the new workflow. 
 - ### Completed
 	- [ ] copy_from_here
+	- [x] read through all remark42 docs. Now I'm ready to rewrite the plugin.
 	- [x] wrote 00 step with checklists. 
 	- [x] Fixed obsidian indentation issues with comments. Now can use them and everything is straight and beautiful.
 	- [x] wrote dev rules

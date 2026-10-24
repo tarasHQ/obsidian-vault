@@ -1,7 +1,4 @@
 ## Frontend 
-### config `var remark_config = {}`
-- **`no_footer`**: true - to hide footer with links to remark42.
-
 
 ### Themes & Fonts
 #### Excerpt from docs

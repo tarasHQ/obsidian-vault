@@ -32,7 +32,7 @@ SSOT of plans, reflections, idea capturing, phases and implementation flows of a
 	1. [User] Running template of phase creation
 	2. [User] Reflecting on the the upcoming phase to get the whole scope of the problem
 	3. [User] Filling up the phase's plan (goals, visions, high-level points, etc.)
-	4. [User] Checking 00-preparation step
+	4. [User] Checking `00-start.md` step
 	5. [LLM + User] Generating LLM's block of high level planning + steps division **(no details on steps yet)**
 - #### 2. Low-level planning loop
   %%Starting the loop focused on creation of steps contents%%
