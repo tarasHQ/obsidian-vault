@@ -69,6 +69,7 @@ action:
 - ### Priority
 	- [ ] 
 	- [ ] Rewrite remark42 plugin. But after the other things are good.
+		- [ ] 
 - ### Completed
 	- [ ] copy_from_here
 	- [x] devrules
@@ -105,6 +106,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 19:21
+	- I can't even comprehend the difference between feeling like something is totally ok thing to do, and then 15 minutes later - it was a complete mistake. And to have it like that for years. Like the brain just denies to learn...
+	- ==🔴 I didn't not waste 15 minutes. Like I'm just completely lacking and will to do anything as the result of it. So it seems like the cost of it is like an hour at least. If I'll manage to get that productivity back. Like I started at :00, now it's :26, I'm still neither working nor want to.==
+	- Maybe I should just go eat? I'll fill the templates first
 - ###### 17:26
 	- Distracts a lot. Ok. I'll try a rule. Do whatever you want, but after I'm done with everything that is blocking plugin rewrite. So it won't be out of avoidance (aka automatism).
 - ###### 17:22

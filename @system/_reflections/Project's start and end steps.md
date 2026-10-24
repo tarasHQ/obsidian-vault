@@ -36,7 +36,7 @@ isIntegrated: true
 			- **ideas/artifacts/readmes/docs**
 				- To make sure you're not forgetting anything.
 				- That actually can be big, because like even right now - I was delaying reading remark42 docs. like here and now is the best time to do it. Right before you even start planning. And you need explicit mentioning of this, cuz like right now I forgot about it. 
-				- I'
+				- ==for sure it was worth to read the docs. like for sure. it didn't give me much information beyond what LLM can read - but it gave me the vision, I see where it's headed. So it's very useful.
 			- **I'm familiarized myself with code I'm about to change**
 				- often I rush into changing "temporary"/"vibecoded" stuff without actually taking a good look how it works, because the issue is - you will feel lost and stranded when LLM starts to make plans/references around unfamiliar code. That's when it starts. 
 			- maybe something else, it starts like that. I'll get more as I go.
