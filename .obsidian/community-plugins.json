@@ -25,5 +25,6 @@
   "snipdock",
   "obsidian-git",
   "file-cleaner-redux",
-  "close-and-switch-to-recent-tab"
+  "close-and-switch-to-recent-tab",
+  "code-block-fold"
 ]

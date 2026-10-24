@@ -1,12 +1,56 @@
 {
   "recentFiles": [
     {
-      "basename": "AGENTS",
-      "path": "@projects/0vibes/__obsidian__/docs/AGENTS.md"
+      "basename": "October 24th, 2026",
+      "path": "@journal/2026/October/October 24th, 2026.md"
+    },
+    {
+      "basename": "obsidian",
+      "path": "@system/obsidian/obsidian.md"
+    },
+    {
+      "basename": "journaling",
+      "path": "@system/obsidian/journaling.md"
+    },
+    {
+      "basename": "Plans",
+      "path": "@system/Plans.md"
+    },
+    {
+      "basename": "schedule",
+      "path": "@system/schedule.md"
+    },
+    {
+      "basename": "SystemOfPlans",
+      "path": "@system/SystemOfPlans.md"
+    },
+    {
+      "basename": "Snipaste_2026-10-21_22-46-28",
+      "path": "Maintenance/_attachments/Snipaste_2026-10-21_22-46-28.png"
+    },
+    {
+      "basename": "About",
+      "path": "About.md"
+    },
+    {
+      "basename": "Home",
+      "path": "Home.md"
+    },
+    {
+      "basename": "Obsidian",
+      "path": "Obsidian.md"
+    },
+    {
+      "basename": "[T]daily-journaling",
+      "path": "_static/templater/[T]daily-journaling.md"
     },
     {
       "basename": "AGENTS",
       "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
+    },
+    {
+      "basename": "AGENTS",
+      "path": "@projects/0vibes/__obsidian__/docs/AGENTS.md"
     },
     {
       "basename": "_project",
@@ -89,10 +133,6 @@
       "path": "System/deep-learning/deep-learning.md"
     },
     {
-      "basename": "[T]daily-journaling",
-      "path": "_static/templater/[T]daily-journaling.md"
-    },
-    {
       "basename": "October 20th, 2026",
       "path": "@journal/2026/October/October 20th, 2026.md"
     },
@@ -107,10 +147,6 @@
     {
       "basename": "obsidian",
       "path": "System/obsidian/obsidian.md"
-    },
-    {
-      "basename": "Obsidian",
-      "path": "Obsidian.md"
     },
     {
       "basename": "ThePlan",
@@ -157,48 +193,12 @@
       "path": "_static/scripts/meta-bind/journal-remove-checklist.js"
     },
     {
-      "basename": "About",
-      "path": "About.md"
-    },
-    {
       "basename": "_gameDev",
       "path": "Game/_gameDev.canvas"
     },
     {
       "basename": "Youtube",
       "path": "Game/Youtube.md"
-    },
-    {
-      "basename": "Thinking",
-      "path": "Game/Thinking.md"
-    },
-    {
-      "basename": "DevSpec",
-      "path": "Game/DevSpec.md"
-    },
-    {
-      "basename": "Home",
-      "path": "Home.md"
-    },
-    {
-      "basename": "The Full Commitment Day",
-      "path": "Productivity/_reflections/The Full Commitment Day.md"
-    },
-    {
-      "basename": "Starting anew",
-      "path": "Psychoanalysis/_reflections/Starting anew.md"
-    },
-    {
-      "basename": "post-meal-friction",
-      "path": "Productivity/_reflections/post-meal-friction.md"
-    },
-    {
-      "basename": "Pain management (full commitment)",
-      "path": "Psychoanalysis/_reflections/Pain management (full commitment).md"
-    },
-    {
-      "basename": "ThePlan",
-      "path": "ThePlan/ThePlan.canvas"
     }
   ],
   "omittedPaths": [],

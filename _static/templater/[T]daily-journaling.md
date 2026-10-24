@@ -18,7 +18,7 @@ await tp.file.move(fullPath);
 
 %%[[[T]daily-journaling|Daily Journal Template]]%%
 
-```meta-bind-button
+```meta-bind-button {fold}
 style: primary
 label: New Journal Entry
 icon: notebook-pen
@@ -32,7 +32,7 @@ actions:
 
 ---
 
-```meta-bind-button
+```meta-bind-button {fold}
 label: Remove Morning Checklist
 style: default
 icon: trash-2
@@ -52,7 +52,7 @@ action:
         - [ ] red "now" line is there
     - [ ] Fill Context block
 
-```meta-bind-button
+```meta-bind-button {fold}
 label: Remove Night Checklist
 style: default
 icon: trash-2
@@ -113,7 +113,7 @@ action:
 
 ## TIME LOG
 
-```meta-bind-button
+```meta-bind-button {fold}
 label: New Log Entry
 style: default
 icon: clock
