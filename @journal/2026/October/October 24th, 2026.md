@@ -72,8 +72,10 @@ action:
 		- [ ] 
 - ### Completed
 	- [ ] copy_from_here
+	- [ ] 
+	- [x] Fixed obsidian indentation issues with comments. Now can use them and everything is straight and beautiful.
 	- [x] devrules
-	- [ ] reading through remark42 docs to not miss anything interesting before starting implementation.
+	- [x] reading through remark42 docs to not miss anything interesting before starting implementation.
 	- [x] 🔴Now time to compose agents.md and figure out where remark42 goes (probably stays in it, since it's small.) 
 	- [x] Fixed another issue with deskflow, when 
 	- [x] successful optimization
@@ -106,6 +108,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 19:51
+	- ==🟡Mistake.... mistake mistake mistake...==
 - ###### 19:21
 	- I can't even comprehend the difference between feeling like something is totally ok thing to do, and then 15 minutes later - it was a complete mistake. And to have it like that for years. Like the brain just denies to learn...
 	- ==🔴 I didn't not waste 15 minutes. Like I'm just completely lacking and will to do anything as the result of it. So it seems like the cost of it is like an hour at least. If I'll manage to get that productivity back. Like I started at :00, now it's :26, I'm still neither working nor want to.==
