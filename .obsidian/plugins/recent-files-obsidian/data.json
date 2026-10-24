@@ -5,6 +5,18 @@
       "path": "@journal/2026/October/October 24th, 2026.md"
     },
     {
+      "basename": "AGENTS",
+      "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
+    },
+    {
+      "basename": "AGENTS",
+      "path": "@projects/0vibes/__obsidian__/docs/AGENTS.md"
+    },
+    {
+      "basename": "Can't start to work in the morning!",
+      "path": "Productivity/_reflections/Can't start to work in the morning!.md"
+    },
+    {
       "basename": "obsidian",
       "path": "@system/obsidian/obsidian.md"
     },
@@ -43,14 +55,6 @@
     {
       "basename": "[T]daily-journaling",
       "path": "_static/templater/[T]daily-journaling.md"
-    },
-    {
-      "basename": "AGENTS",
-      "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
-    },
-    {
-      "basename": "AGENTS",
-      "path": "@projects/0vibes/__obsidian__/docs/AGENTS.md"
     },
     {
       "basename": "_project",
@@ -195,10 +199,6 @@
     {
       "basename": "_gameDev",
       "path": "Game/_gameDev.canvas"
-    },
-    {
-      "basename": "Youtube",
-      "path": "Game/Youtube.md"
     }
   ],
   "omittedPaths": [],

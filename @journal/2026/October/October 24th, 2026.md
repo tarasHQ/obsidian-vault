@@ -78,7 +78,7 @@ action:
 
 ## REFLECTIONS
 %%Thinking through writing is much better - there must be low-friction place to do so%%
-- 
+- [[../../../Productivity/_reflections/Can't start to work in the morning!|Can't start to work in the morning!]]
 
 ---
 
@@ -93,6 +93,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 12:08
+	- ==🟡Want to PMO. I keep forgetting why it's bad - and here's the real reason. I have a task, and I get distracted by urges to avoid. Like PMO won't make me battle-ready after either. It gives false promise now, but time after time - it's all the same. So I won't entertain such thoughts==
 - ###### 11:43
 	- So that's how it is. When I'm in a proper state of mind - I would torture myself for times like right now. Where I don't care and can't start.
 	- Instead of 15 minute timer - can I do 10 minute walking reflection? Maybe it'll get me going the same way it did yesterday (though I was kinda hyped before that)
