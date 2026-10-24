@@ -110,6 +110,12 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 21:55
+	- The issue with that advanced workflow is that in states like now I just can't be bothered going through all that boilerplate. Like I want to just type to LLM - "`rewrite plug based on that dump of notes I have and leave me alone in the meantime`". But I know it's pathological. 
+	- I must wait through this post-meal crash out. And see what will happen next.
+	- ==🟡Maybe size of my meals is too big? Like volume-wise. I don't eat much in calories. But like 70g of flour in bread + around 400-500g of meat + a tomato = maybe it's indeed to much. Thinner slices of meat. A bit less bread. But it's so good to have a nice full meal and watch something entertaining...==
+- ###### 21:48
+	- Ok, meal kinda charged me. Discharged at the same time a bit, cuz another "accidental" ai hype that got my attention. Like consciously I know that my project is like perpendicular and have at least potential to be somewhat successful, but unconsciously borders are blurred and I'm scared. 
 - ###### 20:42
 	- PMO cost me 2 hours. 2 damn hours. 15-minute thing - 2 hours in the trash. Awesome. 
 	- And will I learn that I shouldn't do it? - no. Like it's as if brain just can't/won't do that. Next day comes, perspective shifts, and PMO will be on the table once again.
