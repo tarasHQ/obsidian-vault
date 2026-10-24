@@ -1,20 +1,68 @@
 {
   "recentFiles": [
     {
-      "basename": "00-start",
-      "path": "@projects/taras.life/__obsidian__/phases/001/steps/00-start.md"
-    },
-    {
       "basename": "_plan_001",
       "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
     },
     {
-      "basename": "_project",
-      "path": "@projects/taras.life/__obsidian__/_project.md"
+      "basename": "agents contents",
+      "path": "@projects/0vibes/__obsidian__/phases/001/_reflections/agents contents.md"
+    },
+    {
+      "basename": "Explorer View Suboptimal",
+      "path": "@projects/0vibes/__obsidian__/phases/001/_reflections/Explorer View Suboptimal.md"
+    },
+    {
+      "basename": "How to start 002",
+      "path": "@projects/0vibes/__obsidian__/phases/001/_reflections/How to start 002.md"
+    },
+    {
+      "basename": "steps-contents",
+      "path": "@projects/0vibes/__obsidian__/phases/001/_reflections/steps-contents.md"
+    },
+    {
+      "basename": "Templater flow",
+      "path": "@projects/0vibes/__obsidian__/phases/001/_reflections/Templater flow.md"
+    },
+    {
+      "basename": "Temp extraction",
+      "path": "@projects/0vibes/__obsidian__/phases/001/artifacts/Temp extraction.md"
+    },
+    {
+      "basename": "_plan_001",
+      "path": "@projects/0vibes/__obsidian__/phases/001/_plan_001.md"
+    },
+    {
+      "basename": "PLANNING",
+      "path": "_static/projects/PLANNING.md"
     },
     {
       "basename": "DEV_RULES",
       "path": "@projects/0vibes/__obsidian__/docs/DEV_RULES.md"
+    },
+    {
+      "basename": "Project's start and end steps",
+      "path": "@system/_reflections/Project's start and end steps.md"
+    },
+    {
+      "basename": "October 24th, 2026",
+      "path": "@journal/2026/October/October 24th, 2026.md"
+    },
+    {
+      "basename": "[T]step-start",
+      "path": "_static/templater/project/[T]step-start.md"
+    },
+    {
+      "basename": "[T]step-end",
+      "path": "_static/templater/project/[T]step-end.md"
+    },
+    {
+      "basename": "00-start",
+      "path": "@projects/taras.life/__obsidian__/phases/001/steps/00-start.md"
+    },
+    {
+      "basename": "_project",
+      "path": "@projects/taras.life/__obsidian__/_project.md"
     },
     {
       "basename": "DEV_RULES",
@@ -47,10 +95,6 @@
     {
       "basename": "Home",
       "path": "Home.md"
-    },
-    {
-      "basename": "October 24th, 2026",
-      "path": "@journal/2026/October/October 24th, 2026.md"
     },
     {
       "basename": "Can't start to work in the morning!",
@@ -125,10 +169,6 @@
       "path": "@journal/2026/October/October 22nd, 2026.md"
     },
     {
-      "basename": "PLANNING",
-      "path": "_static/projects/PLANNING.md"
-    },
-    {
       "basename": "Ideas",
       "path": "@projects/taras.life/Social/Ideas.md"
     },
@@ -159,46 +199,6 @@
     {
       "basename": "October 20th, 2026",
       "path": "@journal/2026/October/October 20th, 2026.md"
-    },
-    {
-      "basename": "README",
-      "path": "Social/README.md"
-    },
-    {
-      "basename": "README",
-      "path": "@journal/README.md"
-    },
-    {
-      "basename": "obsidian",
-      "path": "System/obsidian/obsidian.md"
-    },
-    {
-      "basename": "ThePlan",
-      "path": "ThePlan.canvas"
-    },
-    {
-      "basename": "journaling",
-      "path": "System/obsidian/journaling.md"
-    },
-    {
-      "basename": "inverter-cooling-rewiring-plan",
-      "path": "Maintenance/inverter-cooling-rewiring-plan.md"
-    },
-    {
-      "basename": "SystemOfPlans",
-      "path": "System/SystemOfPlans.md"
-    },
-    {
-      "basename": "Social",
-      "path": "_private/Social.md"
-    },
-    {
-      "basename": "empty-reflection",
-      "path": "Sleep/_reflections/empty-reflection.md"
-    },
-    {
-      "basename": "proxmox-backup-plan",
-      "path": "@journal/2026/October/plans/proxmox-backup-plan.md"
     }
   ],
   "omittedPaths": [],

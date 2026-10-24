@@ -64,21 +64,21 @@ ctime: 2026-10-04 15:06
 		- high-level-step - step is filled only as high level, without much implementation details. 
 		- full-step - step is filled fully with high level planning and low level implementation steps
 		- awaiting-review - step needs to be reviewed by the user. 
-- ### Step Completion Flow
-	- Why? - self documenting. PLANNING.md stays high-level and compact. 
-	- Placed as the separate block at the end of each state in markdown template. 
-	- Tasks
-		- Make sure frontmatter properties set correctly.
-		- Update step file for cleanup, so it won't have unnecessary information when we read it from further steps
-			- **The goal is to remove working clutter—not produce a polished historical report.**
-			- Remove temporary investigation notes that no longer matter.
-			- Resolve or remove obsolete open questions.
-			- Condense overly detailed execution tasks when they create reading noise.
-			- Keep consequential decisions and intentional limitations.
-			- Keep stable task identifiers if other documents reference them.
-			- Preserve your original input rather than rewriting it into an LLM interpretation.
-			- If the step is already compact, leave it alone.
-- ### Rules
+	- ### Step Completion Flow
+		- Why? - self documenting. PLANNING.md stays high-level and compact. 
+		- Placed as the separate block at the end of each state in markdown template. 
+		- Tasks
+			- Make sure frontmatter properties set correctly.
+			- Update step file for cleanup, so it won't have unnecessary information when we read it from further steps
+				- **The goal is to remove working clutter—not produce a polished historical report.**
+				- Remove temporary investigation notes that no longer matter.
+				- Resolve or remove obsolete open questions.
+				- Condense overly detailed execution tasks when they create reading noise.
+				- Keep consequential decisions and intentional limitations.
+				- Keep stable task identifiers if other documents reference them.
+				- Preserve your original input rather than rewriting it into an LLM interpretation.
+				- If the step is already compact, leave it alone.
+	- ### Rules
 	- Allow step number to be with decimal, to support unplanned scenarios, for which we can have in-between step like 05.5.
 	- Steps will be file-only. No integrated ones into the file
 		- Dataview JS will handle order and linking inside the plan
