@@ -15,7 +15,7 @@ actions:
 
 ---
 
-```meta-bind-button
+```meta-bind-button {fold}
 label: Remove Night Checklist
 style: default
 icon: trash-2
@@ -25,6 +25,7 @@ action:
   file: _static/scripts/meta-bind/journal-remove-checklist.js
 ```
 - ##### NIGHT CHECKLIST
+    - [ ] ==🟡try 15 fps and 4seconds keyframe== - but only if the size of current day will be ok. I think under 10 gig per day is optimal. 1tb per 100 days. Like don't think about future. Maybe in a year you won't need to record yourself anymore. So that's fine. If not - youtube will cover ya.  Also you can re-encode to reduce file size by 50%. So you can push 10gb.
     - ###### AFTER NEW RECORDING
         - [ ] Check audio delay to webcam
         - [ ] Night scene
