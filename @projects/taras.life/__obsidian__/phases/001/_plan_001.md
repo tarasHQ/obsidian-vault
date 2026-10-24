@@ -10,7 +10,7 @@ isIntegrated: false
 ## Description & Meaning
 %%A few sentences about rough direction of the plan, just to get initial constraints on brainstorming. Goals and visions that will sustain meaning in the user through the whole process of planning and implementation%%
 
-> [!summary]
+> [!summary]  
 > ### Description
 > Plugin was vibecoded. It accumulates a lot of "temporary" code around it that doesn't follow established standards and best practices. The goal of this plan is to rewrite it properly. And as the secondary goal - to gain more knowledge about how quarts/plugins/remark42 works. 
 >  
@@ -47,7 +47,6 @@ await cJS(c => c.RenderReflectionHelpers.renderColumns(dv, this.container));
 - #### Out of Scope
 
 ---
-[LLM IS NOT ALLOWED TO EDIT TEXT ABOVE THIS LINE]
 
 ### LLM-input 
 %%Where LLM allowed to create, maintain. research and persist high-level information that needs to be persisted independently from steps-scope%%
@@ -55,13 +54,12 @@ await cJS(c => c.RenderReflectionHelpers.renderColumns(dv, this.container));
 - #### Plan
 - #### Nuances
 
-## Steps
+---
+---
+---
 
+## Steps
+%%Rendered by dataview for the user%%
 ```dataviewjs
 await cJS(c => c.PlanStepsList.renderSteps(dv, this.container));
 ```
-
-
-
-
-

@@ -66,15 +66,17 @@ action:
 	- [ ] You need a to select a block of text, press hotkey and save it as a reflection with link that replace selected text. (also it should have same frontmatter as current flow)
 		- [ ] On top of it, current flow of templated reflections probably should force copy link into clipboard as well. These shouldn't be in the journaling, because they give constraints on the size. 
 			- or maybe you just use initial `_reflections` flow instead of limiting yourself within the journal entry? 
+	- [ ] 🔴[[plans/better-schedule-plan|better-schedule-plan]]
+		- Tick tick becomes PIA. Limited too. Maybe there's something else? Maybe there's self-hosted things? 
 - ### Priority
 	- [ ] 
 	- [ ] Rewrite remark42 plugin. But after the other things are good.
 		- [ ] 
 - ### Completed
 	- [ ] copy_from_here
-	- [ ] 
+	- [x] wrote 00 step with checklists. 
 	- [x] Fixed obsidian indentation issues with comments. Now can use them and everything is straight and beautiful.
-	- [x] devrules
+	- [x] wrote dev rules
 	- [x] reading through remark42 docs to not miss anything interesting before starting implementation.
 	- [x] 🔴Now time to compose agents.md and figure out where remark42 goes (probably stays in it, since it's small.) 
 	- [x] Fixed another issue with deskflow, when 
@@ -108,6 +110,13 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 20:42
+	- PMO cost me 2 hours. 2 damn hours. 15-minute thing - 2 hours in the trash. Awesome. 
+	- And will I learn that I shouldn't do it? - no. Like it's as if brain just can't/won't do that. Next day comes, perspective shifts, and PMO will be on the table once again.
+- ###### 20:01
+	- Very subtle edge between barely doing the work without PMO, and trying to do the work after PMO. 
+	- Like you think "might as well", but that makes all the difference. When you ride that edge of productivity as a wave - you get the best you can get. 
+	- ==PMO just crashes the damn thing. You don't have the edge, but also you don't have the productivity==
 - ###### 19:51
 	- ==🟡Mistake.... mistake mistake mistake...==
 - ###### 19:21
