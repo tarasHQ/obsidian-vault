@@ -5,20 +5,20 @@
       "path": "@projects/taras.life/__obsidian__/phases/001/steps/00-start.md"
     },
     {
-      "basename": "[T]step-start",
-      "path": "_static/templater/project/[T]step-start.md"
-    },
-    {
-      "basename": "agents contents",
-      "path": "@projects/0vibes/__obsidian__/phases/001/_reflections/agents contents.md"
+      "basename": "Project's start and end steps",
+      "path": "@system/_reflections/Project's start and end steps.md"
     },
     {
       "basename": "October 24th, 2026",
       "path": "@journal/2026/October/October 24th, 2026.md"
     },
     {
-      "basename": "Project's start and end steps",
-      "path": "@system/_reflections/Project's start and end steps.md"
+      "basename": "[T]step-start",
+      "path": "_static/templater/project/[T]step-start.md"
+    },
+    {
+      "basename": "agents contents",
+      "path": "@projects/0vibes/__obsidian__/phases/001/_reflections/agents contents.md"
     },
     {
       "basename": "on-discouragement-again",
