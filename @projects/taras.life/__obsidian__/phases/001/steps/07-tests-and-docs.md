@@ -13,9 +13,10 @@ Makes the rewrite defensible long-term: tests that fail when a locked decision r
 
 ### Intended outcome
 - Tests cover the decisions that would otherwise rot silently: no-container no-op, single-instance lifecycle, viewport gating, thread-URL construction, id validation, options validation, container markup.
-- Tests import the source directly. With no `dist/`, they cannot pass against stale output — a class of false green disappears by construction.
+- Tests are authored fresh against the new contract and import the source directly; nothing is migrated from the old suite, because the plugin itself is a rewrite. With no `dist/`, they also cannot pass against stale output.
 - A plugin README that answers, without reading code: what this is, the frontmatter contract, the option table, the loading behaviour, "there is no build step and here is why", how to verify locally, how to upgrade Remark42 (re-capture the fixture), and how to roll back.
 - Stale artifacts removed: `PLAN.md`, `REMARK42.md`, the shell test note, and the `custom-plugins/README.md` rows this phase falsified.
+- The other places describing the old arrangement are corrected too: the root `README.md` build/deployment and "add a local plugin" sections, and the `.prettierignore` entry that keeps the captured fixture byte-identical.
 - `AGENTS.md` matches reality: `id` as the comment key, no build step for local plugins, and the scope freeze.
 
 ### Local invariants
@@ -30,7 +31,7 @@ Makes the rewrite defensible long-term: tests that fail when a locked decision r
 
 ## Discussion & Reflections
 
-1. **Test file shape.** The current tests load `dist/`, which will no longer exist.
+1. **Test file shape.** The old suite is deleted with the plugin rather than migrated, so this is a fresh choice.
    - (a) Keep `.mjs` tests and load source through a TypeScript loader — works, but an odd mix.
    - (b) Write `.ts` tests that import `../src/*.ts` directly and run under the repo's existing runner.
    - (c) Split into two suites, one per half of the plugin.

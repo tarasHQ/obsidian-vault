@@ -64,12 +64,12 @@ await cJS(c => c.RenderReflectionHelpers.renderColumns(dv, this.container));
 - #### Plan
 	- Steps, in implementation order:
 		- `01-loading-topology-spike` — prove D1 on every invocation path plus a Workers preview deploy; compare the captured fixture with the live module; record the network baseline. Decides D1's fallback if it fails.
-		- `02-package-lock-in` — self-contained package: community types, no host imports, `.ts` entry, removal of `dist`/`prebuild`/`build.mjs`, tightened tsconfig, root guards.
+		- `02-package-lock-in` — delete the old plugin and author a new self-contained skeleton: community types, no host imports, `.ts` entry, no `dist`/`prebuild`/`build.mjs`, tightened tsconfig, root guards.
 		- `03-options-contract` — D2 + D3: curated keys and passthrough, defaults, validation that really fails the build.
 		- `04-identity-id-rename` — D4.
 		- `05-render-component` — build-time component in `h()`: container markup, data contract, `css`, bootstrap injection.
 		- `06-browser-runtime` — D5: visibility gating, ownership of the module's import-time side effects, SPA lifecycle, theme, error and timeout handling.
-		- `07-tests-and-docs` — regression tests, plugin README as SSOT, deletion of `PLAN.md`/`REMARK42.md`/the test note, AGENTS.md sync.
+		- `07-tests-and-docs` — tests authored against the new contract, plugin README as SSOT, deletion of `PLAN.md`/`REMARK42.md`/the test note, AGENTS.md sync.
 		- `08-visual-polish` — D7.
 	- Rule: step 01 is a spike with a pre-agreed fallback; everything after it is written against the topology it proves.
 	- Rule: `__obsidian__/phases/001/artifacts/README.md` and `custom-plugins/README.md` are planning inputs, not SSOT. The plugin's own `README.md` becomes SSOT at step 07.
@@ -84,6 +84,9 @@ await cJS(c => c.RenderReflectionHelpers.renderColumns(dv, this.container));
 	- **`componentLoader` hides the real import error** behind `Plugin "<name>" declares components but failed to load them` — every resolution failure presents identically.
 	- **Capture rule.** The fixture is re-captured on every Remark42 upgrade (`fixtures/README.md`); the vendored docs do not state a Remark42 version.
 	- **No instance-level theming API exists.** Remark42 documents no server-side theme, custom-CSS or branding hook; `theme`, `locale` and `no_footer` are client-side only and no server default theme exists. The only routes past the iframe boundary are `REMARK_WEB_ROOT` (same-named files win over embedded ones, but the directory replaces the whole frontend and must be re-synced every upgrade), `SIMPLE_VIEW` (minimizes the UI only), and Caddy-layer injection into the served frontend (undocumented, upgrade-fragile). Recorded for step 08; out of scope for this phase.
+	- **Why the npm-workspace `prepare` route was rejected.** Building `dist/` on `npm install` leaves `npx quartz build` serving a stale bundle after a source edit until someone reinstalls — silent staleness that is worse than today's loud failure. Recorded so it is not re-proposed.
+	- **Accepted limitation: the loader swallows the real import error.** A failed entry resolution reports only `Plugin "<name>" declares components but failed to load them`. D1 accepts no patch to `quartz/`, so this stays; the plugin's own validation plus step 07's README and guards are the compensation, and step 01 is where we learn what a healthy load looks like.
+	- **Deployment window during the rewrite.** Production deploys from `main`, so between step 02 (old plugin deleted) and step 06 (runtime working) the live site has no comments. Decide at step 02: do steps 02–06 on one branch and merge once the widget works, or keep the old plugin enabled until the new one renders. Not a code problem — a sequencing one.
 
 ---
 ---
@@ -94,3 +97,20 @@ await cJS(c => c.RenderReflectionHelpers.renderColumns(dv, this.container));
 ```dataviewjs
 await cJS(c => c.PlanStepsList.renderSteps(dv, this.container));
 ```
+
+## Meta-Plan Reflection
+(llms should ignore this. it's for future phases/templates.)
+- **other**
+	- Navigation is kinds PIA. I have to switch between vscode and obsidian. 
+- **plan**
+	- Issue with high-level block. As a user it was hard to write initial thing. It should be kind prompt-like. Not like decisions/invariants. Just give the user free form. 
+	- For llm's high level though - it gets big really quickly. 
+	- High level - must contain links block, with related links, so I don't have to re-type them each time in each new task.
+- **rendered list of steps** 
+	- completed step should be much more dimmed
+	- We need some minimal borders around both table and list.
+- **steps**
+	- takes lots of time to re-explore all stuff I did while I was writing initial step contents. So each step should have "comprehensive exploration" section where LLM leaves links/notes/tips about how to research everything on the topic quickly. without many loops of back and forth. 
+	- Discussion and reflection - should have brief template as well, kinda like I had with kilo code. Autoregressive. Recommended choice. Explain in simple words. Also - I should add rule to automatically add at the end user input point. like `- USER INPUT: ` so I can type right away the answer
+- **artifacts**
+	- maybe it makes more sense for llm to write its output into .md files? Like I'm repeating the same thing right now. First task was exploring 10 minutes about how quartz proposes to write plugins, and now, in a new task, I'm wasting another 5-10 minutes on the same damn issue. 
