@@ -78,7 +78,7 @@ action:
 
 ## REFLECTIONS
 %%Thinking through writing is much better - there must be low-friction place to do so%%
-- [[../../../Productivity/_reflections/Can't start to work in the morning!|Can't start to work in the morning!]]
+- ⭐[[../../../Productivity/_reflections/Can't start to work in the morning!|Can't start to work in the morning!]] - helped big time. So simple, but really effective.
 
 ---
 
@@ -93,6 +93,11 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 12:42
+	- Man that reflection was life saving. 
+	- Bread recipe also gets better. I'm doing mini-bread, which is based on 150g of flour, and it's PIA to have it nicely puffed up in automatic bread maker. But I'm getting better at it. Bigger bread from less flour = I will eat less bread, since "normal" bites will more "air". So hopefully I will be able to have sustainable recipe where I can spread 150g of flour into 4 meals/2 days, so it'll be 37.5g 
+- ###### 12:23
+	- Ok, I'm getting some speed. Also I have this feeling that there's potential to be hyper productive. Like it's there. It's real. I just need to align myself with the unconscious. There's real value in these things.
 - ###### 12:08
 	- ==🟡Want to PMO. I keep forgetting why it's bad - and here's the real reason. I have a task, and I get distracted by urges to avoid. Like PMO won't make me battle-ready after either. It gives false promise now, but time after time - it's all the same. So I won't entertain such thoughts==
 - ###### 11:43
