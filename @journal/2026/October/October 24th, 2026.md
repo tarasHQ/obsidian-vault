@@ -72,6 +72,7 @@ action:
 		- [ ] After that - you write proper `_project.md`, start phase 001 of rewriting remark42 plugin - and the flow is established and you can move on finally.
 - ### Completed
 	- [ ] copy_from_here
+	- [ ] Clean tech stack/libs section of agents + cleaning up unused stuff
 	- [x] fixed worker build time, from 2 minutes to less than 30 seconds.
 	- [x] fixed 404 page
 	- [x] reducing cognitive load of chrome bookmarks (separators idea)
@@ -97,6 +98,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 13:24
+	- Laying down in the chair. Marker. Pattern. 
+- ###### 13:19
+	- Still want to PMO a bit more than I would like to sit with. Distracting as hell. But seems like that's the energy that allows me to be highly productive. If I PMO - I'll drop to baseline or lower. I shouldn't.
 - ###### 12:42
 	- Man that reflection was life saving. 
 	- Bread recipe also gets better. I'm doing mini-bread, which is based on 150g of flour, and it's PIA to have it nicely puffed up in automatic bread maker. But I'm getting better at it. Bigger bread from less flour = I will eat less bread, since "normal" bites will more "air". So hopefully I will be able to have sustainable recipe where I can spread 150g of flour into 4 meals/2 days, so it'll be 37.5g of flour per meal => 26g of carbs. Which is SUPER good. It will be "have a cake and eat it too" situation. 

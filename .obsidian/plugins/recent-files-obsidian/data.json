@@ -5,6 +5,18 @@
       "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
     },
     {
+      "basename": "README",
+      "path": "_static/projects/README.md"
+    },
+    {
+      "basename": "README",
+      "path": "_static/README.md"
+    },
+    {
+      "basename": "DEV_COMMANDS",
+      "path": "@projects/taras.life/__obsidian__/docs/DEV_COMMANDS.md"
+    },
+    {
       "basename": "AGENTS",
       "path": "@projects/0vibes/__obsidian__/docs/AGENTS.md"
     },
@@ -81,10 +93,6 @@
       "path": "@projects/0vibes/__obsidian__/docs/DEV_COMMANDS.md"
     },
     {
-      "basename": "DEV_COMMANDS",
-      "path": "@projects/taras.life/__obsidian__/docs/DEV_COMMANDS.md"
-    },
-    {
       "basename": "October 23rd, 2026",
       "path": "@journal/2026/October/October 23rd, 2026.md"
     },
@@ -127,10 +135,6 @@
     {
       "basename": "windows-reinstall-notes",
       "path": "Maintenance/windows-reinstall-notes.md"
-    },
-    {
-      "basename": "README",
-      "path": "_static/README.md"
     },
     {
       "basename": "October 21st, 2026",
@@ -195,10 +199,6 @@
     {
       "basename": "_sleep",
       "path": "Sleep/_sleep.canvas"
-    },
-    {
-      "basename": "journal-remove-checklist",
-      "path": "_static/scripts/meta-bind/journal-remove-checklist.js"
     }
   ],
   "omittedPaths": [],

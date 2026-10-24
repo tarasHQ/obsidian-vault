@@ -2,7 +2,6 @@
 - ### Dataview
 	- `require()`, `path`, `app.vault.adapter.getBasePath()` - have issues on iOS. So avoid those in scripts.
 
-
 ## Templater
 1. Don't use <> tags in template js comments, to mark some adjustable value it breaks further markdown rendering in obsidian.
 2. Don't use current file name of template, since it might change
