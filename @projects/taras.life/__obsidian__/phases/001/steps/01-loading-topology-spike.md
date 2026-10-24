@@ -1,6 +1,6 @@
 ---
 status: waiting
-#state: high-level
+state: high-level
 reviewedAtStep: ""
 ---
 
@@ -16,6 +16,7 @@ Proves — before anything is rewritten — that the plugin can be loaded with n
 - A recorded network baseline for an opted-in page (our bootstrap → `embed.mjs` → iframe document → `remark.mjs`), with sizes, so later steps can tell a regression from a change.
 - A verdict on whether the captured fixture still matches what production serves.
 - Either "proceed with D1" or "activate D1 fallback", written into the plan's Decisions.
+- If the Workers Node is too old, the fix is a dashboard environment variable rather than a code change — an out-of-repo step that must end up written down in the plugin README.
 
 ### Local invariants
 - The step ends with the repository in a state that builds. Anything experimental is on a throwaway branch or fully reverted.
@@ -34,12 +35,14 @@ Proves — before anything is rewritten — that the plugin can be loaded with n
    - (b) Add a throwaway `custom-plugins/spike` with a trivial `.ts` component and one YAML entry — isolated, and it takes the exact loader path any future local plugin takes; deletion is one line.
    - (c) Copy the plugin into a scratch directory and register that — isolated but duplicates content.
    - **Recommend (b).**
+   - user input - I would suggest a, because current plugin will get deleted anyway. So we might use it till it's there. 
 
 2. **Where to verify Workers behaviour.**
    - (a) Push a branch and use a non-production/preview build — safe, slower.
    - (b) Push to `main` and watch the production build — fast, but a broken plugin layout is briefly user-visible.
    - (c) Trust local Node only — meaningless for the risk being tested.
    - **Recommend (a).** If preview builds aren't available, read the Node version from a normal build log and decide before pushing.
+   - user input - ignore. we do this, I push it through usual flow and deploy as I always do. website is WIP, so it doesn't matter if build will fail. 
 
 3. **How much evidence counts as a baseline.**
    - (a) One manual DevTools capture, recorded here — free, subjective.
@@ -53,4 +56,3 @@ Proves — before anything is rewritten — that the plugin can be loaded with n
    - (c) Delete the fixture and test against the live site — tests then depend on the network.
    - **Recommend (b).**
 
-_Reflection:_ (optional — compact notes from the user)

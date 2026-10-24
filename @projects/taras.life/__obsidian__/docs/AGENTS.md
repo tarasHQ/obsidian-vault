@@ -9,7 +9,7 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 - **Content pipeline**: unified → remark (mdast) → rehype (hast) → JSX. Lives in: `quartz/processors/`.
 - **Styling / bundling**: SCSS compiled with esbuild + Lightning CSS. Lives in: `quartz/styles/`.
 - **Hosting**: Cloudflare Workers, **assets-only** (no `main`, no bindings). Lives in: `wrangler.jsonc`.
-- **Delivery**: Cloudflare **Workers Builds** on push → `npm run build` → `public/`. Lives in: `wrangler.jsonc`.
+- **Delivery**: Cloudflare **Workers Builds** on push → `npm run build` → `public/`. Lives in: `wrangler.jsonc`. NO PREVIEWS enabled. 
 - **Comments**: Self-hosted Remark42 (external LXC) via a local Quartz plugin. Lives in: `custom-plugins/remark42/`.
 - **Analytics**: Cloudflare Web Analytics, injected **at the edge** by a dashboard rule. Lives: ⚠️ outside this repo.
 - **Runtime**: Node ≥ 22, npm ≥ 10.9.2, ESM + TypeScript. Lives in: `package.json`.
@@ -39,7 +39,6 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 - **Bundler**: esbuild (+ `esbuild-sass-plugin`). Notes: bundles page JS and the local plugin's browser script.
 - **CSS toolchain**: SCSS → Lightning CSS. Notes: compiled and minified at build time.
 - **Quality gates**: Prettier, `tsx --test`, `tsc --noEmit`. Notes: `npm run check`, `npm test`.
-- **Deploy CLI**: `wrangler` (devDependency). Notes: local preview/deploy; CI path is Workers Builds.
 
 **Content & generation**
 - **Authoring**: Markdown + YAML frontmatter, written in Obsidian. Notes: lives in `content/` (not vault). 

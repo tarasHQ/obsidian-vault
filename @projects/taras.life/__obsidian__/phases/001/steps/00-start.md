@@ -1,8 +1,8 @@
 ---
 ctime: 2026-10-24 17:08
 isIntegrated: false
-status: waiting
-state: placeholder
+status: implemented
+state: full
 reviewedAtStep: ""
 ---
 
