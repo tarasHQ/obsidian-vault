@@ -5,6 +5,10 @@
       "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
     },
     {
+      "basename": "01-loading-topology-spike",
+      "path": "@projects/taras.life/__obsidian__/phases/001/steps/01-loading-topology-spike.md"
+    },
+    {
       "basename": "PLANNING",
       "path": "_static/projects/PLANNING.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "DevSpec",
       "path": "Game/DevSpec.md"
-    },
-    {
-      "basename": "Home",
-      "path": "Home.md"
     }
   ],
   "omittedPaths": [],

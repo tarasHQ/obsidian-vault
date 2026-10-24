@@ -1,58 +1,31 @@
 ---
-status: waiting
-state: high-level
-reviewedAtStep: ""
+status: implemented
+state: condensed
+reviewedAtStep: "01"
+resolution: superseded
 ---
 
 [← PLAN](../_plan_001.md)
 
-## Description
-Proves — before anything is rewritten — that the plugin can be loaded with no compilation step on every path that builds the site: `npm run build`, a bare `npx quartz build`, `npx quartz build --serve`, and a Cloudflare Workers build. Its job is to turn D1 from a documented bet into an observed fact, or to trigger D1's fallback while nothing else depends on the outcome.
+## Outcome — superseded, not verified
+The original spike was intended to prove native Node TypeScript loading without plugin compilation. The user instead selected Quartz's documented compiled-package model: author TypeScript/TSX, explicitly build the plugin, commit matching `dist/`, and let site generation consume built JavaScript.
 
-## High-Level
+A separate loading experiment is unnecessary for that established model. This step is closed as an architectural decision, not a successful technical verification. `status: implemented` records that administrative closure; `resolution: superseded` distinguishes it from an executed spike.
 
-### Intended outcome
-- Evidence on the four things D1 assumes: Workers Builds' Node strips types; the loader resolves a `.ts` entry through the `.quartz/plugins/remark42` link; the component actually registers; the site renders with no manual step.
-- A recorded network baseline for an opted-in page (our bootstrap → `embed.mjs` → iframe document → `remark.mjs`), with sizes, so later steps can tell a regression from a change.
-- A verdict on whether the captured fixture still matches what production serves.
-- Either "proceed with D1" or "activate D1 fallback", written into the plan's Decisions.
-- If the Workers Node is too old, the fix is a dashboard environment variable rather than a code change — an out-of-repo step that must end up written down in the plugin README.
+## Decisions retained
+- D1 uses compiled JavaScript exports and committed `dist/`; source edits require an explicit rebuild.
+- No native-TypeScript probe, special Node type-stripping floor, forced `h()` authoring, or Quartz loader patch.
+- Use the existing package and normal production push/deploy flow; no separate spike plugin or preview environment.
 
-### Local invariants
-- The step ends with the repository in a state that builds. Anything experimental is on a throwaway branch or fully reverted.
-- No `quartz/` source edits here. The fallback is *chosen* in this step, not implemented.
-- No spike code survives into step 02.
+## Cleanup
+- Restored root `prebuild` to `npx quartz plugin install && npm run build:local-plugins` and restored its command-reference descriptions. Step 02 owns the permanent replacement of that preparation path.
+- No plugin source, fixture, README, dependency, ignore rule or generated asset was changed for this step. The assistant did not stage, commit, push or deploy anything.
+- No builds, tests, browser captures, live fixture comparisons or deployment checks were executed by the assistant. No verification result is claimed, and no local or remote passing state has been established.
 
-### Should NOT be done in this step
-- Rewriting identity, options, render or runtime.
-- Touching the plugin README or deleting old artifacts.
-- Any styling work.
+## Handoff
+- **02 — Package lock-in:** build the replacement package, commit matching output, establish its freshness check, and verify a clean checkout builds and renders the component without compiling it. Check the normal Workers deployment there; a complete browser widget is not expected until the runtime step.
+- **06 — Browser runtime:** optionally capture the old widget's network behaviour before replacing its runtime, if useful for comparison. Compare the live loader with the fixture when validating assumptions about third-party behaviour. These are not packaging prerequisites.
+- **07 — Tests and docs:** keep automated tests network-free, document manual fixture recapture on upgrades, and retain the package-loading/freshness regression checks. Use verified package/deployment requirements from step 02, not this unrun spike.
 
-## Discussion & Reflections
-
-1. **How to exercise "no build step".**
-   - (a) Temporarily repoint the existing plugin's entry to a `.ts` file — fastest, but mixes real logic into an experiment.
-   - (b) Add a throwaway `custom-plugins/spike` with a trivial `.ts` component and one YAML entry — isolated, and it takes the exact loader path any future local plugin takes; deletion is one line.
-   - (c) Copy the plugin into a scratch directory and register that — isolated but duplicates content.
-   - **Recommend (b).**
-   - user input - I would suggest a, because current plugin will get deleted anyway. So we might use it till it's there. 
-
-2. **Where to verify Workers behaviour.**
-   - (a) Push a branch and use a non-production/preview build — safe, slower.
-   - (b) Push to `main` and watch the production build — fast, but a broken plugin layout is briefly user-visible.
-   - (c) Trust local Node only — meaningless for the risk being tested.
-   - **Recommend (a).** If preview builds aren't available, read the Node version from a normal build log and decide before pushing.
-   - user input - ignore. we do this, I push it through usual flow and deploy as I always do. website is WIP, so it doesn't matter if build will fail. 
-
-3. **How much evidence counts as a baseline.**
-   - (a) One manual DevTools capture, recorded here — free, subjective.
-   - (b) A scripted capture committed as a fixture — repeatable, adds tooling nobody asked for.
-   - (c) Reuse the existing fixture only — no real measurement.
-   - **Recommend (a)**, plus a `curl` comparison for the fixture (item 4).
-
-4. **Fixture drift.**
-   - (a) Trust the capture — cheap, may misdescribe production.
-   - (b) Diff served vs captured and re-capture on any difference — one command, keeps the runtime tests honest.
-   - (c) Delete the fixture and test against the live site — tests then depend on the network.
-   - **Recommend (b).**
-
+## Open documentation note
+`DEV_RULES.md` still explains its erasable-syntax rule in terms of the superseded native-TypeScript model. Review that rationale before rewriting source; the coding restriction itself has not been relaxed by this step.
