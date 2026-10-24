@@ -72,6 +72,10 @@ action:
 		- [ ] After that - you write proper `_project.md`, start phase 001 of rewriting remark42 plugin - and the flow is established and you can move on finally.
 - ### Completed
 	- [ ] copy_from_here
+	- [x] fixed worker build time, from 2 minutes to less than 30 seconds.
+	- [x] fixed 404 page
+	- [x] reducing cognitive load of chrome bookmarks (separators idea)
+	- [x] Fixing more chore-level things in repo
 	- [x] Preserving AHK security + obsidian smart startup minimized (only during boot)
 
 ---
@@ -95,7 +99,7 @@ action:
 ```
 - ###### 12:42
 	- Man that reflection was life saving. 
-	- Bread recipe also gets better. I'm doing mini-bread, which is based on 150g of flour, and it's PIA to have it nicely puffed up in automatic bread maker. But I'm getting better at it. Bigger bread from less flour = I will eat less bread, since "normal" bites will more "air". So hopefully I will be able to have sustainable recipe where I can spread 150g of flour into 4 meals/2 days, so it'll be 37.5g 
+	- Bread recipe also gets better. I'm doing mini-bread, which is based on 150g of flour, and it's PIA to have it nicely puffed up in automatic bread maker. But I'm getting better at it. Bigger bread from less flour = I will eat less bread, since "normal" bites will more "air". So hopefully I will be able to have sustainable recipe where I can spread 150g of flour into 4 meals/2 days, so it'll be 37.5g of flour per meal => 26g of carbs. Which is SUPER good. It will be "have a cake and eat it too" situation. 
 - ###### 12:23
 	- Ok, I'm getting some speed. Also I have this feeling that there's potential to be hyper productive. Like it's there. It's real. I just need to align myself with the unconscious. There's real value in these things.
 - ###### 12:08
