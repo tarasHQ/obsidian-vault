@@ -7,12 +7,13 @@ reviewedAtStep: ""
 [← PLAN](../_plan_001.md)
 
 ## Description
-Turns the plugin into a package that is honest about itself: it imports only published types, declares what it needs, runs without compilation, and can no longer be the reason a build silently lacks comments. This is where the compile path — `dist/`, `build.mjs`, `prebuild` — physically disappears.
+The plugin is deleted and rebuilt as a new package: the old source, tests and compile path (`dist/`, `build.mjs`, `prebuild`) all disappear, and what remains is a tree that is honest about itself — published types only, declared dependencies, no compilation anywhere. It is the skeleton the render and runtime steps then fill in.
 
 ## High-Level
 
 ### Intended outcome
-- `src/index.ts` is the entry; `dist/` is gone from disk and from `.gitignore`; `build.mjs` is deleted; root `prebuild` and `build:local-plugins` are deleted; no command anywhere compiles this plugin.
+- The old tree is gone: `src/`, `test/`, `build.mjs`, `dist/`, `src/browser-script.d.ts`, and the `dist/` line in the package `.gitignore`.
+- `src/index.ts` is the entry; root `prebuild` and `build:local-plugins` are deleted; no command anywhere compiles this plugin.
 - The plugin imports `QuartzComponent` as a type from `@quartz-community/types`; no file references `../../../quartz`; the temporary `types`/`typeRoots` workaround is gone from its `tsconfig`.
 - Root `npm run check` typechecks the plugin too, so a plugin type error fails the same command that gates the rest of the repo (today the root check stays green while the plugin is broken).
 - `custom-plugins/README.md` no longer lists deviations this step closed.
@@ -21,6 +22,7 @@ Turns the plugin into a package that is honest about itself: it imports only pub
 - Erasable-only TypeScript and explicit `.ts` import specifiers — otherwise Node cannot load the entry at runtime.
 - Behaviour is unchanged: the same note renders the same markup. This step is plumbing only.
 - The `quartz` manifest in `package.json` stays the SSOT for category, components and defaults.
+- The component's registered name stays `remark42`: `quartz.config.yaml` refers to it in `layout` and in the `byPageType` exclusions, so renaming it silently detaches the plugin from every page.
 - No dependency may be relied upon unless it is declared *and* resolvable at runtime from the plugin's location.
 
 ### Should NOT be done in this step
@@ -53,5 +55,11 @@ Turns the plugin into a package that is honest about itself: it imports only pub
    - (b) Verify whether the loader now creates a junction by itself and drop the note.
    - (c) Replace it with "delete `.quartz/plugins/<name>` if it is a copy, not a link".
    - **Recommend (b)**, falling back to (c) if the loader still degrades to copying.
+
+5. **Entry point and `exports` shape.** The loader tries `exports["."]` first, then `module`/`main`, then a fixed list that includes `src/index.ts`; components are resolved separately through a `./components` subpath.
+   - (a) Declare nothing and let the fallback list find `src/index.ts` — least config, but the resolution is implicit.
+   - (b) Declare `"."` and `"./components"`, both pointing at `./src/index.ts` — explicit and stable, though a `types` target can only point at source now.
+   - (c) Declare only `"."` and let components fall back to `${name}/components`.
+   - **Recommend (b)**, with the README stating that `types` resolves to TypeScript source because nothing is emitted.
 
 _Reflection:_ (optional — compact notes from the user)

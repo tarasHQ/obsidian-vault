@@ -110,6 +110,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 23:56
+	- lots of friction for my flow, but also lots of improvements. I'm using cheap llm's , they think a lot. context explodes with thinking tokens. So it's a bit painful. But there's a lot to be done about this.  But yeah... I would appreciate not being poor right now) 
+- ###### 23:35
+	- Wasted. Just done. I'm pretty sure it's false tiredness. But it's there and feels real. Don't know how to get out of it...
 - ###### 21:55
 	- The issue with that advanced workflow is that in states like now I just can't be bothered going through all that boilerplate. Like I want to just type to LLM - "`rewrite plug based on that dump of notes I have and leave me alone in the meantime`". But I know it's pathological. 
 	- I must wait through this post-meal crash out. And see what will happen next.
