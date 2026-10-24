@@ -9,7 +9,7 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
     - Links are relative to `AGENTS.md`, path from repo's root would be `__obsidian__/docs/AGENTS.md`
 - ##### [PLANNING.md](C:\Users\Taras\Documents\obsidian-vault\_static\projects\PLANNING.md)
     - to be read only during planning phase. [[../../../../_static/projects/PLANNING|internal link for the user]], llm shouldn't use it.
-- ##### ./docs/DEV_RULES.md
+- ##### .DEV_RULES.md
     - to be read only before writing the code, there's no information that is helpful during planning phase.
 - ##### ./DEV_COMMANDS.md
     - to be read only if LLM tinkers with tasks/commands/scripts
