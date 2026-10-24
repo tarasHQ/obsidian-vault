@@ -1,8 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "October 24th, 2026",
+      "path": "@journal/2026/October/October 24th, 2026.md"
+    },
+    {
+      "basename": "00-start",
+      "path": "@projects/taras.life/__obsidian__/phases/001/steps/00-start.md"
+    },
+    {
       "basename": "_plan_001",
       "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
+    },
+    {
+      "basename": "[T]step-start",
+      "path": "_static/templater/project/[T]step-start.md"
+    },
+    {
+      "basename": "PLANNING",
+      "path": "_static/projects/PLANNING.md"
     },
     {
       "basename": "agents contents",
@@ -33,10 +49,6 @@
       "path": "@projects/0vibes/__obsidian__/phases/001/_plan_001.md"
     },
     {
-      "basename": "PLANNING",
-      "path": "_static/projects/PLANNING.md"
-    },
-    {
       "basename": "DEV_RULES",
       "path": "@projects/0vibes/__obsidian__/docs/DEV_RULES.md"
     },
@@ -45,20 +57,8 @@
       "path": "@system/_reflections/Project's start and end steps.md"
     },
     {
-      "basename": "October 24th, 2026",
-      "path": "@journal/2026/October/October 24th, 2026.md"
-    },
-    {
-      "basename": "[T]step-start",
-      "path": "_static/templater/project/[T]step-start.md"
-    },
-    {
       "basename": "[T]step-end",
       "path": "_static/templater/project/[T]step-end.md"
-    },
-    {
-      "basename": "00-start",
-      "path": "@projects/taras.life/__obsidian__/phases/001/steps/00-start.md"
     },
     {
       "basename": "_project",
@@ -195,10 +195,6 @@
     {
       "basename": "deep-learning",
       "path": "System/deep-learning/deep-learning.md"
-    },
-    {
-      "basename": "October 20th, 2026",
-      "path": "@journal/2026/October/October 20th, 2026.md"
     }
   ],
   "omittedPaths": [],
