@@ -110,6 +110,14 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 00:31
+	- I'm angry because this situation directly affects all my plans. It makes them significantly harder. So like chances of the future where I off myself raised significantly. Because instead of finally being able to breath - I found myself before another huge obstacle. And this fucking timer is flashing and I have to go to sleep. 
+- ###### 00:26
+	- I just get really frustrated with this shit. Don't know what to do honestly. Like how all these "frontier" models became so stupid? And that thinking spam... what a load of BS for their 'agi-level' intellect. 
+	- I'm just angry as hell with this shit. And on top of it 1 hour has passed - nothing is done. And I have to do this "day finalization" shit while this fucking llms have their context windows blown to pieces with this fucking stupid thinking. 
+	- Fucking hell I'm mad. Task didn't even started - and it's already beyond reasonable context window. FUCK.
+- ###### 00:15
+	- no shit I avoided this stuff. They managed to make LLMs so smart, that they got slower and dumber since their last generation in spring-summer. 
 - ###### 23:56
 	- lots of friction for my flow, but also lots of improvements. I'm using cheap llm's , they think a lot. context explodes with thinking tokens. So it's a bit painful. But there's a lot to be done about this.  But yeah... I would appreciate not being poor right now) 
 - ###### 23:35

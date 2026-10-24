@@ -1,13 +1,13 @@
 ---
 status: waiting
 state: high-level
-reviewedAtStep: ""
+reviewedAtStep: "01"
 ---
 
 [← PLAN](../_plan_001.md)
 
 ## Description
-Rewrites the build-time half of the plugin without JSX: a small component that renders one comments container for opted-in notes and supplies the browser bootstrap as a string. After this step the plugin has no compiler in its path at all.
+Rewrites the build-time half of the plugin as a small Preact component that renders one comments container for opted-in notes and supplies the browser bootstrap as a string. TypeScript/TSX source is compiled by the explicit package build; Quartz imports the committed JavaScript output.
 
 ## High-Level
 
@@ -15,12 +15,12 @@ Rewrites the build-time half of the plugin without JSX: a small component that r
 - For an opted-in content page: exactly one container element carrying the thread URL. For every other page: nothing at all — not an empty wrapper.
 - A clear split between what is fixed per site (host, site id, footer, properties — baked into the shared script at build time) and what varies per page (the thread URL — carried in the DOM). This split is what makes one shared script correct site-wide.
 - The container's markup is a documented contract: element type, attributes, and what the runtime may assume about it.
-- The entry file is plain `.ts`, loaded by Node as-is.
+- The package entry and component exports resolve to compiled `dist/` JavaScript. JSX/TSX is supported through the package build; native Node TypeScript loading is not used.
 
 ### Local invariants
 - No `displayName` — the community type does not have it — and no `head`/`content` usage.
 - Render is pure: no `window`, no timers, no side effects, no reads outside the passed props.
-- All markup goes through Preact's `h()`; no string concatenation of HTML.
+- All markup uses Preact VNodes, preferably JSX/TSX following the documented component examples; `h()` is also valid. No string concatenation of HTML.
 - The runtime must not depend on markup details that this step does not promise.
 
 ### Should NOT be done in this step
