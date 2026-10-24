@@ -91,11 +91,7 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 
 
 
----
-
-# Not sure if it should be in agents (or at all)
-
-### Remark42
+## Remark42
 Comments.
 1. Self hosted as standalone binary on LXC. Accessed to internet through cloudflare tunnel at caddy + local reroute. 
 	- caddy rewires some headers too.

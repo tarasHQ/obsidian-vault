@@ -12,6 +12,7 @@
 	- `*/5 * * * * /root/ha_post_temp.sh` — script run every 5 minutes posts temperature data related to haos
 - for caddy and https I was doing something with ACME on proxmox for both accounts and challenge plugins.
 - `unattended-upgrades` on both caddy and remark42 lxcs
+	- `bookworm-security` + cloudflare tunnel on caddy
 
 ## Backups
 
