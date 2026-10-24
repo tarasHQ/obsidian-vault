@@ -157,7 +157,7 @@ reviewedAtStep: ""
 ## Completion Flow
 ### Run #1
 - Cleaning up "Decisions" block
-	- USER must decisions and tell which one should go into the plan/readmes or can be removed.
+	- USER must make decisions and tell which one should go into the plan/readmes or can be removed.
 	- Remove the block
 - Making sure frontmatter is set up properly
 - STOP

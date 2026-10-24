@@ -50,6 +50,34 @@
 
 ================================================================
 
+## TypeScript
+
+### 1. `type` over `interface`
+- `interface` declarations are forbidden. Use `type`, including for object shapes.
+- Nothing here relies on declaration merging or module augmentation, and `type` also expresses unions, intersections, and conditional types, so a second declarator for the same job buys nothing.
+
+### 2. Erasable syntax only
+- No `enum`, no `namespace`, no constructor parameter properties — nothing that has to *emit* code in order to work.
+- Reason: a plugin entry resolved as `src/index.ts` is imported by Node with no build step in front of it. Only erasable syntax survives type stripping; the rest fails at **import** time, not at typecheck time — so `tsc --noEmit` stays green while the build breaks.
+- Type-only imports must be written `import type`. A plain `import` carrying only types becomes a runtime import of a module with no runtime exports once stripped.
+- Erasable replacements: `enum` → union of string literals (`type Remark42Theme = "light" | "dark"`), `namespace` → a module.
+
+### 3. No `any`; `as` is not a narrowing tool
+- `any` is forbidden.
+- `as` is allowed only where a runtime check has already established the shape, never to silence the compiler. Narrow with type guards or with schema validation at boundaries.
+
+### 4. Explicit return types on exported functions
+- Every exported function and public method declares its return type. Inference is for internals, where the reader is already inside the function body.
+- A plugin module's exported surface is one level deep, so these annotations *are* its contract.
+
+### 5. Classes for stateful logic
+- Logic that holds state across calls is a class. Module-level mutable `let` shared between free functions is forbidden.
+- "State" means anything outliving a single call: an instance handle, a generation counter, an in-flight request, a timer, a subscription.
+- The class is named after its responsibility, and its file is named after the class (Naming §2).
+- Purely functional helpers stay free functions — a fieldless class is a namespace in disguise.
+
+================================================================
+
 ## Naming Conventions
 
 > Examples intentionally removed: the template's examples named files from another codebase. To be supplied with this repo's real files — see TODO.
@@ -101,6 +129,36 @@ Every exported or local declaration must have a docstring comment:
 
 ================================================================
 
+## Rendering Model
+
+### 1. Components are build-time only
+- A component is a pure function of its props, executed once in Node during the build. Its output is an HTML string. There is no hydration and no second execution in the browser.
+- `window`, `document`, `localStorage`, observers, timers, and event listeners are forbidden at module scope and inside the component body. Needing one means the work belongs in a client script, not in the component.
+- The build is concurrent: no module-level mutable state, and no assumptions about render order across pages.
+
+### 2. Client behaviour is a script string, executed once per page load
+- Client code is registered as `beforeDOMLoaded` (before `<body>` exists) or `afterDOMLoaded` (after it is parsed) and shipped as a string.
+- Each script runs once per full page load, in its own scope. It is **not** re-executed on SPA navigation — after the first route change the DOM it was written against no longer exists.
+- Identical script strings registered by several components are deduplicated, so a shared bootstrap may be registered wherever it is needed and still ships once.
+- Consequence: all route-dependent work must be driven by the `nav` event. "The script ran, so the DOM is mine" is true exactly once.
+
+### 3. Subscribe once, tear down per navigation
+Verified order per navigation: `prenav` dispatched → cleanup callbacks flushed → `micromorph` patches `<body>` → `<head>` patched → `nav` dispatched.
+- Listeners on `document` survive navigation. Register them exactly once, at script top level — never inside a `nav` handler.
+- Anything holding a DOM reference (element listeners, observers, mounted widget instances) must be released before the body is patched: either `window.addCleanup(fn)` or a `prenav` handler. Micromorph replaces nodes; a handler on a replaced node is dropped silently while its closure keeps everything it captured alive.
+- `window.addCleanup` is a no-op when SPA is disabled, so never make correctness depend on it running — with SPA off, the full page load does that job.
+- Setup must be idempotent and teardown must tolerate "nothing is mounted yet": `nav` fires on every route, including the first one.
+
+### 4. Only three events actually fire
+- `nav` (`detail.url`), `prenav`, and `themechange` (`detail.theme`) are dispatched by code present in this checkout.
+- `readermodechange` and `render` are declared in `index.d.ts` and even have listeners in the tree, but nothing dispatches them here. Do not subscribe to them, and do not treat `render` as a hook.
+- `themechange` does not fire on initial load. Read the current value from `document.documentElement.getAttribute("saved-theme")` (`"light" | "dark"`) and only then subscribe for changes. Never write that attribute: the darkmode component owns it, together with the `theme` key in `localStorage`.
+
+### 5. Never navigate by hand
+- No `window.location` assignment, no `history.pushState`, no manual re-render. For programmatic navigation use `window.spaNavigate(url)`, which exists in both modes and degrades to a full page load when SPA is off.
+
+================================================================
+
 ## Styling
 - UI must be usable from small phone screens up to 4K displays (“universal UI”).
 - UI must be reactive to size changes (tab can be widened or narrowed, stretched or shrunk), so layout must adapt to this.
@@ -111,9 +169,8 @@ Every exported or local declaration must have a docstring comment:
 
 > Not rules. Placeholders for the rewrite; delete this section once the document is complete.
 
-- **TypeScript conventions.** Open question: "prefer `type` over `interface`" was deleted because `custom-plugins/remark42/src/` already has 7 interfaces. Decide: enforce going forward only, or refactor them too.
+- **Singleton / composition file convention.** The template's `*Instance.ts` rule was deleted in the strip pass and was *not* reinstated by "classes for stateful logic" — decide whether a separate composition file is wanted at all.
 - **Import grouping.** Actual convention is `3rd-party` → `@quartz-community/*` → relative. No path aliases exist (`tsconfig.json` has no `paths`), so the template's `#alias/*` scheme was removed.
-- **Rendering model (highest-value gap).** Components are build-time SSR with no hydration: no `window`/`document`/timers/listeners at module scope or in render. Client code lives in `afterDOMLoaded` scripts and must tear down on SPA `prenav`.
 - **Build concurrency.** No module-level mutable state; build state is threaded through `BuildCtx`.
 - **Content pipeline boundary.** New markdown behaviour is a transformer in a local plugin, not an edit to `quartz/processors/`.
 - **Formatting SSOT.** Prettier owns it: tabs, `tabWidth: 4`, `semi: false`, `printWidth: 120`, LF. Gates are `npm run check` (`tsc --noEmit` + `prettier --check`) and `npm test` (`tsx --test`).

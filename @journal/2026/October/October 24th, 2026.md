@@ -59,6 +59,7 @@ action:
 ## TASKS
 %%Cognitive offload for the day, to not keep these in my mind for the whole time%%
 - ### Active
+	- [ ] Templates for reflections - maybe shouldn't use project backlinks for now, until I figure out if there's gonna be "main index"
 	- [ ] Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
 	- [ ] You need simple back/forward(automatic visibility if exists) navigation between journal entries. (or use calendar plugin for the time being)
 	- [ ] You need a to select a block of text, press hotkey and save it as a reflection with link that replace selected text. (also it should have same frontmatter as current flow)
@@ -87,6 +88,7 @@ action:
 ## REFLECTIONS
 %%Thinking through writing is much better - there must be low-friction place to do so%%
 - ⭐[[../../../Productivity/_reflections/Can't start to work in the morning!|Can't start to work in the morning!]] - helped big time. So simple, but really effective.
+- [[../../../@system/_reflections/Project's start and end steps|Project's start and end steps]]
 
 ---
 
@@ -102,7 +104,7 @@ action:
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
 - ###### 17:26
-	- Distracts a lot. Ok. I'll try a rule. Do 
+	- Distracts a lot. Ok. I'll try a rule. Do whatever you want, but after I'm done with everything that is blocking plugin rewrite. So it won't be out of avoidance (aka automatism).
 - ###### 17:22
 	- Again want to PMO. A bit more issues than I expected. Or, well, not a bit. A lot. So pattern of behaviour tries to keep me away from that chaos. And it's a bit harder to control later in the day. But I'll try. 
 - ###### 16:54
