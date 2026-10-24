@@ -1,7 +1,7 @@
 
 %%[[[T]daily-journaling|Daily Journal Template]]%%
 
-```meta-bind-button
+```meta-bind-button {fold}
 style: primary
 label: New Journal Entry
 icon: notebook-pen
@@ -72,7 +72,7 @@ action:
 		- [ ] After that - you write proper `_project.md`, start phase 001 of rewriting remark42 plugin - and the flow is established and you can move on finally.
 - ### Completed
 	- [ ] copy_from_here
-	- [ ] 
+	- [x] Preserving AHK security + obsidian smart startup minimized (only during boot)
 
 ---
 
@@ -84,7 +84,7 @@ action:
 
 ## TIME LOG
 
-```meta-bind-button
+```meta-bind-button {fold}
 label: New Log Entry
 style: default
 icon: clock
@@ -93,5 +93,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 11:43
+	- So that's how it is. When I'm in a proper state of mind - I would torture myself for times like right now. Where I don't care and can't start.
+	- Instead of 15 minute timer - can I do 10 minute walking reflection? Maybe it'll get me going the same way it did yesterday (though I was kinda hyped before that)
+- ###### 11:25
+	- This time don't want to work at all. 
 - ###### 01:14
 	- Will make my life easier. For nights will move camera upward a bit, to avoid explicit poses and blurring them out after))

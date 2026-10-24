@@ -18,3 +18,5 @@
 - `Git`
 	- For automatic backups
 	- Only main PC uses git. Because it has symlinks and full situation for the sync.
+- `Code Block Fold`
+	- I'm often navigate in the file using arrows, this plugin prevents unfolding metabind button's codeblocks.
