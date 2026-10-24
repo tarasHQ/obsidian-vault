@@ -265,17 +265,21 @@ audio {
    Comments styles %%comment%%
    =============================================================== */
 
-/* Hide comments tags %% */
+/* 1. Hide comment tags %% when line is not active */
 .cm-line:not(.cm-active) .cm-comment.cm-comment-start,
 .cm-line:not(.cm-active) .cm-comment.cm-comment-end {
     display: none;
 }
 
-/* Make comments more compact (excluding templater syntax highlight)*/
-:not(.templater-command-bg).cm-line:has(.cm-comment) {
+/* 2. Shrink ONLY the comment text (leaves .cm-hmd-list-indent at 1em so lines stay straight) */
+:not(.templater-command-bg).cm-line .cm-comment {
     font-size: 0.8em !important;
 }
 
+/* 3. Compress vertical height on lines that contain comments */
+:not(.templater-command-bg).cm-line:has(.cm-comment) {
+    line-height: 0.8 !important; /* Adjust between 1.0 and 1.3 for desired compactness */
+}
 /* ===============================================================
    Custom styles for Collapse Icon (heading/lists)
    =============================================================== */
