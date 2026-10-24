@@ -39,12 +39,12 @@ await cJS(c => c.RenderReflectionHelpers.renderColumns(dv, this.container));
 
 ### User-input
 %%Goal is to keep user input raw and untouched, so it won't drift away between many tasks. Among many options can include: order of implementation, rules, nuances, wishes, open questions, features, invariants, etc.%%
-- #### Decisions
-  %%Why X? or why X and not Y? Can be in Q&A format%%
-	- 
-- #### Plan
-- #### Nuances
-- #### Out of Scope
+- We need to rewrite the plugin so that it is aligned with quartz plugin flow.
+- My additions
+	- **`no_footer`**: true - to hide footer with links to remark42. - for remark frontend config. 
+	- custom_properties: {} - after we're done, to play with css a bit, to make it look nicer maybe. But it'll be like the last step before ending the phase
+- It must be very well written, so I can lock it down long term. No performance issues too. 
+- I'm a bit curious about how to load it. Like I want to each page load be quick. Performance and reliability is the top priority. 
 
 ---
 

@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "AGENTS",
-      "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
+      "basename": "00-start",
+      "path": "@projects/taras.life/__obsidian__/phases/001/steps/00-start.md"
+    },
+    {
+      "basename": "PLANNING",
+      "path": "_static/projects/PLANNING.md"
+    },
+    {
+      "basename": "_plan_001",
+      "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
     },
     {
       "basename": "Remark42",
       "path": "@projects/taras.life/__obsidian__/ideas/Remark42.md"
     },
     {
-      "basename": "_plan_001",
-      "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
+      "basename": "AGENTS",
+      "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
     },
     {
       "basename": "_project",
@@ -71,10 +79,6 @@
     {
       "basename": "how-to-approach-resistance",
       "path": "Productivity/_reflections/how-to-approach-resistance.md"
-    },
-    {
-      "basename": "PLANNING",
-      "path": "_static/projects/PLANNING.md"
     },
     {
       "basename": "Ideas",
@@ -195,10 +199,6 @@
     {
       "basename": "Home",
       "path": "Home.md"
-    },
-    {
-      "basename": "The Full Commitment Day",
-      "path": "Productivity/_reflections/The Full Commitment Day.md"
     }
   ],
   "omittedPaths": [],
