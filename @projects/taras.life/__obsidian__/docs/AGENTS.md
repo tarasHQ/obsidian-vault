@@ -74,6 +74,7 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 		- Config: `/etc/remark42.env`
 		- Data: `/var/www/remark42/var` — the boltdb directory
 	- **Backups**: handled by Proxmox `vzdumps`, daily and weekly, replicated offsite with `rsync`.
+		- has in
 	- **Health**: `UptimeRobot` pings both `taras.life` and `https://comments.taras.life/api/v1/ping`. Comments are served under the blog domain, not the infrastructure host.
 	- **OAuth**: Google and Github only, for now.
 	- **Admin**: identified by the internal Remark42 id of the GitHub account.
