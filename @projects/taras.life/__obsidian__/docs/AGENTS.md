@@ -53,7 +53,7 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 | SSR | Preact + `preact-render-to-string` | output is static HTML — there is no hydration |
 | Client runtime | Preact islands, SPA nav via `micromorph` | never re-render or call `window.location` manually |
 | Markdown dialect | Obsidian-flavored + GitHub-flavored | wikilinks, callouts, tags, block refs, Mermaid, GFM tables |
-| Code & math | Shiki (`rehype-pretty-code`), KaTeX | both run at build time only |
+| Code | Shiki (`rehype-pretty-code`) | build time only; no math engine — the LaTeX plugin was removed |
 | Search | FlexSearch | index built at compile time, queried in-browser |
 | Images | `sharp` | resizing and OG image generation |
 | Fonts | Google Fonts origin, CDN-cached | theme config |
@@ -89,7 +89,29 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 	- no smtp/telegram/others
 
 ### Removed plugins
-- 
+
+| Plugin             | Why removed                                                                                                                        |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `citations`        | No academic citations authored; citation parsing ran over every note for nothing.                                                  |
+| `ox-hugo`          | Org-mode / Hugo export syntax -never authored here.                                                                                |
+| `roam`             | Roam Research syntax (`{{[[TODO]]}}`, `{{embed}}`) never authored here.                                                            |
+| `explicit-publish` | Nothing is filtered on site — the Obsidian sync layer decides what ships.                                                          |
+| `stacked-pages`    | Sliding-pane link navigation not wanted.                                                                                           |
+| `tag-list`         | No tags in use.                                                                                                                    |
+| `tag-page`         | No tags in use; also drops `/tags/*` generation.                                                                                   |
+| `folder-page`      | No folder landing pages planned; `/subfolder/` now 404s instead of listing.                                                        |
+| `canvas-page`      | JSON Canvas unused — Excalidraw is preferred for drawings.                                                                         |
+| `graph`            | Unused; loaded `d3@7` + `pixi.js@8` from jsDelivr on every page load, before any container check.                                  |
+| `latex`            | No math; 11 MB plugin bundle (+19 MB sourcemap) parsed per build, plus a KaTeX CDN stylesheet and `copy-tex` script on every page. |
+| `encrypted-pages`  | No password-gated notes; added a client-side decrypt hook + CSS site-wide.                                                         |
+| `reader-mode`      | Site content is deliberately concise; toggle + CSS on every page for nothing.                                                      |
+| `cname`            | GitHub Pages artifact; hosting is Cloudflare Workers static assets.                                                                |
+| `comments`         | Giscus superseded by self-hosted Remark42 (entry was already `enabled: false`).                                                    |
+| `remove-draft`     | No drafts authored; filtering is the sync layer's job.                                                                             |
+
+All of the above declared an empty `quartz.dependencies` array, so each removal is a pure `quartz.config.yaml` + `package.json` change with no cross-plugin fallout. To restore one: `npm i @quartz-community/<name>` and re-add its `plugins:` block.
+
+NOTE: `@quartz-community/note-properties` must NEVER be removed — it is the frontmatter parser (`remarkFrontmatter` + `gray-matter` → `file.data.frontmatter`), despite its docs describing it as a properties panel.
 
 ---
 
