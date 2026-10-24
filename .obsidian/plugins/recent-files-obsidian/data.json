@@ -1,16 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "_project",
+      "path": "@projects/taras.life/__obsidian__/_project.md"
+    },
+    {
+      "basename": "AGENTS",
+      "path": "@projects/0vibes/__obsidian__/docs/AGENTS.md"
+    },
+    {
+      "basename": "About",
+      "path": "About.md"
+    },
+    {
+      "basename": "Home",
+      "path": "Home.md"
+    },
+    {
       "basename": "October 24th, 2026",
       "path": "@journal/2026/October/October 24th, 2026.md"
     },
     {
       "basename": "AGENTS",
       "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
-    },
-    {
-      "basename": "AGENTS",
-      "path": "@projects/0vibes/__obsidian__/docs/AGENTS.md"
     },
     {
       "basename": "Can't start to work in the morning!",
@@ -39,14 +51,6 @@
     {
       "basename": "Snipaste_2026-10-21_22-46-28",
       "path": "Maintenance/_attachments/Snipaste_2026-10-21_22-46-28.png"
-    },
-    {
-      "basename": "About",
-      "path": "About.md"
-    },
-    {
-      "basename": "Home",
-      "path": "Home.md"
     },
     {
       "basename": "Obsidian",
@@ -195,10 +199,6 @@
     {
       "basename": "journal-remove-checklist",
       "path": "_static/scripts/meta-bind/journal-remove-checklist.js"
-    },
-    {
-      "basename": "_gameDev",
-      "path": "Game/_gameDev.canvas"
     }
   ],
   "omittedPaths": [],
