@@ -15,3 +15,6 @@ await cJS(c => c.RenderReflectionHelpers.renderColumns(dv, this.container));
 ## Phases
 
 ### Phase 001 - UNTITLED_PHASE [open](./phases/001/_plan_001.md)
+
+
+Ideas. Webp script before push or o
