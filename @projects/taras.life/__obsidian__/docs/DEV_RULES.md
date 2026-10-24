@@ -3,6 +3,7 @@
 ## Applicability
 1. DOES NOT APPLY TO `quartz/` AND OTHER `quartz`-RELATED CODE. 
 2. Applies only to user code.
+3. These rules state the target state. Existing code is not a precedent — code that violates a rule is brought into line, never cited to argue the rule away.
 
 ================================================================
 
@@ -80,11 +81,11 @@
 
 ## Naming Conventions
 
-> Examples intentionally removed: the template's examples named files from another codebase. To be supplied with this repo's real files — see TODO.
-
 ### 1. Never use standalone generic names. Prefix with domain or use a concrete noun.
+- No generic `utils.ts`, `helpers.ts`, `types.ts`, `manager.ts`. Name the file after what it holds.
 
 ### 2. The file name must match its primary exported symbol.
+- One primary export → the file carries its name. A cohesive group of helpers → the file carries the concern, not the mechanism.
 
 ### 3. Module Entrypoints & Prefixes
 - Publicly imported entities should carry their origin in the name, so call sites are unambiguous without checking import headers.
@@ -111,7 +112,8 @@ Every exported or local declaration must have a docstring comment:
 
 ## Imports & Exports Hygiene
 - Zero barrels & dead exports: `export *` and re-export-only `index.ts` files are forbidden → direct file imports only. Export only what is immediately consumed, don't export "just in case".
-	- Exception: a plugin's `src/index.ts(x)` loader entrypoint is required, not a barrel.
+	- Exception: a plugin's `index` entrypoint is required by the loader, not a barrel.
+- A local plugin never imports host source (`../../../quartz/**`) — take types from `@quartz-community/types`.
 
 ================================================================
 
@@ -151,7 +153,7 @@ Verified order per navigation: `prenav` dispatched → cleanup callbacks flushed
 
 ### 4. Only three events actually fire
 - `nav` (`detail.url`), `prenav`, and `themechange` (`detail.theme`) are dispatched by code present in this checkout.
-- `readermodechange` and `render` are declared in `index.d.ts` and even have listeners in the tree, but nothing dispatches them here. Do not subscribe to them, and do not treat `render` as a hook.
+- Before subscribing to a custom event, confirm something dispatches it — today only these three do. `readermodechange` and `render` are declared and even listened to, but nothing emits them.
 - `themechange` does not fire on initial load. Read the current value from `document.documentElement.getAttribute("saved-theme")` (`"light" | "dark"`) and only then subscribe for changes. Never write that attribute: the darkmode component owns it, together with the `theme` key in `localStorage`.
 
 ### 5. Never navigate by hand
@@ -165,17 +167,7 @@ Verified order per navigation: `prenav` dispatched → cleanup callbacks flushed
 
 ================================================================
 
-## TODO — sections still to be written
-
-> Not rules. Placeholders for the rewrite; delete this section once the document is complete.
-
-- **Singleton / composition file convention.** The template's `*Instance.ts` rule was deleted in the strip pass and was *not* reinstated by "classes for stateful logic" — decide whether a separate composition file is wanted at all.
-- **Import grouping.** Actual convention is `3rd-party` → `@quartz-community/*` → relative. No path aliases exist (`tsconfig.json` has no `paths`), so the template's `#alias/*` scheme was removed.
-- **Build concurrency.** No module-level mutable state; build state is threaded through `BuildCtx`.
-- **Content pipeline boundary.** New markdown behaviour is a transformer in a local plugin, not an edit to `quartz/processors/`.
-- **Formatting SSOT.** Prettier owns it: tabs, `tabWidth: 4`, `semi: false`, `printWidth: 120`, LF. Gates are `npm run check` (`tsc --noEmit` + `prettier --check`) and `npm test` (`tsx --test`).
-- **Vendored patching exception.** §Applicability excludes `quartz/` — decide whether an explicit line is needed for when a patch is unavoidable (minimal, single place, no reformatting, no drive-by cleanups).
-- **Local plugin boundary.** No host imports from `../../../quartz/**`; never reformat captured third-party code (`custom-plugins/remark42/fixtures/` is prettier-ignored for that reason).
-- **Accessibility replacement wording.** The deleted rule ("do not write a11y code") contradicted working `aria-live`, `aria-label`, `role="status"`, `aria-hidden` in `spa.inline.ts` and `remark42/src/`. Needs wording that limits *new* a11y surface without mandating deletion of existing attributes.
-- **Naming examples** using this repo's real files.
-- **Testing specifics** — where tests live per module — and a one-line definition of done.
+## Accessibility
+- Don't add a11y scaffolding on your own initiative — no new `aria-*`, `role`, focus management, or live-region announcements beyond what a feature needs to function.
+- Don't remove pre-existing a11y attributes from vendored or carried-over markup; they are load-bearing for someone.
+- Prefer native semantics (`<button>`, `<nav>`, `<a>`) over hand-rolled ARIA.

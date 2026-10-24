@@ -25,7 +25,7 @@ action:
   file: _static/scripts/meta-bind/journal-remove-checklist.js
 ```
 - ##### NIGHT CHECKLIST
-    - [ ] ==🟡try 15 fps and 4seconds keyframe== - but only if the size of current day will be ok. I think under 10 gig per day is optimal. 1tb per 100 days. Like don't think about future. Maybe in a year you won't need to record yourself anymore. So that's fine. If not - youtube will cover ya.  Also you can re-encode to reduce file size by 50%. So you can push 10gb.
+    - [ ] ==🟡try 15 fps and 4seconds keyframe== - but only if the size of current day will be ok. I think under 10 gig per day is optimal. 1tb per 100 days. Like don't think about future. Maybe in a year you won't need to record yourself anymore. So that's fine. If not - youtube will cover ya.  Also you can re-encode to reduce file size by 50%. So you can push 10gb. Right now it'll be around 7gb I recon. 
     - ###### AFTER NEW RECORDING
         - [ ] Check audio delay to webcam
         - [ ] Night scene
@@ -71,7 +71,8 @@ action:
 	- [ ] Rewrite remark42 plugin. But after the other things are good.
 - ### Completed
 	- [ ] copy_from_here
-	- [ ] devrules
+	- [x] devrules
+	- [ ] reading through remark42 docs to not miss anything interesting before starting implementation.
 	- [x] 🔴Now time to compose agents.md and figure out where remark42 goes (probably stays in it, since it's small.) 
 	- [x] Fixed another issue with deskflow, when 
 	- [x] successful optimization
