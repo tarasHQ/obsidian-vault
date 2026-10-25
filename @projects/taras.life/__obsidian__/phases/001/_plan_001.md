@@ -110,6 +110,8 @@ await cJS(c => c.PlanStepsList.renderSteps(dv, this.container));
 ## Meta-Plan Reflection
 (llms should ignore this. it's for future phases/templates.)
 ### Issues
+- **Planning flow is bad**
+	- You dumped lots of text at once. That was the issue. It just overwhelmed you. Then you don't follow it. And now you're paying the price because you don't know jack shit about this.
 - **other**
 	- Navigation is kinds PIA. I have to switch between vscode and obsidian. 
 		- the issue is that you get overwhelmed by the amount of docs and text.
