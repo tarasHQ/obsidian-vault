@@ -113,6 +113,9 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 12:28
+	- It has lots of friction, but I'm moving. Sometimes one needs to act before thinking. This was the case. Like I god "visions/imagines" in my mind even before I started to reflect - that was the first hint about what should I do. Unconscious was helpful even then. 
+	- It's weird. Unconscious complex possessed me, and at the same time, something from the unconscious helped me to get out of that possession. Don't know how to wrap my head around it...
 - ###### 10:49
 	- GLM feels like a breath of fresh air. Don't know why deepseek was so uncomfortable... 
 - ###### 10:42
