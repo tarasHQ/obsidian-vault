@@ -113,6 +113,14 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 15:43
+	- Yeah... Well... I'll hope it won't impact negatively for the rest of the day. 
+	- Ok. I really think that absence of proper learning 
+- ###### 15:18
+	- No hope. No hope at all. At this pace I'll never get things done. Never. It's just isn't possible. Like it's a damn plugin for god's sake.... why I have so much struggle with it? 
+		- maybe because you don't know what you're doing? Maybe because you made stupid decisions in yesterday's evening-night, didn't read shit, and now you're paying for them? 
+	- I'm just so much fucked up... with all these mood swings, hopelessness, struggle, resistances. It's like every fucking day is a damn war. I'm so tired to live like that. Why it has to be a war?
+	- So should I start from the scratch. Again? 
 - ###### 15:01
 	- ==That's exactly when the state of PMO-urge comes in and how it manages to act itself out. No hope, no meaning, nothing matters. So why all of a sudden PMO matters? Like it's the only thing that justifies me going away from this torture. It's a good thing for all I care==
 	- Yeah... so I shouldn't fight like PMO and such, but I should fight these states. Timer again? 
