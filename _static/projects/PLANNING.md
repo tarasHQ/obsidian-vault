@@ -160,11 +160,11 @@ reviewedAtStep: ""
 	- USER must make decisions and tell which one should go into the plan/readmes or can be removed.
 	- Remove the block
 - Making sure frontmatter is set up properly
-- STOP
+- USER CHECKPOINT. Stop the loop and report to user, before proceeding to run #2.
 ### Run #2
 - Rewriting the step to remove work-related clutter. Goal: from the point of next steps, make re-reading completed steps - token efficient without any loss to quality of important information. 
 	- Removing temporary notes/investigations
 	- Resolving open/obsolete question
-	- Condensing each task+subtasks into a single task with concise description of what was implemented
+	- Condensing each task+subtasks into a single task with concise ## Description section on top about what was implemented.
 ```
 %%TEMPLATE-MARKER-FOR-EXTRACTION-START%%

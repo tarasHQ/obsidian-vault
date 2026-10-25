@@ -113,6 +113,18 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 16:27
+	- the worst thing is me staring at the screen waiting for the response. That's discouraging. Massively. Feels like time is wasted.
+- ###### 16:17
+	- ==🟡It's a choice to suffer==
+	- ==🟡It's a choice to suffer==
+	- ==🟡It's a choice to suffer==
+	- ==🟡It's a choice to suffer==
+	- ==🟡It's a choice to suffer==
+	- ==🟡It's a choice to suffer==
+	- ==🟡It's a choice to suffer==
+	- ==🟡It's a choice to suffer==
+	- ==🟡It's a choice to suffer==
 - ###### 15:57
 	- It's just always this mistake. How can I repeat it so much. Write plans in wrong state of mind, and then pay for that for days/weeks.
 - ###### 15:53
