@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "04-identity-id-rename",
+      "path": "@projects/taras.life/__obsidian__/phases/001/steps/04-identity-id-rename.md"
+    },
+    {
       "basename": "_plan_001",
       "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
     },
@@ -39,10 +43,6 @@
     {
       "basename": "05-render-component",
       "path": "@projects/taras.life/__obsidian__/phases/001/steps/05-render-component.md"
-    },
-    {
-      "basename": "04-identity-id-rename",
-      "path": "@projects/taras.life/__obsidian__/phases/001/steps/04-identity-id-rename.md"
     },
     {
       "basename": "[T]step-start",
