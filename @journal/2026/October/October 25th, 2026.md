@@ -113,8 +113,14 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 09:43
+	- I'm just a mess, I'm 5 minutes away from crying. It's just load of crap. Everything.
+	- But I must make it clear. It's my fault. Not LLM's. Not the project's - mine. You play dumb games - you win dumb prizes. 
+- ###### 09:24
+	- Low in the mood. Can't even start reflection about tonight's events. 
+	- Obviously why. There's damn dragon beneath all of what's visible on the surface.
 - ###### 01:34
-	- ==🟡Focus on what went wrong tonight. Reduce size of tasks. Figure out how to approach recurring contex fillings if you do minor steps.==
+	- ==🟡Focus on what went wrong tonight. Reduce size of tasks. Figure out how to approach recurring context fillings if you do minor steps.==
 	- Because of Pom you had low productivity and was frustrated by that. Which lead to walking on thin ice. LLMs definitely were frustrating , but you added on top of from your skewed perception
 	- Everything is good nothing crumbled you can figure it out.
 

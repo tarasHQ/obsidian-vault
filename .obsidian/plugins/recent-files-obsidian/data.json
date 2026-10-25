@@ -5,12 +5,20 @@
       "path": "@journal/2026/October/October 25th, 2026.md"
     },
     {
-      "basename": "Remark42",
-      "path": "@projects/taras.life/__obsidian__/ideas/Remark42.md"
+      "basename": "Why I got angry and frustrated tonight",
+      "path": "Psychoanalysis/_reflections/Why I got angry and frustrated tonight.md"
+    },
+    {
+      "basename": "Project's start and end steps",
+      "path": "@system/_reflections/Project's start and end steps.md"
     },
     {
       "basename": "October 24th, 2026",
       "path": "@journal/2026/October/October 24th, 2026.md"
+    },
+    {
+      "basename": "Remark42",
+      "path": "@projects/taras.life/__obsidian__/ideas/Remark42.md"
     },
     {
       "basename": "_plan_001",
@@ -191,14 +199,6 @@
     {
       "basename": "_gameDev",
       "path": "Game/_gameDev.canvas"
-    },
-    {
-      "basename": "Youtube",
-      "path": "Game/Youtube.md"
-    },
-    {
-      "basename": "Thinking",
-      "path": "Game/Thinking.md"
     }
   ],
   "omittedPaths": [],
