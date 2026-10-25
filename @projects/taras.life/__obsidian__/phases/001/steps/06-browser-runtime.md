@@ -60,5 +60,32 @@ Rewrites the browser half — the only part of the plugin a visitor pays for. It
    - **Recommend (a).**
 
 5. **Evidence moved from superseded step 01.** Native-TypeScript loading is no longer under investigation. Any baseline captured from `custom-plugins/remark42-old/` and any live-loader comparison serve concrete frontend decisions here, not proof of the standard package model. Automated regression tests stay network-free; preserve manual comparison provenance for step 07's fixture/upgrade instructions.
+   - **Fixture fact correcting item 1's premise:** the captured auto-run is NOT harmless without a container — `createInstance` → `g()` throws `Remark42: Can't find root node.` when `#remark42` is absent. Under a gated dynamic import this is moot (import only after the container is confirmed present), but (b)'s "clean up whatever the auto-run creates" framing must be re-evaluated against this.
+   - **Tension item 6 (from step 05):** the step-05 contract ships the `embed.mjs` module tag docs-verbatim and **eager**; D5 requires zero traffic before the container is near viewport. Resolving this likely means removing the static tag in favour of a gated dynamic `import()` — that is a markup change against the step-05 contract and must be recorded as a step-05 deviation + contract update here, not silently.
+
+## Comprehensive Exploration [WRITTEN AT THE STEP 05, fresh context]
+
+### Read first (in order)
+1. `__obsidian__/docs/DEV_RULES.md` — § Rendering Model: `nav`/`prenav`/`themechange` semantics, `addCleanup`, site-wide script strings, subscribe-once rules. Non-negotiable for this step.
+2. `custom-plugins/remark42/fixtures/remark42-v1.18.0-embed.mjs` — the loader contract: auto-bootstrap at import (`p()` → `g(window.remark_config)`), iframe reuse via `:scope > iframe[data-remark42-iframe]`, non-iframe container children wiped on `inited`, `destroy`/`changeTheme` on `window.REMARK42`, `REMARK42::ready` dispatched, `hash`/`hashchange` handling, 5s reveal timeout fallback. Also protocol-mismatch check on `host`.
+3. `custom-plugins/remark42/src/index.tsx` header JSDoc — the locked step-05 markup contract (don't re-read step 05's file).
+4. `custom-plugins/remark42/build.mjs` — how `src/browser.ts` becomes the embedded IIFE string (constraints on what the bootstrap source may import).
+
+### Facts already established (no re-research needed)
+- `afterDOMLoaded` strings ship site-wide, once per full page load, deduplicated; never re-executed on SPA nav → all route work driven by `nav`.
+- Event reality: only `nav` (detail.url), `prenav`, `themechange` (detail.theme) fire; `themechange` does NOT fire on initial load — read `document.documentElement.getAttribute("saved-theme")` first, then subscribe.
+- Cleanup order per nav: `prenav` → cleanups flushed → micromorph patches body → head patched → `nav`. `window.addCleanup` is a no-op when SPA is off — never depend on it for correctness.
+- On SPA nav the runtime must re-read fresh config from `script#remark42-config` text (inline scripts don't re-execute); absent-id pages have no container at all — no-op must hold.
+- Loader-control fields (`__colors__`, `styles`, `onReveal`) are destructured out before query serialization — they are not config keys; `theme`/`components` are reserved keys (D2′).
+- Production emits per-script hashed files loaded via postscript orchestrator; `--serve` bundles monolithically (emission asymmetry, harmless).
+- The current `src/browser.ts` is the step-02 placeholder (console.debug only) — full replacement target.
+
+### Where to look for Quartz SPA internals
+- `quartz/components/scripts/spa.inline.ts` (or equivalent) for `spaNavigate`, `addCleanup`, event dispatch order — read via `explore`, not full read.
+
+### Suggested flow for the step (per planning discipline)
+1. Discussion round on items 1–4 with the fixture facts on the table → lock decisions.
+2. THEN write `## Implementation` block with the user.
+3. Live-vs-fixture comparison once the runtime design is settled (optional old-widget capture before step 07 deletes `remark42-old/`).
 
 _Reflection:_ (optional — compact notes from the user)
