@@ -5,17 +5,16 @@
 
 
 ## 0. SSOT of links to additional project's .md files
+
 - ##### Instructions
-	- It's crucial to adhere to conditions of reading to avoid unnecessary context bloat.
-	- Links are relative to `AGENTS.md`, path from repo's root would be `__obsidian__/docs/AGENTS.md`
+    - It's crucial to adhere to conditions of reading to avoid unnecessary context bloat.
+    - Links of attached docs below are relative to `AGENTS.md`, path from repo's root would be `__obsidian__/docs/AGENTS.md`. Rule applies only to those few docs below, so they're repository-agnostic.
 - ##### [PLANNING.md](file:///C:/Users/Taras/Documents/obsidian-vault/_static/projects/PLANNING.md)
-    - to be read only during planning phase or implementation of the steps. [[../../../../_static/projects/PLANNING|internal link for the user]], llm shouldn't use it.
-- ##### ./docs/DEV_RULES.md
-	- to be read only before writing the code, there's no information that is helpful during planning phase.
-- ##### ./DEV_COMMANDS.md
-	- to be read only if LLM tinkers with tasks/commands/scripts
-- ##### ./PHILOSOPHY.md
-	- never read, it's too abstract for 99% of tasks at hand. 
+    - to be read only during planning phase or implementation of the steps. [[../../../../_static/projects/PLANNING|internal link for the user]], llm shouldn't use neither link or proposed paths.
+- ##### [DEV_RULES.md](./DEV_RULES.md)
+    - to be read only before writing the code, there's no information that is helpful during planning phase.
+- ##### [DEV_COMMANDS.md](./DEV_COMMANDS.md)
+    - to be read only if LLM tinkers with tasks/commands/scripts
 
 ---
 
