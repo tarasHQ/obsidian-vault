@@ -113,6 +113,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 10:42
+	- It honestly feels like LLMs are getting really tied towards being agentic. Which means they spam as much things as they can, and in agentic loops/harnesses it gets processed/filtered/etc. But in manual loops - it's PIA to deal with. So what it leaves me with? Well, I wasn't so much confused with glm. Then let's go back to glm.
+- ###### 10:39
+	- Again get discouraged a bit. This walls of reasoning and poor decisions make me anxious. Like if I can't use LLMs for cheap - I'm done. That's what makes me discouraged...
 - ###### 09:52
 	- ==🔴Ok. Timer. 15 minutes. Imagine you're a grown up and mature man that has to untangle the mess==
 		- Like don't forget that being in current state is choice. It's bittersweet. 
