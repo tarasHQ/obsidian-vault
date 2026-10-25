@@ -5,6 +5,10 @@
       "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
     },
     {
+      "basename": "Notes",
+      "path": "@projects/taras.life/YouTube/Notes.md"
+    },
+    {
       "basename": "PLANNING",
       "path": "_static/projects/PLANNING.md"
     },
@@ -27,10 +31,6 @@
     {
       "basename": "Remark42",
       "path": "@projects/taras.life/__obsidian__/ideas/Remark42.md"
-    },
-    {
-      "basename": "Notes",
-      "path": "@projects/taras.life/YouTube/Notes.md"
     },
     {
       "basename": "03-options-contract",
