@@ -21,8 +21,11 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 - ##### Instructions
     - It's crucial to adhere to conditions of reading to avoid unnecessary context bloat.
     - Links of attached docs below are relative to `AGENTS.md`, path from repo's root would be `__obsidian__/docs/AGENTS.md`. Rule applies only to those few docs below, so they're repository-agnostic.
+    - **Two link formats below mean two different things:**
+        - `[NAME](file:///C:/...)` — an **absolute OS path** for the LLM. Strip the `file:///` prefix and read the remaining path (e.g. `C:/Users/.../NAME.md`) directly with the read tool. These files live in the Obsidian vault, outside the repo, but on the same machine and readable.
+        - `[[...]]` — an **Obsidian internal link, for the user only** (clickable when the repo folder is opened/symlinked inside Obsidian). The LLM must never follow or resolve it.
 - ##### [PLANNING.md](file:///C:/Users/Taras/Documents/obsidian-vault/_static/projects/PLANNING.md)
-    - to be read only during planning phase or implementation of the steps. [[../../../../_static/projects/PLANNING|internal link for the user]], llm shouldn't use neither link or proposed paths.
+    - to be read only during planning phase or implementation of the steps. [[../../../../_static/projects/PLANNING|internal link for the user]] — user-only, LLM ignores it.
 - ##### [DEV_RULES.md](./DEV_RULES.md)
     - to be read only before writing the code, there's no information that is helpful during planning phase.
 - ##### [DEV_COMMANDS.md](./DEV_COMMANDS.md)
