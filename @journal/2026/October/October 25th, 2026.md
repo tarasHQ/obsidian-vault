@@ -113,6 +113,12 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 22:08
+	- Headache. Overloaded. 
+	- But that's the thing. It seems like I can approach this mechanically. I just need to figure out how. 
+	- Like right now I'm overloaded because I have lots of tasks on step 07, also I have to figure out properly step 06.5 and on top of it I have some security concerns I probably would want to address before I forget about it. It totals to a lot of tasks. Executive capacity can't handle it and I get overloaded. But if I had some way to track this thing... to offload stuff... maybe I would've had a shot at this. I mean a productive shot, not just push through with 20% efficiency.
+- ###### 22:03
+	- And here's time to pay the debt. Overused music. Got oversaturated and feeling down again while music does nothing to mitigate it.
 - ###### 21:33
 	- Mood continues to elevate since plugin now written properly and works. Also I did smart loading based on viewport, so traffic is efficient as well. I'm happy with how it turned out. 
 	- But the workflow... man... it needs a lot of rewrites. Like it's good, because it'll be much-much better. But a lot of cognitive work required to achieve that... 
