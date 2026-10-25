@@ -37,12 +37,14 @@ Renames the note-level `comment-id` frontmatter key to `id`, and makes every ide
    - (b) Console warning — visible in build logs, easy to scroll past.
    - (c) Fail the build naming the note.
    - **Recommend (c)**, consistent with D3.
+   - User input: a - those ids would never be done by hand. it'll be 8+ characters uuid-like string done programmatically. 
 
-2. **Character policy for `id`.**
+1. **Character policy for `id`.**
    - (a) Any non-empty string — maximum freedom, can produce unreadable URLs.
    - (b) Slug-like `[a-z0-9-]+` — predictable, typeable URLs, rejects some legitimate note names.
    - (c) Any string, warn on non-slug.
    - **Recommend (b)** for new ids, with a recorded note for the existing one.
+   - user input - b is fine. like j12v09ffa20. But I don't get about typeable URLs. I thought that those a
 
 3. **The vault side of the rename.** Content is synced from Obsidian, so a repo-only rename can be overwritten by the next sync.
    - (a) Treat the repo as SSOT and hope the sync doesn't clobber it — risky.
