@@ -113,6 +113,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 21:33
+	- Mood continues to elevate since plugin now written properly and works. Also I did smart loading based on viewport, so traffic is efficient as well. I'm happy with how it turned out. 
+	- But the workflow... man... it needs a lot of rewrites. Like it's good, because it'll be much-much better. But a lot of cognitive work required to achieve that... 
+	- On another hand monitor keeps dying on me. which is a shame... I can't afford new one, will have to figure out different flow... 
 - ###### 20:51
 	- ==What about having a second meal 5+ hours before the sleep?== It seems interesting. Like it feels for me as if I'm 1 hour away from sleep, but I have 4 more. 
 - ###### 20:19
