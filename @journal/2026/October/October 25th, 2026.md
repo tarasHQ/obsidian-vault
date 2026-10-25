@@ -113,6 +113,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 20:19
+	- Music kinda gave me energy a bit. But I'm not sure if I won't pay for that, since it intervened into compensation. But was it compensation? Hard to tell, but usually if I'm chronically down - it feels like it tries to compensate me into introspective reflection. Or, well, action. I don't know at this point. I'll see. 
+	- I just have to be cautious to these things, because I pay for that at my peril. It always comes around. 
+	- On another perspective there's an idea that music is kinda like hologram of proper life. Like it's complex, but pieces are working with each other in harmony, and it's like perfect balance of chaos and order. So maybe listening to music wakes up/makes me remember that instinct for meaning/proper life? Recalibrates a bit? I dunno. Just a thought.
 - ###### 19:46
 	- ==🟡There's third way, like I write plans and ideas in lifted spirit, execute them in kinda "downed" spirit. And that's cycle of killing productivity. There's long path ahead to finding source of that "third option", but at least I'm getting aware of it. It's kinda like proper maturity too. You're balanced in the Puer and the Senex archetypes.==
 - ###### 19:40

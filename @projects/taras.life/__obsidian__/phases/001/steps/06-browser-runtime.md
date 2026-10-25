@@ -1,7 +1,7 @@
 ---
 status: waiting
-state: high-level
-reviewedAtStep: "01"
+state: full
+reviewedAtStep: "06"
 ---
 
 [← PLAN](../_plan_001.md)
@@ -84,8 +84,66 @@ Rewrites the browser half — the only part of the plugin a visitor pays for. It
 - `quartz/components/scripts/spa.inline.ts` (or equivalent) for `spaNavigate`, `addCleanup`, event dispatch order — read via `explore`, not full read.
 
 ### Suggested flow for the step (per planning discipline)
-1. Discussion round on items 1–4 with the fixture facts on the table → lock decisions.
-2. THEN write `## Implementation` block with the user.
+1. Discussion round on items 1–4 with the fixture facts on the table → lock decisions. **Done at step 06.**
+2. THEN write `## Implementation` block with the user. **Done at step 06.**
 3. Live-vs-fixture comparison once the runtime design is settled (optional old-widget capture before step 07 deletes `remark42-old/`).
 
 _Reflection:_ (optional — compact notes from the user)
+
+### Locked decisions (step 06 discussion round)
+- **Item 1 → (b′), locked.** Let `embed.mjs` auto-start on the first gated import (the import only ever happens with `#remark42` confirmed present, so the fixture's throw path is unreachable); manage the widget afterward through the handles the module leaves on the global: `window.REMARK42.destroy()` / `.createInstance(config)`. Module code executes once per page load; every SPA remount is a local `createInstance` call, never a re-download.
+- **Item 2 → (a), locked.** IntersectionObserver gating with ~600px `rootMargin`; the eager `<script type="module" src=…embed.mjs>` tag is **removed** from the markup and replaced by a dynamic `import()` in the bootstrap — recorded as a step-05 markup-contract deviation (task 05). Dynamic import and module tags have identical fetch/CORS/cache semantics; the import additionally yields a catchable load failure (feeds item 4).
+- **Item 3 → (a), locked.** Read `saved-theme` on `document.documentElement` at each mount, apply via `changeTheme` once the instance exists; one `themechange` subscription on `document` (the darkmode package dispatches it there) for the module's lifetime, never re-subscribed per nav.
+- **Item 4 → (a, amended), locked.** Watchdog timeout per mount; on expiry the container's placeholder is replaced by a failure note. **No retry button** — a reader who cares reloads the page. Watchdog is cleared on a successful reveal signal.
+
+---
+
+## Implementation [WRITTEN AT THE STEP |06|]
+
+### 01 - Gated loader authoring in browser.ts
+- [ ] Replace the step-02 placeholder in `src/browser.ts` with the real runtime; keep the file a **hard no-op without `#remark42`**: no observer, no timer, no network, no subscriptions beyond the module-level ones.
+- [ ] Config is read **only from the DOM**: locate `script#remark42-config`, parse the `remark_config` object out of its text content; take `host` and all integration values from the parsed object — the bootstrap hardcodes nothing (site-wide config is baked into markup at build time, D2′).
+- [ ] Gate per container with an `IntersectionObserver` (`rootMargin` ≈ `"600px"`); create the observer **only after** a container is confirmed present; disconnect once fired.
+- [ ] On first approach: dynamic `import()` of `${host}/web/embed.mjs` with the URL built in a **variable**, so esbuild's pass-1 bundling cannot resolve it — verify the emitted IIFE keeps a runtime `import(...)`.
+- [ ] After the first import, subsequent mounts go through the persisted `window.REMARK42.createInstance(config)` handle; guard against a double-import while the first is in flight.
+- [ ] Types: no `any`; module globals typed via a local `type` (no `interface`), `import type` only; explicit return types on exported functions.
+
+### 02 - SPA lifecycle wiring
+- [ ] Register exactly once, at module top level, on `document`: `nav`, `prenav`, `themechange` (all confirmed dispatched on `document`; `themechange` by `@quartz-community/darkmode`).
+- [ ] On `prenav`: destroy the live instance (`window.REMARK42.destroy()`) so the iframe, listeners and MutationObserver die before micromorph patches the body; tolerate "nothing mounted yet".
+- [ ] On `nav` (fires on first load too, after component scripts): re-read container + fresh config. No container (absent-`id` page) → ensure destroyed, stay a no-op. Container present → arm the observer; if the module is already loaded, mount via `createInstance` immediately (no import, no wait for the viewport — the reader navigated here deliberately).
+- [ ] Use `window.addCleanup` for per-nav teardown as belt-and-braces, but never depend on it for correctness (no-op when SPA is off; the full page load is the cleanup then).
+- [ ] Rapid navigation: mounting is idempotent — an in-flight mount for a superseded page must not leak a second instance; every mount is preceded by a destroy of the previous one.
+
+### 03 - Theme handoff
+- [ ] At each mount, read `document.documentElement.getAttribute("saved-theme")` (`"light" | "dark"`) and apply it to the freshly mounted instance via `window.REMARK42.changeTheme(theme)`.
+- [ ] A single module-lifetime `themechange` listener on `document` pushes `changeTheme(detail.theme)` to the live instance (no-op when nothing is mounted); never re-subscribed per nav; holds no DOM references.
+
+### 04 - Failure watchdog
+- [ ] On each mount, start a watchdog timer; clear it on a confirmed successful reveal.
+- [ ] Success signal: listen on `window` for `message` events where `event.source === iframe.contentWindow` and `event.data.inited === true` (the loader's own reveal protocol, visible from the parent side); a MutationObserver on the container (its non-iframe children are wiped on `inited`) is the simpler fallback if message filtering proves brittle — pick one, verify live.
+- [ ] On expiry: stop waiting, replace the container's `Loading comments…` placeholder with a short failure note; clear timer and observers. No retry button (user reloads). The import-rejection path (offline/blocked) surfaces through the same note.
+- [ ] Never touch the article: all failures stay inside the container.
+
+### 05 - Markup change: removing the eager tag (step-05 deviation)
+- [ ] In `src/index.tsx`: delete the `<script type="module" src="${host}/web/embed.mjs" />` tag; the bootstrap in `browser.ts` becomes the sole loader of the module.
+- [ ] Update the header JSDoc markup contract accordingly (it currently states the tag is "docs-verbatim and eager" — that becomes false).
+- [ ] Record the deviation in step 05's record block: one-line note that step 06 removed the eager module tag in favour of gated dynamic import, reason D5.
+
+### 06 - Plugin rebuild and bundling verification
+- [ ] Explicit plugin rebuild per the D1 workflow (`npm run build:plugins` in the package), commit regenerated `dist/`.
+- [ ] Verify pass-1 output: the external dynamic import survives bundling as a runtime import (no esbuild resolution error, no inlined fetch of the URL).
+- [ ] `npm run check` and `npm test` in the package still green; `build.mjs` post-build assertions still hold (update the assertion if the placeholder marker string is removed with the placeholder).
+
+### 07 - Manual browser verification (live, against the real host)
+- [ ] Full page load on an opted-in post, DevTools network open: **zero** `comments.taras.life` traffic until the container is ~600px from viewport, then exactly one `embed.mjs` request and the iframe fetch.
+- [ ] No-container pages (absent `id`, 404, bases, excalidraw): zero observers/timers/network — no remark42 traces in DevTools.
+- [ ] SPA navigation post → post: widget remounts with the new thread's URL/title (check the iframe `src` query params); post → non-post: instance destroyed; back/forward correct.
+- [ ] Theme: mount in dark → widget dark; toggle after mount → widget follows without reload.
+- [ ] Failure path: block `comments.taras.life` (DevTools request blocking) → failure note appears after watchdog expiry, article unaffected.
+- [ ] Optional: before step 07 deletes `remark42-old/`, capture the old widget's network behaviour for comparison (conditions, request chain, sizes, no-container traffic) — only if useful, not a gate.
+
+### 99 - Completion flow
+- [ ] Decisions block above: user confirms which entries belong in the plan/READMEs; remove the block.
+- [ ] Frontmatter: `status: implemented`, then `state: condensed` after Run #2 rewriting.
+- [ ] Confirm downstream alignment: step 07 (tests authored against the new runtime contract, fixture/test coordination) and step 08 (`custom_properties`, styling) unaffected in their premises.
