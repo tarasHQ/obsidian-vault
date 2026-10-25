@@ -113,6 +113,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 17:27
+	- Lots of rewrites and thinking I need to do from recent experience... It's so discouraging. I'm tired to feel like that. I have this one push impulse, and then again fade away into the hopelessness. Because the flow isn't just there. Like at this point I'm trying to be done with this plugin in a manner that is acceptable long-term. But it's just PIA to do so. 
+- ###### 17:19
+	- How I'll get back to my project with these LLMs? Provider change helped a bit, but still it's damn walls of reasoning...
 - ###### 16:27
 	- the worst thing is me staring at the screen waiting for the response. That's discouraging. Massively. Feels like time is wasted. And the issue is that obvious solution requires multi-tasking and context switching, which is kinda unproductive as well.
 - ###### 16:17
