@@ -44,18 +44,21 @@ Renames the note-level `comment-id` frontmatter key to `id`, and makes every ide
    - (b) Slug-like `[a-z0-9-]+` — predictable, typeable URLs, rejects some legitimate note names.
    - (c) Any string, warn on non-slug.
    - **Recommend (b)** for new ids, with a recorded note for the existing one.
-   - user input - b is fine. like j12v09ffa20. But I don't get about typeable URLs. I thought that those a
+   - user input - b is fine. like j12v09ffa20. But I don't get about typeable URLs. I thought that those are only for internal remark42 references, and notes real urls would be different, no?
+      - another point is about length. like full uuid may be too distracting to stay as frontmatter property, so maybe we need 10 chars, or 8chars? or something else timestamp-based so chance of duplication is low?
 
-3. **The vault side of the rename.** Content is synced from Obsidian, so a repo-only rename can be overwritten by the next sync.
+1. **The vault side of the rename.** Content is synced from Obsidian, so a repo-only rename can be overwritten by the next sync.
    - (a) Treat the repo as SSOT and hope the sync doesn't clobber it — risky.
    - (b) The user renames the key in the vault note as part of this step; the repo follows.
    - (c) Support both keys for a transition period — safe, but leaves permanent dual-key code.
    - **Recommend (b).**
+   - User input - ignore this. There's no notes with id besides current test one. So nothing to rename yet. And when vault will start to sync - then I'll rename it. 
 
-4. **Where duplicate detection runs.**
+1. **Where duplicate detection runs.**
    - (a) Once per published-metadata array, as today.
    - (b) On every render — simple but wasteful.
    - (c) Once at build start over all parsed files.
    - **Recommend (a)**, now failing instead of warning.
+   - chances is so low though. But chance to copy a note and forget to update ID - is really high. I think that the main thing here - is to just think on how to attach comments to notes. Properly. like is id the best way? Maybe there's something automatic that doesn't require user attention? or obsidian templates. 
 
 _Reflection:_ (optional — compact notes from the user)
