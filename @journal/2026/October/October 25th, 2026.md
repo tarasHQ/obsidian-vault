@@ -113,6 +113,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 10:49
+	- GLM feels like a breath of fresh air. Don't know why deepseek was so uncomfortable... 
 - ###### 10:42
 	- It honestly feels like LLMs are getting really tied towards being agentic. Which means they spam as much things as they can, and in agentic loops/harnesses it gets processed/filtered/etc. But in manual loops - it's PIA to deal with. So what it leaves me with? Well, I wasn't so much confused with glm. Then let's go back to glm.
 - ###### 10:39
