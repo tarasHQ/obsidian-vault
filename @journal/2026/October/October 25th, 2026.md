@@ -114,7 +114,7 @@ action:
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
 - ###### 16:27
-	- the worst thing is me staring at the screen waiting for the response. That's discouraging. Massively. Feels like time is wasted.
+	- the worst thing is me staring at the screen waiting for the response. That's discouraging. Massively. Feels like time is wasted. And the issue is that obvious solution requires multi-tasking and context switching, which is kinda unproductive as well.
 - ###### 16:17
 	- ==🟡It's a choice to suffer==
 	- ==🟡It's a choice to suffer==
