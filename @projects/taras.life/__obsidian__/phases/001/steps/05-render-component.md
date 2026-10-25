@@ -21,6 +21,8 @@ Locked the build-time markup contract. Most of the render already existed from s
 
 **Verified (all green):** `npm run build:plugins` (regenerated committed `dist/`), `npm run check` + `npm test`, `npx quartz build` with built-page inspection: `remark42-shell-test.html` — one section, single `script#remark42-config` with the docs-verbatim config, `url` intact (`https://taras.life/comments/remark42-shell-test`), paragraph present, module tag present; every other HTML page — zero remark42 traces; CSS emission unchanged (one hashed component stylesheet site-wide); `dist/index.js` confirmed carrying the new markup.
 
+**Step-06 deviation:** the eager `embed.mjs` module tag was removed from the markup at step 06 — it fetched Remark42 on every page load, violating D5; the browser runtime is now the sole loader via gated dynamic `import()`. The contract line about the tag is obsolete; the tag no longer exists.
+
 **Handoffs:** step 06 — owns the runtime against this contract: re-reads `script#remark42-config`'s text on SPA nav, honours absent-id → no container, owns the eager-module-tag/D5 gating tension, owns `theme`/`components` reserved keys; step 08 — `custom_properties` fill, `min-height` question, full styling.
 
 ---
