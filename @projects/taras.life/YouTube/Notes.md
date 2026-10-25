@@ -6,3 +6,4 @@
 - If I would watch it - what would be interesting for me?
 	- how the guy on video got desperate/hopeless/angry, and if he found away to get out of it, either by accident or intentionally. 
 	- I would really appreciate honesty and humility. Like if I saw that the guy acts on camera - I would just not believe that the whole thing is real. 
+	- 

@@ -114,7 +114,7 @@ action:
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
 - ###### 19:46
-	- ==🟡There's third way, like ==
+	- ==🟡There's third way, like I write plans and ideas in lifted spirit, execute them in kinda "downed" spirit. And that's cycle of killing productivity. There's long path ahead to finding source of that "third option", but at least I'm getting aware of it. It's kinda like proper maturity too. You're balanced in the Puer and the Senex archetypes.==
 - ###### 19:40
 	- Music?
 	- If new iteration of the flow will work - it will be much better. I have to just survive through this task and not mess it up. I spend more time, but result won't be half-assed. Especially since it's like 70% there.
