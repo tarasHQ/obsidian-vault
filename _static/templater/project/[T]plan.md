@@ -118,7 +118,8 @@ isIntegrated: false
 
 <% CFG.backlinkToProject %>
 
-# Phase <% tp.file.folder() %> - NAME_OF_THE_PLAN
+# P <% tp.file.folder() %> - NAME_OF_THE_PLAN
+%%[Internal User Link to Template](_static/templater/project/[T]plan) LLMs should ignore both the link and the paths it hints on%%
 
 ## Description & Meaning
 %%A few sentences about rough direction of the plan, just to get initial constraints on brainstorming. Goals and visions that will sustain meaning in the user through the whole process of planning and implementation%%
