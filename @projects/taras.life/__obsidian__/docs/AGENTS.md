@@ -20,7 +20,7 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 
 - ##### Instructions
     - It's crucial to adhere to conditions of reading to avoid unnecessary context bloat.
-    - Links are relative to `AGENTS.md`, path from repo's root would be `__obsidian__/docs/AGENTS.md`
+    - Links of attached docs below are relative to `AGENTS.md`, path from repo's root would be `__obsidian__/docs/AGENTS.md`. Rule applies only to those few docs below, so they're repository-agnostic.
 - ##### [PLANNING.md](file:///C:/Users/Taras/Documents/obsidian-vault/_static/projects/PLANNING.md)
     - to be read only during planning phase or implementation of the steps. [[../../../../_static/projects/PLANNING|internal link for the user]], llm shouldn't use neither link or proposed paths.
 - ##### [DEV_RULES.md](./DEV_RULES.md)
@@ -39,6 +39,7 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 - **Bundler**: esbuild (+ `esbuild-sass-plugin`). Notes: bundles page JS and the local plugin's browser script.
 - **CSS toolchain**: SCSS → Lightning CSS. Notes: compiled and minified at build time.
 - **Quality gates**: Prettier, `tsx --test`, `tsc --noEmit`. Notes: `npm run check`, `npm test`.
+- **Git hooks**: lefthook. Notes: `pre-push` runs types→format→tests→build fast-fail-first; `pre-commit` README-review ported but disabled (`skip: true` in `lefthook.yml`). Wired by root `prepare` → `lefthook install`; bypass with `LEFTHOOK=0`.
 
 **Content & generation**
 - **Authoring**: Markdown + YAML frontmatter, written in Obsidian. Notes: lives in `content/` (not vault). 
@@ -63,7 +64,6 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 
 ### 01.2. Remark42 Comments
 - #### Plugin `custom-plugins/remark42/`
-	- 
 	- **Content binding**: a post is commentable only if it carries an `id` in frontmatter — no `id`, no comments.
 	- **Analytics caveat** (crucial on the free Cloudflare Worker plan): edge-injected web analytics ships `beacon.js` into Remark42's OAuth icons and breaks them; the workaround is a domain rule that disables `RUM` when the host equals Remark42's public host.
 - #### Service
