@@ -1,8 +1,8 @@
 {
   "recentFiles": [
     {
-      "basename": "PLANNING",
-      "path": "_static/projects/PLANNING.md"
+      "basename": "AGENTS",
+      "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
     },
     {
       "basename": "03-options-contract",
@@ -11,6 +11,10 @@
     {
       "basename": "_plan_001",
       "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
+    },
+    {
+      "basename": "PLANNING",
+      "path": "_static/projects/PLANNING.md"
     },
     {
       "basename": "[T]phase",
@@ -47,10 +51,6 @@
     {
       "basename": "Remark42",
       "path": "@projects/taras.life/__obsidian__/ideas/Remark42.md"
-    },
-    {
-      "basename": "AGENTS",
-      "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
     },
     {
       "basename": "01-loading-topology-spike",

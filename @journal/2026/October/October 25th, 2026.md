@@ -113,6 +113,11 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 15:01
+	- ==That's exactly when the state of PMO-urge comes in and how it manages to act itself out. No hope, no meaning, nothing matters. So why all of a sudden PMO matters? Like it's the only thing that justifies me going away from this torture. It's a good thing for all I care==
+	- Yeah... so I shouldn't fight like PMO and such, but I should fight these states. Timer again? 
+- ###### 14:53
+	- Now this all flow and recording and journaling/logging feels like a burden, honestly. Not even worth having... Is it real? 
 - ###### 13:45
 	- Ok, so probably I found the reason. Provider selection didn't work. Openrouter was randomly using providers, all of them wasn't on fp8 quantization (like it could've been even lower than fp4), so I fixed it, and will see how it will behave now.
 	- Seems like it's better now... will see...
