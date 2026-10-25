@@ -1,18 +1,6 @@
 {
   "recentFiles": [
     {
-      "basename": "06-browser-runtime",
-      "path": "@projects/taras.life/__obsidian__/phases/001/steps/06-browser-runtime.md"
-    },
-    {
-      "basename": "Notes",
-      "path": "@projects/taras.life/YouTube/Notes.md"
-    },
-    {
-      "basename": "_plan_001",
-      "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
-    },
-    {
       "basename": "PLANNING",
       "path": "_static/projects/PLANNING.md"
     },
@@ -21,8 +9,28 @@
       "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
     },
     {
+      "basename": "[T]step",
+      "path": "_static/templater/project/[T]step.md"
+    },
+    {
+      "basename": "_plan_001",
+      "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
+    },
+    {
+      "basename": "[T]plan",
+      "path": "_static/templater/project/[T]plan.md"
+    },
+    {
+      "basename": "Notes",
+      "path": "@projects/taras.life/YouTube/Notes.md"
+    },
+    {
       "basename": "05-render-component",
       "path": "@projects/taras.life/__obsidian__/phases/001/steps/05-render-component.md"
+    },
+    {
+      "basename": "06-browser-runtime",
+      "path": "@projects/taras.life/__obsidian__/phases/001/steps/06-browser-runtime.md"
     },
     {
       "basename": "04-identity-id-rename",
@@ -63,14 +71,6 @@
     {
       "basename": "99-end",
       "path": "@projects/taras.life/__obsidian__/phases/001/steps/99-end.md"
-    },
-    {
-      "basename": "[T]step",
-      "path": "_static/templater/project/[T]step.md"
-    },
-    {
-      "basename": "[T]plan",
-      "path": "_static/templater/project/[T]plan.md"
     },
     {
       "basename": "00-start",
