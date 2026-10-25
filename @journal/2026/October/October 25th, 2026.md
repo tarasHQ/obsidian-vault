@@ -113,6 +113,9 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 18:17
+	- Yeah... that doesn't work. Too much resistance. Watched youtube for 10 minutes. Don't know how to proceed. Probably I'll go eat, and then I'll finish plugin. Properly. Today. Tomorrow will figure what to do next.
+	- These setbacks are really hard to swallow, because like my whole damn life depends on what I'm doing right now. When I fail there - it's like a major proof that "bad vision" of my life is more real than a "good vision". So minor setback leads to really bad mood fluctuations. So yeah... having lots of pressure not enough - with all of that on my shoulders, now I have to climb on the mountain too. Man I hope I survive this transformation if it really happens. 
 - ###### 17:27
 	- Lots of rewrites and thinking I need to do from recent experience... It's so discouraging. I'm tired to feel like that. I have this one push impulse, and then again fade away into the hopelessness. Because the flow isn't just there. Like at this point I'm trying to be done with this plugin in a manner that is acceptable long-term. But it's just PIA to do so. 
 - ###### 17:19
