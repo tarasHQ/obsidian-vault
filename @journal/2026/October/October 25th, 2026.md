@@ -88,7 +88,7 @@ action:
 	- [ ] 🔴[[plans/better-schedule-plan|better-schedule-plan]]
 		- Tick tick becomes PIA. Limited too. Maybe there's something else? Maybe there's self-hosted things? 
 - ### Priority
-	- [ ] 
+	- [x] 
 	- [ ] Rewrite remark42 plugin. Properly. With the new workflow. 
 - ### Completed
 	- [ ] copy_from_here
@@ -113,6 +113,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 20:51
+	- ==What about having a second meal 5+ hours before the sleep?== It seems interesting. Like it feels for me as if I'm 1 hour away from sleep, but I have 4 more. 
 - ###### 20:19
 	- Music kinda gave me energy a bit. But I'm not sure if I won't pay for that, since it intervened into compensation. But was it compensation? Hard to tell, but usually if I'm chronically down - it feels like it tries to compensate me into introspective reflection. Or, well, action. I don't know at this point. I'll see. 
 	- I just have to be cautious to these things, because I pay for that at my peril. It always comes around. 
