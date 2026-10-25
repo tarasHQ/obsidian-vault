@@ -25,25 +25,28 @@ action:
   file: _static/scripts/meta-bind/journal-remove-checklist.js
 ```
 - ##### NIGHT CHECKLIST
-    - [ ] ==🟡try 15 fps and 4seconds keyframe== - but only if the size of current day will be ok. I think under 10 gig per day is optimal. 1tb per 100 days. Like don't think about future. Maybe in a year you won't need to record yourself anymore. So that's fine. If not - youtube will cover ya.  Also you can re-encode to reduce file size by 50%. So you can push 10gb. Right now it'll be around 7gb I recon. 
+    - [x] ==🟡try 15 fps and 4seconds keyframe== - but only if the size of current day will be ok. I think under 10 gig per day is optimal. 1tb per 100 days. Like don't think about future. Maybe in a year you won't need to record yourself anymore. So that's fine. If not - youtube will cover ya.  Also you can re-encode to reduce file size by 50%. So you can push 10gb. Right now it'll be around 7gb I recon. 
     - ###### AFTER NEW RECORDING
-        - [ ] Check audio delay to webcam
-        - [ ] Night scene
-        - [ ] Check IP cam (quality, delay)
-            - [ ] Night position
-        - [ ] Check TickTick schedule (correct day, scheduled)
-        - [ ] Set time of next sleep for stager timer.
+        - [x] Check audio delay to webcam
+        - [x] Night scene
+        - [x] Check IP cam (quality, delay)
+            - [x] Night position
+        - [x] Check TickTick schedule (correct day, scheduled)
+        - [x] Set time of next sleep for stager timer.
     - ###### BEFORE SLEEP
-        - [ ] Write overview of the current day
-        - [ ] Create journal for the next day
-        - [ ] Move uncompleted tasks
-        - [ ] Make sure all day's reflections are linked under reflections
-        - [ ] monitor contrast/bright. at 0
+        - [x] Write overview of the current day
+        - [x] Create journal for the next day
+        - [x] Move uncompleted tasks
+        - [x] Make sure all day's reflections are linked under reflections
+        - [x] monitor contrast/bright. at 0
 
 ---
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
+The usual. Morning kinda ok. Mid-day is off. Night gets some boost. But also I got a lot of issues with everything. LLMs made me mad as hell. Barely managed to go through old ai slop - now they're drowning me into another walls of text. So frustrating it's insane. 
+
+I'm walking on the very thin ice, and nights like this one - keep remembering me that. But what can I do? Nothing. Sleep and then continue. 
 
 
 ---
@@ -59,20 +62,7 @@ action:
 
 ## TASKS
 %%Cognitive offload for the day, to not keep these in my mind for the whole time%%
-- ### Active
-	- [ ] Templates for reflections - maybe shouldn't use project backlinks for now, until I figure out if there's gonna be "main index"
-	- [ ] Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
-	- [ ] You need simple back/forward(automatic visibility if exists) navigation between journal entries. (or use calendar plugin for the time being)
-	- [ ] You need a to select a block of text, press hotkey and save it as a reflection with link that replace selected text. (also it should have same frontmatter as current flow)
-		- [ ] On top of it, current flow of templated reflections probably should force copy link into clipboard as well. These shouldn't be in the journaling, because they give constraints on the size. 
-			- or maybe you just use initial `_reflections` flow instead of limiting yourself within the journal entry? 
-	- [ ] 🔴[[plans/better-schedule-plan|better-schedule-plan]]
-		- Tick tick becomes PIA. Limited too. Maybe there's something else? Maybe there's self-hosted things? 
-- ### Priority
-	- [ ] 
-	- [ ] Rewrite remark42 plugin. Properly. With the new workflow. 
 - ### Completed
-	- [ ] copy_from_here
 	- [x] read through all remark42 docs. Now I'm ready to rewrite the plugin.
 	- [x] wrote 00 step with checklists. 
 	- [x] Fixed obsidian indentation issues with comments. Now can use them and everything is straight and beautiful.
@@ -110,8 +100,18 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 00:57
+	- Didn't even want to start recording. 
+	- Ok. I got mad because? Because the task got underlying hidden complexity. 
+	- And deep seek spams with reasoning tokens and doesn't do anything before it reaches like 50k of context size, at which point it starts to be imprecise. 
+	- So what can I do? glm worked nicely for me. But maybe I can manage to drop deepseek reasoning from the context. based on the config. And see how it goes. 
+	- Another thing is that I'm biting too much. Like it's not a lot. But turns out with this thinking spamming it becomes a lot. 
+	- If it's good if I drop thinking - then fine. If no - then I'll figure out something else or come back to the glm.
+	- It's just so damn overwhelming it's insane. Like as if I didn't have enough obstacles. 
 - ###### 00:31
 	- I'm angry because this situation directly affects all my plans. It makes them significantly harder. So like chances of the future where I off myself raised significantly. Because instead of finally being able to breath - I found myself before another huge obstacle. And this fucking timer is flashing and I have to go to sleep. 
+	- How easily this ice, I'm walking on, can break. A few hours ago I was working with no issues - now I'm imagining offing myself as a huge relief to all this struggle.
+	- Like how can I do much bigger and much harder issues, when I have this much shit already. On like smallest and easiest things? Everything crumbled. Every damn thing. 
 - ###### 00:26
 	- I just get really frustrated with this shit. Don't know what to do honestly. Like how all these "frontier" models became so stupid? And that thinking spam... what a load of BS for their 'agi-level' intellect. 
 	- I'm just angry as hell with this shit. And on top of it 1 hour has passed - nothing is done. And I have to do this "day finalization" shit while this fucking llms have their context windows blown to pieces with this fucking stupid thinking. 

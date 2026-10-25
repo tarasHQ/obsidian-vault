@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "October 25th, 2026",
+      "path": "@journal/2026/October/October 25th, 2026.md"
+    },
+    {
+      "basename": "Remark42",
+      "path": "@projects/taras.life/__obsidian__/ideas/Remark42.md"
+    },
+    {
+      "basename": "October 24th, 2026",
+      "path": "@journal/2026/October/October 24th, 2026.md"
+    },
+    {
       "basename": "_plan_001",
       "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
     },
@@ -17,10 +29,6 @@
       "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
     },
     {
-      "basename": "Remark42",
-      "path": "@projects/taras.life/__obsidian__/ideas/Remark42.md"
-    },
-    {
       "basename": "00-start",
       "path": "@projects/taras.life/__obsidian__/phases/001/steps/00-start.md"
     },
@@ -35,10 +43,6 @@
     {
       "basename": "on-discouragement-again",
       "path": "Psychoanalysis/_reflections/on-discouragement-again.md"
-    },
-    {
-      "basename": "October 24th, 2026",
-      "path": "@journal/2026/October/October 24th, 2026.md"
     },
     {
       "basename": "October 22nd, 2026",
@@ -195,10 +199,6 @@
     {
       "basename": "Thinking",
       "path": "Game/Thinking.md"
-    },
-    {
-      "basename": "DevSpec",
-      "path": "Game/DevSpec.md"
     }
   ],
   "omittedPaths": [],
