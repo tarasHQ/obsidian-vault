@@ -113,6 +113,12 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 13:45
+	- Ok, so probably I found the reason. Provider selection didn't work. Openrouter was randomly using providers, all of them wasn't on fp8 quantization (like it could've been even lower than fp4), so I fixed it, and will see how it will behave now.
+	- Seems like it's better now... will see...
+- ###### 13:22
+	- I'm doing something wrong here... Feels like that. But I can't NOT use cheap llms. But also they think so damn much it's insane. Like a 10k tokens per thinking. And it's not even "max" reasoning. That gets me discouraged. The longer they do this bs - the higher a chance to get absolute crap on the output. 
+	- I get angry and frustrated again. It's just a load of BS this thing. Like why they spam reasoning for so damn long...
 - ###### 13:08
 	- Getting sleepy. Rewrite takes a bit too much time... But I'm doing additional interesting and useful things in parallel. So hopefully it's worth it.
 - ###### 12:28
