@@ -24,7 +24,7 @@ The plugin is being written **from scratch**. The previous implementation was mo
 - The plugin imports `QuartzComponent` as a type from `@quartz-community/types`; no file references `../../../quartz`; the temporary `types`/`typeRoots` workaround is gone from its `tsconfig`.
 - Root `npm run check` typechecks the plugin too, so a plugin type error fails the same command that gates the rest of the repo.
 - `.github/workflows/ci.yaml` already runs `build` → `check` → a separate `npm --prefix custom-plugins/remark42 run typecheck` → `test`. Fold the typecheck into root `check` and drop the duplicate CI step in the same commit.
-- Do not assume `custom-plugins/README.md` exists; exploration found no parent README. The plugin README rewrite remains step 07's responsibility.
+- The plugin README rewrite remains step 07's responsibility; no parent-folder README exists or will be created.
 
 ### Local invariants
 - Quartz loads compiled JavaScript, never plugin TypeScript/TSX source. The emitted modules and browser-resource imports must resolve correctly from the linked package.
@@ -55,7 +55,7 @@ The plugin is being written **from scratch**. The previous implementation was mo
    - (a) Add plugin sources to the root `tsconfig.json` `include` — one program, but mixes two build targets and demotes the plugin's own tsconfig.
    - (b) A `check:plugin` script that root `check` invokes — explicit, one extra script.
    - (c) Keep only the separate CI step — local `npm run check` stays green while the plugin is broken.
-   - **Recommend (b)**, and delete the now-redundant CI step.
+   - **Locked: (b), user-confirmed.** Root `check` invokes the plugin's own typecheck (via `check:types`), so one command covers site and plugin; the now-redundant CI step is deleted in task 11.
 
 3. **How tightly to guard "no host imports, no Node builtins".**
    - (a) Nothing; rely on review.
@@ -63,11 +63,14 @@ The plugin is being written **from scratch**. The previous implementation was mo
    - (c) A test that parses imports in `src/`.
    - **Locked: (b), implemented as a Node script instead of `grep`.** npm runs scripts through `cmd.exe` on Windows, so a `grep`-based guard is a portability bug. A dependency-free `scripts/check-imports.mjs` that reads `src/**` and inspects import specifiers gives the same guarantee on both platforms. Scoping matters: the build script and tests legitimately use `node:` builtins; only `src/` must stay clean.
 
-4. **What replaces the temporary Windows junction note.** Verified in `quartz/plugins/loader/gitLoader.ts`: `linkLocalPlugin` tries `symlink`, falls back to `junction` on Windows `EPERM`, then to a copy; and `installPlugin` removes any pre-existing non-symlink entry, so a stale copy self-heals on the next build.
-   - (a) Keep it as-is.
-   - (b) Drop it — the loader creates the junction itself.
+4. **What replaces the temporary Windows junction note.** Two code paths handle local plugins, with different Windows behavior:
+   - **CLI path** (`npx quartz plugin add ./path`): goes through `quartz/cli/helpers.js` → `symlinkOrCopySync()`, which upstream made Windows-safe (symlink → junction → copy).
+   - **Build-time path** (our flow: `source: ./custom-plugins/remark42` in YAML → `loadQuartzConfig()` → `installPlugin()` → `linkLocalPlugin()`): the vendored loader could not import from the CLI layer (layer separation), so it previously had a bare `fs.symlinkSync` with **no junction fallback** — on Windows without Developer Mode/admin it threw `EPERM` and crashed the build. The `CUSTOM EDIT BY TARAS.` patch in `gitLoader.ts` ports `symlinkOrCopySync()`'s fallback into the loader; it is load-bearing, not a redundant duplicate.
+   Also verified: `installPlugin` removes any pre-existing non-symlink entry, so a stale copy self-heals on the next build.
+   - (a) Keep the old manual junction note as-is.
+   - (b) Drop the note — the loader creates the junction itself via the patch.
    - (c) Replace it with "delete `.quartz/plugins/<name>` if it is a copy, not a link" — unnecessary, the loader already replaces copies.
-   - **Recommend (b).**
+   - **Locked: (b), user-confirmed after corrected analysis.** The old note described a pre-patch manual ritual; the patch makes it obsolete. Additionally, the `CUSTOM EDIT BY TARAS.` comment in `gitLoader.ts` must be amended (task 01) to document that it is a deliberate port of `helpers.js`'s `symlinkOrCopySync()` — so future merges don't delete it as a redundant duplication.
 
 5. **Entry point and `exports` shape.** Verified: `getPluginEntryPoint` and `getPluginSubpathEntry` read `exports[<key>]` as a string **or** as `exports[<key>].import`, so the conditional-object form is safe. Declare `"."` and `"./components"` explicitly, pointing to compiled `dist/` JavaScript; they may share one entry. Declarations are optional — nothing in the repo consumes the package's types, so emit them only if they stay cheap.
 
@@ -97,12 +100,18 @@ The plugin is being written **from scratch**. The previous implementation was mo
 _Reflection:_ (optional — compact notes from the user)
 
 - USER INPUT:
+	- The user seriously challenged the committed-dist model (D1): "verify:dist rebuilds anyway, so why not rebuild always?" Two of the user's objections were correct as stated — full autobuild (no committed dist, no gate, loader compiles) is internally coherent, and my earlier arguments overstated the esbuild/NODE_ENV point (verify:dist needs esbuild too).
+	- The loader-autobuild alternative was evaluated with real numbers by reading `gitLoader.ts`: the machinery exists (`buildInstalledPlugin`, used only by the git-install branch); the local-branch patch is ~1–3 lines (always-build) or ~15–25 lines (hash-based staleness) plus a ~10-line slimmed helper (the stock one runs `npm install --ignore-scripts` + `npm prune --omit=dev` in the plugin dir). Against it: a second vendored patch, deviation from the documented plugin model, and staleness guarantees moving into patched third-party code. For it: no committed dist, no gate, no extra command; `linkPeerDependencies()` already guarantees the single preact copy (and `preact` is in the loader's `SINGLETON_EXTERNALS`).
+	- **User receded; D1 (committed-dist model) stands, now with a stronger justification:** the gate is ~80 lines of first-party code we fully control and understand, versus a permanent vendored patch re-verified at every Quartz merge. Decision is re-confirmed, not silently carried.
+	- Discussion 2 locked as (b): plugin typecheck folds into root `check`; CI's duplicate "Check Remark42 types" step is deleted.
+	- Discussion 4 locked as (b) after correcting an earlier mischaracterization: the junction patch in `gitLoader.ts` is load-bearing (the loader layer lacked the fallback the CLI layer has), and the old plugin's manual junction note was a pre-patch ritual. The patch's provenance comment gets amended in task 01.
 
 ## Implementation [WRITTEN AT THE STEP |02|]
 
 > Between task 02 and task 07 the repository cannot run `npm run build`: `quartz.config.yaml` points at a plugin directory that has no loadable entry yet. That is expected inside this step, not a regression to chase.
 
 ### 01 - Decommission The Reference Folder From Active Tooling
+- [ ] Amend the `CUSTOM EDIT BY TARAS.` comment on `linkLocalPlugin` in `quartz/plugins/loader/gitLoader.ts`: state that the junction fallback is a deliberate **port** of `symlinkOrCopySync()` from `quartz/cli/helpers.js` (the loader cannot import from the CLI layer), it is load-bearing for Windows builds without elevation, and must be re-verified (not deleted) on upstream merges. Comment-only change; no behavior change.
 - [ ] Delete `custom-plugins/remark42-old/test/`. Those three `*.test.mjs` files are picked up by the root `tsx --test` discovery and import `../dist/*.js`, which the move removed — they keep `npm test` and CI red for the whole phase. The runtime reference for step 06 is the fixture, not these tests.
 - [ ] Copy `fixtures/` and its provenance `README.md` into `custom-plugins/remark42/fixtures/` (step 06 needs it, step 07 deletes the old folder). Leave the old copy in place so the reference folder stays self-contained.
 - [ ] Confirm `quartz.config.yaml` never mentions `remark42-old`, and that after the deletion `npm run check` and `npm test` no longer trip over the old folder.
