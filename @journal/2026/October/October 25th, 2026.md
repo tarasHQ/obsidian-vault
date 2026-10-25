@@ -33,7 +33,7 @@ action:
     - [x] Check TickTick schedule 
         - [x] correct day, scheduled, scaled
         - [x] red "now" line is there
-    - [ ] Fill Context block
+    - [x] Fill Context block
 
 ```meta-bind-button
 label: Remove Night Checklist
