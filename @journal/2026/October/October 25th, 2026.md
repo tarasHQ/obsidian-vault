@@ -113,9 +113,15 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 15:57
+	- It's just always this mistake. How can I repeat it so much. Write plans in wrong state of mind, and then pay for that for days/weeks.
+- ###### 15:53
+	- With bigger picture on this thing - I'm getting that feeling that I usually have before I just collapse and drop everything. Like entropy of the system becomes so big, that it just can't be a system anymore... 
 - ###### 15:43
 	- Yeah... Well... I'll hope it won't impact negatively for the rest of the day. 
-	- Ok. I really think that absence of proper learning 
+	- Ok. I really think that absence of proper learning is kinda adds up to meaninglessness.
+	- So, main issue is set. I wrote the plan in the wrong state of mind and now pay the price
+	- Do I continue, or I rewrite the plan? 
 - ###### 15:18
 	- No hope. No hope at all. At this pace I'll never get things done. Never. It's just isn't possible. Like it's a damn plugin for god's sake.... why I have so much struggle with it? 
 		- maybe because you don't know what you're doing? Maybe because you made stupid decisions in yesterday's evening-night, didn't read shit, and now you're paying for them? 
