@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "06-browser-runtime",
+      "path": "@projects/taras.life/__obsidian__/phases/001/steps/06-browser-runtime.md"
+    },
+    {
       "basename": "Notes",
       "path": "@projects/taras.life/YouTube/Notes.md"
     },
@@ -15,10 +19,6 @@
     {
       "basename": "AGENTS",
       "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
-    },
-    {
-      "basename": "06-browser-runtime",
-      "path": "@projects/taras.life/__obsidian__/phases/001/steps/06-browser-runtime.md"
     },
     {
       "basename": "05-render-component",
