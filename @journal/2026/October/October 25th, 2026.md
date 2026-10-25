@@ -113,6 +113,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 13:08
+	- Getting sleepy. Rewrite takes a bit too much time... But I'm doing additional interesting and useful things in parallel. So hopefully it's worth it.
 - ###### 12:28
 	- It has lots of friction, but I'm moving. Sometimes one needs to act before thinking. This was the case. Like I god "visions/imagines" in my mind even before I started to reflect - that was the first hint about what should I do. Unconscious was helpful even then. 
 	- It's weird. Unconscious complex possessed me, and at the same time, something from the unconscious helped me to get out of that possession. Don't know how to wrap my head around it...
