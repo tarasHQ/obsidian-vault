@@ -1,44 +1,92 @@
 {
   "recentFiles": [
     {
-      "basename": "October 25th, 2026",
-      "path": "@journal/2026/October/October 25th, 2026.md"
-    },
-    {
-      "basename": "Why I got angry and frustrated tonight",
-      "path": "Psychoanalysis/_reflections/Why I got angry and frustrated tonight.md"
-    },
-    {
-      "basename": "Project's start and end steps",
-      "path": "@system/_reflections/Project's start and end steps.md"
-    },
-    {
-      "basename": "October 24th, 2026",
-      "path": "@journal/2026/October/October 24th, 2026.md"
-    },
-    {
-      "basename": "Remark42",
-      "path": "@projects/taras.life/__obsidian__/ideas/Remark42.md"
+      "basename": "02-package-lock-in",
+      "path": "@projects/taras.life/__obsidian__/phases/001/steps/02-package-lock-in.md"
     },
     {
       "basename": "_plan_001",
       "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
     },
     {
-      "basename": "01-loading-topology-spike",
-      "path": "@projects/taras.life/__obsidian__/phases/001/steps/01-loading-topology-spike.md"
-    },
-    {
       "basename": "PLANNING",
       "path": "_static/projects/PLANNING.md"
+    },
+    {
+      "basename": "08-visual-polish",
+      "path": "@projects/taras.life/__obsidian__/phases/001/steps/08-visual-polish.md"
+    },
+    {
+      "basename": "07-tests-and-docs",
+      "path": "@projects/taras.life/__obsidian__/phases/001/steps/07-tests-and-docs.md"
+    },
+    {
+      "basename": "06-browser-runtime",
+      "path": "@projects/taras.life/__obsidian__/phases/001/steps/06-browser-runtime.md"
+    },
+    {
+      "basename": "05-render-component",
+      "path": "@projects/taras.life/__obsidian__/phases/001/steps/05-render-component.md"
+    },
+    {
+      "basename": "03-options-contract",
+      "path": "@projects/taras.life/__obsidian__/phases/001/steps/03-options-contract.md"
+    },
+    {
+      "basename": "04-identity-id-rename",
+      "path": "@projects/taras.life/__obsidian__/phases/001/steps/04-identity-id-rename.md"
+    },
+    {
+      "basename": "[T]step-start",
+      "path": "_static/templater/project/[T]step-start.md"
+    },
+    {
+      "basename": "Remark42",
+      "path": "@projects/taras.life/__obsidian__/ideas/Remark42.md"
     },
     {
       "basename": "AGENTS",
       "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
     },
     {
+      "basename": "01-loading-topology-spike",
+      "path": "@projects/taras.life/__obsidian__/phases/001/steps/01-loading-topology-spike.md"
+    },
+    {
+      "basename": "[T]step-end",
+      "path": "_static/templater/project/[T]step-end.md"
+    },
+    {
+      "basename": "99-end",
+      "path": "@projects/taras.life/__obsidian__/phases/001/steps/99-end.md"
+    },
+    {
+      "basename": "[T]step",
+      "path": "_static/templater/project/[T]step.md"
+    },
+    {
+      "basename": "[T]plan",
+      "path": "_static/templater/project/[T]plan.md"
+    },
+    {
       "basename": "00-start",
       "path": "@projects/taras.life/__obsidian__/phases/001/steps/00-start.md"
+    },
+    {
+      "basename": "October 25th, 2026",
+      "path": "@journal/2026/October/October 25th, 2026.md"
+    },
+    {
+      "basename": "[T]daily-journaling",
+      "path": "_static/templater/[T]daily-journaling.md"
+    },
+    {
+      "basename": "October 24th, 2026",
+      "path": "@journal/2026/October/October 24th, 2026.md"
+    },
+    {
+      "basename": "Project's start and end steps",
+      "path": "@system/_reflections/Project's start and end steps.md"
     },
     {
       "basename": "_project",
@@ -55,10 +103,6 @@
     {
       "basename": "October 22nd, 2026",
       "path": "@journal/2026/October/October 22nd, 2026.md"
-    },
-    {
-      "basename": "[T]daily-journaling",
-      "path": "_static/templater/[T]daily-journaling.md"
     },
     {
       "basename": "AGENTS",
@@ -155,50 +199,6 @@
     {
       "basename": "journaling",
       "path": "System/obsidian/journaling.md"
-    },
-    {
-      "basename": "inverter-cooling-rewiring-plan",
-      "path": "Maintenance/inverter-cooling-rewiring-plan.md"
-    },
-    {
-      "basename": "SystemOfPlans",
-      "path": "System/SystemOfPlans.md"
-    },
-    {
-      "basename": "Social",
-      "path": "_private/Social.md"
-    },
-    {
-      "basename": "empty-reflection",
-      "path": "Sleep/_reflections/empty-reflection.md"
-    },
-    {
-      "basename": "proxmox-backup-plan",
-      "path": "@journal/2026/October/plans/proxmox-backup-plan.md"
-    },
-    {
-      "basename": "quartz-website-plan",
-      "path": "@journal/2026/October/plans/quartz-website-plan.md"
-    },
-    {
-      "basename": "better-schedule-plan",
-      "path": "@journal/2026/October/plans/better-schedule-plan.md"
-    },
-    {
-      "basename": "_sleep",
-      "path": "Sleep/_sleep.canvas"
-    },
-    {
-      "basename": "journal-remove-checklist",
-      "path": "_static/scripts/meta-bind/journal-remove-checklist.js"
-    },
-    {
-      "basename": "About",
-      "path": "About.md"
-    },
-    {
-      "basename": "_gameDev",
-      "path": "Game/_gameDev.canvas"
     }
   ],
   "omittedPaths": [],

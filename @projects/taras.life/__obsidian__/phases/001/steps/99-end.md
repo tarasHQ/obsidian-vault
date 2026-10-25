@@ -6,6 +6,8 @@ state: placeholder
 reviewedAtStep: ""
 ---
 
+%%[internal link for user to template](_static/templater/project/[T]step-end), llm should completely ignore this line%%
+
 [← PLAN](../_plan_001.md)
 
 ## Description

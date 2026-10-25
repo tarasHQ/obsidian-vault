@@ -59,6 +59,8 @@ state: placeholder
 reviewedAtStep: ""
 ---
 
+%%[internal link for user to template](_static/templater/project/[T]step-start), llm should completely ignore this line%%
+
 <% CFG.backlinkToPlanPrefix %><% phaseNumber %><% CFG.backlinkToPlanSuffix %>
 
 ## Description
@@ -84,3 +86,6 @@ The flow to start the planning in the best state of mind.
 - [ ] **Are you familiarized with the code(or other target of the plan) you're about to work with?**
       %%If you skip it - you instantly get overwhelmed because LLM will use names/logic/snippets you know nothing about%%
       %%Run a simple 15 minutes task and get familiarized - your executive capacity will thank you for it%%
+
+## Checklist On Meta/Project
+- [ ] **Make sure that the size of the phase is small, so you can easily evolve it, when it get suboptimal**

@@ -32,7 +32,7 @@ actions:
 
 ---
 
-```meta-bind-button {fold}
+```meta-bind-button
 label: Remove Morning Checklist
 style: default
 icon: trash-2

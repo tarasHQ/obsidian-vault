@@ -11,7 +11,7 @@
   "alwaysUpdateLinks": true,
   "showLineNumber": true,
   "attachmentFolderPath": "./_attachments",
-  "focusNewTab": false,
+  "focusNewTab": true,
   "vimMode": false,
   "userIgnoreFilters": null,
   "newLinkFormat": "relative",
