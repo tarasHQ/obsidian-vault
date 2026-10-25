@@ -15,39 +15,11 @@ actions:
 
 ---
 
-```meta-bind-button {fold}
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-    - [x] ==🟡try 15 fps and 4seconds keyframe== - but only if the size of current day will be ok. I think under 10 gig per day is optimal. 1tb per 100 days. Like don't think about future. Maybe in a year you won't need to record yourself anymore. So that's fine. If not - youtube will cover ya.  Also you can re-encode to reduce file size by 50%. So you can push 10gb. Right now it'll be around 7gb I recon. 
-    - ###### AFTER NEW RECORDING
-        - [x] Check audio delay to webcam
-        - [x] Night scene
-        - [x] Check IP cam (quality, delay)
-            - [x] Night position
-        - [x] Check TickTick schedule (correct day, scheduled)
-        - [x] Set time of next sleep for stager timer.
-    - ###### BEFORE SLEEP
-        - [x] Write overview of the current day
-        - [x] Create journal for the next day
-        - [x] Move uncompleted tasks
-        - [x] Make sure all day's reflections are linked under reflections
-        - [x] monitor contrast/bright. at 0
-
----
-
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
 The usual. Morning kinda ok. Mid-day is off. Night gets some boost. But also I got a lot of issues with everything. LLMs made me mad as hell. Barely managed to go through old ai slop - now they're drowning me into another walls of text. So frustrating it's insane. 
 
 I'm walking on the very thin ice, and nights like this one - keep remembering me that. But what can I do? Nothing. Sleep and then continue. 
-
 
 ---
 

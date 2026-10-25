@@ -61,6 +61,8 @@ state: placeholder
 reviewedAtStep: ""
 ---
 
+%%[internal link for user to template](_static/templater/project/[T]step-end), llm should completely ignore this line%%
+
 <% CFG.backlinkToPlanPrefix %><% phaseNumber %><% CFG.backlinkToPlanSuffix %>
 
 ## Description

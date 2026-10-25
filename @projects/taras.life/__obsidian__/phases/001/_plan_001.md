@@ -104,8 +104,8 @@ await cJS(c => c.PlanStepsList.renderSteps(dv, this.container));
 (llms should ignore this. it's for future phases/templates.)
 - **other**
 	- Navigation is kinds PIA. I have to switch between vscode and obsidian. 
-	- the issue is that you get overwhelmed by the amount of docs and text.
-		- Like right now one thing was changed - 5 docs were edited. I'm like not even want to do anything with it. There's just damn walls of text I don't care about. This fucking LLMs...
+		- the issue is that you get overwhelmed by the amount of docs and text.
+			- Like right now one thing was changed - 5 docs were edited. I'm like not even want to do anything with it. There's just damn walls of text I don't care about. This fucking LLMs...
 - **getting overwhelmed**
 	- The issue was too much issues. Like I explored stuff until 100k context, and then everything went apart. So what I had to do, is to use branches and slowly, step by step, explore all possibilities. And work on each one. Step by step. 
 - **plan**
