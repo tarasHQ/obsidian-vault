@@ -113,6 +113,13 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 19:46
+	- ==🟡There's third way, like ==
+- ###### 19:40
+	- Music?
+	- If new iteration of the flow will work - it will be much better. I have to just survive through this task and not mess it up. I spend more time, but result won't be half-assed. Especially since it's like 70% there.
+- ###### 19:29
+	- Ate. Low energy. But I just want to finish the damn thing. So I'll do it anyway. The thing is - in this state it's not really worth it to orient myself around it. Like it can't be baseline...But since the day is f-d up already - who cares, better than nothing. 
 - ###### 18:17
 	- Yeah... that doesn't work. Too much resistance. Watched youtube for 10 minutes. Don't know how to proceed. Probably I'll go eat, and then I'll finish plugin. Properly. Today. Tomorrow will figure what to do next.
 	- These setbacks are really hard to swallow, because like my whole damn life depends on what I'm doing right now. When I fail there - it's like a major proof that "bad vision" of my life is more real than a "good vision". So minor setback leads to really bad mood fluctuations. So yeah... having lots of pressure not enough - with all of that on my shoulders, now I have to climb on the mountain too. Man I hope I survive this transformation if it really happens. 
