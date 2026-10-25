@@ -76,7 +76,6 @@ await cJS(c => c.RenderReflectionHelpers.renderColumns(dv, this.container));
 		- `07-tests-and-docs` — tests authored against the new contract, plugin README as SSOT, deletion of `custom-plugins/remark42-old/` in full, `PLAN.md`/`REMARK42.md`/the test note, AGENTS.md sync.
 		- `08-visual-polish` — D7.
 	- Rule: no separate topology spike gates the rewrite. Step 02 verifies the actual package it establishes; step 06 owns runtime/network investigation. Do not silently substitute native source imports or loader changes if package verification fails; record the actual failure and discuss it. Rebuild explicitly after source changes.
-	- Rule: `__obsidian__/phases/001/artifacts/README.md` and `custom-plugins/README.md` are planning inputs, not SSOT. The plugin's own `README.md` becomes SSOT at step 07.
 - #### Nuances
 	- **Runtime import is plain Node `import()`** inside the CLI process — no TS/JSX loader is registered. D1 supplies compiled JavaScript, so Node never needs to execute the plugin's TypeScript/TSX source. `.node-version` pins 22.22; confirm the actual Workers Builds version during step 02's deployment check against the supported project runtime, not a native-type-stripping requirement.
 	- **Current root build hooks are transitional.** `npx quartz plugin install` reads `quartz.lock.json`, which is `{"plugins": {}}` — remark42 was never installed by it. `build:local-plugins` currently generates the ignored `dist/`. Under D1, an explicit plugin build prepares committed output; site generation must not depend on that root hook.
