@@ -5,6 +5,14 @@
       "path": "@projects/taras.life/__obsidian__/phases/001/steps/04-identity-id-rename.md"
     },
     {
+      "basename": "Remark42",
+      "path": "@projects/taras.life/__obsidian__/ideas/Remark42.md"
+    },
+    {
+      "basename": "Notes",
+      "path": "@projects/taras.life/YouTube/Notes.md"
+    },
+    {
       "basename": "_plan_001",
       "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
     },
@@ -47,10 +55,6 @@
     {
       "basename": "[T]step-start",
       "path": "_static/templater/project/[T]step-start.md"
-    },
-    {
-      "basename": "Remark42",
-      "path": "@projects/taras.life/__obsidian__/ideas/Remark42.md"
     },
     {
       "basename": "01-loading-topology-spike",
@@ -147,10 +151,6 @@
     {
       "basename": "Ideas",
       "path": "@projects/taras.life/Social/Ideas.md"
-    },
-    {
-      "basename": "Notes",
-      "path": "@projects/taras.life/YouTube/Notes.md"
     },
     {
       "basename": "_project",
