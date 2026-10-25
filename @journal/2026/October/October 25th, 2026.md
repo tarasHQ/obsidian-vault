@@ -15,7 +15,7 @@ actions:
 
 ---
 
-```meta-bind-button {fold}
+```meta-bind-button
 label: Remove Morning Checklist
 style: default
 icon: trash-2
@@ -35,7 +35,7 @@ action:
         - [x] red "now" line is there
     - [ ] Fill Context block
 
-```meta-bind-button {fold}
+```meta-bind-button
 label: Remove Night Checklist
 style: default
 icon: trash-2
@@ -104,7 +104,7 @@ action:
 
 ## TIME LOG
 
-```meta-bind-button {fold}
+```meta-bind-button
 label: New Log Entry
 style: default
 icon: clock
@@ -113,6 +113,13 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 09:52
+	- ==🔴Ok. Timer. 15 minutes. Imagine you're a grown up and mature man that has to untangle the mess==
+		- Like don't forget that being in current state is choice. It's bittersweet. 
+		- And also seems like that's why the unconscious was resisting to a reflection, because it wanted an action instead.
+		- ==🔴Worked for sure. Like it caught me by surprise how easily I snapped out of it. Because it felt like a huge burden on my spirit that won't go away that easily.==
+- ###### 09:51
+	- The issue is that I just don't want to do shit. 
 - ###### 09:43
 	- I'm just a mess, I'm 5 minutes away from crying. It's just load of crap. Everything.
 	- But I must make it clear. It's my fault. Not LLM's. Not the project's - mine. You play dumb games - you win dumb prizes. 
@@ -123,53 +130,3 @@ action:
 	- ==🟡Focus on what went wrong tonight. Reduce size of tasks. Figure out how to approach recurring context fillings if you do minor steps.==
 	- Because of Pom you had low productivity and was frustrated by that. Which lead to walking on thin ice. LLMs definitely were frustrating , but you added on top of from your skewed perception
 	- Everything is good nothing crumbled you can figure it out.
-
----
-
-## DREAM ANALYSIS
-
-### Dream #1 - NAME
-
-- #### Raw Dream
-    - ##### Tips
-        - `Ignore mistakes, formatting, structure, goal is to capture the raw fleeting dream without being distracted by all of it`
-    -
-- #### Location & Environment
-    - ##### Tips
-        - `What you feel when you go/are there in real life?
-        - `If it's unreachable/unknown - how would you feel being there in real life?`
-        - `Is feeling positive/negative?`
-        - `Why would dream use this location/environment and not other ones?`
-    -
-- #### Analyze figures, what they represent, why they're there? \*\*
-    - ##### Tips
-        - `Why that figure there, how situation would unfold without that figure?`
-        - `Is it positive or negative figure, how you feel about them, which emotions comes up? `
-        - `Can it be the Shadow, or the Anima?`
-        - `Is it internal representation or external relationships?`
-    -
-- #### Emotional/Rememberable scenes
-    - ##### Tips
-        - `If there's particularly rememberable scenes - analyze why they're rememberable, what's their charge, what's so valuable in them, what they're hinting on? `
-    -
-- #### Direction/Tendency
-    - ##### Tips
-        - `How it starts and how it ends establishes the direction/tendency of the dream which gives another perspective on it.`
-        - `Direction is overlapping with compensation, but you should focus on positive/negative property`
-    - **First sentence is**
-    - **Last sentence is**
-    - **Direction of the dream is**,
-- #### Final feelings
-    - ##### Tips
-        - `Aftertaste of the dream. Feeling about the dream as a whole.`
-    -
-- #### Hooks From the Past
-    - ##### Tips
-        - `Your ego was one-sided recently - where/when it might've been like that?`
-        - `If dream is repeatable - then there's reoccuring tendency to behave in a certain manner - find it, look in the past for a pattern, not a one-off fluke`
-    -
-- #### Likely Compensation
-    - ##### Tips
-        - `Which type of compensation is present? Does it inspire you? Does it deflate over-inflated ego? or does it confronts wrong actions/attitude by showing dreams into opposite direction?`
-        - `Keep remembering that it shows you blind spots, so the answer isn't what's obvious, because you already see it. You must approach compensation from unexpected angle. `
-    -

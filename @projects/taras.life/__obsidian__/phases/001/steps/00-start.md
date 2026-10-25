@@ -6,6 +6,8 @@ state: full
 reviewedAtStep: ""
 ---
 
+%%[internal link for user to template](_static/templater/project/[T]step-start), llm should completely ignore this line%%
+
 [← PLAN](../_plan_001.md)
 
 ## Description
@@ -15,7 +17,7 @@ The flow to start the planning in the best state of mind.
 - Without proper following of these rules - you'll end up stranded in the desert. 
 - And overwhelmed on top of it - this is how you start the race you're meant to lose. 
 
-## Checklists
+## Checklist On Phase
 - [x] **Rename the phase in `_project.md`** 
 - [x] **Acknowledge if you're in elevated state of mind**
      %%If you do - everything you plan or execute will be suboptimal to say the least.%%
@@ -31,3 +33,6 @@ The flow to start the planning in the best state of mind.
 - [x] **Are you familiarized with the code(or other target of the plan) you're about to work with?**
       %%If you skip it - you instantly get overwhelmed because LLM will use names/logic/snippets you know nothing about%%
       %%Run a simple 15 minutes task and get familiarized - your executive capacity will thank you for it%%
+
+## Checklist On Meta/Project
+- [x] **Make sure that the size of the phase is small, so you can easily evolve it, when it get suboptimal**
