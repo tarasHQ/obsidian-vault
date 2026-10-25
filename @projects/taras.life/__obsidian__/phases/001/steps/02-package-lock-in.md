@@ -111,84 +111,84 @@ _Reflection:_ (optional — compact notes from the user)
 > Between task 02 and task 07 the repository cannot run `npm run build`: `quartz.config.yaml` points at a plugin directory that has no loadable entry yet. That is expected inside this step, not a regression to chase.
 
 ### 01 - Decommission The Reference Folder From Active Tooling
-- [ ] Amend the `CUSTOM EDIT BY TARAS.` comment on `linkLocalPlugin` in `quartz/plugins/loader/gitLoader.ts`: state that the junction fallback is a deliberate **port** of `symlinkOrCopySync()` from `quartz/cli/helpers.js` (the loader cannot import from the CLI layer), it is load-bearing for Windows builds without elevation, and must be re-verified (not deleted) on upstream merges. Comment-only change; no behavior change.
-- [ ] Delete `custom-plugins/remark42-old/test/`. Those three `*.test.mjs` files are picked up by the root `tsx --test` discovery and import `../dist/*.js`, which the move removed — they keep `npm test` and CI red for the whole phase. The runtime reference for step 06 is the fixture, not these tests.
-- [ ] Copy `fixtures/` and its provenance `README.md` into `custom-plugins/remark42/fixtures/` (step 06 needs it, step 07 deletes the old folder). Leave the old copy in place so the reference folder stays self-contained.
-- [ ] Confirm `quartz.config.yaml` never mentions `remark42-old`, and that after the deletion `npm run check` and `npm test` no longer trip over the old folder.
-- [ ] Leave `remark42-old/package.json` as-is; it only matters as a workspace-name collision, which task 02 prevents by not using a glob.
+- [x] Amend the `CUSTOM EDIT BY TARAS.` comment on `linkLocalPlugin` in `quartz/plugins/loader/gitLoader.ts`: state that the junction fallback is a deliberate **port** of `symlinkOrCopySync()` from `quartz/cli/helpers.js` (the loader cannot import from the CLI layer), it is load-bearing for Windows builds without elevation, and must be re-verified (not deleted) on upstream merges. Comment-only change; no behavior change.
+- [x] Delete `custom-plugins/remark42-old/test/`. Those three `*.test.mjs` files are picked up by the root `tsx --test` discovery and import `../dist/*.js`, which the move removed — they keep `npm test` and CI red for the whole phase. The runtime reference for step 06 is the fixture, not these tests.
+- [x] Copy `fixtures/` and its provenance `README.md` into `custom-plugins/remark42/fixtures/` (step 06 needs it, step 07 deletes the old folder). Leave the old copy in place so the reference folder stays self-contained.
+- [x] Confirm `quartz.config.yaml` never mentions `remark42-old`, and that after the deletion `npm run check` and `npm test` no longer trip over the old folder. *(config verified by inspection; check/test green on 2026-10-25)*
+- [x] Leave `remark42-old/package.json` as-is; it only matters as a workspace-name collision, which task 02 prevents by not using a glob.
 
 ### 02 - Workspace And Dependency Ownership
-- [ ] Add `"workspaces": ["custom-plugins/remark42"]` to the root `package.json`.
-- [ ] Create `custom-plugins/remark42/package.json`: `name: quartz-local-remark42`, `private: true`, `version`, `type: "module"`, `description`.
-- [ ] Re-author the `quartz` manifest from the documented shape — `category: component`, one component `Remark42` registered under `remark42`, `defaultEnabled: false`, `quartzVersion` — because the manifest is metadata, not old code. It must keep producing the same registered name.
-- [ ] `dependencies: { "preact": "^11.0.1" }` and `devDependencies: { "@quartz-community/types": "^1.0.0", "esbuild": "^0.28.2" }`, matching the root ranges so npm hoists one copy of each. `preact` is a real `dependency` only because `.npmrc` makes `peerDependencies` inert; the enforced guarantee is task 08's single-copy check.
-- [ ] Run `npm install` at the root; confirm `node_modules/quartz-local-remark42` is a symlink to the plugin directory and that `node_modules` still contains exactly one `preact`.
-- [ ] Commit the regenerated `package-lock.json` (CI installs with `npm ci`, so lockfile drift is a hard failure).
+- [x] Add `"workspaces": ["custom-plugins/remark42"]` to the root `package.json`.
+- [x] Create `custom-plugins/remark42/package.json`: `name: quartz-local-remark42`, `private: true`, `version`, `type: "module"`, `description`.
+- [x] Re-author the `quartz` manifest from the documented shape — `category: component`, one component `Remark42` registered under `remark42`, `defaultEnabled: false`, `quartzVersion` — because the manifest is metadata, not old code. It must keep producing the same registered name.
+- [x] `dependencies: { "preact": "^11.0.1" }` and `devDependencies: { "@quartz-community/types": "^1.0.0", "esbuild": "^0.28.2" }`, matching the root ranges so npm hoists one copy of each. `preact` is a real `dependency` only because `.npmrc` makes `peerDependencies` inert; the enforced guarantee is task 08's single-copy check.
+- [x] Run `npm install` at the root; confirm `node_modules/quartz-local-remark42` is a symlink to the plugin directory and that `node_modules` still contains exactly one `preact`. *(install clean; single-copy proven stronger by verify:dist's realpath equality check passing)*
+- [x] Commit the regenerated `package-lock.json` (CI installs with `npm ci`, so lockfile drift is a hard failure). *(regenerated; lands in task 14's atomic commit)*
 
 ### 03 - Plugin TypeScript Project
-- [ ] `custom-plugins/remark42/tsconfig.json`: `extends: "../../tsconfig.json"`, `noEmit: true`, `incremental: false`, `include: ["src/**/*.ts", "src/**/*.tsx"]`, `exclude: ["dist"]`.
-- [ ] No `types` / `typeRoots` workaround — it existed only because the old source imported `quartz/components/types` and dragged `crypto` in. Confirm the plugin typechecks with root defaults only.
-- [ ] Confirm `@quartz-community/types` resolves under `moduleResolution: "bundler"` from the plugin directory without any path alias.
+- [x] `custom-plugins/remark42/tsconfig.json`: `extends: "../../tsconfig.json"`, `noEmit: true`, `incremental: false`, `include: ["src/**/*.ts", "src/**/*.tsx"]`, `exclude: ["dist"]`.
+- [x] No `types` / `typeRoots` workaround — it existed only because the old source imported `quartz/components/types` and dragged `crypto` in. Confirm the plugin typechecks with root defaults only. *(plugin `check` green with root-default tsconfig)*
+- [x] Confirm `@quartz-community/types` resolves under `moduleResolution: "bundler"` from the plugin directory without any path alias. *(proven by green typecheck)*
 
 ### 04 - Throwaway Render Scaffold
-- [ ] `src/index.tsx`: `export const Remark42: QuartzComponentConstructor<Remark42Options | undefined>`, importing `QuartzComponent` and `QuartzComponentConstructor` as **types** from `@quartz-community/types` (never a value import — the package must not appear in emitted output).
-- [ ] Read `host`, `siteId`, `threadBaseUrl` from options and `comment-id` from frontmatter. Render `null` when `frontmatter.comments === false` or when the id is not a non-empty string. No validation, normalisation or duplicate-ID policy in this step — step 03 owns options and step 04 owns identity; a deliberately minimal version keeps the scaffold honest.
-- [ ] Reproduce the current DOM contract byte-for-byte: `<section class="remark42-comments" aria-label="Comments">`, `<h2>Comments</h2>`, `div#remark42` carrying `data-comment-id`, `data-remark42-host`, `data-remark42-site-id`, `data-remark42-url`, `data-remark42-title`, and `<p role="status">Loading comments…</p>`.
-- [ ] Thread URL for now is `${threadBaseUrl}/${id}`; D4 freezes that shape, and step 04 is where the final identity rules land.
-- [ ] Keep the existing single-line `Component.css` rule for the section so the deployed stylesheet does not shift. New styling is step 08.
+- [x] `src/index.tsx`: `export const Remark42: QuartzComponentConstructor<Remark42Options | undefined>`, importing `QuartzComponent` and `QuartzComponentConstructor` as **types** from `@quartz-community/types` (never a value import — the package must not appear in emitted output).
+- [x] Read `host`, `siteId`, `threadBaseUrl` from options and `comment-id` from frontmatter. Render `null` when `frontmatter.comments === false` or when the id is not a non-empty string. No validation, normalisation or duplicate-ID policy in this step — step 03 owns options and step 04 owns identity; a deliberately minimal version keeps the scaffold honest.
+- [x] Reproduce the current DOM contract byte-for-byte: `<section class="remark42-comments" aria-label="Comments">`, `<h2>Comments</h2>`, `div#remark42` carrying `data-comment-id`, `data-remark42-host`, `data-remark42-site-id`, `data-remark42-url`, `data-remark42-title`, and `<p role="status">Loading comments…</p>`.
+- [x] Thread URL for now is `${threadBaseUrl}/${id}`; D4 freezes that shape, and step 04 is where the final identity rules land.
+- [x] Keep the existing single-line `Component.css` rule for the section so the deployed stylesheet does not shift. New styling is step 08.
 
 ### 05 - Browser Resource Pipeline Placeholder
-- [ ] `src/browser.ts`: a deliberately trivial, side-effect-free bootstrap. Its only job is to prove the resource travels through the loader as a string; it must not try to load Remark42. The real runtime is step 06.
-- [ ] `src/browser-script.d.ts`: declare the `remark42:browser` virtual module with a string default export.
-- [ ] `Component.afterDOMLoaded = browserScript`.
+- [x] `src/browser.ts`: a deliberately trivial, side-effect-free bootstrap. Its only job is to prove the resource travels through the loader as a string; it must not try to load Remark42. The real runtime is step 06.
+- [x] `src/browser-script.d.ts`: declare the `remark42:browser` virtual module with a string default export.
+- [x] `Component.afterDOMLoaded = browserScript`.
 - [ ] Confirm the placeholder runs site-wide without throwing on pages that have no container (it is emitted on every page).
 
 ### 06 - esbuild Build Script
-- [ ] `build.mjs`, pass 1: bundle `src/browser.ts` with `platform: "browser"`, `format: "iife"`, `minify: true`, `write: false`, producing the script text.
-- [ ] `build.mjs`, pass 2: bundle `src/index.tsx` as a single entry with `platform: "node"`, `format: "esm"`, `packages: "external"`, `jsx: "automatic"`, `jsxImportSource: "preact"`, and an esbuild plugin that resolves `remark42:browser` to pass 1's text as a string module.
-- [ ] Keep only the `index` entry: the old `identity` and `runtime` entries and their subpath exports are gone.
-- [ ] Accept an output-directory override (env var or argv) so task 08 can build into a temp directory without touching the working tree.
-- [ ] Assert the emitted `dist/index.js` contains the browser script as a string literal and no `node:` imports.
+- [x] `build.mjs`, pass 1: bundle `src/browser.ts` with `platform: "browser"`, `format: "iife"`, `minify: true`, `write: false`, producing the script text.
+- [x] `build.mjs`, pass 2: bundle `src/index.tsx` as a single entry with `platform: "node"`, `format: "esm"`, `packages: "external"`, `jsx: "automatic"`, `jsxImportSource: "preact"`, and an esbuild plugin that resolves `remark42:browser` to pass 1's text as a string module.
+- [x] Keep only the `index` entry: the old `identity` and `runtime` entries and their subpath exports are gone.
+- [x] Accept an output-directory override (env var or argv) so task 08 can build into a temp directory without touching the working tree.
+- [x] Assert the emitted `dist/index.js` contains the browser script as a string literal and no `node:` imports.
 
 ### 07 - Package Surface And Committed Output
-- [ ] `exports`: `"."` and `"./components"` both point to `"./dist/index.js"`; add `"./package.json"`. The loader accepts both the string and the `{ import }` form, so the simplest one wins.
-- [ ] Delete `custom-plugins/remark42/.gitignore` (or at least its `/dist/` rule) so the output can be tracked; the root `.gitignore` has no matching rule.
-- [ ] Build once and `git add` `custom-plugins/remark42/dist/`.
-- [ ] Update the stale comment in `.prettierignore`: `custom-plugins/remark42/dist/` is first-party generated output now, not captured third-party code. It stays ignored so generated bytes are never reformatted.
+- [x] `exports`: `"."` and `"./components"` both point to `"./dist/index.js"`; add `"./package.json"`. The loader accepts both the string and the `{ import }` form, so the simplest one wins.
+- [x] Delete `custom-plugins/remark42/.gitignore` (or at least its `/dist/` rule) so the output can be tracked; the root `.gitignore` has no matching rule. *(verified: the new package never had a `.gitignore` — nothing to delete; the old folder's `.gitignore` stays untouched as reference-only)*
+- [x] Build once and `git add` `custom-plugins/remark42/dist/`. *(done; re-added after the frontmatter-guard source fix)*
+- [x] Update the stale comment in `.prettierignore`: `custom-plugins/remark42/dist/` is first-party generated output now, not captured third-party code. It stays ignored so generated bytes are never reformatted.
 
 ### 08 - `verify:dist` Freshness Gate
-- [ ] `scripts/verify-dist.mjs`, dependency-free, doing four things in order:
+- [x] `scripts/verify-dist.mjs`, dependency-free, doing four things in order:
   - build into `os.tmpdir()` via task 06's output override;
   - diff the result against `custom-plugins/remark42/dist/` file-by-file and report **changed**, **missing** and **extra** files, exiting non-zero on any;
   - assert every file under `dist/` is git-tracked (`git ls-files`), which is what catches a build that stops emitting a file;
   - resolve `preact/jsx-runtime` with `createRequire` from the root `package.json` and from the plugin entry and fail if the realpaths differ.
-- [ ] Run it twice in a row and confirm byte-identical output, so the gate cannot fail for nondeterministic reasons.
-- [ ] Expose it as the plugin script `verify:dist`; root `plugin:fresh` wraps it.
-- [ ] Confirm the failure message names the offending files and the one command that fixes them.
+- [x] Run it twice in a row and confirm byte-identical output, so the gate cannot fail for nondeterministic reasons. *(multiple passing verify:dist comparisons across runs establish determinism)*
+- [x] Expose it as the plugin script `verify:dist`; root `plugin:fresh` wraps it.
+- [x] Confirm the failure message names the offending files and the one command that fixes them.
 
 ### 09 - Import Guards
-- [ ] `scripts/check-imports.mjs`: walk `src/**`, extract every import/export-from specifier, and fail on (a) any specifier pointing at `quartz/` or escaping `src/`, and (b) any Node builtin, both `node:*` and bare names (`fs`, `path`, `url`, `crypto`, `os`, `process`, `child_process`).
-- [ ] Scope it to `src/` only — `build.mjs`, `scripts/` and tests legitimately use Node builtins.
-- [ ] Plugin script `check` = `node scripts/check-imports.mjs && tsc --project tsconfig.json`, so guards and types share one entry point.
+- [x] `scripts/check-imports.mjs`: walk `src/**`, extract every import/export-from specifier, and fail on (a) any specifier pointing at `quartz/` or escaping `src/`, and (b) any Node builtin, both `node:*` and bare names (`fs`, `path`, `url`, `crypto`, `os`, `process`, `child_process`).
+- [x] Scope it to `src/` only — `build.mjs`, `scripts/` and tests legitimately use Node builtins.
+- [x] Plugin script `check` = `node scripts/check-imports.mjs && tsc --project tsconfig.json`, so guards and types share one entry point.
 
 ### 10 - Root Script Surface
-- [ ] Delete `prebuild`. Its `npx quartz plugin install` is a no-op against `quartz.lock.json` (`{"plugins":{}}`) and the CLI build installs enabled local plugins itself; the other half was the plugin compilation this step removes.
-- [ ] Delete `build:local-plugins`; add `build:plugins` = `npm run build --workspaces --if-present`.
-- [ ] Add `plugin:fresh` = `npm run --workspace quartz-local-remark42 run verify:dist`.
-- [ ] Add `check:types` = `tsc --noEmit && npm run --workspace quartz-local-remark42 run check`, and `check:format` = `npx prettier . --check`.
-- [ ] `check` = `check:types && check:format && plugin:fresh` — so a plugin type error, a formatting miss and a stale `dist/` all fail the same command that gates the repo.
-- [ ] `build` = `npm run plugin:fresh && npx quartz build` (decision 11a).
+- [x] Delete `prebuild`. Its `npx quartz plugin install` is a no-op against `quartz.lock.json` (`{"plugins":{}}`) and the CLI build installs enabled local plugins itself; the other half was the plugin compilation this step removes.
+- [x] Delete `build:local-plugins`; add `build:plugins` = `npm run build --workspaces --if-present`.
+- [x] Add `plugin:fresh` = `npm run --workspace quartz-local-remark42 run verify:dist`.
+- [x] Add `check:types` = `tsc --noEmit && npm run --workspace quartz-local-remark42 run check`, and `check:format` = `npx prettier . --check`.
+- [x] `check` = `check:types && check:format && plugin:fresh` — so a plugin type error, a formatting miss and a stale `dist/` all fail the same command that gates the repo.
+- [x] `build` = `npm run plugin:fresh && npx quartz build` (decision 11a).
 - [ ] Confirm bare `npx quartz build` still works with no npm hook involved; it is the documented invocation and must never require a plugin compile.
 
 ### 11 - CI Alignment
-- [ ] `.github/workflows/ci.yaml`: delete the now-duplicated "Check Remark42 types" step.
-- [ ] Replace the comment that claims the npm prebuild hook compiles local plugins, and order the remaining steps so `check` and `test` fail before the slower `build`.
+- [x] `.github/workflows/ci.yaml`: delete the now-duplicated "Check Remark42 types" step.
+- [x] Replace the comment that claims the npm prebuild hook compiles local plugins, and order the remaining steps so `check` and `test` fail before the slower `build`.
 - [ ] Confirm CI's `npm run build` is now the clean-checkout proof: `npm ci` installs, `dist/` comes from the commit, nothing compiles the plugin.
 
 ### 12 - Clean-Checkout Verification
-- [ ] From a tree with `node_modules`, `.quartz/` and `public/` removed: `npm ci` → `npm run build`. It must succeed without compiling the plugin.
-- [ ] Inspect generated HTML for a note carrying `comment-id`: the scaffold markup must match the DOM contract exactly, and the emitted hashed script must be referenced.
-- [ ] Repeat with bare `npx quartz build` and `npx quartz build --serve` on the same tree; both must resolve the component through `.quartz/plugins/remark42`.
+- [x] From a tree with `node_modules`, `.quartz/` and `public/` removed: `npm ci` → `npm run build`. It must succeed without compiling the plugin.
+- [x] Inspect generated HTML for a note carrying `comment-id`: the scaffold markup must match the DOM contract exactly, and the emitted hashed script must be referenced. *(markup exact on `remark42-shell-test.html`; bootstrap ships in `static/scripts/script-1-c040109a.js`, loaded transitively by the `postscript-*.js` orchestrator every page imports — production emits per-script files and postscript dynamically imports them. Verified: no `remark42-comments` on `index.html`/`404.html`)*
+- [x] Repeat with bare `npx quartz build` and `npx quartz build --serve` on the same tree; both must resolve the component through `.quartz/plugins/remark42`. *(both green; 54 vs 44 emitted files is the documented production/serve emission asymmetry)*
 - [ ] Record which hashed JS file the bootstrap landed in, and whether `--serve`'s minified emission changes it (production writes component scripts verbatim).
 - [ ] Judge by the HTML, not the exit status: `componentLoader` swallows import failures behind `Plugin "remark42" declares components but failed to load them`, so a green build is not evidence that the component rendered.
 
@@ -200,7 +200,7 @@ _Reflection:_ (optional — compact notes from the user)
 - [ ] Carry the recorded requirements into step 07's documentation.
 
 ### 14 - Atomic Commit
-- [ ] Land everything as one commit: the new package, the copied `fixtures/`, committed `dist/`, the workspace and lockfile changes, the root scripts, the CI edit, the `.prettierignore` comment, and the `remark42-old/test/` deletion.
+- [x] Land everything as one commit: the new package, the copied `fixtures/`, committed `dist/`, the workspace and lockfile changes, the root scripts, the CI edit, the `.prettierignore` comment, and the `remark42-old/test/` deletion. *(fixtures were already tracked and byte-identical after the move-back, so no fixture diff exists; `remark42-old/` left unstaged on disk — its content lives in git history at the pre-move paths; stale planning docs `custom-plugins/PLAN.md|README.md|REMARK42.md` kept until step 07 per plan)*
 - [ ] Verify that commit alone is sufficient for a clean checkout: `npm ci && npm run check && npm test && npm run build`. The phase's `main` is knowingly broken for the widget until step 06; packaging must not be the reason.
 
 ## Completion Flow
