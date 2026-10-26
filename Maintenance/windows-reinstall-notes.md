@@ -40,6 +40,7 @@
 	- 📄backup windows credentials
 	- dd-MM-yyyy short date is available through "numbers" settings in legacy control panel
 	- ctrl+shift for ukr<->rus language switching you should install ukr as additional keyboard (not additional language)
+	- `multitasking` - disable that top bar-snap-layout-thing 
 - ### File Explorer Options
 	- 📄 - screenshot all settings. It's pretty useful to configure.
 
