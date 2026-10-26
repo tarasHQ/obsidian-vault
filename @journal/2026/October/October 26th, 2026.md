@@ -80,7 +80,7 @@ action:
 
 ## REFLECTIONS
 %%Thinking through writing is much better - there must be low-friction place to do so%%
-- 
+- [[../../../Psychoanalysis/_reflections/I just don't know|I just don't know]]
 
 ---
 
