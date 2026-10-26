@@ -95,6 +95,9 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 16:46
+	- I don't know. I gave the freedom to puer - and as result, not much happening. 
+	- It's kinda partially my fault. For some reason worker won't build my commit. So I'm just stuck waiting. But maybe that's the issue with speed. Like it's another layer of meta problem solving. Like you should figure out how to solve problems, before you actually start to solve problems?
 - ###### 15:49
 	- Seems like a bit too much restrictions maybe? Today I'm kinda in free flow, and because of that - I can be productive much more easily. Like even after the meal there was not much resistance.
 - ###### 13:42
