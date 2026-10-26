@@ -29,11 +29,11 @@ action:
         - This gives more natural flow when you finalize the day, write overview, and go to the bed. It makes more sense, then cutting it down like 2 hours before you actually go to the bed and your day ends.
         - Maybe I should stop video? It cuts in per-hour chunks, tomorrow I just select time range I need and that's it. So I can avoid thinking about not forgetting to cut videos.
     - ###### TECHNICAL CHECKS
-        - [ ] Check audio delay to webcam
-        - [ ] Night scene
+        - [x] Check audio delay to webcam
+        - [x] Night scene
         - [ ] Check IP cam (quality, delay)
             - [ ] Move to "night position"
-        - [ ] Check TickTick schedule (correct day, scheduled)
+        - [x] Check TickTick schedule (correct day, scheduled)
         - [ ] Set time of next sleep for stager timer.
     - ###### BEFORE SLEEP
         - [ ] Write overview of the current day
