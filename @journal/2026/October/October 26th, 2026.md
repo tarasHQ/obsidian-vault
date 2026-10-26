@@ -27,6 +27,7 @@ action:
 - ##### NIGHT CHECKLIST
     - ==Don't process the video before sleep. Cut it right when you go to sleep. And process in the morning. ==
         - This gives more natural flow when you finalize the day, write overview, and go to the bed. It makes more sense, then cutting it down like 2 hours before you actually go to the bed and your day ends.
+        - Maybe I should stop video? It cuts in per-hour chunks, tomorrow I just select time range I need and that's it. So I can avoid thinking about not forgetting to cut videos.
     - ###### TECHNICAL CHECKS
         - [ ] Check audio delay to webcam
         - [ ] Night scene
@@ -98,6 +99,11 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 00:06
+	- Weird thing though. I prayed and it got answered. Maybe a prayer is like makes me more flexible and ready to hear what the unconscious wants from me? Like you can't be prideful after like falling on knees and asking God to lead you (or something like that). It definitely develops an attitude where one is much more likely to heat the voice of God that leads to salvation. Or, in more technical way, to feel the Self(I guess?) and its hints to the meaning?
+- ###### 00:02
+	- Yeah, maybe it's better or worse. But right now I feel it's the way. All it needs - is the proper low friction workflow.
+		- Because right now I have to create template, fill names, fill plan and do more stuff like that. On top of the thing that the flow is suboptimal 
 - ###### 22:54
 	- Yeah, it kinda works. Like this time I was kinda doing what I needed to do. And ability to just ignore big timeframes reduces stress a lot. But drawback is that it's easier to fall into puer, and start doing things that you **want** to do instead of prioritized ones. 
 - ###### 20:28
