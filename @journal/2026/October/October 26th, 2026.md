@@ -95,6 +95,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 15:49
+	- Seems like a bit too much restrictions maybe? Today I'm kinda in free flow, and because of that - I can be productive much more easily. Like even after the meal there was not much resistance.
 - ###### 13:42
 	- ==🟡It feels like there's so much potential in my project it's insane... Like those failures, they're like the best I can ask, because if I manage to use that wisdom to reach that polished workflow of maximum-speed - then everything from my project is now implementable.==
 	- Like it's a deal breaker. Because the main discouraging point of "today" is that I "can" do lots of great things, but I can't do it with reasonable speed. 
