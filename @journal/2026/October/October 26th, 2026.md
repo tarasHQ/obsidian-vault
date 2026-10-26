@@ -98,6 +98,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 22:54
+	- Yeah, it kinda works. Like this time I was kinda doing what I needed to do. And ability to just ignore big timeframes reduces stress a lot. But drawback is that it's easier to fall into puer, and start doing things that you **want** to do instead of prioritized ones. 
 - ###### 20:28
 	- There's definitely tendency of the brain to get that higher scope. But seems like I manage to reset it back to today. And it makes it super easy. Like all I have to do is to finish the step, that's it. Nothing else. And then I'll figure it out based on time I have left. 
 	- There's very subtle line though, between that and tapping into too far future. But I'll see. 
