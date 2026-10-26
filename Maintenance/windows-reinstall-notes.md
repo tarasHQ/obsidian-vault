@@ -21,6 +21,7 @@
 - 📄`Windhawk` - mods + their settings (probably best bet is to copy config in text mode?) + your custom mods code and settings
 - 📄`Obsidian` - Sync settings, editor settings, maybe per-device plugin settings? It doesn't sync ALL. So check it out.
 - `git` - .gitconfig to use noreplay mail
+- `Kaspersky` - Security settings -> Network Settings -> inject script into web traffic... , alongside with other useless stuff like Anti-Banner or Safe Money
 
 ## Installation Process
 - Figure out how to use proper user name and not its BS with cropped email.
