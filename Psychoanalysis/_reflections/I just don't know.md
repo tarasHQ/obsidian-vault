@@ -44,7 +44,17 @@ isIntegrated: false
 		- Maybe I was motivated by seeing people and or Peterson? 
 			- That gap in soul you felt - it's there even now. So Peterson didn't motivate me. He just gave the tool where that gap can be reconsidered and filled with something meaningful. 
 			- Like I freaking hate thinking about the future right now. 
-			- ==🟡But if I think about how I finish the phase, and then will start to think about how to make workflow better. AND JUST THIS and nothing else. It kinda creates impulse to work = meaning. Though it may be false one, because I want to eat first. But I guess I will see. If this will carry me through the 5 hours I have left - then I should establish this as the main practice. ==
-				- The thing is - if it'll work - the more you practice it - the better you will get. 
 	- #### Do I Need the Future?
-		- That's the big question. My future is chaotic and unpredictable. I don't know if I'll be alive in a year. So what "the future" can give me? Like at this point - I don't see a thing. It's harmful and discouraging. And all my projects live beyond that line of reasonable prediction. 
+		- That's the big question. My future is chaotic and unpredictable. I don't know if I'll be alive in a year. So what "the future" can give me? Like at this point - I don't see a thing. It's harmful and discouraging. And all my projects live beyond that line of reasonable prediction. So maybe that's it? Just drop the future all together?
+		- ##### How One Can Drop the Future?
+			- Like on practical level - when I plan the phase of the plan - it's multi-day at least. Sometimes it's multi-week when on every day I'm fighting my way through the civil war in my head. So I can't just say it doesn't matter.
+			- OR. Maybe it's wrong timeframe too? Nah. like even thinking about 3 days down the line is overwhelming for me. So I guess this stuff has layers. 
+			- **The Execution Layer**
+				- That's what going beyond the current day. You plan those executions for a week, for example. And just process them in order. 
+			- **The Prediction Layer**
+				- The brain's cost calculation scope. "*Is this task worth spending a month of my life?*" - that's when discouragement happens. Not even a month though. 3 days+. 
+				- When I have those encouraging visions of work I described earlier - all I do is plan my 4-5 hours in the day. That's it. I get instant feeling of relief.
+					- If I start add tasks for the next day or something - that's when it starts to pressure me down. 
+	- #### Try & See
+		- ==🟡But if I think about how I finish the phase, and then will start to think about how to make workflow better. AND JUST THIS and nothing else. It kinda creates impulse to work = meaning. Though it may be false one, because I want to eat first. But I guess I will see. If this will carry me through the 5 hours I have left - then I should establish this as the main practice.==
+			- The thing is - if it'll work - the more you practice it - the better you will get. 
