@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "windows-reinstall-notes",
+      "path": "Maintenance/windows-reinstall-notes.md"
+    },
+    {
       "basename": "October 26th, 2026",
       "path": "@journal/2026/October/October 26th, 2026.md"
     },
@@ -63,10 +67,6 @@
     {
       "basename": "_plan_001",
       "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
-    },
-    {
-      "basename": "windows-reinstall-notes",
-      "path": "Maintenance/windows-reinstall-notes.md"
     },
     {
       "basename": "AGENTS",
