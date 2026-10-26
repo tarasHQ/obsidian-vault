@@ -95,6 +95,14 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 18:17
+	- What if I fall on my knees and pray to God? Privately, so it can't get performative. Like I don't have any other options.
+- ###### 18:09
+	- I need meaning in my life... I just can't... I'm starting to collapse. Like there's no purpose in what I'm doing. It's just sad. And I really want to just binge indulgence loops. Because there's nothing left besides that.
+		- Like it's plain and simple, there's nothing complex to this. No meaning = cheap pleasures are what is only left on the table, so why shouldn't I take it? Like yeah it's "bad", but where do I get that meaning? 
+			- I need to drown in indulgence for a while, to get autonomous compensations. And that's like reliable. 
+			- Voluntarily? That's much much much harder issue. Because like right now all I'm thinking about is whether I should order a pizza or go to eat whatever I have. Like nothing besides that is important to me AT ALL. 
+		- Recording helps to not fall into binges, YET. But it doesn't really help to get that meaning going. Like it's not about motivation, I just don't care in the first place because of lack of meaning to my actions. 
 - ###### 17:19
 	- Issue with these minor tasks is that they feel insignificant and meaningless compared to that proper plan flow. Like yeah it was PIA, but each step had some intrinsic significance because it was embedded into the bigger "path". 
 	- Now? Like yeah, I'm playing with fonts, yeah, it's nice. set up some other stuff. Figuring out theming. But they feel like "one out of a million"-kind of task. 
