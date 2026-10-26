@@ -13,7 +13,6 @@
 - ### Tips
 	- `"Attachments/!(public-|Public-)*.*",` - ignore pattern for attachments that are not meant to be public. Automatic. A bit PIA with renaming, but it's quick and easy way to explicitly control what gets uploaded. 
 	- 404 page
-		- `It’s easy to end up linking a private page from a public one with this Quartz setup. I think it’s fine and shouldn’t stop me from making a page public, but I wanted to explain this to site visitors. I decided to add an explanation to the 404 page directly by editing quartz/components/pages/404.tsx`
 	- Dead link checker (https://github.com/JustinBeckwith/linkinator)
 		- `npx linkinator --recurse --silent http://localhost:8080`
 	-  [Supercharged links plugin](https://github.com/mdelobelle/obsidian_supercharged_links) to visually distinguish public notes throughout Obsidian’s UI. 
