@@ -95,6 +95,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 17:19
+	- Issue with these minor tasks is that they feel insignificant and meaningless compared to that proper plan flow. Like yeah it was PIA, but each step had some intrinsic significance because 
 - ###### 16:46
 	- I don't know. I gave the freedom to puer - and as result, not much happening. 
 	- It's kinda partially my fault. For some reason worker won't build my commit. So I'm just stuck waiting. But maybe that's the issue with speed. Like it's another layer of meta problem solving. Like you should figure out how to solve problems, before you actually start to solve problems?
