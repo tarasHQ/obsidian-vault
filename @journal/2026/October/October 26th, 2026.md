@@ -95,6 +95,11 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 10:11
+	- just see no sense in doing anything right now. But the thing is - this is worse than doing anything. So maybe that scope thing? Ignore everything. Just do something. Timer too?
+- ###### 09:56
+	- Had a thought when was doing routine and then in shower. What made me miserable in the last days? - **rushing**, like I like this problem solving. But not when my life depends on it (literally), and there's clock ticking on top of it. Maybe I need to learn to pick scopes and change perspectives? Who knows. 
+	- It really hard to integrate this "knowledge". Easy to forget, hard to remember, and when the wrong state comes - those won't even be considered as valuable things to do.
 - ###### 00:25
 	- But would I trade today with the usual day of indulgence loop? Well, cuz I’m not sure - it already says something. 
 	- I would probably though. But at least I hesitated a bit. 
