@@ -95,6 +95,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 10:47
+	- Well, helped a bit to naturally get into the main task. Small wins, probably. 
 - ###### 10:24
 	- Going through archived notes. To delete what's useless, to not carry those with me. 
 - ###### 10:11
