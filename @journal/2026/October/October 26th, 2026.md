@@ -95,6 +95,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 13:09
+	- Inverter is so quiet though... So nice. It was so worth it.
+- ###### 12:48
+	- Spending time on pseudo-productivity. Basically "gaming". Sad, but at least it's something. And not like me being completely wasted and depressed. Though I'm curious how it affect me post-meal. 
 - ###### 10:47
 	- Well, helped a bit to naturally get into the main task. Small wins, probably. 
 - ###### 10:24

@@ -18,7 +18,7 @@
 - 📄`vscode` - supposed to sync those, but maybe do local backup, just to make sure?
 - 📄`kaspersky` - exceptions + activation (deactivate on current windows)
 - 📄`power toys` - has internal backup and restore logic
-- 📄`Windhawk` - mods + their settings (probably best bet is to copy config in text mode?)
+- 📄`Windhawk` - mods + their settings (probably best bet is to copy config in text mode?) + your custom mods code and settings
 - 📄`Obsidian` - Sync settings, editor settings, maybe per-device plugin settings? It doesn't sync ALL. So check it out.
 - `git` - .gitconfig to use noreplay mail
 
