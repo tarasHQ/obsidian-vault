@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "PLANNING",
-      "path": "_static/projects/PLANNING.md"
-    },
-    {
       "basename": "October 26th, 2026",
       "path": "@journal/2026/October/October 26th, 2026.md"
+    },
+    {
+      "basename": "[T]daily-journaling",
+      "path": "_static/templater/[T]daily-journaling.md"
+    },
+    {
+      "basename": "PLANNING",
+      "path": "_static/projects/PLANNING.md"
     },
     {
       "basename": "October 25th, 2026",
@@ -83,10 +87,6 @@
     {
       "basename": "00-start",
       "path": "@projects/taras.life/__obsidian__/phases/001/steps/00-start.md"
-    },
-    {
-      "basename": "[T]daily-journaling",
-      "path": "_static/templater/[T]daily-journaling.md"
     },
     {
       "basename": "October 24th, 2026",
