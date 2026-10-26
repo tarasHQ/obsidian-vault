@@ -117,6 +117,8 @@ await cJS(c => c.PlanStepsList.renderSteps(dv, this.container));
 	- You dumped lots of text at once. That was the issue. It just overwhelmed you. Then you don't follow it. And now you're paying the price because you don't know jack shit about this.
 		- and you did this in the wrong state of mind, which made you not-read or forget most of the things. 
 - **other**
+	- js html dataview block - use icons for showing state of the step (full/high-level/condensed)
+		- ○ ◎ ◉ or 🟢🔵🟡
 	- Navigation is kinds PIA. I have to switch between vscode and obsidian. 
 		- the issue is that you get overwhelmed by the amount of docs and text.
 			- Like right now one thing was changed - 5 docs were edited. I'm like not even want to do anything with it. There's just damn walls of text I don't care about. This fucking LLMs...
@@ -132,6 +134,7 @@ await cJS(c => c.PlanStepsList.renderSteps(dv, this.container));
 - **steps**
 	- takes lots of time to re-explore all stuff I did while I was writing initial step contents. So each step should have "comprehensive exploration" section where LLM leaves links/notes/tips about how to research everything on the topic quickly. without many loops of back and forth. 
 	- Discussion and reflection - should have brief template as well, kinda like I had with kilo code. Autoregressive. Recommended choice. Explain in simple words. Also - I should add rule to automatically add at the end user input point. like `- USER INPUT: ` so I can type right away the answer
+	- On each step. High level template. **DO WE ACTUALLY NEED IT?**, like with tests right now. I just got overfocused on that. I don't actually need them. 
 	- Crucial. Make sure each step is optimally sized. So there's no like huge multi-hour step 01, while step 02 and 03 are done in 10 minutes. Step should be bite-sized. 
 		- **ESPECIALLY FOR CONTEX**. This is the main measurement for whether step is small or big. (besides complexity), if we need to read 50k tokens worth of files before we even start the discussion - step is too big for sure. 
 	- another big one. plan initial steps through artifacts. or in conversation. But not all at once. but one by one. 
