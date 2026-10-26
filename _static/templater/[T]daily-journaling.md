@@ -50,7 +50,7 @@ action:
     - [ ] Check TickTick schedule 
         - [ ] correct day, scheduled, scaled
         - [ ] red "now" line is there
-    - [ ] START STAGER TIMER
+    - [ ] Start stager timer
     - [ ] Fill Context block
 
 ```meta-bind-button {fold}
