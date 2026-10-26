@@ -99,7 +99,10 @@ action:
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
 - ###### 20:28
-	- There's 
+	- There's definitely tendency of the brain to get that higher scope. But seems like I manage to reset it back to today. And it makes it super easy. Like all I have to do is to finish the step, that's it. Nothing else. And then I'll figure it out based on time I have left. 
+	- There's very subtle line though, between that and tapping into too far future. But I'll see. 
+	- ==Like it's clear right now. When I think about everything I have to do - I get instantly discouraged, but when I think about like today and now - I get impulse of encouragement. Like it's as simple as that.==
+		- Though I should it say it's stupid simple. There's subtleties. And one has to have honest and humble attitude for sure. If I'm too prideful - I wouldn't see this nuance and this practice will feel stupid.
 - ###### 19:45
 	- ==🟡Let's see if this Timeframe thing will work after the meal, or it's just the false motivation of the same kind that makes me super motivated right before I'm going to the bed and know that I won't act upon that motivation==
 - ###### 18:17
