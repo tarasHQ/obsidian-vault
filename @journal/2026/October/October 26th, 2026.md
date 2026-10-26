@@ -25,7 +25,9 @@ action:
   file: _static/scripts/meta-bind/journal-remove-checklist.js
 ```
 - ##### NIGHT CHECKLIST
-    - ###### AFTER NEW RECORDING
+    - ==Don't process the video before sleep. Cut it right when you go to sleep. And process in the morning. ==
+        - This gives more natural flow when you finalize the day, write overview, and go to the bed. It makes more sense, then cutting it down like 2 hours before you actually go to the bed and your day ends.
+    - ###### TECHNICAL CHECKS
         - [ ] Check audio delay to webcam
         - [ ] Night scene
         - [ ] Check IP cam (quality, delay)
@@ -38,6 +40,7 @@ action:
         - [ ] Move uncompleted tasks
         - [ ] Make sure all day's reflections are linked under reflections
         - [ ] monitor contrast/bright. at 0
+    - [ ] Only now you can stop the video
 
 ---
 
@@ -95,6 +98,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 20:28
+	- There's 
+- ###### 19:45
+	- ==🟡Let's see if this Timeframe thing will work after the meal, or it's just the false motivation of the same kind that makes me super motivated right before I'm going to the bed and know that I won't act upon that motivation==
 - ###### 18:17
 	- What if I fall on my knees and pray to God? Privately, so it can't get performative. Like I don't have any other options.
 - ###### 18:09
