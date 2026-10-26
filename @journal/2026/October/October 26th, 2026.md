@@ -95,6 +95,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 10:24
+	- Going through archived notes. To delete what's useless, to not carry those with me. 
 - ###### 10:11
 	- just see no sense in doing anything right now. But the thing is - this is worse than doing anything. So maybe that scope thing? Ignore everything. Just do something. Timer too?
 - ###### 09:56

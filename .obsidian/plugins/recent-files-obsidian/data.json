@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "October 26th, 2026",
-      "path": "@journal/2026/October/October 26th, 2026.md"
+      "basename": "_plan_001",
+      "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
     },
     {
-      "basename": "[T]daily-journaling",
-      "path": "_static/templater/[T]daily-journaling.md"
+      "basename": "AGENTS",
+      "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
     },
     {
       "basename": "PLANNING",
@@ -17,188 +17,12 @@
       "path": "@journal/2026/October/October 25th, 2026.md"
     },
     {
-      "basename": "AGENTS",
-      "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
-    },
-    {
-      "basename": "[T]step",
-      "path": "_static/templater/project/[T]step.md"
-    },
-    {
-      "basename": "_plan_001",
-      "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
-    },
-    {
-      "basename": "[T]plan",
-      "path": "_static/templater/project/[T]plan.md"
-    },
-    {
-      "basename": "Notes",
-      "path": "@projects/taras.life/YouTube/Notes.md"
-    },
-    {
-      "basename": "05-render-component",
-      "path": "@projects/taras.life/__obsidian__/phases/001/steps/05-render-component.md"
-    },
-    {
-      "basename": "06-browser-runtime",
-      "path": "@projects/taras.life/__obsidian__/phases/001/steps/06-browser-runtime.md"
-    },
-    {
-      "basename": "04-identity-id-rename",
-      "path": "@projects/taras.life/__obsidian__/phases/001/steps/04-identity-id-rename.md"
-    },
-    {
-      "basename": "03-options-contract",
-      "path": "@projects/taras.life/__obsidian__/phases/001/steps/03-options-contract.md"
-    },
-    {
-      "basename": "[T]phase",
-      "path": "_static/templater/project/[T]phase.md"
-    },
-    {
-      "basename": "02-package-lock-in",
-      "path": "@projects/taras.life/__obsidian__/phases/001/steps/02-package-lock-in.md"
-    },
-    {
-      "basename": "08-visual-polish",
-      "path": "@projects/taras.life/__obsidian__/phases/001/steps/08-visual-polish.md"
-    },
-    {
-      "basename": "07-tests-and-docs",
-      "path": "@projects/taras.life/__obsidian__/phases/001/steps/07-tests-and-docs.md"
-    },
-    {
-      "basename": "[T]step-start",
-      "path": "_static/templater/project/[T]step-start.md"
-    },
-    {
-      "basename": "01-loading-topology-spike",
-      "path": "@projects/taras.life/__obsidian__/phases/001/steps/01-loading-topology-spike.md"
-    },
-    {
-      "basename": "[T]step-end",
-      "path": "_static/templater/project/[T]step-end.md"
-    },
-    {
-      "basename": "99-end",
-      "path": "@projects/taras.life/__obsidian__/phases/001/steps/99-end.md"
-    },
-    {
-      "basename": "00-start",
-      "path": "@projects/taras.life/__obsidian__/phases/001/steps/00-start.md"
-    },
-    {
-      "basename": "October 24th, 2026",
-      "path": "@journal/2026/October/October 24th, 2026.md"
-    },
-    {
-      "basename": "Project's start and end steps",
-      "path": "@system/_reflections/Project's start and end steps.md"
-    },
-    {
-      "basename": "_project",
-      "path": "@projects/taras.life/__obsidian__/_project.md"
-    },
-    {
-      "basename": "October 23rd, 2026",
-      "path": "@journal/2026/October/October 23rd, 2026.md"
-    },
-    {
-      "basename": "on-discouragement-again",
-      "path": "Psychoanalysis/_reflections/on-discouragement-again.md"
-    },
-    {
-      "basename": "October 22nd, 2026",
-      "path": "@journal/2026/October/October 22nd, 2026.md"
-    },
-    {
-      "basename": "AGENTS",
-      "path": "@projects/0vibes/__obsidian__/docs/AGENTS.md"
-    },
-    {
-      "basename": "_project",
-      "path": "@projects/0vibes/__obsidian__/_project.md"
-    },
-    {
-      "basename": "PHILOSOPHY",
-      "path": "@projects/0vibes/__obsidian__/docs/PHILOSOPHY.md"
-    },
-    {
-      "basename": "DEV_RULES",
-      "path": "@projects/0vibes/__obsidian__/docs/DEV_RULES.md"
-    },
-    {
-      "basename": "proxmox",
-      "path": "Maintenance/proxmox.md"
-    },
-    {
-      "basename": "DEV_COMMANDS",
-      "path": "@projects/0vibes/__obsidian__/docs/DEV_COMMANDS.md"
-    },
-    {
-      "basename": "DEV_COMMANDS",
-      "path": "@projects/taras.life/__obsidian__/docs/DEV_COMMANDS.md"
-    },
-    {
-      "basename": "Obsidian Links and Junctions",
-      "path": "@system/_reflections/Obsidian Links and Junctions.md"
-    },
-    {
-      "basename": "how-to-approach-resistance",
-      "path": "Productivity/_reflections/how-to-approach-resistance.md"
-    },
-    {
-      "basename": "Ideas",
-      "path": "@projects/taras.life/Social/Ideas.md"
-    },
-    {
-      "basename": "_project",
-      "path": "Health/__obsidian__/_project.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
       "basename": "windows-reinstall-notes",
       "path": "Maintenance/windows-reinstall-notes.md"
     },
     {
-      "basename": "README",
-      "path": "_static/README.md"
-    },
-    {
-      "basename": "October 21st, 2026",
-      "path": "@journal/2026/October/October 21st, 2026.md"
-    },
-    {
-      "basename": "deep-learning",
-      "path": "System/deep-learning/deep-learning.md"
-    },
-    {
-      "basename": "October 20th, 2026",
-      "path": "@journal/2026/October/October 20th, 2026.md"
-    },
-    {
-      "basename": "README",
-      "path": "Social/README.md"
-    },
-    {
-      "basename": "README",
-      "path": "@journal/README.md"
-    },
-    {
-      "basename": "obsidian",
-      "path": "System/obsidian/obsidian.md"
-    },
-    {
-      "basename": "Obsidian",
-      "path": "Obsidian.md"
-    },
-    {
-      "basename": "ThePlan",
-      "path": "ThePlan.canvas"
+      "basename": "Pasted Image 20251004145603_155",
+      "path": "_private/_check/_static/attachments/Pasted Image 20251004145603_155.png"
     }
   ],
   "omittedPaths": [],

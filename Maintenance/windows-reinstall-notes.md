@@ -61,6 +61,8 @@
 - 📄`SMB users` - for recordings/pve-backups
 - 📄`tampermonkey scripts` - export
 - 📄`Drivers`, ax210, motherboard, install nvidia after amd
+- `C:/Windows/HelpPane.exe` - make yourself owner, give your user edit rights, and rename it, so accidental f1 presses won't open that help window
+
 - Reserve ip address of PC by its mac on router. 
 - Removing store search (when telemetry is off and a toggle in settings is hidden) https://superuser.com/questions/1927207/how-to-remove-the-store-results-from-the-start-menu
 -  https://schneegans.de/windows/unattend-generator/ - for inspiration for configurations
