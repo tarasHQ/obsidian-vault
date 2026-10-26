@@ -36,3 +36,7 @@
 	- and 1 to have subjective life progress.
 		- to remember that setbacks are happening withing bigger upward tendency
 	- all two based on frontmatter
+- ### Caching
+	- Caching of all/most non-content images I use on website.
+- ### Images
+	- Script/plugin to convert all to `.webp` (on local build only)
