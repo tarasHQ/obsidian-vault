@@ -15,26 +15,6 @@ actions:
 
 ---
 
-```meta-bind-button
-label: Remove Morning Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### MORNING CHECKLIST
-    - [ ] Day scene
-    - [ ] Check webcam (exposure)
-    - [ ] Check IP cam (quality, delay)
-        - [ ] Move to "day position"
-    - [ ] Check all elements are present on the canvas
-    - [ ] Check TickTick schedule 
-        - [ ] correct day, scheduled, scaled
-        - [ ] red "now" line is there
-    - [ ] Fill Context block
-
 ```meta-bind-button {fold}
 label: Remove Night Checklist
 style: default
@@ -68,11 +48,12 @@ action:
 ---
 
 >[!tldr] CONTEX
->Sleep Duration - **0:00**
+>Sleep Duration - **7:30**
 > 
->Time Spent in Bed - **TODO**
+>Time Spent in Bed - **Low**
 > 
->Approx. Dreams Compensation - **TODO**
+>Approx. Dreams Compensation - **Stressed, action-oriented, ready to fight, higher aggression**
+>Don't remember much from dreams. Compensation feels weak. Surprisingly. Because of how messed up previous days were...
 
 ---
 
@@ -114,6 +95,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 00:25
+	- But would I trade today with the usual day of indulgence loop? Well, cuz I’m not sure - it already says something. 
+	- I would probably though. But at least I hesitated a bit. 
+	- It’s just really hard to get that meaning in this isolated struggle. 
 - ###### 00:02
 	- The issue is the speed. Like it's not about how much I can work. But the speed of that work. 
 	- Example?
@@ -125,54 +110,5 @@ action:
 		- Like I can't just do the job poorly. It'll kill my spirit even faster. So only way is to have really good workflow that is deterministic and routinized. And at least partially llm model-agnostic. 
 		- **The issue** is that this nestings don't make my life easy either. Like what it is now? to fix the life, i need to succeed in project, but before that I need to be hyper productive, but before that I need people and community, before that I need to make my life public and to not be stupid about how to do it, and before that i need to have properly set up youtube recordings, websites, repositories vaults, and before that, I need to proper workflow. 
 			- Like yeah, how long that chain will get until it'll loop on itself? 
-			- 
-
----
-
-## DREAM ANALYSIS
-
-### Dream #1 - NAME
-
-- #### Raw Dream
-    - ##### Tips
-        - `Ignore mistakes, formatting, structure, goal is to capture the raw fleeting dream without being distracted by all of it`
-    -
-- #### Location & Environment
-    - ##### Tips
-        - `What you feel when you go/are there in real life?
-        - `If it's unreachable/unknown - how would you feel being there in real life?`
-        - `Is feeling positive/negative?`
-        - `Why would dream use this location/environment and not other ones?`
-    -
-- #### Analyze figures, what they represent, why they're there? \*\*
-    - ##### Tips
-        - `Why that figure there, how situation would unfold without that figure?`
-        - `Is it positive or negative figure, how you feel about them, which emotions comes up? `
-        - `Can it be the Shadow, or the Anima?`
-        - `Is it internal representation or external relationships?`
-    -
-- #### Emotional/Rememberable scenes
-    - ##### Tips
-        - `If there's particularly rememberable scenes - analyze why they're rememberable, what's their charge, what's so valuable in them, what they're hinting on? `
-    -
-- #### Direction/Tendency
-    - ##### Tips
-        - `How it starts and how it ends establishes the direction/tendency of the dream which gives another perspective on it.`
-        - `Direction is overlapping with compensation, but you should focus on positive/negative property`
-    - **First sentence is**
-    - **Last sentence is**
-    - **Direction of the dream is**,
-- #### Final feelings
-    - ##### Tips
-        - `Aftertaste of the dream. Feeling about the dream as a whole.`
-    -
-- #### Hooks From the Past
-    - ##### Tips
-        - `Your ego was one-sided recently - where/when it might've been like that?`
-        - `If dream is repeatable - then there's reoccuring tendency to behave in a certain manner - find it, look in the past for a pattern, not a one-off fluke`
-    -
-- #### Likely Compensation
-    - ##### Tips
-        - `Which type of compensation is present? Does it inspire you? Does it deflate over-inflated ego? or does it confronts wrong actions/attitude by showing dreams into opposite direction?`
-        - `Keep remembering that it shows you blind spots, so the answer isn't what's obvious, because you already see it. You must approach compensation from unexpected angle. `
-    -
+	- Don't know what to do. Don't have hope. Or meaning. It's just purely mechanical and inertial.
+	- I guess tomorrow I'll have to finalize plugin and figure out new iteration of the workflow? God willing I'll be able to finally forget about that damn plugin...
