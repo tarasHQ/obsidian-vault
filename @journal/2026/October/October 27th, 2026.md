@@ -106,6 +106,9 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 16:35
+	- Ok, I work, but quartz turned out to be a bit overhyped. Dataview support is very limiting. Excalidraw support is just a BS. Besides that I removed lots of plugins. At this point I don't know whether I need it or maybe I should use something else. Or just start rewriting quartz. Don't know. Researching.
+	- Discouraging a bit though.
 - ###### 14:53
 	- Kinda worked again. Weird. How? Why? But I got this documented twice now and twice it's successful. Alternative would be to start half-dead and hopefully get up to speed in an hour or two, so it's definitely worth it. 
 		- I just wait for impulse. Try to bring my mind to the ground, to here and now. To focus on task. And then impulse of meaning signifies that I'm ready to work (hopefully)
