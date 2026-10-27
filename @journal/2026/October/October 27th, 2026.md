@@ -59,6 +59,8 @@ action:
 ## TASKS
 %%Cognitive offload for the day, to not keep these in my mind for the whole time%%
 - ### TODO
+	- [ ] **META** Figure out where to accumulate such secondary tasks and where you can prioritize them, because flat list is stupid and limiting. 
+	- [ ] dataview -> move to that default rendering pipeline, current one doesn't have flashes BUT it's blocking rendering of the note, which is not good either. (worse)
 	- [ ] folder icons - rename to where they used and resize other icons (260kb per icon is stupid)
 	- [ ] FIX - templated creation of next journal entry. 23:53 - "This day already exists"
 	- [ ] Templates for reflections - maybe shouldn't use project backlinks for now, until I figure out if there's gonna be "main index"
@@ -99,6 +101,12 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 11:35
+	- Yeah...
+	- Ok. What caused it this time? 
+	- I got anxious. Doubt it's coffee. 
+	- Chances are that it's wasted time on things that hardly even secondary in the priority list. So. Back to the primary. 
+	- This branch of behaviour hopefully will stop as I'll have proper workflow and will reduce drifting off the task. 
 - ###### 10:39
 	- Scroll in obsidian keeps bugging me and I'm definitely spending too much time on it...
 		- Seems like it's the theme that's the issue here
