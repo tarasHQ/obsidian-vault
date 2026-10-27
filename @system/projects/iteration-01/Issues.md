@@ -22,9 +22,16 @@
 			- `artifacts/01-temp.md` will allow to offload everything into a single place that won't bloat either step itself or plan. 
 		- Like let's imagine. You got that 100k context. You have multiple issues pending. You just offload them in freeform. Also can ask LLM to do it. Start a new task focusing on one issue, for example. 
 		- If those issues are blocking current task - the same logic. Parallel task with context handoff into that file. LLM in current task reads that file and proceeds without blocks. 
-		- But what if you use step file for this? No. The issue with these issues is that they're often like perpendicular. Chances that step file wil
+		- But what if you use step file for this? No. The issue with these issues is that they're often like perpendicular. Chances that step file will explode - huge. And for no reason. 
+			- While having separate temp flow allows to discuss, to explore option, to critique, etc. and, **crucial thing - it gets locked down in the file**, and now into your mind reducing executive capacity.
+		- But it doesn't feel like that is all. There's something else that can be used preemptively. There must be something in the flow itself that prevents this. 
+			- Ok, discipline. To revert conversations. 
 	- #### Solution
 		- `artifacts/XX-temp.md` - temp step file to offload current task (your mind). Because of exploration file, it's less friction to have parallel tasks on the same step if current task got bloated or something. That way the step logic is preserved. 
+			- So the solution is state of mind/attitude to utilize those "side steps", instead of pushing everything into one task/context. 
+		- **AHK templates** for now. You need one for context handoff. When the project's window is active and you press like alt + c - ahk pastes the text like:
+			- *"I want to revert conversation... write me context handoff in ```markdown block``` but limit scope to our recent this to USER_INPUT."
+			- So this kind of exploration is low friction.
 - **plan**
 	- Issue with high-level block. As a user it was hard to write initial thing. It should be kind prompt-like. Not like decisions/invariants. Just give the user free form. 
 	- For llm's high level though - it gets big really quickly. 
@@ -33,14 +40,15 @@
 
 
 - **planning.md**
+	- This file is central to everything. It should have separate block in agents. Flow have top priority over everything.
+		- Like that planning block must be hyper important and be the center of gravity for the whole task. 
 	- too vague. implementation starts without discussion. llm dumps everything at once. no granularity or control. It's just a mess. Too vague for sure. You shouldn't have single bullet list for that. Each block should be separate, each point should be properly described. You need to have "completion conditions" on each block/loop to have clear stops.
 		- **IMPORTANT**. Like it's not a joke, there must be **routine** to this, if it's different every time - you're getting overwhelmed.
-		- Like that planning block must be hyper important and be the center of gravity for the whole task. 
 		- Like it should have its own section in agents, to clarify its importance. 
 	- **TLDR** - you lack routine in this. Process is chaotic and unpredictable. That's adds a lot of friction.
-- `_project.md`
-	- needs some automatic fetching I recon. 
-	- but the issue is with LLMs getting understanding of this stuff... 
+- ~~`_project.md`~~
+	- ~~needs some automatic fetching I recon. - no it doesn't~~
+		- ~~but the issue is with LLMs getting understanding of this stuff... ~~
 - ### Issue #4 Initial Planning + Steps
 	- #### Discussion
 		- another big one. plan initial steps through artifacts. or in conversation. But not all at once. but one by one. 
@@ -61,11 +69,20 @@
 				- We can utilize substep splitting. step `03` into `03`, `03.1`, `03.2`
 			- **"Do We Actually Need This Step?"**
 				- It's a hard one because I'm often biased. So I may think that we need one, but then we don't. Should it be integrated into step implementation workflow? 
+				- I'm not sure - during drafting steps VS during implementing steps. 
+				- Your case was with test step. Turned out to be useless because by the time we reached it - the vision changed and code was much simpler. So you need 
+		- Here's another question - separate files? Like it might as well be in 00-start - it's perfect place to have this flow. And implementation from 01 onwards won't read 00-start, so it'll get automatically filtered out. And won't be like always present in main planning files LLM always reads
 	- #### Solution
 		1. **Separate Workflow for Initial Planning**
 			- Besides exploration - you can also start filling out `_exploration.md` because lots of high-level research will be done on the codebase (but probably at the end of the flow)
-			- 
-		2. 
+			- use `artifacts/`
+		2. **Separate for drafting steps**
+			1. Copypaste of sizing/splitting rules from discussion above.
+		3. **Do we ACTUALLY need this step?**
+			- Inside step template. It should be reviewed during drafting AND during implementation.
+		4. **This Flow is inserted into `00-start.md`**
+			- (note in planning.md template - to never read 00-start.md unless specified by the user)
+			- re-read discussion.
 ## Low Level
 - ### Steps
 	- ### Idea #2 Revert Checkpoints

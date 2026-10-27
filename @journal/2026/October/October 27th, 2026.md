@@ -107,6 +107,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 22:19
+	- Very cognitively active day. Will try to "nap" once more. See how it goes now. Because I'm like genuinely exhausted and tired.
 - ###### 21:36
 	- Yeah, like I think I play dumb with my brain, that my "discouragement" to not do tasks is stupid. But now when I'm actually doing them properly - no shit I wanted to avoid that. They're massive brain-eaters. But hopefully it'll pay me off for a long time. Because it's obvious that without strict system - I suck with LLMs. Get angry, frustrated = not productive. 
 - ###### 20:30
