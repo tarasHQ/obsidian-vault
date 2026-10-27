@@ -107,6 +107,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 00:01
+	- Lack of knowledge is insane. I would appreciate learning about the Warrior archetype. Seems like I have to learn to embody it? 
 - ###### 23:53
 	- This Nordic dark folk music... There's something to it. Like definitely my masculine traits are much more into the unconscious than feminine ones. This music seems like influencing those masculine traits to step into the light of conscious. Weird. 
 	- At the same time images and visions flash. Of Vikings, battles. Like I'm a human and all of that is part of me. And it feels like I would really used that capacity to withstand and fight. 
