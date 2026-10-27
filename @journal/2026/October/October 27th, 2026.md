@@ -99,6 +99,9 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 10:39
+	- Scroll in obsidian keeps bugging me and I'm definitely spending too much time on it...
+		- Seems like it's the theme that's the issue here
 - ###### 09:13
 	- ==Ok, rewriting planning gets overwhelming a bit== because of those "branches" and their amount too. And I can't use workflow, because old one is kinda bad, and this task is creating a new one.
 		- So I shouldn't jump into the whole thing. I have to figure out meta-plan, and process it in structured and bite-sized chunks. Because it's about preserving resource of executive capacity. I can tackle it raw, but then I'll fuck up the rest of my day, I guess. 
