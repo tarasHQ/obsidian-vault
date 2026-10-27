@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "PLANNING",
+      "path": "_static/projects/PLANNING.md"
+    },
+    {
+      "basename": "[T]plan",
+      "path": "_static/templater/project/[T]plan.md"
+    },
+    {
+      "basename": "[T]step-end",
+      "path": "_static/templater/project/[T]step-end.md"
+    },
+    {
+      "basename": "[T]step-start",
+      "path": "_static/templater/project/[T]step-start.md"
+    },
+    {
       "basename": "Issues",
       "path": "@system/projects/iteration-01/Issues.md"
     },
@@ -47,10 +63,6 @@
     {
       "basename": "Ideas",
       "path": "@projects/taras.life/Web (meta)/Ideas.md"
-    },
-    {
-      "basename": "PLANNING",
-      "path": "_static/projects/PLANNING.md"
     },
     {
       "basename": "_project",
