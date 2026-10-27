@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Issues",
+      "path": "@system/projects/iteration-01/Issues.md"
+    },
+    {
       "basename": "October 27th, 2026",
       "path": "@journal/2026/October/October 27th, 2026.md"
     },
@@ -11,10 +15,6 @@
     {
       "basename": "windows-reinstall-notes",
       "path": "Maintenance/windows-reinstall-notes.md"
-    },
-    {
-      "basename": "Issues",
-      "path": "@system/projects/iteration-01/Issues.md"
     },
     {
       "basename": "_plan_001",
