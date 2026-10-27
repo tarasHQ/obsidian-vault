@@ -10,7 +10,23 @@
 
 # Issues
 ## High Level
-- ### Issue #4 Issues Tracking
+- ### Idea #99 Critique Block
+	- #### Discussion
+		- From old kilo flow. It's just useful to have that flow where LLM is targeted to not solve the issue, but find issues in "the answer". Like you do initial draft. Then go through it with 
+	- #### Solution
+		- Extract old one from vscode, it should be in those sidebar markdown notes. 
+		- **Separate file too**, as it is with a few other "flows". It should be called from the flow or manually. (flow preferably)
+- ### Issue #8 LLM's High Level Block
+	- #### Discussion
+		- The issue is that there's no hygiene or rules for llm's part in the plan. If it's uncontrolled - it just dumps walls of text. I don't know where it should belong though. Because if that wall of text used in multiple steps - it could make sense. 
+		- Ok, it needs refined high level block for sure, and maybe some workflow stuff.
+		- ##### Blocks
+			- **Plan description** - There's one by user that's created at the very beginning. This one by LLM when lots of stuff were planned and refined.
+			- **Persistent Steps Storage** - place for LLM to store information that is applicable to all/most steps. But with clarification, that it's not like "we implemented X, now next step should do Y". It's about nuances/invariants/facts. In a concise manner too.
+			-  
+	- #### Solution
+		- 
+- ### Issue #7 Intra-step Deviation Tasks
 	- #### Discussion
 		- The issue was too much issues. Like I explored stuff until 100k context, and then everything went apart. So what I had to do, is to use branches and slowly, step by step, explore all possibilities. And work on each one. Step by step.
 		- **Planning flow is bad**
@@ -33,7 +49,7 @@
 			- *"I want to revert conversation... write me context handoff in ```markdown block``` but limit scope to our recent this to USER_INPUT."
 			- So this kind of exploration is low friction.
 
-- ### Issue #4 Initial Planning + Steps
+- ### Issue #6 User's High-Level Block
 	- #### Discussion
 		- **plan**
 			- Issue with high-level block. As a user it was hard to write initial thing. It should be kind prompt-like. Not like decisions/invariants. Just give the user free form. 
@@ -42,9 +58,18 @@
 		- It's true that it doesn't make sense to have similar stuff that is asked from LLM. For sure.
 		- But it raises the question about how much I should do solo. Like it's a spectrum. From nothing, to like reading all the code and writing exact code to replace it. 
 		- I should have initial reflection for sure. From that - extract what's worth to be extracted, so it won't be like 100 lines of yapping. So yeah. **Free form**. Like if there's decisions to be made... but again - decisions are an LLM-term basically. 
-		- But absence of options create the same cognitive overload as abundance of choices. 
+		- But absence of options create the same cognitive overload as abundance of choices. So there must be some. So, it's free form, but template will have some stuff right away.
+			- Which stuff? (accent on user, so it's not like another LLM wrote it)
+				- **Raw User Input** - to not think about unnecessary categorization for each 2 sentences. 
+				- **User Decisions** - if there's any controversial or nuanced decisions, that's the place for them.
+				- **User Scope** - if there's risk of drift - that's the place to define scope of the phase, like if you're doing wiring + layout of ui - don't drift into styling. 
+				- **Links To Related Files** - stylings/designs/layouts/etc. to keep main plan clean
 	- #### Solution
-		- 
+		- **Free form** + a few additional blocks to give a few options
+			- **Raw User Input** - to not think about unnecessary categorization for each 2 sentences. 
+			- **User Scope** - if there's risk of drift - that's the place to define scope of the phase, like if you're doing wiring + layout of ui - don't drift into styling. 
+			- **Links To Related Files** - stylings/designs/layouts/etc. to keep main plan clean
+			- **User Decisions** - if there's any controversial or nuanced decisions, that's the place for them.
 - ### Issue #5 PLANNING.md Enforcement
 	- #### Discussion
 		- **planning.md**
@@ -55,9 +80,8 @@
 			- Like it should have its own section in agents, to clarify its importance. 
 		- **TLDR** - you lack routine in this. Process is chaotic and unpredictable. That's adds a lot of friction.
 	- #### Solution
-- ~~`_project.md`~~
-	- ~~needs some automatic fetching I recon. - no it doesn't~~
-		- ~~but the issue is with LLMs getting understanding of this stuff... ~~
+		- **AGENTS.md** - planning md section as 00 or 01. Accent that this flow is of the utmost importance
+		- **00-end template checkbox** to reflect where routine was kept, and where it was broken/interrupted, so it brings the dictionary of routine-seeking behaviour. 
 - ### Issue #4 Initial Planning + Steps
 	- #### Discussion
 		- another big one. plan initial steps through artifacts. or in conversation. But not all at once. but one by one. 
