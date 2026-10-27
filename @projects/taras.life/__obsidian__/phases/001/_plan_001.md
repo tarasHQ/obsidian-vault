@@ -110,4 +110,25 @@ await cJS(c => c.RenderReflectionHelpers.renderColumns(dv, this.container));
 ```dataviewjs
 await cJS(c => c.PlanStepsList.renderSteps(dv, this.container));
 ```
-test
+
+
+## [TEST LINK]
+%% implemented - condensed %% 
+Established the new plugin package at `custom-plugins/remark42`, written **from scratch** under Quartz's documented compiled-package model (D1): TypeScript/TSX source, declared dependencies, an explicit esbuild build, committed `dist/`, exports pointing to built JavaScript. Site generation consumes that output and never compiles the plugin. The previous implementation stays untouched and unreferenced at `custom-plugins/remark42-old/` (deleted at step 07). The render is a throwaway scaffold reproducing the current DOM contract so deployed HTML does not change until steps 03–05 reshape it.
+
+
+## [TEST LINK]
+%% implemented - condensed %%
+Established the new plugin package at `custom-plugins/remark42`, written **from scratch** under Quartz's documented compiled-package model (D1): TypeScript/TSX source, declared dependencies, an explicit esbuild build, committed `dist/`, exports pointing to built JavaScript. Site generation consumes that output and never compiles the plugin. The previous implementation stays untouched and unreferenced at `custom-plugins/remark42-old/` (deleted at step 07). The render is a throwaway scaffold reproducing the current DOM contract so deployed HTML does not change until steps 03–05 reshape it.
+
+## [TEST LINK]
+%% implemented - condensed %% 
+%%Established the new plugin package at `custom-plugins/remark42`, written **from scratch** under Quartz's documented compiled-package model (D1): TypeScript/TSX source, declared dependencies, an explicit esbuild build, committed `dist/`, exports pointing to built JavaScript. Site generation consumes that output and never compiles the plugin. The previous implementation stays untouched and unreferenced at `custom-plugins/remark42-old/` (deleted at step 07). The render is a throwaway scaffold reproducing the current DOM contract so deployed HTML does not change until steps 03–05 reshape it.%%
+
+## [TEST LINK]
+%% implemented - condensed %%
+%%Established the new plugin package at `custom-plugins/remark42`, written **from scratch** under Quartz's documented compiled-package model (D1): TypeScript/TSX source, declared dependencies, an explicit esbuild build, committed `dist/`, exports pointing to built JavaScript. Site generation consumes that output and never compiles the plugin. The previous implementation stays untouched and unreferenced at `custom-plugins/remark42-old/` (deleted at step 07). The render is a throwaway scaffold reproducing the current DOM contract so deployed HTML does not change until steps 03–05 reshape it.%%
+
+## [TEST LINK]
+%% implemented - condensed %% 
+%%Established the new plugin package at `custom-plugins/remark42`, written **from scratch** under Quartz's documented compiled-package model (D1): TypeScript/TSX source, declared dependencies, an explicit esbuild build, committed `dist/`, exports pointing to built JavaScript. Site generation consumes that output and never compiles the plugin. The previous implementation stays untouched and unreferenced at `custom-plugins/remark42-old/` (deleted at step 07). The render is a throwaway scaffold reproducing the current DOM contract so deployed HTML does not change until steps 03–05 reshape it.%%
