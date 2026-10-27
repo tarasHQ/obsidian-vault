@@ -35,6 +35,7 @@ action:
     - ###### BEFORE SLEEP
         - [ ] Write overview of the current day
         - [ ] Create journal for the next day
+            - Add there to test before/after -2 or -3 CQP on video. OR 20fps (only +33%)
         - [ ] Move uncompleted tasks
         - [ ] Make sure all day's reflections are linked under reflections
         - [ ] monitor OFF (seems like keeping on makes him die faster)
@@ -67,6 +68,7 @@ action:
 	- [ ] folder icons - rename to where they used and resize other icons (260kb per icon is stupid)
 	- [ ] FIX - templated creation of next journal entry. 23:53 - "This day already exists"
 	- [ ] Templates for reflections - maybe shouldn't use project backlinks for now, until I figure out if there's gonna be "main index"
+	- [ ] AHK - run separate user of vscode as admin to be able to edit the script? 
 	- [ ] Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
 	- [ ] You need simple back/forward(automatic visibility if exists) navigation between journal entries. (or use calendar plugin for the time being)
 	- [ ] You need a to select a block of text, press hotkey and save it as a reflection with link that replace selected text. (also it should have same frontmatter as current flow)
@@ -104,6 +106,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 13:11
+	- Ok. That Peterson's idea about timeframe is definitely makes a lot of sense. I'm curious how it'll be after usual post-first-meal-crash, though I have some cleaning to do after...
 - ###### 11:35
 	- Yeah...
 	- Ok. What caused it this time? 
