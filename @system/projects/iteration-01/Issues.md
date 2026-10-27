@@ -41,8 +41,10 @@
 			- High level - must contain links block, with related links, so I don't have to re-type them each time in each new task.
 		- It's true that it doesn't make sense to have similar stuff that is asked from LLM. For sure.
 		- But it raises the question about how much I should do solo. Like it's a spectrum. From nothing, to like reading all the code and writing exact code to replace it. 
-		- 
+		- I should have initial reflection for sure. From that - extract what's worth to be extracted, so it won't be like 100 lines of yapping. So yeah. **Free form**. Like if there's decisions to be made... but again - decisions are an LLM-term basically. 
+		- But absence of options create the same cognitive overload as abundance of choices. 
 	- #### Solution
+		- 
 - ### Issue #5 PLANNING.md Enforcement
 	- #### Discussion
 		- **planning.md**

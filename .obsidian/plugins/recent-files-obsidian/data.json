@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "Issues",
-      "path": "@system/projects/iteration-01/Issues.md"
-    },
-    {
       "basename": "October 27th, 2026",
       "path": "@journal/2026/October/October 27th, 2026.md"
+    },
+    {
+      "basename": "[T]step-end",
+      "path": "_static/templater/project/[T]step-end.md"
+    },
+    {
+      "basename": "[T]step-start",
+      "path": "_static/templater/project/[T]step-start.md"
+    },
+    {
+      "basename": "[T]plan",
+      "path": "_static/templater/project/[T]plan.md"
+    },
+    {
+      "basename": "Issues",
+      "path": "@system/projects/iteration-01/Issues.md"
     },
     {
       "basename": "_plan_001",
@@ -19,18 +31,6 @@
     {
       "basename": "PLANNING",
       "path": "_static/projects/PLANNING.md"
-    },
-    {
-      "basename": "[T]plan",
-      "path": "_static/templater/project/[T]plan.md"
-    },
-    {
-      "basename": "[T]step-end",
-      "path": "_static/templater/project/[T]step-end.md"
-    },
-    {
-      "basename": "[T]step-start",
-      "path": "_static/templater/project/[T]step-start.md"
     },
     {
       "basename": "on-discouragement-again",
