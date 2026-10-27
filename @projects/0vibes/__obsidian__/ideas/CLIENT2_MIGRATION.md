@@ -140,7 +140,7 @@ This section clarifies styling migration strategy for `client2`.
 
 Notification planning and detailed scope logic are tracked in:
 
-- [CLIENT2_NOTIFICATION.md](CLIENT2_NOTIFICATION.md)
+- [CLIENT2_NOTIFICATION.md](../artifacts/CLIENT2_NOTIFICATION.md)
 
 Migration-level contract notes (must remain aligned with that plan):
 
