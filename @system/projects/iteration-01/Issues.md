@@ -107,6 +107,7 @@
 	- So, does it mean dataview won't be needed here at all? 
 		- Well, there's that block that pulls up docs/artifacts/ideas list of files. 
 		- LLM doesn't need to know about those because most of it probably would be unrelated. I attach them into context only when I need it. Manually. So it's fine. 
+		- Wait a second. Seems like quartz syncer supports parsing dataview js queries. I need to test.
 - ### on style of plan's list/table
 	- I need that list with descriptions. It proved to be useful for reducing cognitive load of parsing previous tasks. BUT. Here's the thing. It can be written manually. Steps too. Since they're supported by LLM and only curated by you. It's a bit PIA, cuz LLM would need to read plan to insert this block. BUT. It's preserves its usefulness + llm get to have overview too AND on website it's in original form as well, which means if there'll be lots of those - I wouldn't have to wait until everything gets parsed built by quartz. It will add time for sure. 
 	- So, let's lock this in. you have:
