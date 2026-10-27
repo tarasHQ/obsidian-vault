@@ -53,7 +53,7 @@ action:
     - [ ] Start stager timer
     - [ ] Fill Context block
 
-```meta-bind-button {fold}
+```meta-bind-button
 label: Remove Night Checklist
 style: default
 icon: trash-2
@@ -75,7 +75,7 @@ action:
         - [ ] Create journal for the next day
         - [ ] Move uncompleted tasks
         - [ ] Make sure all day's reflections are linked under reflections
-        - [ ] monitor contrast/bright. at 0
+        - [ ] monitor OFF (seems like keeping on makes him die faster)
 
 ---
 

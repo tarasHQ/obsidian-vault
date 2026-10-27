@@ -1,6 +1,7 @@
 ---
 ctime: 2026-10-24 17:08
-isIntegrated: false
+status: implemented
+isIntegrated: true
 ---
 
 [← Project](../../_project.md)

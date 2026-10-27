@@ -35,6 +35,8 @@ action:
         - [ ] red "now" line is there
     - [ ] Start stager timer
     - [ ] Fill Context block
+    - [ ] PROCESS THE VIDEOS
+        - [ ] Cut when you fall asleep. 
 
 ```meta-bind-button {fold}
 label: Remove Night Checklist
@@ -58,7 +60,7 @@ action:
         - [ ] Create journal for the next day
         - [ ] Move uncompleted tasks
         - [ ] Make sure all day's reflections are linked under reflections
-        - [ ] monitor contrast/bright. at 0
+        - [ ] monitor OFF (seems like keeping on makes him die faster)
 
 ---
 
@@ -80,7 +82,16 @@ action:
 ## TASKS
 %%Cognitive offload for the day, to not keep these in my mind for the whole time%%
 - ### TODO
-	- [ ] 
+	- [ ] FIX - templated creation of next journal entry. 23:53 - "This day already exists"
+	- [ ] Templates for reflections - maybe shouldn't use project backlinks for now, until I figure out if there's gonna be "main index"
+	- [ ] Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
+	- [ ] You need simple back/forward(automatic visibility if exists) navigation between journal entries. (or use calendar plugin for the time being)
+	- [ ] You need a to select a block of text, press hotkey and save it as a reflection with link that replace selected text. (also it should have same frontmatter as current flow)
+		- [ ] On top of it, current flow of templated reflections probably should force copy link into clipboard as well. These shouldn't be in the journaling, because they give constraints on the size. 
+			- or maybe you just use initial `_reflections` flow instead of limiting yourself within the journal entry? 
+	- [ ] 🔴[[plans/better-schedule-plan|better-schedule-plan]]
+		- Tick tick becomes PIA. Limited too. Maybe there's something else? Maybe there's self-hosted things? 
+	- [ ] Rewrite remark42 plugin. Properly. With the new workflow. 
 - ### Priority
 	- [ ] 
 - ### Completed
