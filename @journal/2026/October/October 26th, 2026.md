@@ -79,7 +79,7 @@ action:
 - ###### 17:19
 	- Issue with these minor tasks is that they feel insignificant and meaningless compared to that proper plan flow. Like yeah it was PIA, but each step had some intrinsic significance because it was embedded into the bigger "path". 
 	- Now? Like yeah, I'm playing with fonts, yeah, it's nice. set up some other stuff. Figuring out theming. But they feel like "one out of a million"-kind of task. 
-		- And besides that - if I decided to do current task properly, through the flow - I would've added those ideas I captured in other notes. [[plans/quartz-website-plan|quartz-website-plan]]
+		- And besides that - if I decided to do current task properly, through the flow - I would've added those ideas I captured in other notes. [[../../../@projects/taras.life/Web (meta)/quartz-website-plan|quartz-website-plan]]
 - ###### 16:46
 	- I don't know. I gave the freedom to puer - and as result, not much happening. 
 	- It's kinda partially my fault. For some reason worker won't build my commit. So I'm just stuck waiting. But maybe that's the issue with speed. Like it's another layer of meta problem solving. Like you should figure out how to solve problems, before you actually start to solve problems?

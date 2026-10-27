@@ -29,7 +29,7 @@ Also second day where I worked basically the whole day, which is good.
 	- also filters I did for higher contrast/lower brightness - proved to be good to. text is more clear
 - [x] [inverter-cooling-rewiring-plan](inverter-cooling-rewiring-plan.md) 
 - [!] [better-schedule-plan](better-schedule-plan.md) 
-- [!] [quartz-website-plan](quartz-website-plan.md) 
+- [!] [quartz-website-plan](../../../@projects/taras.life/Web%20(meta)/quartz-website-plan.md) 
 
 ---
 

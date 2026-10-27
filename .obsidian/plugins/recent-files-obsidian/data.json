@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "_project",
+      "path": "@projects/0vibes/__obsidian__/_project.md"
+    },
+    {
+      "basename": "_plan_001",
+      "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
+    },
+    {
+      "basename": "proxmox-backup-plan",
+      "path": "@journal/2026/October/plans/proxmox-backup-plan.md"
+    },
+    {
+      "basename": "quartz-website-plan",
+      "path": "@projects/taras.life/Web (meta)/quartz-website-plan.md"
+    },
+    {
       "basename": "Issues",
       "path": "@system/projects/iteration-01/Issues.md"
     },
@@ -17,16 +33,8 @@
       "path": "@projects/taras.life/Web (meta)/Ideas.md"
     },
     {
-      "basename": "quartz-website-plan",
-      "path": "@journal/2026/October/plans/quartz-website-plan.md"
-    },
-    {
       "basename": "PLANNING",
       "path": "_static/projects/PLANNING.md"
-    },
-    {
-      "basename": "_project",
-      "path": "@projects/0vibes/__obsidian__/_project.md"
     },
     {
       "basename": "_project",
@@ -35,10 +43,6 @@
     {
       "basename": "CLIENT2_MIGRATION",
       "path": "@projects/0vibes/__obsidian__/ideas/CLIENT2_MIGRATION.md"
-    },
-    {
-      "basename": "_plan_001",
-      "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
     },
     {
       "basename": "Ideas",
