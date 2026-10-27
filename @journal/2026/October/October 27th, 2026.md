@@ -15,29 +15,6 @@ actions:
 
 ---
 
-```meta-bind-button
-label: Remove Morning Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### MORNING CHECKLIST
-    - [ ] Day scene
-    - [ ] Check webcam (exposure)
-    - [ ] Check IP cam (quality, delay)
-        - [ ] Move to "day position"
-    - [ ] Check all elements are present on the canvas
-    - [ ] Check TickTick schedule 
-        - [ ] correct day, scheduled, scaled
-        - [ ] red "now" line is there
-    - [ ] Start stager timer
-    - [ ] Fill Context block
-    - [ ] PROCESS THE VIDEOS
-        - [ ] Cut when you fall asleep. 
-
 ```meta-bind-button {fold}
 label: Remove Night Checklist
 style: default
@@ -121,8 +98,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 08:43
+	- Making bread takes too much time and throws me of the peak of compensation. So I have to do it 2 hours before the bed. 
 - ###### 08:05
-	- Woke up 
+	- Woke up. Got a nice present from the Google with unexpected charge that had to be blocked and stopped. But it wasn't. So yeah... Had a little money left, and those are nearing zero now. 
 
 ---
 
@@ -133,4 +112,10 @@ Dream was a manhunt on me. Like literally man-hunt.
 When I woke up - for some reason I decided to listen to "dark folk". These Nordic-Viking-like songs. It feels like the dream compensation was like "you know about those timeframes" - now you have to act on it. Because that's what men do. Act. Not think or reflect or feel. I'm talking on symbolical level though. 
 
 It seems like the dream hints me towards this trait of masculinity. 
-Very well those men in my dream might as well hunt me in my puer representation. Because result of that dream was me starting to hunt them. And when I woke up - I wanted to like say "why the hell I was running from the captivity?", like I had to attack the damn guy with a rock or something else heavy
+Very well those men in my dream might as well hunt me in my puer representation. Because result of that dream was me starting to hunt them. And when I woke up - I wanted to like say "why the hell I was running from the captivity?", like I had to attack the damn guy with a rock or something else heavy. And just kill him by beating into a pulp - even wording of this is like "manly-man-talk" of aggression and action. So that's aftertaste of autonomous compensation. 
+
+But conscious compensation would say something like - to hunt negative aspect of puer aeternus archetype, you have to embrace that masculinity honestly. Because if I force puer within a puer - it'll end up in self-victimization. 
+
+So it's like forcing puer to work, but in a mature way. Honest and humble. It feels crippling, but that attitude changes everything. 
+
+Also - I definitely need to have morning routine as short as possible. Wake up and straight to work seems like nice way to start a day.
