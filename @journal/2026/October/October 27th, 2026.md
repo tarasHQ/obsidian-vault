@@ -106,6 +106,16 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 14:53
+	- Kinda worked again. Weird. How? Why? But I got this documented twice now and twice it's successful. Alternative would be to start half-dead and hopefully get up to speed in an hour or two, so it's definitely worth it. 
+		- I just wait for impulse. Try to bring my mind to the ground, to here and now. To focus on task. And then impulse of meaning signifies that I'm ready to work (hopefully)
+- ###### 14:39
+	- Ok. I'm ready. It's weird to feel that "cost-perspective shift", but it's there. I imagine like the task at hand becomes my whole world and I get surrounded by that task only. Don't know if it's the way, but I try what I can try. 
+	- But I want to sleep so much it's insane. 15 minute nap.
+- ###### 14:35
+	- Ate. Vacuumed my place. Now I'm discouraged. Will that timeframe shift will help me to work? 
+	- Definitely feels like there's a place for some kind of meditation to detach from the future. 
+	- Wouldn't mind taking a nap though... 6 hours isn't enough
 - ###### 13:11
 	- Ok. That Peterson's idea about timeframe is definitely makes a lot of sense. I'm curious how it'll be after usual post-first-meal-crash, though I have some cleaning to do after...
 - ###### 11:35
