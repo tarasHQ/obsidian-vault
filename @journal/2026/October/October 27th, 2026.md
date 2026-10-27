@@ -96,6 +96,7 @@ action:
 ==🟡SCOPE. TODAY. NOW. NOTHING ELSE MATTERS==
 ==🟡SCOPE. TODAY. NOW. NOTHING ELSE MATTERS==
 ==🟡SCOPE. TODAY. NOW. NOTHING ELSE MATTERS==
+It works. It truly does. 
 
 ```meta-bind-button {fold}
 label: New Log Entry
@@ -106,6 +107,15 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 18:10
+	- Ok. I go to eat now. in 3-4 hours will have a tea with butter. It'll carry me through the rest. 6 hours of work ahead.
+	- ==Now I won't say that "I wish I would end X today", now I automatically feel that this leads to that discouragement. So I eat and then I work productively. In this state the only true issue is that I can drift off the track, if I won't - it doesn't matter what and when I "would want to end X", because the effort is what matters.
+- ###### 18:02
+	- That was pretty intense thinking, I'm curious how to recover from it optimally. 
+	- Also it's like not me was making decision, but the unconscious. Weird, but it feels like cases like this one - is kinda like targeted on deep values/principles. Like there's something significant happening in the mind. But thankfully I managed to have a good decision. I'm just wasted. Like whole context of the brain was filled with this issue. 
+	- Food I guess? 6 hours though till sleep is kinda pushing it. I'll go sleep pretty hungry. 
+- ###### 17:29
+	- Time flies. But all those issues made me think about whether I have a proper architectural decision. But seems like quartz is good enough. Like it covers me in "invisible-progress" topics, so I can focus on the rest, while with astro I would have much more control, but it would take me weeks to do it. I just can't spend more time for nothing.
 - ###### 16:35
 	- Ok, I work, but quartz turned out to be a bit overhyped. Dataview support is very limiting. Excalidraw support is just a BS. Besides that I removed lots of plugins. At this point I don't know whether I need it or maybe I should use something else. Or just start rewriting quartz. Don't know. Researching.
 	- Discouraging a bit though.

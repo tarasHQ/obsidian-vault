@@ -91,6 +91,9 @@
 
 ---
 ## Reflections
+- ### on what this website should be about? 
+	- Like for astro - you need to have something that goes beyond typical 1:1 obsidian vault. That's the thing. If you want to stay 1:1 - quartz should do the trick, because it's covering lots of PIA stuff. Yeah it's not really optimal in many aspects, but you can fix it, since it's highly modular. Optimized too. So I would focus on extracting as much as possible from quartz. 
+	- I just don't want to spend like 3 weeks doing quartz, and then finding out that I could've done more in less time using astro. So I guess this pause is half-justified. 
 - ### on dataview in planning workflows
 	- The issues. 
 		- **LLM can't read rendered dataview query/js**
@@ -104,13 +107,20 @@
 			- You start a step, you attach a plan anyways. And LLM should update it only on step completion flow. So it won't interfere with the task if LLM will read the plan once again at the end. That's fine. 
 		- With the project - it's even more obvious.
 			- How often do you change status of phases? Like in ideal world where you have speed - it'll be 1-3 phases per day. Which is not much at all, so there's not much friction. BESIDES that, you'll have usual flow of moving the phase under archived/ folder, so there'll be some manual work. 
-	- So, does it mean dataview won't be needed here at all? 
+	- **So, does it mean dataview won't be needed here at all?** 
 		- Well, there's that block that pulls up docs/artifacts/ideas list of files. 
 		- LLM doesn't need to know about those because most of it probably would be unrelated. I attach them into context only when I need it. Manually. So it's fine. 
 		- Wait a second. Seems like quartz syncer supports parsing dataview js queries. I need to test.
 		- Got off track. 
 		- Ok, it renders it, but does it suboptimally. 
 		- Excalidraw plugin is BS too. Laggy. Limited. Practically no plugin one might say.
+	- Previous point. Again. 
+		- At this point. Excalidraw isn't a blocking issue. I plan to use it with knowledge system, whenever it'll get developed. Dataview - the same. Besides that one point of aggregating docs under the same list and automatically. Like it really IS helpful, especially because I plan to track what was integrated. So it'll be highlighted if I wrote something and then forgot about it. But c'mon. Honestly - how stupid is this? 
+			- IF that's important - you don't forget so easily. 
+			- Nah, it's not only about that. those also act as expansions on ideas/issues/reflections, so I don't pollute steps/plan. basically I have either` _reflections` or `ideas` or `artifacts`. Do I need artifacts? yes I do. I develop some feature, I download docs or images around that feature and place them there. So it's contained where it's needed. If it's needed again - I may move into some other shared folder. But that's not the case. I need all 3. Like I probably would add even more as time goes. 
+			- So what options do I have?
+				- It's either use dataview, parse, and figure out how to make it similar
+				- or don't use dataview and link everything manually.
 - ### on style of plan's list/table
 	- I need that list with descriptions. It proved to be useful for reducing cognitive load of parsing previous tasks. BUT. Here's the thing. It can be written manually. Steps too. Since they're supported by LLM and only curated by you. It's a bit PIA, cuz LLM would need to read plan to insert this block. BUT. It's preserves its usefulness + llm get to have overview too AND on website it's in original form as well, which means if there'll be lots of those - I wouldn't have to wait until everything gets parsed built by quartz. It will add time for sure. 
 	- So, let's lock this in. you have:
