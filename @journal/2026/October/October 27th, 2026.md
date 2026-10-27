@@ -107,6 +107,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 23:53
+	- This Nordic dark folk music... There's something to it. Like definitely my masculine traits are much more into the unconscious than feminine ones. This music seems like influencing those masculine traits to step into the light of conscious. Weird. 
+	- At the same time images and visions flash. Of Vikings, battles. Like I'm a human and all of that is part of me. And it feels like I would really used that capacity to withstand and fight. 
+	- Like it can't be coincidence that I got those dreams and all of a sudden listened for Nordic dark folk for like a few hours in total today.
 - ###### 22:46
 	- 30 minutes. Did it helped? - yeah. No impulse, but maybe that's because I didn't remember what I had to do, so the brain like didn't prepared that in the mind
 - ###### 22:19
