@@ -41,7 +41,7 @@ actions:
 
 ## TASKS
 - [!] [better-schedule-plan](better-schedule-plan.md) 
-- [!] [quartz-website-plan](quartz-website-plan.md) 
+- [!] [quartz-website-plan](../../../@projects/taras.life/Web%20(meta)/quartz-website-plan.md) 
 - ##### low priority
 	- [x] Add my old python script to monitor the battery on recording pc (always visible)
 	- [x] PIA with deskflow. But should be stable now

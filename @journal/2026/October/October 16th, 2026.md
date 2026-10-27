@@ -43,7 +43,7 @@ actions:
 - [x] Figure out on-site creation of plans instead of tasks, so I can think in there
 - [x] Better variation on highlights, if I'll need it
 - [ ] [better-schedule-plan](better-schedule-plan.md) 
-- [ ] [quartz-website-plan](quartz-website-plan.md) 
+- [ ] [quartz-website-plan](../../../@projects/taras.life/Web%20(meta)/quartz-website-plan.md) 
 - [x] Template for journaling (adds duplication but reduces friction)
 - [x] Muxing videos on recording-pc
 	- [x] Fix Bug with random delays to access shared folder

@@ -25,7 +25,7 @@ It's just sad. I did productive things. But it's just like... Not enough? Window
 ## TASKS
 %%Cognitive offload for the day, to not keep these in my mind for the whole time%%
 - [ ] [better-schedule-plan](better-schedule-plan.md) 
-- [ ] [quartz-website-plan](quartz-website-plan.md) 
+- [ ] [quartz-website-plan](../../../@projects/taras.life/Web%20(meta)/quartz-website-plan.md) 
 - ### Active
 	- [ ] Youtube - wrong order of timestamps. You need to offset by one chapter
 	- [ ] You need simple back/forward(automatic visibility if exists) navigation between journal entries.

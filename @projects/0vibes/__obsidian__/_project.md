@@ -11,6 +11,7 @@
 	Since philosophy is to heavily involve human in the loop - you'll know your next projects much better than through other apps
 - ### Your child - Love it
 	This project is your child that will be very beneficial (if you have healthy relationship with it)
+- 
 
 
 ```dataviewjs
@@ -29,6 +30,25 @@ SORT file.name ASC
 GROUP BY true
 ```
 
+```base
+filters:
+  and:
+    - file.inFolder(this.file.folder)
+    - file.folder != this.file.folder
+formulas:
+  category: if(file.folder.endsWith("_reflections"), "Reflections", if(file.folder.endsWith("ideas"), "Ideas", if(file.folder.endsWith("artifacts"), "Artifacts", "Other")))
+views:
+  - type: kanban
+    name: Project Columns
+    groupBy:
+      property: formula.category
+      direction: ASC
+    groupOrder:
+      - Reflections
+      - Ideas
+      - Artifacts
+
+```
 
 
 # ==RECONSIDER  CANVAS==
