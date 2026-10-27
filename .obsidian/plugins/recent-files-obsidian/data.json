@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "_plan_001",
+      "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
+    },
+    {
+      "basename": "General",
+      "path": "@projects/taras.life/__obsidian__/ideas/General.md"
+    },
+    {
       "basename": "PLANNING",
       "path": "_static/projects/PLANNING.md"
     },
@@ -43,10 +51,6 @@
     {
       "basename": "Temp extraction",
       "path": "@projects/0vibes/__obsidian__/phases/001/artifacts/Temp extraction.md"
-    },
-    {
-      "basename": "_plan_001",
-      "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
     },
     {
       "basename": "proxmox-backup-plan",
