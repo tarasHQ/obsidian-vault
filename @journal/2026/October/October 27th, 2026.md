@@ -107,6 +107,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 20:30
+	- That's different kind of discouragement. Websites adds limitations - I already want to expand obsidian a lot, and will want to do that further later. To maintain both website and obsidian - would a bit problematic. Sooo.
+	- That's issue with these mods/plugins. Half cooked often. Not fully supported/compatible. 
+	- Ok. Timeframe. 
 - ###### 19:10
 	- Website makes very limited set options in front of me. like I wanted to do with tasks something - now I probably can't, because it barely works as is. 
 	- Now webcam audio lags... one issue after the other... 

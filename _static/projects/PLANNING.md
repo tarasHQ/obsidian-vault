@@ -21,9 +21,6 @@ SSOT of plans, reflections, idea capturing, phases and implementation flows of a
 			- `steps/` - Implementation steps files
 			- `_plan.md` - High-level plan of the current phase, also is an entry to the phase
 	- `/_project.md` - Project's entry point. Overview of phases + reflections & ideas
-	  
-- ### General Rules
-	- All **filenames** must be in a lower case, to be easier to type in search/name/etc. 
 
 ## Step-by-Step Workflow
 - #### 1. High-level planning
