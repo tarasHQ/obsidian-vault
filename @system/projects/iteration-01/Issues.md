@@ -45,10 +45,7 @@
 - **artifacts**
 	- maybe it makes more sense for llm to write its output into .md files? Like I'm repeating the same thing right now. First task was exploring 10 minutes about how quartz proposes to write plugins, and now, in a new task, I'm wasting another 5-10 minutes on the same damn issue. 
 
-## Technical
-- js html dataview block
-	- 
-- 
+## Technical [DONE]
 - ### Issue #1 - PIA Navigation
 	- Navigation is kinds PIA. I have to switch between vscode and obsidian. 
 	- the issue is that you get overwhelmed by the amount of docs and text.
@@ -65,9 +62,10 @@
 		- We need some minimal borders around both table and list.
 		- Do I need js? Maybe bases could do the job?
 			- The thing is - whether I want to preserve it for the website and LLMs. 
-			- 
 	- #### Solution 
 		- **icons** - yes, but don't add more colors. ○ - high-level, ◎ - full, ◉ - condensed. 
+		- **list/table** - yes. on the screenshot in reflections
+		- **scrollabe container** - no. BUT you can use outline, since each step won't be as bullet point, so it'll get recognized.
 
 
 
@@ -82,4 +80,5 @@
 	- I need that list with descriptions. It proved to be useful for reducing cognitive load of parsing previous tasks. BUT. Here's the thing. It can be written manually. Steps too. Since they're supported by LLM and only curated by you. It's a bit PIA, cuz LLM would need to read plan to insert this block. BUT. It's preserves its usefulness + llm get to have overview too AND on website it's in original form as well, which means if there'll be lots of those - I wouldn't have to wait until everything gets parsed built by quartz. It will add time for sure. 
 	- So, let's lock this in. you have:
 		- table of steps with relative links + state/status. 
-		- list of steps with descriptions. But how would I dim them? Comments. Makes lots of sense. 
+		- list of steps with descriptions. But how would I dim them? Comments. Makes lots of sense. ![[_attachments/Snipaste_2026-10-27_12-15-27 (2).webp|395]]
+		- But that means you have to play with styles a bit, because all those styles within comments need override. 
