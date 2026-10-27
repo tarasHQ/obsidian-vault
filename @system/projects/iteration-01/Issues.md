@@ -10,12 +10,21 @@
 
 # Issues
 ## High Level
-- **getting overwhelmed**
-	- The issue was too much issues. Like I explored stuff until 100k context, and then everything went apart. So what I had to do, is to use branches and slowly, step by step, explore all possibilities. And work on each one. Step by step.
-	- **Planning flow is bad**
-		- LLM dumped lots of text at once. That was the issue. It just overwhelmed you. Then you don't follow it. And now you're paying the price because you don't know jack shit about this.
-			- and you did this in the wrong state of mind, which made you not-read or forget most of the things. 
-		- you also need to decide before committing the phase, whether you need a separate branch for that.
+- ### Issue #4 Issues Tracking
+	- #### Discussion
+		- The issue was too much issues. Like I explored stuff until 100k context, and then everything went apart. So what I had to do, is to use branches and slowly, step by step, explore all possibilities. And work on each one. Step by step.
+		- **Planning flow is bad**
+			- LLM dumped lots of text at once. That was the issue. It just overwhelmed you. Then you don't follow it. And now you're paying the price because you don't know jack shit about this.
+				- and you did this in the wrong state of mind, which made you not-read or forget most of the things. 
+			- you also need to decide before committing the phase, whether you need a separate branch for that.
+		- What if I should heavily utilize artifacts for stuff like this? 
+			- `artifacts/_exploration.md` will reduce re-exploration time and quality
+			- `artifacts/01-temp.md` will allow to offload everything into a single place that won't bloat either step itself or plan. 
+		- Like let's imagine. You got that 100k context. You have multiple issues pending. You just offload them in freeform. Also can ask LLM to do it. Start a new task focusing on one issue, for example. 
+		- If those issues are blocking current task - the same logic. Parallel task with context handoff into that file. LLM in current task reads that file and proceeds without blocks. 
+		- But what if you use step file for this? No. The issue with these issues is that they're often like perpendicular. Chances that step file wil
+	- #### Solution
+		- `artifacts/XX-temp.md` - temp step file to offload current task (your mind). Because of exploration file, it's less friction to have parallel tasks on the same step if current task got bloated or something. That way the step logic is preserved. 
 - **plan**
 	- Issue with high-level block. As a user it was hard to write initial thing. It should be kind prompt-like. Not like decisions/invariants. Just give the user free form. 
 	- For llm's high level though - it gets big really quickly. 
@@ -37,20 +46,30 @@
 		- another big one. plan initial steps through artifacts. or in conversation. But not all at once. but one by one. 
 			- like you write down somewhere top-level overview of planned steps. then do some exploration on implementations. write down description/high level. 
 				- **KEY ISSUE - what if context is overfilled before all steps are written?**
-		- The thing is - it really should be kinda split. 
+		- The thing is - it really should be kinda split. Shouldn't it? Like first you do initial planning to understand what the hell you need to do. Like LLM does a bunch of exploration. You need completely separate flow for this one only
+		- But should initial planning have some temp file in artifacts? In case I would need multiple tasks? Because exploration may be indeed too big. And dumping everything into the main plan may be excessive. So you use that artifact. out of it figure out the whole workflow of steps - write them down and now you know what goes into steps, and what should persist in the plan throughout whole execution. 
+		- Discussion and reflection - should have brief template as well, kinda like I had with kilo code. Autoregressive. Recommended choice. Explain in simple words. Also - I should add rule to automatically add at the end user input point. like `- USER INPUT: ` so I can type right away the answer
 		- ##### Initial planning
-		- 
+			- **Description:** should have restricted scope. Never leave high-level. First discussion with LLM that includes researching of codebase. 
+			- It's BY FAR the most important and the most hard phase of the plan. 
+			- Discussions and reflections as I had in kilo. Like it MUST have a task of seeking only issues. Yes it's PIA to go through all of them. But that's how to do it properly. 
 		- ##### Drafting Steps
+			- Clear sizing/splitting rules
+				- Size of the step should play important role. If whole scope is like writing 20 files, and we have step #3 doing 15 files - that's wrong step.
+					- it's not about logical blocks, everything can be broken down into cleanly modularized pieces.
+				- Size of files to read/edit - also very important. Explore returns sizes. So if we go beyond 200kb of files in a single step - split.
+				- We can utilize substep splitting. step `03` into `03`, `03.1`, `03.2`
+			- **"Do We Actually Need This Step?"**
+				- It's a hard one because I'm often biased. So I may think that we need one, but then we don't. Should it be integrated into step implementation workflow? 
 	- #### Solution
-		- 
+		1. **Separate Workflow for Initial Planning**
+			- Besides exploration - you can also start filling out `_exploration.md` because lots of high-level research will be done on the codebase (but probably at the end of the flow)
+			- 
+		2. 
 ## Low Level
 - ### Steps
-	- 
-	- Discussion and reflection - should have brief template as well, kinda like I had with kilo code. Autoregressive. Recommended choice. Explain in simple words. Also - I should add rule to automatically add at the end user input point. like `- USER INPUT: ` so I can type right away the answer
-	- On each step. High level template. **DO WE ACTUALLY NEED IT?**, like with tests right now. I just got overfocused on that. I don't actually need them. 
-	- Crucial. Make sure each step is optimally sized. So there's no like huge multi-hour step 01, while step 02 and 03 are done in 10 minutes. Step should be bite-sized. 
-		- **ESPECIALLY FOR CONTEX**. This is the main measurement for whether step is small or big. (besides complexity), if we need to read 50k tokens worth of files before we even start the discussion - step is too big for sure. 
-	- 
+	- ### Idea #2 Revert Checkpoints
+		- For example, that idea with evaluating if the step is actually needed. Workflow makes LLM explore the step, when it has context - it makes this checkpoint. Then we diverge into discussing if this step is actually needed. Or other topics. We come back, I write "checkpoint passed" and we proceed in a clean branch? But like not through my actions - but through LLM's commands.
 	- ### Idea #1 Context Cleanup Checkpoints
 		- Workflow should have a place where LLM asks to stop and cleanup useless context. Before implementation, for example. Experimental a bit. But may be helpful.
 	- ### Issue #4 Re-Exploration Time
