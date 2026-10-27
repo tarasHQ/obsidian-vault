@@ -123,7 +123,11 @@
 				- or don't use dataview and link everything manually.
 			- maybe I just update code of the dataview parser?
 			- but no, it's obsidian plugin, so I can't. 
-			- Databases then maybe? 
+			- bases then maybe?  - no. bs too. 
+	- Again.
+		- Dataview seems to kinda work the best out of all options. 
+		- Everything else gets done manually. it's fine. 
+		- When knowledge system arrives - that'll be painful. The same with tasks, if I would want to integrate them into obsidian. 
 - ### on style of plan's list/table
 	- I need that list with descriptions. It proved to be useful for reducing cognitive load of parsing previous tasks. BUT. Here's the thing. It can be written manually. Steps too. Since they're supported by LLM and only curated by you. It's a bit PIA, cuz LLM would need to read plan to insert this block. BUT. It's preserves its usefulness + llm get to have overview too AND on website it's in original form as well, which means if there'll be lots of those - I wouldn't have to wait until everything gets parsed built by quartz. It will add time for sure. 
 	- So, let's lock this in. you have:

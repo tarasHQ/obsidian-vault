@@ -107,6 +107,13 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 19:10
+	- Website makes very limited set options in front of me. like I wanted to do with tasks something - now I probably can't, because it barely works as is. 
+	- Now webcam audio lags... one issue after the other... 
+	- 
+- ###### 18:55
+	- With quartz though... it feels like someone was doing it in rush, especially plugins (obsidian companion too). And you're left with half-baked situation on your hand to figure out. That's why I'm thinking about astro. 
+	- Yeah, those plugins were written with sisyphus, which means now I have an answer why they're so poorly written. Better than nothing I guess.
 - ###### 18:10
 	- Ok. I go to eat now. in 3-4 hours will have a tea with butter. It'll carry me through the rest. 6 hours of work ahead.
 	- ==Now I won't say that "I wish I would end X today", now I automatically feel that this leads to that discouragement. So I eat and then I work productively. In this state the only true issue is that I can drift off the track, if I won't - it doesn't matter what and when I "would want to end X", because the effort is what matters.

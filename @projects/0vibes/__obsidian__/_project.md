@@ -38,7 +38,7 @@ filters:
 formulas:
   category: if(file.folder.endsWith("_reflections"), "Reflections", if(file.folder.endsWith("ideas"), "Ideas", if(file.folder.endsWith("artifacts"), "Artifacts", "Other")))
 views:
-  - type: kanban
+  - type: board
     name: Project Columns
     groupBy:
       property: formula.category
@@ -47,6 +47,10 @@ views:
       - Reflections
       - Ideas
       - Artifacts
+    imageAspectRatio: 0.45
+    columnWidth: 270
+    markers: none
+    indentProperties: false
 
 ```
 
