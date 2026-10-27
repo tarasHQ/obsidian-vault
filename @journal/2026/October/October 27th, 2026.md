@@ -60,6 +60,9 @@ action:
 %%Cognitive offload for the day, to not keep these in my mind for the whole time%%
 - ### TODO
 	- [ ] **META** Figure out where to accumulate such secondary tasks and where you can prioritize them, because flat list is stupid and limiting. 
+	- [ ] Ideally to go away from the minimal theme. It does add a lot of things that I don't use, and basically a deadweight. Like it's better to have 30 styles in CSS than like 2 plugins with 100 settings + a theme . 
+	- [ ] [kinda priority] flow to compress png into webp from screenshot, so it won't harm neither website nor size of the vault. But also figure out if deskflow can do it, because right now it's half-supported. (or don't do it through deskflow)
+		- priority because it adds another dimension to thinking + cognitive offload. 
 	- [ ] dataview -> move to that default rendering pipeline, current one doesn't have flashes BUT it's blocking rendering of the note, which is not good either. (worse)
 	- [ ] folder icons - rename to where they used and resize other icons (260kb per icon is stupid)
 	- [ ] FIX - templated creation of next journal entry. 23:53 - "This day already exists"
