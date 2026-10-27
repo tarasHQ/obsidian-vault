@@ -71,11 +71,11 @@ action:
 ---
 
 >[!tldr] CONTEX
->Sleep Duration - **0:00**
+>Sleep Duration - **6:00**
 > 
->Time Spent in Bed - **TODO**
+>Time Spent in Bed - **Low**
 > 
->Approx. Dreams Compensation - **TODO**
+>Approx. Dreams Compensation - **Something about increasing masculine traits**
 
 ---
 
@@ -121,53 +121,16 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 08:05
+	- Woke up 
 
 ---
 
 ## DREAM ANALYSIS
 
-### Dream #1 - NAME
+Still to lazy to do the whole thing. But I want to track it. I need to track it.
+Dream was a manhunt on me. Like literally man-hunt. 
+When I woke up - for some reason I decided to listen to "dark folk". These Nordic-Viking-like songs. It feels like the dream compensation was like "you know about those timeframes" - now you have to act on it. Because that's what men do. Act. Not think or reflect or feel. I'm talking on symbolical level though. 
 
-- #### Raw Dream
-    - ##### Tips
-        - `Ignore mistakes, formatting, structure, goal is to capture the raw fleeting dream without being distracted by all of it`
-    -
-- #### Location & Environment
-    - ##### Tips
-        - `What you feel when you go/are there in real life?
-        - `If it's unreachable/unknown - how would you feel being there in real life?`
-        - `Is feeling positive/negative?`
-        - `Why would dream use this location/environment and not other ones?`
-    -
-- #### Analyze figures, what they represent, why they're there? \*\*
-    - ##### Tips
-        - `Why that figure there, how situation would unfold without that figure?`
-        - `Is it positive or negative figure, how you feel about them, which emotions comes up? `
-        - `Can it be the Shadow, or the Anima?`
-        - `Is it internal representation or external relationships?`
-    -
-- #### Emotional/Rememberable scenes
-    - ##### Tips
-        - `If there's particularly rememberable scenes - analyze why they're rememberable, what's their charge, what's so valuable in them, what they're hinting on? `
-    -
-- #### Direction/Tendency
-    - ##### Tips
-        - `How it starts and how it ends establishes the direction/tendency of the dream which gives another perspective on it.`
-        - `Direction is overlapping with compensation, but you should focus on positive/negative property`
-    - **First sentence is**
-    - **Last sentence is**
-    - **Direction of the dream is**,
-- #### Final feelings
-    - ##### Tips
-        - `Aftertaste of the dream. Feeling about the dream as a whole.`
-    -
-- #### Hooks From the Past
-    - ##### Tips
-        - `Your ego was one-sided recently - where/when it might've been like that?`
-        - `If dream is repeatable - then there's reoccuring tendency to behave in a certain manner - find it, look in the past for a pattern, not a one-off fluke`
-    -
-- #### Likely Compensation
-    - ##### Tips
-        - `Which type of compensation is present? Does it inspire you? Does it deflate over-inflated ego? or does it confronts wrong actions/attitude by showing dreams into opposite direction?`
-        - `Keep remembering that it shows you blind spots, so the answer isn't what's obvious, because you already see it. You must approach compensation from unexpected angle. `
-    -
+It seems like the dream hints me towards this trait of masculinity. 
+Very well those men in my dream might as well hunt me in my puer representation. Because result of that dream was me starting to hunt them. And when I woke up - I wanted to like say "why the hell I was running from the captivity?", like I had to attack the damn guy with a rock or something else heavy
