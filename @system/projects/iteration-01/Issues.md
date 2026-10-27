@@ -32,25 +32,54 @@
 - `_project.md`
 	- needs some automatic fetching I recon. 
 	- but the issue is with LLMs getting understanding of this stuff... 
-
+- ### Issue #4 Initial Planning + Steps
+	- #### Discussion
+		- another big one. plan initial steps through artifacts. or in conversation. But not all at once. but one by one. 
+			- like you write down somewhere top-level overview of planned steps. then do some exploration on implementations. write down description/high level. 
+				- **KEY ISSUE - what if context is overfilled before all steps are written?**
+		- The thing is - it really should be kinda split. 
+		- ##### Initial planning
+		- 
+		- ##### Drafting Steps
+	- #### Solution
+		- 
 ## Low Level
 - ### Steps
+	- 
+	- Discussion and reflection - should have brief template as well, kinda like I had with kilo code. Autoregressive. Recommended choice. Explain in simple words. Also - I should add rule to automatically add at the end user input point. like `- USER INPUT: ` so I can type right away the answer
+	- On each step. High level template. **DO WE ACTUALLY NEED IT?**, like with tests right now. I just got overfocused on that. I don't actually need them. 
+	- Crucial. Make sure each step is optimally sized. So there's no like huge multi-hour step 01, while step 02 and 03 are done in 10 minutes. Step should be bite-sized. 
+		- **ESPECIALLY FOR CONTEX**. This is the main measurement for whether step is small or big. (besides complexity), if we need to read 50k tokens worth of files before we even start the discussion - step is too big for sure. 
+	- 
+	- ### Idea #1 Context Cleanup Checkpoints
+		- Workflow should have a place where LLM asks to stop and cleanup useless context. Before implementation, for example. Experimental a bit. But may be helpful.
+	- ### Issue #4 Re-Exploration Time
+		- #### Discussion
+			- takes lots of time to re-explore all stuff I did while I was writing initial step contents. So each step should have "comprehensive exploration" section where LLM leaves links/notes/tips about how to research everything on the topic quickly. without many loops of back and forth. 
+			- reflection.
+		- #### Solution
+			1. Templated file `artifacts/_exploration`
+			2. Section with links and concise tips about exploration
+				1. one sentence warning that it may be a bit outdated, and is used to only help with precise exploration. 
+				2. one sentence rule that this file should be very concise.
+			3. Written/Updated during completion flow of the step
+			4. Self-documenting. 
+				1. because it'll be updated at the end of the step, so it shouldn't bloat main files. 
+				2. header - comment.
+			5. Headers
+				1. Links - to files/folders (with `created/modified/deleted/context` statuses)
+				2. Tips - if plan was missing some nuance or something. (but could be dangerous and may explode, but try and see. )
 	- ### Issue #3 Additional Step Statuses
 		- #### Discussion
 			- I need additional status for canceled/discarded steps (like for tests, when I decided to not do it, or for 08, when I decided to do it in another phase)
 			- Do I need more? Also. Because it's not tracked anymore - do I need frontmatter? 
 				- I would say yes. Because I'm thinking about some minor helper scripts to parse and get like one-line status, like if something is not condensed or all steps are only high level. Stuff like that.
 			- So what about specific statuses?
-				- `skipped` vs `disca`
+				- `skipped` vs `discarded`? - skipped is better. Like if I wanted to do tests for the X, but when it's written - it's too straightforward for tests so you don't write them. 
+				- `postponed` - if ordering gets different. 
 		- #### Solution
-	- takes lots of time to re-explore all stuff I did while I was writing initial step contents. So each step should have "comprehensive exploration" section where LLM leaves links/notes/tips about how to research everything on the topic quickly. without many loops of back and forth. 
-	- Discussion and reflection - should have brief template as well, kinda like I had with kilo code. Autoregressive. Recommended choice. Explain in simple words. Also - I should add rule to automatically add at the end user input point. like `- USER INPUT: ` so I can type right away the answer
-	- On each step. High level template. **DO WE ACTUALLY NEED IT?**, like with tests right now. I just got overfocused on that. I don't actually need them. 
-	- Crucial. Make sure each step is optimally sized. So there's no like huge multi-hour step 01, while step 02 and 03 are done in 10 minutes. Step should be bite-sized. 
-		- **ESPECIALLY FOR CONTEX**. This is the main measurement for whether step is small or big. (besides complexity), if we need to read 50k tokens worth of files before we even start the discussion - step is too big for sure. 
-	- another big one. plan initial steps through artifacts. or in conversation. But not all at once. but one by one. 
-		- like you write down somewhere top-level overview of planned steps. then do some exploration on implementations. write down description/high level. 
-			- **KEY ISSUE - what if context is overfilled before all steps are written?**
+			- `skipped` - if the step turned out to be not worth to be implemented.
+			- `postponed` - if it's better to implement the step later.
 - ### Tasks
 	- ### Issue #2 Completion Flow As a Task
 		- #### Discussion
@@ -101,7 +130,8 @@
 		- Navigation is kinds PIA. I have to switch between vscode and obsidian. 
 		- the issue is that you get overwhelmed by the amount of docs and text.
 		- Like right now one thing was changed - 5 docs were edited. I'm like not even want to do anything with it. 
-	- #### Solution - is tied to workflow.  The goal of proper workflow is to edit one file with text you're expect to be edited in a specific manner.
+	- #### Solution
+		-  tied to workflow.  The goal of proper workflow is to edit one file with text you're expect to be edited in a specific manner.
 		- You get overwhelmed because it edit a lot of stuff with a lot of text at once. Which means creation of highly interactive harness around the planning.md
 
 
@@ -113,7 +143,27 @@
 
 ---
 ## Reflections
-- ### Am I locking in Quartz?
+- ### re-exploration
+	- so, the first question is about where this should be stored? Per step feels too overlapping. 
+		- Maybe it's worth to have per-plan? Like somewhere in LLM section. **+ a rule on step completion to make sure that all links are up to date in the plan?** since we're updating the plan ANYWAY, by the way, so that thing of dropping dataview even a bigger win, because I can be much more proactive with the plan. 
+	- ok. it'll be list of links per plan? A bit bloated, don't you think? 
+	- what about artifacts? We can have `_exploration.md` in there linked into the plan. The question is whether I need that separately. Because you're proactive in this one. so it would be nice to have list of files we touch/need/create OH
+		- **modified/created/deleted/context** - per each file. Worth it? Like yeah, since everything will be done within a step, so it's safe. But then exceptions and edge cases. You forget to mention that something was modified/created and now you not having all the info you need. 
+		- That doesn't make much sense to track... I think... But maybe it does. I try, if it won't work out - I'll delete it. 
+	- The thing is - I don't need those links because it's not mean to be used through obsidian/vscode. Like I use git and tabs and it covers 95% of cases. Besides me knowing what and when is changed. So it'll be separate templated file for sure. Created with creation of the phase
+	- #### Extracted
+		1. Templated file `artifacts/_exploration`
+		2. Section with links and concise tips about exploration
+			1. one sentence warning that it may be a bit outdated, and is used to only help with precise exploration. 
+			2. one sentence rule that this file should be very concise.
+		3. Written/Updated during completion flow of the step
+		4. Self-documenting. 
+			1. because it'll be updated at the end of the step, so it shouldn't bloat main files. 
+			2. header - comment.
+		5. Headers
+			1. Links - to files/folders
+			2. Tips - if plan was missing some nuance or something. (but could be dangerous and may explode, but try and see. )
+- ### am I locking in Quartz?
 	- I think so. You'll go completely rogue on it without keeping compatibility with upstream. That'll be enough to free your hands and do whatever. 
 	- Astro is better, but it's weeks of work. I just can't. Like I'm barely holding on here. I must try this publicity idea first. And then see if it's worth to give up. Right now - work.
 - ### on what this website should be about? 
