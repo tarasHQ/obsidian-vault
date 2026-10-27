@@ -1,5 +1,11 @@
 ## Features
 - Notifications for meals. 30 minutes early, huge. Sets the mind into "time to wrap up" state, and makes skipping/delaying meal less likely. Which means weaker post-meal crashing out. Since it's easy to recover from 30% cognitive capacity than from like 5%, where you struggle to even go for a meal. 
+- Secondary tasks. Have a way to offload them somewhere and then process later. 
+	- Time
+		- Like mornings should be 100% on the main task.
+		- Nights? Yeah. Around meals too. 
+	- Prevention
+		- I spend like an hour on trying to debug obsidian scroll issues. If I postponed this to like evening/night - I wouldn't even care to debug by that time, so it would've been 1 hour saved + lots of productive work saved by not spending peak energy time on this PS
 
 ## reasons to have schedule
 ### Plan-like execution tracking/feeling for continuous tasks
