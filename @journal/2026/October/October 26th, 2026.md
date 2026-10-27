@@ -15,39 +15,15 @@ actions:
 
 ---
 
-```meta-bind-button {fold}
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-    - ==Don't process the video before sleep. Cut it right when you go to sleep. And process in the morning. ==
-        - This gives more natural flow when you finalize the day, write overview, and go to the bed. It makes more sense, then cutting it down like 2 hours before you actually go to the bed and your day ends.
-        - Maybe I should stop video? It cuts in per-hour chunks, tomorrow I just select time range I need and that's it. So I can avoid thinking about not forgetting to cut videos.
-    - ###### TECHNICAL CHECKS
-        - [x] Check audio delay to webcam
-        - [x] Night scene
-        - [ ] Check IP cam (quality, delay)
-            - [ ] Move to "night position"
-        - [x] Check TickTick schedule (correct day, scheduled)
-        - [ ] Set time of next sleep for stager timer.
-    - ###### BEFORE SLEEP
-        - [ ] Write overview of the current day
-        - [ ] Create journal for the next day
-        - [ ] Move uncompleted tasks
-        - [ ] Make sure all day's reflections are linked under reflections
-        - [ ] monitor contrast/bright. at 0
-    - [ ] Only now you can stop the video
-
----
-
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
+Awful day in the start-middle and a bit into the evening. But hopefully I found the remedy to get more meaning. It worked today. That "timeframe" thing. Like if I can orient myself properly - it really does give me a massive relief. I just do the work properly and don't care about anything else.
 
+Now, does it come at price? - Yes. Puer should be kept in check, because I drift off into wasting time on suboptimal execution of tasks, and that's why I need to have that proper workflow on anything that is done in more than 15-30 minutes. 
+
+I just need to try to remember, that this workflow should help me, and now work against me. It must be as frictionless as possible. Templates reduced that by a lot. But there's also a lot of insights from execution of phase 001, so it needs a major rework. 
+
+Also - seemingly great idea to not process videos before the sleep. It felt too much like burden. Don't know how it'll be in the morning, but I'll see.
 
 ---
 
@@ -61,30 +37,9 @@ action:
 
 ---
 
-## TASKS
-%%Cognitive offload for the day, to not keep these in my mind for the whole time%%
-- ### TODO
-	- [ ] FIX - templated creation of next journal entry. 23:53 - "This day already exists"
-	- [ ] Templates for reflections - maybe shouldn't use project backlinks for now, until I figure out if there's gonna be "main index"
-	- [ ] Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
-	- [ ] You need simple back/forward(automatic visibility if exists) navigation between journal entries. (or use calendar plugin for the time being)
-	- [ ] You need a to select a block of text, press hotkey and save it as a reflection with link that replace selected text. (also it should have same frontmatter as current flow)
-		- [ ] On top of it, current flow of templated reflections probably should force copy link into clipboard as well. These shouldn't be in the journaling, because they give constraints on the size. 
-			- or maybe you just use initial `_reflections` flow instead of limiting yourself within the journal entry? 
-	- [ ] 🔴[[plans/better-schedule-plan|better-schedule-plan]]
-		- Tick tick becomes PIA. Limited too. Maybe there's something else? Maybe there's self-hosted things? 
-	- [ ] Rewrite remark42 plugin. Properly. With the new workflow. 
-- ### Priority
-	- [ ] 
-- ### Completed
-	- [ ] copy_from_here
-	- [ ] 
-
----
-
 ## REFLECTIONS
 %%Thinking through writing is much better - there must be low-friction place to do so%%
-- [[../../../Psychoanalysis/_reflections/I just don't know|I just don't know]]
+- ⭐[[../../../Psychoanalysis/_reflections/I just don't know|I just don't know]]
 
 ---
 
