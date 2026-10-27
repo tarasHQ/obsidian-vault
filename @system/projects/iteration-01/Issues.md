@@ -36,16 +36,21 @@
 	- Issue with high-level block. As a user it was hard to write initial thing. It should be kind prompt-like. Not like decisions/invariants. Just give the user free form. 
 	- For llm's high level though - it gets big really quickly. 
 	- High level - must contain links block, with related links, so I don't have to re-type them each time in each new task.
+- ### Issue #4 Initial Planning + Steps
+	- #### Discussion
+	- #### Solution
+- ### Issue #5 PLANNING.md Enforcement
+	- #### Discussion
+		- **planning.md**
+		- This file is central to everything. It should have separate block in agents. Flow have top priority over everything.
+			- Like that planning block must be hyper important and be the center of gravity for the whole task. 
+		- too vague. implementation starts without discussion. llm dumps everything at once. no granularity or control. It's just a mess. Too vague for sure. You shouldn't have single bullet list for that. Each block should be separate, each point should be properly described. You need to have "completion conditions" on each block/loop to have clear stops.
+			- **IMPORTANT**. Like it's not a joke, there must be **routine** to this, if it's different every time - you're getting overwhelmed.
+			- Like it should have its own section in agents, to clarify its importance. 
+		- **TLDR** - you lack routine in this. Process is chaotic and unpredictable. That's adds a lot of friction.
+	- #### Solution
 
-
-
-- **planning.md**
-	- This file is central to everything. It should have separate block in agents. Flow have top priority over everything.
-		- Like that planning block must be hyper important and be the center of gravity for the whole task. 
-	- too vague. implementation starts without discussion. llm dumps everything at once. no granularity or control. It's just a mess. Too vague for sure. You shouldn't have single bullet list for that. Each block should be separate, each point should be properly described. You need to have "completion conditions" on each block/loop to have clear stops.
-		- **IMPORTANT**. Like it's not a joke, there must be **routine** to this, if it's different every time - you're getting overwhelmed.
-		- Like it should have its own section in agents, to clarify its importance. 
-	- **TLDR** - you lack routine in this. Process is chaotic and unpredictable. That's adds a lot of friction.
+- 
 - ~~`_project.md`~~
 	- ~~needs some automatic fetching I recon. - no it doesn't~~
 		- ~~but the issue is with LLMs getting understanding of this stuff... ~~
