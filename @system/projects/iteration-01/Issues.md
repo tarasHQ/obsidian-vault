@@ -1,4 +1,7 @@
 
+# Flow of this doc
+- Instead of planning one thing, solving, implementing, planning, solving, 
+
 # What's good
 - having SSOT on shared decisions/invariants/nuances/etc.
 	- like with the notion that we now have remark42-old folder, I don't have to mention it in each step. SSOT for everything. Good. 
