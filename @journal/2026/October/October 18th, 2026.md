@@ -40,7 +40,7 @@ actions:
 - [x] Fixed major PIA with deskflow. Won't be bother me anymore hopefully.
 - [x] Caddy clean up. Had issues with old tokens. Preparing for remark42 selfhosting, for website comments
 - [!] [better-schedule-plan](better-schedule-plan.md) 
-- [!] [quartz-website-plan](quartz-website-plan.md) 
+- [!] [quartz-website-plan](../../../@projects/taras.life/Web%20(meta)/quartz-website-plan.md) 
 
 ---
 
