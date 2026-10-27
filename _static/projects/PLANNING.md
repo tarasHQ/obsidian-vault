@@ -4,28 +4,27 @@ SSOT of plans, reflections, idea capturing, phases and implementation flows of a
 
 ## Description of ./__obsidian__/ directory
 - ### Why it exists?
-	- Main goal is **to reduce cognitive load**. The project gets complex, lots of things to think about, track, improve, fix, implement, plan, etc. The more efficient cognitive load is - the **higher productivity**, the **higher quality** of plans and implementation. 
-	- By having **symlink of this folder inside my main obsidian vault**, I bring lots of obsidian's features than significantly reduce cognitive load of interacting with complexity of this project. 
+	- Main goal is **to reduce cognitive load**. The project gets complex, lots of things to think about, track, improve, fix, implement, plan, etc. The more efficient cognitive load is - the **higher productivity**, the **higher quality** of plans and implementation.
 	- On top of it I have **sync**, which allows me to have access to this folder on all my devices for quick edits/ideas/reflections.˜
 	- SSOT for **unprocessed ideas/reflections**, more implementable and doable things are extracted into README's of specific module of codebase. But long-term/unprocessed things have SSOT, which helps with cognitive load as well, because I don't have to think where to reflect, where to save, how to transfer to pc, do I need it saved or can I delete it, etc.
 	- And last but not least - **phase-based development**, that further is decomposed into steps with carrying-in/hand-off blocks allow to avoid reading/re-reading/maintaining a lot of outdated and unnecessary information. Phase's plan captures static long-term abstract things, steps have short-term implementation-related things separated into clean and isolated execution blocks.
 	  
 - ### Structure
 	- `_reflections/`- My project-wide reflections
+	- `artifacts/` - Storage for additional files/images/sounds/etc. scoped for the whole plan. 
 	- `ideas/` - Quick capture of random ideas that I don't want to process or integrate into codebase module's README.md files.
 	- `phases/` 
 		- `XXX/` - Number of a phase, e.g. `003/` or `052/`
 			- `_reflections/` - My phase-scoped reflections. 
-			- `artifacts/` - Storage for additional files/images/sounds/etc. to avoid polluting top-level
+			- `artifacts/` - Storage for additional files/images/sounds/etc. scoped to the phase only.
 			- `ideas/` - For phase-scoped idea capture, to process them later.  
 			- `steps/` - Implementation steps files
 			- `_plan.md` - High-level plan of the current phase, also is an entry to the phase
 	- `/_project.md` - Project's entry point. Overview of phases + reflections & ideas
 	  
 - ### General Rules
-	- __obsidian__/ folder is a **SYMLINK** - root of __obsidian__ is symlinked into my obsidian-vault in another location to __obsidian__/ folder. So if you will see some absolute paths (from vault root) - you can access files by relative paths below obsidian folder. But for other files - you'll have to use absolute paths. 
 	- All **filenames** must be in a lower case, to be easier to type in search/name/etc. 
-	- 
+
 ## Step-by-Step Workflow
 - #### 1. High-level planning
   %%Creating the initial skeleton of the phase%%

@@ -98,8 +98,11 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 09:13
+	- Ok, rewriting planning gets overwhelming a bit because of those "branches" and their amount too. And I can't use workflow, because 
 - ###### 08:43
-	- Making bread takes too much time and throws me of the peak of compensation. So I have to do it 2 hours before the bed. 
+	- Making bread takes too much time and throws me of the peak of compensation. So I have to do it 2 hours before the bed. Right after the second meal? I wait usually till meat gets cooked, so I can pre-measure stuff.
+	- By the way - schedule gets useful again. Those alerts to eat. Now preplanned stuff around meals. it's truly worth it. 
 - ###### 08:05
 	- Woke up. Got a nice present from the Google with unexpected charge that had to be blocked and stopped. But it wasn't. So yeah... Had a little money left, and those are nearing zero now. 
 
@@ -119,3 +122,5 @@ But conscious compensation would say something like - to hunt negative aspect of
 So it's like forcing puer to work, but in a mature way. Honest and humble. It feels crippling, but that attitude changes everything. 
 
 Also - I definitely need to have morning routine as short as possible. Wake up and straight to work seems like nice way to start a day.
+
+**CAT** - it was the topic of the dream too. My attachment to her make her a huge burden. Nah. Wrong wording. My relationships with her makes her a huge burden. There's definitely some pathological projection of mother complex going on. Or something along those lines. So cat keeps me in puer. That's why I woke up seeking here, but when she came - it felt wrong. Like too much affection is goin on. It's hard to pinpoint, but it's real thing.
