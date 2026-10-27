@@ -34,8 +34,15 @@
 	- but the issue is with LLMs getting understanding of this stuff... 
 
 ## Low Level
-- **steps**
-	- I need additional status for canceled/discarded steps (like for tests, when I decided to not do it, or for 08, when I decided to do it in another phase)
+- ### Steps
+	- ### Issue #3 Additional Step Statuses
+		- #### Discussion
+			- I need additional status for canceled/discarded steps (like for tests, when I decided to not do it, or for 08, when I decided to do it in another phase)
+			- Do I need more? Also. Because it's not tracked anymore - do I need frontmatter? 
+				- I would say yes. Because I'm thinking about some minor helper scripts to parse and get like one-line status, like if something is not condensed or all steps are only high level. Stuff like that.
+			- So what about specific statuses?
+				- `skipped` vs `disca`
+		- #### Solution
 	- takes lots of time to re-explore all stuff I did while I was writing initial step contents. So each step should have "comprehensive exploration" section where LLM leaves links/notes/tips about how to research everything on the topic quickly. without many loops of back and forth. 
 	- Discussion and reflection - should have brief template as well, kinda like I had with kilo code. Autoregressive. Recommended choice. Explain in simple words. Also - I should add rule to automatically add at the end user input point. like `- USER INPUT: ` so I can type right away the answer
 	- On each step. High level template. **DO WE ACTUALLY NEED IT?**, like with tests right now. I just got overfocused on that. I don't actually need them. 
@@ -44,10 +51,20 @@
 	- another big one. plan initial steps through artifacts. or in conversation. But not all at once. but one by one. 
 		- like you write down somewhere top-level overview of planned steps. then do some exploration on implementations. write down description/high level. 
 			- **KEY ISSUE - what if context is overfilled before all steps are written?**
-- **tasks**
-	- completion flow doesn't go as separate block. it's just another task at the end like `### 99 - completion flow`, so LLM won't repeat it.
-- **artifacts**
-	- maybe it makes more sense for llm to write its output into .md files? Like I'm repeating the same thing right now. First task was exploring 10 minutes about how quartz proposes to write plugins, and now, in a new task, I'm wasting another 5-10 minutes on the same damn issue. 
+- ### Tasks
+	- ### Issue #2 Completion Flow As a Task
+		- #### Discussion
+			- completion flow doesn't go as separate block. it's just another task at the end like `### 99 - completion flow`, so LLM won't repeat it.
+			- yeah, because llm was a bit confused about it. it was task in one case, in another case it wasn't. So yeah. Much easier to to make it a task and that's it
+		- #### Solution
+			- **Completion becomes a templated task at the end of the step**
+- ### Artifacts
+	- #### ~~Issue #1 - Write exploration into .md~~
+		- maybe it makes more sense for llm to write its output into .md files? Like I'm repeating the same thing right now. First task was exploring 10 minutes about how quartz proposes to write plugins, and now, in a new task, I'm wasting another 5-10 minutes on the same damn issue. 
+			- ### Let's think
+				- Overlap is there. Sure. That particular issue was a poor separation of steps. And I was angry on top of it. So... 
+				- if it'll write it out - now you have to make sure it's not outdated, because if it is - you can lose a lot of time or make llm and yourself confused. 
+				- So no, 
 
 ## Technical [DONE]
 - ### Issue #3 - Frontmatter of the `_plan_xxx.md` and steps
@@ -58,6 +75,9 @@
 				- But then why not do kinda this flow from the start? you would have subfolders, to reduce amount of initial folders by 10. When phase 001 is done - it gets into those "`phases/archived/10/`" folder. And link is set once and for all. 
 				- At the same time you can have many temp/active/postponed phases in the main folder that are not fighting with archived ones. Yeah.
 			- Back to the question. Does a plan needs frontmatter? - ties to the question whether we use dataview at all in such workflow. If yes - then yes. If no - than there's not much sense in frontmatter. Let's think.
+	- #### Solution
+		- **NO, you don't need frontmatter** - it's extremely frictionless to handle all of that manually but, you get a massive benefit of LLMs having overview of the project. So they don't have to like figure out from pieces what is going on.
+			- So it's not a loss. It's a win.
 	- 
 - ### Issue #2 - Poor Styling of HTML Dataview Block 
 	- #### Discussion
@@ -71,9 +91,11 @@
 			- Do I need js? Maybe bases could do the job?
 				- The thing is - whether I want to preserve it for the website and LLMs. 
 	- #### Solution 
+		- **NO DATAVIEW** for this task. Manual template is more than enough. 
+			- include two as 00-start and 99-end steps, so you wouldn't even have to explain to LLM how those templates should look like. (but you kinda do, since you need comments)
 		- **icons** - yes, but don't add more colors. ○ - high-level, ◎ - full, ◉ - condensed. 
 		- **list/table** - yes. on the screenshot in reflections
-		- **scrollabe container** - no. BUT you can use outline, since each step won't be as bullet point, so it'll get recognized.
+		- **scrollable container** - no. BUT you can use outline, since each step won't be as bullet point, so it'll get recognized.
 - ### Issue #1 - PIA Navigation
 	- #### Discussion
 		- Navigation is kinds PIA. I have to switch between vscode and obsidian. 
@@ -91,6 +113,9 @@
 
 ---
 ## Reflections
+- ### Am I locking in Quartz?
+	- I think so. You'll go completely rogue on it without keeping compatibility with upstream. That'll be enough to free your hands and do whatever. 
+	- Astro is better, but it's weeks of work. I just can't. Like I'm barely holding on here. I must try this publicity idea first. And then see if it's worth to give up. Right now - work.
 - ### on what this website should be about? 
 	- Like for astro - you need to have something that goes beyond typical 1:1 obsidian vault. That's the thing. If you want to stay 1:1 - quartz should do the trick, because it's covering lots of PIA stuff. Yeah it's not really optimal in many aspects, but you can fix it, since it's highly modular. Optimized too. So I would focus on extracting as much as possible from quartz. 
 	- I just don't want to spend like 3 weeks doing quartz, and then finding out that I could've done more in less time using astro. So I guess this pause is half-justified. 
@@ -128,6 +153,10 @@
 		- Dataview seems to kinda work the best out of all options. 
 		- Everything else gets done manually. it's fine. 
 		- When knowledge system arrives - that'll be painful. The same with tasks, if I would want to integrate them into obsidian. 
+	- Again.
+		- You can't predict what you would need. Let's be honest. knowledge system is kinda week+ away. Tasks... on the paper it's nice to have them in journal. But on practice - it's BS. no reminders, no dates, no reoccurrence and a bunch of other things. So I won't use this for tasks. 
+		- Databases. I think I got overfocused on views. Databases is just to have like a nice card-like view of knowledge. It can be done through new coded view. A bit PIA but not a major one. 
+		- Dataview for now used only in project/plan for those lists of docs. There's a way to target them too. So you do that and will figure out the rest later. WHEN you will need it.
 - ### on style of plan's list/table
 	- I need that list with descriptions. It proved to be useful for reducing cognitive load of parsing previous tasks. BUT. Here's the thing. It can be written manually. Steps too. Since they're supported by LLM and only curated by you. It's a bit PIA, cuz LLM would need to read plan to insert this block. BUT. It's preserves its usefulness + llm get to have overview too AND on website it's in original form as well, which means if there'll be lots of those - I wouldn't have to wait until everything gets parsed built by quartz. It will add time for sure. 
 	- So, let's lock this in. you have:
