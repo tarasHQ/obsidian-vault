@@ -36,6 +36,7 @@
 	- Disable that high-precision thing
 	- Use custom ibeam cursor (in customization in archive)
 - ### Other
+	- 📄folder icons - remember/screenshot which are you using. they proved to be useful
 	- Privacy -> Search - remove store/bing suggestions
 	- 📄backup windows credentials
 	- dd-MM-yyyy short date is available through "numbers" settings in legacy control panel

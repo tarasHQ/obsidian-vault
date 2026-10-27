@@ -59,6 +59,7 @@ action:
 ## TASKS
 %%Cognitive offload for the day, to not keep these in my mind for the whole time%%
 - ### TODO
+	- [ ] folder icons - rename to where they used and resize other icons (260kb per icon is stupid)
 	- [ ] FIX - templated creation of next journal entry. 23:53 - "This day already exists"
 	- [ ] Templates for reflections - maybe shouldn't use project backlinks for now, until I figure out if there's gonna be "main index"
 	- [ ] Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
@@ -99,7 +100,8 @@ action:
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
 - ###### 09:13
-	- Ok, rewriting planning gets overwhelming a bit because of those "branches" and their amount too. And I can't use workflow, because 
+	- ==Ok, rewriting planning gets overwhelming a bit== because of those "branches" and their amount too. And I can't use workflow, because old one is kinda bad, and this task is creating a new one.
+		- So I shouldn't jump into the whole thing. I have to figure out meta-plan, and process it in structured and bite-sized chunks. Because it's about preserving resource of executive capacity. I can tackle it raw, but then I'll fuck up the rest of my day, I guess. 
 - ###### 08:43
 	- Making bread takes too much time and throws me of the peak of compensation. So I have to do it 2 hours before the bed. Right after the second meal? I wait usually till meat gets cooked, so I can pre-measure stuff.
 	- By the way - schedule gets useful again. Those alerts to eat. Now preplanned stuff around meals. it's truly worth it. 
