@@ -32,12 +32,16 @@
 		- **AHK templates** for now. You need one for context handoff. When the project's window is active and you press like alt + c - ahk pastes the text like:
 			- *"I want to revert conversation... write me context handoff in ```markdown block``` but limit scope to our recent this to USER_INPUT."
 			- So this kind of exploration is low friction.
-- **plan**
-	- Issue with high-level block. As a user it was hard to write initial thing. It should be kind prompt-like. Not like decisions/invariants. Just give the user free form. 
-	- For llm's high level though - it gets big really quickly. 
-	- High level - must contain links block, with related links, so I don't have to re-type them each time in each new task.
+
 - ### Issue #4 Initial Planning + Steps
 	- #### Discussion
+		- **plan**
+			- Issue with high-level block. As a user it was hard to write initial thing. It should be kind prompt-like. Not like decisions/invariants. Just give the user free form. 
+			- For llm's high level though - it gets big really quickly. 
+			- High level - must contain links block, with related links, so I don't have to re-type them each time in each new task.
+		- It's true that it doesn't make sense to have similar stuff that is asked from LLM. For sure.
+		- But it raises the question about how much I should do solo. Like it's a spectrum. From nothing, to like reading all the code and writing exact code to replace it. 
+		- 
 	- #### Solution
 - ### Issue #5 PLANNING.md Enforcement
 	- #### Discussion
@@ -49,8 +53,6 @@
 			- Like it should have its own section in agents, to clarify its importance. 
 		- **TLDR** - you lack routine in this. Process is chaotic and unpredictable. That's adds a lot of friction.
 	- #### Solution
-
-- 
 - ~~`_project.md`~~
 	- ~~needs some automatic fetching I recon. - no it doesn't~~
 		- ~~but the issue is with LLMs getting understanding of this stuff... ~~
