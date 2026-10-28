@@ -27,6 +27,10 @@ And I feel like schedule should play a role here, but I'm not sure how that role
 - **Some integration with quartz website (either quick export or native representation OR, if other things are good custom solution)**
 	- EVEN BETTER, website has empty space on the right, under outline. That's where this visual representation would be PERFECT. Like it would be better to review my days THERE than in obsidian.
 - **5 minute granularity**
+- **Ability to add new, non-templated tasks without friction**
+	- in tick tick I need to select scheduled block, then I need to select a tag to set a color, 
+- **Colors**
+- **Reminders**
 - **NOW time**
 	- line/mark/text/whatever.  - to clearly and AUTOMATICALLY see your position in the day
 
@@ -35,5 +39,12 @@ And I feel like schedule should play a role here, but I'm not sure how that role
 - Excalidraw (fails on NOW time)
 	- That's experimental, but done properly - may be very good, because it gives you more freedom/axis to schedule
 	- and you can use single file for all. Like you schedule. When day is done -> export to png/svg/webp. And start from scratch (or scrap previous day.)
+- Stay in tick-tick, but optimize around the schedule.
+	- tags - by color, not by categories. So you just write `#red` instead of whatever tag has red color
+	- See if a new account would have selective collapsible night-block, that can hide from 02 to 07, for example
+	- maybe use css styler plugin to optimize web-version of ticktick for recording? 
+		- use css to hide notification popup. It's recording-only window.
+		- gray times don't matter, also they're awful after youtube compression. Hide and have more space for task text
+		- top block with month - too big
 
 ### What are you need from the schedule? 
