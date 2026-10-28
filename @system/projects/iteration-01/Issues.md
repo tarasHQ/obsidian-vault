@@ -4,7 +4,7 @@
 - [x] Update phase creation script, to not parse step template, but to create a separate file `_step-template.md`
 	- [x] Link that path of `/steps/_step-template.md` either inside each step or in plan under `## Steps` section
 - [x] Should I rename the file? PLANNING.md reads a bit stupid. Interaction with llms? or like LLM.md? Yeah... agents is for like kinda autonomous context. planning is stupid. `LLM.md` is kinda focused on using those as a tool instead of overhyped agents/AI words. So yeah. LLM.md
-- [ ] Templates. Master script templater folder, move other ones into system/project, to have everything in one place
+- [x] Templates. Master script templater folder, move other ones into system/project, to have everything in one place
 
 # README practice
 ### Discussion

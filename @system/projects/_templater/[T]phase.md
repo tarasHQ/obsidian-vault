@@ -6,6 +6,8 @@
 // DON'T USE <> TAGS in comments. It breaks further rendering of markdown in obsidian. 
 //
 // How it works:
+// 0. Normally triggered via the [T]project master template (which passes the
+//    templates root through window.__projectTemplatesRoot); also works standalone.
 // 1. Checks that you are in a fresh, empty tab (Ctrl+N).
 // 2. Discovers your project and calculates the next phase number (e.g. 004).
 // 3. Creates the phase folder and standard subfolders for the starter notes.
@@ -18,9 +20,9 @@
 //    ([T]ideas, [T]reflections, [T]step-start, [T]step-end). The phase plan remains
 //    focused; starter steps do not open additional tabs.
 // 7. Ships the phase's SSOT copies from the internal-templates folder:
-//    - `_step-template.md` at the phase root (|PHASE_NUMBER| pre-substituted) — the
-//      single source that both [T]step and the LLM flow copy new steps from.
-//      PLANNING.md is no longer parsed for the step template.
+//    - `steps/_step-template.md` (|PHASE_NUMBER| pre-substituted) — the single
+//      source that both [T]step and the LLM flow copy new steps from. PLANNING.md
+//      is no longer parsed for the step template.
 //    - `artifacts/_exploration.md`.
 // ============================================================================
 
@@ -73,9 +75,9 @@ const CFG = {
     stepEndTemplateName: "[T]step-end",
 
     // --- Phase SSOT copies from internal-templates (plain markdown, no Templater code) ---
-    // `_step-template.md` replaces the old runtime extraction of the step template from
-    // PLANNING.md: both the LLM flow and [T]step read this per-phase copy.
-    stepTemplateFileName: "_step-template",   // created at the phase root
+    // `steps/_step-template.md` replaces the old runtime extraction of the step template
+    // from PLANNING.md: both the LLM flow and [T]step read this per-phase copy.
+    stepTemplateFileName: "_step-template",   // created inside steps/
     stepTemplateSourceName: "=step-xx",       // internal template it is copied from
     phasePlaceholder: "|PHASE_NUMBER|",       // substituted with the phase number in the copy
     explorationFileName: "_exploration",      // created inside artifacts/
@@ -88,10 +90,34 @@ const CFG = {
 
 const escapeRegExp = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
-// Internal templates live in a subfolder next to the project templates; tp.file.find_tfile
-// depends on Templater's configured folders, so fall back to a vault-wide name lookup.
+// --- Template resolution -----------------------------------------------------
+// Project templates live together in one folder (templatesRoot). When this
+// template runs via the [T]project master, the root arrives through the shared
+// window flag; a standalone run self-locates from this template's own folder.
+// tp.file.find_tfile is deliberately NOT used — it depends on Templater's
+// configured folders and silently misresolves after folder reorganizations.
+const templatesRoot =
+    window.__projectTemplatesRoot ??
+    tp.config.template_file?.parent?.path ??
+    "";
+
+// Resolve a template by file name: exact path inside the templates root first,
+// then a unique vault-wide filename match (e.g. [T]reflections lives outside
+// the templates root). Returns null on missing/ambiguous matches — never guesses.
+const resolveTemplate = (name) => {
+    const direct = templatesRoot
+        ? app.vault.getAbstractFileByPath(`${templatesRoot}/${name}.md`)
+        : null;
+    if (direct) return direct;
+    const matches = app.vault.getMarkdownFiles().filter(f => f.name === `${name}.md`);
+    return matches.length === 1 ? matches[0] : null;
+};
+
+// Internal templates live in a subfolder next to the project templates.
 const findInternalTemplate = (name) =>
-    tp.file.find_tfile(name) ??
+    (templatesRoot
+        ? app.vault.getAbstractFileByPath(`${templatesRoot}/internal-templates/${name}.md`)
+        : null) ??
     app.vault.getMarkdownFiles().find(f => f.name === `${name}.md`) ??
     null;
 const phaseSubfolders = [
@@ -164,7 +190,7 @@ async function createStaticNote(template, folderPath, fileName, replacements) {
 const triggerFile = tp.config.target_file;
 let isFreshTab = false;
 if (triggerFile && triggerFile.basename.startsWith(CFG.untitledPrefix)) {
-    const selfTFile = tp.config.template_file ?? tp.file.find_tfile(CFG.selfTemplateName);
+    const selfTFile = tp.config.template_file ?? resolveTemplate(CFG.selfTemplateName);
     const selfRaw = selfTFile ? await app.vault.read(selfTFile) : null;
     const hostRaw = await app.vault.read(triggerFile);
     isFreshTab = hostRaw.trim() === "" || (selfRaw !== null && hostRaw === selfRaw);
@@ -222,11 +248,11 @@ const targetPhaseDir = `${phasesDirPath}/${phaseNumber}`;
 const existingFolderObj = app.vault.getAbstractFileByPath(targetPhaseDir);
 
 // Validate all required templates before creating a phase with missing starter notes.
-const planTemplate = tp.file.find_tfile(CFG.planTemplateName);
-const ideasTemplate = tp.file.find_tfile(CFG.ideasTemplateName);
-const reflectionTemplate = tp.file.find_tfile(CFG.reflectionTemplateName);
-const stepStartTemplate = tp.file.find_tfile(CFG.stepStartTemplateName);
-const stepEndTemplate = tp.file.find_tfile(CFG.stepEndTemplateName);
+const planTemplate = resolveTemplate(CFG.planTemplateName);
+const ideasTemplate = resolveTemplate(CFG.ideasTemplateName);
+const reflectionTemplate = resolveTemplate(CFG.reflectionTemplateName);
+const stepStartTemplate = resolveTemplate(CFG.stepStartTemplateName);
+const stepEndTemplate = resolveTemplate(CFG.stepEndTemplateName);
 const stepTemplateSource = findInternalTemplate(CFG.stepTemplateSourceName);
 const explorationSource = findInternalTemplate(CFG.explorationSourceName);
 for (const [name, template] of [
@@ -303,7 +329,7 @@ try {
 }
 
 // 9. Create starter notes, then the deterministic start/end step notes, then the phase's
-// SSOT copies (_step-template.md at the phase root and artifacts/_exploration.md).
+// SSOT copies (steps/_step-template.md and artifacts/_exploration.md).
 // Start/end steps are born with the phase and are never created manually or by an LLM.
 // A child failure must not prevent the rendered plan from being written to the starting note.
 let initialReflectionFile;
@@ -330,7 +356,7 @@ try {
     );
     await createStaticNote(
         stepTemplateSource,
-        targetPhaseDir,
+        `${targetPhaseDir}/${CFG.stepsDirName}`,
         CFG.stepTemplateFileName,
         { [CFG.phasePlaceholder]: phaseNumber }
     );
