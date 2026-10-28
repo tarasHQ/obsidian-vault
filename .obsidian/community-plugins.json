@@ -26,5 +26,5 @@
   "better-embedded-canvas",
   "advanced-canvas",
   "quartz-syncer",
-  "sync-folds"
+  "persistent-folded-state"
 ]
