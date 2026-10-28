@@ -1,44 +1,56 @@
-%%=====================================================================
-FLOW: _initial-planning.md
-=====================================================================
-WHAT:    Stage 1 of a phase. Converts the user's raw intent into
-         (1) high-level plan content and (2) a step division sketch.
-WHO:     LLM, when starting high-level planning of a phase.
-SSOT:    This file is the only source of this flow. Never summarize
-         or copy it into other files.
-STATUS:  First draft (iteration-01). The flow-file format is being
-         tested on this file — refine here, not elsewhere.
-=====================================================================%%
-
 # Initial Planning
+Description
+**Why it's needed? **
 
-%%The most important and hardest stage of a phase (Issue #4). Quality of everything downstream inherits from it. Two core disciplines: never leave high-level, and never dump walls of text on the user (Issue #7).%%
+## Stages
+- ### A - Exploration
+	- Preparing to have all information needed at the checkpoint
+	  
+- ### B - Stop at the Checkpoint
 
-## Flow Shape
 
-	00-start checks → scope lock → explore + draft → discussion loop → dissolution → exit
 
-## 01 — Entry Conditions
-- [ ] `00-start.md` checklist of the phase is fully completed (mindset, related docs, ideas, code familiarization)
-- [ ] Phase's `_plan.md` exists and contains the user's raw input
 
-Completion: both checked. If not — stop and go back. Do not compensate with improvisation.
 
-## 02 — Scope Lock
-- Stay high-level for the whole flow. No implementation details, no exact file structures, no code snippets.
-- Allowed depth: what exists, what will change, what the outcome is, how the work splits into steps.
-- If a detail forces itself — write one line into `_planning-draft.md` and move on. Do not expand it in conversation.
-
-## 03 — Exploration & Draft
-- [ ] Explore the codebase (explore tool, token-efficient passes) for every area the phase touches.
-- [ ] Write all findings, options and open questions into `artifacts/_planning-draft.md` as they appear — not into the conversation, not into the plan.
-
-Offload rule (Issue #7): if exploration outgrows the current task or context gets heavy — capture the state into `_planning-draft.md` and continue in a fresh task. The draft file is the memory, not the conversation.
-
-%%`_planning-draft.md` is kept after dissolution. It is never referenced or maintained afterwards.%%
-
-## 04 — Discussion Loop
-- Move in short exchange units: LLM raises one point → user responds → next point. Never a wall of text.
-- Include an issues-seeking pass: before locking the plan, LLM actively looks for problems, risks and unknowns in the emerging plan and presents them as points — not as solutions.
-- Each point ends either with a resolved answer or as an explicit open item captured in `_planning-draft.md`.
-
+### initial planning
+- the thing of this is that it's should go wide before going narrow. Which means it has to be at least 2-step conversation. 
+- Oh. oh. this shit needs additional folder. for sure. Here's what I think
+	- it wasn't meaningless because of its idea being stupid. It was meaningless because I got an nuclear warhead and named it as dynamite stick. 
+	- So.  that's the key thing where everything gets bad in current flow. And where you put unnecessary constraints on LLM too. 
+- You start to plan. With that plugin for example. You start to go into "recommended" too soon. Instead, you should prioritize order and go wide. Through docs. 
+- #### specifics. 
+	- ##### First step - Categorization of the Issue
+		- #1 - I want to write a plugin. Give me categories on this. 
+			- Returns: implementation, deploying, location, integration. 
+		- #2 - Write down each category with you recommendation and 2 additional options in separate file according to the provided template.
+			- Template frames this findings as mere suggestion. And has internal rules that allow broad options,. Like basically it's like a big prompt
+			- Returns: a set of files on each main category about what you want to do. 
+	- ##### Second Step - You go WIDE
+		- ==🟡HUGE INSIGHT - You were saying that it gets boring when you wait for LLMs response, and because of that it's slow and boring. This flow of wide then narrow - provides you with lots of options. You can run 5 tasks in parallel on each file. And then have an hour of focused work on each one==
+		- #1 - You attach each document. It's self-contained. All you have to do is attach it + maybe agents and llm.md? 
+			- Returns: 
+				- 3-5 high-level, architectural, radically different options. (unbiased) that autoregressive property of llm could be helpful.
+					- each one have description how it's useful and what's its cost. Also it would have description in simple terms, in case I won't understand it. 
+				- THEN we have scores on each one. 
+					- so previous unbiased tokens will less affect that first high level block and scoring. 
+				- NOW we have recommended option with 3 choices of low level implementation with table, score and recommendation at the bottom. 
+		- #2 - You either choose or discuss further on each task on each document.
+			- Returns:
+				- a set of locked categorical decisions. 
+	- ##### Third Step - You go NARROW
+		- #1 new task - Category by category. What is needed to be locked in plan - the rest locked in steps. 
+			- ### Styling
+				- 1
+				- 2
+				- 3
+			- ### Coding client-side
+				- step 1 
+				- step 2
+				- step 3
+			- ### Deployment
+				- step 1
+				- step 2 
+				- step 3
+		- #2 
+	- ##### Forth Step - Delegating to Next Flows
+		- making sure nothing is forgotten. 
