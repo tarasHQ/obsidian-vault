@@ -108,6 +108,12 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 10:29
+	- This tool though. Because folding doesn't get saved, now, when I work through the file and fold passed block of text to reduce cognitive complexity - they will get randomly unfolded. Not to mention that it'll happen on other devices by default. 
+		- That's an issue because it would be useful tool to use. Not anymore I guess. So I must figure out a way to do this so it won't bite me in the ass going forward. 
+- ###### 10:17
+	- Some AI-coded plugins man... like those are give me hope that my project might be worth doing it, because like it's a simple plugin - and "agents" are still fail to deliver proper functionality. It really seems like it does rot people's ability to do things properly... 
+	- Like it's one thing when you don't know things, but here - it's just right there in the face. It can't be any more obvious. And still it wasn't done.
 - ###### 10:05
 	- Had also tasks to do on website that wasn't like hyper primary, but needed to be done at some point. So I did that. It kinda sucked me into the usual flow of work, and now I'm more inclined to tackle that main task with workflows. It's just very cognitively requiring task...
 - ###### 09:37
