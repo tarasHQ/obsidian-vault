@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "October 28th, 2026",
+      "path": "@journal/2026/October/October 28th, 2026.md"
+    },
+    {
       "basename": "On Workflows",
       "path": "@system/_reflections/On Workflows.md"
     },
@@ -31,10 +35,6 @@
     {
       "basename": "[T]reflections",
       "path": "_static/templater/[T]reflections.md"
-    },
-    {
-      "basename": "October 28th, 2026",
-      "path": "@journal/2026/October/October 28th, 2026.md"
     },
     {
       "basename": "better-schedule-plan",
