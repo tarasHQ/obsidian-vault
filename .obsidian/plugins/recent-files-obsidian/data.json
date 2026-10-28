@@ -5,12 +5,16 @@
       "path": "@system/projects/iteration-01/Issues.md"
     },
     {
-      "basename": "_system",
-      "path": "@system/_system.canvas"
+      "basename": "on-discouragement-again",
+      "path": "Psychoanalysis/_reflections/on-discouragement-again.md"
     },
     {
       "basename": "October 28th, 2026",
       "path": "@journal/2026/October/October 28th, 2026.md"
+    },
+    {
+      "basename": "_system",
+      "path": "@system/_system.canvas"
     },
     {
       "basename": "[T]daily-journaling",
@@ -19,10 +23,6 @@
     {
       "basename": "October 27th, 2026",
       "path": "@journal/2026/October/October 27th, 2026.md"
-    },
-    {
-      "basename": "on-discouragement-again",
-      "path": "Psychoanalysis/_reflections/on-discouragement-again.md"
     },
     {
       "basename": "_plan_001",

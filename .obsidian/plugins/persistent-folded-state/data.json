@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "files": {
+    "@system/projects/iteration-01/Issues.md": {
+      "contentHash": "e47e163abc40e19b",
+      "folds": [
+        {
+          "kind": "heading",
+          "indent": 0,
+          "text": "readme practice",
+          "siblingIndex": 1,
+          "parentChain": []
+        }
+      ],
+      "dormant": []
+    },
+    "@projects/taras.life/__obsidian__/phases/001/_plan_001.md": {
+      "contentHash": "12139cad1c54b15d",
+      "folds": [],
+      "dormant": []
+    }
+  }
+}

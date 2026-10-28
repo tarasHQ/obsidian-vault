@@ -1,6 +1,8 @@
 # Todo
 - Use other dataview script that can be parsed by website. For docs. 
 - Meta plan reflection block at the bottom to have a ssot for the feedback on the current iteration.
+- ## Folding
+	- Not use it or expect to be always unfolded? 
 
 # README practice
 ### Discussion
