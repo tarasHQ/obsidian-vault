@@ -9,8 +9,12 @@
       "path": "@system/projects/README.md"
     },
     {
-      "basename": "[T]plan",
-      "path": "_static/templater/project/[T]plan.md"
+      "basename": "_project",
+      "path": "@projects/0vibes/__obsidian__/_project.md"
+    },
+    {
+      "basename": "Issues",
+      "path": "@system/projects/iteration-01/Issues.md"
     },
     {
       "basename": "AGENTS",
@@ -25,10 +29,6 @@
       "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
     },
     {
-      "basename": "=step-xx",
-      "path": "_static/templater/project/internal-templates/=step-xx.md"
-    },
-    {
       "basename": "_project",
       "path": "@projects/taras.life/__obsidian__/_project.md"
     },
@@ -37,24 +37,8 @@
       "path": "@projects/taras.life/__obsidian__/ideas/all-in-one.md.md"
     },
     {
-      "basename": "Issues",
-      "path": "@system/projects/iteration-01/Issues.md"
-    },
-    {
       "basename": "_plan_001",
       "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
-    },
-    {
-      "basename": "_project",
-      "path": "@projects/0vibes/__obsidian__/_project.md"
-    },
-    {
-      "basename": "=_exploration",
-      "path": "_static/templater/project/internal-templates/=_exploration.md"
-    },
-    {
-      "basename": "[T]step",
-      "path": "_static/templater/project/[T]step.md"
     },
     {
       "basename": "better-schedule-plan",
@@ -75,14 +59,6 @@
     {
       "basename": "October 27th, 2026",
       "path": "@journal/2026/October/October 27th, 2026.md"
-    },
-    {
-      "basename": "[T]step-end",
-      "path": "_static/templater/project/[T]step-end.md"
-    },
-    {
-      "basename": "[T]step-start",
-      "path": "_static/templater/project/[T]step-start.md"
     },
     {
       "basename": "CLIENT2_MIGRATION",
