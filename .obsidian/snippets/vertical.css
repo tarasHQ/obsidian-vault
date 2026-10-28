@@ -1,7 +1,24 @@
 /* On vertical monitor horizontal space is at the premium,
 so left sidebar should be narrowER than 200px hardcoded script limit */
 .workspace-split.mod-horizontal.mod-sidedock.mod-primary-split.mod-left-split{
-	width: 150px !important;
+	/*width: 150px !important;*/
 }
 
-.workspace-split.mod-horizontal > .workspace-tabs:nth-of-type(2)
+
+/* making lower half of horizontal split tabs a bit smaller to fit more time log */
+.workspace-split.mod-horizontal > .workspace-tabs:nth-of-type(2) .view-header{
+	display: none;
+}
+.workspace-split.mod-horizontal > .workspace-tabs:nth-of-type(2) .workspace-tab-header-container{
+	height: 26px;
+}
+.workspace-split.mod-horizontal > .workspace-tabs:nth-of-type(2) .cm-scroller{
+	padding-top: 2px;
+}
+
+.workspace-tab-header-tab-list:has(.clickable-icon),
+.workspace-tab-header-new-tab:has(.clickable-icon),
+.sidebar-toggle-button.mod-secondary.mod-right,
+.sidebar-toggle-button.mod-primary.mod-left{
+	display: none;
+}
