@@ -184,3 +184,10 @@ await cJS(c => c.RenderReflectionHelpers.renderColumns(dv, this.container));
 await cJS(c => c.PlanStepsList.renderSteps(dv, this.container));
 ```
 
+---
+---
+---
+
+## Meta-Plan Reflection
+(llms should ignore this. it's for future phases/templates.)
+### Issues
