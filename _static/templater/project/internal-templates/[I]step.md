@@ -3,7 +3,7 @@ status: waiting
 state: placeholder
 reviewedAtStep: "|CURRENT_STEP_NUMBER_OR_00_IF_NO_STEPS to|"
 ---
-
+%%text within |TEXT| should be filled by LLM%%
 [← PLAN](../_plan_|PHASE_NUMBER|.md)
 
 ## Description
@@ -17,7 +17,8 @@ reviewedAtStep: "|CURRENT_STEP_NUMBER_OR_00_IF_NO_STEPS to|"
 ### Intended outcome
 |FILLED_BY_LLM|
 
-### Local invariants // if any
+### Local invariants
+%%if any%%
 |FILLED_BY_LLM|
 
 ### Should NOT be done in this step
@@ -26,12 +27,14 @@ reviewedAtStep: "|CURRENT_STEP_NUMBER_OR_00_IF_NO_STEPS to|"
 ## Discussion & Reflections
 |FILLED_BY_LLM|
 
---
+---
+---
+---
 %%SECTION BELOW IS WRITTEN IN A SECOND PASS AFTER SECTION ABOVE IS LOCKED-IN%%
 
+## Tasks
+%%Contains list of tasks. Example of format to be used is in completion flow section%%
 
-## Implementation
-%%Contains list of tasks. Template for tasks is in completion flow%%
 
 ---
 
