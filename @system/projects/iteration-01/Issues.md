@@ -14,7 +14,28 @@
 
 # Issues
 ## High Level
-##Idea #99 Critique Flow
+- ### Idea #999 Exam
+	- #### Discussion
+		- From old kilo flow. It's just useful to have that flow where LLM is targeted to not solve the issue, but find issues in "the answer". Like you do initial draft. Then make it defend itself. And repeat until it starts to make sense. 
+		- Should I write this down manually though? Because it's FOR you BY you. LLM will accumulate walls of text there. But it's a bit of a friction. Like I would have to ask LLM to do like "exam" of understanding what we'll do. THEN it'll be lower friction and useful. 
+		- Like it's simple. Exams work. If you want to remember so much information - you must be tested for accountability. It's also long-term situation, because if you KNOW, like really KNOW about what you're doing, and not like stay on high level only. Then the task is easier to be done. It feels more like your product. And you're less likely to get overwhelmed. 
+		- But the question is WHEN. 
+			- It should happen soon for sure. 
+			- Either before even planning starts (and then one more after the plan)
+			- OR make it like **usual routine that is run often**. 
+				- Like you did initial planning - exam. 
+				- You drafted steps - exam. 
+				- You're starting to implement step X - exam.
+		- Exam though is a bit wrong word. But is it?
+			- Like idea is to **invoke that feeling of "I want to get high score, I want to win".** 
+			- And I can't say to LLM that I'm inexperienced here. Because it might lean into oversimplification of code/comments/etc. So it should be separate file for sure = **Separate flow.** 
+		- But it shouldn't be like one-shot exam. It gives you questions (**NOT A B C, you must write the answer**), if you don't understand something - you explore in branches. What you didn't understand - gets into that plan's **Simpler Words** section written by you. So you lock that information down (later it can be extracted too)
+		- **Summary**
+			- So. Separate workflow. But required, not optional. Per each major phase (planning/drafting steps/implementing each step)
+			- Template - figure out on-site. When you'll write it down. But main things is that there must be scoring. And there must be high coverage including notion that I'm inexperienced in this, so I need to be tested on kinda simple concepts as well. 
+			- Amount of questions... probably 20-30 for sure. To expect 1-2 sentences answers. 
+	- #### Solution
+		- Discussion highlights. 
 - ### Idea #99 Critique Flow
 	- #### Discussion
 		- From old kilo flow. It's just useful to have that flow where LLM is targeted to not solve the issue, but find issues in "the answer". Like you do initial draft. Then make it defend itself. And repeat until it starts to make sense. 
@@ -44,15 +65,14 @@
 				- I'm already pushing boundaries of capacity to keep everything in the mind... After this one I stop. And will iterate only when everything will be done and I'll see how it'll look like.
 			- like you would need to know this BEFORE you make decisions. So this block should happen pretty soon. 
 				- Also must be in steps completion flow
-			- Should I write this down manually though? Because it's FOR you BY you. LLM will accumulate walls of text there. But it's a bit of a friction. LIke I would have to ask LLM to do like "exam" of understanding what we'll do. THEN it'll be lower friction and useful. 
+			- 
 		- ##### Blocks
 			- **Plan description** - There's one by user that's created at the very beginning. This one by LLM when lots of stuff were planned and refined.
 			- **Persistent Steps Storage** - place for LLM to store information that is applicable to all/most steps. But with clarification, that it's not like "we implemented X, now next step should do Y". It's about nuances/invariants/facts. In a concise manner too. 
 				- Doesn't make sense to have separate file. It's by its nature should be always in context. 
+				- CONCISE. It shouldn't be walls of text.
 			- **Steps** - since it's not covered by the script anymore. 
 				- table + list. 
-			- **Touched Concepts in "Simple Words"** - 
-				- in steps completion flow template too.
 	- #### Solution
 		- ==🟡TODO TOMORROW==
 - ### Issue #7 Intra-step Deviation Tasks
