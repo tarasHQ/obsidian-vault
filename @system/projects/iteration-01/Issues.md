@@ -1,8 +1,6 @@
 # Todo
 - Use other dataview script that can be parsed by website. For docs. 
 - Meta plan reflection block at the bottom to have a ssot for the feedback on the current iteration.
-- ## Folding
-	- Not use it or expect to be always unfolded? 
 
 # README practice
 ### Discussion
@@ -16,6 +14,7 @@
 
 # Issues
 ## High Level
+##Idea #99 Critique Flow
 - ### Idea #99 Critique Flow
 	- #### Discussion
 		- From old kilo flow. It's just useful to have that flow where LLM is targeted to not solve the issue, but find issues in "the answer". Like you do initial draft. Then make it defend itself. And repeat until it starts to make sense. 
@@ -23,15 +22,37 @@
 		- Extract old one from vscode, it should be in those sidebar markdown notes. It's good baseline.
 		- **Separate file for workflow too**, as it is with a few other "flows". It should be called from the flow or manually. (flow preferably)
 		- **Separate file for discussion?** So you can check all those issues in different tasks/branches.
+			- With templated categories too? Like security/performance/modularity/non-duplication/best-practices/long-term-ready - so it's not asking llm about just give me list of something, but it's structured blocks of what interests me to make things better in the plan/steps/etc.
 - ### Issue #8 LLM's High Level Block
 	- #### Discussion
 		- The issue is that there's no hygiene or rules for llm's part in the plan. If it's uncontrolled - it just dumps walls of text. I don't know where it should belong though. Because if that wall of text used in multiple steps - it could make sense. 
 		- Ok, it needs refined high level block for sure, and maybe some workflow stuff.
+		- Ok, what else do I need? 
+			- Like we would have separate flow that will have lots of information. It'll happen in separate temp file. That information then will be dissolved into plan + steps. 
+		- What is plan? 
+			- high level overview
+			- steps storage
+			- user "raw" input
+		- Do LLMs need more stuff in the plan? 
+			- Like llm describe the plan in a bit more detailed way than my initial abstract description.
+			- and it stores plan memory
+		- Do we need state? Like through completion flow steps get finalized. in list they get description about what was done and this gets commented out. Nah. I just don't see what useful can be in that state. 
+		- Concepts in simple words - yay or nay?
+			- The thing is, I might get unconsciously overloaded if there's only either 12km high abstractions OR ground implementation details in the plan. BUT. If I would have all concepts I don't understand described in the separate block at the very bottom - it may reduce that cognitive requirements for the plan = more executive capacity on implementation/planning than on comprehension.
+			- it's super good especially after a break, or if implementation takes a multiple days. I can sleep on it, forget some stuff, you come back, read it - and you're up to the speed.
+				- But the question is whether it should be separate task/flow? 
+				- I'm already pushing boundaries of capacity to keep everything in the mind... After this one I stop. And will iterate only when everything will be done and I'll see how it'll look like.
+			- like you would need to know this BEFORE you make decisions. So this block should happen pretty soon. 
+				- Also must be in steps completion flow
+			- Should I write this down manually though? Because it's FOR you BY you. LLM will accumulate walls of text there. But it's a bit of a friction. LIke I would have to ask LLM to do like "exam" of understanding what we'll do. THEN it'll be lower friction and useful. 
 		- ##### Blocks
 			- **Plan description** - There's one by user that's created at the very beginning. This one by LLM when lots of stuff were planned and refined.
 			- **Persistent Steps Storage** - place for LLM to store information that is applicable to all/most steps. But with clarification, that it's not like "we implemented X, now next step should do Y". It's about nuances/invariants/facts. In a concise manner too. 
 				- Doesn't make sense to have separate file. It's by its nature should be always in context. 
-			-  
+			- **Steps** - since it's not covered by the script anymore. 
+				- table + list. 
+			- **Touched Concepts in "Simple Words"** - 
+				- in steps completion flow template too.
 	- #### Solution
 		- ==🟡TODO TOMORROW==
 - ### Issue #7 Intra-step Deviation Tasks
@@ -126,6 +147,10 @@
 			- re-read discussion.
 ## Low Level
 - ### Steps
+	- ### Idea #4 Meta-workflows
+		- When you'll be creating all these flows - figure out primitive system to that. So it's flexible to add new one or remove one. Modularized. Low friction.
+	- ### Idea #3 Run exploration on done work to confirm it
+		- It's kinda like just getting second opinion. Experimental too. But it might catch if model hallucinates or something. Like LLM gives exploration agents, plans, planning. and says like "we did step 10 - can you confirm implementation?". That model is cheap, but might be useful as like fail-net against some blind spots.
 	- ### Idea #2 Revert Checkpoints
 		- For example, that idea with evaluating if the step is actually needed. Workflow makes LLM explore the step, when it has context - it makes this checkpoint. Then we diverge into discussing if this step is actually needed. Or other topics. We come back, I write "checkpoint passed" and we proceed in a clean branch? But like not through my actions - but through LLM's commands.
 	- ### Idea #1 Context Cleanup Checkpoints
