@@ -42,17 +42,3 @@ Offload rule (Issue #7): if exploration outgrows the current task or context get
 - Include an issues-seeking pass: before locking the plan, LLM actively looks for problems, risks and unknowns in the emerging plan and presents them as points — not as solutions.
 - Each point ends either with a resolved answer or as an explicit open item captured in `_planning-draft.md`.
 
-Completion: no unresolved blocking points remain.
-
-## 05 — Dissolution
-- [ ] Dissolve `_planning-draft.md` into the plan: high-level description, persistent cross-step notes (concise — nuances/invariants/facts only, no "we did X, next do Y"), and the step division sketch (list of steps, high level only).
-- [ ] Step contents are NOT written here. That belongs to the step-creation flow.
-
-Completion: the plan stands on its own without the draft file.
-
-## 06 — Exit Conditions
-- [ ] Plan contains: user's raw input, LLM's high-level description, persistent notes, step list sketch.
-- [ ] Every planned step is understood at high level (its purpose and outcome) — not pre-implemented in anyone's head.
-- [ ] `_planning-draft.md` is written and left as-is.
-
-After exit: proceed to the step-creation flow.
