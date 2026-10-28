@@ -11,7 +11,6 @@
 - **Decisions** - empty if none. Just like to lock down some things to not rehash it often, or to not forget why they were chosen. 
 - **Exploration** - like I did just now with fonts. I gave agents + fonts readme. It knows everything from that point onward to work on fonts without spending minutes on exploration
 
-
 # Issues
 ## High Level
 - ### Idea #999 Exam
@@ -27,6 +26,7 @@
 				- You drafted steps - exam. 
 				- You're starting to implement step X - exam.
 		- Exam though is a bit wrong word. But is it?
+			- Like like 
 			- Like idea is to **invoke that feeling of "I want to get high score, I want to win".** 
 			- And I can't say to LLM that I'm inexperienced here. Because it might lean into oversimplification of code/comments/etc. So it should be separate file for sure = **Separate flow.** 
 		- But it shouldn't be like one-shot exam. It gives you questions (**NOT A B C, you must write the answer**), if you don't understand something - you explore in branches. What you didn't understand - gets into that plan's **Simpler Words** section written by you. So you lock that information down (later it can be extracted too)
@@ -246,8 +246,9 @@
 			- include two as 00-start and 99-end steps, so you wouldn't even have to explain to LLM how those templates should look like. (but you kinda do, since you need comments)
 		- **icons** - yes, but don't add more colors. ○ - high-level, ◎ - full, ◉ - condensed. 
 		- **list/table** - yes. on the screenshot in reflections
+			- Do you need table? It's not readable in vscode. Like you might as well use list. Or maybe drop it completely? 
 		- **scrollable container** - no. BUT you can use outline, since each step won't be as bullet point, so it'll get recognized.
-- ### Issue #1 - PIA Navigation
+- ### [DONE] Issue #1 - PIA Navigation
 	- #### Discussion
 		- Navigation is kinds PIA. I have to switch between vscode and obsidian. 
 		- the issue is that you get overwhelmed by the amount of docs and text.
