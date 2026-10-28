@@ -1,40 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "better-schedule-plan",
-      "path": "@journal/2026/October/plans/better-schedule-plan.md"
+      "basename": "[T]plan",
+      "path": "_static/templater/project/[T]plan.md"
     },
     {
-      "basename": "Untitled",
-      "path": "Untitled.md"
+      "basename": "[I]step",
+      "path": "_static/templater/project/internal-templates/[I]step.md"
     },
     {
       "basename": "PLANNING",
       "path": "_static/projects/PLANNING.md"
     },
     {
-      "basename": "[T]step",
-      "path": "_static/templater/project/[T]step.md"
-    },
-    {
-      "basename": "[T]plan",
-      "path": "_static/templater/project/[T]plan.md"
+      "basename": "_plan_001",
+      "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
     },
     {
       "basename": "Issues",
       "path": "@system/projects/iteration-01/Issues.md"
     },
     {
-      "basename": "_plan_001",
-      "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
+      "basename": "October 28th, 2026",
+      "path": "@journal/2026/October/October 28th, 2026.md"
+    },
+    {
+      "basename": "better-schedule-plan",
+      "path": "@journal/2026/October/plans/better-schedule-plan.md"
+    },
+    {
+      "basename": "[T]step",
+      "path": "_static/templater/project/[T]step.md"
     },
     {
       "basename": "on-discouragement-again",
       "path": "Psychoanalysis/_reflections/on-discouragement-again.md"
-    },
-    {
-      "basename": "October 28th, 2026",
-      "path": "@journal/2026/October/October 28th, 2026.md"
     },
     {
       "basename": "_system",
