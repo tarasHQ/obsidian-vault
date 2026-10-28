@@ -63,10 +63,7 @@ SSOT of plans, reflections, idea capturing, phases and implementation flows of a
 	- File names in **lower-case**, e.g. `05-subscription-manager-refactor.md`
 	- Steps can be further subdivided by decimal. e.g. `05.5-subsciprtion-manager-refactor-2.md`
 - #### Frontmatter
-	- `status` - status of the step. Why?
-		- `waiting` - when step is waiting for implementation 
-		- `postponed` - when step is postponed to unknown time/order of implementaion
-		- `implemented` - when step is implemented
+	- `status` - `waiting/postponed/implemented/skipped` - self-explanatory statuses.
 	- `state` - state of the step's contents
 		- `placeholder` - minimal file to just hold the place until there's time to do high-level/implementation blocks
 		- `high-level` - meaning only top high-level block is written and implementation block is not

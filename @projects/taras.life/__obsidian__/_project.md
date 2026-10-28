@@ -8,15 +8,20 @@
 
 ## Docs
 
-```dataviewjs
-await cJS(c => c.RenderReflectionHelpers.renderColumns(dv, this.container));
+```dataview
+TABLE WITHOUT ID
+  map(filter(rows.file, (f) => startswith(f.folder, this.file.folder + "/_reflections")), (f) => f.link) AS "Reflections",
+  map(filter(rows.file, (f) => startswith(f.folder, this.file.folder + "/ideas")), (f) => f.link) AS "Ideas",
+  map(filter(rows.file, (f) => startswith(f.folder, this.file.folder + "/artifacts")), (f) => f.link) AS "Artifacts"
+FROM ""
+WHERE startswith(file.folder, this.file.folder + "/") AND file.path != this.file.path
+SORT file.name ASC
+GROUP BY true
 ```
 
 ## Future Phases
-1. Styling
-	- Fonts https://quartz.jzhao.xyz/plugins/fonts
-2. Skeleton
-3. Optimization
+1. Skeleton
+2. Optimization
 	1. Webp script before push to have optimized images. 
 
 ## Phases

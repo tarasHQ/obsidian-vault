@@ -53,7 +53,10 @@ reviewedAtStep: "|CURRENT_STEP_NUMBER_OR_00_IF_NO_STEPS to|"
 - In Other Parts of the Plan:
 	- [ ] Making sure plan does not contradict to what was done in the current step. Like situations when fact X in plan says one thing, but implemented fact X in the step does different thing. 
 
-### 03 - Condensation of Current note
+### 03 - Finalizing the Step In the Phase
+- [ ] Updating `_exploration.md` in `artifacts/` folder, which is alongside the plan file of the phase. 
+
+### 04 - Condensation of Current note
 %%Goal is to shed all useless things, so this step can be token-efficiently read for context in the future. %%
 - [ ] It starts in separate clean task. DO NOT allow user to run condensation if other things were executed in current task. 
 - [ ] Condensation is NOT started automatically by the agent. ONLY through explicit command from the user. 
