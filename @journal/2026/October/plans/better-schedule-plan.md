@@ -22,7 +22,7 @@ And I feel like schedule should play a role here, but I'm not sure how that role
 - **You need time blocks visualization. To see overview of the day**
 - **Text should be clear and visible -  I should be able to write more.** 
 - **This approach should be recordable in OBS (text size, layout, etc.)**
-	- If it'll be good - you can reduce size of ip cam and webcam has non-used space on the left. So it can be 20-40% wider than current ticktick.
+	- If it'll be good - you can reduce size of ip cam and webcam has non-used space on the left. So it can be 20-40% wider than current TickTick.
 - **Ideally in sync with main PC, so I can track there, and only show/record on recording pc.**
 - **Some integration with quartz website (either quick export or native representation OR, if other things are good custom solution)**
 	- EVEN BETTER, website has empty space on the right, under outline. That's where this visual representation would be PERFECT. Like it would be better to review my days THERE than in obsidian.

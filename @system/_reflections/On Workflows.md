@@ -3,9 +3,15 @@ ctime: 2026-10-28 18:26
 isIntegrated: false
 ---
 
+%%[[_static/templater/[T]reflections|Link To Template]]%%
+
 ###### Meta-reflection (On completion)
 %%Awareness to avoid repeating friction or to improve what works%%
 %%issues/friction/inconvenience. Also sometimes I reflect on high cost-low reward topic/issue. I need to be aware of those.%%
+- Add point in here
+- Remember to act upon successful reflection, to give in to exhaustion. 
+- Insights seem to be useless. Like you either act on reflection right away, or not. 
+	- yeah. Highlight insights inside reflection. That way you'll have them in the context, and not detached. 
 
 ---
 
@@ -13,10 +19,6 @@ isIntegrated: false
 %% To prevent drift from the initial target and ending the reflection without answering on what it was about%%
 - I don't know how flows should look like so I would be motivated to use them. 
 - Like right now it feels like as if it's a bit burden maybe? But that's because LLM wrote that one flow. It's stupid. I need something done by me.
-
-## Insights
-%%Condense insights to keep them actionable and easy to review%%
-- 
 
 ---
 

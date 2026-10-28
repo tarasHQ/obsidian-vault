@@ -3,3 +3,5 @@ so left sidebar should be narrowER than 200px hardcoded script limit */
 .workspace-split.mod-horizontal.mod-sidedock.mod-primary-split.mod-left-split{
 	width: 150px !important;
 }
+
+.workspace-split.mod-horizontal > .workspace-tabs:nth-of-type(2)
