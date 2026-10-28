@@ -180,10 +180,6 @@ await cJS(c => c.RenderReflectionHelpers.renderColumns(dv, this.container));
 ## Steps
 %%Rendered by dataview for the user%%
 
-```dataviewjs
-await cJS(c => c.PlanStepsList.renderSteps(dv, this.container));
-```
-
 ---
 ---
 ---
