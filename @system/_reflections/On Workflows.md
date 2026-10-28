@@ -42,6 +42,7 @@ isIntegrated: false
 		- **Identifiable Steps**
 			- Number, not bullet. Name. Not description. 
 			- It feels like these make "probability anchors" for LLM. Harder to miss/ignore/hallucinate, because "meaning" attached to it. It's not like one bullet point among 50 others. 
+			- Don't use words/numbers that overlap with projects. Steps/phases/01/001/ those terms from the plan template. Like instead of numbers - use letters. ABC. Instead of steps - use stages OR chunks OR actions OR etc. Make flow distinct from the execution of the flow. 
 		- **Reliable**
 			- If I would have to fight LLM to keep up with flows - it would be an issue. 
 			- So the flow must have another kind of "anchors", to, both - make sure LLM follows the flow AND increase probability of LLM to follow the flow. 
@@ -114,7 +115,11 @@ Plan is done. Steps are done.
 
 Gaps: 
 - Exam. Where? Would you have enough brainpower for the exam? 
-- Code review-flow. It's truly useful to just run separate task in parallel while you're finalizing the step. because that LLM has all those edits, it has initial state and completed state with everything in-between. And bloated context from wrong edits, user edits an
+- Code review-flow. It's truly useful to just run separate task in parallel while you're finalizing the step. because that LLM has all those edits, it has initial state and completed state with everything in-between. And bloated context from wrong edits, user edits, in-task discussions and so on. 
+	- You run this in clean air with sole purpose of code quality. So it doesn't have to think about other options or something. 
+	- Should you ask it to explain the changes? as step 2? 
+	- Yeah. Also you may use that exam rule in here. 
+	- Like idea is to watch the code still, but not to the point of you writing it. 
 
 ---
 
