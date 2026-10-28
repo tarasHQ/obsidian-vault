@@ -108,6 +108,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 17:01
+	- Need to try this side split. I'm using this screen for the work too, but it would be great to have time log always on
+- ###### 16:59
+	- Fine. A bit more friction, but fine. 
 - ###### 16:29
 	- Want to PMO. Uneasy. Anxious a bit. Maybe I can use it? Try to get back to that high speed? With LLMs though it's a bit hard since those a think a lot.
 - ###### 16:16

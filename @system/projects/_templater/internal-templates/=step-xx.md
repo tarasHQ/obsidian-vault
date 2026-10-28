@@ -1,6 +1,6 @@
 ---
 status: waiting
-state: placeholder
+state: high-level
 reviewedAtStep: "|CURRENT_STEP_NUMBER_OR_00_IF_NO_STEPS to|"
 ---
 %%text within |TEXT| should be filled by LLM%%
