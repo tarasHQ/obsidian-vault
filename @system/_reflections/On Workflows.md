@@ -53,6 +53,30 @@ isIntegrated: false
 		- **Controllable Chaos. NOT Overwhelming Tyranny**
 			- As in life. LLMs are chaotic systems. You can't place/expect strict order following. Instead you must at least not fight with it OR, at the very best, make it into a win. 
 				- Practically though?
+	- #### Flow
+		- You combine those properties into a file then? 
+		- rule at the start. Explicit. Each response should contain feedback towards execution of the flow. 
+		- So, I can lock that. The issue I had - is that I confused two things. flow itself and content of specific flow. Flow itself is solved in block above. Like you ==should extract it and put it inside `_flows/` as  `_rules.md`==-  Whatever you create, if it's aligned with those rules - that flow will likely to be better than without those rules. And they're restrictive but also permissive at the same time, so it's not trying to work against LLM's nature. 
+
+- ### initial planning
+	- the thing of this is that it's should go wide before going narrow. Which means it has to be at least 2-step conversation. 
+	- Oh. oh. this shit needs additional folder. for sure. Here's what I think
+		- it wasn't meaningless because of its idea being stupid. It was meaningless because I got an nuclear warhead and named it as dynamite stick. 
+		- So.  that's the key thing where everything gets bad in current flow. And where you put unnecessary constraints on LLM too. 
+	- You start to plan. With that plugin for example. You start to go into "recommended" too soon. Instead, you should prioritize order and go wide. Through docs. 
+	- #### specifics. 
+		- ##### First step - Categorization of the Issue
+			- #1 - I want to write a plugin. Give me categories on this. 
+				- Returns: implementation, deploying, location, integration. 
+			- #2 - Write down each category with you recommendation and 2 additional options in separate file according to the provided template.
+				- Template frames this findings as mere suggestion. And has internal rules that allow broad options,. Like basically it's like a big prompt
+				- Returns: a set of files on each main category about what you want to do. 
+		- ##### Second Step - You go WIDE
+			- ==🟡HUGE INSIGHT - You were saying that it gets boring when you wait for LLMs response, and because of that it's slow and boring. This flow of wide then narrow - provides you with lots of options. You can run 5 tasks in parallel on each file. And then have an hour of focused work on each one==
+			- #1 - You attach each document. It's self-contained. All you have to do is attach it + maybe agents and llm.md? 
+				- Returns: 
+- ### Reflection
+	- With plugins. it would've been nice if it mentioned radical high gain changes. Like it was very restricted. 90% of such changes would probably be easily discar
 - ### Riding the Chaos
 	- Is it possible? Or it's just BS quote? 
 	- Well. What is positive nature of chaos? Potential. Upward transformation. Treasure. Adventure. 
@@ -71,4 +95,13 @@ isIntegrated: false
 		- What would be the issue in my flow? 
 		- Like take initial planning for example. It's kinda sequential task. I can't plan step 4 if step 1 isn't planned. 
 		- I really start to doubt that this branch of thought is worth it. 
-		- Code review. That's it. Implementation of steps is a flow in itself. So 
+		- ##### Code review.
+			-  That's it. Implementation of steps is a flow in itself. And code logic is kinda big cognitive load. So you can have a tool that is focused solely on code review. It will reduce issues that stem from you or LLM missing some pieces. 
+				- Because current context will be bloated for proper code review, but also it is good for task finalization. So there's that.
+		- what else? The issue with planning is that it's like proper discussion i//debate. you have a topic to discuss. Then you bring 5 arguments and the other side brings 5 arguments. Now you discuss 10 things. Then it's a 100. 
+			- So this hints on think-through subtasks. 
+			- Imagine previous task with fonts
+			- but wait, how it's different from branching and then going back with context handoff? Code review is kinda low-effort if you just prepare a prompt. 
+		- Like if my project was more complete, then sure - huge advantage. But at this point - nah. 
+		- So I will stop this branch of thought. 
+		- Or leave it open when I'll work on flows. So if there will be situation where this idea can be inserted naturally - then we'll use it. 

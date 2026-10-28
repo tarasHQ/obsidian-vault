@@ -108,6 +108,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 19:19
+	- ==🟡Took longer. I'm not done, but 1000% was worth it. I'm using my project to interact with LLM, it's pretty basic but has some advantages over usual apps. And this reflection showed me a MAJOR opportunity I was missing. 
 - ###### 18:33
 	- ==I'm curious if walking-reflecting will help me here in a short period of time. Is it really useful practice, or just draining one? Like mental jerking off?==
 		- Input conditions are - discouraged, tired a bit, have absolutely 0 ideas how to organize these flows for them to be engaging. And on top of it - 27 minutes limit. Because if I figure something out in 2 hours and being completely dead - probably it's not worth it
