@@ -13,13 +13,15 @@ SSOT of plans, reflections, idea capturing, phases and implementation flows of a
 	- `_reflections/`- My project-wide reflections
 	- `artifacts/` - Storage for additional files/images/sounds/etc. scoped for the whole plan. 
 	- `ideas/` - Quick capture of random ideas that I don't want to process or integrate into codebase module's README.md files.
-	- `phases/` 
-		- `XXX/` - Number of a phase, e.g. `003/` or `052/`
-			- `_reflections/` - My phase-scoped reflections. 
-			- `artifacts/` - Storage for additional files/images/sounds/etc. scoped to the phase only.
+		- `phases/` 
+			- `XXX/` - Number of a phase, e.g. `003/` or `052/`
+				- `_reflections/` - My phase-scoped reflections. 
+				- `artifacts/` - Storage for additional files/images/sounds/etc. scoped to the phase only.
+					- `_exploration.md` - Phase-scoped exploration notes (links to related files, tips). Created at phase birth, updated during step completion flow.
 			- `ideas/` - For phase-scoped idea capture, to process them later.  
-			- `steps/` - Implementation steps files
-			- `_plan.md` - High-level plan of the current phase, also is an entry to the phase
+				- `steps/` - Implementation steps files
+				- `_plan.md` - High-level plan of the current phase, also is an entry to the phase
+				- `_step-template.md` - Phase-scoped SSOT template for new steps, copied from `=step-xx.md` at phase birth with `|PHASE_NUMBER|` substituted
 	- `/_project.md` - Project's entry point. Overview of phases + reflections & ideas
 
 ## Step-by-Step Workflow
@@ -95,4 +97,9 @@ SSOT of plans, reflections, idea capturing, phases and implementation flows of a
 		- Decisions. Figure out what needs to be extracted. 
 - #### Templates
 	- `|TEXT|` is used to mark what should be filled by the LLM
-	- Template shouldn't be partially used/copied. It should be byte-identical, besides sections where LLM
+	- `|PHASE_NUMBER|` is used as the phase-number placeholder. On phase creation it gets pre-substituted (e.g. in the `[← PLAN](../_plan_|PHASE_NUMBER|.md)` backlink). LLM-created steps must resolve it the same way.
+	- Template shouldn't be partially used/copied. It should be byte-identical, besides sections where LLM fills in `|TEXT|` markers.
+- #### Step Template SSOT
+	- Master source: `_static/templater/project/internal-templates/=step-xx.md`. This file does NOT contain a step template anymore — no extraction markers exist here.
+	- Phase creation script copies the master into each phase as `phases/NNN/_step-template.md`, with `|PHASE_NUMBER|` already substituted. It also creates `artifacts/_exploration.md` in the same phase from `internal-templates/=_exploration.md`.
+	- New steps (LLM or Templater `[T]step`) must be created as byte-identical copies of the phase's own `_step-template.md`, with only `|TEXT|`-style markers filled in. Never reconstruct a step from memory.

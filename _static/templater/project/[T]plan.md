@@ -148,8 +148,15 @@ isIntegrated: false
 ## Documents
 %%Dataviewjs snippet that renders list of documents from phase's inner folders%%
 
-```dataviewjs
-await cJS(c => c.RenderReflectionHelpers.renderColumns(dv, this.container));
+```dataview
+TABLE WITHOUT ID
+  map(filter(rows.file, (f) => startswith(f.folder, this.file.folder + "/_reflections")), (f) => f.link) AS "Reflections",
+  map(filter(rows.file, (f) => startswith(f.folder, this.file.folder + "/ideas")), (f) => f.link) AS "Ideas",
+  map(filter(rows.file, (f) => startswith(f.folder, this.file.folder + "/artifacts")), (f) => f.link) AS "Artifacts"
+FROM ""
+WHERE startswith(file.folder, this.file.folder + "/") AND file.path != this.file.path
+SORT file.name ASC
+GROUP BY true
 ```
 
 
@@ -179,17 +186,21 @@ await cJS(c => c.RenderReflectionHelpers.renderColumns(dv, this.container));
 
 ## Steps
 %%State icons: ○ high-level, ◎ full, ◉ condensed.%%
-
-### ◉ [STEP 00 - Start Of The Phase](./steps/00-start.md)
-The flow to start the planning in the best state of mind — phase renamed in the project, small phase size confirmed, related docs/ideas/artifacts and the target code read before any planning starts.
+%%To create a new step - use [step template](./steps/_step-template.md)%%
 
 ### ◉ [STEP 99 - End Of The Phase](./steps/99-end.md)
-The flow to finalize the phase — meta-reflection on what worked, long-term knowledge extracted so plan info can safely die-off, frontmatter set, phase archived.
+Finalize the phase — meta-reflection on what worked, long-term knowledge extracted so plan info can safely die-off, frontmatter set, phase archived.
+
+### ◉ [STEP 00 - Start Of The Phase](./steps/00-start.md)
+The flow is to start the planning in the right state of mind and with the properly prepared phase
 
 ---
 ---
 ---
 
 ## Meta-Plan Reflection
-%%LLMs should ignore this. it's for future phases/templates.%%
-### Issues
+%%Plan structure, navigation, planning workflows, exploration, execution. Meta stuff. To improve meta plan%%
+### User-Issues
+- 
+### LLM-Issues
+- 
