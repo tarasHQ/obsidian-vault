@@ -57,7 +57,14 @@ isIntegrated: false
 		- You combine those properties into a file then? 
 		- rule at the start. Explicit. Each response should contain feedback towards execution of the flow. 
 		- So, I can lock that. The issue I had - is that I confused two things. flow itself and content of specific flow. Flow itself is solved in block above. Like you ==should extract it and put it inside `_flows/` as  `_rules.md`==-  Whatever you create, if it's aligned with those rules - that flow will likely to be better than without those rules. And they're restrictive but also permissive at the same time, so it's not trying to work against LLM's nature. 
-
+- ### initial reflection
+	- A bit more compact flow. But the thing is - sometimes you don't know what you need. You write initial reflection. Then you need to defend it against LLM critique. Like you need LLM to go scorched earth on your reflection. ==HUGE==, because otherwise you're in your bubble. And it's damn hard to rely on honesty, because it's a finite resource. 
+		- To not make things too complex - idea here is to just run separate task with simple flow before you go to planning.
+			- But efficient one. you ask LLM to run exploration based on your reflection. The you make checkpoint. 
+				- #1 - you discuss and refine reflection. with adding like "llm input at the bottom". Like (planning is about implementing reflection), this one is about figuring out what I want and need. 
+				- #2 - then you revert to checkpoint, you attach refined reflection. And send LLM scorched earth on it. And try to defend it. with KEY RULE - LLM must appeal to my honesty. "Think about it honestly", "Be honest", etc. 
+					- And you write that as defense block in the same reflection. 
+	- Now you have not projection of your bubble. But something much more reliable and meaningful and honest. NOW you can plan it. 
 - ### initial planning
 	- the thing of this is that it's should go wide before going narrow. Which means it has to be at least 2-step conversation. 
 	- Oh. oh. this shit needs additional folder. for sure. Here's what I think
@@ -75,8 +82,47 @@ isIntegrated: false
 			- ==🟡HUGE INSIGHT - You were saying that it gets boring when you wait for LLMs response, and because of that it's slow and boring. This flow of wide then narrow - provides you with lots of options. You can run 5 tasks in parallel on each file. And then have an hour of focused work on each one==
 			- #1 - You attach each document. It's self-contained. All you have to do is attach it + maybe agents and llm.md? 
 				- Returns: 
+					- 3-5 high-level, architectural, radically different options. (unbiased) that autoregressive property of llm could be helpful.
+						- each one have description how it's useful and what's its cost. Also it would have description in simple terms, in case I won't understand it. 
+					- THEN we have scores on each one. 
+						- so previous unbiased tokens will less affect that first high level block and scoring. 
+					- NOW we have recommended option with 3 choices of low level implementation with table, score and recommendation at the bottom. 
+			- #2 - You either choose or discuss further on each task on each document.
+				- Returns:
+					- a set of locked categorical decisions. 
+		- ##### Third Step - You go NARROW
+			- #1 new task - Category by category. What is needed to be locked in plan - the rest locked in steps. 
+				- ### Styling
+					- 1
+					- 2
+					- 3
+				- ### Coding client-side
+					- step 1 
+					- step 2
+					- step 3
+				- ### Deployment
+					- step 1
+					- step 2 
+					- step 3
+			- #2 
+		- ##### Forth Step - Delegating to Next Flows
+			- making sure nothing is forgotten. 
+---
+
+==at this point you are ready to implementation==
+Plan is done. Steps are done. 
+
+Gaps: 
+- Exam. Where? Would you have enough brainpower for the exam? 
+- Code review-flow. It's truly useful to just run separate task in parallel while you're finalizing the step. because that LLM has all those edits, it has initial state and completed state with everything in-between. And bloated context from wrong edits, user edits an
+
+---
+
 - ### Reflection
-	- With plugins. it would've been nice if it mentioned radical high gain changes. Like it was very restricted. 90% of such changes would probably be easily discar
+	- Should I write all steps? Implementation. Because it may drift as I go... No. If you refine that initial planning, it won't drift. It drifts only if you underprepare/research
+	- If I split by categories. maybe I can split steps by them too?
+		- Again. Plugin. Recent. Steps 1-3 on deployment. You don't have 30 flat steps. You have categories on them. Deployment doesn't care about styling or how how the plugin will communicate with the server. 
+	- With plugins. it would've been nice if it mentioned radical high gain changes. Like it was very restricted. 90% of such changes would probably be easily discarded BS. But those 10% will be huge. 
 - ### Riding the Chaos
 	- Is it possible? Or it's just BS quote? 
 	- Well. What is positive nature of chaos? Potential. Upward transformation. Treasure. Adventure. 
