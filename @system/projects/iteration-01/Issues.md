@@ -2,6 +2,16 @@
 - Use other dataview script that can be parsed by website. For docs. 
 - Meta plan reflection block at the bottom to have a ssot for the feedback on the current iteration.
 
+# README practice
+### Discussion
+- It makes lot of sense to have readmes in each module/submodule. But structure is a bit chaotic now. Would be nice to have a predefined one. Also as template in separate file linked to planning or agents, so when I create new one - LLM can fill up the skeleton and then I do the writing.
+### Contents
+- **Simple Words** - cognitively seems to be easier to get the high level structure and then map it on low level instead of diving into low level right away.
+- **Description** - low level. Kinda free form. Lock down 
+- **Decisions** - empty if none. Just like to lock down some things to not rehash it often, or to not forget why they were chosen. 
+- **Exploration** - like I did just now with fonts. I gave agents + fonts readme. It knows everything from that point onward to work on fonts without spending minutes on exploration
+
+
 # Issues
 ## High Level
 - ### Idea #99 Critique Flow
