@@ -129,7 +129,7 @@ body {
     .iconic-title-wrapper,
 .workspace-leaf-content:has(.view-header-breadcrumb[aria-label="steps"])
     .iconic-title-wrapper,
-.workspace-leaf-content:has(.view-header-breadcrumb[aria-label="Journal"])
+.workspace-leaf-content:has(.view-header-breadcrumb[aria-label="@journal"])
     .iconic-title-wrapper,
 .workspace-leaf-content:has(.view-header-breadcrumb[aria-label="README"])
     .iconic-title-wrapper {
