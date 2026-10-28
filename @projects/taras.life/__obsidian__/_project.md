@@ -26,6 +26,8 @@ GROUP BY true
 
 ## Phases
 
+### Phase 002 - UNTITLED_PHASE [open](./phases/002/_plan_002.md)
+
 ### Phase 001 - Remark42 plugin rewrite [done](./phases/001/_plan_001.md)
 
 Remark42 plugin rewritten from scratch as a self-contained compiled package (`custom-plugins/remark42/`), shipped and documented. Deferred to future work: visual polish (see `steps/08-visual-polish.md`) and README backlog ideas (server config, OAuth, notifications).

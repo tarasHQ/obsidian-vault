@@ -20,8 +20,8 @@ SSOT of plans, reflections, idea capturing, phases and implementation flows of a
 					- `_exploration.md` - Phase-scoped exploration notes (links to related files, tips). Created at phase birth, updated during step completion flow.
 			- `ideas/` - For phase-scoped idea capture, to process them later.  
 				- `steps/` - Implementation steps files
+					- `_step-template.md` - Phase-scoped SSOT template for new steps, copied from `=step-xx.md` at phase birth with `|PHASE_NUMBER|` substituted
 				- `_plan.md` - High-level plan of the current phase, also is an entry to the phase
-				- `_step-template.md` - Phase-scoped SSOT template for new steps, copied from `=step-xx.md` at phase birth with `|PHASE_NUMBER|` substituted
 	- `/_project.md` - Project's entry point. Overview of phases + reflections & ideas
 
 ## Step-by-Step Workflow
@@ -101,5 +101,5 @@ SSOT of plans, reflections, idea capturing, phases and implementation flows of a
 	- Template shouldn't be partially used/copied. It should be byte-identical, besides sections where LLM fills in `|TEXT|` markers.
 - #### Step Template SSOT
 	- Master source: `_static/templater/project/internal-templates/=step-xx.md`. This file does NOT contain a step template anymore — no extraction markers exist here.
-	- Phase creation script copies the master into each phase as `phases/NNN/_step-template.md`, with `|PHASE_NUMBER|` already substituted. It also creates `artifacts/_exploration.md` in the same phase from `internal-templates/=_exploration.md`.
+	- Phase creation script copies the master into each phase as `phases/NNN/steps/_step-template.md`, with `|PHASE_NUMBER|` already substituted. It also creates `artifacts/_exploration.md` in the same phase from `internal-templates/=_exploration.md`.
 	- New steps (LLM or Templater `[T]step`) must be created as byte-identical copies of the phase's own `_step-template.md`, with only `|TEXT|`-style markers filled in. Never reconstruct a step from memory.
