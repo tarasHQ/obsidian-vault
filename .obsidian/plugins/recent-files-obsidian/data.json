@@ -1,16 +1,32 @@
 {
   "recentFiles": [
     {
+      "basename": "=step-xx",
+      "path": "@system/projects/_templater/internal-templates/=step-xx.md"
+    },
+    {
       "basename": "Issues",
       "path": "@system/projects/iteration-01/Issues.md"
     },
     {
-      "basename": "LLM",
-      "path": "@system/projects/_shared/LLM.md"
-    },
-    {
       "basename": "October 28th, 2026",
       "path": "@journal/2026/October/October 28th, 2026.md"
+    },
+    {
+      "basename": "[T]daily-journaling",
+      "path": "_static/templater/[T]daily-journaling.md"
+    },
+    {
+      "basename": "LLM",
+      "path": "@system/projects/LLM.md"
+    },
+    {
+      "basename": "AGENTS",
+      "path": "@projects/0vibes/__obsidian__/docs/AGENTS.md"
+    },
+    {
+      "basename": "AGENTS",
+      "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
     },
     {
       "basename": "[T]ideas",
@@ -27,14 +43,6 @@
     {
       "basename": "_project",
       "path": "@projects/0vibes/__obsidian__/_project.md"
-    },
-    {
-      "basename": "AGENTS",
-      "path": "@projects/0vibes/__obsidian__/docs/AGENTS.md"
-    },
-    {
-      "basename": "AGENTS",
-      "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
     },
     {
       "basename": "_project",
@@ -59,10 +67,6 @@
     {
       "basename": "_system",
       "path": "@system/_system.canvas"
-    },
-    {
-      "basename": "[T]daily-journaling",
-      "path": "_static/templater/[T]daily-journaling.md"
     },
     {
       "basename": "October 27th, 2026",
