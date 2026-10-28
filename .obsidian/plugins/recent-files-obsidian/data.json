@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "PLANNING",
+      "path": "_static/projects/PLANNING.md"
+    },
+    {
+      "basename": "[T]step",
+      "path": "_static/templater/project/[T]step.md"
+    },
+    {
       "basename": "[T]plan",
       "path": "_static/templater/project/[T]plan.md"
     },
@@ -43,10 +51,6 @@
     {
       "basename": "[T]step-start",
       "path": "_static/templater/project/[T]step-start.md"
-    },
-    {
-      "basename": "PLANNING",
-      "path": "_static/projects/PLANNING.md"
     },
     {
       "basename": "_project",

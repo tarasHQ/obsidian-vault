@@ -133,34 +133,33 @@ reviewedAtStep: ""
 // SECTION BELOW IS WRITTEN IN A SECOND PASS AFTER SECTION ABOVE IS LOCKED-IN
 
 // IF STEP IS WRITTEN CLOSE TO CURRENT IMPLEMENTATION STEP <3-5 STEPS (OR IF IMPLEMENTATION HASN'T STARTED)
-## Implementation [WRITTEN AT THE STEP |XX|]
+## Implementation (template for )
 
-### |TASK_NUMBER| - |TASK_NAME|
-// e.g. `### 04 - Creating And Wiring Subscription Manager`
-- [ ] |SUBTASK_DESCRIPTION_INSTRUCTION| 
-- [ ] |SUBTASK_DESCRIPTION_INSTRUCTION| 
-...
-
-// IF STEP IS WRITTEN FAR AHEAD (3-5+ steps ahead) WE WRITE THIS BLOCK INSTEAD
-// ## EXPECTED IMPLEMENTATION [WRITTEN AT THE STEP |XX|]
-//
-// ### |TASK_NUMBER| - |TASK_NAME|
-// |DESCRIPTION_INSTRUCTION| 
-// ... 
-// as a bit lenient descriptions/instructions of implementation that can allow some drift of implementation since they were written and when we caught up to the step. 
-// 
 
 ## Completion Flow
-### Run #1
-- Cleaning up "Decisions" block
-	- USER must make decisions and tell which one should go into the plan/readmes or can be removed.
-	- Remove the block
-- Making sure frontmatter is set up properly
-- USER CHECKPOINT. Stop the loop and report to user, before proceeding to run #2.
-### Run #2
-- Rewriting the step to remove work-related clutter. Goal: from the point of next steps, make re-reading completed steps - token efficient without any loss to quality of important information. 
-	- Removing temporary notes/investigations
-	- Resolving open/obsolete question
-	- Condensing each task+subtasks into a single task with concise ## Description section on top about what was implemented.
+%%Should be%%
+
+### XX - Finalizing the Current Note
+- [ ] Setting up corresponding status  
+- [ ] Commenting the step inside single %%comment%% starting right after the icon, and up until the end of the step description.
+
+### XX - Finalizing the Step In the Plan
+- In List of Steps:
+	- [ ] Settings an icon to corresponding frontmatter status of the step.  
+	- [ ] Rewriting description from "what should've been implemented" to what "what was implemented"
+	- [ ] Commenting the step inside single %%comment%% starting right after the icon, and up until the end of the new "implemented" step description.
+- In Other Parts of the Plan:
+	- [ ] Making sure plan does not contradict to what was done in the current step. Like situations when fact X in plan says one thing, but implemented fact X in the step does different thing. 
+
+### XX - Condensation of Current note
+- Goal: shed all useless things, so this step can be token-efficiently read for context in the future. 
+- [ ] It starts in separate clean task. DO NOT allow user to run condensation if other things were executed in current task. 
+- [ ] Condensation is NOT started automatically by the agent. ONLY through explicit command from the user. 
+- If previous conditions are met:
+	- [ ] Resolve temporary notes/open questions (if any) with the user. Ask him about what to do about them.
+	- [ ] Remove temporary notes/investigations (if any)
+	- [ ] Condense each task + subtasks to a single '- Task Name - Task Description in 1-3 sentences' bullet point
+	- [ ] Remove completion flow block
+	- [ ] Make sure note's frontmatter status/states is correct
 ```
 %%TEMPLATE-MARKER-FOR-EXTRACTION-START%%

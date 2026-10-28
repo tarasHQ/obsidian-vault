@@ -178,7 +178,13 @@ await cJS(c => c.RenderReflectionHelpers.renderColumns(dv, this.container));
 ---
 
 ## Steps
-%%Rendered by dataview for the user%%
+%%State icons: ○ high-level, ◎ full, ◉ condensed.%%
+
+### ◉ [STEP 00 - Start Of The Phase](./steps/00-start.md)
+The flow to start the planning in the best state of mind — phase renamed in the project, small phase size confirmed, related docs/ideas/artifacts and the target code read before any planning starts.
+
+### ◉ [STEP 99 - End Of The Phase](./steps/99-end.md)
+The flow to finalize the phase — meta-reflection on what worked, long-term knowledge extracted so plan info can safely die-off, frontmatter set, phase archived.
 
 ---
 ---
