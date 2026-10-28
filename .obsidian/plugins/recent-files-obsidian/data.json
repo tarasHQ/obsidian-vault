@@ -5,6 +5,10 @@
       "path": "@journal/2026/October/October 28th, 2026.md"
     },
     {
+      "basename": "Issues",
+      "path": "@system/projects/iteration-01/Issues.md"
+    },
+    {
       "basename": "[T]daily-journaling",
       "path": "_static/templater/[T]daily-journaling.md"
     },
@@ -15,10 +19,6 @@
     {
       "basename": "on-discouragement-again",
       "path": "Psychoanalysis/_reflections/on-discouragement-again.md"
-    },
-    {
-      "basename": "Issues",
-      "path": "@system/projects/iteration-01/Issues.md"
     },
     {
       "basename": "_plan_001",
@@ -35,10 +35,6 @@
     {
       "basename": "[T]step-start",
       "path": "_static/templater/project/[T]step-start.md"
-    },
-    {
-      "basename": "General",
-      "path": "@projects/taras.life/__obsidian__/ideas/General.md"
     },
     {
       "basename": "PLANNING",
