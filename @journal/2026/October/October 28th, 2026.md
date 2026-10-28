@@ -108,6 +108,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 10:05
+	- Had also tasks to do on website that wasn't like hyper primary, but needed to be done at some point. So I did that. It kinda sucked me into the usual flow of work, and now I'm more inclined to tackle that main task with workflows. It's just very cognitively requiring task...
 - ###### 09:37
 	- Get visions in my mind how my project would be too late to be distinctly good... Maybe it's the unconscious way to like rush me? Because I definitely want to "run" right now.
 - ###### 09:11
