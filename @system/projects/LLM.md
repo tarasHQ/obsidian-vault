@@ -1,8 +1,7 @@
+# LLM.md
+%%Hub of the planning system.%%
 
-# Planning
-SSOT of plans, reflections, idea capturing, phases and implementation flows of all of that. 
-
-## Description of ./__obsidian__/ directory
+## Description of `./__obsidian__/`
 - ### Why it exists?
 	- Main goal is **to reduce cognitive load**. The project gets complex, lots of things to think about, track, improve, fix, implement, plan, etc. The more efficient cognitive load is - the **higher productivity**, the **higher quality** of plans and implementation.
 	- On top of it I have **sync**, which allows me to have access to this folder on all my devices for quick edits/ideas/reflections.˜
@@ -23,6 +22,31 @@ SSOT of plans, reflections, idea capturing, phases and implementation flows of a
 					- `_step-template.md` - Phase-scoped SSOT template for new steps, copied from `=step-xx.md` at phase birth with `|PHASE_NUMBER|` substituted
 				- `_plan.md` - High-level plan of the current phase, also is an entry to the phase
 	- `/_project.md` - Project's entry point. Overview of phases + reflections & ideas
+
+## Flows
+%%Flows are modular and offloaded — read a flow only when entering its stage, keep it out of context otherwise.%%
+- ### [Initial Planning](./_flows/initial-planning.md)
+	- [Absolute link for LLMs](C:\Users\Taras\Documents\obsidian-vault\@system\projects\_flows\_initial-planning.md) 
+	- Stage 1 of a phase: user's raw intent → high-level plan + step division sketch. Read when starting the high-level planning of a phase.
+
+
+
+---
+
+---
+
+---
+
+# Archive
+
+%%Content below is the pre-restructure version, kept verbatim. It is being rearranged
+into the new structure over time — do not treat it as current guidance where it
+contradicts the sections above.%%
+
+# Planning
+SSOT of plans, reflections, idea capturing, phases and implementation flows of all of that. 
+
+
 
 ## Step-by-Step Workflow
 - #### 1. High-level planning
@@ -95,11 +119,3 @@ SSOT of plans, reflections, idea capturing, phases and implementation flows of a
 		- Subtask description is a piece of information 
 	- ##### Completion Flow
 		- Decisions. Figure out what needs to be extracted. 
-- #### Templates
-	- `|TEXT|` is used to mark what should be filled by the LLM
-	- `|PHASE_NUMBER|` is used as the phase-number placeholder. On phase creation it gets pre-substituted (e.g. in the `[← PLAN](../_plan_|PHASE_NUMBER|.md)` backlink). LLM-created steps must resolve it the same way.
-	- Template shouldn't be partially used/copied. It should be byte-identical, besides sections where LLM fills in `|TEXT|` markers.
-- #### Step Template SSOT
-	- Master source: `_static/templater/project/internal-templates/=step-xx.md`. This file does NOT contain a step template anymore — no extraction markers exist here.
-	- Phase creation script copies the master into each phase as `phases/NNN/steps/_step-template.md`, with `|PHASE_NUMBER|` already substituted. It also creates `artifacts/_exploration.md` in the same phase from `internal-templates/=_exploration.md`.
-	- New steps (LLM or Templater `[T]step`) must be created as byte-identical copies of the phase's own `_step-template.md`, with only `|TEXT|`-style markers filled in. Never reconstruct a step from memory.
