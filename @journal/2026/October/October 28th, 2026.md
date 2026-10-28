@@ -1,7 +1,7 @@
 
 %%[[[T]daily-journaling|Daily Journal Template]]%%
 
-```meta-bind-button {fold}
+```meta-bind-button
 style: primary
 label: New Journal Entry
 icon: notebook-pen
@@ -67,7 +67,6 @@ action:
 	- [ ] Ideally to go away from the minimal theme. It does add a lot of things that I don't use, and basically a deadweight. Like it's better to have 30 styles in CSS than like 2 plugins with 100 settings + a theme . 
 	- [ ] flow to compress png into webp from screenshot, so it won't harm neither website nor size of the vault. But also figure out if deskflow can do it, because right now it's half-supported. (or don't do it through deskflow)
 		- priority because it adds another dimension to thinking + cognitive offload. 
-	- [ ] dataview -> move to that default rendering pipeline, current one doesn't have flashes BUT it's blocking rendering of the note, which is not good either. (worse)
 	- [ ] folder icons - rename to where they used and resize other icons (260kb per icon is stupid)
 	- [ ] FIX - templated creation of next journal entry. 23:53 - "This day already exists"
 	- [ ] Templates for reflections - maybe shouldn't use project backlinks for now, until I figure out if there's gonna be "main index"
@@ -79,12 +78,9 @@ action:
 			- or maybe you just use initial `_reflections` flow instead of limiting yourself within the journal entry? 
 	- [ ] 🔴[[plans/better-schedule-plan|better-schedule-plan]]
 		- Tick tick becomes PIA. Limited too. Maybe there's something else? Maybe there's self-hosted things? 
-	- [ ] Rewrite remark42 plugin. Properly. With the new workflow. 
-- ### Priority
-	- [ ] 
 - ### Completed
-	- [ ] copy_from_here
-	- [ ] 
+	- [x] Rewrite remark42 plugin. Properly. With the new workflow. 
+	- [x] dataview -> move to that default rendering pipeline, current one doesn't have flashes BUT it's blocking rendering of the note, which is not good either. (worse)
 
 ---
 
@@ -110,6 +106,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 23:57
+	- It always finds a way. This time it was like "day was really good, why not, you are not loosing anything" - and I just can't argue with that, because it's true. I'm dead, can't start the work on what I should. Sleep in 1 hour. So yeah. Not losing anything. 
+	- It just still feels off. Like I'm ashamed of that. It's hard to even lock those down on the schedule. So like I know it's wrong. But there's just periods in the day when meaning is really low and it doesn't sustain reasoning against "shame". So yeah, it is what it is. 
+		- But I still won't try to have it both ways. I won't give up, but I just don't have any good reason to make this fight a priority.
 - ###### 23:40
 	- What if I'm done towards the last few hours I should just focus on secondary tasks? Like I can't even start reflecting. Tired...
 - ###### 23:25
