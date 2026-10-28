@@ -110,8 +110,12 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 23:01
+	- Well. PMO urges again. This time saying that it was a good day and I deserve a reward. The issue though... 2 hours left. If I give in - chances are, I just will be less likely to do anything productive. 
+	- It's just I'm kinda struggle to get back into the flow of working on flows) Ok
+	- Timeframe. Timeframe. 
 - ###### 22:45
-	- 
+	- Was procrastinating a bit during meal. Turned out to be a lil longer than expected. But Seems like I'm fine. Don't want to come back to those flows though)) 
 - ###### 21:31
 	- I wish I could've eat more rarely... 
 	- Also - almost no PMO urges today. Which is pretty reliable marker of a truly good day) 

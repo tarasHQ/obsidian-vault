@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "initial-planning",
+      "path": "@system/projects/_flows/initial-planning.md"
+    },
+    {
       "basename": "October 28th, 2026",
       "path": "@journal/2026/October/October 28th, 2026.md"
     },
@@ -23,10 +27,6 @@
     {
       "basename": "refining-reflection",
       "path": "@system/projects/_flows/refining-reflection.md"
-    },
-    {
-      "basename": "initial-planning",
-      "path": "@system/projects/_flows/initial-planning.md"
     },
     {
       "basename": "_rules.md",
