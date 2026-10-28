@@ -1,28 +1,36 @@
 {
   "recentFiles": [
     {
+      "basename": "Issues",
+      "path": "@system/projects/iteration-01/Issues.md"
+    },
+    {
+      "basename": "LLM",
+      "path": "@system/projects/_shared/LLM.md"
+    },
+    {
       "basename": "October 28th, 2026",
       "path": "@journal/2026/October/October 28th, 2026.md"
+    },
+    {
+      "basename": "[T]ideas",
+      "path": "@system/projects/_templater/[T]ideas.md"
     },
     {
       "basename": "README",
       "path": "@system/projects/README.md"
     },
     {
+      "basename": "[T]plan",
+      "path": "@system/projects/_templater/[T]plan.md"
+    },
+    {
       "basename": "_project",
       "path": "@projects/0vibes/__obsidian__/_project.md"
     },
     {
-      "basename": "Issues",
-      "path": "@system/projects/iteration-01/Issues.md"
-    },
-    {
       "basename": "AGENTS",
       "path": "@projects/0vibes/__obsidian__/docs/AGENTS.md"
-    },
-    {
-      "basename": "LLM",
-      "path": "@system/projects/_shared/LLM.md"
     },
     {
       "basename": "AGENTS",

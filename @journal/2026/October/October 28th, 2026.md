@@ -108,6 +108,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 16:29
+	- Want to PMO. Uneasy. Anxious a bit. Maybe I can use it? Try to get back to that high speed? With LLMs though it's a bit hard since those a think a lot.
+- ###### 16:16
+	- Was a bit distracted. Speed is low now) Like it's high compared to baseline. But compared to previous hour - lower)
 - ###### 15:42
 	- Now I think fast, talk fast, write fast. It's kinda like too much even. But the speed is definitely there. For sure. Or maybe it's coffee, but it wasn't the case in previous situations. So yeah. Seems like that potential I was talking about is real. There's A LOT of possibilities to get fast, only if meaning is sustaining the effort though.
 - ###### 14:43

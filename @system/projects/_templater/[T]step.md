@@ -10,7 +10,7 @@
 //
 // SINGLE SOURCE OF TRUTH (SSOT):
 // The step note content is NOT hardcoded here and PLANNING.md is NO LONGER parsed.
-// It is read from the phase's own `_step-template.md` file, which the phase creation
+// It is read from the phase's own `steps/_step-template.md` file, which the phase creation
 // script ([T]phase.md) copies from the internal template `=step-xx` with the phase
 // number already substituted. The LLM flow reads the very same file, so both
 // creation paths (manual Templater / LLM) can never drift apart.
@@ -21,7 +21,7 @@
 // 1. Prompts you to pick the Project and the Phase.
 //    (No auto-mode: this template always needs project/phase context. LLM-created
 //    steps bypass Templater entirely by design.)
-// 2. Reads the phase's `_step-template.md`. If it is missing (e.g. the phase was
+// 2. Reads the phase's `steps/_step-template.md`. If it is missing (e.g. the phase was
 //    created before this flow existed), it is recreated once from the internal
 //    template `=step-xx` so the phase stays self-contained going forward.
 // 3. Safety net: substitutes |PHASE_NUMBER| if the copy still contains it.
@@ -43,7 +43,7 @@ const CFG = {
     promptSelectPhase: "Select Phase:",
 
     // --- SSOT step template -------------------------------------------------------
-    stepTemplateFileName: "_step-template",  // per-phase copy created by [T]phase.md
+    stepTemplateFileName: "_step-template",  // per-phase copy in steps/, created by [T]phase.md
     stepTemplateSourceName: "=step-xx",      // internal template used as fallback source
     phasePlaceholder: "|PHASE_NUMBER|",      // substituted with the selected phase number if still present
 
@@ -59,10 +59,22 @@ const CFG = {
     titleEditDelayMs: 200,
 };
 
-// Internal templates live in a subfolder next to the project templates; tp.file.find_tfile
-// depends on Templater's configured folders, so fall back to a vault-wide name lookup.
+// --- Template resolution -----------------------------------------------------
+// Project templates live together in one folder (templatesRoot). When this
+// template runs via the [T]project master, the root arrives through the shared
+// window flag; a standalone run self-locates from this template's own folder.
+// tp.file.find_tfile is deliberately NOT used — it depends on Templater's
+// configured folders and silently misresolves after folder reorganizations.
+const templatesRoot =
+    window.__projectTemplatesRoot ??
+    tp.config.template_file?.parent?.path ??
+    "";
+
+// Internal templates live in a subfolder next to the project templates.
 const findInternalTemplate = (name) =>
-    tp.file.find_tfile(name) ??
+    (templatesRoot
+        ? app.vault.getAbstractFileByPath(`${templatesRoot}/internal-templates/${name}.md`)
+        : null) ??
     app.vault.getMarkdownFiles().find(f => f.name === `${name}.md`) ??
     null;
 
@@ -113,9 +125,9 @@ const selectedPhase = await tp.system.suggester(
 if (!selectedPhase) return;
 
 // ================================================================
-// 3. Read the phase's _step-template.md — SSOT for step content
+// 3. Read the phase's steps/_step-template.md — SSOT for step content
 // ================================================================
-const stepTemplatePath = `${selectedPhase.path}/${CFG.stepTemplateFileName}.md`;
+const stepTemplatePath = `${selectedPhase.path}/${CFG.stepsDirName}/${CFG.stepTemplateFileName}.md`;
 let stepTemplateFile = app.vault.getAbstractFileByPath(stepTemplatePath);
 
 if (!stepTemplateFile) {
@@ -128,6 +140,10 @@ if (!stepTemplateFile) {
     }
     let sourceContent = await app.vault.read(stepTemplateSource);
     sourceContent = sourceContent.split(CFG.phasePlaceholder).join(selectedPhase.name);
+    const stepsFolderPath = `${selectedPhase.path}/${CFG.stepsDirName}`;
+    if (!app.vault.getAbstractFileByPath(stepsFolderPath)) {
+        await app.vault.createFolder(stepsFolderPath);
+    }
     await app.vault.create(stepTemplatePath, sourceContent);
     stepTemplateFile = app.vault.getAbstractFileByPath(stepTemplatePath);
     if (!stepTemplateFile) {
