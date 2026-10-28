@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "October 29th Thu",
+      "path": "@journal/01 Daily/2026/10-October/October 29th Thu.md"
+    },
+    {
+      "basename": "October 28th, 2026",
+      "path": "@journal/2026/October/October 28th, 2026.md"
+    },
+    {
+      "basename": "[T]daily-journaling",
+      "path": "_static/templater/[T]daily-journaling.md"
+    },
+    {
       "basename": "refining-reflection",
       "path": "@system/projects/_flows/refining-reflection.md"
     },
     {
       "basename": "On Refining Reflection",
       "path": "@system/projects/_flows/_reflections/On Refining Reflection.md"
-    },
-    {
-      "basename": "October 28th, 2026",
-      "path": "@journal/2026/October/October 28th, 2026.md"
     },
     {
       "basename": "better-schedule-plan",
@@ -63,10 +71,6 @@
     {
       "basename": "Issues",
       "path": "@system/projects/iteration-01/Issues.md"
-    },
-    {
-      "basename": "[T]daily-journaling",
-      "path": "_static/templater/[T]daily-journaling.md"
     },
     {
       "basename": "AGENTS",
@@ -191,10 +195,6 @@
     {
       "basename": "oct10-what-to-do-next",
       "path": "@system/_reflections/oct10-what-to-do-next.md"
-    },
-    {
-      "basename": "oct19-structure-of-vault-website",
-      "path": "@system/_reflections/oct19-structure-of-vault-website.md"
     }
   ],
   "omittedPaths": [],
