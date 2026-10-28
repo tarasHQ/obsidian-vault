@@ -1,31 +1,27 @@
-
-# Flow of this doc
-- Instead of planning one thing, solving, implementing, planning, solving, implementing etc. - you plan all. Solve all. And then implement all. Maybe that's better? Execution-wise? 
-
-# What's good
-- having SSOT on shared decisions/invariants/nuances/etc.
-	- like with the notion that we now have remark42-old folder, I don't have to mention it in each step. SSOT for everything. Good. 
-- Condensation logic - definitely good. 
-- **Routine** - routine is super good. When you manage to have it - it reduces complexity and feeling overwhelmed by A LOT.
+# Todo
+- Use other dataview script that can be parsed by website. For docs. 
+- Meta plan reflection block at the bottom to have a ssot for the feedback on the current iteration.
 
 # Issues
 ## High Level
-- ### Idea #99 Critique Block
+- ### Idea #99 Critique Flow
 	- #### Discussion
-		- From old kilo flow. It's just useful to have that flow where LLM is targeted to not solve the issue, but find issues in "the answer". Like you do initial draft. Then go through it with 
+		- From old kilo flow. It's just useful to have that flow where LLM is targeted to not solve the issue, but find issues in "the answer". Like you do initial draft. Then make it defend itself. And repeat until it starts to make sense. 
 	- #### Solution
-		- Extract old one from vscode, it should be in those sidebar markdown notes. 
-		- **Separate file too**, as it is with a few other "flows". It should be called from the flow or manually. (flow preferably)
+		- Extract old one from vscode, it should be in those sidebar markdown notes. It's good baseline.
+		- **Separate file for workflow too**, as it is with a few other "flows". It should be called from the flow or manually. (flow preferably)
+		- **Separate file for discussion?** So you can check all those issues in different tasks/branches.
 - ### Issue #8 LLM's High Level Block
 	- #### Discussion
 		- The issue is that there's no hygiene or rules for llm's part in the plan. If it's uncontrolled - it just dumps walls of text. I don't know where it should belong though. Because if that wall of text used in multiple steps - it could make sense. 
 		- Ok, it needs refined high level block for sure, and maybe some workflow stuff.
 		- ##### Blocks
 			- **Plan description** - There's one by user that's created at the very beginning. This one by LLM when lots of stuff were planned and refined.
-			- **Persistent Steps Storage** - place for LLM to store information that is applicable to all/most steps. But with clarification, that it's not like "we implemented X, now next step should do Y". It's about nuances/invariants/facts. In a concise manner too.
+			- **Persistent Steps Storage** - place for LLM to store information that is applicable to all/most steps. But with clarification, that it's not like "we implemented X, now next step should do Y". It's about nuances/invariants/facts. In a concise manner too. 
+				- Doesn't make sense to have separate file. It's by its nature should be always in context. 
 			-  
 	- #### Solution
-		- 
+		- ==🟡TODO TOMORROW==
 - ### Issue #7 Intra-step Deviation Tasks
 	- #### Discussion
 		- The issue was too much issues. Like I explored stuff until 100k context, and then everything went apart. So what I had to do, is to use branches and slowly, step by step, explore all possibilities. And work on each one. Step by step.

@@ -75,6 +75,7 @@ action:
         - [ ] Create journal for the next day
         - [ ] Move uncompleted tasks
         - [ ] Make sure all day's reflections are linked under reflections
+        - [ ] Scroll to Time Log section. 
         - [ ] monitor OFF (seems like keeping on makes him die faster)
 
 ---
@@ -90,7 +91,7 @@ action:
 > 
 >Time Spent in Bed - **TODO**
 > 
->Approx. Dreams Compensation - **TODO**
+>Approx. Compensation of Dreams - **TODO**
 
 ---
 

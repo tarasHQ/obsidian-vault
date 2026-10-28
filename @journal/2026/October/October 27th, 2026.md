@@ -15,36 +15,11 @@ actions:
 
 ---
 
-```meta-bind-button {fold}
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-    - ###### AFTER NEW RECORDING
-        - [ ] Check audio delay to webcam
-        - [ ] Night scene
-        - [ ] Check IP cam (quality, delay)
-            - [ ] Move to "night position"
-        - [ ] Check TickTick schedule (correct day, scheduled)
-        - [ ] Set time of next sleep for stager timer.
-    - ###### BEFORE SLEEP
-        - [ ] Write overview of the current day
-        - [ ] Create journal for the next day
-            - Add there to test before/after -2 or -3 CQP on video. OR 20fps (only +33%)
-        - [ ] Move uncompleted tasks
-        - [ ] Make sure all day's reflections are linked under reflections
-        - [ ] monitor OFF (seems like keeping on makes him die faster)
-
----
-
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
+That idea with timeframes proved to be very useful again. The future is too overwhelming for me, so I just keep my head down and see where to take my next step. That's it. 
 
+Day is, I would say, good. Lots of friction, but at least there's meaning and work. It can sustain me for the nearest future until I make all of this truly public. So yeah - going to sleep pleased. 
 
 ---
 
@@ -57,34 +32,6 @@ action:
 
 ---
 
-## TASKS
-%%Cognitive offload for the day, to not keep these in my mind for the whole time%%
-- ### TODO
-	- [ ] **META** Figure out where to accumulate such secondary tasks and where you can prioritize them, because flat list is stupid and limiting. 
-	- [ ] Ideally to go away from the minimal theme. It does add a lot of things that I don't use, and basically a deadweight. Like it's better to have 30 styles in CSS than like 2 plugins with 100 settings + a theme . 
-	- [ ] [kinda priority] flow to compress png into webp from screenshot, so it won't harm neither website nor size of the vault. But also figure out if deskflow can do it, because right now it's half-supported. (or don't do it through deskflow)
-		- priority because it adds another dimension to thinking + cognitive offload. 
-	- [ ] dataview -> move to that default rendering pipeline, current one doesn't have flashes BUT it's blocking rendering of the note, which is not good either. (worse)
-	- [ ] folder icons - rename to where they used and resize other icons (260kb per icon is stupid)
-	- [ ] FIX - templated creation of next journal entry. 23:53 - "This day already exists"
-	- [ ] Templates for reflections - maybe shouldn't use project backlinks for now, until I figure out if there's gonna be "main index"
-	- [ ] AHK - run separate user of vscode as admin to be able to edit the script? 
-	- [ ] Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
-	- [ ] You need simple back/forward(automatic visibility if exists) navigation between journal entries. (or use calendar plugin for the time being)
-	- [ ] You need a to select a block of text, press hotkey and save it as a reflection with link that replace selected text. (also it should have same frontmatter as current flow)
-		- [ ] On top of it, current flow of templated reflections probably should force copy link into clipboard as well. These shouldn't be in the journaling, because they give constraints on the size. 
-			- or maybe you just use initial `_reflections` flow instead of limiting yourself within the journal entry? 
-	- [ ] 🔴[[plans/better-schedule-plan|better-schedule-plan]]
-		- Tick tick becomes PIA. Limited too. Maybe there's something else? Maybe there's self-hosted things? 
-	- [ ] Rewrite remark42 plugin. Properly. With the new workflow. 
-- ### Priority
-	- [ ] 
-- ### Completed
-	- [ ] copy_from_here
-	- [ ] 
-
----
-
 ## REFLECTIONS
 %%Thinking through writing is much better - there must be low-friction place to do so%%
 - 
@@ -92,11 +39,6 @@ action:
 ---
 
 ## TIME LOG
-==🟡SCOPE. TODAY. NOW. NOTHING ELSE MATTERS==
-==🟡SCOPE. TODAY. NOW. NOTHING ELSE MATTERS==
-==🟡SCOPE. TODAY. NOW. NOTHING ELSE MATTERS==
-==🟡SCOPE. TODAY. NOW. NOTHING ELSE MATTERS==
-It works. It truly does. 
 
 ```meta-bind-button {fold}
 label: New Log Entry
