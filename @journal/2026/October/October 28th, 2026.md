@@ -88,7 +88,7 @@ action:
 
 ## REFLECTIONS
 %%Thinking through writing is much better - there must be low-friction place to do so%%
-- 
+- [[../../../@system/_reflections/On Workflows|On Workflows]]
 
 ---
 
@@ -108,6 +108,13 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 21:07
+	- Can I have bottom window more minimal though? 
+	- 3 hours excluding food. If I put my mind to it - there's a chance I might be done with this. 
+- ###### 21:03
+	- Now I'm done. It was a very productive thing. Thank God I decided to not go eat/relax. 
+- ###### 20:52
+	- Man time flies... It's insane...
 - ###### 20:18
 	- Ok, like two hours almost. But it was worth it
 	- ==🟡Crucial thing about these reflection. I hope I won't forget - ACT ON THEM AFTER. Your brain is filled to the top with related context - use it, don't go eating or relaxing. Structurize that context while it's there.==
