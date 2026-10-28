@@ -1,6 +1,10 @@
 # Todo
-- Use other dataview script that can be parsed by website. For docs. 
-- Meta plan reflection block at the bottom to have a ssot for the feedback on the current iteration.
+- [ ] Use other dataview script that can be parsed by website. For docs. (in plan/project)
+- [ ] Meta plan reflection block at the bottom to have a ssot for the feedback on the current iteration.
+- [ ] Update phase creation script, to not parse step template, but to create a separate file `_step-template.md`
+	- [ ] Link that path of `/steps/_step-template.md` either inside each step or in plan under `## Steps` section
+
+- [ ] Should I rename the file? PLANNING.md reads a bit stupid. Interaction with llms? or like LLM.md? 
 
 # README practice
 ### Discussion
@@ -36,6 +40,7 @@
 			- Amount of questions... probably 20-30 for sure. To expect 1-2 sentences answers. 
 	- #### Solution
 		- Discussion highlights. 
+		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
 - ### Idea #99 Critique Flow
 	- #### Discussion
 		- From old kilo flow. It's just useful to have that flow where LLM is targeted to not solve the issue, but find issues in "the answer". Like you do initial draft. Then make it defend itself. And repeat until it starts to make sense. 
@@ -44,6 +49,7 @@
 		- **Separate file for workflow too**, as it is with a few other "flows". It should be called from the flow or manually. (flow preferably)
 		- **Separate file for discussion?** So you can check all those issues in different tasks/branches.
 			- With templated categories too? Like security/performance/modularity/non-duplication/best-practices/long-term-ready - so it's not asking llm about just give me list of something, but it's structured blocks of what interests me to make things better in the plan/steps/etc.
+		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
 - ### Issue #8 LLM's High Level Block
 	- #### Discussion
 		- The issue is that there's no hygiene or rules for llm's part in the plan. If it's uncontrolled - it just dumps walls of text. I don't know where it should belong though. Because if that wall of text used in multiple steps - it could make sense. 
@@ -74,7 +80,8 @@
 			- **Steps** - since it's not covered by the script anymore. 
 				- table + list. 
 	- #### Solution
-		- ==🟡TODO TOMORROW==
+		- Read discussion. 
+		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
 - ### Issue #7 Intra-step Deviation Tasks
 	- #### Discussion
 		- The issue was too much issues. Like I explored stuff until 100k context, and then everything went apart. So what I had to do, is to use branches and slowly, step by step, explore all possibilities. And work on each one. Step by step.
@@ -97,6 +104,7 @@
 		- **AHK templates** for now. You need one for context handoff. When the project's window is active and you press like alt + c - ahk pastes the text like:
 			- *"I want to revert conversation... write me context handoff in ```markdown block``` but limit scope to our recent this to USER_INPUT."
 			- So this kind of exploration is low friction.
+		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
 
 - ### Issue #6 User's High-Level Block
 	- #### Discussion
@@ -119,6 +127,7 @@
 			- **User Scope** - if there's risk of drift - that's the place to define scope of the phase, like if you're doing wiring + layout of ui - don't drift into styling. 
 			- **Links To Related Files** - stylings/designs/layouts/etc. to keep main plan clean
 			- **User Decisions** - if there's any controversial or nuanced decisions, that's the place for them.
+		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
 - ### Issue #5 PLANNING.md Enforcement
 	- #### Discussion
 		- **planning.md**
@@ -131,6 +140,7 @@
 	- #### Solution
 		- **AGENTS.md** - planning md section as 00 or 01. Accent that this flow is of the utmost importance
 		- **00-end template checkbox** to reflect where routine was kept, and where it was broken/interrupted, so it brings the dictionary of routine-seeking behaviour. 
+		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
 - ### Issue #4 Initial Planning + Steps
 	- #### Discussion
 		- another big one. plan initial steps through artifacts. or in conversation. But not all at once. but one by one. 
@@ -165,6 +175,7 @@
 		4. **This Flow is inserted into `00-start.md`**
 			- (note in planning.md template - to never read 00-start.md unless specified by the user)
 			- re-read discussion.
+		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
 ## Low Level
 - ### Steps
 	- ### Idea #4 Meta-workflows
@@ -191,6 +202,7 @@
 			5. Headers
 				1. Links - to files/folders (with `created/modified/deleted/context` statuses)
 				2. Tips - if plan was missing some nuance or something. (but could be dangerous and may explode, but try and see. )
+		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
 	- ### Issue #3 Additional Step Statuses
 		- #### Discussion
 			- I need additional status for canceled/discarded steps (like for tests, when I decided to not do it, or for 08, when I decided to do it in another phase)
@@ -202,14 +214,17 @@
 		- #### Solution
 			- `skipped` - if the step turned out to be not worth to be implemented.
 			- `postponed` - if it's better to implement the step later.
-- ### Tasks
-	- ### Issue #2 Completion Flow As a Task
+			- should vs shouldn't be in the planning? 
+		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
+- ## Tasks [DONE]
+	- ### [DONE] Issue #2 Completion Flow As a Task
 		- #### Discussion
 			- completion flow doesn't go as separate block. it's just another task at the end like `### 99 - completion flow`, so LLM won't repeat it.
 			- yeah, because llm was a bit confused about it. it was task in one case, in another case it wasn't. So yeah. Much easier to to make it a task and that's it
 		- #### Solution
 			- **Completion becomes a templated task at the end of the step**
-- ### Artifacts
+		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
+- ## Artifacts [DONE]
 	- #### ~~Issue #1 - Write exploration into .md~~
 		- maybe it makes more sense for llm to write its output into .md files? Like I'm repeating the same thing right now. First task was exploring 10 minutes about how quartz proposes to write plugins, and now, in a new task, I'm wasting another 5-10 minutes on the same damn issue. 
 			- ### Let's think
@@ -218,7 +233,7 @@
 				- So no, 
 
 ## Technical [DONE]
-- ### Issue #3 - Frontmatter of the `_plan_xxx.md` and steps
+- ### [DONE] Issue #3 - Frontmatter of the `_plan_xxx.md` and steps
 	- #### Discussion
 		- same as with steps - `status` and `state`? 
 			- Here's question. Do I need it? Because with steps it's a bit obvious (not anymore though, because I'm not parsing it automatically). But with plan? If it's not parsed anywhere - then do I need it? 
@@ -229,8 +244,9 @@
 	- #### Solution
 		- **NO, you don't need frontmatter** - it's extremely frictionless to handle all of that manually but, you get a massive benefit of LLMs having overview of the project. So they don't have to like figure out from pieces what is going on.
 			- So it's not a loss. It's a win.
+		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
 	- 
-- ### Issue #2 - Poor Styling of HTML Dataview Block 
+- ### [DONE] Issue #2 - Poor Styling of HTML Dataview Block 
 	- #### Discussion
 		-  use icons for showing state of the step (full/high-level/condensed)
 			- ○ ◎ ◉ or 🟢🔵🟡
@@ -258,19 +274,12 @@
 		-  tied to workflow.  The goal of proper workflow is to edit one file with text you're expect to be edited in a specific manner.
 		- You get overwhelmed because it edit a lot of stuff with a lot of text at once. Which means creation of highly interactive harness around the planning.md
 
-
-
-
-
-
-
-
 ---
 ## Reflections
 - ### Should I use template of the step inside planning?
 	- Like I can pre-create 10-20 step files with phase template. And then LLM would know how to use them. 
 	- OR I can have template within steps folder as `_step-template.md` That way planning gets reduced to being a general rules/structure/workflow + hub that centralizes other modular workflows.
-	- Do I need completion flow in each step? Like it might be better to have a simple 
+	- Do I need completion flow in each step? Like it might be better to have it separate. Because LLM usually needs to work through all the flows, and only then it's interested in the step template WHEN it creates steps. 
 - ### re-exploration
 	- so, the first question is about where this should be stored? Per step feels too overlapping. 
 		- Maybe it's worth to have per-plan? Like somewhere in LLM section. **+ a rule on step completion to make sure that all links are up to date in the plan?** since we're updating the plan ANYWAY, by the way, so that thing of dropping dataview even a bigger win, because I can be much more proactive with the plan. 

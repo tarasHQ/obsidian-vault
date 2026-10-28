@@ -191,5 +191,5 @@ The flow to finalize the phase — meta-reflection on what worked, long-term kno
 ---
 
 ## Meta-Plan Reflection
-(llms should ignore this. it's for future phases/templates.)
+%%LLMs should ignore this. it's for future phases/templates.%%
 ### Issues
