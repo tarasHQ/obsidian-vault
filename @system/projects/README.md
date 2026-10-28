@@ -1,3 +1,9 @@
+## Templates
+- Should be inside the SSOT shared folder linked by absolute paths. Same as `LLM.md`.
+	- So `LLM.md` becomes a hub that will contain links to those files.
+- 
+
+
 ## Plugins
 - ### Dataview
 	- `require()`, `path`, `app.vault.adapter.getBasePath()` - have issues on iOS. So avoid those in scripts.
