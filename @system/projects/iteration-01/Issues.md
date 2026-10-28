@@ -246,8 +246,9 @@
 			- include two as 00-start and 99-end steps, so you wouldn't even have to explain to LLM how those templates should look like. (but you kinda do, since you need comments)
 		- **icons** - yes, but don't add more colors. ○ - high-level, ◎ - full, ◉ - condensed. 
 		- **list/table** - yes. on the screenshot in reflections
-			- Do you need table? It's not readable in vscode. Like you might as well use list. Or maybe drop it completely? 
+			- Do you need table? It's not readable in vscode. Like you might as well use list. Or maybe drop it completely? Yeah. F it. Not worth it seems like.
 		- **scrollable container** - no. BUT you can use outline, since each step won't be as bullet point, so it'll get recognized.
+		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
 - ### [DONE] Issue #1 - PIA Navigation
 	- #### Discussion
 		- Navigation is kinds PIA. I have to switch between vscode and obsidian. 
