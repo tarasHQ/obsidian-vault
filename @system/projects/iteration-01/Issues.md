@@ -267,6 +267,10 @@
 
 ---
 ## Reflections
+- ### Should I use template of the step inside planning?
+	- Like I can pre-create 10-20 step files with phase template. And then LLM would know how to use them. 
+	- OR I can have template within steps folder as `_step-template.md` That way planning gets reduced to being a general rules/structure/workflow + hub that centralizes other modular workflows.
+	- Do I need completion flow in each step? Like it might be better to have a simple 
 - ### re-exploration
 	- so, the first question is about where this should be stored? Per step feels too overlapping. 
 		- Maybe it's worth to have per-plan? Like somewhere in LLM section. **+ a rule on step completion to make sure that all links are up to date in the plan?** since we're updating the plan ANYWAY, by the way, so that thing of dropping dataview even a bigger win, because I can be much more proactive with the plan. 

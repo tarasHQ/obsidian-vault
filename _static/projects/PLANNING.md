@@ -98,7 +98,7 @@ SSOT of plans, reflections, idea capturing, phases and implementation flows of a
 		- Decisions. Figure out what needs to be extracted. 
 - #### Templates
 	- `|TEXT|` is used to mark what should be filled by the LLM
-	- `//` - Comments a line. Helps with understanding the template. Should NOT be included in a produced step
+	- Template shouldn't be partially used/copied. It should be byte-identical, besides sections where LLM
 
 
 ### File Step Template
@@ -107,37 +107,42 @@ SSOT of plans, reflections, idea capturing, phases and implementation flows of a
 ---
 status: waiting
 state: placeholder
-reviewedAtStep: ""
+reviewedAtStep: "|CURRENT_STEP_NUMBER_OR_00_IF_NO_STEPS to|"
 ---
 
 [← PLAN](../_plan_|PHASE_NUMBER|.md)
 
 ## Description
-...
+|FILLED_BY_LLM|
+
+## USER INPUT
+%%written by user in case of additional feedback%%
 
 ## High-Level
 
 ### Intended outcome
-...
+|FILLED_BY_LLM|
 
 ### Local invariants // if any
-...
+|FILLED_BY_LLM|
 
 ### Should NOT be done in this step
-...
+|FILLED_BY_LLM|
 
 ## Discussion & Reflections
-...
+|FILLED_BY_LLM|
+
+--
+%%SECTION BELOW IS WRITTEN IN A SECOND PASS AFTER SECTION ABOVE IS LOCKED-IN%%
 
 
-// SECTION BELOW IS WRITTEN IN A SECOND PASS AFTER SECTION ABOVE IS LOCKED-IN
+## Implementation
+%%Contains list of tasks. Template for tasks is in completion flow%%
 
-// IF STEP IS WRITTEN CLOSE TO CURRENT IMPLEMENTATION STEP <3-5 STEPS (OR IF IMPLEMENTATION HASN'T STARTED)
-## Implementation (template for )
-
+---
 
 ## Completion Flow
-%%Should be%%
+%%Should be copied 1:1 into a new step%%
 
 ### XX - Finalizing the Current Note
 - [ ] Setting up corresponding status  
