@@ -1,33 +1,8 @@
-<%*
-// === Dynamic path based on today's date ===
-const year = tp.date.now("YYYY");
-const month = tp.date.now("MMMM");
-const fileName = tp.date.now("MMMM Do, YYYY"); // October 16th, 2026
 
-const targetFolder = `@journal/${year}/${month}`;
-const fullPath = `${targetFolder}/${fileName}`;
+%%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
-// Create the year/month folders if they don't exist
-if (!app.vault.getAbstractFileByPath(targetFolder)) {
-await app.vault.createFolder(targetFolder);
-}
+```journal-nav {fold}
 
-// Rename + move the new note
-await tp.file.move(fullPath);
--%>
-
-%%[[[T]daily-journaling|Daily Journal Template]]%%
-
-```meta-bind-button {fold}
-style: primary
-label: New Journal Entry
-icon: notebook-pen
-cssStyle: "background-color: #363124; font-size: 0.8rem;color: var(--text-normal);"
-actions:
-  - type: templaterCreateNote
-    templateFile: "_static/templater/[T]daily-journaling.md"
-    openNote: true
-    openIfAlreadyExists: true
 ```
 
 ---

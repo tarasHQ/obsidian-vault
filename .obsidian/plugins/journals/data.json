@@ -82,11 +82,11 @@
         "allowBefore": false,
         "sources": []
       },
-      "nameTemplate": "{{date}}",
-      "folder": "",
-      "templates": [],
-      "prompts": [],
-      "notelets": {},
+      "nameTemplate": "{{date:MMMM}} {{date:Do}} {{date:ddd}}",
+      "folder": "@journal/01 Daily/{{date:YYYY}}/{{date:MM}}-{{date:MMMM}}",
+      "templates": [
+        "_static/templater/[T]daily-journaling.md"
+      ],
       "confirmCreation": false,
       "autoCreate": false,
       "decorations": [
@@ -112,10 +112,10 @@
           ]
         }
       ],
+      "prompts": [],
+      "notelets": {},
       "navBlock": {
         "type": "create",
-        "showAdjacent": "all",
-        "decorateWholeBlock": false,
         "lines": [
           [
             {
@@ -123,9 +123,6 @@
               "fontSize": 1,
               "bold": false,
               "italic": false,
-              "link": "none",
-              "journal": "",
-              "linkDate": "",
               "color": {
                 "type": "theme",
                 "name": "text-normal"
@@ -133,6 +130,9 @@
               "background": {
                 "type": "transparent"
               },
+              "link": "none",
+              "journal": "",
+              "linkDate": "",
               "addDecorations": false
             }
           ],
@@ -142,9 +142,6 @@
               "fontSize": 3,
               "bold": true,
               "italic": false,
-              "link": "self",
-              "journal": "",
-              "linkDate": "",
               "color": {
                 "type": "theme",
                 "name": "text-normal"
@@ -152,6 +149,9 @@
               "background": {
                 "type": "transparent"
               },
+              "link": "self",
+              "journal": "",
+              "linkDate": "",
               "addDecorations": true
             }
           ],
@@ -161,9 +161,6 @@
               "fontSize": 0.7,
               "bold": false,
               "italic": false,
-              "link": "none",
-              "journal": "",
-              "linkDate": "",
               "color": {
                 "type": "theme",
                 "name": "text-normal"
@@ -171,6 +168,9 @@
               "background": {
                 "type": "transparent"
               },
+              "link": "none",
+              "journal": "",
+              "linkDate": "",
               "addDecorations": false
             }
           ],
@@ -180,9 +180,6 @@
               "fontSize": 1,
               "bold": false,
               "italic": false,
-              "link": "week",
-              "journal": "",
-              "linkDate": "",
               "color": {
                 "type": "theme",
                 "name": "text-normal"
@@ -190,6 +187,9 @@
               "background": {
                 "type": "transparent"
               },
+              "link": "week",
+              "journal": "",
+              "linkDate": "",
               "addDecorations": false
             }
           ],
@@ -199,9 +199,6 @@
               "fontSize": 1,
               "bold": false,
               "italic": false,
-              "link": "month",
-              "journal": "",
-              "linkDate": "",
               "color": {
                 "type": "theme",
                 "name": "text-normal"
@@ -209,6 +206,9 @@
               "background": {
                 "type": "transparent"
               },
+              "link": "month",
+              "journal": "",
+              "linkDate": "",
               "addDecorations": false
             }
           ],
@@ -218,9 +218,6 @@
               "fontSize": 1,
               "bold": false,
               "italic": false,
-              "link": "year",
-              "journal": "",
-              "linkDate": "",
               "color": {
                 "type": "theme",
                 "name": "text-normal"
@@ -228,10 +225,15 @@
               "background": {
                 "type": "transparent"
               },
+              "link": "year",
+              "journal": "",
+              "linkDate": "",
               "addDecorations": false
             }
           ]
-        ]
+        ],
+        "decorateWholeBlock": false,
+        "showAdjacent": "all"
       },
       "intervalBlock": {
         "type": "create",
@@ -241,7 +243,15 @@
       }
     }
   },
-  "shelves": {},
+  "shelves": {
+    "Journals": {
+      "name": "Journals",
+      "journals": [
+        "Daily"
+      ],
+      "decorations": []
+    }
+  },
   "views": {
     "b9f3a1c2-0d4e-4f6a-8b1c-2d3e4f5a6b7c": {
       "id": "b9f3a1c2-0d4e-4f6a-8b1c-2d3e4f5a6b7c",

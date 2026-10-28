@@ -68,17 +68,17 @@ action:
 	- [ ] flow to compress png into webp from screenshot, so it won't harm neither website nor size of the vault. But also figure out if deskflow can do it, because right now it's half-supported. (or don't do it through deskflow)
 		- priority because it adds another dimension to thinking + cognitive offload. 
 	- [ ] folder icons - rename to where they used and resize other icons (260kb per icon is stupid)
-	- [ ] FIX - templated creation of next journal entry. 23:53 - "This day already exists"
-	- [ ] Templates for reflections - maybe shouldn't use project backlinks for now, until I figure out if there's gonna be "main index"
 	- [ ] AHK - run separate user of vscode as admin to be able to edit the script? 
 	- [ ] Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
-	- [ ] You need simple back/forward(automatic visibility if exists) navigation between journal entries. (or use calendar plugin for the time being)
-	- [ ] You need a to select a block of text, press hotkey and save it as a reflection with link that replace selected text. (also it should have same frontmatter as current flow)
-		- [ ] On top of it, current flow of templated reflections probably should force copy link into clipboard as well. These shouldn't be in the journaling, because they give constraints on the size. 
-			- or maybe you just use initial `_reflections` flow instead of limiting yourself within the journal entry? 
 	- [ ] 🔴[[plans/better-schedule-plan|better-schedule-plan]]
 		- Tick tick becomes PIA. Limited too. Maybe there's something else? Maybe there's self-hosted things? 
 - ### Completed
+	- [x] FIX - templated creation of next journal entry. 23:53 - "This day already exists"
+	- [x] Templates for reflections - maybe shouldn't use project backlinks for now, until I figure out if there's gonna be "main index"
+	- [x] You need simple back/forward(automatic visibility if exists) navigation between journal entries. (or use calendar plugin for the time being)
+	- [x] You need a to select a block of text, press hotkey and save it as a reflection with link that replace selected text. (also it should have same frontmatter as current flow)
+		- [x] On top of it, current flow of templated reflections probably should force copy link into clipboard as well. These shouldn't be in the journaling, because they give constraints on the size. 
+			- ~~or maybe you just use initial `_reflections` flow instead of limiting yourself within the journal entry? 
 	- [x] Rewrite remark42 plugin. Properly. With the new workflow. 
 	- [x] dataview -> move to that default rendering pipeline, current one doesn't have flashes BUT it's blocking rendering of the note, which is not good either. (worse)
 
