@@ -1,6 +1,30 @@
 {
   "recentFiles": [
     {
+      "basename": "refining-reflection",
+      "path": "@system/projects/_flows/refining-reflection.md"
+    },
+    {
+      "basename": "examination",
+      "path": "@system/projects/_flows/examination.md"
+    },
+    {
+      "basename": "code-review",
+      "path": "@system/projects/_flows/code-review.md"
+    },
+    {
+      "basename": "initial-planning",
+      "path": "@system/projects/_flows/initial-planning.md"
+    },
+    {
+      "basename": "_rules.md",
+      "path": "@system/projects/_flows/_rules.md.md"
+    },
+    {
+      "basename": "=step-xx",
+      "path": "@system/projects/_templater/internal-templates/=step-xx.md"
+    },
+    {
       "basename": "On Workflows",
       "path": "@system/_reflections/On Workflows.md"
     },
@@ -11,14 +35,6 @@
     {
       "basename": "Issues",
       "path": "@system/projects/iteration-01/Issues.md"
-    },
-    {
-      "basename": "initial-planning",
-      "path": "@system/projects/_flows/initial-planning.md"
-    },
-    {
-      "basename": "=step-xx",
-      "path": "@system/projects/_templater/internal-templates/=step-xx.md"
     },
     {
       "basename": "LLM",
