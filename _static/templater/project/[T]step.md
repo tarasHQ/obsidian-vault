@@ -9,32 +9,22 @@
 // Creates a new execution step note inside a phase's "steps/" folder.
 //
 // SINGLE SOURCE OF TRUTH (SSOT):
-// The step note content is NOT hardcoded here. It is extracted at runtime from
-// PLANNING.md (project root) between two %%TEMPLATE-MARKER-FOR-EXTRACTION-START%%
-// markers (the same marker string is used as the opening AND closing boundary).
-// The LLM flow reads the very same template from PLANNING.md directly, so both
+// The step note content is NOT hardcoded here and PLANNING.md is NO LONGER parsed.
+// It is read from the phase's own `_step-template.md` file, which the phase creation
+// script ([T]phase.md) copies from the internal template `=step-xx` with the phase
+// number already substituted. The LLM flow reads the very same file, so both
 // creation paths (manual Templater / LLM) can never drift apart.
-//
-// EXTRACTION PIPELINE (applied to the marker-delimited block):
-// 1. Slice text between the 1st and 2nd occurrence of the extraction marker.
-// 2. Strip the outer markdown code fence (```markdown ... ```), if present.
-// 3. Shed template-only comments:
-//      - a line whose trimmed content starts with "//" → the whole line is dropped
-//      - an inline " //" (space-delimited) → the line is truncated from that point
-//    Blank lines left behind are NOT touched — the SSOT template must be kept clean.
-// 4. Replace |PHASE_NUMBER| with the selected phase number (e.g. 004) so the
-//    "[← PLAN](../_plan_|PHASE_NUMBER|.md)" backlink points at the real plan note.
-//    This placeholder name is also the contract for LLM-created steps.
-//    All other fill-in markers (|TEXT|, |TASK_NUMBER|, ...) stay untouched.
-// 5. Output the result VERBATIM, including the SSOT frontmatter (status/state/reviewedAtStep).
-//    This template adds nothing (no ctime, no isIntegrated) — SSOT is authoritative.
+// The template is copied VERBATIM, including its frontmatter (status/state/reviewedAtStep)
+// and all fill-in markers (|TEXT|, |TASK_NUMBER|, ...). This template adds nothing.
 //
 // HOW IT WORKS:
 // 1. Prompts you to pick the Project and the Phase.
-//    (No auto-mode: this template always needs project/phase context to locate
-//    PLANNING.md. LLM-created steps bypass Templater entirely by design.)
-// 2. Locates PLANNING.md (prefers the project root, falls back to vault-wide).
-// 3. Runs the extraction pipeline; aborts deterministically if markers are missing.
+//    (No auto-mode: this template always needs project/phase context. LLM-created
+//    steps bypass Templater entirely by design.)
+// 2. Reads the phase's `_step-template.md`. If it is missing (e.g. the phase was
+//    created before this flow existed), it is recreated once from the internal
+//    template `=step-xx` so the phase stays self-contained going forward.
+// 3. Safety net: substitutes |PHASE_NUMBER| if the copy still contains it.
 // 4. Ensures the "steps/" folder exists in that phase.
 // 5. Finds a safe unique name (untitled_step, untitled_step_2, etc.).
 // 6. Moves the file to phases/NNN/steps/ and triggers the inline title rename box.
@@ -52,11 +42,10 @@ const CFG = {
     phasesDirName: "phases",
     promptSelectPhase: "Select Phase:",
 
-    // --- SSOT extraction (PLANNING.md) ------------------------------------------
-    planningFileName: "PLANNING.md",
-    extractionMarker: "%%TEMPLATE-MARKER-FOR-EXTRACTION-START%%",
-    phasePlaceholder: "|PHASE_NUMBER|",   // replaced by the selected phase number
-    substitutePhasePlaceholder: true,     // set false to keep the placeholder verbatim
+    // --- SSOT step template -------------------------------------------------------
+    stepTemplateFileName: "_step-template",  // per-phase copy created by [T]phase.md
+    stepTemplateSourceName: "=step-xx",      // internal template used as fallback source
+    phasePlaceholder: "|PHASE_NUMBER|",      // substituted with the selected phase number if still present
 
     // --- Target folder ------------------------------------------------------------
     stepsDirName: "steps",
@@ -69,6 +58,13 @@ const CFG = {
     titleEditCommand: "workspace:edit-file-title",
     titleEditDelayMs: 200,
 };
+
+// Internal templates live in a subfolder next to the project templates; tp.file.find_tfile
+// depends on Templater's configured folders, so fall back to a vault-wide name lookup.
+const findInternalTemplate = (name) =>
+    tp.file.find_tfile(name) ??
+    app.vault.getMarkdownFiles().find(f => f.name === `${name}.md`) ??
+    null;
 
 // ================================================================
 // 1. Select Project (auto-select if only 1 project exists)
@@ -117,73 +113,36 @@ const selectedPhase = await tp.system.suggester(
 if (!selectedPhase) return;
 
 // ================================================================
-// 3. Locate PLANNING.md — prefer the project root, fall back vault-wide
+// 3. Read the phase's _step-template.md — SSOT for step content
 // ================================================================
-let planningFiles = app.vault.getMarkdownFiles()
-    .filter(f => f.name === CFG.planningFileName && f.parent && f.parent.path === projectRoot);
+const stepTemplatePath = `${selectedPhase.path}/${CFG.stepTemplateFileName}.md`;
+let stepTemplateFile = app.vault.getAbstractFileByPath(stepTemplatePath);
 
-if (planningFiles.length === 0) {
-    planningFiles = app.vault.getMarkdownFiles()
-        .filter(f => f.name === CFG.planningFileName);
-
-    if (planningFiles.length === 1) {
-        planningFiles = [planningFiles[0]];
-    } else if (planningFiles.length > 1) {
-        const picked = await tp.system.suggester(
-            planningFiles.map(f => f.parent ? f.parent.path : f.path),
-            planningFiles,
-            false,
-            `Multiple '${CFG.planningFileName}' found — select the one for this project:`
-        );
-        if (!picked) return;
-        planningFiles = [picked];
+if (!stepTemplateFile) {
+    // Phases created before this flow (or manually) lack the copy — recreate it once
+    // from the internal template so the phase stays self-contained going forward.
+    const stepTemplateSource = findInternalTemplate(CFG.stepTemplateSourceName);
+    if (!stepTemplateSource) {
+        new Notice(`'${CFG.stepTemplateFileName}.md' not found in '${selectedPhase.path}' and internal template '${CFG.stepTemplateSourceName}' not found! Aborted.`);
+        return;
+    }
+    let sourceContent = await app.vault.read(stepTemplateSource);
+    sourceContent = sourceContent.split(CFG.phasePlaceholder).join(selectedPhase.name);
+    await app.vault.create(stepTemplatePath, sourceContent);
+    stepTemplateFile = app.vault.getAbstractFileByPath(stepTemplatePath);
+    if (!stepTemplateFile) {
+        new Notice(`Could not create '${stepTemplatePath}'! Aborted.`);
+        return;
     }
 }
 
-if (planningFiles.length === 0) {
-    new Notice(`No '${CFG.planningFileName}' found in project root '${projectRoot}'!`);
-    return;
+const stepNote = await app.vault.read(stepTemplateFile);
+
+// Safety net: a copy may still carry the placeholder (e.g. created before the
+// substitution existed) — resolve it so the backlink always points at the real plan.
+if (stepNote.includes(CFG.phasePlaceholder)) {
+    stepNote = stepNote.split(CFG.phasePlaceholder).join(selectedPhase.name);
 }
-
-const planningContent = await app.vault.read(planningFiles[0]);
-
-// ================================================================
-// 4. Extraction pipeline — see header comment for step-by-step description
-// ================================================================
-const firstMarker = planningContent.indexOf(CFG.extractionMarker);
-if (firstMarker === -1) {
-    new Notice(`Extraction marker not found in ${CFG.planningFileName}! Aborted.`);
-    return;
-}
-const secondMarker = planningContent.indexOf(CFG.extractionMarker, firstMarker + CFG.extractionMarker.length);
-if (secondMarker === -1) {
-    new Notice(`Only ONE extraction marker found in ${CFG.planningFileName} — a closing marker is required! Aborted.`);
-    return;
-}
-
-let extracted = planningContent.slice(firstMarker + CFG.extractionMarker.length, secondMarker);
-
-// 4.2 Strip the outer markdown code fence, if present
-extracted = extracted
-    .replace(/^\s*```[a-zA-Z0-9]*[ \t]*\r?\n/, "")
-    .replace(/[ \t]*```\s*$/, "");
-
-// 4.3 Shed template-only comments ("//" rules described in the header comment)
-extracted = extracted.split(/\r?\n/)
-    .map(line => {
-        if (line.trim().startsWith("//")) return null; // whole-line comment → drop line
-        const inlineIdx = line.indexOf(" //");          // inline comment → truncate from " //"
-        return inlineIdx === -1 ? line : line.slice(0, inlineIdx).trimEnd();
-    })
-    .filter(line => line !== null)
-    .join("\n");
-
-// 4.4 Substitute the phase number placeholder (SSOT contract, also used by the LLM flow)
-if (CFG.substitutePhasePlaceholder) {
-    extracted = extracted.split(CFG.phasePlaceholder).join(selectedPhase.name);
-}
-
-const stepNote = extracted;
 
 // ================================================================
 // 5. Ensure target 'steps' folder exists

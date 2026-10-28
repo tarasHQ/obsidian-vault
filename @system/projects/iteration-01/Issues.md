@@ -1,10 +1,10 @@
 # Todo
 - [x] Use other dataview script that can be parsed by website. For docs. (in plan/project)
-- [ ] Meta plan reflection block at the bottom to have a ssot for the feedback on the current iteration.
-- [ ] Update phase creation script, to not parse step template, but to create a separate file `_step-template.md`
-	- [ ] Link that path of `/steps/_step-template.md` either inside each step or in plan under `## Steps` section
+	- [x] Meta plan reflection block at the bottom to have a ssot for the feedback on the current iteration. What if I do this for LLMs too? Through completion flow? 
+- [x] Update phase creation script, to not parse step template, but to create a separate file `_step-template.md`
+	- [x] Link that path of `/steps/_step-template.md` either inside each step or in plan under `## Steps` section
 
-- [ ] Should I rename the file? PLANNING.md reads a bit stupid. Interaction with llms? or like LLM.md? 
+- [x] Should I rename the file? PLANNING.md reads a bit stupid. Interaction with llms? or like LLM.md? Yeah... agents is for like kinda autonomous context. planning is stupid. `LLM.md` is kinda focused on using those as a tool instead of overhyped agents/AI words. So yeah. LLM.md
 
 
 # README practice
