@@ -1,10 +1,11 @@
 # Todo
-- [ ] Use other dataview script that can be parsed by website. For docs. (in plan/project)
+- [x] Use other dataview script that can be parsed by website. For docs. (in plan/project)
 - [ ] Meta plan reflection block at the bottom to have a ssot for the feedback on the current iteration.
 - [ ] Update phase creation script, to not parse step template, but to create a separate file `_step-template.md`
 	- [ ] Link that path of `/steps/_step-template.md` either inside each step or in plan under `## Steps` section
 
 - [ ] Should I rename the file? PLANNING.md reads a bit stupid. Interaction with llms? or like LLM.md? 
+
 
 # README practice
 ### Discussion
@@ -186,7 +187,7 @@
 		- For example, that idea with evaluating if the step is actually needed. Workflow makes LLM explore the step, when it has context - it makes this checkpoint. Then we diverge into discussing if this step is actually needed. Or other topics. We come back, I write "checkpoint passed" and we proceed in a clean branch? But like not through my actions - but through LLM's commands.
 	- ### Idea #1 Context Cleanup Checkpoints
 		- Workflow should have a place where LLM asks to stop and cleanup useless context. Before implementation, for example. Experimental a bit. But may be helpful.
-	- ### Issue #4 Re-Exploration Time
+	- ### [DONE] Issue #4 Re-Exploration Time
 		- #### Discussion
 			- takes lots of time to re-explore all stuff I did while I was writing initial step contents. So each step should have "comprehensive exploration" section where LLM leaves links/notes/tips about how to research everything on the topic quickly. without many loops of back and forth. 
 			- reflection.
@@ -203,7 +204,7 @@
 				1. Links - to files/folders (with `created/modified/deleted/context` statuses)
 				2. Tips - if plan was missing some nuance or something. (but could be dangerous and may explode, but try and see. )
 		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
-	- ### Issue #3 Additional Step Statuses
+	- ### [DONE] Issue #3 Additional Step Statuses
 		- #### Discussion
 			- I need additional status for canceled/discarded steps (like for tests, when I decided to not do it, or for 08, when I decided to do it in another phase)
 			- Do I need more? Also. Because it's not tracked anymore - do I need frontmatter? 
@@ -214,7 +215,7 @@
 		- #### Solution
 			- `skipped` - if the step turned out to be not worth to be implemented.
 			- `postponed` - if it's better to implement the step later.
-			- should vs shouldn't be in the planning? 
+			- description of this - should vs shouldn't be in the planning? 
 		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
 - ## Tasks [DONE]
 	- ### [DONE] Issue #2 Completion Flow As a Task

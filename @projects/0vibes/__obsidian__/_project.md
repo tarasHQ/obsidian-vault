@@ -13,12 +13,6 @@
 	This project is your child that will be very beneficial (if you have healthy relationship with it)
 - 
 
-
-```dataviewjs
-await cJS(c => c.RenderReflectionHelpers.renderColumns(dv, this.container));
-```
-
-
 ```dataview
 TABLE WITHOUT ID
   map(filter(rows.file, (f) => startswith(f.folder, this.file.folder + "/_reflections")), (f) => f.link) AS "Reflections",
@@ -30,29 +24,6 @@ SORT file.name ASC
 GROUP BY true
 ```
 
-```base
-filters:
-  and:
-    - file.inFolder(this.file.folder)
-    - file.folder != this.file.folder
-formulas:
-  category: if(file.folder.endsWith("_reflections"), "Reflections", if(file.folder.endsWith("ideas"), "Ideas", if(file.folder.endsWith("artifacts"), "Artifacts", "Other")))
-views:
-  - type: board
-    name: Project Columns
-    groupBy:
-      property: formula.category
-      direction: ASC
-    groupOrder:
-      - Reflections
-      - Ideas
-      - Artifacts
-    imageAspectRatio: 0.45
-    columnWidth: 270
-    markers: none
-    indentProperties: false
-
-```
 
 
 # ==RECONSIDER  CANVAS==
