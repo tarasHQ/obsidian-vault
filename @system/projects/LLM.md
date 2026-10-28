@@ -24,10 +24,9 @@
 	- `/_project.md` - Project's entry point. Overview of phases + reflections & ideas
 
 ## Flows
-%%Flows are modular and offloaded — read a flow only when entering its stage, keep it out of context otherwise.%%
+%%LLMs should always use absolute links to interact with files in this directory%%
 - ### [Initial Planning](./_flows/initial-planning.md)
 	- [Absolute link for LLMs](C:\Users\Taras\Documents\obsidian-vault\@system\projects\_flows\_initial-planning.md) 
-	- Stage 1 of a phase: user's raw intent → high-level plan + step division sketch. Read when starting the high-level planning of a phase.
 
 
 

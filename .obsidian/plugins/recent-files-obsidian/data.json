@@ -1,8 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "On Refining Reflection",
+      "path": "@system/projects/_flows/_reflections/On Refining Reflection.md"
+    },
+    {
+      "basename": "refining-reflection",
+      "path": "@system/projects/_flows/refining-reflection.md"
+    },
+    {
+      "basename": "_rules.md",
+      "path": "@system/projects/_flows/_rules.md.md"
+    },
+    {
+      "basename": "LLM",
+      "path": "@system/projects/LLM.md"
+    },
+    {
       "basename": "initial-planning",
       "path": "@system/projects/_flows/initial-planning.md"
+    },
+    {
+      "basename": "[T]reflections",
+      "path": "_static/templater/[T]reflections.md"
     },
     {
       "basename": "October 28th, 2026",
@@ -25,18 +45,6 @@
       "path": "@system/projects/_flows/examination.md"
     },
     {
-      "basename": "refining-reflection",
-      "path": "@system/projects/_flows/refining-reflection.md"
-    },
-    {
-      "basename": "_rules.md",
-      "path": "@system/projects/_flows/_rules.md.md"
-    },
-    {
-      "basename": "[T]reflections",
-      "path": "_static/templater/[T]reflections.md"
-    },
-    {
       "basename": "better-schedule-plan",
       "path": "@journal/2026/October/plans/better-schedule-plan.md"
     },
@@ -51,10 +59,6 @@
     {
       "basename": "Issues",
       "path": "@system/projects/iteration-01/Issues.md"
-    },
-    {
-      "basename": "LLM",
-      "path": "@system/projects/LLM.md"
     },
     {
       "basename": "[T]daily-journaling",
@@ -191,14 +195,6 @@
     {
       "basename": "oct19-structure-of-vault-website",
       "path": "@system/_reflections/oct19-structure-of-vault-website.md"
-    },
-    {
-      "basename": "October 23rd, 2026",
-      "path": "@journal/2026/October/October 23rd, 2026.md"
-    },
-    {
-      "basename": "October 24th, 2026",
-      "path": "@journal/2026/October/October 24th, 2026.md"
     }
   ],
   "omittedPaths": [],

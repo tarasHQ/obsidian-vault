@@ -110,6 +110,11 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 23:40
+	- What if I'm done towards the last few hours I should just focus on secondary tasks? Like I can't even start reflecting. Tired...
+- ###### 23:25
+	- Probably brain tries to protect me from further energy expenditure after that pretty exhaustive reflection session. Like it tries to do anything BUT those flows) 
+	- What if I need reflection again? Because like I need to know how exactly to structure flow itself. But I need universal reflections... 
 - ###### 23:01
 	- Well. PMO urges again. This time saying that it was a good day and I deserve a reward. The issue though... 2 hours left. If I give in - chances are, I just will be less likely to do anything productive. 
 	- It's just I'm kinda struggle to get back into the flow of working on flows) Ok
