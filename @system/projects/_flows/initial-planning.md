@@ -1,12 +1,16 @@
 # Initial Planning
-Description
-**Why it's needed? **
+From initial refined reflection(what I want to do) -> to properly explored, brainstormed high level plan (how to do it on high-level without focusing on code too much)
+**Why it's needed?**- description
 
 ## Stages
-- ### A - Exploration
+- ### A - Categorization
 	- Preparing to have all information needed at the checkpoint
-	  
-- ### B - Stop at the Checkpoint
+- ### B - Going WIDE
+	- 
+- ### C - Going NARROW
+	- 
+
+
 
 
 
@@ -38,19 +42,6 @@ Description
 			- Returns:
 				- a set of locked categorical decisions. 
 	- ##### Third Step - You go NARROW
-		- #1 new task - Category by category. What is needed to be locked in plan - the rest locked in steps. 
-			- ### Styling
-				- 1
-				- 2
-				- 3
-			- ### Coding client-side
-				- step 1 
-				- step 2
-				- step 3
-			- ### Deployment
-				- step 1
-				- step 2 
-				- step 3
-		- #2 
-	- ##### Forth Step - Delegating to Next Flows
-		- making sure nothing is forgotten. 
+		- #1 new task - Category by category. What is needed to be locked in plan. Do not touch steps. 
+			- Be mindful that the current documents will die when we worked on plan with this docs and then wrote steps based on this docs. 
+		- #2 - making sure nothing is forgotten and only step-scoped information is left to do.
