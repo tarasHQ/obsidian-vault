@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "refining-reflection",
+      "path": "@system/projects/_flows/refining-reflection.md"
+    },
+    {
       "basename": "On Refining Reflection",
       "path": "@system/projects/_flows/_reflections/On Refining Reflection.md"
     },
     {
-      "basename": "refining-reflection",
-      "path": "@system/projects/_flows/refining-reflection.md"
+      "basename": "October 28th, 2026",
+      "path": "@journal/2026/October/October 28th, 2026.md"
+    },
+    {
+      "basename": "better-schedule-plan",
+      "path": "@journal/2026/October/plans/better-schedule-plan.md"
+    },
+    {
+      "basename": "I just don't know",
+      "path": "Psychoanalysis/_reflections/I just don't know.md"
     },
     {
       "basename": "_rules.md",
@@ -25,10 +37,6 @@
       "path": "_static/templater/[T]reflections.md"
     },
     {
-      "basename": "October 28th, 2026",
-      "path": "@journal/2026/October/October 28th, 2026.md"
-    },
-    {
       "basename": "On Workflows",
       "path": "@system/_reflections/On Workflows.md"
     },
@@ -43,10 +51,6 @@
     {
       "basename": "examination",
       "path": "@system/projects/_flows/examination.md"
-    },
-    {
-      "basename": "better-schedule-plan",
-      "path": "@journal/2026/October/plans/better-schedule-plan.md"
     },
     {
       "basename": "on-discouragement-again",
@@ -151,10 +155,6 @@
     {
       "basename": "08-visual-polish",
       "path": "@projects/taras.life/__obsidian__/phases/001/steps/08-visual-polish.md"
-    },
-    {
-      "basename": "I just don't know",
-      "path": "Psychoanalysis/_reflections/I just don't know.md"
     },
     {
       "basename": "DEV_RULES",

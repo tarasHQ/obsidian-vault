@@ -26,3 +26,58 @@ isIntegrated: false
 ## Raw
 %%Free-form reflection with no rules%% 
 - 
+
+Yes — Meta Bind supports this cleanly with **button groups**.
+
+### How to put 3 buttons in a row
+
+1. Define each button as a normal `meta-bind-button` code block.
+2. Give every button a unique `id`.
+3. Set `hidden: true` on them (so they don’t appear as full-width blocks).
+4. Place them side-by-side with an inline button group:
+
+```markdown
+`BUTTON[remove-night, remove-morning, remove-evening]`
+```
+
+### Full working example
+
+
+`BUTTON[remove-night, remove-morning, remove-evening]`
+
+```meta-bind-button
+label: Remove Night Checklist
+style: default
+icon: trash-2
+id: remove-night
+hidden: true
+cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
+action:
+  type: js
+  file: _static/scripts/meta-bind/journal-remove-checklist.js
+```
+
+```meta-bind-button
+label: Remove Morning Checklist
+style: default
+icon: trash-2
+id: remove-morning
+hidden: true
+cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
+action:
+  type: js
+  file: _static/scripts/meta-bind/journal-remove-checklist.js
+  
+```
+
+```meta-bind-button
+label: Remove Evening Checklist
+style: default
+icon: trash-2
+id: remove-evening
+hidden: true
+cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
+action:
+  type: js
+  file: _static/scripts/meta-bind/journal-remove-checklist.js
+```
