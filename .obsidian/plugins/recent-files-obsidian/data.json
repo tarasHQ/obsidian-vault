@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "better-schedule-plan",
+      "path": "@journal/2026/October/plans/better-schedule-plan.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Untitled.md"
+    },
+    {
       "basename": "PLANNING",
       "path": "_static/projects/PLANNING.md"
     },
@@ -19,10 +27,6 @@
     {
       "basename": "_plan_001",
       "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
-    },
-    {
-      "basename": "better-schedule-plan",
-      "path": "@journal/2026/October/plans/better-schedule-plan.md"
     },
     {
       "basename": "on-discouragement-again",
