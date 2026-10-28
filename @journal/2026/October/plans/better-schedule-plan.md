@@ -14,3 +14,26 @@ To differentiate between either
 ==Productivity has layers here. It's not enough to work all day. ==, because there's like 300% more value to be collected on optimizing how I work. 
 
 And I feel like schedule should play a role here, but I'm not sure how that role should look like. 
+
+---
+
+## Other day
+- **You need single block from wake up to sleep. No empty blocks during sleeping**
+- **You need time blocks visualization. To see overview of the day**
+- **Text should be clear and visible -  I should be able to write more.** 
+- **This approach should be recordable in OBS (text size, layout, etc.)**
+	- If it'll be good - you can reduce size of ip cam and webcam has non-used space on the left. So it can be 20-40% wider than current ticktick.
+- **Ideally in sync with main PC, so I can track there, and only show/record on recording pc.**
+- **Some integration with quartz website (either quick export or native representation OR, if other things are good custom solution)**
+	- EVEN BETTER, website has empty space on the right, under outline. That's where this visual representation would be PERFECT. Like it would be better to review my days THERE than in obsidian.
+- **5 minute granularity**
+- **NOW time**
+	- line/mark/text/whatever.  - to clearly and AUTOMATICALLY see your position in the day
+
+### Candidates
+- Obsidian plugins like kairo(or whatever it's called). 
+- Excalidraw (fails on NOW time)
+	- That's experimental, but done properly - may be very good, because it gives you more freedom/axis to schedule
+	- and you can use single file for all. Like you schedule. When day is done -> export to png/svg/webp. And start from scratch (or scrap previous day.)
+
+### What are you need from the schedule? 
