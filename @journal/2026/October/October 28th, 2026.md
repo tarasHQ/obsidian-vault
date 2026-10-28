@@ -108,6 +108,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 10:46
+	- I start to feel contemptuous with these vibe coded stuff. That's an issue. It's toxic. 
 - ###### 10:29
 	- This tool though. Because folding doesn't get saved, now, when I work through the file and fold passed block of text to reduce cognitive complexity - they will get randomly unfolded. Not to mention that it'll happen on other devices by default. 
 		- That's an issue because it would be useful tool to use. Not anymore I guess. So I must figure out a way to do this so it won't bite me in the ass going forward. 
