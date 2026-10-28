@@ -277,6 +277,10 @@
 
 ---
 ## Reflections
+- ### How flows should look like? 
+	- I'll try to nap. I have problem loaded. Let's see if 15 minutes will help me, because I'm like lost.
+	- First of all - it's read only. It must be repeatable. 
+	- Then it must be identifiable. Not just flat list of points.
 - ### Should I use template of the step inside planning?
 	- Like I can pre-create 10-20 step files with phase template. And then LLM would know how to use them. 
 	- OR I can have template within steps folder as `_step-template.md` That way planning gets reduced to being a general rules/structure/workflow + hub that centralizes other modular workflows.

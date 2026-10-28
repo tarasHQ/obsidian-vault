@@ -108,6 +108,14 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 18:08
+	- Kinda yes and no. Thoughts got a bit side tracked. But got a few insights. So I'll call it a win.
+- ###### 17:55
+	- Will 15 minute nap help me to figure out the problem I'm oblivious about? I'm a bit low in mood. Tired. 6 hours of sleep. 
+- ###### 17:53
+	- it's hard. These flow turned out to be pretty requiring, cognitively. 
+- ###### 17:45
+	- Crashing down. Want to relax. Tasks overwhelmed executive capacity. Too much branches...
 - ###### 17:01
 	- Need to try this side split. I'm using this screen for the work too, but it would be great to have time log always on
 - ###### 16:59

@@ -1,10 +1,6 @@
 {
   "recentFiles": [
     {
-      "basename": "=step-xx",
-      "path": "@system/projects/_templater/internal-templates/=step-xx.md"
-    },
-    {
       "basename": "Issues",
       "path": "@system/projects/iteration-01/Issues.md"
     },
@@ -13,12 +9,20 @@
       "path": "@journal/2026/October/October 28th, 2026.md"
     },
     {
-      "basename": "[T]daily-journaling",
-      "path": "_static/templater/[T]daily-journaling.md"
+      "basename": "initial-planning",
+      "path": "@system/projects/_flows/initial-planning.md"
+    },
+    {
+      "basename": "=step-xx",
+      "path": "@system/projects/_templater/internal-templates/=step-xx.md"
     },
     {
       "basename": "LLM",
       "path": "@system/projects/LLM.md"
+    },
+    {
+      "basename": "[T]daily-journaling",
+      "path": "_static/templater/[T]daily-journaling.md"
     },
     {
       "basename": "AGENTS",
