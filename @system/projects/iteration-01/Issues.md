@@ -149,6 +149,7 @@
 		- The thing is - it really should be kinda split. Shouldn't it? Like first you do initial planning to understand what the hell you need to do. Like LLM does a bunch of exploration. You need completely separate flow for this one only
 		- But should initial planning have some temp file in artifacts? In case I would need multiple tasks? Because exploration may be indeed too big. And dumping everything into the main plan may be excessive. So you use that artifact. out of it figure out the whole workflow of steps - write them down and now you know what goes into steps, and what should persist in the plan throughout whole execution. 
 		- Discussion and reflection - should have brief template as well, kinda like I had with kilo code. Autoregressive. Recommended choice. Explain in simple words. Also - I should add rule to automatically add at the end user input point. like `- USER INPUT: ` so I can type right away the answer
+		- What if drafting steps would be combined with step template? Makes a lot of sense
 		- ##### Initial planning
 			- **Description:** should have restricted scope. Never leave high-level. First discussion with LLM that includes researching of codebase. 
 			- It's BY FAR the most important and the most hard phase of the plan. 

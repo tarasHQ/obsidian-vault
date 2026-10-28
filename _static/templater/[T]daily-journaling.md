@@ -51,7 +51,9 @@ action:
         - [ ] correct day, scheduled, scaled
         - [ ] red "now" line is there
     - [ ] Start stager timer
-    - [ ] Fill Context block
+    - Obsidian
+        - [ ] Fill Context block
+        - [ ] Split down. Have ~10 lines of time log.
 
 ```meta-bind-button
 label: Remove Night Checklist
