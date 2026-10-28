@@ -108,6 +108,12 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 14:43
+	- 
+- ###### 13:51
+	- Found single like on a video. How little encouragement I need to have sudden urge of meaningfulness. That was very nice.
+	- Another thing is reviewing videos before the meal - HUGE WIN. Because before the sleep I'm dead, I skim through them. But now - I'm like analyzing more. I see how I behaved externally. 
+		- ==But the biggest thing is I'm kinda getting emphatic to that guy on the video. First ones were kinda like shameful and weak. Now - it's getting a bit more serious. I'm still flawed as hell, and everything is still a mess, but I'm looking and those videos - a lot of work and effort there. It's not nothing at the very least.==
 - ###### 11:52
 	- 25 minutes later - meaning is withdrawn. Is this really mechanical like that? Would be nice if it is. The only issue is to start from this state. Because it's like generating lots of frictions. I should stop using like) Is there anti-dictionary plugin?
 - ###### 11:27
