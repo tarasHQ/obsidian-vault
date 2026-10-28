@@ -6,7 +6,7 @@ state: full
 reviewedAtStep: ""
 ---
 
-%%[internal link for user to template](_static/templater/project/[T]step-start), llm should completely ignore this line%%
+%%[internal link for user to template](../../../../../../@system/projects/_templater/[T]step-start.md), llm should completely ignore this line%%
 
 [← PLAN](../_plan_001.md)
 
