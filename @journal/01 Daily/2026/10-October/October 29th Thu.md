@@ -89,8 +89,12 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
-- ###### 11:54
-	- I 
+- ###### 12:21
+	- The issue is that meaning is gone. If I indulge a bit - sometimes it brings it back. Most of the time it doesn't, because I overindulge. So like I can fix current situation because it's already too late. And I don't know for how long it'll torture me. Like that's the funny thing, I want to order it to make this damn "floated in the air" state to go away. And pleasure is like secondary thing.
+	- Ok. I can top-up openrouter, since I need money for that anyways. Then I wouldn't be able to afford a pizza.
+- ###### 12:07
+	- It's like painful to resist even... For 30 minutes this idea tortures me. It's lack of meaning... Fuck it's tough... Like it's a habit I would appreciate to not have. Because how torturous it is. Like I don't have this when I want to eat my usual meal. Even with PMO it's not as strong. 
+	- I don't have much money. And on top of it - it's not my money. That's the issue. I need to accumulate every penny I can save. And pizza makes this impossible. Where there's 1 per 10 day, there's 1 per week, then there's 1 per 2-3 days. It's too expensive. But damn tasty too. 
 - ###### 11:36
 	- Ok, I have 2 initial flows. I need to further work on the website. So I guess I should do initial reflection and then use those 2 flows on it to see how it feels. If it'll be good - then I'll probably would be more motivated and experienced to write properly next flows.
 	- But also I want to order a pizza now and spend like 45 minutes watching some BS on youtube. History shows that usually this one isn't like suggesting, but telling me what will happen eventually. 
