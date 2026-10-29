@@ -89,8 +89,13 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 19:36
+	- You have list of those ideas above related to the website. 
+	- Some of them are doable in isolation. Like you don't have to overthink them. 
+	- Besides that - you can feed whole thing to the LLM, and discuss the structure. And run refinement and then critique flows to test them too and improve this reflection. 
+	- So there IS stuff to do. You just don't want it... Complete withdraw of libido... feels like I'm on the verge of just saying "F it" and like going no-brakes on indulgence/games/youtube. 
 - ###### 19:12
-	- S
+	- So much to do... yet I just can't act. Paralyzed by options and analysis. 
 - ###### 16:20
 	- ==Ok. Whole body kinda vibrates. Something definitely happened. And yeah, I'm energized. I'm not sure if it's lasting though==
 - ###### 16:17
