@@ -3,8 +3,6 @@ journal: Daily
 journal-date: 2026-10-29
 ---
 
-%%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
-
 ```journal-nav {fold}
 
 ```
@@ -60,6 +58,7 @@ action:
         - [ ] monitor OFF (seems like keeping on makes him die faster)
 
 ---
+%%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
@@ -79,9 +78,16 @@ action:
 ## TASKS
 %%Cognitive offload for the day, to not keep these in my mind for the whole time%%
 - ### TODO
-	- [ ] 
-- ### Priority
-	- [ ] 
+	- [ ] [PRIORITY], when you go sleep - create and leave big plan and your position in it. That's how you meaningfully will trach higher scope. But be careful so your "cost" scope won't overfocus on this.
+		- Probably in excalidraw?
+	- [ ] **META** Figure out where to accumulate such secondary tasks and where you can prioritize them, because flat list is stupid and limiting. 
+	- [ ] Ideally to go away from the minimal theme. It does add a lot of things that I don't use, and basically a deadweight. Like it's better to have 30 styles in CSS than like 2 plugins with 100 settings + a theme . 
+	- [ ] flow to compress png into webp from screenshot, so it won't harm neither website nor size of the vault. But also figure out if deskflow can do it, because right now it's half-supported. (or don't do it through deskflow)
+		- priority because it adds another dimension to thinking + cognitive offload. 
+	- [ ] folder icons - rename to where they used and resize other icons (260kb per icon is stupid)
+	- [ ] AHK - run separate user of vscode as admin to be able to edit the script? 
+	- [ ] Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
+	- [ ] 🔴[[plans/better-schedule-plan|better-schedule-plan]]
 - ### Completed
 	- [ ] copy_from_here
 	- [ ] 

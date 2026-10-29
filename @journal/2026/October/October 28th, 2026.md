@@ -1,50 +1,13 @@
 
 %%[[[T]daily-journaling|Daily Journal Template]]%%
 
-```meta-bind-button
-style: primary
-label: New Journal Entry
-icon: notebook-pen
-cssStyle: "background-color: #363124; font-size: 0.8rem;color: var(--text-normal);"
-actions:
-  - type: templaterCreateNote
-    templateFile: "_static/templater/[T]daily-journaling.md"
-    openNote: true
-    openIfAlreadyExists: true
-```
-
----
-
-```meta-bind-button
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-    - ###### AFTER NEW RECORDING
-        - [ ] Check audio delay to webcam
-        - [ ] Night scene
-        - [ ] Check IP cam (quality, delay)
-            - [ ] Move to "night position"
-        - [ ] Check TickTick schedule (correct day, scheduled)
-        - [ ] Set time of next sleep for stager timer.
-    - ###### BEFORE SLEEP
-        - [ ] Write overview of the current day
-        - [ ] Create journal for the next day
-        - [ ] Move uncompleted tasks
-        - [ ] Make sure all day's reflections are linked under reflections
-        - [ ] monitor OFF (seems like keeping on makes him die faster)
-        - [ ] Cleaned up cat's litter box
-
 ---
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
+Increasingly more meaning. It was insane that I wanted to watch like a one Peterson's short video from some lecture, and I got on exactly what I needed. For now, these "timeframes" seems to work. 
 
+Day is good. I'm happy with it. Lots of work was done. Sometimes I forget, that I'm so far behind, that to catchup I have to run twice as fast. So yeah, really hoping that that rule of "changes accumulates slowly but realized quickly" - is applicable here)
 
 ---
 
@@ -61,17 +24,6 @@ action:
 ## TASKS
 %%Cognitive offload for the day, to not keep these in my mind for the whole time%%
 - ### TODO
-	- [ ] [PRIORITY], when you go sleep - create and leave big plan and your position in it. That's how you meaningfully will trach higher scope. But be careful so your "cost" scope won't overfocus on this.
-		- Probably in excalidraw?
-	- [ ] **META** Figure out where to accumulate such secondary tasks and where you can prioritize them, because flat list is stupid and limiting. 
-	- [ ] Ideally to go away from the minimal theme. It does add a lot of things that I don't use, and basically a deadweight. Like it's better to have 30 styles in CSS than like 2 plugins with 100 settings + a theme . 
-	- [ ] flow to compress png into webp from screenshot, so it won't harm neither website nor size of the vault. But also figure out if deskflow can do it, because right now it's half-supported. (or don't do it through deskflow)
-		- priority because it adds another dimension to thinking + cognitive offload. 
-	- [ ] folder icons - rename to where they used and resize other icons (260kb per icon is stupid)
-	- [ ] AHK - run separate user of vscode as admin to be able to edit the script? 
-	- [ ] Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
-	- [ ] 🔴[[plans/better-schedule-plan|better-schedule-plan]]
-		- Tick tick becomes PIA. Limited too. Maybe there's something else? Maybe there's self-hosted things? 
 - ### Completed
 	- [x] FIX - templated creation of next journal entry. 23:53 - "This day already exists"
 	- [x] Templates for reflections - maybe shouldn't use project backlinks for now, until I figure out if there's gonna be "main index"
