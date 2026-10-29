@@ -89,6 +89,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 13:58
+	- Have a thing to do, distracts a bit. But decided to work till I can.
 - ###### 12:40
 	- This is it. I'll go eat though. But have video processing before that...
 - ###### 12:21

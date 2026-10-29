@@ -195,10 +195,6 @@
     {
       "basename": "ssot-of-plans",
       "path": "@system/_reflections/ssot-of-plans.md"
-    },
-    {
-      "basename": "website-and-interest",
-      "path": "@system/_reflections/website-and-interest.md"
     }
   ],
   "omittedPaths": [],
