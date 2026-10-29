@@ -93,6 +93,9 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 22:13
+	- Maybe my issue is that I'm inexperienced in this. So it gets very hard to predict, what to do and how to do. I don't know. It's just becomes PIA. Why I can't just focus and have fun? Why a lot of other things get attached which discourage me? 
+	- That's puer. Oh for sure that's puer. Wanting something big and monumental instead of small and measured steps... I'm so tired of this though. Like today I could've be done with most things if I just put my mind into this. In reality - barely anything is done.  
 - ###### 21:00
 	- I don't know. Because I can't have the damn progress - it all feels meaningless. It's repeating theme by this point. But I can't crack it. Like should I do rushed decisions? I tried that with project. I have to rewrite parts of it now. So now. I can't do with rushed decisions
 	- I need reflection. F it. 
