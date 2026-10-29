@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "October 29th Thu",
-      "path": "@journal/01 Daily/2026/10-October/October 29th Thu.md"
+      "basename": "website-design-inspiration",
+      "path": "_static/drawings/website-design-inspiration.md"
     },
     {
       "basename": "website-design-inspiration",
-      "path": "_static/drawings/website-design-inspiration.md"
+      "path": "file:D:/Downloads/website-design-inspiration.svg"
+    },
+    {
+      "basename": "October 29th Thu",
+      "path": "@journal/01 Daily/2026/10-October/October 29th Thu.md"
     },
     {
       "basename": "what-to-do-with-website",
@@ -195,10 +199,6 @@
     {
       "basename": "October 26th, 2026",
       "path": "@journal/2026/October/October 26th, 2026.md"
-    },
-    {
-      "basename": "Notes",
-      "path": "@projects/taras.life/YouTube/Notes.md"
     }
   ],
   "omittedPaths": [],
