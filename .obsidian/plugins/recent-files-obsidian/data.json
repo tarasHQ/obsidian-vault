@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "i-dont-want-to-do-anything",
+      "path": "Psychoanalysis/_reflections/i-dont-want-to-do-anything.md"
+    },
+    {
+      "basename": "October 29th Thu",
+      "path": "@journal/01 Daily/2026/10-October/October 29th Thu.md"
+    },
+    {
+      "basename": "refining-reflection",
+      "path": "@system/projects/_flows/refining-reflection.md"
+    },
+    {
+      "basename": "what-to-do-with-website",
+      "path": "@projects/taras.life/__obsidian__/_reflections/what-to-do-with-website.md"
+    },
+    {
       "basename": "quartz-website-plan",
       "path": "@projects/taras.life/Web (meta)/quartz-website-plan.md"
     },
@@ -11,14 +27,6 @@
     {
       "basename": "Drawing 2026-10-29 16.24.25.excalidraw",
       "path": "_static/drawings/Drawing 2026-10-29 16.24.25.excalidraw.md"
-    },
-    {
-      "basename": "October 29th Thu",
-      "path": "@journal/01 Daily/2026/10-October/October 29th Thu.md"
-    },
-    {
-      "basename": "What To Do With Website",
-      "path": "@projects/taras.life/__obsidian__/_reflections/What To Do With Website.md"
     },
     {
       "basename": "Ideas",
@@ -39,10 +47,6 @@
     {
       "basename": "initial-planning",
       "path": "@system/projects/_flows/initial-planning.md"
-    },
-    {
-      "basename": "refining-reflection",
-      "path": "@system/projects/_flows/refining-reflection.md"
     },
     {
       "basename": "scorched-earth-critique",
@@ -195,10 +199,6 @@
     {
       "basename": "Notes",
       "path": "@projects/taras.life/YouTube/Notes.md"
-    },
-    {
-      "basename": "Project's start and end steps",
-      "path": "@system/_reflections/Project's start and end steps.md"
     }
   ],
   "omittedPaths": [],

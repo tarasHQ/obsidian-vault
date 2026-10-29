@@ -58,6 +58,10 @@ action:
 - ### TODO
 	- [ ] [PRIORITY], when you go sleep - create and leave big plan and your position in it. That's how you meaningfully will trach higher scope. But be careful so your "cost" scope won't overfocus on this.
 		- Probably in excalidraw?
+	- [ ] Daily journaling template
+		- [ ] create another folder for these, to avoid bloating templater view
+		- [ ] add input field for alias, you're typing names that shouldn't be on the website. 
+			- [ ] OR - automate title parsing from file name (including lowercase 'of', 'the', etc.)
 	- [ ] **META** Figure out where to accumulate such secondary tasks and where you can prioritize them, because flat list is stupid and limiting. 
 	- [ ] Ideally to go away from the minimal theme. It does add a lot of things that I don't use, and basically a deadweight. Like it's better to have 30 styles in CSS than like 2 plugins with 100 settings + a theme . 
 	- [ ] flow to compress png into webp from screenshot, so it won't harm neither website nor size of the vault. But also figure out if deskflow can do it, because right now it's half-supported. (or don't do it through deskflow)
@@ -74,7 +78,7 @@ action:
 
 ## REFLECTIONS
 %%Thinking through writing is much better - there must be low-friction place to do so%%
-- [[../../../../@system/projects/_flows/refining-reflection|refining-reflection]]
+- [[../../../../@projects/taras.life/__obsidian__/_reflections/what-to-do-with-website|what-to-do-with-website]]
 
 ---
 
@@ -89,6 +93,11 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 21:00
+	- I don't know. Because I can't have the damn progress - it all feels meaningless. It's repeating theme by this point. But I can't crack it. Like should I do rushed decisions? I tried that with project. I have to rewrite parts of it now. So now. I can't do with rushed decisions
+	- I need reflection. F it. 
+- ###### 20:57
+	- Starting to work. 
 - ###### 19:36
 	- You have list of those ideas above related to the website. 
 	- Some of them are doable in isolation. Like you don't have to overthink them. 
