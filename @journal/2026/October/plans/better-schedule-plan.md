@@ -1,6 +1,6 @@
 
 - Use colors to signify type of block, and use text to explain the block. Much better approach for more detailed schedule. low-friction too.
-- There's something unnatural in how it works right now. Like it helps with meals, but beyond that.... I don't really know. Though it's useful for the video. 
+- There's something unnatural in how it works right now. Like it helps with meals, but beyond that.... I don't really know. Though it's useful for the cvideo. 
 	- But is it? since it's compiled as I go and often updated retrospectively. 
 	- When I'll add timelapse at the beginning - it may be more helpful than I think.
 - Maybe I should try GCal again? 

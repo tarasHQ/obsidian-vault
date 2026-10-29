@@ -16,8 +16,8 @@ so left sidebar should be narrowER than 200px hardcoded script limit */
 	padding-top: 2px;
 }
 
-.workspace-tab-header-tab-list:has(.clickable-icon),
 .workspace-tab-header-new-tab:has(.clickable-icon),
+.workspace-tab-header-tab-list:has(.clickable-icon),
 .sidebar-toggle-button.mod-secondary.mod-right,
 .sidebar-toggle-button.mod-primary.mod-left{
 	display: none;
