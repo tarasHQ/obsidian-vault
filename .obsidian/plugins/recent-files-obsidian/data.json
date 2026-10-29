@@ -1,16 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "October 29th Thu",
-      "path": "@journal/01 Daily/2026/10-October/October 29th Thu.md"
+      "basename": "What To Do With Website",
+      "path": "@projects/taras.life/__obsidian__/_reflections/What To Do With Website.md"
+    },
+    {
+      "basename": "Ideas",
+      "path": "@projects/taras.life/Web (meta)/Ideas.md"
     },
     {
       "basename": "quartz-website-plan",
       "path": "@projects/taras.life/Web (meta)/quartz-website-plan.md"
     },
     {
-      "basename": "What To Do With Website",
-      "path": "@projects/taras.life/__obsidian__/_reflections/What To Do With Website.md"
+      "basename": "code-review",
+      "path": "@system/projects/_flows/code-review.md"
+    },
+    {
+      "basename": "Drawing 2026-10-29 16.24.25.excalidraw",
+      "path": "_static/drawings/Drawing 2026-10-29 16.24.25.excalidraw.md"
+    },
+    {
+      "basename": "writing-steps",
+      "path": "@system/projects/_flows/writing-steps.md"
+    },
+    {
+      "basename": "October 29th Thu",
+      "path": "@journal/01 Daily/2026/10-October/October 29th Thu.md"
     },
     {
       "basename": "initial-planning",
@@ -75,14 +91,6 @@
     {
       "basename": "On Workflows",
       "path": "@system/_reflections/On Workflows.md"
-    },
-    {
-      "basename": "writing-steps",
-      "path": "@system/projects/_flows/writing-steps.md"
-    },
-    {
-      "basename": "code-review",
-      "path": "@system/projects/_flows/code-review.md"
     },
     {
       "basename": "=step-xx",
@@ -158,10 +166,6 @@
     },
     {
       "basename": "Ideas",
-      "path": "@projects/taras.life/Web (meta)/Ideas.md"
-    },
-    {
-      "basename": "Ideas",
       "path": "@projects/taras.life/Social/Ideas.md"
     },
     {
@@ -195,10 +199,6 @@
     {
       "basename": "Project's start and end steps",
       "path": "@system/_reflections/Project's start and end steps.md"
-    },
-    {
-      "basename": "recording-life-plan",
-      "path": "@system/_reflections/recording-life-plan.md"
     }
   ],
   "omittedPaths": [],
