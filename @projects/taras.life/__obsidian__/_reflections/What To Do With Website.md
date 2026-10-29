@@ -57,6 +57,8 @@ isIntegrated: false
 ---
 
 ## Brainstorming
+- ### Attitude
+	- **Look at the website through the eyes of first-time visitor**
 - ### TODO
 	- **favicon/logo** - webp too? 
 	- **Hide README.md** from root of website, it's for github only.
@@ -64,11 +66,16 @@ isIntegrated: false
 	- **`pele` for mermaid diagrams** - faster, better, [nicer](https://pele.run/), though it was a ref link, so maybe not?)
 		- open in full screen?
 - ### Good
+	- **Table of Contents**
+		- Follow mouse? Centered by mouse location? Could be convenient in theory.
+	- **Scoll Up/Down/Home buttons**
+	- **"Attractable" first page?**
+		- I don't know, some image maybe? Or graphics? Something.
 	- **LLMs support**
 		- I'm not using it right now, but maybe later? 
 		- `llms.txt` - is it still a thing, there's probably other things like that too.
 		- every note to have its own `.md` original for LLMs
-	- **Now (listening/doing)**
+	- **Doing Now (listening/doing)**
 		- Can connect ticktick schedule? 
 		- Spotify? 
 	- **Domain navigation block at the top (breadcrumbs)**
@@ -81,11 +88,17 @@ isIntegrated: false
 	- #### Contents
 		- **Website decisions** - to be useful, you can list why something was added or removed. 
 		- **Obsidian decisions** - the same. Up-to-date descriptions
+	- **Image Viewer**
+		- to like open in full screen, zoom, pan
+	- **Styles**
+		- Links - underline only. Different styles for internal and external links.
 - ### Bad
 	- **Not implemented, 404s, poorly done pages - discourage users**
 		- say like author doesn't care about website contents. Only to make/have it public. 
 	- **Flat lists with lots of files and no idea what type it is**
-		- reflection? note? canvas? base?
+		- some reusable icons - reflection? note? canvas? base?
+		- structure and order. 
+			- maybe you keep in explorer only top level? Beyond 1-2 levels - you use internal page/based navigation + indexes?
 	- **Long loading of the website**
 		- There's a lot of navigation involved in this kind of website. Loading should be as fast as possible.
 		- There must be optimization of images in webp 
