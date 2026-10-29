@@ -89,6 +89,12 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 09:41
+	- ==30 minutes reflection. Will that be useful? Can I those be short==
+- ###### 09:37
+	- Walking reflection could be dangerous this soon. It may drain me fast. But seems like I need it. I feel I need it. Because current task is too branching to abstract only through the conscious capacity.
+- ###### 09:30
+	- I know jack shit about the Warrior archetype. But on my assumption I feel like behind this bitch that whines and "suffers", there's this warrior energy blocked. But dark folk music puts me in a bit different state of mind that makes it a bit more accessible. Or maybe it's just a bad guess. 
 - ###### 09:18
 	- Timeframe maybe? 
 - ###### 09:06

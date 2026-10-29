@@ -19,65 +19,25 @@ isIntegrated: false
 
 ## Problems & Goals
 %% To prevent drift from the initial target and ending the reflection without answering on what it was about%%
-- How to structure this reflection?
+- How to structure this flow?
 
 ---
 
 ## Raw
 %%Free-form reflection with no rules%% 
-- 
-
-Yes — Meta Bind supports this cleanly with **button groups**.
-
-### How to put 3 buttons in a row
-
-1. Define each button as a normal `meta-bind-button` code block.
-2. Give every button a unique `id`.
-3. Set `hidden: true` on them (so they don’t appear as full-width blocks).
-4. Place them side-by-side with an inline button group:
-
-```markdown
-`BUTTON[remove-night, remove-morning, remove-evening]`
-```
-
-### Full working example
-
-
-`BUTTON[remove-night, remove-morning, remove-evening]`
-
-```meta-bind-button
-label: Remove Night Checklist
-style: default
-icon: trash-2
-id: remove-night
-hidden: true
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-
-```meta-bind-button
-label: Remove Morning Checklist
-style: default
-icon: trash-2
-id: remove-morning
-hidden: true
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-  
-```
-
-```meta-bind-button
-label: Remove Evening Checklist
-style: default
-icon: trash-2
-id: remove-evening
-hidden: true
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
+- Ok. So. Current flow is the first one refining reflection. 
+- It supposed to be used when I thought about the phase scope, and am ready to move further and include LLM.
+- It consists of 3 parts. Exploration. And then fork of refining + defending. 
+- What causes me to struggle in here? 
+- Because it's easy to say "explore, refine, attack" to  LLM. But you have to write down protocols about HOW to do it
+- ### Explorration
+	- Idea is to ask LLM to not explore the task at hand, but to make a bit broader job, so refinement would be more grounded in the project. Like when I'll work on styling - it must research layout, docs, etc. Not only like "find me styles". It's a bit poor example, but it has grounding for this logic. 
+- ### Refining
+	- 
+- ### Attacking
+---
+- Why it feels stupid? 
+- Maybe I need reflection not for the flow, but for the indecisiveness? 
+- Maybe I need to write first bad draft. Test it. And THEN see how it should look like? 
+- Because otherwise flow gets too much detached from the  reality. Will LLM be too easy on me during attacking? Or maybe I miss something in exploration? Or refinement - well - that can be scoped. 
+- Because here's a thing. Refining means WHAT to do. Not HOW to do it better. So that's worth noting right away.
