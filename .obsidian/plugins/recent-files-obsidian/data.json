@@ -1,20 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "About",
-      "path": "About.md"
+      "basename": "October 29th Thu",
+      "path": "@journal/01 Daily/2026/10-October/October 29th Thu.md"
+    },
+    {
+      "basename": "quartz-website-plan",
+      "path": "@projects/taras.life/Web (meta)/quartz-website-plan.md"
     },
     {
       "basename": "What To Do With Website",
       "path": "@projects/taras.life/__obsidian__/_reflections/What To Do With Website.md"
     },
     {
-      "basename": "refining-reflection",
-      "path": "@system/projects/_flows/refining-reflection.md"
+      "basename": "initial-planning",
+      "path": "@system/projects/_flows/initial-planning.md"
     },
     {
-      "basename": "October 29th Thu",
-      "path": "@journal/01 Daily/2026/10-October/October 29th Thu.md"
+      "basename": "About",
+      "path": "About.md"
+    },
+    {
+      "basename": "refining-reflection",
+      "path": "@system/projects/_flows/refining-reflection.md"
     },
     {
       "basename": "scorched-earth-critique",
@@ -59,10 +67,6 @@
     {
       "basename": "LLM",
       "path": "@system/projects/LLM.md"
-    },
-    {
-      "basename": "initial-planning",
-      "path": "@system/projects/_flows/initial-planning.md"
     },
     {
       "basename": "[T]reflections",
@@ -147,10 +151,6 @@
     {
       "basename": "proxmox-backup-plan",
       "path": "@journal/2026/October/plans/proxmox-backup-plan.md"
-    },
-    {
-      "basename": "quartz-website-plan",
-      "path": "@projects/taras.life/Web (meta)/quartz-website-plan.md"
     },
     {
       "basename": "- Lectures 1-3",
