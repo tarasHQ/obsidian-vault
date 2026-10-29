@@ -1,33 +1,40 @@
 # Refining Reflection
-Description
-**Why it's needed?** - describe
 
-%%[[_reflections/On Refining Reflection|Attached reflection for further improvement]]%%
+**Why this flow is needed?** 
+- To avoid making suboptimal decisions because of the user's inexperience. 
+- To go WIDE before going NARROW. So decisions are made based on the full picture. 
 
-## Conditions to Run
-- During completion/finalization of the step. 
-- Manually by user. 
+**When this flow is expected to run?**
+- Invoked manually. When user wants to get big picture and see all possibilities of provided artifacts.
 
+## Rules
+- **STAGE AWARENESS** - Every response to the user should have current stage letter, name and substage letter-number at the first line.
 
 ## Stages
-- ### A - Exploration
-	- Preparing to have all information needed for broad brainstorming. 
-	  
-- ### B - Improvement, Refinement, Broadening
-	- #### Flow
-		- [ ] **C1.1**
-		- [ ] **C1.** - LLM writes context handoff inside ```markdown ``` about additional exploration that was made, so C2 from the checkpoint can have full kno
-		- [ ] **C1.** - User reverts context of the task back to the checkpoint and provides context handoff to **C2**.
-		  
-	- #### Rules:
-		- Focus is on WHAT to do, not HOW to do. 
-## Rules
-- todo
-
-- A bit more compact flow. But the thing is - sometimes you don't know what you need. You write initial reflection. Then you need to defend it against LLM critique. Like you need LLM to go scorched earth on your reflection. ==HUGE==, because otherwise you're in your bubble. And it's damn hard to rely on honesty, because it's a finite resource. 
-	- To not make things too complex - idea here is to just run separate task with simple flow before you go to planning.
-		- But efficient one. you ask LLM to run exploration based on your reflection. The you make checkpoint. 
-			- #1 - you discuss and refine reflection. with adding like "llm input at the bottom". Like (planning is about implementing reflection), this one is about figuring out what I want and need. 
-			- #2 - then you revert to checkpoint, you attach refined reflection. And send LLM scorched earth on it. And try to defend it. with KEY RULE - LLM must appeal to my honesty. "Think about it honestly", "Be honest", etc. 
-				- And you write that as defense block in the same reflection. 
-	- Now you have not projection of your bubble. But something much more reliable and meaningful and honest. NOW you can plan it. 
+- ### A - The Exploration
+	- [ ] **A1** - [USER]
+		- Provides LLM with artifacts that set the scope of the attack & discussion. 
+		- Artifacts can be anything. Reflections, ideas, plans, implementation steps, etc.
+	- [ ] **A2** - [LLM] 
+		- LLM starts thorough exploration. 
+		- Goal of exploration is to be able to have context for brainstorming of radically different possibilities
+- ### B - Creating Big Picture
+	- [ ] **B1** - [LLM] - **Response #1**
+		- Using `write` tool. 
+		- Writes a temporary self-reflective exploration of all high-level possibilities in a temporary `.md`  file inside `artifacts/possibilities-xxxx`, where last 4 digits are random [a-z0-9] to avoid duplication. 
+		- Format is nested lists of questions and possible explanations (no answers/recommendations)
+		- Goal is to prepare context for the real answer in the next turn.
+	- [ ] **B2** - [LLM] - **Response #2**
+		- No writing/editing.
+		- LLM lists 5 to 10 reasonable, high-level, radical, architectural possibilities for improving user's artifacts.
+		- Those points may cover categories:
+			- Blind Spots
+			- Security 
+			- Performance 
+			- Low Effort - High Reward ideas
+			- Proper long-term decisions.
+			- Other, not listed and high-impact categories. 
+- ### C - The Discussion
+	- [ ] **C1** - [LLM + USER]
+		- User will respond. 
+		- Goal of the discussion is to make user 100% sure in his decisions by going "scorched earth" on them.
