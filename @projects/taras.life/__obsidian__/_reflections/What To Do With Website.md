@@ -62,9 +62,13 @@ isIntegrated: false
 - ### TODO
 	- **favicon/logo** - webp too? 
 	- **Hide README.md** from root of website, it's for github only.
+	- **FadeInOut during loading** - may decrease visual comprehension of loading time
+	- **Colorful headers** - synced with obsidian styles (manually or automatically)
 - ### Do I need it?
 	- **`pele` for mermaid diagrams** - faster, better, [nicer](https://pele.run/), though it was a ref link, so maybe not?)
 		- open in full screen?
+	- **dim button**
+		- background gets black - everything else gets dimmed? read at night or maybe like secondary theme?
 - ### Good
 	- **Table of Contents**
 		- Follow mouse? Centered by mouse location? Could be convenient in theory.
@@ -75,9 +79,15 @@ isIntegrated: false
 		- I'm not using it right now, but maybe later? 
 		- `llms.txt` - is it still a thing, there's probably other things like that too.
 		- every note to have its own `.md` original for LLMs
-	- **Doing Now (listening/doing)**
+	- **Doing Now (listening/doing)** - idea is to give some sort of connection between website and me. So it's not like "archive", but it shows what I'm doing. What I'm listening. Stuff like that. Like there's a real human behind all of that. It's kinda unique too.
 		- Can connect ticktick schedule? 
-		- Spotify? 
+			- cron trigger on worker + workers kv (1000 writes limit, so do it once per 5 minutes?)
+				- then either endpoint OR generate "baked" static snippet and serve that (endpoint faster/easier?)
+					- baked allows to avoid kv free tier limits (and probably kv completely), you just read, and then bake and serve. on next read - do it again.
+		- Spotify? (seems like can be powered by last fm)
+		- That's a bit far reach, but you also can serve image of recording on per-minute basis towards this block. Safely.
+			- You run python script through scheduler or whatever. it gets last recording, uses ffmpeg to extract last keyframe. shares it through smb. and server on proxmox copies it and serves. 
+			- cached TTL of 1-2 minutes. 
 	- **Domain navigation block at the top (breadcrumbs)**
 	- **Journaling**
 		- Shouldn't be in explorer at all (ideally). Like there must be path to navigate in this through pages. 
