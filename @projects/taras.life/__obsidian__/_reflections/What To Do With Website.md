@@ -64,12 +64,16 @@ isIntegrated: false
 	- **Hide README.md** from root of website, it's for github only.
 	- **FadeInOut during loading** - may decrease visual comprehension of loading time
 	- **Colorful headers** - synced with obsidian styles (manually or automatically)
+	- **History of visited pages probably above the outline** - like when you move through lots of pages - it can be an issue to backtrack. and that list of recent pages might be helpful
+		- it can get a bit further with top portion of the note saving as "tabs", with ability to close
+			- like it shouldn't be "real tabs", just links to visited pages, where you can switch between them. 
 - ### Do I need it?
 	- **`pele` for mermaid diagrams** - faster, better, [nicer](https://pele.run/), though it was a ref link, so maybe not?)
 		- open in full screen?
 	- **dim button**
 		- background gets black - everything else gets dimmed? read at night or maybe like secondary theme?
 - ### Good
+	- **Download .md/pdf button**  - and maybe a link to page on github repo? though it may be PIA to do 
 	- **Table of Contents**
 		- Follow mouse? Centered by mouse location? Could be convenient in theory.
 	- **Scoll Up/Down/Home buttons**
@@ -87,7 +91,8 @@ isIntegrated: false
 		- Spotify? (seems like can be powered by last fm)
 		- That's a bit far reach, but you also can serve image of recording on per-minute basis towards this block. Safely.
 			- You run python script through scheduler or whatever. it gets last recording, uses ffmpeg to extract last keyframe. shares it through smb. and server on proxmox copies it and serves. 
-			- cached TTL of 1-2 minutes. 
+				- cached TTL of 1-2 minutes. Webp optimization. You can use comments flow for making it more secure. and as result it's even more "connected". Because like people can see what you're listening, what is your schedule AND what you're actually doing in real-time. Without all the headache and issues of streaming. Website also gets additional minor reasons to visit. 
+			- even more - you may serve gif instead of webp. last hour? But that's may be too much. Timelapse detaches from that feeling I'm looking for in here.
 	- **Domain navigation block at the top (breadcrumbs)**
 	- **Journaling**
 		- Shouldn't be in explorer at all (ideally). Like there must be path to navigate in this through pages. 
@@ -95,6 +100,7 @@ isIntegrated: false
 	- **Notes: Updated/Created**
 		- two dates. 
 		- **Git History On Notes** - show on hover. commit hash(link to repo too?), date and +/- lines, words.
+			- AND/OR a link to gh commits history
 	- #### Contents
 		- **Website decisions** - to be useful, you can list why something was added or removed. 
 		- **Obsidian decisions** - the same. Up-to-date descriptions
