@@ -89,6 +89,9 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 15:17
+	- Maybe I don't know - maybe like I need to just fly off the handle once in a while. Like yeah, I didn't do pizza. But then I wasted an hour in other usual indulgence. So like who won? I just can't figure out protocol to approach this. 
+	- Like this time it's not really a timeframe. Or is it? It's so damn hard to be truly honest with myself in this kind of things. Like it's so abstract it's insane. 
 - ###### 13:58
 	- Have a thing to do, distracts a bit. But decided to work till I can.
 - ###### 12:40

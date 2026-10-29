@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "About",
+      "path": "About.md"
+    },
+    {
+      "basename": "What To Do With Website",
+      "path": "@projects/taras.life/__obsidian__/_reflections/What To Do With Website.md"
+    },
+    {
       "basename": "refining-reflection",
       "path": "@system/projects/_flows/refining-reflection.md"
     },
@@ -191,10 +199,6 @@
     {
       "basename": "recording-life-plan",
       "path": "@system/_reflections/recording-life-plan.md"
-    },
-    {
-      "basename": "ssot-of-plans",
-      "path": "@system/_reflections/ssot-of-plans.md"
     }
   ],
   "omittedPaths": [],
