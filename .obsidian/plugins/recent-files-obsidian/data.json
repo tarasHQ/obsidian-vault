@@ -1,20 +1,48 @@
 {
   "recentFiles": [
     {
+      "basename": "- Lectures 1-3",
+      "path": "_private/_check/Knowledge/Courses/PA/Maps of Meaning/- Lectures 1-3.md"
+    },
+    {
+      "basename": "code-review",
+      "path": "@system/projects/_flows/code-review.md"
+    },
+    {
+      "basename": "Lecture 1",
+      "path": "_private/_check/Knowledge/Courses/JBP - Maps Of Meaning/Lecture 1.md"
+    },
+    {
       "basename": "website-design-inspiration",
       "path": "_static/drawings/website-design-inspiration.md"
+    },
+    {
+      "basename": "Drawing 2026-10-17 11.18.40.excalidraw",
+      "path": "Drawing 2026-10-17 11.18.40.excalidraw.md"
+    },
+    {
+      "basename": "examination",
+      "path": "@system/projects/_flows/examination.md"
     },
     {
       "basename": "website-design-inspiration",
       "path": "file:D:/Downloads/website-design-inspiration.svg"
     },
     {
-      "basename": "October 29th Thu",
-      "path": "@journal/01 Daily/2026/10-October/October 29th Thu.md"
+      "basename": "writing-steps",
+      "path": "@system/projects/_flows/writing-steps.md"
     },
     {
       "basename": "what-to-do-with-website",
       "path": "@projects/taras.life/__obsidian__/_reflections/what-to-do-with-website.md"
+    },
+    {
+      "basename": "[T]daily-journaling",
+      "path": "_static/templater/[T]daily-journaling.md"
+    },
+    {
+      "basename": "October 29th Thu",
+      "path": "@journal/01 Daily/2026/10-October/October 29th Thu.md"
     },
     {
       "basename": "refining-reflection",
@@ -29,10 +57,6 @@
       "path": "@projects/taras.life/Web (meta)/quartz-website-plan.md"
     },
     {
-      "basename": "writing-steps",
-      "path": "@system/projects/_flows/writing-steps.md"
-    },
-    {
       "basename": "Ideas",
       "path": "@projects/taras.life/Social/Ideas.md"
     },
@@ -45,20 +69,12 @@
       "path": "About.md"
     },
     {
-      "basename": "code-review",
-      "path": "@system/projects/_flows/code-review.md"
-    },
-    {
       "basename": "initial-planning",
       "path": "@system/projects/_flows/initial-planning.md"
     },
     {
       "basename": "scorched-earth-critique",
       "path": "@system/projects/_flows/scorched-earth-critique.md"
-    },
-    {
-      "basename": "examination",
-      "path": "@system/projects/_flows/examination.md"
     },
     {
       "basename": "On Refining Reflection",
@@ -71,10 +87,6 @@
     {
       "basename": "better-schedule-plan",
       "path": "@journal/2026/October/plans/better-schedule-plan.md"
-    },
-    {
-      "basename": "[T]daily-journaling",
-      "path": "_static/templater/[T]daily-journaling.md"
     },
     {
       "basename": "October 28th, 2026",
@@ -173,10 +185,6 @@
       "path": "@journal/2026/October/plans/proxmox-backup-plan.md"
     },
     {
-      "basename": "- Lectures 1-3",
-      "path": "_private/_check/Knowledge/Courses/PA/Maps of Meaning/- Lectures 1-3.md"
-    },
-    {
       "basename": "schedule",
       "path": "@system/schedule.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "DEV_RULES",
       "path": "@projects/taras.life/__obsidian__/docs/DEV_RULES.md"
-    },
-    {
-      "basename": "DEV_RULES",
-      "path": "@projects/0vibes/__obsidian__/docs/DEV_RULES.md"
-    },
-    {
-      "basename": "October 26th, 2026",
-      "path": "@journal/2026/October/October 26th, 2026.md"
     }
   ],
   "omittedPaths": [],

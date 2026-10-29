@@ -93,6 +93,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 23:04
+	- Probably I got onto something. Found that meaning bit
 - ###### 22:42
 	- I got clicks in reflections. Seems like that's what the unconscious was hinting on? I have phases for implementation of features. Flows on how execution of phase goes. But I have nothing to capture and organize those features. Like I almost forgot a bunch of things from my initial feedback on the first phase. I went into flows, and then forget a bunch of things there as well. Now I did this reflection with lots of features - half of them will be forgotten by tomorrow. So yeah... maybe I should have something to avoid analysis paralysis through capturing and organizing things on, probably, excalidraw canvas? with underlying full notes for details?
 	- I don't know. Like maybe it's a real thing, maybe it's just another distraction by negative complex to NOT actually work on what I need to work on...
