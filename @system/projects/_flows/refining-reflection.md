@@ -11,19 +11,16 @@ Description
 
 ## Stages
 - ### A - Exploration
-	- Preparing to have all information needed at the checkpoint
+	- Preparing to have all information needed for broad brainstorming. 
 	  
-- ### B - Stop at the Checkpoint
-	- LLM stops and asks the user to create a checkpoint and to allow to proceed to the next step. 
-	  
-- ### C1 - Improvement, Refinement, Broadening
-	- ...
-	- Updating reflection to its refined state
-	- User reverts context of the task back to the checkpoint.
-	  
-- ### C2 - Defending Against the LLM's "Scorched Earth" Attack
-	- 
-
+- ### B - Improvement, Refinement, Broadening
+	- #### Flow
+		- [ ] **C1.1**
+		- [ ] **C1.** - LLM writes context handoff inside ```markdown ``` about additional exploration that was made, so C2 from the checkpoint can have full kno
+		- [ ] **C1.** - User reverts context of the task back to the checkpoint and provides context handoff to **C2**.
+		  
+	- #### Rules:
+		- Focus is on WHAT to do, not HOW to do. 
 ## Rules
 - todo
 
