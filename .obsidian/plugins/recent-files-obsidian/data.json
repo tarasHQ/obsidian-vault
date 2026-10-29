@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "About",
+      "path": "About.md"
+    },
+    {
       "basename": "What To Do With Website",
       "path": "@projects/taras.life/__obsidian__/_reflections/What To Do With Website.md"
     },
@@ -31,10 +35,6 @@
     {
       "basename": "initial-planning",
       "path": "@system/projects/_flows/initial-planning.md"
-    },
-    {
-      "basename": "About",
-      "path": "About.md"
     },
     {
       "basename": "refining-reflection",
