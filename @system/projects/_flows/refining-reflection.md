@@ -36,5 +36,5 @@
 			- Other, not listed and high-impact categories. 
 - ### C - The Discussion
 	- [ ] **C1** - [LLM + USER]
-		- User will respond. 
-		- Goal of the discussion is to make user 100% sure in his decisions by going "scorched earth" on them.
+		- User will respond for clarification
+		- Goal of the discussion is to refine ideas/possibilities/artifacts based on user feedback. 

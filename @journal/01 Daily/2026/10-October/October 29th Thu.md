@@ -89,6 +89,17 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 11:54
+	- I 
+- ###### 11:36
+	- Ok, I have 2 initial flows. I need to further work on the website. So I guess I should do initial reflection and then use those 2 flows on it to see how it feels. If it'll be good - then I'll probably would be more motivated and experienced to write properly next flows.
+	- But also I want to order a pizza now and spend like 45 minutes watching some BS on youtube. History shows that usually this one isn't like suggesting, but telling me what will happen eventually. 
+		- Though last order was 10 days ago. Which is kinda progress, especially considering that sweets were like 20 days ago? 
+- ###### 11:31
+	- Much less meaning today. I wonder why. 
+	- ==Those states of high meaning and enthusiasm. They left me with today's tedious work. And unrealistic expectations. That's why I get discouraged. Because I expected one thing, and then turned out I had to do lots of things to structure flows. And then I have to actually write those flows, which is another huge PIA to work through. No wonder I get discouraged. Yesterday I said "I hope I finish this before the meal (which was in like 2 hours), that's how mislead I was.==
+- ###### 11:27
+	- The issue with all this flows is that it may be too much for ME) I should not forget that it's done for ME. If it'll be too tedious to use/follow - then it loses its purpose. 
 - ###### 11:13
 	- Neighbors would probably think there's some Pagan living among them with all these dark folk songs)) 
 - ###### 11:00
