@@ -72,7 +72,10 @@ isIntegrated: false
 		- open in full screen?
 	- **dim button**
 		- background gets black - everything else gets dimmed? read at night or maybe like secondary theme?
+	- **Sticky headings**
+		- vscode like. I'm not sure they would be useful though. But maybe?
 - ### Good
+	- **I really liked idea of spoilers from nofap forum** - can I integrate it both into obsidian AND website?
 	- **Download .md/pdf button**  - and maybe a link to page on github repo? though it may be PIA to do 
 	- **Table of Contents**
 		- Follow mouse? Centered by mouse location? Could be convenient in theory.
