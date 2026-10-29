@@ -24,7 +24,7 @@ isIntegrated: false
 	- selective parsing of code blocks (buttons, journals block, not parsed dataview even maybe? etc.)
 	- journals - plugin is good for YOU. But you must figure out how to make low-friction you + website solution
 		- there must be some duplicated navigation going on, between notes, instead of current one
-		- index pages for
+		- index pages for journaling
 
 ---
 
