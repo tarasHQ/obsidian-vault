@@ -1,13 +1,4 @@
-## Git
-- Separate obsidian git (private repository)
-	- Obsidian Sync  is for sync, it's not backup. I need to have backups.
-- Separate quartz-website git (public repository)
-	- When project gets public it'll be easy to go fully public on both, but not yet. 
 
-## Quartz Syncer plugin
-- By-note whitelisting for now. 
-- Processes [dataview]() (quartz will handle bases/canvas)
-- Automates publishing, so I won't have to deal with many commands. 
 
 ## Quartz
 - ### Tips

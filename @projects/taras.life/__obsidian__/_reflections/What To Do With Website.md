@@ -30,4 +30,30 @@ isIntegrated: false
 
 ## Raw
 %%Free-form reflection with no rules%% 
-- 
+- I don't know why I'm so down right now.
+- These flows... where they lead me? 
+- I don't know what to do. 
+- Though reflecting like that is interesting. 
+- Why flows threw me into this tstate? 
+- What am I missing? 
+- It genuinely feels like a good thing. I need structure.
+- Maybe it's because I'm kinda in limbo project-wise? LIke I don't know what to do. I have some things. But it feels like 5% out of 100. 
+- And also everything is slow as hell too. 
+- Fucking hell. What do I do?
+- Timeframe.
+- If 1 day no more has enough meaning.
+- Can 1 hour have enough meaning?
+- Just think about website. What you want to do? And do it. 
+- What's necessary
+- What's not
+---
+
+- It's just I don't feel like it makes sense to do what I planned. All those index pages. Who the hell would read all that stuff?  You're alone in this
+- Well, that's complex talking. You're alone, but it's a choice. You went into the hell and closed the doors from the inside. 
+- Is this the day when everything crumble? 
+---
+
+- You don't know how to do website - inspiration. Tak it. Find it. You have links Here's yours solution
+
+## TODO
+### 
