@@ -91,6 +91,7 @@ action:
 ```
 - ###### 10:07
 	- Maybe I get overwhelmed because I'm overthinking it. Do it stupid simple. Practice. And then refine based on feedback from reality, instead of trying to predict all branches of how it may go
+		- But like when I think anyway, yeah it's taking more time BUT I find more optimal approaches. Like deciding to go from 3-step forked critique flow, to separate flows that are much more universal and flexible. 
 - ###### 09:41
 	- ==30 minutes reflection. Will that be useful? Can I those be short==
 		- Meh. Didn't get that click I needed...
