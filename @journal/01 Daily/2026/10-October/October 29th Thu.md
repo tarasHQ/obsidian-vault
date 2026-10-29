@@ -89,6 +89,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 11:13
+	- Neighbors would probably think there's some Pagan living among them with all these dark folk songs)) 
+- ###### 11:00
+	- Yeah, that discouragement was kinda hinting that my approach OR attitude were a bit BS. As soon as I oriented myself towards more action - it got much easier to work on this. I'm not trying to one-shot this anymore, I just write a good "bad draft", and then will improve based on feedback from reality.
 - ###### 10:07
 	- Maybe I get overwhelmed because I'm overthinking it. Do it stupid simple. Practice. And then refine based on feedback from reality, instead of trying to predict all branches of how it may go
 		- But like when I think anyway, yeah it's taking more time BUT I find more optimal approaches. Like deciding to go from 3-step forked critique flow, to separate flows that are much more universal and flexible. 
