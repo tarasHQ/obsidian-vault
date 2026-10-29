@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "About",
-      "path": "About.md"
-    },
-    {
       "basename": "What To Do With Website",
       "path": "@projects/taras.life/__obsidian__/_reflections/What To Do With Website.md"
     },
     {
       "basename": "Ideas",
+      "path": "@projects/taras.life/Social/Ideas.md"
+    },
+    {
+      "basename": "Ideas",
       "path": "@projects/taras.life/Web (meta)/Ideas.md"
+    },
+    {
+      "basename": "About",
+      "path": "About.md"
     },
     {
       "basename": "quartz-website-plan",
@@ -163,10 +167,6 @@
     {
       "basename": "- Lectures 1-3",
       "path": "_private/_check/Knowledge/Courses/PA/Maps of Meaning/- Lectures 1-3.md"
-    },
-    {
-      "basename": "Ideas",
-      "path": "@projects/taras.life/Social/Ideas.md"
     },
     {
       "basename": "schedule",
