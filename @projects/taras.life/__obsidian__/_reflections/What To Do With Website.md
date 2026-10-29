@@ -56,15 +56,31 @@ isIntegrated: false
 - You don't know how to do website - inspiration. Take it. Find it. You have links Here's yours solution
 ---
 
-## Unsorted ideas from other's garden's
+## Brainstorming
+- ### TODO
+	- **favicon/logo** - webp too? 
+	- **Hide README.md** from root of website, it's for github only.
+- ### Do I need it?
+	- **`pele` for mermaid diagrams** - faster, better, [nicer](https://pele.run/), though it was a ref link, so maybe not?)
+		- open in full screen?
 - ### Good
+	- **LLMs support**
+		- I'm not using it right now, but maybe later? 
+		- `llms.txt` - is it still a thing, there's probably other things like that too.
+		- every note to have its own `.md` original for LLMs
 	- **Now (listening/doing)**
 		- Can connect ticktick schedule? 
 		- Spotify? 
 	- **Domain navigation block at the top (breadcrumbs)**
 	- **Journaling**
 		- Shouldn't be in explorer at all (ideally). Like there must be path to navigate in this through pages. 
-		- Home has a link to index. Note has a link to index. One page 
+		- Home has a link to index. Note has a link to index. One page kinda covers all journals. 
+	- **Notes: Updated/Created**
+		- two dates. 
+		- **Git History On Notes** - show on hover. commit hash(link to repo too?), date and +/- lines, words.
+	- #### Contents
+		- **Website decisions** - to be useful, you can list why something was added or removed. 
+		- **Obsidian decisions** - the same. Up-to-date descriptions
 - ### Bad
 	- **Not implemented, 404s, poorly done pages - discourage users**
 		- say like author doesn't care about website contents. Only to make/have it public. 
@@ -72,3 +88,12 @@ isIntegrated: false
 		- reflection? note? canvas? base?
 	- **Long loading of the website**
 		- There's a lot of navigation involved in this kind of website. Loading should be as fast as possible.
+		- There must be optimization of images in webp 
+			- maybe, .75/.5 rescaling. (probably should be smart one, non-linear. The higher the res - the bigger rescaling. 4k probably can go down to 1080p, while 500x500 could stay at that)
+			- maybe you should use thumbnails + originals for some images?
+			- 
+	- **Buggy on different zoom scales OR layouts (phone/tablet/tv)**
+		- Just to keep checking all of them.
+		- font size on 100% should be whatever it's supposed to be (16px?)
+	- **Limited max width**
+		- There was this guide. 30 words or something to be readable? DO NOT DO FULL WIDTH

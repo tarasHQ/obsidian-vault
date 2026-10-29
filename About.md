@@ -26,6 +26,9 @@
 - Additional interesting idea about comparing myself with those youtube people - they have massive fanbase, employees, family. There's a lot of meaning in their life, which makes it a bit easier to aim up, than when you alone with no people at all, no future, and walking on a thing ice. 
 - (notes, this is a good high-level explanation, maybe I should rephrase it. But it's honest and true. I'm walking on very thin ice and I can't plan my life like a year ahead, because I just don't know if I'll be alive then)
 
+## What I'm Asking?
+- Some attention. A comment. Reaction. Post. Discussion. I'm not sure exactly. Clarify this. But something along these lines. It must be win-win situation, so you have to figure out that as well. Start by writing proper website.
+
 
 ## Why Quartz?
 - vs Obsidian Publish
