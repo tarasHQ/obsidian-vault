@@ -54,8 +54,10 @@ action:
         - [ ] Make sure all day's reflections are linked under reflections
         - [ ] Scroll to Time Log section. 
         - [ ] monitor OFF (seems like keeping on makes him die faster)
+        - [ ] Clean up cat's litter box
 
 ---
+%%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
@@ -75,8 +77,6 @@ action:
 ## TASKS
 %%Cognitive offload for the day, to not keep these in my mind for the whole time%%
 - ### TODO
-	- [ ] 
-- ### Priority
 	- [ ] 
 - ### Completed
 	- [ ] copy_from_here
