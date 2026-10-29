@@ -53,7 +53,22 @@ isIntegrated: false
 - Is this the day when everything crumble? 
 ---
 
-- You don't know how to do website - inspiration. Tak it. Find it. You have links Here's yours solution
+- You don't know how to do website - inspiration. Take it. Find it. You have links Here's yours solution
+---
 
-## TODO
-### 
+## Unsorted ideas from other's garden's
+- ### Good
+	- **Now (listening/doing)**
+		- Can connect ticktick schedule? 
+		- Spotify? 
+	- **Domain navigation block at the top (breadcrumbs)**
+	- **Journaling**
+		- Shouldn't be in explorer at all (ideally). Like there must be path to navigate in this through pages. 
+		- Home has a link to index. Note has a link to index. One page 
+- ### Bad
+	- **Not implemented, 404s, poorly done pages - discourage users**
+		- say like author doesn't care about website contents. Only to make/have it public. 
+	- **Flat lists with lots of files and no idea what type it is**
+		- reflection? note? canvas? base?
+	- **Long loading of the website**
+		- There's a lot of navigation involved in this kind of website. Loading should be as fast as possible.

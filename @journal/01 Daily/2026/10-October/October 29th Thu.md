@@ -89,6 +89,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 16:20
+	- ==Ok. Whole body kinda vibrates. Something definitely happened. And yeah, I'm energized. I'm not sure if it's lasting though==
+- ###### 16:17
+	- I want to breath. I need something with breathing. Maybe that's what keeps me in this state? And natural attraction to do some breathing work - what would get me out? 
 - ###### 16:09
 	- This damn feeling. It's so sticky. 
 - ###### 16:04

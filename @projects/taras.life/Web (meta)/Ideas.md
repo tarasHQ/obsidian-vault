@@ -8,6 +8,9 @@
 ## Contents
 - I may write about my locked down decisions. Like to do a proper post to lock them down.
 
+## Promotion
+- Digital Garden Collections
+
 
 ## SEO
 - Just research it for now.
