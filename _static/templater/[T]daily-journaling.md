@@ -54,7 +54,10 @@ action:
         - [ ] Make sure all day's reflections are linked under reflections
         - [ ] Scroll to Time Log section. 
         - [ ] monitor OFF (seems like keeping on makes him die faster)
-        - [ ] Clean up cat's litter box
+        - Cat
+            - [ ] Clean up cat's litter box
+            - [ ] Food + plate is in my room at the shelf 
+                %%(to feed right away and not be distracted by her)%%
 
 ---
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
