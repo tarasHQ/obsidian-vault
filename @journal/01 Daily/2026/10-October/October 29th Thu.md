@@ -89,9 +89,13 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 12:40
+	- This is it. I'll go eat though. But have video processing before that...
 - ###### 12:21
 	- The issue is that meaning is gone. If I indulge a bit - sometimes it brings it back. Most of the time it doesn't, because I overindulge. So like I can fix current situation because it's already too late. And I don't know for how long it'll torture me. Like that's the funny thing, I want to order it to make this damn "floated in the air" state to go away. And pleasure is like secondary thing.
-	- Ok. I can top-up openrouter, since I need money for that anyways. Then I wouldn't be able to afford a pizza.
+	- Ok. I can top-up openrouter, since I need money for that anyways. Then I wouldn't be able to afford a pizza. It's insane I spend so much time for like 7$. 
+	- You have to mature. You see all those "grown ups" spending money left and right on BS like this. It's not right. You shouldn't have precedents of "state that dictates you how to behave".
+		- Those 7$ goes into openrouter. And I won't consider having a pizza anytime soon.
 - ###### 12:07
 	- It's like painful to resist even... For 30 minutes this idea tortures me. It's lack of meaning... Fuck it's tough... Like it's a habit I would appreciate to not have. Because how torturous it is. Like I don't have this when I want to eat my usual meal. Even with PMO it's not as strong. 
 	- I don't have much money. And on top of it - it's not my money. That's the issue. I need to accumulate every penny I can save. And pizza makes this impossible. Where there's 1 per 10 day, there's 1 per week, then there's 1 per 2-3 days. It's too expensive. But damn tasty too. 
