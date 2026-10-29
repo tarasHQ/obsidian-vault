@@ -93,6 +93,9 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 22:42
+	- I got clicks in reflections. Seems like that's what the unconscious was hinting on? I have phases for implementation of features. Flows on how execution of phase goes. But I have nothing to capture and organize those features. Like I almost forgot a bunch of things from my initial feedback on the first phase. I went into flows, and then forget a bunch of things there as well. Now I did this reflection with lots of features - half of them will be forgotten by tomorrow. So yeah... maybe I should have something to avoid analysis paralysis through capturing and organizing things on, probably, excalidraw canvas? with underlying full notes for details?
+	- I don't know. Like maybe it's a real thing, maybe it's just another distraction by negative complex to NOT actually work on what I need to work on...
 - ###### 22:13
 	- Maybe my issue is that I'm inexperienced in this. So it gets very hard to predict, what to do and how to do. I don't know. It's just becomes PIA. Why I can't just focus and have fun? Why a lot of other things get attached which discourage me? 
 	- That's puer. Oh for sure that's puer. Wanting something big and monumental instead of small and measured steps... I'm so tired of this though. Like today I could've be done with most things if I just put my mind into this. In reality - barely anything is done.  
