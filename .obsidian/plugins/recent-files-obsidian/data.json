@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "On Refining Reflection",
-      "path": "@system/projects/_flows/_reflections/On Refining Reflection.md"
+      "basename": "examination",
+      "path": "@system/projects/_flows/examination.md"
+    },
+    {
+      "basename": "scorched-earth-critique",
+      "path": "@system/projects/_flows/scorched-earth-critique.md"
     },
     {
       "basename": "refining-reflection",
       "path": "@system/projects/_flows/refining-reflection.md"
+    },
+    {
+      "basename": "October 29th Thu",
+      "path": "@journal/01 Daily/2026/10-October/October 29th Thu.md"
+    },
+    {
+      "basename": "On Refining Reflection",
+      "path": "@system/projects/_flows/_reflections/On Refining Reflection.md"
     },
     {
       "basename": "on-discouragement-again",
@@ -15,10 +27,6 @@
     {
       "basename": "better-schedule-plan",
       "path": "@journal/2026/October/plans/better-schedule-plan.md"
-    },
-    {
-      "basename": "October 29th Thu",
-      "path": "@journal/01 Daily/2026/10-October/October 29th Thu.md"
     },
     {
       "basename": "[T]daily-journaling",
@@ -63,10 +71,6 @@
     {
       "basename": "code-review",
       "path": "@system/projects/_flows/code-review.md"
-    },
-    {
-      "basename": "examination",
-      "path": "@system/projects/_flows/examination.md"
     },
     {
       "basename": "=step-xx",

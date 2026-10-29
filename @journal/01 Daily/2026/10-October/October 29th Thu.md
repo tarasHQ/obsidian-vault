@@ -74,7 +74,7 @@ action:
 
 ## REFLECTIONS
 %%Thinking through writing is much better - there must be low-friction place to do so%%
-- 
+- [[../../../../@system/projects/_flows/refining-reflection|refining-reflection]]
 
 ---
 
@@ -89,8 +89,11 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 10:07
+	- Maybe I get overwhelmed because I'm overthinking it. Do it stupid simple. Practice. And then refine based on feedback from reality, instead of trying to predict all branches of how it may go
 - ###### 09:41
 	- ==30 minutes reflection. Will that be useful? Can I those be short==
+		- Meh. Didn't get that click I needed...
 - ###### 09:37
 	- Walking reflection could be dangerous this soon. It may drain me fast. But seems like I need it. I feel I need it. Because current task is too branching to abstract only through the conscious capacity.
 - ###### 09:30
