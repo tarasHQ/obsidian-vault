@@ -10,29 +10,6 @@ journal-date: 2026-10-29
 ---
 
 ```meta-bind-button
-label: Remove Morning Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### MORNING CHECKLIST
-    - [ ] Day scene
-    - [ ] Check webcam (exposure)
-    - [ ] Check IP cam (quality, delay)
-        - [ ] Move to "day position"
-    - [ ] Check all elements are present on the canvas
-    - [ ] Check TickTick schedule 
-        - [ ] correct day, scheduled, scaled
-        - [ ] red "now" line is there
-    - [ ] Start stager timer
-    - Obsidian
-        - [ ] Fill Context block
-        - [ ] Split down. Have ~10 lines of time log.
-
-```meta-bind-button
 label: Remove Night Checklist
 style: default
 icon: trash-2
@@ -67,11 +44,12 @@ action:
 ---
 
 >[!tldr] CONTEX
->Sleep Duration - **0:00**
+>Sleep Duration - **6:30**
 > 
->Time Spent in Bed - **TODO**
+>Time Spent in Bed - **Low**
 > 
->Approx. Compensation of Dreams - **TODO**
+>Approx. Compensation of Dreams - **Introspective**
+>Don't remember much. But I'm discouraged. Down. Weak. Which by my understanding means compensation with a goal to look inward.
 
 ---
 
@@ -111,6 +89,10 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 09:18
+	- Timeframe maybe? 
+- ###### 09:06
+	- Discouraged. The more I'm aware of these states the easier it's to understand that it is malleable. But it's still damn hard to act. To change the state = you need to act, but that state makes acting to be accompanied with lots of friction. 
 
 ---
 
