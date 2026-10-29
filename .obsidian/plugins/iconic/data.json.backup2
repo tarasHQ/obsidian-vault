@@ -24,7 +24,7 @@
   "dialogState": {
     "iconMode": true,
     "emojiMode": true,
-    "rulePage": "folder"
+    "rulePage": "file"
   },
   "appIcons": {},
   "tabIcons": {},
@@ -65,19 +65,18 @@
       "color": "cyan"
     },
     {
-      "id": "HwUDK",
-      "name": ".md",
+      "id": "DI7My",
+      "name": "@journal",
       "match": "all",
       "conditions": [
         {
-          "source": "extension",
-          "operator": "is",
-          "value": "md"
+          "source": "path",
+          "operator": "contains",
+          "value": "@journal"
         }
       ],
       "enabled": true,
-      "icon": "lucide-file-text",
-      "color": "#506d86"
+      "icon": "lucide-notebook"
     },
     {
       "id": "02eGg",
@@ -93,6 +92,21 @@
       "enabled": true,
       "icon": "lucide-database",
       "color": "cyan"
+    },
+    {
+      "id": "HwUDK",
+      "name": ".md",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "extension",
+          "operator": "is",
+          "value": "md"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-file-text",
+      "color": "#506d86"
     }
   ],
   "folderRules": [
