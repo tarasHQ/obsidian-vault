@@ -5,6 +5,10 @@
       "path": "_private/_check/Knowledge/Courses/PA/Maps of Meaning/- Lectures 1-3.md"
     },
     {
+      "basename": "October 29th Thu",
+      "path": "@journal/01 Daily/2026/10-October/October 29th Thu.md"
+    },
+    {
       "basename": "code-review",
       "path": "@system/projects/_flows/code-review.md"
     },
@@ -39,10 +43,6 @@
     {
       "basename": "[T]daily-journaling",
       "path": "_static/templater/[T]daily-journaling.md"
-    },
-    {
-      "basename": "October 29th Thu",
-      "path": "@journal/01 Daily/2026/10-October/October 29th Thu.md"
     },
     {
       "basename": "refining-reflection",

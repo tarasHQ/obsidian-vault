@@ -93,6 +93,8 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 23:33
+	- another bunch of issues... website is very limiting force here. But if I half-ass this - then I won't get out of this what I seek. It must be done properly. So I have to figure out something else.
 - ###### 23:04
 	- Probably I got onto something. Found that meaning bit
 - ###### 22:42
