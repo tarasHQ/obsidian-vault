@@ -92,7 +92,6 @@ action:
 ---
 
 ## TIME LOG
-
 ```meta-bind-button {fold}
 label: New Log Entry
 style: default
