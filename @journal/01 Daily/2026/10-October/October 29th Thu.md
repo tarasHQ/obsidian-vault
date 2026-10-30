@@ -20,26 +20,29 @@ action:
 ```
 - ##### NIGHT CHECKLIST
     - ###### AFTER NEW RECORDING
-        - [ ] Check audio delay to webcam
-        - [ ] Night scene
-        - [ ] Check IP cam (quality, delay)
-            - [ ] Move to "night position"
-        - [ ] Check TickTick schedule (correct day, scheduled)
-        - [ ] Set time of next sleep for stager timer.
+        - [x] Check audio delay to webcam
+        - [x] Night scene
+        - [x] Check IP cam (quality, delay)
+            - [x] Move to "night position"
+        - [x] Check TickTick schedule (correct day, scheduled)
+        - [x] Set time of next sleep for stager timer.
     - ###### BEFORE SLEEP
-        - [ ] Write overview of the current day
-        - [ ] Create journal for the next day
-        - [ ] Move uncompleted tasks
-        - [ ] Make sure all day's reflections are linked under reflections
-        - [ ] Scroll to Time Log section. 
-        - [ ] monitor OFF (seems like keeping on makes him die faster)
+        - [x] Write overview of the current day
+        - [x] Create journal for the next day
+        - [x] Move uncompleted tasks
+        - [x] Make sure all day's reflections are linked under reflections
+        - [x] Scroll to Time Log section. 
+        - [x] monitor OFF (seems like keeping on makes him die faster)
 
 ---
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
+I really hope for some compensation in dreams. This day was awful. It all started from that damn pizza. But if I think more about that - it started a day before. Pizza was a symptom. I'm miserable. Like I'm 95% there to just stop the whole thing for indefinite time. 
+- What was the issue? Being torn apart by puer and senex. I forget that ego has a say in this too. I have no idea what to do. Like these states are what will keep me from achieving my goals. If I don't know how to get out from them = I don't achieve my goals = I might as well just give up now. So yeah. 
 
+==🔴How I woke up - that was the issue==, not other things. The unconscious told me right away what it needs from me. I just don't know how to answer on that...
 
 ---
 
@@ -50,29 +53,6 @@ action:
 > 
 >Approx. Compensation of Dreams - **Introspective**
 >Don't remember much. But I'm discouraged. Down. Weak. Which by my understanding means compensation with a goal to look inward.
-
----
-
-## TASKS
-%%Cognitive offload for the day, to not keep these in my mind for the whole time%%
-- ### TODO
-	- [ ] [PRIORITY], when you go sleep - create and leave big plan and your position in it. That's how you meaningfully will trach higher scope. But be careful so your "cost" scope won't overfocus on this.
-		- Probably in excalidraw?
-	- [ ] Daily journaling template
-		- [ ] create another folder for these, to avoid bloating templater view
-		- [ ] add input field for alias, you're typing names that shouldn't be on the website. 
-			- [ ] OR - automate title parsing from file name (including lowercase 'of', 'the', etc.)
-	- [ ] **META** Figure out where to accumulate such secondary tasks and where you can prioritize them, because flat list is stupid and limiting. 
-	- [ ] Ideally to go away from the minimal theme. It does add a lot of things that I don't use, and basically a deadweight. Like it's better to have 30 styles in CSS than like 2 plugins with 100 settings + a theme . 
-	- [ ] flow to compress png into webp from screenshot, so it won't harm neither website nor size of the vault. But also figure out if deskflow can do it, because right now it's half-supported. (or don't do it through deskflow)
-		- priority because it adds another dimension to thinking + cognitive offload. 
-	- [ ] folder icons - rename to where they used and resize other icons (260kb per icon is stupid)
-	- [ ] AHK - run separate user of vscode as admin to be able to edit the script? 
-	- [ ] Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
-	- [ ] 🔴[[plans/better-schedule-plan|better-schedule-plan]]
-- ### Completed
-	- [ ] copy_from_here
-	- [ ] 
 
 ---
 
@@ -93,6 +73,9 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 00:38
+	- I really hope for some compensation in dreams. This day was awful. It all started from that damn pizza. But if I think more about that - it started a day before. Pizza was a symptom. I'm miserable. Like I'm 95% there to just stop the whole thing for indefinite time. 
+		- What was the issue? Being torn apart by puer and senex. I forget that ego has a say in this too. I have no idea what to do. Like these states are what will keep me from achieving my goals. If I don't know how to get out from them = I don't achieve my goals = I might as well just give up now. So yeah. 
 - ###### 23:33
 	- another bunch of issues... website is very limiting force here. But if I half-ass this - then I won't get out of this what I seek. It must be done properly. So I have to figure out something else.
 - ###### 23:04
