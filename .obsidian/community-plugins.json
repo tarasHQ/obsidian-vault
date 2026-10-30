@@ -7,11 +7,9 @@
   "mermaid-zoom",
   "open-tab-settings",
   "hide-sidebars",
-  "advanced-canvas",
   "preserve-blank-lines",
   "dataview",
   "templater-obsidian",
-  "better-embedded-canvas",
   "iconic",
   "refresh-preview",
   "cursor-smith",
@@ -19,7 +17,6 @@
   "js-engine",
   "code-space",
   "customjs",
-  "obsidian-excalidraw-plugin",
   "single-html-export",
   "file-cleaner-redux",
   "obsidian-git",
@@ -27,5 +24,6 @@
   "snipdock",
   "syncable-dictionary",
   "code-block-fold",
-  "close-and-switch-to-recent-tab"
+  "close-and-switch-to-recent-tab",
+  "foldstate"
 ]
