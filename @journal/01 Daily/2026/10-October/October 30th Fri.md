@@ -100,6 +100,14 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 00:05
+	- Sometimes it feels like as if I have some brain damage or degenerative neurological disease. Because like why I can't or WON'T comprehend this simpler concepts. 
+	- On another side it feels like I should just embrace usual notes and ignore excalidraw or canvas all together. Like those just poorly made. Like if I want to spend a lot of time to have a beautiful graphs, then yeah - it makes sense. But if I want to get things done - I just don't see it... It's just friction upon friction. 
+	- So maybe I should spend time on mastering notes? Like my biggest issue of big lists was walls of text. Categorization may help. Also if I figure out persistence of folded states - so each feature can have be hidden and not bloat the view. Without creating a million notes. Though it also would have to be replicated on the website...
+- ###### 00:02
+	- Damn it's exhausting. How much time I should waste on this indecisiveness? 
+- ###### 23:53
+	- Yeah... so I'm comparing... and I'm not really sure excalidraw worth it, to be honest... It's just the damn friction. So much unnecessary movement. While in notes with outliner plugin I can work much much faster. It's just not 2d axis, which is the issue. 
 - ###### 22:55
 	- Yeah, more energy for sure. First time I noticed different perspective on 2 hours left. Previously it was "oh, to hell with it", now though, I want to make the most of it.
 - ###### 22:44

@@ -1,20 +1,60 @@
 {
   "recentFiles": [
     {
-      "basename": "accumulated-ideas",
-      "path": "_static/drawings/accumulated-ideas.md"
+      "basename": "October 30th Fri",
+      "path": "@journal/01 Daily/2026/10-October/October 30th Fri.md"
     },
     {
-      "basename": "all-in-one.md",
-      "path": "@projects/taras.life/__obsidian__/ideas/all-in-one.md.md"
+      "basename": "Capture",
+      "path": "@projects/taras.life/__obsidian__/ideas/Capture.md"
     },
     {
-      "basename": "quartz-website-plan",
-      "path": "@projects/taras.life/Web (meta)/quartz-website-plan.md"
+      "basename": "Pasted image 20261029184519",
+      "path": "@projects/taras.life/__obsidian__/ideas/_attachments/Pasted image 20261029184519.png"
+    },
+    {
+      "basename": "Pasted image 20261029220348",
+      "path": "@projects/taras.life/__obsidian__/ideas/_attachments/Pasted image 20261029220348.png"
+    },
+    {
+      "basename": "Pasted image 20261029220112",
+      "path": "@projects/taras.life/__obsidian__/ideas/_attachments/Pasted image 20261029220112.png"
+    },
+    {
+      "basename": "Pasted image 20261029215947",
+      "path": "@projects/taras.life/__obsidian__/ideas/_attachments/Pasted image 20261029215947.png"
+    },
+    {
+      "basename": "Ideas",
+      "path": "@projects/taras.life/Social/Ideas.md"
     },
     {
       "basename": "what-to-do-with-website",
       "path": "@projects/taras.life/__obsidian__/_reflections/what-to-do-with-website.md"
+    },
+    {
+      "basename": "format-of-excalidraw-maps",
+      "path": "@system/_reflections/format-of-excalidraw-maps.md"
+    },
+    {
+      "basename": "_productivity",
+      "path": "Productivity/_productivity.canvas"
+    },
+    {
+      "basename": "ThePlan",
+      "path": "ThePlan.canvas"
+    },
+    {
+      "basename": "LLM",
+      "path": "@system/projects/LLM.md"
+    },
+    {
+      "basename": "_project",
+      "path": "@projects/taras.life/__obsidian__/_project.md"
+    },
+    {
+      "basename": "_rules.md",
+      "path": "@system/projects/_flows/_rules.md.md"
     },
     {
       "basename": "initial-planning",
@@ -29,14 +69,6 @@
       "path": "_private/_check/Knowledge/Courses/PA/Maps of Meaning/- Lectures 7-9.md"
     },
     {
-      "basename": "October 30th Fri",
-      "path": "@journal/01 Daily/2026/10-October/October 30th Fri.md"
-    },
-    {
-      "basename": "format-of-excalidraw-maps",
-      "path": "@system/_reflections/format-of-excalidraw-maps.md"
-    },
-    {
       "basename": "- Lectures 9-12",
       "path": "_private/_check/Knowledge/Courses/PA/Maps of Meaning/- Lectures 9-12.md"
     },
@@ -47,10 +79,6 @@
     {
       "basename": "- Lectures 4-6",
       "path": "_private/_check/Knowledge/Courses/PA/Maps of Meaning/- Lectures 4-6.md"
-    },
-    {
-      "basename": "Ideas",
-      "path": "@projects/taras.life/Social/Ideas.md"
     },
     {
       "basename": "on-discouragement-again",
@@ -67,10 +95,6 @@
     {
       "basename": "code-review",
       "path": "@system/projects/_flows/code-review.md"
-    },
-    {
-      "basename": "LLM",
-      "path": "@system/projects/LLM.md"
     },
     {
       "basename": "[T]daily-journaling",
@@ -97,10 +121,6 @@
       "path": "Psychoanalysis/_reflections/i-dont-want-to-do-anything.md"
     },
     {
-      "basename": "Ideas",
-      "path": "@projects/taras.life/Web (meta)/Ideas.md"
-    },
-    {
       "basename": "About",
       "path": "About.md"
     },
@@ -123,10 +143,6 @@
     {
       "basename": "I just don't know",
       "path": "Psychoanalysis/_reflections/I just don't know.md"
-    },
-    {
-      "basename": "_rules.md",
-      "path": "@system/projects/_flows/_rules.md.md"
     },
     {
       "basename": "[T]reflections",
@@ -169,10 +185,6 @@
       "path": "@projects/0vibes/__obsidian__/_project.md"
     },
     {
-      "basename": "_project",
-      "path": "@projects/taras.life/__obsidian__/_project.md"
-    },
-    {
       "basename": "_plan_001",
       "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
     },
@@ -183,14 +195,6 @@
     {
       "basename": "October 27th, 2026",
       "path": "@journal/2026/October/October 27th, 2026.md"
-    },
-    {
-      "basename": "CLIENT2_MIGRATION",
-      "path": "@projects/0vibes/__obsidian__/ideas/CLIENT2_MIGRATION.md"
-    },
-    {
-      "basename": "OPENAI_OAUTH_LOG_TOKEN_PLAN",
-      "path": "@projects/0vibes/__obsidian__/artifacts/OPENAI_OAUTH_LOG_TOKEN_PLAN.md"
     }
   ],
   "omittedPaths": [],
