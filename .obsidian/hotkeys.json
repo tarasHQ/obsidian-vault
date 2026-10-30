@@ -105,14 +105,6 @@
     }
   ],
   "editor:delete-paragraph": [],
-  "workspace:move-to-new-window": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "Q"
-    }
-  ],
   "syncable-dictionary:add-selection-to-synced-dictionary": [
     {
       "modifiers": [
@@ -135,6 +127,16 @@
         "Alt"
       ],
       "key": "E"
+    }
+  ],
+  "obsidian-outliner:fold": [],
+  "obsidian-outliner:unfold": [],
+  "obsidian-excalidraw-plugin:toggle-excalidraw-view": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "Q"
     }
   ]
 }

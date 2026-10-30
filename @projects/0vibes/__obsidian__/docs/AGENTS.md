@@ -101,7 +101,7 @@
 - macOS: Built-in `osascript` — no additional packages required.
 ### Network & Environment Gotchas
 - VPN browser/system: Exclude server IP to prevent network issues. 
-- Windows Hyper-V / WinNAT: Hyper-V or WinNAT dynamic port reservations can randomly block application ports. If port binding fails, whitelist application ports or restart the WinNAT service (`net stop winnat && net start winnat`).
+- Windows Hyper-V / WinNAT: Hyper-V or WinNAT dynamic port reservations can randomly block application ports. If port binding fails, whitelist application ports or restart the WinNAT service (`net stop winnat` and `net start winnat`).
 
 ---
 

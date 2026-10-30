@@ -1,24 +1,56 @@
 {
   "recentFiles": [
     {
-      "basename": "October 30th Fri",
-      "path": "@journal/01 Daily/2026/10-October/October 30th Fri.md"
+      "basename": "accumulated-ideas",
+      "path": "_static/drawings/accumulated-ideas.md"
+    },
+    {
+      "basename": "all-in-one.md",
+      "path": "@projects/taras.life/__obsidian__/ideas/all-in-one.md.md"
+    },
+    {
+      "basename": "quartz-website-plan",
+      "path": "@projects/taras.life/Web (meta)/quartz-website-plan.md"
     },
     {
       "basename": "what-to-do-with-website",
       "path": "@projects/taras.life/__obsidian__/_reflections/what-to-do-with-website.md"
     },
     {
-      "basename": "refining-reflection",
-      "path": "@system/projects/_flows/refining-reflection.md"
+      "basename": "initial-planning",
+      "path": "@system/projects/_flows/initial-planning.md"
     },
     {
-      "basename": "October 29th Thu",
-      "path": "@journal/01 Daily/2026/10-October/October 29th Thu.md"
+      "basename": "writing-steps",
+      "path": "@system/projects/_flows/writing-steps.md"
     },
     {
-      "basename": "[T]daily-journaling",
-      "path": "_static/templater/[T]daily-journaling.md"
+      "basename": "- Lectures 7-9",
+      "path": "_private/_check/Knowledge/Courses/PA/Maps of Meaning/- Lectures 7-9.md"
+    },
+    {
+      "basename": "October 30th Fri",
+      "path": "@journal/01 Daily/2026/10-October/October 30th Fri.md"
+    },
+    {
+      "basename": "format-of-excalidraw-maps",
+      "path": "@system/_reflections/format-of-excalidraw-maps.md"
+    },
+    {
+      "basename": "- Lectures 9-12",
+      "path": "_private/_check/Knowledge/Courses/PA/Maps of Meaning/- Lectures 9-12.md"
+    },
+    {
+      "basename": "- Lectures 1-3",
+      "path": "_private/_check/Knowledge/Courses/PA/Maps of Meaning/- Lectures 1-3.md"
+    },
+    {
+      "basename": "- Lectures 4-6",
+      "path": "_private/_check/Knowledge/Courses/PA/Maps of Meaning/- Lectures 4-6.md"
+    },
+    {
+      "basename": "Ideas",
+      "path": "@projects/taras.life/Social/Ideas.md"
     },
     {
       "basename": "on-discouragement-again",
@@ -29,24 +61,28 @@
       "path": "@journal/2026/October/plans/better-schedule-plan.md"
     },
     {
-      "basename": "- Lectures 1-3",
-      "path": "_private/_check/Knowledge/Courses/PA/Maps of Meaning/- Lectures 1-3.md"
+      "basename": "October 29th Thu",
+      "path": "@journal/01 Daily/2026/10-October/October 29th Thu.md"
     },
     {
       "basename": "code-review",
       "path": "@system/projects/_flows/code-review.md"
     },
     {
+      "basename": "LLM",
+      "path": "@system/projects/LLM.md"
+    },
+    {
+      "basename": "[T]daily-journaling",
+      "path": "_static/templater/[T]daily-journaling.md"
+    },
+    {
+      "basename": "refining-reflection",
+      "path": "@system/projects/_flows/refining-reflection.md"
+    },
+    {
       "basename": "Lecture 1",
       "path": "_private/_check/Knowledge/Courses/JBP - Maps Of Meaning/Lecture 1.md"
-    },
-    {
-      "basename": "website-design-inspiration",
-      "path": "_static/drawings/website-design-inspiration.md"
-    },
-    {
-      "basename": "Drawing 2026-10-17 11.18.40.excalidraw",
-      "path": "Drawing 2026-10-17 11.18.40.excalidraw.md"
     },
     {
       "basename": "examination",
@@ -57,20 +93,8 @@
       "path": "file:D:/Downloads/website-design-inspiration.svg"
     },
     {
-      "basename": "writing-steps",
-      "path": "@system/projects/_flows/writing-steps.md"
-    },
-    {
       "basename": "i-dont-want-to-do-anything",
       "path": "Psychoanalysis/_reflections/i-dont-want-to-do-anything.md"
-    },
-    {
-      "basename": "quartz-website-plan",
-      "path": "@projects/taras.life/Web (meta)/quartz-website-plan.md"
-    },
-    {
-      "basename": "Ideas",
-      "path": "@projects/taras.life/Social/Ideas.md"
     },
     {
       "basename": "Ideas",
@@ -79,10 +103,6 @@
     {
       "basename": "About",
       "path": "About.md"
-    },
-    {
-      "basename": "initial-planning",
-      "path": "@system/projects/_flows/initial-planning.md"
     },
     {
       "basename": "scorched-earth-critique",
@@ -107,10 +127,6 @@
     {
       "basename": "_rules.md",
       "path": "@system/projects/_flows/_rules.md.md"
-    },
-    {
-      "basename": "LLM",
-      "path": "@system/projects/LLM.md"
     },
     {
       "basename": "[T]reflections",
@@ -157,10 +173,6 @@
       "path": "@projects/taras.life/__obsidian__/_project.md"
     },
     {
-      "basename": "all-in-one.md",
-      "path": "@projects/taras.life/__obsidian__/ideas/all-in-one.md.md"
-    },
-    {
       "basename": "_plan_001",
       "path": "@projects/taras.life/__obsidian__/phases/001/_plan_001.md"
     },
@@ -179,26 +191,6 @@
     {
       "basename": "OPENAI_OAUTH_LOG_TOKEN_PLAN",
       "path": "@projects/0vibes/__obsidian__/artifacts/OPENAI_OAUTH_LOG_TOKEN_PLAN.md"
-    },
-    {
-      "basename": "Temp extraction",
-      "path": "@projects/0vibes/__obsidian__/phases/001/artifacts/Temp extraction.md"
-    },
-    {
-      "basename": "proxmox-backup-plan",
-      "path": "@journal/2026/October/plans/proxmox-backup-plan.md"
-    },
-    {
-      "basename": "schedule",
-      "path": "@system/schedule.md"
-    },
-    {
-      "basename": "windows-reinstall-notes",
-      "path": "Maintenance/windows-reinstall-notes.md"
-    },
-    {
-      "basename": "08-visual-polish",
-      "path": "@projects/taras.life/__obsidian__/phases/001/steps/08-visual-polish.md"
     }
   ],
   "omittedPaths": [],
