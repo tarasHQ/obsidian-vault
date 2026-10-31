@@ -18,7 +18,7 @@ action:
     - [ ] Day scene
     - [ ] Check webcam (exposure)
     - [ ] Check IP cam (quality, delay)
-        - [ ] Move to "day position"
+        - [ ] Disable sleep blur
     - [ ] Check all elements are present on the canvas
     - [ ] Check TickTick schedule 
         - [ ] correct day, scheduled, scaled
@@ -38,24 +38,23 @@ action:
   file: _static/scripts/meta-bind/journal-remove-checklist.js
 ```
 - ##### NIGHT CHECKLIST
-    - ###### AFTER NEW RECORDING
-        - [ ] Check audio delay to webcam
-        - [ ] Night scene
-        - [ ] Check IP cam (quality, delay)
-            - [ ] Move to "night position"
-        - [ ] Check TickTick schedule (correct day, scheduled)
-        - [ ] Set time of next sleep for stager timer.
-    - ###### BEFORE SLEEP
-        - [ ] Write overview of the current day
-        - [ ] Create journal for the next day
-        - [ ] Move uncompleted tasks
-        - [ ] Make sure all day's reflections are linked under reflections
-        - [ ] Scroll to Time Log section. 
-        - [ ] monitor OFF (seems like keeping on makes him die faster)
-        - Cat
-            - [ ] Clean up cat's litter box
-            - [ ] Food + plate is in my room at the shelf 
-                %%(to feed right away and not be distracted by her)%%
+	- [ ] Check audio delay to webcam
+	- [ ] Check TickTick schedule (correct day, scheduled)
+	- [ ] Set time of next sleep for stager timer.
+	- Obsidian
+		- [ ] Write overview of the current day
+		- [ ] Create journal for the next day
+		- [ ] Move uncompleted tasks
+		- [ ] Make sure all day's reflections are linked under reflections
+		- [ ] Delete Dream Analysis block if empty
+	- [ ] Night scene
+	- [ ] Check IP cam (quality, delay)
+		- [ ] Enable sleep blur
+	- [ ] monitor OFF (seems like keeping on makes him die faster)
+	- Cat
+		- [ ] Clean up cat's litter box
+		- [ ] Food + plate is in my room at the shelf 
+			%%(to feed right away and not be distracted by her)%%
 
 ---
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%

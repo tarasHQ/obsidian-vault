@@ -56,7 +56,7 @@ isIntegrated: false
 - You don't know how to do website - inspiration. Take it. Find it. You have links Here's yours solution
 ---
 
-## Brainstorming
+# Brainstorming
 - ### Attitude
 	- **Look at the website through the eyes of first-time visitor**
 - ### TODO
@@ -112,18 +112,12 @@ isIntegrated: false
 	- **Styles**
 		- Links - underline only. Different styles for internal and external links.
 - ### Bad
-	- **Not implemented, 404s, poorly done pages - discourage users**
-		- say like author doesn't care about website contents. Only to make/have it public. 
+
 	- **Flat lists with lots of files and no idea what type it is**
 		- some reusable icons - reflection? note? canvas? base?
 		- structure and order. 
 			- maybe you keep in explorer only top level? Beyond 1-2 levels - you use internal page/based navigation + indexes?
-	- **Long loading of the website**
-		- There's a lot of navigation involved in this kind of website. Loading should be as fast as possible.
-		- There must be optimization of images in webp 
-			- maybe, .75/.5 rescaling. (probably should be smart one, non-linear. The higher the res - the bigger rescaling. 4k probably can go down to 1080p, while 500x500 could stay at that)
-			- maybe you should use thumbnails + originals for some images?
-			- 
+
 	- **Buggy on different zoom scales OR layouts (phone/tablet/tv)**
 		- Just to keep checking all of them.
 		- font size on 100% should be whatever it's supposed to be (16px?)
