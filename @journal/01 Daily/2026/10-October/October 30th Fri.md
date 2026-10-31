@@ -20,22 +20,22 @@ action:
 ```
 - ##### NIGHT CHECKLIST
     - ###### AFTER NEW RECORDING
-        - [ ] Check audio delay to webcam
-        - [ ] Night scene
-        - [ ] Check IP cam (quality, delay)
-            - [ ] Move to "night position"
-        - [ ] Check TickTick schedule (correct day, scheduled)
-        - [ ] Set time of next sleep for stager timer.
+        - [x] Check audio delay to webcam
+        - [x] Night scene
+        - [x] Check IP cam (quality, delay)
+            - [x] Move to "night position"
+        - [x] Check TickTick schedule (correct day, scheduled)
+        - [x] Set time of next sleep for stager timer.
     - ###### BEFORE SLEEP
-        - [ ] Write overview of the current day
-        - [ ] Create journal for the next day
-        - [ ] Move uncompleted tasks
-        - [ ] Make sure all day's reflections are linked under reflections
-        - [ ] Scroll to Time Log section. 
-        - [ ] monitor OFF (seems like keeping on makes him die faster)
+        - [x] Write overview of the current day
+        - [x] Create journal for the next day
+        - [x] Move uncompleted tasks
+        - [x] Make sure all day's reflections are linked under reflections
+        - [x] Scroll to Time Log section. 
+        - [x] monitor OFF (seems like keeping on makes him die faster)
         - Cat
-            - [ ] Clean up cat's litter box
-            - [ ] Food + plate is in my room at the shelf 
+            - [x] Clean up cat's litter box
+            - [x] Food + plate is in my room at the shelf 
                 %%(to feed right away and not be distracted by her)%%
 
 ---
@@ -43,7 +43,9 @@ action:
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
+Psychoanalysis was awesome idea. Lots of traps were present today. But thankfully dodged "excalidraw bullet" with minor losses. This shit is really a black hole that just sucks time in with all that productivity talk. I like supplementary visual structurization for thinking, but what there is just a damn pure friction. It's as if writing notes was a work in itself. 
 
+I wish I had all my flows streamlined so I can psychoanalyze more. But for now I just have to focus on getting public ASAP. And move to my project. All of this takes ungodly amount of time. But at least recording my life and publishing on youtube has a great benefit of keeping me on track. Without that I would probably fall of at least in 3 separate cases. Hopefully going public will not only help with meaning, but also give me more meaning in moving forward.
 
 ---
 
@@ -53,34 +55,6 @@ action:
 >Time Spent in Bed - **Low, besides writing dreams**
 > 
 >Approx. Compensation of Dreams - **To be done in dream analysis**
-
----
-
-## TASKS
-%%Cognitive offload for the day, to not keep these in my mind for the whole time%%
-- ### TODO
-	- [ ] [PRIORITY], when you go sleep - create and leave big plan and your position in it. That's how you meaningfully will trach higher scope. But be careful so your "cost" scope won't overfocus on this.
-		- Probably in excalidraw?
-	- [ ] Your budget is limited but sync is important. Maybe selfhost livesync? 
-	- [ ] Mouse has 12 buttons. But actually customizable are like 3. Because 2 buttons for tv on/off to preserve organic diodes. And 3 for music control. 2 for back and forward. 1 for win menu. Not much left. 
-		- And if I had a modifier. Either through shift(but check conflicts with ahk) or through mouse buttons. Like rmb (if it's possible), then on rmb you can place rarely used functions. And have more buttons for actively used ones
-	- [ ] Youtube - you have to do thumbnails anyway, autoselection is unreliable and will cause more headache because of the absent flow - selects only me sleeping.
-	- [ ] OBS causes webcam audio lag. I reloaded - it went away. FPS maybe? Google/fix.
-	- [ ] Daily journaling template
-		- [ ] create another folder for these, to avoid bloating templater view
-		- [ ] add input field for alias, you're typing names that shouldn't be on the website. 
-			- [ ] OR - automate title parsing from file name (including lowercase 'of', 'the', etc.)
-	- [ ] **META** Figure out where to accumulate such secondary tasks and where you can prioritize them, because flat list is stupid and limiting. 
-	- [ ] Ideally to go away from the minimal theme. It does add a lot of things that I don't use, and basically a deadweight. Like it's better to have 30 styles in CSS than like 2 plugins with 100 settings + a theme . 
-	- [ ] flow to compress png into webp from screenshot, so it won't harm neither website nor size of the vault. But also figure out if deskflow can do it, because right now it's half-supported. (or don't do it through deskflow)
-		- priority because it adds another dimension to thinking + cognitive offload. 
-	- [ ] folder icons - rename to where they used and resize other icons (260kb per icon is stupid)
-	- [ ] AHK - run separate user of vscode as admin to be able to edit the script? 
-	- [ ] Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
-	- [ ] 🔴[[plans/better-schedule-plan|better-schedule-plan]]
-- ### Completed
-	- [ ] copy_from_here
-	- [ ] 
 
 ---
 
@@ -100,6 +74,11 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 00:46
+	- ==🔴When I was extremely overindulging in sweets, I was developing the habit to just smash it and then throw out in the trash. And I was saying/thinking that such things have double price. First time I pay to buy them, then I pay by consuming them. So by throwing them out into the trash - I wasn't throwing out money, but instead I was avoiding paying more.==
+		- Situation with excalidraw proved to be the exact same. 1:1. It's not trash. Though very confusingly done. But the main issue is that it's just not sustainable. I don't know how people using it with low friction. 
+		- And yeah, I wasted hours upon hours on these charts/drawings/things. BUT. I won't pay second part of the cost, by investing into this long-term. I trigger stop loss and get out with what I can afford to lose.
+		- Thank God I'm not getting like in love with such things anymore, or at least as much. 
 - ###### 00:05
 	- Sometimes it feels like as if I have some brain damage or degenerative neurological disease. Because like why I can't or WON'T comprehend this simpler concepts. 
 	- On another side it feels like I should just embrace usual notes and ignore excalidraw or canvas all together. Like those just poorly made. Like if I want to spend a lot of time to have a beautiful graphs, then yeah - it makes sense. But if I want to get things done - I just don't see it... It's just friction upon friction. 
