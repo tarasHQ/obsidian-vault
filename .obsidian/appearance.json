@@ -9,7 +9,8 @@
   "accentColor": "#8c7c5a",
   "nativeMenus": false,
   "enabledCssSnippets": [
-    "common"
+    "common",
+    "rogers-theme"
   ],
   "showRibbon": false
 }
