@@ -1,0 +1,38 @@
+/* ===============================================================
+   00-vars.css
+   Design tokens: all custom properties (colors, sizes) live here.
+   The rules that consume them live in the numbered snippet files.
+   Snippets load alphabetically, so tokens defined here are
+   available to everything downstream.
+
+   NOTE: theme-scoped tokens are declared on body.theme-dark /
+   body.theme-light because Minimal declares some of the same
+   variables on those selectors — a plain `body` declaration would
+   lose the specificity battle.
+   =============================================================== */
+
+/* ---------- Workspace / layout ---------- */
+body {
+    --text-selection: #2b2f1e !important;
+    --max-width: 95% !important; /* making it a bit wider (default is 88%) */
+}
+
+/* ---------- Inline text ---------- */
+/* Higher specificity than Minimal's .theme-light/.theme-dark
+   variable declarations, so these reliably win */
+body.theme-dark,
+body.theme-light {
+    /* Bold text color (applied by Obsidian core to .cm-strong / strong) */
+    --bold-color: #d1a6a6;
+
+    /* Default ==highlight== background */
+    --text-highlight-bg: #9fa340;
+
+    /* Colored highlight palette, consumed by .cm-highlight-* rules
+       in 10-typography.css (Highlightr-style classes) */
+    --hl-bg-red: #ce6c6cd5;
+    --hl-bg-orange: #e3a355b6;
+    --hl-bg-yellow: #ffea00;
+    --hl-bg-blue: #63a0d6c9;
+    --hl-bg-green: #59a05cc7;
+}

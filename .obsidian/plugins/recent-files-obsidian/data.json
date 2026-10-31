@@ -9,16 +9,68 @@
       "path": "@journal/01 Daily/2026/10-October/October 31st Sat.md"
     },
     {
-      "basename": "better-schedule-plan",
-      "path": "@journal/2026/October/plans/better-schedule-plan.md"
+      "basename": "_plan_002",
+      "path": "@projects/taras.life/__obsidian__/phases/002/_plan_002.md"
+    },
+    {
+      "basename": "_project",
+      "path": "@projects/taras.life/__obsidian__/_project.md"
+    },
+    {
+      "basename": "initial-reflection",
+      "path": "@projects/taras.life/__obsidian__/phases/002/_reflections/initial-reflection.md"
+    },
+    {
+      "basename": "README",
+      "path": "@system/projects/README.md"
+    },
+    {
+      "basename": "LLM",
+      "path": "@system/projects/LLM.md"
+    },
+    {
+      "basename": "[T]plan",
+      "path": "@system/projects/_templater/[T]plan.md"
+    },
+    {
+      "basename": "[T]step-end",
+      "path": "@system/projects/_templater/[T]step-end.md"
     },
     {
       "basename": "what-to-do-with-website",
       "path": "@projects/taras.life/__obsidian__/_reflections/what-to-do-with-website.md"
     },
     {
+      "basename": "Untitled",
+      "path": "Untitled.md"
+    },
+    {
+      "basename": "Ideas",
+      "path": "@projects/taras.life/Social/Ideas.md"
+    },
+    {
+      "basename": "About",
+      "path": "About.md"
+    },
+    {
+      "basename": "I just don't know",
+      "path": "Psychoanalysis/_reflections/I just don't know.md"
+    },
+    {
+      "basename": "parking",
+      "path": "@projects/taras.life/__obsidian__/phases/_archived/001/ideas/parking.md"
+    },
+    {
       "basename": "on-discouragement-again",
       "path": "Psychoanalysis/_reflections/on-discouragement-again.md"
+    },
+    {
+      "basename": "On Discouragement",
+      "path": "Psychoanalysis/_reflections/On Discouragement.md"
+    },
+    {
+      "basename": "better-schedule-plan",
+      "path": "@journal/2026/October/plans/better-schedule-plan.md"
     },
     {
       "basename": "[T]daily-journaling",
@@ -27,10 +79,6 @@
     {
       "basename": "October 30th Fri",
       "path": "@journal/01 Daily/2026/10-October/October 30th Fri.md"
-    },
-    {
-      "basename": "About",
-      "path": "About.md"
     },
     {
       "basename": "README",
@@ -61,10 +109,6 @@
       "path": "@projects/taras.life/__obsidian__/ideas/_attachments/Pasted image 20261029215947.png"
     },
     {
-      "basename": "Ideas",
-      "path": "@projects/taras.life/Social/Ideas.md"
-    },
-    {
       "basename": "format-of-excalidraw-maps",
       "path": "@system/_reflections/format-of-excalidraw-maps.md"
     },
@@ -75,14 +119,6 @@
     {
       "basename": "ThePlan",
       "path": "ThePlan.canvas"
-    },
-    {
-      "basename": "LLM",
-      "path": "@system/projects/LLM.md"
-    },
-    {
-      "basename": "_project",
-      "path": "@projects/taras.life/__obsidian__/_project.md"
     },
     {
       "basename": "_rules.md",
@@ -131,70 +167,6 @@
     {
       "basename": "website-design-inspiration",
       "path": "file:D:/Downloads/website-design-inspiration.svg"
-    },
-    {
-      "basename": "i-dont-want-to-do-anything",
-      "path": "Psychoanalysis/_reflections/i-dont-want-to-do-anything.md"
-    },
-    {
-      "basename": "scorched-earth-critique",
-      "path": "@system/projects/_flows/scorched-earth-critique.md"
-    },
-    {
-      "basename": "On Refining Reflection",
-      "path": "@system/projects/_flows/_reflections/On Refining Reflection.md"
-    },
-    {
-      "basename": "October 28th, 2026",
-      "path": "@journal/2026/October/October 28th, 2026.md"
-    },
-    {
-      "basename": "05",
-      "path": "@journal/2026/October/05.md"
-    },
-    {
-      "basename": "I just don't know",
-      "path": "Psychoanalysis/_reflections/I just don't know.md"
-    },
-    {
-      "basename": "[T]reflections",
-      "path": "_static/templater/[T]reflections.md"
-    },
-    {
-      "basename": "On Workflows",
-      "path": "@system/_reflections/On Workflows.md"
-    },
-    {
-      "basename": "=step-xx",
-      "path": "@system/projects/_templater/internal-templates/=step-xx.md"
-    },
-    {
-      "basename": "Issues",
-      "path": "@system/projects/iteration-01/Issues.md"
-    },
-    {
-      "basename": "AGENTS",
-      "path": "@projects/0vibes/__obsidian__/docs/AGENTS.md"
-    },
-    {
-      "basename": "AGENTS",
-      "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
-    },
-    {
-      "basename": "[T]ideas",
-      "path": "@system/projects/_templater/[T]ideas.md"
-    },
-    {
-      "basename": "README",
-      "path": "@system/projects/README.md"
-    },
-    {
-      "basename": "[T]plan",
-      "path": "@system/projects/_templater/[T]plan.md"
-    },
-    {
-      "basename": "_project",
-      "path": "@projects/0vibes/__obsidian__/_project.md"
     }
   ],
   "omittedPaths": [],

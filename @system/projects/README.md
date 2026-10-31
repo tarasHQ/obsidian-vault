@@ -25,4 +25,4 @@
 		- **REVIEW**: Each one could be easily created as templated file and a name can be used to move them automatically in the order. Plus of the file-based is that it allows to painless expansion of the implementation, when it gets unexpectedly complex.
 			- **Pushback** - llm can't execute dataviewjs... so you need to either use native dataview queries + serializer or don't use dataview at all. Like it needs those descriptions of each step to see the whole picture without reading all the steps. 
 				- **Still good** - Very big and distinct rule to ask explore tool to read all steps and list which ones is related to current one, which one should be read, stuff like that. It's even better than just brief description that means little to to LLM
-	- **UPD DECISION**: Quartz parses dataview poorly. LLMs can't read dataviewjs nor queries. Serialization is expensive and adds more headache. And you have to update stuff in the plan anyway. So. No
+	- **UPD DECISION**: Quartz parses dataview poorly. LLMs can't read dataviewjs nor queries. Serialization is expensive and adds more headache. And you have to update stuff manually in the plan anyway. So. No

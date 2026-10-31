@@ -5,6 +5,7 @@
 - **WHYs**
 	- Those, I mentioned in recent two reflections
 	- You watch yourself, a fat, unattractive guy in an unattractive room, almost always quiet, just sitting in front of pc for like 90% of the time - but it allows you to connect that image with your inner perspective. Like there's a whole world in that guy, that is not perceived by the camera. It definitely adds more empathy towards myself and other people. Because it's insane how big is the difference. 
+	- Big one is pride. I'm feeling very inferior to my peers, which makes me overcompensate by taking pride in intellectual superiority. Though I'm not smart or wise - neither theoretically nor practically. Recording myself including all those "bad angles" - helps to fight with pride in the absence of other people, who usually help to regulate oneself. 
 - **Expectations**
 	- Initial period of novelty, fear and excitement. 
 	- After it won't be emotionally charged anymore - that's when the usefulness of the experiment will be tested. 
@@ -23,7 +24,7 @@
 (in my opinion, obviously)
 - I get this image from love death and robots tv show. , where people were fighting using monster "avatars", and  there was a girl, who like was winning a lot. And her secret was that the monster was controlling "a girl", so she was winning because it wasn't entertainment, she was fighting for her life. 
 - That's what, I believe, happens to me in real life. Though I'm not sure about "winning". But what makes me truly unique from usual "gurus", is primarily that I'm fighting for my life, because right now it's on the path to, let's say, not living long. Either through depression or the war or consequences of not participating in the war, or all of them. To the point that I now methods, I have plans, I see visions. So what I'm doing here - is desperately trying to create a life that's worth living. 
-- Additional interesting idea about comparing myself with those youtube people - they have massive fanbase, employees, family. There's a lot of meaning in their life, which makes it a bit easier to aim up, than when you alone with no people at all, no future, and walking on a thing ice. 
+- Additional interesting idea about comparing myself with those youtube people - they have massive fanbase, employees, family. There's a lot of meaning in their life, which makes it a bit easier to aim up, than when you alone without human touch or face to face interactions at all, no future, and walking on a thing ice every day.
 - (notes, this is a good high-level explanation, maybe I should rephrase it. But it's honest and true. I'm walking on very thin ice and I can't plan my life like a year ahead, because I just don't know if I'll be alive then)
 
 ## What I'm Asking?

@@ -13,6 +13,7 @@
 	- `artifacts/` - Storage for additional files/images/sounds/etc. scoped for the whole plan. 
 	- `ideas/` - Quick capture of random ideas that I don't want to process or integrate into codebase module's README.md files.
 		- `phases/` 
+			- `_archived/` - to avoid long lists with dozens of phases under `phases/`
 			- `XXX/` - Number of a phase, e.g. `003/` or `052/`
 				- `_reflections/` - My phase-scoped reflections. 
 				- `artifacts/` - Storage for additional files/images/sounds/etc. scoped to the phase only.

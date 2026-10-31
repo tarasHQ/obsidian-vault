@@ -15,8 +15,8 @@ isIntegrated: false
 
 ## Insights
 %%Condense insights to keep them actionable and easy to review%%
-- You need bigger picture. That Peterson's vision idea. Like for the whole life. Because having those within the project - sustains the project. BUT projects must be sustained within the one's life scope. 
-	- Meta Plan 
+- You need bigger picture. That Peterson's vision idea. Like for the whole life. Because having those within the project - sustains the project. BUT projects must be sustained within the one's life scope.
+	- Meta Plan
 		- That's tree-like, I guess, where leaves are either like one-note category plan or full blown projects. 
 	- Deadlines
 		- Not company-like, but just to impose the productive rush on yourself. You can adjust them RARELY.
@@ -61,7 +61,7 @@ isIntegrated: false
 	- Like by only drafting this situation you got engaged enough to not like "lay down" in your chair and just sleep or not do anything. For sure it brough some hope and reduced discouragement.
 	- So it definitely has some value. But it's just a pretty cognitively requiring task. 
 ### Deadlines
-- Another thing is that I need like scheduled execution, deadlines, stuff like that. Why? Because I can work on those 3 things above for a year, and never get close to actually 
+- Another thing is that I need like scheduled execution, deadlines, stuff like that. Why? Because I can work on those 3 things above for a year, and never get close to actually
 	- But the thing is - I don't know how to do them. Like I do a task, it turned out to be more difficult than I expected. And to do it properly I need like 2 days more. Deadline is broken. So now I have to do it roughly to fit into deadlines just to what? So it can bite me in the ass for a week later down the line?
 	- So then that's creates another issue. Do I need it? 
 	- But in older reflections you covered that kinda. Like it's not about "company deadlines", where you're cooperating with lots of people, and it's worth to do the job roughly, because if you mess up - other people that depended on you mess up too. 
@@ -70,12 +70,12 @@ isIntegrated: false
 ### The rest of your life
 - The rest of your life. That's what's there
 	- Issue with previous points is that they're focused on the productivity on main projects.
-		- What about learning? So you're not only executing, but also nourishing the spirit. 
+		- What about learning? So you're not only executing, but also nourishing the spirit.
 			- Like there's books on Jung to start with.
 			- You have that "guide", which you can move through and process.
 			- Peterson's lecture - have lots of layers and depth to them, and biggest thing is that they're communicate with your unconscious and you just have more hope and meaning as result. (also probably something related to the Father archetype)
 		- What about making your place look better? Like to cleanup beyond maintenance, for example. 
-		- Meditations, but as inner exploratory tool? 
+		- Meditations, but as inner exploratory tool?
 			- Like it may seem boring. But that's because your goals are not aligned with its effects. Like it may be an active imagination with temptations. Or ego detachment (e.g. when you're too attached to nofap forum) so you don't have to have painful "break up". 
 			- Alok also mentioned there's energizing practices. Like right now - I would appreciate one if that would work for me. 
 		- Learning to write?
@@ -89,7 +89,7 @@ isIntegrated: false
 		- English speaking
 			- As separate category, because it's a bit different. But you're not planning to live in Ukraine. So if that branch of the future needs to be alive - you must learn speaking in English. 
 	- You have kinda free time around meals. Instead of slowly getting into the flow, you can just get into the flow by bringing in the meaning through the listed activities. 
-	- Also the thing is - 15 minutes per day - is infinitely more than 0. Also there's a rule of cumulative growth going on. And also if you won't waste your time - there's hours that can be found within your most productive day "to-date". 
+	- Also the thing is - 15 minutes per day - is infinitely more than 0. Also there's a rule of cumulative growth going on. And also if you won't waste your time - there's hours that can be found within your most productive day "to-date".
 		- On top of very little costs of "real" time, you'll have much more meaning. Which means higher coverage of the day in a good state of mind, which makes everything 5x as productive.  
 
 ### To canvas or not to canvas?
@@ -97,7 +97,7 @@ isIntegrated: false
 - But it's not PIA to maintain and publish on website.  While canvas/excalidraw is. 
 - But those can have a low-friction "picture" instead of like lots of blocks of text. Like I noticed that it works. It has some significance to it. Especially if I'll do it in excalidraw, which is a bit more tedious than canvas, but looks more beautiful and inspiring. Which is the main thing about this. 
 - The issue with excalidraw, is that I have to learn to use it. properly, so it doesn't increase confusion.  But like for basic structure I don't care that much. 
-- Ok, let's imagine we do this. 
+- Ok, let's imagine we do this.
 	- FOR SURE it's not primary. It's supplemental embed in the note. 
 	- Those activities. Cleaning can be moved under maintenance. , just changes scope of what I'm thinking about. Maintenance of order. Instead of just not allowing things to crumble.
 		- Speaking - under social? 
@@ -109,9 +109,9 @@ isIntegrated: false
 	- STOP STOP STOP. You're confusing 2 things. 
 	- meta plan is about action.
 	- speaking under learning or cleaning under maintenance or temptations or health - shouldn't be a meta plan. It's pieces of the system. that is used within meta-plan. 
-	- so, pieces of the system stay as top-level folders, because they're like major categories of my life and need to have separate folders because they will have "more than 1" notes. 
+	- so, pieces of the system stay as top-level folders, because they're like major categories of my life and need to have separate folders because they will have "more than 1" notes.
 		- Within those pieces we have something probably more action like. Or not. NO. NOT AT ALL. 
-		- that's when meta plan comes in. It structures execution. While categories contain information. 
+		- that's when meta plan comes in. It structures execution. While categories contain information.
 			- Let's imagine it. Speaking. The meta plan has like "
 - Wait a second. What if I do speaking as a project? What if I do all categories as projects? Like phase 01 would be to like kinda spin up the category. 
 - Let's take speaking, for example. Or not. because it's a part of learning. So learning gets dissolved then, because I'll need separate project for each "learning" topic. 
@@ -122,13 +122,13 @@ isIntegrated: false
 - Yeah, so the whole idea of meta-plan kinda crumbles. I'm sleepy now too. Losing good state of mind. 
 - Why I needed meta plan? To see the bigger picture and feel progress in it. 
 - Like I envisioned that I have that bullet list life>project>productivity>publicity>etc. 
-- So that project can take abstract level, and it'll end at the links to projects. 
-	1. Like for now. Big picture. 
+- So that project can take abstract level, and it'll end at the links to projects.
+	1. Like for now. Big picture.
 		1. Make website ready to be published -> taras.life project -> website repo
 		2. Make obsidian vault ready to be published -> links to system folder? 
 		3. Make youtube videos ready to be publish -> taras.life project -> youtube folder
 		4. Start seeking interested people. -> taras.life project -> social folder
-	2. When that's done step 2 is next. Though it can't be done completely, 
+	2. When that's done step 2 is next. Though it can't be done completely,
 		1. The Project - 70+% time to that.  -> links to project repo
 			- goal is to bring it to the place where I can remove client v1 (and this path gets decomposed into many phases within the project's plan)
 		2. taras.life improving bit by bit ->
@@ -138,14 +138,14 @@ isIntegrated: false
 			1. with the goal to have something usable. I need anki, exams, integrations, reflections. Like I did such exams a year ago, and I still remember about it and some of its information. So it's useful FOR sure if it's done in a good faith and spirit. 
 	- And that's how that plan works. It just covers higher abstraction level of execution. So those projects aren't stranded by themselves. 
 	- And whether a category needs its plan is decided on per-case basis. 
-	- About other categories then. 
+	- About other categories then.
 		- Do they go into the plan? Like with sleep - I need to go to sleep at the specific time, and wake up at the specific time (+- a few hours)
 		- It's hardly a meta-plan-worth situation. Like those things can be scheduled. (that's where schedule is truly helpful)
-	- So, let's see. 
+	- So, let's see.
 		- Health
 			- one issue needs uncomfortable and a bit painful treatment. That can be scheduled. As well as exercising on lower back, which is for the schedule as well
 			- The rest is just pure knowledge. Like limit fats. 30g < X < 60g.
-		- Maintenance. 
+		- Maintenance.
 			- Nothing project-worthwhile. Cleaning should be scheduled. Inverter is kinda done now. PC reinstall and other digital maintenance are more like one-off things. So like it's fine to not have a plan or even a schedule for the 90% of it. 
 		- Meditation
 			- Scheduled at best. Though I prefer to use it when I want to use it (for now)
@@ -160,9 +160,9 @@ isIntegrated: false
 			- information. Can schedule some discussions maybe? 
 		- System
 			- I may need a plan here, but not sure. 
-			- Like for learning. i want to figure out how to learn, then I create in here "learning" folder with project. And work on it. While Learning/ Category stays pure. 
+			- Like for learning. i want to figure out how to learn, then I create in here "learning" folder with project. And work on it. While Learning/ Category stays pure.
 				- For example. Exams. I develop them here and have all notes, whys and hows. Learning - has a template that is used when time for exams comes. Clean separation of concerns.
-			- So system becomes a kinda metacategory. Where you have a category that improves/creates other categories. 
+			- So system becomes a kinda metacategory. Where you have a category that improves/creates other categories.
 				- ==Kinda makes sense to separate as well? `@system`? 
 		- Temptations
 			- either here or merge with psychoanalysis. Information mostly. if you indulge - schedule that. And may write a reflection on pre/post. 
@@ -178,7 +178,7 @@ isIntegrated: false
 - Then you fix that damn chaos in taras-life repo docs. 
 - And go through the rest of the tasks in journal entry
 
-## Graphs/Charts though. 
+## Graphs/Charts though.
 - You forgot about it. 
 - So how do they integrate into what you did? For now, I kinda see embed-only flow for plans. in their `_project.md` enry file.
 - But since phases created automatically, it'll be a bit PIA to update the chart each time. Manually.

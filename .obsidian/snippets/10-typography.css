@@ -1,0 +1,136 @@
+/* ===============================================================
+   10-typography.css
+   Text-level styling: headings, bold, highlights, inline code, etc.
+   Loaded after the theme; snippet order is alphabetical.
+   =============================================================== */
+
+/* Dark theme — the colors that were previously in effect
+   (Style Settings custom H1–H5; H6 inherited Flexoki purple
+   from Minimal's colorful-headings palette) */
+body.theme-dark {
+    --h1-color: #D07169;
+    --h2-color: #CC8456;
+    --h3-color: #BCAA70;
+    --h4-color: #A8BA61;
+    --h5-color: #6390B6;
+    --h6-color: #8B7EC8;
+}
+
+/* Minimal kept modal headings plain even with colorful headings
+   enabled — reproduce that behavior here */
+.modal {
+    --h1-color: var(--text-normal);
+    --h2-color: var(--text-normal);
+    --h3-color: var(--text-normal);
+    --h4-color: var(--text-normal);
+    --h5-color: var(--text-normal);
+    --h6-color: var(--text-normal);
+}
+
+/* ===============================================================
+   Heading sizes
+   =============================================================== */
+body {
+    --h1-size: 1.35em;
+    --h2-size: 1.27em;
+    --h3-size: 1.2em;
+    --h4-size: 1.1em;
+    --h5-size: 1.1em;
+    --h6-size: 1.1em;
+}
+
+/* List spacing */
+body {
+    --list-spacing: 0.115em;
+}
+
+/* ===============================================================
+   Link colors
+   =============================================================== */
+body.theme-dark {
+    --link-color: #009584;
+    --link-color-hover: #00e4ca;
+    --link-external-color: #009584;
+    --link-external-color-hover: #00e4ca;
+    --link-unresolved-color: #f50b0b;
+    --link-unresolved-decoration-color: #f50b0b;
+    --link-unresolved-opacity: 1;
+}
+
+/* Inline title color */
+body.theme-light {
+    --inline-title-color: #6c6868;
+}
+
+/* ===============================================================
+   Bold
+   ---------------------------------------------------------------
+   Color lives in --bold-color (00-vars.css); Obsidian core applies
+   it to both the editor (.cm-strong) and reading mode (strong),
+   so no selector rule is needed here.
+   =============================================================== */
+
+/* ===============================================================
+   Strikethrough
+   ---------------------------------------------------------------
+   No variable backing exists for strikethrough (neither Minimal
+   nor core defines one), so this stays a selector rule.
+   =============================================================== */
+.cm-strikethrough,
+.markdown-rendered del {
+    text-decoration-color: #acacac; /* Change line color */
+    text-decoration-thickness: 2px; /* Change line thickness */
+    text-decoration-style: solid; /* Options: solid, dashed, dotted, wavy */
+    opacity: 0.7; /* Dim completed text optional */
+}
+
+/* ===============================================================
+   Highlights
+   ---------------------------------------------------------------
+   Background of plain ==highlight== comes from --text-highlight-bg
+   (00-vars.css). Per-color classes (Highlightr-style) consume the
+   --hl-bg-* palette tokens from 00-vars.css.
+   =============================================================== */
+.cm-highlight {
+    color: black !important;
+}
+
+.cm-highlight-red {
+    background-color: var(--hl-bg-red) !important;
+    color: #000000 !important;
+}
+.cm-highlight-orange {
+    background-color: var(--hl-bg-orange) !important;
+    color: #000000 !important;
+}
+.cm-highlight-yellow {
+    background-color: var(--hl-bg-yellow) !important;
+    color: #000000 !important;
+}
+.cm-highlight-blue {
+    background-color: var(--hl-bg-blue) !important;
+    color: #000000 !important;
+}
+.cm-highlight-green {
+    background-color: var(--hl-bg-green) !important;
+    color: #000000 !important;
+}
+
+/* ===============================================================
+   Inline code (Reading Mode & Live Preview)
+   ---------------------------------------------------------------
+   WHY the styling exists - inline code is never a primary thing,
+   so it shouldn't be big and bright as it was before.
+   WHY no variables - --code-normal/--code-background are also
+   consumed by fenced code blocks, and the original styling was
+   inline-only; a shared variable would restyle blocks too.
+   --code-size has the same problem, so font-size stays here.
+   =============================================================== */
+.markdown-rendered code,
+.cm-inline-code {
+    color: #ca6e6e !important;
+    font-size: 0.7em !important;
+    background-color: #2b2b2b !important;
+    padding-top: 0.05em !important; /* a bit smaller vertical padding to avoid multiline overlap */
+    padding-bottom: 0.05em !important; /* a bit smaller vertical padding to avoid multiline overlap */
+}                                          
