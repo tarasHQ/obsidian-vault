@@ -1,0 +1,9 @@
+{
+    "id": "foldstate-dev",
+    "name": "Foldstate Dev",
+    "version": "1.0.1-dev",
+    "minAppVersion": "1.4.0",
+    "description": "Side-by-side test clone of Foldstate: persists heading AND list fold state via inline markers, writing through the editor instead of the vault.",
+    "author": "samhopwell (local fix)",
+    "isDesktopOnly": false
+}

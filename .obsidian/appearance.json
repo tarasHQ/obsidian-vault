@@ -9,8 +9,10 @@
   "accentColor": "#8c7c5a",
   "nativeMenus": false,
   "enabledCssSnippets": [
+    "rogers-theme",
+    "10-typography",
     "common",
-    "rogers-theme"
+    "00-vars"
   ],
   "showRibbon": false
 }

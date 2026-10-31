@@ -73,5 +73,9 @@ if (!templateFile) {
 }
 
 // 4. Include it — the chosen template executes within the current note.
-await tp.file.include(templateFile);
--%>
+// tp.file.include RETURNS the rendered content of the child template; that
+// value must be emitted as this template's output. If it is discarded, the
+// master template's total output is empty and Templater overwrites the target
+// note (the phase plan) with 0 bytes at the end of the run.
+const included = await tp.file.include(templateFile);
+-%><% included %>

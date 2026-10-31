@@ -125,16 +125,6 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 - Always use the `explore` tool with focused queries to extract specific sections from `docs/` without bloating the context window.
 ---
 
-## 03. Knowledge & Planning 
-
-### 03.1 Location & File structure
-- `__obsidian__/` folder in the root of the project should contain all plans/reflections
-- `__obsidian__/phases/999/` folder structure separates plans and reflections by phase number
-- Name format for plan .md files: `DD-MM-YYYY - NAME.md` (e.g., `22-09-2026 - CHAT_VIEW.md`).
-### 03.2 Flow of the planning
-- First, discuss with the high level structure of the plan. When it's locked, write a skeleton that consists of X steps to achieve the goal of the plan.
-- Second, go step-by-step through the plan, and enrich it with more detailed implementation tasks/invariants/decisions/etc.
-
 ## 99. Maintaining AGENTS.md
 
 ### 99.1 Purpose & Role
