@@ -2,7 +2,7 @@
 
 Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 
-- **Site generator**: Quartz v5 — **vendored source tree**, not a dependency. Lives in: `quartz/`.
+- **Site generator**: Quartz v5, but this repo went rogue with no goal to support upstream mergeability.
 - **Content**: Obsidian plugin syncs vault with repo's `content/`. Lives in: `content/`.
 - **Config surface**: YAML plugin + layout config, bridged into the build. Lives in: `quartz.config.yaml`, `quartz.ts`.
 - **Rendering**: Preact components, rendered to string at build time (no hydration). Lives in: `quartz/components/`.
@@ -22,8 +22,6 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 - ##### Instructions
     - It's crucial to adhere to conditions of reading to avoid unnecessary context bloat.
     - Links of attached docs below are relative to `AGENTS.md`, path from repo's root would be `__obsidian__/docs/AGENTS.md`. Rule applies only to those few docs below, so they're repository-agnostic.
-    - `__obsidian__/` folder is a **SYMLINK** (junction) target. Link to this `__obsidian__/` target is in my obsidian-vault (there's many junctions like this one with the same name but in different locations)
-        - I'm using obsidian to significantly improve my ability to work manually with markdown files. 
     - **Two link formats below mean two different things:**
         - `[NAME](file:///C:/...)` — an **absolute OS path** for the LLM. Strip the `file:///` prefix and read the remaining path directly with the read tool. These files live in the Obsidian vault, outside the repo, but on the same machine and readable.
         - `[[...]]` — an **Obsidian internal link, for the user only** (clickable when the repo folder is opened/symlinked inside Obsidian). The LLM must never follow or resolve it.
@@ -50,7 +48,7 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 **Content & generation**
 - **Authoring**: Markdown + YAML frontmatter, written in Obsidian. Notes: lives in `content/` (not vault). 
 - **Content Sync**: `Quartz Syncer` obsidian plugin selectively syncs vault with `content/`
-- **Generator**: Quartz v5 — **vendored source**, not a dependency. Notes: `quartz/`; upgrading is a merge.
+- **Generator**: Quartz v5, but this repo went rogue with no goal to support upstream mergeability.
 - **Site config**: YAML plugin + layout config. Notes: `quartz.config.yaml` is SSOT for enabled plugins.
 - **Content pipeline**: unified → `remark (mdast)` → `rehype (hast)` → JSX. Notes: all customisation enters as plugins/transformers.
 - **SSR**: `Preact` + `preact-render-to-string`. Notes: output is static HTML — there is no hydration.

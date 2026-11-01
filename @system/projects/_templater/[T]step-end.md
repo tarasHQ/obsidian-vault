@@ -74,6 +74,11 @@ The flow to start the planning in the best state of mind.
 - And overwhelmed on top of it - this is how you start the race you're meant to lose. 
 
 ## Checklists
+### Completion
+- [ ] **Make sure AGENTS.md (and other docs/) do not contradict new changes** %%if does - concise fixes should be done%%
+- [ ] **There's no ideas in `ideas/*.md` left unchecked (discarded/extracted)**
+
+### Post-completion
 - [ ] **Reflecting on the phase**
      %%What worked and what didn't. Meta-level reflection to refine the workflow%%
 - [ ] **Making sure the information from the plan can safely die-off**

@@ -1,48 +1,100 @@
 {
   "recentFiles": [
     {
-      "basename": "Capture",
-      "path": "@projects/taras.life/__obsidian__/ideas/Capture.md"
-    },
-    {
-      "basename": "October 31st Sat",
-      "path": "@journal/01 Daily/2026/10-October/October 31st Sat.md"
+      "basename": "[T]plan",
+      "path": "@system/projects/_templater/[T]plan.md"
     },
     {
       "basename": "_plan_002",
       "path": "@projects/taras.life/__obsidian__/phases/002/_plan_002.md"
     },
     {
-      "basename": "_project",
-      "path": "@projects/taras.life/__obsidian__/_project.md"
+      "basename": "Issues",
+      "path": "@system/projects/iteration-01/Issues.md"
     },
     {
-      "basename": "initial-reflection",
-      "path": "@projects/taras.life/__obsidian__/phases/002/_reflections/initial-reflection.md"
+      "basename": "On Workflows",
+      "path": "@system/_reflections/On Workflows.md"
     },
     {
-      "basename": "README",
-      "path": "@system/projects/README.md"
+      "basename": "November 1st Sun",
+      "path": "@journal/01 Daily/2026/11-November/November 1st Sun.md"
+    },
+    {
+      "basename": "On Refining Reflection",
+      "path": "@system/projects/_flows/_reflections/On Refining Reflection.md"
+    },
+    {
+      "basename": "initial-planning",
+      "path": "@system/projects/_flows/initial-planning.md"
     },
     {
       "basename": "LLM",
       "path": "@system/projects/LLM.md"
     },
     {
-      "basename": "[T]plan",
-      "path": "@system/projects/_templater/[T]plan.md"
-    },
-    {
       "basename": "[T]step-end",
       "path": "@system/projects/_templater/[T]step-end.md"
     },
     {
-      "basename": "what-to-do-with-website",
-      "path": "@projects/taras.life/__obsidian__/_reflections/what-to-do-with-website.md"
+      "basename": "_rules.md",
+      "path": "@system/projects/_flows/_rules.md.md"
     },
     {
-      "basename": "Untitled",
-      "path": "Untitled.md"
+      "basename": "README",
+      "path": "@system/projects/README.md"
+    },
+    {
+      "basename": "Capture",
+      "path": "@projects/taras.life/__obsidian__/ideas/Capture.md"
+    },
+    {
+      "basename": "[T]daily-journaling",
+      "path": "_static/templater/[T]daily-journaling.md"
+    },
+    {
+      "basename": "writing-steps",
+      "path": "@system/projects/_flows/writing-steps.md"
+    },
+    {
+      "basename": "99-end",
+      "path": "@projects/taras.life/__obsidian__/phases/002/steps/99-end.md"
+    },
+    {
+      "basename": "scorched-earth-critique",
+      "path": "@system/projects/_flows/scorched-earth-critique.md"
+    },
+    {
+      "basename": "AGENTS",
+      "path": "@projects/taras.life/__obsidian__/docs/AGENTS.md"
+    },
+    {
+      "basename": "initial-reflection",
+      "path": "@projects/taras.life/__obsidian__/phases/002/_reflections/initial-reflection.md"
+    },
+    {
+      "basename": "refining-reflection",
+      "path": "@system/projects/_flows/refining-reflection.md"
+    },
+    {
+      "basename": "examination",
+      "path": "@system/projects/_flows/examination.md"
+    },
+    {
+      "basename": "code-review",
+      "path": "@system/projects/_flows/code-review.md"
+    },
+    {
+      "basename": "October 31st Sat",
+      "path": "@journal/01 Daily/2026/10-October/October 31st Sat.md"
+    },
+    {
+      "basename": "_project",
+      "path": "@projects/taras.life/__obsidian__/_project.md"
+    },
+    {
+      "basename": "what-to-do-with-website",
+      "path": "@projects/taras.life/__obsidian__/_reflections/what-to-do-with-website.md"
     },
     {
       "basename": "Ideas",
@@ -71,10 +123,6 @@
     {
       "basename": "better-schedule-plan",
       "path": "@journal/2026/October/plans/better-schedule-plan.md"
-    },
-    {
-      "basename": "[T]daily-journaling",
-      "path": "_static/templater/[T]daily-journaling.md"
     },
     {
       "basename": "October 30th Fri",
@@ -121,18 +169,6 @@
       "path": "ThePlan.canvas"
     },
     {
-      "basename": "_rules.md",
-      "path": "@system/projects/_flows/_rules.md.md"
-    },
-    {
-      "basename": "initial-planning",
-      "path": "@system/projects/_flows/initial-planning.md"
-    },
-    {
-      "basename": "writing-steps",
-      "path": "@system/projects/_flows/writing-steps.md"
-    },
-    {
       "basename": "- Lectures 7-9",
       "path": "_private/_check/Knowledge/Courses/PA/Maps of Meaning/- Lectures 7-9.md"
     },
@@ -149,20 +185,8 @@
       "path": "_private/_check/Knowledge/Courses/PA/Maps of Meaning/- Lectures 4-6.md"
     },
     {
-      "basename": "code-review",
-      "path": "@system/projects/_flows/code-review.md"
-    },
-    {
-      "basename": "refining-reflection",
-      "path": "@system/projects/_flows/refining-reflection.md"
-    },
-    {
       "basename": "Lecture 1",
       "path": "_private/_check/Knowledge/Courses/JBP - Maps Of Meaning/Lecture 1.md"
-    },
-    {
-      "basename": "examination",
-      "path": "@system/projects/_flows/examination.md"
     },
     {
       "basename": "website-design-inspiration",

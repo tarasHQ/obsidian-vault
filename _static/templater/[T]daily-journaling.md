@@ -15,6 +15,7 @@ action:
   file: _static/scripts/meta-bind/journal-remove-checklist.js
 ```
 - ##### MORNING CHECKLIST
+    - [ ] Air out the room %%lower oxygen levels and may affect you, triphasic breathing if you're cold%%
     - [ ] Day scene
     - [ ] Check webcam (exposure)
     - [ ] Check IP cam (quality, delay)

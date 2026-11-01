@@ -2,7 +2,9 @@
 
 %%Scorched Earth Critique, Stage B1. Temporary self-reflective exploration.
 Nested questions + possible explanations. NO answers, NO recommendations.
-Target artifacts: initial-reflection.md (phase 002 raw + LLM refinement).%%
+Target artifacts: initial-reflection.md (phase 002 raw + LLM refinement).
+All 10 derived critique points were accepted by user — see reflection's
+"Critique integration" section; this artifact is kept as provenance.%%
 
 ---
 
@@ -80,3 +82,12 @@ Target artifacts: initial-reflection.md (phase 002 raw + LLM refinement).%%
     - Decisions also land in `quartz/util/` (theme.ts gutting), `quartz/cli/` (handlers), `quartz/plugins/emitters/` (componentResources), `package.json`.
         - Should each landing site carry a note, or is a single styles/README + AGENTS.md table enough?
             - Possible explanation: precedent exists only for `static/fonts/` and remark42 — is the convention actually defined anywhere (AGENTS.md 02.1 says "every logical module"), meaning util/cli/emitters may *already* be non-compliant before this phase?
+
+---
+
+## Meta-level (added in discussion, after user pushed back on missing meta-attack)
+- The phase's driver is cognitive load / SSOT for styling (user-confirmed), not "Sass is redundant" — the plan should state the real driver.
+- Theming flattening = risk-dominant piece: CSS fails silently (no build error), consumers are reader-visible (darkmode, syntax.scss, Remark42). Verification effort must be allocated there disproportionately.
+- "100% a good thing" is unfalsifiable; replace with "output provably identical except reviewed intentional deltas" via byte-diff against a frozen baseline.
+- Opportunity cost question (what else is queued) — user implicitly answered by proceeding.
+- Steelman of the whole phase: vendored tree is the codebase now; dead machinery is a recurring tax on every future interaction (human or LLM); deletion makes questions permanently unaskable.
