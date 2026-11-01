@@ -10,9 +10,9 @@
   "nativeMenus": false,
   "enabledCssSnippets": [
     "rogers-theme",
+    "00-vars",
     "10-typography",
-    "common",
-    "00-vars"
+    "common"
   ],
   "showRibbon": false
 }

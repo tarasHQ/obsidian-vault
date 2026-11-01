@@ -1,3 +1,8 @@
+
+UPD. User input in plan doesn't make sense after flows are done. Reflection and refinements ARE user input. 
+
+---
+
 # Todo
 - [x] Use other dataview script that can be parsed by website. For docs. (in plan/project)
 	- [x] Meta plan reflection block at the bottom to have a ssot for the feedback on the current iteration. What if I do this for LLMs too? Through completion flow? 
@@ -74,9 +79,9 @@
 			- 
 		- ##### Blocks
 			- **Plan description** - There's one by user that's created at the very beginning. This one by LLM when lots of stuff were planned and refined.
-			- **Persistent Steps Storage** - place for LLM to store information that is applicable to all/most steps. But with clarification, that it's not like "we implemented X, now next step should do Y". It's about nuances/invariants/facts. In a concise manner too. 
-				- Doesn't make sense to have separate file. It's by its nature should be always in context. 
-				- CONCISE. It shouldn't be walls of text.
+				- **Persistent Steps Storage** - place for LLM to store information that is applicable to all/most steps. But with clarification, that it's not like "we implemented X, now next step should do Y". It's about nuances/invariants/facts. In a concise manner too. 
+					- Doesn't make sense to have separate file. It's by its nature should be always in context. 
+					- CONCISE. It shouldn't be walls of text.
 			- **Steps** - since it's not covered by the script anymore. 
 				- table + list. 
 	- #### Solution

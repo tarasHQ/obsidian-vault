@@ -146,7 +146,7 @@ isIntegrated: false
 > > Vision on failure. What if you fail to implement this? Is there something negative that pushes you into action?
 
 ## Documents
-%%Dataviewjs snippet that renders list of documents from phase's inner folders%%
+%%Dataview query for user. Renders list of documents from phase's inner folders. %%
 
 ```dataview
 TABLE WITHOUT ID
@@ -159,26 +159,13 @@ SORT file.name ASC
 GROUP BY true
 ```
 
+---
 
 ## High Level Planning
 %%A place to have all high-level things that must persists through all steps.%%
-
-### User-input
-%%Goal is to keep user input raw and untouched, so it won't drift away between many tasks. Among many options can include: order of implementation, rules, nuances, wishes, open questions, features, invariants, etc.%%
-- #### Decisions
-  %%Why X? or why X and not Y? Can be in Q&A format%%
+%%Where LLM allowed to create, maintain and persist high-level information that needs to be persisted independently from steps-scope%%
+- ### Persistent Storage
 	- 
-- #### Plan
-- #### Nuances
-- #### Out of Scope
-
----
-
-### LLM-input 
-%%Where LLM allowed to create, maintain. research and persist high-level information that needs to be persisted independently from steps-scope%%
-- #### Decisions
-- #### Plan
-- #### Nuances
 
 ---
 ---
@@ -186,7 +173,7 @@ GROUP BY true
 
 ## Steps
 %%State icons: ○ high-level, ◎ full, ◉ condensed.%%
-%%To create a new step - use [step template](./steps/_step-template.md)%%
+%%For LLMS: To create a new step - read [step template](./steps/_step-template.md) first%%
 
 ### ◉ [STEP 99 - End Of The Phase](./steps/99-end.md)
 Finalize the phase — meta-reflection on what worked, long-term knowledge extracted so plan info can safely die-off, frontmatter set, phase archived.
@@ -200,7 +187,7 @@ The flow is to start the planning in the right state of mind and with the proper
 
 ## Meta-Plan Reflection
 %%Plan structure, navigation, planning workflows, exploration, execution. Meta stuff. To improve meta plan%%
-### User-Issues
+### User-issues
 - 
-### LLM-Issues
+### LLM-issues
 - 

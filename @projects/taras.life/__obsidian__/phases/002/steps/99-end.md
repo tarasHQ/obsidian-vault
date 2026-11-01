@@ -19,6 +19,8 @@ The flow to start the planning in the best state of mind.
 - And overwhelmed on top of it - this is how you start the race you're meant to lose. 
 
 ## Checklists
+- [ ] **Make sure AGENTS.md, DEV_COMMANDS.md does not contradict new changes**
+      %%if does - concise fixes should be done%%
 - [ ] **Reflecting on the phase**
      %%What worked and what didn't. Meta-level reflection to refine the workflow%%
 - [ ] **Making sure the information from the plan can safely die-off**

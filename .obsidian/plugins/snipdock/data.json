@@ -5,6 +5,8 @@
   "enableNewByDefault": false,
   "defaultSnippetTemplate": "",
   "rememberedEnabled": [
+    "00-vars",
+    "10-typography",
     "common"
   ],
   "anchorToStatusBar": false,

@@ -12,22 +12,28 @@
 	- `_reflections/`- My project-wide reflections
 	- `artifacts/` - Storage for additional files/images/sounds/etc. scoped for the whole plan. 
 	- `ideas/` - Quick capture of random ideas that I don't want to process or integrate into codebase module's README.md files.
-		- `phases/` 
-			- `_archived/` - to avoid long lists with dozens of phases under `phases/`
-			- `XXX/` - Number of a phase, e.g. `003/` or `052/`
-				- `_reflections/` - My phase-scoped reflections. 
-				- `artifacts/` - Storage for additional files/images/sounds/etc. scoped to the phase only.
-					- `_exploration.md` - Phase-scoped exploration notes (links to related files, tips). Created at phase birth, updated during step completion flow.
-			- `ideas/` - For phase-scoped idea capture, to process them later.  
-				- `steps/` - Implementation steps files
-					- `_step-template.md` - Phase-scoped SSOT template for new steps, copied from `=step-xx.md` at phase birth with `|PHASE_NUMBER|` substituted
-				- `_plan.md` - High-level plan of the current phase, also is an entry to the phase
+	- `phases/`
+		- `_archived/` - to avoid long lists with dozens of phases under `phases/`
+		- `XXX/` - Number of a phase, e.g. `003/` or `052/`
+			- `_reflections/` - My phase-scoped reflections. 
+			- `artifacts/` - Storage for additional files/images/sounds/etc. scoped to the phase only.
+				- `_exploration.md` - Phase-scoped exploration notes (links to related files, tips). Created at phase birth, updated during step completion flow.
+			- `ideas/` - For phase-scoped idea capture, to process them later. 
+				- `parking.md` - empty file for quickly capturing/off-loading ideas
+			- `steps/` - Implementation steps files
+				- `_step-template.md` - Phase-scoped SSOT template for new steps, copied from `=step-xx.md` at phase birth with `|PHASE_NUMBER|` substituted
+			- `_plan.md` - High-level plan of the current phase, also is an entry to the phase
 	- `/_project.md` - Project's entry point. Overview of phases + reflections & ideas
 
 ## Flows
-%%LLMs should always use absolute links to interact with files in this directory%%
-- ### [Initial Planning](./_flows/initial-planning.md)
-	- [Absolute link for LLMs](C:\Users\Taras\Documents\obsidian-vault\@system\projects\_flows\_initial-planning.md) 
+%%LLMs should always use absolute links to interact with `LLM.md` and `_flows/` directory%%
+### Meta
+- #### Reflection
+	- User reflection is a base point. Then through flows we go `WIDE` on `WHAT` to do. Critique flow makes us go `NARROW` to shed the unnecessary things and have high density value.
+- #### Planning
+	- When `WHAT` to do is locked - next phase of preparation is to go `WIDE` on `HOW` to do it. So while first phase focused on having all features/ideas/potential before the user, this phase is focusing on having all implementation paths laid down before the user. 
+
+
 
 
 
