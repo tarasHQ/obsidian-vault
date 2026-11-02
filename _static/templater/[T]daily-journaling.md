@@ -48,6 +48,7 @@ action:
 		- [ ] Move uncompleted tasks
 		- [ ] Make sure all day's reflections are linked under reflections
 		- [ ] Delete Dream Analysis block if empty
+		- [ ] Delete other blocks if empty (task/reflections)
 	- [ ] Night scene
 	- [ ] Check IP cam (quality, delay)
 		- [ ] Enable sleep blur
@@ -56,6 +57,7 @@ action:
 		- [ ] Clean up cat's litter box
 		- [ ] Food + plate is in my room at the shelf 
 			%%(to feed right away and not be distracted by her)%%
+	- [ ] Make sure there's tomorrow's food out of the freezer.
 
 ---
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%

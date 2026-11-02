@@ -1,12 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "[T]plan",
-      "path": "@system/projects/_templater/[T]plan.md"
+      "basename": "November 2nd Mon",
+      "path": "@journal/01 Daily/2026/11-November/November 2nd Mon.md"
     },
     {
-      "basename": "_plan_002",
-      "path": "@projects/taras.life/__obsidian__/phases/002/_plan_002.md"
+      "basename": "November 1st Sun",
+      "path": "@journal/01 Daily/2026/11-November/November 1st Sun.md"
+    },
+    {
+      "basename": "October 31st Sat",
+      "path": "@journal/01 Daily/2026/10-October/October 31st Sat.md"
+    },
+    {
+      "basename": "[T]daily-journaling",
+      "path": "_static/templater/[T]daily-journaling.md"
+    },
+    {
+      "basename": "October 30th Fri",
+      "path": "@journal/01 Daily/2026/10-October/October 30th Fri.md"
     },
     {
       "basename": "Issues",
@@ -17,12 +29,24 @@
       "path": "@system/_reflections/On Workflows.md"
     },
     {
-      "basename": "November 1st Sun",
-      "path": "@journal/01 Daily/2026/11-November/November 1st Sun.md"
-    },
-    {
       "basename": "On Refining Reflection",
       "path": "@system/projects/_flows/_reflections/On Refining Reflection.md"
+    },
+    {
+      "basename": "Ideas",
+      "path": "@projects/taras.life/Social/Ideas.md"
+    },
+    {
+      "basename": "[T]plan",
+      "path": "@system/projects/_templater/[T]plan.md"
+    },
+    {
+      "basename": "on-initial-planning",
+      "path": "@system/projects/_flows/_reflections/on-initial-planning.md"
+    },
+    {
+      "basename": "_plan_002",
+      "path": "@projects/taras.life/__obsidian__/phases/002/_plan_002.md"
     },
     {
       "basename": "initial-planning",
@@ -47,10 +71,6 @@
     {
       "basename": "Capture",
       "path": "@projects/taras.life/__obsidian__/ideas/Capture.md"
-    },
-    {
-      "basename": "[T]daily-journaling",
-      "path": "_static/templater/[T]daily-journaling.md"
     },
     {
       "basename": "writing-steps",
@@ -85,20 +105,12 @@
       "path": "@system/projects/_flows/code-review.md"
     },
     {
-      "basename": "October 31st Sat",
-      "path": "@journal/01 Daily/2026/10-October/October 31st Sat.md"
-    },
-    {
       "basename": "_project",
       "path": "@projects/taras.life/__obsidian__/_project.md"
     },
     {
       "basename": "what-to-do-with-website",
       "path": "@projects/taras.life/__obsidian__/_reflections/what-to-do-with-website.md"
-    },
-    {
-      "basename": "Ideas",
-      "path": "@projects/taras.life/Social/Ideas.md"
     },
     {
       "basename": "About",
@@ -123,10 +135,6 @@
     {
       "basename": "better-schedule-plan",
       "path": "@journal/2026/October/plans/better-schedule-plan.md"
-    },
-    {
-      "basename": "October 30th Fri",
-      "path": "@journal/01 Daily/2026/10-October/October 30th Fri.md"
     },
     {
       "basename": "README",
