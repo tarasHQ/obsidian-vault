@@ -19,22 +19,22 @@ action:
   file: _static/scripts/meta-bind/journal-remove-checklist.js
 ```
 - ##### NIGHT CHECKLIST
-	- [ ] Check audio delay to webcam
-	- [ ] Check TickTick schedule (correct day, scheduled)
-	- [ ] Set time of next sleep for stager timer.
+	- [x] Check audio delay to webcam
+	- [x] Check TickTick schedule (correct day, scheduled)
+	- [x] Set time of next sleep for stager timer.
 	- Obsidian
-		- [ ] Write overview of the current day
-		- [ ] Create journal for the next day
-		- [ ] Move uncompleted tasks
-		- [ ] Make sure all day's reflections are linked under reflections
-		- [ ] Delete Dream Analysis block if empty
-	- [ ] Night scene
-	- [ ] Check IP cam (quality, delay)
-		- [ ] Enable sleep blur
-	- [ ] monitor OFF (seems like keeping on makes him die faster)
+		- [x] Write overview of the current day
+		- [x] Create journal for the next day
+		- [x] Move uncompleted tasks
+		- [x] Make sure all day's reflections are linked under reflections
+		- [x] Delete Dream Analysis block if empty
+	- [x] Night scene
+	- [x] Check IP cam (quality, delay)
+		- [x] Enable sleep blur
+	- [x] monitor OFF (seems like keeping on makes him die faster)
 	- Cat
-		- [ ] Clean up cat's litter box
-		- [ ] Food + plate is in my room at the shelf 
+		- [x] Clean up cat's litter box
+		- [x] Food + plate is in my room at the shelf 
 			%%(to feed right away and not be distracted by her)%%
 
 ---
@@ -42,7 +42,9 @@ action:
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
+This day can be starting point for solving the biggest issue with my productivity. Or it'll may be the last recorded and/or published video before I just fly off the handle completely for days/weeks. 
 
+I genuinely happy that I managed to scrap this day as experience to work on the biggest issue in my blind spot. But that very well may be just another avoidance tactic. Hard to tell. So, I guess, "the crossroads".
 
 ---
 
@@ -52,57 +54,6 @@ action:
 >Time Spent in Bed - **Low**
 > 
 >Approx. Compensation of Dreams - **Dreams were "high", but woke up a bit low**
-
----
-
-## TASKS
-%%Cognitive offload for the day, to not keep these in my mind for the whole time%%
-- ### TODO
-	- Templater flow with plans. 
-		- [ ] step start and end - should be extracted into shared non-templates through LLM.md, they're SSOT on universal template of the project, so there's no need to keep them in each phase (likely)
-			- Opposition would be about phase specific final checks, but probably it should have just its own last phase before completion. That way it'll be much easier to maintain all of this. SSOTs as much as possible.
-		- [ ] Have selected project name in phase number selection (to double check)
-		- [ ] Ask for plan name and description to automatically paste into project and plan name
-		- [ ] Preselected number should include phases in `_archived/` as well.
-	- [ ] when you go sleep - create and leave big plan and your position in it. That's how you meaningfully will trach higher scope. But be careful so your "cost" scope won't overfocus on this.
-		- Probably in excalidraw?
-	- [ ] Fix outliner plugin issues
-		- [ ] Css. Outline collapse indicators. Hide? Increase size of dots on hover. 
-		- [ ] Remove movable points. 
-	- [ ] Psychoanalysis would probably need separate folder. Not reflections though. Separate. Dream analysis included probably. To keep journals lean but with like easy links to go to these kind of things. 
-		- Why? Feels bloated. And chances are, with proper practice, you would want to expand on dream analysis some days after initial attempt. Same with psychoanalysis "sessions". So they must be like separate things to research/review. 
-			- Backlink to journal would be nice though, so you can see how session is integrated into the day (time log)
-	- [ ] Same hotkeys between two PC. 
-		- Probably try to go native as much as you can, and then have some small ahk helper script for the rest
-	- [ ] Obsidian Headings 
-		- They contain a lot of structural potential. The issue is that you need to work on it. 
-		- [ ] Non-bulleted headings. Looks stupid when you have h3 of category and h4 below it. They need some indentation/guide lines/etc, but without being in list
-		- [ ] h3+ headings are kinda PIA to spam buttons to set them up. You probably should use ahk for alt 456 hotkeys to just insert 456 `#`, seems like there's no plugin that can do it, and native hotkeys removes the heading from the list
-		- [ ] Different font. But not sans. It's not article. Goal is detach heading from text
-	- [ ] Your budget is limited but sync is important. Maybe selfhost livesync? 
-	- [ ] Mouse has 12 buttons. But actually customizable are like 3. Because 2 buttons for tv on/off to preserve organic diodes. And 3 for music control. 2 for back and forward. 1 for win menu. Not much left. 
-		- And if I had a modifier. Either through shift(but check conflicts with ahk) or through mouse buttons. Like rmb (if it's possible), then on rmb you can place rarely used functions. And have more buttons for actively used ones
-	- [ ] Youtube - you have to do thumbnails anyway, autoselection is unreliable and will cause more headache because of the absent flow - selects only me sleeping.
-	- [ ] OBS causes webcam audio lag. I reloaded - it went away. FPS maybe? Google/fix.
-		- [ ] nope, it's not obs. reloaded - lag is still there
-	- [ ] Daily journaling template
-		- [ ] create another folder for these, to avoid bloating templater view
-		- [ ] add input field for alias, you're typing names that shouldn't be on the website. 
-			- [ ] OR - automate title parsing from file name (including lowercase 'of', 'the', etc.)
-	- [ ] **META** Figure out where to accumulate such secondary tasks and where you can prioritize them, because flat list is stupid and limiting. 
-	- [ ] Ideally to go away from the minimal theme. It does add a lot of things that I don't use, and basically a deadweight. Like it's better to have 30 styles in CSS than like 2 plugins with 100 settings + a theme . 
-	- [ ] flow to compress png into webp from screenshot, so it won't harm neither website nor size of the vault. But also figure out if deskflow can do it, because right now it's half-supported. (or don't do it through deskflow)
-		- priority because it adds another dimension to thinking + cognitive offload. 
-	- [ ] folder icons - rename to where they used and resize other icons (260kb per icon is stupid)
-	- [ ] AHK - run separate user of vscode as admin to be able to edit the script? 
-	- [ ] Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
-	- [ ] 🔴[[plans/better-schedule-plan|better-schedule-plan]]
-
----
-
-## REFLECTIONS
-%%Thinking through writing is much better - there must be low-friction place to do so%%
-- 
 
 ---
 
@@ -116,8 +67,88 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 22:39
+	- ==🔴Psychoanalysis==
+		- LLM got an interesting insight. I unlocked the libido flow with my previous reflections/sessions, but I didn't have the vessel for that energy, so it overflown and was dumped into its usual "dumping behaviour". Not sure if that's fully correct, but causality is there. 
+- ###### 22:33
+	- ==🟡IMPORTANT==
+		- Ok, but now what to do about it? Like yeah, after massive compensation I got the attitude to see triviality of those tasks. But what about 99% of the time where I don't see it?
+		- That's how you should use journal's tasks section? To not like "not forget", but to do the opposite - forget everything else BUT what's written in priority section.
+			- From another perspective - there was that flow, and it didn't solve avoidance issue, and those tasks were "prioritized" far too long than they should.
+		- Ok, at this point I'll connect LLM and see if it'll give me any insights or different perspective.
+- ###### 22:27
+	- ==🟡IMPORTANT==
+		- So, the focus is those tasks. And not only those. I mean vaguely defined tasks. Like I also have similarly charged "website layout task" - I'm inexperienced in this. I have 0 idea which layout. Why. How. The same with flows. BUT. 
+			- If the attitude is humble and honest - you can figure it out. 
+				- Flows. You take prepared flows for the structure example. And you do a first bad draft, if you don't know what you want. For initial planning it's literally 2 sentences. "fill the plan template, create steps based on step template" - that's it. You can expand later. 
+				- Layout. Ask LLM to list all of them. Google. Then you make screenshots. List them together. Watch and choose. Chances are - current layout is already the best one for the time being. 
+			- That's it. Two paralyzing tasks in proper attitude become trivial. 
+- ###### 22:20
+	- ==🟡IMPORTANT==
+		- So here you go, thanks to videos you have documented proof how you wasted you time. You would've been miles ahead if you prioritized what's matters the most and gave it your honest and humble attitude. 
+		- But you didn't. You got discouraged because of that. And now you don't see any meaning in proceeding with this tasks, because at this speed it won't matter anyway. 
+		- So the problem isn't the indulgence. Like sure - limit/remove. But if you'll continue to work like that - there won't be anything profitable from this abstinence. 
+	- Obviously, I need to do something about it. Current day of indulgence probably was sent by the unconscious, like if you don't understand subtle hints - here's a message showed into your face, and by writing this - means I got it. 
+	- So I need 2-part system. To handle priority tasks (like flows), but also to avoid accumulating millions of secondary tasks from the list above. You can't just put them "for later", because "for later" never comes. 
+	- For priority tasks though - it's completely different animal. I have 0 ideas.
+	- Like if they're aligned with the unconscious - that's how I move. If they don't - well... I don't move.
+- ###### 21:59
+	- ==🟡IMPORTANT==
+	- Can I name what makes me discouraged at this point? - low speed. Why low speed happens? Because I get stuck on avoiding things that I need to do. Like with these flows. Maybe it's some painful experience from the past, or whatever - but I just get firmly stuck on minor steps. 
+	- Without that - I would've moved much faster (assumption).
+	- Is it really true? 
+		- Like look, yesterday's excalidraw thing (or was is a day before yesterday?). Out of nowhere. For no good reason. KNOWING that it won't work for the amount of tasks I have. That it's PIA to use. Obsidian doesn't support it properly which forces to have a lot of half-working workarounds. Website compatibility too. And so on. Like then I had the same task I have now. But still I avoided. Today the same task. Yesterday the same task. 2 days before the yesterday.
+		- Like I don't know how many points on the chart I need to draw the line. When that initial reflection was written? - October 28th, last modified at 20:51. No. Workflows were after that big one. Issues.md was first one. After which I got the scope of what to do. But I 
+		- Ok, so yeah. 29,30,31 and 1 - that's how long that specifically workflows are pending. And all of them can be done in a "good-enough" manner in like 2-3 hours.
+			- On 29 - I worked a bit, then indulgence, discouragement and excalidraw. Whole day wiped. (also brainstormed features though, but productive amount of work is like 1/4 of the available time, and even then those features are secondary)
+			- On 30 - excalidraw. Whole day just completely into the wrong direction. Unnecessary.
+			- On 31 - rewrote that plugin for folding, it's genuinely helpful. And grouped features - 50/50, cuz those features wasn't important in the first place, and also they're mostly additive, so it was unnecessary to have them. But ok. It would be needed to be done at some point. So I count it.
+				- But for some stupid reason it took the whole day out. Somehow. Because I was procrastinating and avoiding. Like after features I didn't have anything to do BUT the thing I had to do. Like I was discussing with LLM what to do and in which order and so on. WHILE workflow wasn't ready. 
+			- And today. Only workflows were pending. I was basically forced into doing them. Result? Discouragement. PMO. Pizza. Youtube. And a few hours wasted in between not being able to start the work. 
+- ###### 21:56
+	- It's hard to see the point of everything. Like drop all indulgence again. Ok. Chances are in a week all the indulgence will be back, because I don't have enough meaning in my life.
+	- And also I know that just not restricting it - makes things much worse than no meaning. So I don't want to go there too. 
+	- Previously I was compensated autonomously. Like I was going so much into indulgence, that the compensation was throwing me into productivity for a month at least. Now though, it's hard to get that. 
+- ###### 20:39
+	- It's so shameful though... like on those short periods of high meaning - I see how much potential is there in me. Like within my grasp. 
+- ###### 20:36
+	- I'm going eating with privacy mode. More indulgence... I hope that at least I will be able to push through those minor tasks that completely killed me.it's like 15 minutes of work.
+	- On bright side - here's my lack of productivity and progress. It's not like me overthinking stuff. Just pure avoidance of things I need to do. Which means ==🟡I have to create a system to help me with doing things I actually need to do==
+- ###### 20:30
+	- 8 hours. Absolute trainwreck. And the worst thing - when it comes up again, it won't matter what happened now. 
+	- And I think I needed that. Like it really seems like the unconscious is making me indulge, to show/remind me that I'm shooting myself in the foot on daily basis. Is this day "the crossroads"? Next day will show it. Either this is the last video that I record OR I stop indulgence completely. PMO, during meals. All of it. 
+- ###### 18:46
+	- That's 6 hours now. Of consequences. At this point I'm not even sure if it's good or bad. But well, I spent years like that and it didn't brought me anywhere. But how can I fly off the handle like that? 
+- ###### 16:26
+	- Too many tasks is an illusion.. Like it's too many if  you want to do them all at once. In any complex thing there's thousands of tasks per day. Mostly unknown. Until you're near them.
+	- So it's not the tasks. it's a bad experience from previous attempt to do something like this with flows. Where it all crumbled. 
+- ###### 16:21
+	- I know this feeling. I must act. I don't want to think or reflect. Seems like an action gets me out of this. But how to act?
+- ###### 16:18
+	- Maybe that namaste expansion meditation? 
+- ###### 16:14
+	- Ok, timer. Don't even think or consider.
+- ###### 15:52
+	- And how to restore meaning in this state? Timer? Ok. 15 minutes. But it feels like if that won't work - I probably will throw the whole day under the bus. 
+	- Can't even start the damn thing...
+- ###### 15:45
+	- It really sucks out all meaning. I watch Anoana clip. Felt stupid. But kinda resonated very-very-very deeply. That's the issue. 
+	- I get these visions of my praying on my knees. Partly it feels like it should be on camera too, but then I afraid that it'll be performative. I don't know. 
+- ###### 15:28
+	- Indulgence creates that state where I just don't care anymore. That's the issue I keep forgetting. Tension lost = meaning lost. 
+- ###### 14:47
+	- 3 hours since the first "indulgence". Didn't get nothing that helped with work. 
+	- Yeah, just made me sleepy. Waste of time and money. Watched everything I wanted to watch on YT and still it was boring. Work is much more meaningful and engaging when it goes right.
+	- All I had to do, is to update the plan template (which I kinda did), then write simple planning flow (a first bad draft) and improve on it based on experience, and continue the work. That's it. Not this BS I just did.
+	- Like I wouldn't say it's bad or evil. It just didn't help. That's what possession by the complex does to you though. 
+- ###### 13:12
+	- Ordered a pizza. Yeah. I'll just see where it'll lead me. Maybe I need like an hour of pure indulgence? which I doubt. But maybe I do. But maybe I don't. 
+	- Trigger was those tasks. Too much. I can't have million tasks in backlog. No, that's lie
+	- I can have million tasks in backlog but only if current tasks I'm doing aren't overwhelming. 
+	- For some reason at this planning flows I'm stumbling over and over. But I just can't see why the unconscious doesn't like this. 
+	- I'll eat before the pc too. In privacy mode. 
 - ###### 12:31
-	- Yeah... there was psychological pain from all this stuff, so out of the blue I just dived 
+	- Yeah... there was psychological pain from all this stuff, so out of the blue I just dived into the best analgesic treatment I have. It's weird. It's like quite and then it just overtakes the control. 
 - ###### 11:44
 	- Too many things to do. That's the issue. I'm constantly teared apart by million tasks. And starting just doing it is kinda bad because .
 	- That's why I SHOULD focus on these things. Because obviously I'm pushing limits on my executive capacity, I need some smart as hell system to abstract this. 
