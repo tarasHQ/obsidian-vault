@@ -11,6 +11,11 @@
         },
         {
           "type": "item",
+          "title": "Open in duplicate tab",
+          "icon": "files"
+        },
+        {
+          "type": "item",
           "title": "Open in opposite tab group",
           "icon": "split-square-horizontal"
         },
@@ -167,7 +172,7 @@
         "Delete file"
       ],
       "promoted": [],
-      "lastSeenAt": 1793638161877
+      "lastSeenAt": 1793656053446
     },
     "dom:tab-header": {
       "signature": "dom:tab-header",
@@ -260,12 +265,12 @@
       "entries": [
         {
           "type": "item",
-          "title": "technicalities",
+          "title": "Templater's",
           "icon": "repeat"
         },
         {
           "type": "item",
-          "title": "technicalities'",
+          "title": "template's",
           "icon": "repeat"
         },
         {
@@ -357,7 +362,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793637159267
+      "lastSeenAt": 1793656943324
     },
     "event:file-menu-folder": {
       "signature": "event:file-menu-folder",
@@ -480,7 +485,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793638024675
+      "lastSeenAt": 1793655404373
     },
     "dom:unknown": {
       "signature": "dom:unknown",

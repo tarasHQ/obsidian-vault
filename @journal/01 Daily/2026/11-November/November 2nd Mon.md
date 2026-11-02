@@ -108,7 +108,7 @@ action:
 - 
 
 ---
-
+==🔴TODO: 1. LLM.md==
 ## TIME LOG
 ```meta-bind-button {fold}
 label: New Log Entry
@@ -119,6 +119,32 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 21:16
+	- For sure there's a lot of space to find the efficiency in. Like it's been 15 minutes and I still didn't work. I could've avoiding typing this stuff. Or some minor things here and there. You have 3-4 things like that in a day - a whole hour is saved. With meals - do both in a span of an hour is doable. With some established "flows". That's how time gets wasted... 
+		- And that's how meaningful state of mind does to deal with this, because the task gets so engaging that I naturally don't have this minor time wastes. But oh well, what you gonna do.
+- ###### 21:10
+	- Yeah. Not as fast as I imagined. But got a bit side tracked with secondary issues. Headache also out from nowhere. 
+	- It's just a shame that sometimes I can't eat on site. I have to cook the whole thing. That's like 15 minutes. Then eating is 15-20 minutes. And washing everything. Toilet. Teeth. And adds up to 45-60 minutes... 
+		- But if in the morning I cut and prepare the food for both meals... Nah, ok. Let's work 
+- ###### 20:05
+	- I get visions of coming back to that dream while listening.. As if I was longing for that chaos. But now I'm alone. Tent is empty. It's lifeless. No threat and enemy too. 
+		- Let's explore the Mother through Anoana. 
+		- Fight happens elsewhere. I just have to go over the hill. I have weapon now. A rifle. Father there is too. We go into another zone of conflict. 
+		- Mother talks to the Warrior. . That's what Anoana is about for me. I'm now leading, not the father. It looks mature? 
+		- I want to work. Now. 
+		- I don't really know though. I can't NOT eat. But I can do everything fast. 
+- ###### 20:00
+	- I listen to this nordic dark folk music, some of it resonates with the Warrior archetype energy, but it's just doesn't match. Like you do these shameful acts, and then, yeah "the Warrior". Like I need to figure out how to drop this thing... 
+		- Temporarily, what if instead of saying I will PMO when tasks are done - I just make an appointment-like task? Like when tasks are done - I will reconsider to PMO. By that time it's usually easier to NOT do it. But yeah, it's just a patch instead of a real solution.
+- ###### 19:53
+	- On another hand it also nice to relax. Like maybe I need to relax and take things easy. Yeah, and then you will do that as you did for years) Yeah, sure, take things easy) 
+- ###### 19:46
+	- Instant devaluing of those 2 tasks I had left. So yeah, it is what I expected. Stopping caring about that. I must ask the unconscious tonight for some guidance on indulgence. Like should I drop it completely? Should I moderate it? I can't find the right answer. Because with dropping it completely - it ends the same way. So that's not an answer. It's just a blanket action to consider the matter done. 
+	- Would I prefer to have the state I had on previous time log entry? Yeah. It was more action oriented. I'm now kinda too relaxed. 4 hours left... Should I go eat? And then 3 hours to finish #1 and #2 todo, and possible start working on phase 002 of the website? 2 and 3 are minor tasks. Maybe I do them right now? Nah. phase 002 is a bit complex. These 2 will be more useful to drag me into the flow after the meal. Ok. Meal it is
+- ###### 19:11
+	- Ok. Done. Did even more than planned. Ok. Let's see how it will affect me in this scenario.
+	- 9 hours of work though. Nice. 4.5 hours to go with a meal. Yeah... I don't feel like it. Had a good sleep though. It's hard to say about the length of sleep, because the alarm can disrupt dreams that usually get very rich towards the end. So it's important. But also to sleep
+		- But I shouldn't forget. I'm in this state that sees 9 hours of work as "easy", BECAUSE I slept 7.5 hours. If I sleep less - it'll bite me in the ass and I won't get this "moments of clarity", because I will be too wasted to notice difference by this point. 
 - ###### 18:21
 	- Man this stuff takes a lot of time... No wonder I don't like it. It's just hard to orient in this unknown and blurred vagueness.
 - ###### 17:44

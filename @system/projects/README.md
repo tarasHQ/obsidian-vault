@@ -1,3 +1,5 @@
+# OUTDATED - TO CHECK LATER. EITHER IN LLM.MD OR ELSEWHERE
+
 ## Templates
 - Should be inside the SSOT shared folder linked by absolute paths. Same as `LLM.md`.
 	- So `LLM.md` becomes a hub that will contain links to those files.

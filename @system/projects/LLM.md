@@ -1,19 +1,19 @@
 # LLM.md
-%%Hub of the planning system.%%
+%%Hub of the LLM-assisted planning system.%%
+%%`LLM.md` is a shared file (accessed through absolute path) that provides SSOT for all `__obsidian__/` dirs in all my projects.%%
 
-## Description of `./__obsidian__/`
+## Description of `__obsidian__/`
 - ### Why it exists?
-	- Main goal is **to reduce cognitive load**. The project gets complex, lots of things to think about, track, improve, fix, implement, plan, etc. The more efficient cognitive load is - the **higher productivity**, the **higher quality** of plans and implementation.
-	- On top of it I have **sync**, which allows me to have access to this folder on all my devices for quick edits/ideas/reflections.˜
-	- SSOT for **unprocessed ideas/reflections**, more implementable and doable things are extracted into README's of specific module of codebase. But long-term/unprocessed things have SSOT, which helps with cognitive load as well, because I don't have to think where to reflect, where to save, how to transfer to pc, do I need it saved or can I delete it, etc.
-	- And last but not least - **phase-based development**, that further is decomposed into steps with carrying-in/hand-off blocks allow to avoid reading/re-reading/maintaining a lot of outdated and unnecessary information. Phase's plan captures static long-term abstract things, steps have short-term implementation-related things separated into clean and isolated execution blocks.
-	  
-- ### Structure
-	- `_reflections/`- My project-wide reflections
-	- `artifacts/` - Storage for additional files/images/sounds/etc. scoped for the whole plan. 
-	- `ideas/` - Quick capture of random ideas that I don't want to process or integrate into codebase module's README.md files.
+	- SSOT on project's planning, ideas, reflections. Everything related to the project is under a single folder. 
+	- `__obsidian__/` is junction target, and my obsidian vault has junction links to each folder in the project, which means that all my project who have this folder are accessible through my obsidian vault with benefits of using much-much better UX of working with markdown documents.
+	- Main goal though is to reduce cognitive load through having structured planning routines and flows which have increased capacity for planning and implementing complex things.
+- ### Structure of `__obsidian__/`
+	- `_reflections/` - Project-wide reflections. 
+	- `artifacts/` - Storage for additional files/images/sounds/etc., scoped for the whole plan. 
+	- `docs/` - Project-related docs, such as `AGENTS.md`, `DEV_RULES`, etc. Described within `AGENTS.md`
+	- `ideas/` - Project-wide capture of ideas of any kind to be implemented later through the phase workflow.
 	- `phases/`
-		- `_archived/` - to avoid long lists with dozens of phases under `phases/`
+		- `_archived/` - Completed phases, to avoid long lists with dozens of phases under `phases/`
 		- `XXX/` - Number of a phase, e.g. `003/` or `052/`
 			- `_reflections/` - My phase-scoped reflections. 
 			- `artifacts/` - Storage for additional files/images/sounds/etc. scoped to the phase only.
@@ -21,107 +21,57 @@
 				- `parking.md` - empty file for quickly capturing/off-loading ideas
 			- `steps/` - Implementation steps files
 				- `00-start.md` - Baked-in phase-start step, created by the phase template. Checklist to start planning in the right state of mind.
+				- `XX-step-name.md` - List of created step files when the phase is mature enough for implementation.
 				- `99-end.md` - Baked-in phase-end step, created by the phase template. Checklists for the end of the phase (reflections, docs alignment, archiving).
 			- `_plan_NNN.md` - High-level plan of the current phase, also is an entry to the phase. Its "## Exploration" section holds the phase-scoped exploration notes
 	- `/_project.md` - Project's entry point. Overview of phases + reflections & ideas
 
-## Flows
-%%LLMs should always use absolute links to interact with `LLM.md` and `_flows/` directory%%
-### Meta
-- #### Reflection
-	- User reflection is a base point. Then through flows we go `WIDE` on `WHAT` to do. Critique flow makes us go `NARROW` to shed the unnecessary things and have high density value.
-- #### Planning
-	- When `WHAT` to do is locked - next phase of preparation is to go `WIDE` on `HOW` to do it. So while first phase focused on having all features/ideas/potential before the user, this phase is focusing on having all implementation paths laid down before the user. 
-
-
-
-
-
 ---
 
----
-
----
-
-# Archive
-
-%%Content below is the pre-restructure version, kept verbatim. It is being rearranged
-into the new structure over time — do not treat it as current guidance where it
-contradicts the sections above.%%
-
-# Planning
-SSOT of plans, reflections, idea capturing, phases and implementation flows of all of that. 
-
-
-
-## Step-by-Step Workflow
-- #### 1. High-level planning
-  %%Creating the initial skeleton of the phase%%
-	1. [User] Running template of phase creation
-	2. [User] Reflecting on the the upcoming phase to get the whole scope of the problem
-	3. [User] Filling up the phase's plan (goals, visions, high-level points, etc.)
-	4. [User] Checking `00-start.md` step
-	5. [LLM + User] Generating LLM's block of high level planning + steps division **(no details on steps yet)**
-- #### 2. Low-level planning loop
-  %%Starting the loop focused on creation of steps contents%%
-	1. [LLM] You can use the same `explore` flow from the implementation block below, if we're planning the step in the middle of the phase. If we starting from the scratch - obviously there's nothing to explore. 
-	2. [LLM + User] Creating a step and writing the initial top block of the step until `implementation` block
-	3. [LLM + User] Refining that block until it can be locked-in
-	4. [LLM + User] Writing bottom block of the step from `implementation` block onwards
-	5. Repeat until all steps are created.
-- #### 3. Implementation of the steps
-  %%Loop of implementation of a step until all steps are implemented%%
-	1. [LLM + User] Starting step implementation task
-	2. [LLM] Using `explore` tool for token efficient familiarization with all steps to figure out:
-		1. structure of steps
-		2. what they implemented/will implement
-		3. which step files are very relative and worth to be read fully to meaningfully enrich the context of current step.
-	3. [LLM + User] Going through completion of the step checklist. 
-	4. [LLM + User] Removing completion of the step checklist. 
-	5. [LLM + User] Proceeding to the next step.
-	6. Repeat until all steps are completed.
-	7. == SHOULD BE IN THE STEP COMPLETION FLOW ==
-	8. [LLM + User] Refining plans/reflecting/implementations as we go through the step
-	9. [LLM + User] Writing down `Caught Implementation Deviations`
-		1. 
-	10. [LLM + User] Checking that further steps are still aligned.
-- #### 4. Finalization of the phase
-	1. [LLM + User] Executing last step `99-END.md`
-
-## Steps - Templates & Rules 
-%%These are mostly generated by LLM, so we need separate block to handle these%%
-### Rules
-- #### General
-	- File names in **lower-case**, e.g. `05-subscription-manager-refactor.md`
-	- Steps can be further subdivided by decimal. e.g. `05.5-subsciprtion-manager-refactor-2.md`
-- #### Frontmatter
-	- `status` - `waiting/postponed/implemented/skipped` - self-explanatory statuses.
-	- `state` - state of the step's contents
-		- `placeholder` - minimal file to just hold the place until there's time to do high-level/implementation blocks
-		- `high-level` - meaning only top high-level block is written and implementation block is not
-		- `full` - high level and implementation blocks are written and step is ready for implementation.
-		- `condensed` - after completion flow, state was condensed to be token-efficient. 
-	- `reviewedAtStep` - quoted step identifier of the last meaningful review, e.g. `"03.5"`.
-		- Creation counts when the document is meaningfully reviewed; later edits alone do not update this property.
-		- Review means checking the whole step for accuracy and alignment with the phase. Update explicitly, never from file modification time.
-		- Leave empty until reviewed. Missing or empty values are displayed as `—`.
-- #### Contents Description
-	- ##### Description
-		- One paragraph of what this step is doing in simple words, so if user forget about it, it's easy to understand it.
-	- ##### High-Level
-		- Intended outcome - what we should get at the end of the step and how it should work
-		- Local invariants - not high-level enough to be in the plan, but worth to be locked-in in the step.
-		- Should NOT be done in this step - 
-	- ##### Discussions & Reflections
-		- LLM rarely one shots all the right decisions. So this section should allow user and LLM to communicate and evaluate all options for the step. 
-		- Contents
-			- list of key decisions and/or issues and/or improvements in a free form. description of the issue/improvement first, then 3 options to address it (quick and easy, proper and long-term, optimal balance)
-		- For reflections - it's purely reminder for user that he can have compact reflection under that block as well.
-	- ##### Implementation
-		- There's no limits on amount of tasks or subtasks of each task. 
-		- `Written at the step |xx|` used as ref. point to see how far current step is from its creation to see whether we should re-evaluate it because of the risk of the drift.
-		- Task number should be an integer e.g. `01`, but for unexpected in-between we can use decimal number e.g. `01.1`
-		- Task name - 3-10 words that describe what the task does
-		- Subtask description is a piece of information 
-	- ##### Completion Flow
-		- Decisions. Figure out what needs to be extracted. 
+## Description of `@system/projects/`
+%%Contents are should be accessed through absolute path at `C:/Users/Taras/Documents/obsidian-vault/@system/projects` %%
+- ### Why it exists?
+	- SSOT on meta-planning, so I don't have to maintain the same files in multiple `__obsidian__/` directories across the multiple projects. 
+	- This directory is also the SSOT for all related knowledge on what is (and how to work with) `__obsidian__/`, `@system/projects` and internal Templater's templates. 
+	- Difference
+		- `__obsidian__/` is project-specific, located at the root of project, accessed through usual relative paths.
+		- `@system/projects/` is project-agnostic, located in a separate directory within my obsidian-vault, accessed by LLMs only through absolute paths, and operates at one level above all the projects. 
+		  
+- ### Structure of `@system/projects/`
+	- `_reflections/` - reflections for meta-planning. 
+	- `_templater/` - Storage for Obsidian Templater plugin's templates for user-invoked creation of the phase
+	- `iterations/` - Basically captures ideas/feedback for iterating and refining the meta-planning.
+	- `shared/` - contents of this folders are meant to be used by LLMs in different projects on daily basis. 
+		- `flows/` - self-explanatory.
+		- `templates/` - for LLMs to manually copy-paste them into their workflows.
+	- `LLM.md` - LLM's entry point to the whole directory.
+	  
+- ### Flows
+	- #### Rules
+		- LLMs should always use absolute links to interact with `@projects/` directory, cuz it's in another external non-project location
+		- LLMs are forbidden to read files with flows unless explicitly asked by the user.
+		- [flow-creation-rules](C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/flows/_flow-creation-rules.md) - internal rules for the creation of the flow, to make sure the flow isn't a bad one.
+	- [refining-reflection](C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/flows/refining-reflection.md) - to refine user's raw reflections, by showing all possibilities of that reflection 
+	- [scorched-earth-critique](C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/flows/scorched-earth-critique.md) - to discuss user's reflections/plans/ideas and separate the wheat from the chaff 
+	- [initial-planning](C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/flows/initial-planning.md) - to discuss and lock down user's ideas into the implementable form
+	- [writing-steps](C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/flows/writing-steps.md) - to discuss and create implementable low-level steps. 
+	- [implementing-steps](C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/flows/implementing-steps.md) - to properly implement steps and keep the whole phase up-to-date with changes. 
+	- [code-review](C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/flows/code-review.md) - to make sure implemented code is properly understood by the user and is of high quality.
+	  
+- ### Templates
+  %%Templates that are used by the LLM when user asks to%%
+	- [readme-template](C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/templates/readme-template.md) - to be used during creation/rewrite of module's `README.md`
+	- [step-template](C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/templates/step-template.md) - to be used during creation/rewrite of step(-s) files in the phase. 
+	  
+- ### Obsidian Templater Plugin's Templates
+  %%used for user-invoked automated flow of creation of the templated phase, with pre-created key files%%
+	- `C:/Users/Taras/Documents/obsidian-vault/@system/projects/_templater/[T]phase.md` 
+		- the master template that runs creation of the phase
+	- `C:/Users/Taras/Documents/obsidian-vault/@system/projects/_templater/[T]plan.md`
+		- a template of the phase's plan
+	- `C:/Users/Taras/Documents/obsidian-vault/@system/projects/_templater/[T]step-start.md`
+		- a template of the 00 step, with checks and preparations before the work starts.
+	- `C:/Users/Taras/Documents/obsidian-vault/@system/projects/_templater/[T]step-end.md`
+		- a template of the 99 step, with checks and completions of the phase. 
+	- `C:/Users/Taras/Documents/obsidian-vault/@system/projects/_templater/[T]ideas.md`
+		- a small template to quickly capture ideas
