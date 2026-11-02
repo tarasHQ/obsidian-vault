@@ -1,23 +1,57 @@
 # Writing Steps
+From initial refined reflection(**what** I want to do) -> to properly explored, brainstormed high level plan (**how** to do it on high-level without focusing on code too much) -> to current flow of writing steps(**how** to do it on low-level)
 
+**Why it's needed?**
+- Implementation/Execution of the plan (which steps are represent) is major part of the phase, and it needs separate focused attention and shouldn't be taken lightly.
 
+## Rules
+- **STAGE AWARENESS** - Every response to the user should have current stage letter, name and substage letter-number at the first line.
+- If there's unexpected additional work - a step can be split into multiple ones.
+	- Decimal points for numbering 05, 05.1, 05.2.
+	- New steps are created using current flow. 
+	- New steps are inserted into the plan
 
-
-
-
-
-
-
-## Raw. Delete
-- Write implementation of all steps. Properly done planning won't drift much
-- Exams somewhere around here? 
-- CATEGORIZE STEPS. DON'T DO FLAT LIST - FURTHER REDUCES COGNITIVE LOAD, GIVES MINI-GOALS/CHECKPOINTS, CLEAR SEPARATION OF IMPLEMENTATION CHANGES.
-	- 
-	- 99-end
-	- CATEGORY X
-		- step-04
-		- step-03
-	- CATEGORY Y
-		- step-02
-		- step-01
-	- 00-start
+## Stages
+- ### A - The Exploration
+	- [ ] **A1** - [USER]
+		- Provides LLM with artifacts that will be used in the scope of this flow
+		- Artifacts can be anything. Reflections, ideas, plans, implementation steps, etc.
+	- [ ] **A2** - [LLM] 
+		- LLM starts thorough exploration. 
+		- Goal of exploration is to be ready to start planning/writing steps
+- ### B - Planning the Structure of Steps
+  %%optional, if the plan already exists, and flow just repeated in another task to write the steps%%
+	- [ ] **B1** - [LLM]
+		- LLM proposes the structure of steps. 
+		- **Requirements:**
+			- [ ] Description block at the start of the proposed structure
+				- Contains HOWs and WHYs this structure is the optimal for the execution.
+			- [ ] Correct Sizing
+				- Step shouldn't cover significantly unproportional amount of work compared to other steps
+				- Step shouldn't significantly overlap other steps
+				- Step shouldn't need 100k tokens exploration before implementing it
+				  %%by covering like multiple big tasks within itself%%
+				- Step should be logically modular
+				  %%no doing parts of files now and then other parts of files later, if we're writing X - we do it once per step%%
+				  %%not coming back to it multiple times throughout other steps, exceptions possible but only if it's worth it%%
+			- [ ] Self-sufficient
+				- All the related knowledge, related links to files, locked decisions, invariants, etc. - is present in the step file. 
+	- [ ] **B2** - [LLM + USER] 
+		- LLM discusses with user proposed structure
+		- If user accepts it - LLM starts writing step, one-by-one.
+ - ### [LOOP] C - Writing the Steps
+	 - [ ] **C1** - [LLM]
+		 - Reads template for steps `C:\Users\Taras\Documents\obsidian-vault\@system\projects\shared\step-template.md`
+		 - Starts writing steps incrementally. 
+			 - If this flow was run on the job that was done partially (like steps 0-5 is done, and 6-10 need to be written) - LLM just continues from the last step. 
+		 - The writing happens in single response where LLM uses 2 tools to:
+			 1. Write step file
+			 2. Updates the plan
+		 - Nuance for updating the plan without re-reading it on every step.
+			 - Use edit tool. And use name of the previous step as the anchor for replacement. new string will contain whole new step + the name of previous step. In that manner whole new block can be safely inserted.
+	 - [ ] **C2** - [LLM + USER]
+		 - Discussion. 
+		 - If LLM sees any issues/open questions with the step - it asks user. If everything is straightforward - LLM just waits for user to approve the created step
+	 - [ ] **C3** - [LLM]
+		 - On user approval LLM restarts the loop for the next step and starts from **C1**.
+ - ### The End

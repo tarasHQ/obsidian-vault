@@ -148,7 +148,7 @@ isIntegrated: false
 ## Documents
 %%Dataview query for user. Renders list of documents from phase's inner folders. %%
 
-```dataview
+```dataview {fold}
 TABLE WITHOUT ID
   map(filter(rows.file, (f) => startswith(f.folder, this.file.folder + "/_reflections")), (f) => f.link) AS "Reflections",
   map(filter(rows.file, (f) => startswith(f.folder, this.file.folder + "/ideas")), (f) => f.link) AS "Ideas",
@@ -161,10 +161,22 @@ GROUP BY true
 
 ---
 
-## High Level Planning
-%%A place to have all high-level things that must persists through all steps.%%
-%%Where LLM allowed to create, maintain and persist high-level information that needs to be persisted independently from steps-scope%%
-- ### Persistent Storage
+## Exploration
+- %%Scoped by a phase it is in. %%
+- %%Contains related exploratory knowledge to make initial exploration in the task more efficient.%%
+- %%After each major workflow block - LLM shares its wins and losses in exploration in here. So further planning / implementation tasks in future would be more efficient in exploration part.%%
+- ### Links To Related files
+  %%Format is a link inside inline codeblock - 1-2 sentence description of files contents and how it's related to the whole phase.%%
+	- ##### Created
+		- 
+	- ##### Modified
+		- 
+	- ##### Deleted
+		- 
+	- ##### Context
+		- `__obsidian__/docs/AGENTS.md` - entry point to the project for LLMs.
+- ### Universal Tips
+  %%Phase scoped. Free form. Concise. For more precise exploration. Goal is to avoid misleading/wrong/inefficient exploration. Optional. Should be really concise though. Filled only through LLM's experience. %%
 	- 
 
 ---
@@ -173,7 +185,6 @@ GROUP BY true
 
 ## Steps
 %%State icons: ○ high-level, ◎ full, ◉ condensed.%%
-%%For LLMS: To create a new step - read [step template](./steps/_step-template.md) first%%
 
 ### ◉ [STEP 99 - End Of The Phase](./steps/99-end.md)
 Finalize the phase — meta-reflection on what worked, long-term knowledge extracted so plan info can safely die-off, frontmatter set, phase archived.

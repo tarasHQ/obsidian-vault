@@ -19,9 +19,6 @@
 // number is derived from the note's own grandparent folder name (e.g. "004")
 // to build the "[← PLAN](../_plan_NNN.md)" backlink — no flags or placeholders.
 //
-// PLACEHOLDER STATUS:
-// The body below is a simple placeholder. Replace it with real content; keep
-// the structure aligned with the SSOT step template in PLANNING.md.
 // ================================================================
 
 // ================================================================

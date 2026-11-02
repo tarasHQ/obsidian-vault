@@ -16,11 +16,10 @@
 // must stay inside Templater's configured folder.
 //
 // CONFIGURATION (single place for the whole workflow):
-// - templatesRoot: where the project templates live (+ internal-templates/).
-// - templates: the ONLY templates offered to run here. Transient/internal
-//   templates (internal-templates/=step-xx, =_exploration) and hard-guarded
-//   content templates ([T]step-start, [T]step-end) are intentionally NOT
-//   listed — they are invoked programmatically by other templates.
+// - templatesRoot: where the project templates live.
+// - templates: the ONLY templates offered to run here. Hard-guarded content
+//   templates ([T]step-start, [T]step-end) are intentionally NOT listed —
+//   they are invoked programmatically by [T]phase.
 //
 // HOW CHILD TEMPLATES RESOLVE EACH OTHER:
 // The root path is passed down through window.__projectTemplatesRoot, so
@@ -32,7 +31,7 @@
 // 0. CONFIG — the single place to adjust the templates root and the run list.
 // ============================================================================
 const CFG = {
-    // Root folder that holds all project templates and internal-templates/.
+    // Root folder that holds all project templates.
     templatesRoot: "@system/projects/_templater",
 
     // Configurable run list: display label → template file name inside templatesRoot.
@@ -40,7 +39,6 @@ const CFG = {
     templates: {
         "Phase — create new phase": "[T]phase",
         "Plan — phase plan note (manual mode)": "[T]plan",
-        "Step — new execution step inside a phase": "[T]step",
         "Idea — quick idea capture": "[T]ideas",
     },
 };

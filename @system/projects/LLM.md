@@ -17,12 +17,12 @@
 		- `XXX/` - Number of a phase, e.g. `003/` or `052/`
 			- `_reflections/` - My phase-scoped reflections. 
 			- `artifacts/` - Storage for additional files/images/sounds/etc. scoped to the phase only.
-				- `_exploration.md` - Phase-scoped exploration notes (links to related files, tips). Created at phase birth, updated during step completion flow.
 			- `ideas/` - For phase-scoped idea capture, to process them later. 
 				- `parking.md` - empty file for quickly capturing/off-loading ideas
 			- `steps/` - Implementation steps files
-				- `_step-template.md` - Phase-scoped SSOT template for new steps, copied from `=step-xx.md` at phase birth with `|PHASE_NUMBER|` substituted
-			- `_plan.md` - High-level plan of the current phase, also is an entry to the phase
+				- `00-start.md` - Baked-in phase-start step, created by the phase template. Checklist to start planning in the right state of mind.
+				- `99-end.md` - Baked-in phase-end step, created by the phase template. Checklists for the end of the phase (reflections, docs alignment, archiving).
+			- `_plan_NNN.md` - High-level plan of the current phase, also is an entry to the phase. Its "## Exploration" section holds the phase-scoped exploration notes
 	- `/_project.md` - Project's entry point. Overview of phases + reflections & ideas
 
 ## Flows

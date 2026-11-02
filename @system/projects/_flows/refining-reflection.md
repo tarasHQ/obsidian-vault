@@ -21,12 +21,12 @@
 - ### B - Creating Big Picture
 	- [ ] **B1** - [LLM] - **Response #1**
 		- Using `write` tool. 
-		- Writes a temporary self-reflective exploration of all high-level possibilities in a temporary `.md`  file inside `artifacts/possibilities-xxxx`, where last 4 digits are random [a-z0-9] to avoid duplication. 
+		- Writes a temporary self-reflective exploration of all high-level possibilities in a temporary `.md`  file inside `artifacts/refining-possibilities-xxxx`, where last 4 digits are random [a-z0-9] to avoid duplication. 
 		- Format is nested lists of questions and possible explanations (no answers/recommendations)
 		- Goal is to prepare context for the real answer in the next turn.
 	- [ ] **B2** - [LLM] - **Response #2**
 		- No writing/editing.
-		- LLM lists 5 to 10 reasonable, high-level, radical, architectural possibilities for improving user's artifacts.
+		- LLM lists 5 to 10 **(reasonable, high-level, radical, architectural)** possibilities for improving user's artifacts.
 		- Those points may cover categories:
 			- Blind Spots
 			- Security 
@@ -34,7 +34,19 @@
 			- Low Effort - High Reward ideas
 			- Proper long-term decisions.
 			- Other, not listed and high-impact categories. 
+		- **FORMAT of every point**
+			- **Name** - `[CATEGORY] Name-of-the-point`
+			- **Benefit** - a paragraph on how this point is beneficial
+			- **Complexity** - a paragraph or less about how complex is this point
+			- **Closed Advantageous Doors** - bulleted list of others paths that will get closed/hard to mover/transfer to if this point will be accepted. 
+			- **Description In Simpler Terms** - a paragraph of ELI5 description about this point. Goal is to preemptively explain it in simpler terms too, so if user didn't understand the point - he won't have have to start separate discussion, he'll just read the last block where everything is described in a format that is more understandable 
 - ### C - The Discussion
 	- [ ] **C1** - [LLM + USER]
 		- User will respond for clarification
 		- Goal of the discussion is to refine ideas/possibilities/artifacts based on user feedback. 
+- ### D - Filling Out the Plan and Drafting the Steps
+	- [ ] **D1** - [LLM + USER]
+		- LLM fills out the `_plan_xxx.md`'s **exploration section** with concise related links/tips on exploration for future tasks on this plan based on experience with current exploration.
+	- [ ] **D2** - [LLM + USER]
+		- Through user's approval - LLM updates user's artifacts to be aligned with locked-in decisions/refining from current flow-task. 
+- ### The End

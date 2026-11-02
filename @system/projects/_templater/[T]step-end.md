@@ -18,12 +18,6 @@
 // [T]phase.md places the note at its final path BEFORE rendering, so the phase
 // number is derived from the note's own grandparent folder name (e.g. "004")
 // to build the "[← PLAN](../_plan_NNN.md)" backlink — no flags or placeholders.
-//
-// PLACEHOLDER STATUS:
-// The body below is a simple placeholder. Replace it with real content; keep
-// the structure aligned with the SSOT step template in PLANNING.md, but with a
-// finalization flavor (meta-planning reflection, project index finalization,
-// safe die-off verification).
 // ================================================================
 
 // ================================================================
@@ -75,16 +69,17 @@ The flow to start the planning in the best state of mind.
 
 ## Checklists
 ### Completion
+- [ ] **Reflecting completion of the phase in the `_project.md`**
+      %%Status. Enveloping whole name in `~~` strikethrough tags %%
 - [ ] **Make sure AGENTS.md (and other docs/) do not contradict new changes** %%if does - concise fixes should be done%%
 - [ ] **There's no ideas in `ideas/*.md` left unchecked (discarded/extracted)**
 
 ### Post-completion
 - [ ] **Reflecting on the phase**
      %%What worked and what didn't. Meta-level reflection to refine the workflow%%
+	- [ ] Also - where routine was broken and where not. You should seek routine.
 - [ ] **Making sure the information from the plan can safely die-off**
      %%If nothing should be long-term extracted into module readme's or project-wide/future ideas %%
 - [ ] **Making sure frontmatter is set properly**
 - [ ] **Asking user to move the phase into /phases/archived/**
       %%So no done phases are bloating phases/ folder%%
-- [ ] **Reflecting completion of the phase in the `_project.md`**
-      %%Status. Enveloping whole name in `~~` strikethrough tags %%

@@ -29,7 +29,7 @@
 
 ## What I'm Asking?
 - Some attention. A comment. Reaction. Post. Discussion. I'm not sure exactly. Clarify this. But something along these lines. It must be win-win situation, so you have to figure out that as well. Start by writing proper website.
-
+- It may be a far reach, but if my flow will get any traction. Collaboration on its improvement may be a win-win situation as well. But it's not clear, since sometimes it needs to be highly specific and personal. 
 
 ## Why Quartz?
 - vs Obsidian Publish
@@ -48,3 +48,10 @@ To show other side of that wisdom. Where it's confronting with a real human life
 
 ### Implementation
 I'm focusing on making everything as convenient as possible. 
+
+
+# The Format
+Written by a child (that catastrophizes and absolutes) vs written by a bit more mature guy that sees the whole picture
+- Also why section. These are both parts of me. I shouldn't kill the child. I must help him grow, because:
+	- "*Truly I tell you, unless you change and become like little children, you will never enter the kingdom of heaven*"
+	- So this section connects my presentation to the outward world as two parts of me see it. Without leaning into neither on, because both are kinda true. 

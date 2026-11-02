@@ -107,6 +107,10 @@ action:
 ---
 
 ## DREAM ANALYSIS
+### Read First
+- **Goal** of the dream isn't only to show you the answer, but also to give meaning to the answer through the story. Peterson's "story" from his Maps of Meaning work. 
+- Not all dreams will **click**.  As LLM put it - drill-sergeant's dream isn't supposed to give me chills. 
+	- I can be rich with meaning but poor with action, in this case I don't need inspiration, I need to have a dream that is grounded in action and persistent day-to-day movement of men's work. 
 
 ### Dream #1 - NAME
 
