@@ -265,12 +265,12 @@
       "entries": [
         {
           "type": "item",
-          "title": "Templater's",
+          "title": "wikilike",
           "icon": "repeat"
         },
         {
           "type": "item",
-          "title": "template's",
+          "title": "WikiLeaks",
           "icon": "repeat"
         },
         {
@@ -362,7 +362,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793656943324
+      "lastSeenAt": 1793658584848
     },
     "event:file-menu-folder": {
       "signature": "event:file-menu-folder",
