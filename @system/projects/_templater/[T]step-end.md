@@ -50,8 +50,8 @@ const phaseNumber = tp.config.target_file.parent.parent.name;
 ---
 ctime: <% tp.file.creation_date(CFG.ctimeFormat) %>
 isIntegrated: false
-status: waiting
-state: placeholder
+status: ready
+state: condensed
 reviewedAtStep: ""
 ---
 

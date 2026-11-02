@@ -11,18 +11,18 @@ UPD. User input in plan doesn't make sense after flows are done. Reflection and 
 - [x] Should I rename the file? PLANNING.md reads a bit stupid. Interaction with llms? or like LLM.md? Yeah... agents is for like kinda autonomous context. planning is stupid. `LLM.md` is kinda focused on using those as a tool instead of overhyped agents/AI words. So yeah. LLM.md
 - [x] Templates. Master script templater folder, move other ones into system/project, to have everything in one place
 
-# README practice
+# [DONE] README practice %% fold %%
 ### Discussion
 - It makes lot of sense to have readmes in each module/submodule. But structure is a bit chaotic now. Would be nice to have a predefined one. Also as template in separate file linked to planning or agents, so when I create new one - LLM can fill up the skeleton and then I do the writing.
 ### Contents
 - **Simple Words** - cognitively seems to be easier to get the high level structure and then map it on low level instead of diving into low level right away.
 - **Description** - low level. Kinda free form. Lock down 
 - **Decisions** - empty if none. Just like to lock down some things to not rehash it often, or to not forget why they were chosen. 
-- **Exploration** - like I did just now with fonts. I gave agents + fonts readme. It knows everything from that point onward to work on fonts without spending minutes on exploration
+- **Exploration** - like I did just now with fonts. I gave agents + fonts readme. It knows everything from that point onward to work on fonts without spending minutes on exploration (UPD. useless, readme is kinda this exploration blcok)
 
 # Issues
-## High Level
-- ### Idea #999 Exam
+## High Level %% fold %%
+- ### [PARTLY DONE AT CODE REVIEW] Idea #999 Exam %% fold %%
 	- #### Discussion
 		- From old kilo flow. It's just useful to have that flow where LLM is targeted to not solve the issue, but find issues in "the answer". Like you do initial draft. Then make it defend itself. And repeat until it starts to make sense. 
 		- Should I write this down manually though? Because it's FOR you BY you. LLM will accumulate walls of text there. But it's a bit of a friction. Like I would have to ask LLM to do like "exam" of understanding what we'll do. THEN it'll be lower friction and useful. 
@@ -45,6 +45,7 @@ UPD. User input in plan doesn't make sense after flows are done. Reflection and 
 			- Amount of questions... probably 20-30 for sure. To expect 1-2 sentences answers. 
 	- #### Solution
 		- Discussion highlights. 
+		- **UPD** for code review it done in a compact manner that works. I mixed here other kind of exam for knowledge system, but that's for another discussion.
 		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
 - ### [DONE] Idea #99 Critique Flow %% fold %%
 	- #### Discussion
@@ -185,16 +186,19 @@ UPD. User input in plan doesn't make sense after flows are done. Reflection and 
 			- re-read discussion.
 		- **UPD** Done, with some tweaks.
 		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
-## Low Level
+## Low Level %% fold %%
 - ### Steps
-	- ### Idea #4 Meta-workflows
+	- ### [DONE] Idea #4 Meta-workflows %% fold %%
 		- When you'll be creating all these flows - figure out primitive system to that. So it's flexible to add new one or remove one. Modularized. Low friction.
-	- ### Idea #3 Run exploration on done work to confirm it
+	- ### [DISCARDED] Idea #3 Run exploration on done work to confirm it %% fold %%
 		- It's kinda like just getting second opinion. Experimental too. But it might catch if model hallucinates or something. Like LLM gives exploration agents, plans, planning. and says like "we did step 10 - can you confirm implementation?". That model is cheap, but might be useful as like fail-net against some blind spots.
-	- ### Idea #2 Revert Checkpoints
+		- UPD. Discarded cuz code-review flow.
+	- ### [DISCARDED] Idea #2 Revert Checkpoints %% fold %%
 		- For example, that idea with evaluating if the step is actually needed. Workflow makes LLM explore the step, when it has context - it makes this checkpoint. Then we diverge into discussing if this step is actually needed. Or other topics. We come back, I write "checkpoint passed" and we proceed in a clean branch? But like not through my actions - but through LLM's commands.
-	- ### Idea #1 Context Cleanup Checkpoints
+		- UPD. It's just another headache to control. That idea with AHK script to context handoff makes this low-friction already.
+	- ### [DISCARDED] Idea #1 Context Cleanup Checkpoints %% fold %%
 		- Workflow should have a place where LLM asks to stop and cleanup useless context. Before implementation, for example. Experimental a bit. But may be helpful.
+		- UPD. Should be automatic. Through my project. Manual is confusing. And headache to control how and when it should happen. And then searching through all the files... Like just create flows that can handle a bit of waste, and also are efficient enough to not have a lot of waste in the first place.
 	- ### [DONE] Issue #4 Re-Exploration Time %% fold %%
 		- #### Discussion
 			- takes lots of time to re-explore all stuff I did while I was writing initial step contents. So each step should have "comprehensive exploration" section where LLM leaves links/notes/tips about how to research everything on the topic quickly. without many loops of back and forth. 

@@ -184,13 +184,27 @@ GROUP BY true
 ---
 
 ## Steps
-%%State icons: ○ high-level, ◎ full, ◉ condensed.%%
 
-### ◉ [STEP 99 - End Of The Phase](./steps/99-end.md)
+
+### ◉ [STEP 99 - End Of The Phase](./steps/99-end.md) - READY
 Finalize the phase — meta-reflection on what worked, long-term knowledge extracted so plan info can safely die-off, frontmatter set, phase archived.
 
-### ◉ [STEP 00 - Start Of The Phase](./steps/00-start.md)
+
+
+### ◉ [STEP 00 - Start Of The Phase](./steps/00-start.md) - READY
 The flow is to start the planning in the right state of mind and with the properly prepared phase
+
+
+
+%%
+### Info On Steps
+- `status` - `ready/postponed/implemented/skipped` - self-explanatory statuses.
+- `state` - state of the step's contents
+	- `placeholder` - minimal file to just hold the place until there's time to do high-level/implementation blocks
+	- `high-level` or `○` - only top high-level block is written and implementation block is not
+	- `full` or `◎` - high level and implementation blocks are written and step is ready for implementation.
+	- `condensed` or `◉` - after implementation's completion flow, state was condensed to be token-efficient. 
+%%
 
 ---
 ---

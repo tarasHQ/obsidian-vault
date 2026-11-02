@@ -61,6 +61,16 @@
 			"y":700,
 			"width":260,
 			"height":160
+		},
+		{
+			"id":"033fc761f7fb2bf5",
+			"type":"text",
+			"text":" 9 hours of work though. Nice. 4.5 hours to go with a meal. Yeah... I don't feel like it. Had a good sleep though. It's hard to say about the length of sleep, because the alarm can disrupt dreams that usually get very rich towards the end. So it's important. But also to sleep\n\t\t- But I shouldn't forget. I'm in this state that sees 9 hours of work as \"easy\", BECAUSE I slept 7.5 hours. If I sleep less - it'll bite me in the ass and I won't get this \"moments of clarity\", because I will be too wasted to notice difference by this point. ",
+			"styleAttributes":{"textAlign":"center"},
+			"x":420,
+			"y":-150,
+			"width":640,
+			"height":300
 		}
 	],
 	"edges":[
