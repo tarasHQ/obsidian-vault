@@ -1,0 +1,391 @@
+/* Header: tabs + refresh */
+.menu-hider-header {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	border-bottom: 1px solid var(--background-modifier-border);
+	margin-bottom: 8px;
+}
+
+.menu-hider-tabs {
+	display: flex;
+	gap: 4px;
+	flex: 1;
+	flex-wrap: wrap;
+}
+
+.menu-hider-empty-tabs {
+	color: var(--text-muted);
+	font-size: 12px;
+	padding: 6px 4px;
+}
+
+.menu-hider-meta {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin: 4px 0 8px;
+	font-size: 11px;
+	color: var(--text-muted);
+}
+
+.menu-hider-sig {
+	font-family: var(--font-monospace);
+	flex: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.menu-hider-delete-btn {
+	padding: 2px 8px;
+	font-size: 11px;
+	border: 1px solid var(--background-modifier-border);
+	background: var(--background-secondary);
+	color: var(--text-muted);
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.menu-hider-delete-btn:hover {
+	background: var(--background-modifier-error-hover, var(--background-modifier-hover));
+	color: var(--text-error, var(--text-normal));
+}
+
+.menu-hider-tab {
+	padding: 6px 12px;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	border-radius: 6px 6px 0 0;
+	color: var(--text-muted);
+	font-size: 13px;
+	transition: background 0.15s, color 0.15s;
+}
+
+.menu-hider-tab:hover {
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.menu-hider-tab.is-active {
+	background: var(--interactive-accent);
+	color: var(--text-on-accent);
+}
+
+/* Refresh button */
+.menu-hider-refresh-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 26px;
+	height: 26px;
+	padding: 0;
+	cursor: pointer;
+	border-radius: 4px;
+	border: 1px solid var(--background-modifier-border);
+	background: var(--background-secondary);
+	color: var(--text-muted);
+	flex-shrink: 0;
+	transition: background 0.15s, color 0.15s;
+}
+
+.menu-hider-refresh-btn:hover {
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.menu-hider-refresh-btn svg {
+	width: 14px;
+	height: 14px;
+}
+
+.menu-hider-refresh-btn.is-spinning svg {
+	animation: menu-hider-spin 0.6s linear infinite;
+}
+
+@keyframes menu-hider-spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+/* Menu list */
+.menu-hider-menu-list {
+	background: var(--background-primary);
+	border-radius: 6px;
+	padding: 3px;
+	border: 1px solid var(--background-modifier-border);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.menu-hider-empty {
+	color: var(--text-muted);
+	font-size: 13px;
+	padding: 20px 16px;
+	text-align: center;
+	line-height: 1.6;
+}
+
+/* Row base */
+.menu-hider-row {
+	display: flex;
+	align-items: center;
+	padding: 2px 4px;
+	border-radius: 4px;
+	cursor: default;
+}
+
+.menu-hider-row:hover {
+	background: var(--background-modifier-hover);
+}
+
+/* Runtime: collapse group border when separator is hidden */
+.menu .menu-scroll .menu-group.menu-hider-no-border,
+.menu .menu-group.menu-hider-no-border {
+	border-top: none;
+	margin-top: 0;
+	padding-top: 0;
+	box-shadow: none;
+}
+
+/* Hidden entry */
+.menu-hider-row.is-hidden-entry .menu-hider-item-icon,
+.menu-hider-row.is-hidden-entry .menu-hider-item-title {
+	color: var(--text-faint);
+}
+
+.menu-hider-row.is-hidden-entry .menu-hider-item-title {
+	text-decoration: line-through;
+}
+
+/* Item row */
+.menu-hider-item-left {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	flex: 1;
+	min-width: 0;
+}
+
+.menu-hider-item-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 18px;
+	height: 18px;
+	flex-shrink: 0;
+	color: var(--text-muted);
+}
+
+.menu-hider-item-icon svg {
+	width: 16px;
+	height: 16px;
+}
+
+.menu-hider-item-title {
+	font-size: 13px;
+	color: var(--text-normal);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 20px;
+}
+
+/* Submenu chevron (always expanded) */
+.menu-hider-chevron {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 16px;
+	height: 16px;
+	flex-shrink: 0;
+	color: var(--text-faint);
+}
+
+.menu-hider-chevron svg {
+	width: 12px;
+	height: 12px;
+}
+
+/* Child items */
+.menu-hider-child {
+	background: var(--background-secondary);
+}
+
+/* Separator row */
+.menu-hider-separator-row {
+	padding: 3px 4px;
+	min-height: 1px;
+}
+
+.menu-hider-separator-row:hover {
+	background: transparent;
+}
+
+.menu-hider-separator-line {
+	flex: 1;
+	height: 1px;
+	background: var(--background-modifier-border);
+}
+
+/* Segment container (Sortable scope) */
+.menu-hider-segment {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Drag handle */
+.menu-hider-drag-handle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 18px;
+	height: 22px;
+	flex-shrink: 0;
+	cursor: grab;
+	color: var(--text-faint);
+	transition: color 0.15s;
+}
+
+.menu-hider-drag-handle:hover {
+	color: var(--text-normal);
+}
+
+.menu-hider-drag-handle:active {
+	cursor: grabbing;
+}
+
+.menu-hider-drag-handle svg {
+	width: 14px;
+	height: 14px;
+}
+
+/* Sortable states */
+.menu-hider-menu-list .menu-hider-row.menu-hider-row-ghost {
+	opacity: 0.35;
+	background: var(--background-modifier-hover);
+}
+
+.menu-hider-row-chosen {
+	background: var(--background-modifier-hover);
+}
+
+.menu-hider-row-drag {
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+	background: var(--background-primary);
+}
+
+/* Eye toggle */
+.menu-hider-eye {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: 24px;
+	flex-shrink: 0;
+	cursor: pointer;
+	border-radius: 4px;
+	color: var(--text-muted);
+	transition: color 0.15s, background 0.15s;
+}
+
+.menu-hider-eye:hover {
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.menu-hider-eye.is-off {
+	color: var(--color-red);
+	opacity: 0.5;
+}
+
+.menu-hider-eye svg {
+	width: 14px;
+	height: 14px;
+}
+
+/* Submenu item list (Sortable source for promotion) */
+.menu-hider-children {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Promoted (lifted out of a submenu) */
+.menu-hider-row.is-promoted .menu-hider-item-title::after {
+	content: '↑';
+	margin-left: 6px;
+	color: var(--text-faint);
+	font-size: 11px;
+}
+
+.menu-hider-demote {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	flex-shrink: 0;
+	cursor: pointer;
+	color: var(--text-faint);
+	border-radius: 4px;
+}
+
+.menu-hider-demote:hover {
+	color: var(--text-normal);
+	background: var(--background-modifier-hover);
+}
+
+.menu-hider-demote svg {
+	width: 14px;
+	height: 14px;
+}
+
+/* Copy-path flash: the file name is swapped for a confirmation message. */
+.menu-hider-copied {
+	color: var(--text-accent);
+	font-weight: var(--font-medium, 500);
+	animation: menu-hider-copied-text 1.2s ease-out both;
+}
+
+.menu-hider-copied-row {
+	animation: menu-hider-copied-row 1.2s ease-out both;
+}
+
+@keyframes menu-hider-copied-text {
+	0% { opacity: 0; transform: translateY(-4px); }
+	12% { opacity: 1; transform: none; }
+	80% { opacity: 1; transform: none; }
+	100% { opacity: 0; transform: translateY(2px); }
+}
+
+@keyframes menu-hider-copied-row {
+	0% { background-color: color-mix(in srgb, var(--interactive-accent) 28%, transparent); }
+	80% { background-color: color-mix(in srgb, var(--interactive-accent) 14%, transparent); }
+	100% { background-color: transparent; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.menu-hider-copied,
+	.menu-hider-copied-row {
+		animation: none;
+	}
+}
+
+/* Runtime menu tweaks: applied to Obsidian's live menu DOM. */
+.menu .menu-hider-hidden {
+	display: none;
+}
+
+.menu.menu-hider-offscreen {
+	position: fixed;
+	top: -9999px;
+	left: -9999px;
+	opacity: 0;
+}
+
+/* Declarative settings (1.13+): the menu editor occupies a full-width render row. */
+.menu-hider-panel-row {
+	display: block;
+	padding: 0;
+	border-top: none;
+}

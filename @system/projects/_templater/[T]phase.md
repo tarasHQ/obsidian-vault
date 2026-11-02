@@ -19,11 +19,10 @@
 //    deterministic steps/00-start.md + steps/99-end.md from their dedicated templates
 //    ([T]ideas, [T]reflections, [T]step-start, [T]step-end). The phase plan remains
 //    focused; starter steps do not open additional tabs.
-// 7. Ships the phase's SSOT copies from the internal-templates folder:
-//    - `steps/_step-template.md` (|PHASE_NUMBER| pre-substituted) — the single
-//      source that both [T]step and the LLM flow copy new steps from. PLANNING.md
-//      is no longer parsed for the step template.
-//    - `artifacts/_exploration.md`.
+// 7. No per-phase SSOT copies are shipped anymore:
+//    - New steps are written by LLM flows from the shared template
+//      `@system/projects/shared/step-template.md` (see _flows/writing-steps.md).
+//    - Exploration lives directly in the plan note ([T]plan.md "## Exploration").
 // ============================================================================
 
 // ============================================================================
@@ -74,15 +73,6 @@ const CFG = {
     stepStartTemplateName: "[T]step-start",
     stepEndTemplateName: "[T]step-end",
 
-    // --- Phase SSOT copies from internal-templates (plain markdown, no Templater code) ---
-    // `steps/_step-template.md` replaces the old runtime extraction of the step template
-    // from PLANNING.md: both the LLM flow and [T]step read this per-phase copy.
-    stepTemplateFileName: "_step-template",   // created inside steps/
-    stepTemplateSourceName: "=step-xx",       // internal template it is copied from
-    phasePlaceholder: "|PHASE_NUMBER|",       // substituted with the phase number in the copy
-    explorationFileName: "_exploration",      // created inside artifacts/
-    explorationSourceName: "=_exploration",   // internal template it is copied from
-
     // --- _project.md index update ------------------------------------------------
     projectPhasesHeader: "## Phases",       // header under which new phase entries are inserted
     phaseEntryPlaceholder: "UNTITLED_PHASE",
@@ -113,13 +103,6 @@ const resolveTemplate = (name) => {
     return matches.length === 1 ? matches[0] : null;
 };
 
-// Internal templates live in a subfolder next to the project templates.
-const findInternalTemplate = (name) =>
-    (templatesRoot
-        ? app.vault.getAbstractFileByPath(`${templatesRoot}/internal-templates/${name}.md`)
-        : null) ??
-    app.vault.getMarkdownFiles().find(f => f.name === `${name}.md`) ??
-    null;
 const phaseSubfolders = [
     CFG.reflectionFolderSuffix,
     CFG.ideasDirName,
@@ -155,35 +138,6 @@ async function createCaptureNote(template, folderPath, fileName) {
             window[CFG.autoCaptureContext] = previousContext;
         }
     }
-}
-
-// Create a note by copying a static internal template verbatim, then applying simple
-// string replacements. Internal templates contain no Templater code, so create_new copies
-// them as-is and any placeholder substitution happens as a plain post-write edit.
-async function createStaticNote(template, folderPath, fileName, replacements) {
-    const targetPath = `${folderPath}/${fileName}.md`;
-    if (app.vault.getAbstractFileByPath(targetPath)) {
-        throw new Error(`Starter note '${targetPath}' already exists; refusing to overwrite it.`);
-    }
-
-    const folder = app.vault.getAbstractFileByPath(folderPath);
-    if (!folder?.children) {
-        throw new Error(`Starter note folder '${folderPath}' was not found.`);
-    }
-
-    const createdFile = await tp.file.create_new(template, fileName, false, folder);
-    if (!createdFile || createdFile.path !== targetPath) {
-        throw new Error(`Could not create starter note '${targetPath}'.`);
-    }
-
-    if (replacements && Object.keys(replacements).length > 0) {
-        let content = await app.vault.read(createdFile);
-        for (const [needle, value] of Object.entries(replacements)) {
-            content = content.split(needle).join(value);
-        }
-        await app.vault.modify(createdFile, content);
-    }
-    return createdFile;
 }
 
 // 0. Safety gate: Only run from a fresh, empty tab to avoid overwriting real notes.
@@ -253,16 +207,12 @@ const ideasTemplate = resolveTemplate(CFG.ideasTemplateName);
 const reflectionTemplate = resolveTemplate(CFG.reflectionTemplateName);
 const stepStartTemplate = resolveTemplate(CFG.stepStartTemplateName);
 const stepEndTemplate = resolveTemplate(CFG.stepEndTemplateName);
-const stepTemplateSource = findInternalTemplate(CFG.stepTemplateSourceName);
-const explorationSource = findInternalTemplate(CFG.explorationSourceName);
 for (const [name, template] of [
     [CFG.planTemplateName, planTemplate],
     [CFG.ideasTemplateName, ideasTemplate],
     [CFG.reflectionTemplateName, reflectionTemplate],
     [CFG.stepStartTemplateName, stepStartTemplate],
     [CFG.stepEndTemplateName, stepEndTemplate],
-    [CFG.stepTemplateSourceName, stepTemplateSource],
-    [CFG.explorationSourceName, explorationSource],
 ]) {
     if (!template) {
         new Notice(`Template '${name}' not found!`);
@@ -328,8 +278,7 @@ try {
     console.error(`Failed to auto-update ${CFG.projectFileName}:`, err);
 }
 
-// 9. Create starter notes, then the deterministic start/end step notes, then the phase's
-// SSOT copies (steps/_step-template.md and artifacts/_exploration.md).
+// 9. Create starter notes and the deterministic start/end step notes.
 // Start/end steps are born with the phase and are never created manually or by an LLM.
 // A child failure must not prevent the rendered plan from being written to the starting note.
 let initialReflectionFile;
@@ -353,17 +302,6 @@ try {
         stepEndTemplate,
         `${targetPhaseDir}/${CFG.stepsDirName}`,
         CFG.stepEndFileName
-    );
-    await createStaticNote(
-        stepTemplateSource,
-        `${targetPhaseDir}/${CFG.stepsDirName}`,
-        CFG.stepTemplateFileName,
-        { [CFG.phasePlaceholder]: phaseNumber }
-    );
-    await createStaticNote(
-        explorationSource,
-        `${targetPhaseDir}/${CFG.artifactsDirName}`,
-        CFG.explorationFileName
     );
 } catch (err) {
     console.error(`Failed to create starter notes for phase ${phaseNumber}:`, err);

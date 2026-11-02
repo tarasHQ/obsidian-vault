@@ -46,7 +46,7 @@ UPD. User input in plan doesn't make sense after flows are done. Reflection and 
 	- #### Solution
 		- Discussion highlights. 
 		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
-- ### Idea #99 Critique Flow
+- ### [DONE] Idea #99 Critique Flow %% fold %%
 	- #### Discussion
 		- From old kilo flow. It's just useful to have that flow where LLM is targeted to not solve the issue, but find issues in "the answer". Like you do initial draft. Then make it defend itself. And repeat until it starts to make sense. 
 	- #### Solution
@@ -54,8 +54,9 @@ UPD. User input in plan doesn't make sense after flows are done. Reflection and 
 		- **Separate file for workflow too**, as it is with a few other "flows". It should be called from the flow or manually. (flow preferably)
 		- **Separate file for discussion?** So you can check all those issues in different tasks/branches.
 			- With templated categories too? Like security/performance/modularity/non-duplication/best-practices/long-term-ready - so it's not asking llm about just give me list of something, but it's structured blocks of what interests me to make things better in the plan/steps/etc.
+		- **UPD** done but without separate file for discussion. I can branch.
 		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
-- ### Issue #8 LLM's High Level Block
+- ### [DONE] Issue #8 LLM's High Level Block %% fold %%
 	- #### Discussion
 		- The issue is that there's no hygiene or rules for llm's part in the plan. If it's uncontrolled - it just dumps walls of text. I don't know where it should belong though. Because if that wall of text used in multiple steps - it could make sense. 
 		- Ok, it needs refined high level block for sure, and maybe some workflow stuff.
@@ -87,7 +88,7 @@ UPD. User input in plan doesn't make sense after flows are done. Reflection and 
 	- #### Solution
 		- Read discussion. 
 		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
-- ### Issue #7 Intra-step Deviation Tasks
+- ### [DONE] Issue #7 Intra-step Deviation Tasks %% fold %%
 	- #### Discussion
 		- The issue was too much issues. Like I explored stuff until 100k context, and then everything went apart. So what I had to do, is to use branches and slowly, step by step, explore all possibilities. And work on each one. Step by step.
 		- **Planning flow is bad**
@@ -104,14 +105,13 @@ UPD. User input in plan doesn't make sense after flows are done. Reflection and 
 		- But it doesn't feel like that is all. There's something else that can be used preemptively. There must be something in the flow itself that prevents this. 
 			- Ok, discipline. To revert conversations. 
 	- #### Solution
-		- `artifacts/XX-temp.md` - temp step file to offload current task (your mind). Because of exploration file, it's less friction to have parallel tasks on the same step if current task got bloated or something. That way the step logic is preserved. 
+		- `artifacts/XX-temp.md` - temp step file to offload current task (your mind). Because of exploration file, it's less friction to have parallel tasks on the same step if current task got bloated or something. That way the step logic is preserved.
 			- So the solution is state of mind/attitude to utilize those "side steps", instead of pushing everything into one task/context. 
 		- **AHK templates** for now. You need one for context handoff. When the project's window is active and you press like alt + c - ahk pastes the text like:
 			- *"I want to revert conversation... write me context handoff in ```markdown block``` but limit scope to our recent this to USER_INPUT."
 			- So this kind of exploration is low friction.
 		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
-
-- ### Issue #6 User's High-Level Block
+- ### [DONE] Issue #6 User's High-Level Block %% fold %%
 	- #### Discussion
 		- **plan**
 			- Issue with high-level block. As a user it was hard to write initial thing. It should be kind prompt-like. Not like decisions/invariants. Just give the user free form. 
@@ -132,8 +132,9 @@ UPD. User input in plan doesn't make sense after flows are done. Reflection and 
 			- **User Scope** - if there's risk of drift - that's the place to define scope of the phase, like if you're doing wiring + layout of ui - don't drift into styling. 
 			- **Links To Related Files** - stylings/designs/layouts/etc. to keep main plan clean
 			- **User Decisions** - if there's any controversial or nuanced decisions, that's the place for them.
+		- **UPD** - doesn't have much sense. initial reflection basically IS that. Exploration section (new, not in separate file) - covers links too. So by the time plan is filled - there's nothing to fill for the user.
 		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
-- ### Issue #5 PLANNING.md Enforcement
+- ### [DISCARDED] Issue #5 PLANNING.md Enforcement %% fold %%
 	- #### Discussion
 		- **planning.md**
 		- This file is central to everything. It should have separate block in agents. Flow have top priority over everything.
@@ -145,8 +146,9 @@ UPD. User input in plan doesn't make sense after flows are done. Reflection and 
 	- #### Solution
 		- **AGENTS.md** - planning md section as 00 or 01. Accent that this flow is of the utmost importance
 		- **00-end template checkbox** to reflect where routine was kept, and where it was broken/interrupted, so it brings the dictionary of routine-seeking behaviour. 
+		- **UPD** - not needed. Most of the work happens through flows, which are covered by that file (now it's LLM.md), so yeah, ignore. 
 		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
-- ### Issue #4 Initial Planning + Steps
+- ### [DONE] Issue #4 Initial Planning + Steps %% fold %%
 	- #### Discussion
 		- another big one. plan initial steps through artifacts. or in conversation. But not all at once. but one by one. 
 			- like you write down somewhere top-level overview of planned steps. then do some exploration on implementations. write down description/high level. 
@@ -181,6 +183,7 @@ UPD. User input in plan doesn't make sense after flows are done. Reflection and 
 		4. **This Flow is inserted into `00-start.md`**
 			- (note in planning.md template - to never read 00-start.md unless specified by the user)
 			- re-read discussion.
+		- **UPD** Done, with some tweaks.
 		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
 ## Low Level
 - ### Steps
@@ -192,7 +195,7 @@ UPD. User input in plan doesn't make sense after flows are done. Reflection and 
 		- For example, that idea with evaluating if the step is actually needed. Workflow makes LLM explore the step, when it has context - it makes this checkpoint. Then we diverge into discussing if this step is actually needed. Or other topics. We come back, I write "checkpoint passed" and we proceed in a clean branch? But like not through my actions - but through LLM's commands.
 	- ### Idea #1 Context Cleanup Checkpoints
 		- Workflow should have a place where LLM asks to stop and cleanup useless context. Before implementation, for example. Experimental a bit. But may be helpful.
-	- ### [DONE] Issue #4 Re-Exploration Time
+	- ### [DONE] Issue #4 Re-Exploration Time %% fold %%
 		- #### Discussion
 			- takes lots of time to re-explore all stuff I did while I was writing initial step contents. So each step should have "comprehensive exploration" section where LLM leaves links/notes/tips about how to research everything on the topic quickly. without many loops of back and forth. 
 			- reflection.
@@ -209,7 +212,7 @@ UPD. User input in plan doesn't make sense after flows are done. Reflection and 
 				1. Links - to files/folders (with `created/modified/deleted/context` statuses)
 				2. Tips - if plan was missing some nuance or something. (but could be dangerous and may explode, but try and see. )
 		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
-	- ### [DONE] Issue #3 Additional Step Statuses
+	- ### [DONE] Issue #3 Additional Step Statuses %% fold %%
 		- #### Discussion
 			- I need additional status for canceled/discarded steps (like for tests, when I decided to not do it, or for 08, when I decided to do it in another phase)
 			- Do I need more? Also. Because it's not tracked anymore - do I need frontmatter? 
@@ -222,15 +225,15 @@ UPD. User input in plan doesn't make sense after flows are done. Reflection and 
 			- `postponed` - if it's better to implement the step later.
 			- description of this - should vs shouldn't be in the planning? 
 		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
-- ## Tasks [DONE]
-	- ### [DONE] Issue #2 Completion Flow As a Task
+- ## Tasks [DONE] %% fold %%
+	- ### [DONE] Issue #2 Completion Flow As a Task %% fold %%
 		- #### Discussion
 			- completion flow doesn't go as separate block. it's just another task at the end like `### 99 - completion flow`, so LLM won't repeat it.
 			- yeah, because llm was a bit confused about it. it was task in one case, in another case it wasn't. So yeah. Much easier to to make it a task and that's it
 		- #### Solution
 			- **Completion becomes a templated task at the end of the step**
 		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
-- ## Artifacts [DONE]
+- ## Artifacts [DONE] %% fold %%
 	- #### ~~Issue #1 - Write exploration into .md~~
 		- maybe it makes more sense for llm to write its output into .md files? Like I'm repeating the same thing right now. First task was exploring 10 minutes about how quartz proposes to write plugins, and now, in a new task, I'm wasting another 5-10 minutes on the same damn issue. 
 			- ### Let's think
@@ -238,8 +241,8 @@ UPD. User input in plan doesn't make sense after flows are done. Reflection and 
 				- if it'll write it out - now you have to make sure it's not outdated, because if it is - you can lose a lot of time or make llm and yourself confused. 
 				- So no, 
 
-## Technical [DONE]
-- ### [DONE] Issue #3 - Frontmatter of the `_plan_xxx.md` and steps
+## Technical [DONE] %% fold %%
+- ### [DONE] Issue #3 - Frontmatter of the `_plan_xxx.md` and steps %% fold %%
 	- #### Discussion
 		- same as with steps - `status` and `state`? 
 			- Here's question. Do I need it? Because with steps it's a bit obvious (not anymore though, because I'm not parsing it automatically). But with plan? If it's not parsed anywhere - then do I need it? 
@@ -252,7 +255,7 @@ UPD. User input in plan doesn't make sense after flows are done. Reflection and 
 			- So it's not a loss. It's a win.
 		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
 	- 
-- ### [DONE] Issue #2 - Poor Styling of HTML Dataview Block 
+- ### [DONE] Issue #2 - Poor Styling of HTML Dataview Block %% fold %%
 	- #### Discussion
 		-  use icons for showing state of the step (full/high-level/condensed)
 			- ○ ◎ ◉ or 🟢🔵🟡
@@ -271,7 +274,7 @@ UPD. User input in plan doesn't make sense after flows are done. Reflection and 
 			- Do you need table? It's not readable in vscode. Like you might as well use list. Or maybe drop it completely? Yeah. F it. Not worth it seems like.
 		- **scrollable container** - no. BUT you can use outline, since each step won't be as bullet point, so it'll get recognized.
 		- **self-explanatory** - for this and everything onwards. use explanations only where they're needed. With this step - only icons and their description is added as comment under ## Steps. how to comment completed steps will go into the completion flow of step template
-- ### [DONE] Issue #1 - PIA Navigation
+- ### [DONE] Issue #1 - PIA Navigation %% fold %%
 	- #### Discussion
 		- Navigation is kinds PIA. I have to switch between vscode and obsidian. 
 		- the issue is that you get overwhelmed by the amount of docs and text.
@@ -281,7 +284,7 @@ UPD. User input in plan doesn't make sense after flows are done. Reflection and 
 		- You get overwhelmed because it edit a lot of stuff with a lot of text at once. Which means creation of highly interactive harness around the planning.md
 
 ---
-## Reflections
+## Reflections %% fold %%
 - ### How flows should look like? 
 	- I'll try to nap. I have problem loaded. Let's see if 15 minutes will help me, because I'm like lost.
 	- First of all - it's read only. It must be repeatable. 

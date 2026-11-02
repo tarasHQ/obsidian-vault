@@ -1,0 +1,2 @@
+## Possible Refinements
+- Format of the artifacts between refining reflection and steps implementation. You basically offloaded walls of text in there, and created an abstraction that structures all of that nicely. BUT it would be even better if you could have more Order in those artifacts as well.

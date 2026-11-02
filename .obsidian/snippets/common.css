@@ -225,9 +225,9 @@ audio {
 /* ===============================================================
    Custom styles for Collapse Icon (heading/lists)
    =============================================================== */
-.cm-editor .cm-line.HyperMD-list-line .cm-fold-indicator svg{
+/* .cm-editor .cm-line.HyperMD-list-line .cm-fold-indicator svg{
 	color: transparent !important;
-}
+} */
 
 .cm-editor .cm-line .cm-formatting-list {
 	cursor: pointer !important;

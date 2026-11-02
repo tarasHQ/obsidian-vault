@@ -1,0 +1,525 @@
+{
+  "menus": {
+    "event:file-menu-file": {
+      "signature": "event:file-menu-file",
+      "label": "File",
+      "entries": [
+        {
+          "type": "item",
+          "title": "Open in new window",
+          "icon": "picture-in-picture-2"
+        },
+        {
+          "type": "item",
+          "title": "Open in opposite tab group",
+          "icon": "split-square-horizontal"
+        },
+        {
+          "type": "item",
+          "title": "Open in new tab",
+          "icon": "file-plus"
+        },
+        {
+          "type": "item",
+          "title": "Open to the right",
+          "icon": "separator-vertical"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Change icon...",
+          "icon": "image-plus"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Move file to...",
+          "icon": "folder-tree"
+        },
+        {
+          "type": "item",
+          "title": "Bookmark...",
+          "icon": "bookmark"
+        },
+        {
+          "type": "item",
+          "title": "Make a copy",
+          "icon": "files"
+        },
+        {
+          "type": "item",
+          "title": "Git: Stage",
+          "icon": "plus-circle"
+        },
+        {
+          "type": "item",
+          "title": "Git: Unstage",
+          "icon": "minus-circle"
+        },
+        {
+          "type": "item",
+          "title": "Git: Add to .gitignore",
+          "icon": "file-x"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Copy path",
+          "icon": "clipboard",
+          "children": []
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Open version history",
+          "icon": "history"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Open in default app",
+          "icon": "arrow-up-right"
+        },
+        {
+          "type": "item",
+          "title": "Show in system explorer",
+          "icon": "arrow-up-right"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Rename...",
+          "icon": "edit-3"
+        },
+        {
+          "type": "item",
+          "title": "Delete",
+          "icon": "trash-2"
+        }
+      ],
+      "hiddenItems": [
+        "Close others",
+        "Close tabs after",
+        "Close all",
+        "Close",
+        "Change icon...",
+        "Link with tab...",
+        "Reading view",
+        "Source mode",
+        "Refresh view",
+        "Copy view type 'markdown' to clipboard",
+        "Export to PDF...",
+        "Add file property",
+        "Find...",
+        "Replace...",
+        "Open linked view",
+        "Git: Stage",
+        "Git: Unstage",
+        "Git: Add to .gitignore"
+      ],
+      "hiddenSeparators": [
+        4,
+        0,
+        6
+      ],
+      "order": [
+        "Close",
+        "Close others",
+        "Close all",
+        "Pin",
+        "Change icon...",
+        "Link with tab...",
+        "Reading view",
+        "Source mode",
+        "Refresh view",
+        "Copy view type 'markdown' to clipboard",
+        "Move to new window",
+        "Split right",
+        "Split down",
+        "Open in new window",
+        "Open in duplicate tab",
+        "Open in opposite tab group",
+        "Rename...",
+        "Move file to...",
+        "Bookmark...",
+        "Add file property",
+        "Export to PDF...",
+        "Find...",
+        "Replace...",
+        "Copy path",
+        "Open version history",
+        "Open linked view",
+        "Open in default app",
+        "Show in system explorer",
+        "Reveal file in navigation",
+        "Delete file"
+      ],
+      "promoted": [],
+      "lastSeenAt": 1793638161877
+    },
+    "dom:tab-header": {
+      "signature": "dom:tab-header",
+      "label": "Tab",
+      "entries": [
+        {
+          "type": "item",
+          "title": "Close",
+          "icon": "x"
+        },
+        {
+          "type": "item",
+          "title": "Close others",
+          "icon": "x"
+        },
+        {
+          "type": "item",
+          "title": "Close tabs after",
+          "icon": "x"
+        },
+        {
+          "type": "item",
+          "title": "Close all",
+          "icon": "x"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Change icon...",
+          "icon": "image-plus"
+        },
+        {
+          "type": "item",
+          "title": "Edit rule...",
+          "icon": "image-play"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Pin",
+          "icon": "pin"
+        },
+        {
+          "type": "item",
+          "title": "Link with tab...",
+          "icon": "link"
+        },
+        {
+          "type": "item",
+          "title": "Refresh view",
+          "icon": "refresh-cw"
+        },
+        {
+          "type": "item",
+          "title": "Copy view type 'markdown' to clipboard",
+          "icon": "info"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Move to new window",
+          "icon": "picture-in-picture"
+        }
+      ],
+      "hiddenItems": [
+        "Close others",
+        "Close tabs after",
+        "Close all",
+        "Change icon...",
+        "Edit rule...",
+        "Link with tab...",
+        "Copy view type 'markdown' to clipboard"
+      ],
+      "hiddenSeparators": [
+        0
+      ],
+      "order": [],
+      "promoted": [],
+      "lastSeenAt": 1793613176573
+    },
+    "event:editor-menu": {
+      "signature": "event:editor-menu",
+      "label": "Editor",
+      "entries": [
+        {
+          "type": "item",
+          "title": "technicalities",
+          "icon": "repeat"
+        },
+        {
+          "type": "item",
+          "title": "technicalities'",
+          "icon": "repeat"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Add to dictionary",
+          "icon": "folder-tree"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Add link",
+          "icon": "link"
+        },
+        {
+          "type": "item",
+          "title": "Add external link",
+          "icon": "external-link"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Format",
+          "icon": "paintbrush",
+          "children": []
+        },
+        {
+          "type": "item",
+          "title": "Paragraph",
+          "icon": "pilcrow",
+          "children": []
+        },
+        {
+          "type": "item",
+          "title": "Insert",
+          "icon": "list-plus",
+          "children": []
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Cut",
+          "icon": "scissors"
+        },
+        {
+          "type": "item",
+          "title": "Copy",
+          "icon": "copy"
+        },
+        {
+          "type": "item",
+          "title": "Paste",
+          "icon": "clipboard-check"
+        },
+        {
+          "type": "item",
+          "title": "Paste as plain text",
+          "icon": "clipboard-type"
+        },
+        {
+          "type": "item",
+          "title": "Select all",
+          "icon": "box-select"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Meta Bind",
+          "icon": "layout-list",
+          "children": []
+        }
+      ],
+      "hiddenItems": [
+        "Meta Bind",
+        "Select all"
+      ],
+      "hiddenSeparators": [
+        2
+      ],
+      "order": [],
+      "promoted": [],
+      "lastSeenAt": 1793637159267
+    },
+    "event:file-menu-folder": {
+      "signature": "event:file-menu-folder",
+      "label": "Folder",
+      "entries": [
+        {
+          "type": "item",
+          "title": "New note",
+          "icon": "edit"
+        },
+        {
+          "type": "item",
+          "title": "New folder",
+          "icon": "folder-open"
+        },
+        {
+          "type": "item",
+          "title": "New canvas",
+          "icon": "layout-dashboard"
+        },
+        {
+          "type": "item",
+          "title": "New base",
+          "icon": "layout-list"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Change icon...",
+          "icon": "image-plus"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Make a copy",
+          "icon": "files"
+        },
+        {
+          "type": "item",
+          "title": "Move folder to...",
+          "icon": "folder-tree"
+        },
+        {
+          "type": "item",
+          "title": "Search in folder",
+          "icon": "folder-search"
+        },
+        {
+          "type": "item",
+          "title": "Bookmark...",
+          "icon": "bookmark"
+        },
+        {
+          "type": "item",
+          "title": "Git: Stage",
+          "icon": "plus-circle"
+        },
+        {
+          "type": "item",
+          "title": "Git: Unstage",
+          "icon": "minus-circle"
+        },
+        {
+          "type": "item",
+          "title": "Git: Add to .gitignore",
+          "icon": "file-x"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Copy path",
+          "icon": "clipboard",
+          "children": []
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Show in system explorer",
+          "icon": "arrow-up-right"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Create new note from template"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Rename...",
+          "icon": "edit-3"
+        },
+        {
+          "type": "item",
+          "title": "Delete",
+          "icon": "trash-2"
+        }
+      ],
+      "hiddenItems": [
+        "Change icon...",
+        "Git: Stage",
+        "Git: Unstage",
+        "Git: Add to .gitignore",
+        "Create new note from template"
+      ],
+      "hiddenSeparators": [
+        1,
+        4
+      ],
+      "order": [],
+      "promoted": [],
+      "lastSeenAt": 1793638024675
+    },
+    "dom:unknown": {
+      "signature": "dom:unknown",
+      "label": "Unknown menu",
+      "entries": [
+        {
+          "type": "item",
+          "title": "All snippets · 3 of 5 on"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "00-vars"
+        },
+        {
+          "type": "item",
+          "title": "10-typography"
+        },
+        {
+          "type": "item",
+          "title": "99-archive"
+        },
+        {
+          "type": "item",
+          "title": "common"
+        },
+        {
+          "type": "item",
+          "title": "vertical"
+        }
+      ],
+      "hiddenItems": [],
+      "hiddenSeparators": [],
+      "order": [],
+      "promoted": [],
+      "lastSeenAt": 1793631040928
+    }
+  },
+  "copyAbsolutePath": false
+}
