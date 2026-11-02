@@ -47,31 +47,34 @@
 	- `LLM.md` - LLM's entry point to the whole directory.
 	  
 - ### Flows
+  %%LLMs: resolve wikilinks below to the base `C:/Users/Taras/Documents/obsidian-vault/@system/projects/` + the relative path.%%
 	- #### Rules
-		- LLMs should always use absolute links to interact with `@projects/` directory, cuz it's in another external non-project location
+		- LLMs should always interact with `@projects/` files through absolute paths, cuz it's in another external non-project location — resolve the relative wikilinks below against the base from the category comment.
 		- LLMs are forbidden to read files with flows unless explicitly asked by the user.
-		- [flow-creation-rules](C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/flows/_flow-creation-rules.md) - internal rules for the creation of the flow, to make sure the flow isn't a bad one.
-	- [refining-reflection](C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/flows/refining-reflection.md) - to refine user's raw reflections, by showing all possibilities of that reflection 
-	- [scorched-earth-critique](C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/flows/scorched-earth-critique.md) - to discuss user's reflections/plans/ideas and separate the wheat from the chaff 
-	- [initial-planning](C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/flows/initial-planning.md) - to discuss and lock down user's ideas into the implementable form
-	- [writing-steps](C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/flows/writing-steps.md) - to discuss and create implementable low-level steps. 
-	- [implementing-steps](C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/flows/implementing-steps.md) - to properly implement steps and keep the whole phase up-to-date with changes. 
-	- [code-review](C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/flows/code-review.md) - to make sure implemented code is properly understood by the user and is of high quality.
+		- [[shared/flows/_flow-creation-rules.md]] - internal rules for the creation of the flow, to make sure the flow isn't a bad one.
+	- [[shared/flows/refining-reflection.md]] - to refine user's raw reflections, by showing all possibilities of that reflection 
+	- [[shared/flows/scorched-earth-critique.md]] - to discuss user's reflections/plans/ideas and separate the wheat from the chaff 
+	- [[shared/flows/initial-planning.md]] - to discuss and lock down user's ideas into the implementable form
+	- [[shared/flows/writing-steps.md]] - to discuss and create implementable low-level steps. 
+	- [[shared/flows/implementing-steps.md]] - to properly implement steps and keep the whole phase up-to-date with changes. 
+	- [[shared/flows/code-review.md]] - to make sure implemented code is properly understood by the user and is of high quality.
 	  
 - ### Templates
   %%Templates that are used by the LLM when user asks to%%
-	- [readme-template](C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/templates/readme-template.md) - to be used during creation/rewrite of module's `README.md`
-	- [step-template](C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/templates/step-template.md) - to be used during creation/rewrite of step(-s) files in the phase. 
+  %%LLMs: resolve wikilinks below to the base `C:/Users/Taras/Documents/obsidian-vault/@system/projects/` + the relative path.%%
+	- [[shared/templates/readme-template.md]] - to be used during creation/rewrite of module's `README.md`
+	- [[shared/templates/step-template.md]] - to be used during creation/rewrite of step(-s) files in the phase. 
 	  
 - ### Obsidian Templater Plugin's Templates
-  %%used for user-invoked automated flow of creation of the templated phase, with pre-created key files%%
-	- `C:/Users/Taras/Documents/obsidian-vault/@system/projects/_templater/[T]phase.md` 
+  %%Used for user-invoked automated flow of creation of the templated phase, with pre-created key files%%
+  %%LLMs: resolve wikilinks below to the base `C:/Users/Taras/Documents/obsidian-vault/@system/projects/` + the relative path.%%
+	- [[_templater/[T]phase.md]]
 		- the master template that runs creation of the phase
-	- `C:/Users/Taras/Documents/obsidian-vault/@system/projects/_templater/[T]plan.md`
+	- [[_templater/[T]plan.md]]
 		- a template of the phase's plan
-	- `C:/Users/Taras/Documents/obsidian-vault/@system/projects/_templater/[T]step-start.md`
+	- [[_templater/[T]step-start.md]]
 		- a template of the 00 step, with checks and preparations before the work starts.
-	- `C:/Users/Taras/Documents/obsidian-vault/@system/projects/_templater/[T]step-end.md`
+	- [[_templater/[T]step-end.md]]
 		- a template of the 99 step, with checks and completions of the phase. 
-	- `C:/Users/Taras/Documents/obsidian-vault/@system/projects/_templater/[T]ideas.md`
+	- [[_templater/[T]ideas.md]]
 		- a small template to quickly capture ideas
