@@ -26,7 +26,8 @@ action:
         - [ ] red "now" line is there
     - [ ] Start stager timer
     - Obsidian
-        - [ ] Fill Context block
+        - [ ] Reload.
+        - [ ] Fill Context block.
         - [ ] Split down. Have ~10 lines of time log.
 
 ```meta-bind-button
@@ -64,7 +65,7 @@ action:
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-
+Remove. Goal of the overview is condense a day into a key points. Don't start with reflections/ideas/etc. Just condense.
 
 ---
 

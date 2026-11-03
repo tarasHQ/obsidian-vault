@@ -24,6 +24,7 @@ From initial refined reflection(**what** I want to do) -> to properly explored, 
 	- [ ] **B2** - [LLM] - **Response #2**
 		- No writing/editing.
 		- LLM lists 5 to 10 of the most **(reasonable, high-level, radical, architectural)** implementation possibilities for of provided user's artifacts.
+			- But you must include in consideration that user won't read previous artifact (it's for your exploratory brainstorming), so you have to explain everything properly, from the scratch.
 		- Those points may cover categories:
 			- More streamlined code %%(high level, not like a scope of the function)%%
 			- Reduced lines of code %%(high level, not like a scope of the function)%%

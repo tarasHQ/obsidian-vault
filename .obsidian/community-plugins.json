@@ -25,5 +25,6 @@
   "templater-obsidian",
   "foldstate-dev",
   "menu-hider",
-  "code-block-fold"
+  "code-block-fold",
+  "folder-spaces"
 ]
