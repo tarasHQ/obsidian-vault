@@ -42,6 +42,7 @@
 	- dd-MM-yyyy short date is available through "numbers" settings in legacy control panel
 	- ctrl+shift for ukr<->rus language switching you should install ukr as additional keyboard (not additional language)
 	- `multitasking` - disable that top bar-snap-layout-thing 
+	- `system sounds` - use custom sound with 500ms silence for `default beep`, so it's not broken in headphones, and more pleasant to the ear.
 - ### File Explorer Options
 	- 📄 - screenshot all settings. It's pretty useful to configure.
 

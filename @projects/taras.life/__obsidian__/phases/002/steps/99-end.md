@@ -19,14 +19,18 @@ The flow to start the planning in the best state of mind.
 - And overwhelmed on top of it - this is how you start the race you're meant to lose. 
 
 ## Checklists
-- [ ] **Make sure AGENTS.md, DEV_COMMANDS.md does not contradict new changes**
-      %%if does - concise fixes should be done%%
+### Completion
+- [ ] **Reflecting completion of the phase in the `_project.md`**
+      %%Status. Enveloping whole name in `~~` strikethrough tags %%
+- [ ] **Make sure AGENTS.md (and other docs/) do not contradict new changes** %%if does - concise fixes should be done%%
+- [ ] **There's no ideas in `ideas/*.md` left unchecked (discarded/extracted)**
+
+### Post-completion
 - [ ] **Reflecting on the phase**
      %%What worked and what didn't. Meta-level reflection to refine the workflow%%
+	- [ ] Also - where routine was broken and where not. You should seek routine.
 - [ ] **Making sure the information from the plan can safely die-off**
      %%If nothing should be long-term extracted into module readme's or project-wide/future ideas %%
 - [ ] **Making sure frontmatter is set properly**
 - [ ] **Asking user to move the phase into /phases/archived/**
       %%So no done phases are bloating phases/ folder%%
-- [ ] **Reflecting completion of the phase in the `_project.md`**
-      %%Status. Enveloping whole name in `~~` strikethrough tags %%

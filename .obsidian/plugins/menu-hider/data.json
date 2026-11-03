@@ -6,21 +6,6 @@
       "entries": [
         {
           "type": "item",
-          "title": "Open in new window",
-          "icon": "picture-in-picture-2"
-        },
-        {
-          "type": "item",
-          "title": "Open in duplicate tab",
-          "icon": "files"
-        },
-        {
-          "type": "item",
-          "title": "Open in opposite tab group",
-          "icon": "split-square-horizontal"
-        },
-        {
-          "type": "item",
           "title": "Open in new tab",
           "icon": "file-plus"
         },
@@ -28,6 +13,11 @@
           "type": "item",
           "title": "Open to the right",
           "icon": "separator-vertical"
+        },
+        {
+          "type": "item",
+          "title": "Open in new window",
+          "icon": "picture-in-picture-2"
         },
         {
           "type": "separator"
@@ -42,6 +32,11 @@
         },
         {
           "type": "item",
+          "title": "Make a copy",
+          "icon": "files"
+        },
+        {
+          "type": "item",
           "title": "Move file to...",
           "icon": "folder-tree"
         },
@@ -49,11 +44,6 @@
           "type": "item",
           "title": "Bookmark...",
           "icon": "bookmark"
-        },
-        {
-          "type": "item",
-          "title": "Make a copy",
-          "icon": "files"
         },
         {
           "type": "item",
@@ -135,44 +125,15 @@
         "Git: Add to .gitignore"
       ],
       "hiddenSeparators": [
-        4,
         0,
-        6
+        1,
+        2,
+        4,
+        7
       ],
-      "order": [
-        "Close",
-        "Close others",
-        "Close all",
-        "Pin",
-        "Change icon...",
-        "Link with tab...",
-        "Reading view",
-        "Source mode",
-        "Refresh view",
-        "Copy view type 'markdown' to clipboard",
-        "Move to new window",
-        "Split right",
-        "Split down",
-        "Open in new window",
-        "Open in duplicate tab",
-        "Open in opposite tab group",
-        "Rename...",
-        "Move file to...",
-        "Bookmark...",
-        "Add file property",
-        "Export to PDF...",
-        "Find...",
-        "Replace...",
-        "Copy path",
-        "Open version history",
-        "Open linked view",
-        "Open in default app",
-        "Show in system explorer",
-        "Reveal file in navigation",
-        "Delete file"
-      ],
+      "order": [],
       "promoted": [],
-      "lastSeenAt": 1793656053446
+      "lastSeenAt": 1793697437020
     },
     "dom:tab-header": {
       "signature": "dom:tab-header",
@@ -184,32 +145,12 @@
           "icon": "x"
         },
         {
-          "type": "item",
-          "title": "Close others",
-          "icon": "x"
-        },
-        {
-          "type": "item",
-          "title": "Close tabs after",
-          "icon": "x"
-        },
-        {
-          "type": "item",
-          "title": "Close all",
-          "icon": "x"
-        },
-        {
           "type": "separator"
         },
         {
           "type": "item",
           "title": "Change icon...",
           "icon": "image-plus"
-        },
-        {
-          "type": "item",
-          "title": "Edit rule...",
-          "icon": "image-play"
         },
         {
           "type": "separator"
@@ -231,7 +172,7 @@
         },
         {
           "type": "item",
-          "title": "Copy view type 'markdown' to clipboard",
+          "title": "Copy view type 'folder-spaces-explorer' to clipboard",
           "icon": "info"
         },
         {
@@ -241,6 +182,16 @@
           "type": "item",
           "title": "Move to new window",
           "icon": "picture-in-picture"
+        },
+        {
+          "type": "item",
+          "title": "Split right",
+          "icon": "separator-vertical"
+        },
+        {
+          "type": "item",
+          "title": "Split down",
+          "icon": "separator-horizontal"
         }
       ],
       "hiddenItems": [
@@ -257,7 +208,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793613176573
+      "lastSeenAt": 1793698458520
     },
     "event:editor-menu": {
       "signature": "event:editor-menu",
@@ -265,12 +216,7 @@
       "entries": [
         {
           "type": "item",
-          "title": "wikilike",
-          "icon": "repeat"
-        },
-        {
-          "type": "item",
-          "title": "WikiLeaks",
+          "title": "depthless",
           "icon": "repeat"
         },
         {
@@ -296,6 +242,11 @@
         },
         {
           "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Search for “depthness”",
+          "icon": "search"
         },
         {
           "type": "item",
@@ -362,7 +313,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793658584848
+      "lastSeenAt": 1793693578979
     },
     "event:file-menu-folder": {
       "signature": "event:file-menu-folder",
@@ -448,6 +399,15 @@
         },
         {
           "type": "item",
+          "title": "Folder Spaces",
+          "icon": "folders",
+          "children": []
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
           "title": "Show in system explorer",
           "icon": "arrow-up-right"
         },
@@ -485,7 +445,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793655404373
+      "lastSeenAt": 1793698463269
     },
     "dom:unknown": {
       "signature": "dom:unknown",
@@ -493,7 +453,7 @@
       "entries": [
         {
           "type": "item",
-          "title": "All snippets · 3 of 5 on"
+          "title": "Paused · 3 remembered · tap to resume"
         },
         {
           "type": "separator"
@@ -523,7 +483,41 @@
       "hiddenSeparators": [],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793631040928
+      "lastSeenAt": 1793698526202
+    },
+    "view:file-explorer": {
+      "signature": "view:file-explorer",
+      "label": "file-explorer",
+      "entries": [
+        {
+          "type": "item",
+          "title": "Enable/disable link",
+          "icon": "link"
+        },
+        {
+          "type": "item",
+          "title": "Remove parent link (cannot be undone)",
+          "icon": "unlink"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Set folder space icon",
+          "icon": "image"
+        },
+        {
+          "type": "item",
+          "title": "Open Folder Spaces settings",
+          "icon": "settings"
+        }
+      ],
+      "hiddenItems": [],
+      "hiddenSeparators": [],
+      "order": [],
+      "promoted": [],
+      "lastSeenAt": 1793698451760
     }
   },
   "copyAbsolutePath": false
