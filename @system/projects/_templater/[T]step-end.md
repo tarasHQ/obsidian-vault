@@ -49,10 +49,8 @@ const phaseNumber = tp.config.target_file.parent.parent.name;
 -%>
 ---
 ctime: <% tp.file.creation_date(CFG.ctimeFormat) %>
-isIntegrated: false
 status: ready
 state: condensed
-reviewedAtStep: ""
 ---
 
 %%[internal link for user to template]([T]step-end.md), llm should completely ignore this line%%

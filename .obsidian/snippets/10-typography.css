@@ -1,80 +1,115 @@
 /* ===============================================================
    10-typography.css
-   Text-level styling: headings, bold, highlights, inline code, etc.
-   Loaded after the theme; snippet order is alphabetical.
+   Typography: headings, bold, highlights, strikethrough, inline
+   code, links, list spacing.
+   
    =============================================================== */
 
-/* Dark theme — the colors that were previously in effect
-   (Style Settings custom H1–H5; H6 inherited Flexoki purple
-   from Minimal's colorful-headings palette) */
-body.theme-dark {
-    --h1-color: #D07169;
-    --h2-color: #CC8456;
-    --h3-color: #BCAA70;
-    --h4-color: #A8BA61;
-    --h5-color: #6390B6;
-    --h6-color: #8B7EC8;
+/* ===============================================================
+   Headings — color + size (Live Preview & Reading mode)
+   One rule per level: everything about that heading is here.
+   =============================================================== */
+.cm-header.cm-header-1,
+.markdown-rendered h1 {
+    color: #D07169 !important;
+    font-size: 1.35em !important;
 }
 
-/* Minimal kept modal headings plain even with colorful headings
-   enabled — reproduce that behavior here */
-.modal {
-    --h1-color: var(--text-normal);
-    --h2-color: var(--text-normal);
-    --h3-color: var(--text-normal);
-    --h4-color: var(--text-normal);
-    --h5-color: var(--text-normal);
-    --h6-color: var(--text-normal);
+.cm-header.cm-header-2,
+.markdown-rendered h2 {
+    color: #CC8456 !important;
+    font-size: 1.27em !important;
+}
+
+.cm-header.cm-header-3,
+.markdown-rendered h3 {
+    color: #BCAA70 !important;
+    font-size: 1.2em !important;
+}
+
+.cm-header.cm-header-4,
+.markdown-rendered h4 {
+    color: #A8BA61 !important;
+    font-size: 1.1em !important;
+}
+
+.cm-header.cm-header-5,
+.markdown-rendered h5 {
+    color: #6390B6 !important;
+    font-size: 1.1em !important;
+}
+
+.cm-header.cm-header-6,
+.markdown-rendered h6 {
+    color: #8B7EC8 !important;
+    font-size: 1.1em !important;
 }
 
 /* ===============================================================
-   Heading sizes
+   Headings — font family / weight / letter-spacing
    =============================================================== */
-body {
-    --h1-size: 1.35em;
-    --h2-size: 1.27em;
-    --h3-size: 1.2em;
-    --h4-size: 1.1em;
-    --h5-size: 1.1em;
-    --h6-size: 1.1em;
+.cm-header.cm-header-1,
+.cm-header.cm-header-2,
+.cm-header.cm-header-3,
+.cm-header.cm-header-4,
+.cm-header.cm-header-5,
+.cm-header.cm-header-6 {
+    font-family: "Georgia", serif !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.04em !important;
 }
 
-/* List spacing */
-body {
-    --list-spacing: 0.115em;
-}
-
-/* ===============================================================
-   Link colors
-   =============================================================== */
-body.theme-dark {
-    --link-color: #009584;
-    --link-color-hover: #00e4ca;
-    --link-external-color: #009584;
-    --link-external-color-hover: #00e4ca;
-    --link-unresolved-color: #f50b0b;
-    --link-unresolved-decoration-color: #f50b0b;
-    --link-unresolved-opacity: 1;
-}
-
-/* Inline title color */
-body.theme-light {
-    --inline-title-color: #6c6868;
+/* Modal headings stay plain — Minimal kept them uncolorized even
+   with colorful headings on, reproduce that here. --text-normal is
+   the app's semantic text color ( adapts to the theme ). */
+.modal :is(h1, h2, h3, h4, h5, h6) {
+    color: var(--text-normal) !important;
 }
 
 /* ===============================================================
    Bold
-   ---------------------------------------------------------------
-   Color lives in --bold-color (00-vars.css); Obsidian core applies
-   it to both the editor (.cm-strong) and reading mode (strong),
-   so no selector rule is needed here.
    =============================================================== */
+.cm-strong,
+.markdown-rendered strong {
+    color: #d1a6a6 !important;
+}
+
+/* ===============================================================
+   Highlight
+   =============================================================== */
+mark, 
+.cm-highlight {
+    background-color: #9fa340 !important;
+}
+
+.cm-highlight {
+    color: #000 !important;
+}
+
+/* Colored highlights (Highlightr-style classes, Live Preview) */
+.cm-highlight-red {
+    background-color: #ce6c6cd5 !important;
+    color: #000 !important;
+}
+.cm-highlight-orange {
+    background-color: #e3a355b6 !important;
+    color: #000 !important;
+}
+.cm-highlight-yellow {
+    background-color: #ffea00 !important;
+    color: #000 !important;
+}
+.cm-highlight-blue {
+    background-color: #63a0d6c9 !important;
+    color: #000 !important;
+}
+.cm-highlight-green {
+    background-color: #59a05cc7 !important;
+    color: #000 !important;
+}
 
 /* ===============================================================
    Strikethrough
-   ---------------------------------------------------------------
-   No variable backing exists for strikethrough (neither Minimal
-   nor core defines one), so this stays a selector rule.
    =============================================================== */
 .cm-strikethrough,
 .markdown-rendered del {
@@ -85,46 +120,7 @@ body.theme-light {
 }
 
 /* ===============================================================
-   Highlights
-   ---------------------------------------------------------------
-   Background of plain ==highlight== comes from --text-highlight-bg
-   (00-vars.css). Per-color classes (Highlightr-style) consume the
-   --hl-bg-* palette tokens from 00-vars.css.
-   =============================================================== */
-.cm-highlight {
-    color: black !important;
-}
-
-.cm-highlight-red {
-    background-color: var(--hl-bg-red) !important;
-    color: #000000 !important;
-}
-.cm-highlight-orange {
-    background-color: var(--hl-bg-orange) !important;
-    color: #000000 !important;
-}
-.cm-highlight-yellow {
-    background-color: var(--hl-bg-yellow) !important;
-    color: #000000 !important;
-}
-.cm-highlight-blue {
-    background-color: var(--hl-bg-blue) !important;
-    color: #000000 !important;
-}
-.cm-highlight-green {
-    background-color: var(--hl-bg-green) !important;
-    color: #000000 !important;
-}
-
-/* ===============================================================
-   Inline code (Reading Mode & Live Preview)
-   ---------------------------------------------------------------
-   WHY the styling exists - inline code is never a primary thing,
-   so it shouldn't be big and bright as it was before.
-   WHY no variables - --code-normal/--code-background are also
-   consumed by fenced code blocks, and the original styling was
-   inline-only; a shared variable would restyle blocks too.
-   --code-size has the same problem, so font-size stays here.
+   Inline code
    =============================================================== */
 .markdown-rendered code,
 .cm-inline-code {
@@ -133,4 +129,60 @@ body.theme-light {
     background-color: #2b2b2b !important;
     padding-top: 0.05em !important; /* a bit smaller vertical padding to avoid multiline overlap */
     padding-bottom: 0.05em !important; /* a bit smaller vertical padding to avoid multiline overlap */
-}                                          
+}
+
+/* Inline code inside a %%comment%% (Live Preview only — comments
+   don't exist in reading mode). The code span does NOT receive
+   .cm-comment, so it must be matched through its position in the
+   line: .cm-comment ~ requires the comment-start span before it,
+   :has(~ .cm-comment) requires the comment-end span after it —
+   together that means "between the %% markers". DOM between the
+   spans includes cm-widgetBuffer imgs and intermediate spans, so
+   the general sibling combinator (~) is needed. Styles: slightly
+   smaller and dimmer, so the chip blends into the muted comment
+   text instead of standing out. */
+:not(.templater-command-bg)
+    .cm-comment ~ .cm-inline-code:has(~ .cm-comment) {
+    font-size: 0.6em !important;
+    opacity: 0.75;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* ===============================================================
+   Links
+   =============================================================== */
+
+/* Internal links */
+:is(.cm-hmd-internal-link, .internal-link) {
+    color: #009584;
+}
+:is(.cm-hmd-internal-link, .internal-link):hover {
+    color: #00e4ca;
+}
+
+/* External links */
+.external-link {
+    color: #009584;
+}
+.external-link:hover {
+    color: #00e4ca;
+}
+
+/* Unresolved (nonexistent) links */
+:is(.internal-link, .cm-hmd-internal-link).is-unresolved {
+    color: #f50b0b;
+    opacity: 1;
+    text-decoration-color: #f50b0b;
+}
+
+/* ===============================================================
+   List spacing
+   ---------------------------------------------------------------
+   Single exception to "no tokens": Obsidian spaces lists through
+   this core variable and there is no equivalent single selector,
+   so it stays as a variable declaration.
+   =============================================================== */
+body {
+    --list-spacing: 0.115em;
+}

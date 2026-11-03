@@ -16,6 +16,7 @@
 - 📄`Deskflow` - config in program data for monitors location
 - 📄`PotPlayer` - not sure if it's better than re-setting up.
 - 📄`vscode` - supposed to sync those, but maybe do local backup, just to make sure?
+	- you have 2 users, normal and admin(for protected ahk scripts). admin created automatically if not present. you need to copypaste `settings` and `keybindings` in appdata. Change theme though, to distinguish between all instances.
 - 📄`kaspersky` - exceptions + activation (deactivate on current windows)
 - 📄`power toys` - has internal backup and restore logic
 - 📄`Windhawk` - mods + their settings (probably best bet is to copy config in text mode?) + your custom mods code and settings

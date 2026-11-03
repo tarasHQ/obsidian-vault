@@ -1,9 +1,7 @@
 ---
 ctime: 2026-10-31 23:16
-isIntegrated: false
 status: waiting
 state: placeholder
-reviewedAtStep: ""
 ---
 
 %%[internal link for user to template]([T]step-end.md), llm should completely ignore this line%%

@@ -1,7 +1,6 @@
 ---
 status:
 state:
-reviewedAtStep:
 ---
 
 [← PLAN](../_plan_|PHASE_NUMBER|.md)
