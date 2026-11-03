@@ -1,0 +1,12 @@
+/* ===============================================================
+   60-plugins.css
+   Plugin-specific styling that doesn't fit the other files.
+   =============================================================== */
+
+/* ===============================================================
+   Custom styles for calendar from Journals plugin
+   =============================================================== */
+/* Make calendar cell text (day numbers) smaller */
+.notes-calendar-cell.notes-month-view__day > span {
+    font-size: 0.8rem !important;
+}

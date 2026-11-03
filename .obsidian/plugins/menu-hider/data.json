@@ -20,6 +20,11 @@
           "icon": "picture-in-picture-2"
         },
         {
+          "type": "item",
+          "title": "Open in duplicate tab",
+          "icon": "files"
+        },
+        {
           "type": "separator"
         },
         {
@@ -133,7 +138,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793697437020
+      "lastSeenAt": 1793730680700
     },
     "dom:tab-header": {
       "signature": "dom:tab-header",
@@ -208,7 +213,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793698458520
+      "lastSeenAt": 1793704040165
     },
     "event:editor-menu": {
       "signature": "event:editor-menu",
@@ -216,7 +221,7 @@
       "entries": [
         {
           "type": "item",
-          "title": "depthless",
+          "title": "syntax callouts",
           "icon": "repeat"
         },
         {
@@ -242,11 +247,6 @@
         },
         {
           "type": "separator"
-        },
-        {
-          "type": "item",
-          "title": "Search for “depthness”",
-          "icon": "search"
         },
         {
           "type": "item",
@@ -313,7 +313,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793693578979
+      "lastSeenAt": 1793713797338
     },
     "event:file-menu-folder": {
       "signature": "event:file-menu-folder",
@@ -404,6 +404,11 @@
           "children": []
         },
         {
+          "type": "item",
+          "title": "Set to root",
+          "icon": "panel-left-open"
+        },
+        {
           "type": "separator"
         },
         {
@@ -445,7 +450,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793698463269
+      "lastSeenAt": 1793704036999
     },
     "dom:unknown": {
       "signature": "dom:unknown",
@@ -453,7 +458,7 @@
       "entries": [
         {
           "type": "item",
-          "title": "Paused · 3 remembered · tap to resume"
+          "title": "All snippets · 8 of 10 on"
         },
         {
           "type": "separator"
@@ -468,22 +473,42 @@
         },
         {
           "type": "item",
+          "title": "20-editor"
+        },
+        {
+          "type": "item",
+          "title": "25-media"
+        },
+        {
+          "type": "item",
+          "title": "30-workspace"
+        },
+        {
+          "type": "item",
+          "title": "40-navigation"
+        },
+        {
+          "type": "item",
+          "title": "50-canvas"
+        },
+        {
+          "type": "item",
+          "title": "60-plugins"
+        },
+        {
+          "type": "item",
           "title": "99-archive"
         },
         {
           "type": "item",
-          "title": "common"
-        },
-        {
-          "type": "item",
-          "title": "vertical"
+          "title": "100-recording-pc"
         }
       ],
       "hiddenItems": [],
       "hiddenSeparators": [],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793698526202
+      "lastSeenAt": 1793731110713
     },
     "view:file-explorer": {
       "signature": "view:file-explorer",
@@ -518,6 +543,54 @@
       "order": [],
       "promoted": [],
       "lastSeenAt": 1793698451760
+    },
+    "view:markdown": {
+      "signature": "view:markdown",
+      "label": "markdown",
+      "entries": [
+        {
+          "type": "item",
+          "title": "Property type",
+          "icon": "info",
+          "children": []
+        },
+        {
+          "type": "item",
+          "title": "Change icon...",
+          "icon": "image-plus"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Cut",
+          "icon": "scissors"
+        },
+        {
+          "type": "item",
+          "title": "Copy",
+          "icon": "copy"
+        },
+        {
+          "type": "item",
+          "title": "Paste",
+          "icon": "clipboard-check"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Remove",
+          "icon": "trash-2"
+        }
+      ],
+      "hiddenItems": [],
+      "hiddenSeparators": [],
+      "order": [],
+      "promoted": [],
+      "lastSeenAt": 1793719490672
     }
   },
   "copyAbsolutePath": false

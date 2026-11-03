@@ -1,28 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "iteration-02",
-      "path": "@system/projects/iterations/iteration-02.md"
-    },
-    {
-      "basename": "initial-planning",
-      "path": "@system/projects/shared/flows/initial-planning.md"
+      "basename": "_plan_002",
+      "path": "@projects/taras.life/__obsidian__/phases/002/_plan_002.md"
     },
     {
       "basename": "November 3rd Tue",
       "path": "@journal/01 Daily/2026/11-November/November 3rd Tue.md"
     },
     {
-      "basename": "Ideas",
-      "path": "@projects/taras.life/Social/Ideas.md"
+      "basename": "iteration-02",
+      "path": "@system/projects/iterations/iteration-02.md"
     },
     {
-      "basename": "_plan_002",
-      "path": "@projects/taras.life/__obsidian__/phases/002/_plan_002.md"
+      "basename": "windows-reinstall-notes",
+      "path": "Maintenance/windows-reinstall-notes.md"
     },
     {
-      "basename": "parking",
-      "path": "@projects/taras.life/__obsidian__/phases/002/ideas/parking.md"
+      "basename": "on-discouragement-again",
+      "path": "Psychoanalysis/_reflections/on-discouragement-again.md"
+    },
+    {
+      "basename": "On Discouragement",
+      "path": "Psychoanalysis/_reflections/On Discouragement.md"
+    },
+    {
+      "basename": "I just don't know",
+      "path": "Psychoanalysis/_reflections/I just don't know.md"
+    },
+    {
+      "basename": "[T]daily-journaling",
+      "path": "_static/templater/[T]daily-journaling.md"
+    },
+    {
+      "basename": "[T]step-end",
+      "path": "@system/projects/_templater/[T]step-end.md"
     },
     {
       "basename": "00-start",
@@ -33,20 +45,76 @@
       "path": "@projects/taras.life/__obsidian__/phases/002/steps/99-end.md"
     },
     {
-      "basename": "folder-not-empy",
-      "path": "@projects/taras.life/__obsidian__/artifacts/folder-not-empy.md"
+      "basename": "06-docs-final-verification",
+      "path": "@projects/taras.life/__obsidian__/phases/002/steps/06-docs-final-verification.md"
     },
     {
-      "basename": "[T]step-end",
-      "path": "@system/projects/_templater/[T]step-end.md"
+      "basename": "05-templates-cli-create-removal",
+      "path": "@projects/taras.life/__obsidian__/phases/002/steps/05-templates-cli-create-removal.md"
+    },
+    {
+      "basename": "04-toolchain-cleanup",
+      "path": "@projects/taras.life/__obsidian__/phases/002/steps/04-toolchain-cleanup.md"
+    },
+    {
+      "basename": "03-remove-generation-googlefonts",
+      "path": "@projects/taras.life/__obsidian__/phases/002/steps/03-remove-generation-googlefonts.md"
+    },
+    {
+      "basename": "02-scss-to-css-theming",
+      "path": "@projects/taras.life/__obsidian__/phases/002/steps/02-scss-to-css-theming.md"
+    },
+    {
+      "basename": "01-groundwork",
+      "path": "@projects/taras.life/__obsidian__/phases/002/steps/01-groundwork.md"
+    },
+    {
+      "basename": "step-template",
+      "path": "@system/projects/shared/templates/step-template.md"
+    },
+    {
+      "basename": "LLM",
+      "path": "@system/projects/LLM.md"
+    },
+    {
+      "basename": "implementing-steps",
+      "path": "@system/projects/shared/flows/implementing-steps.md"
+    },
+    {
+      "basename": "[T]step-start",
+      "path": "@system/projects/_templater/[T]step-start.md"
+    },
+    {
+      "basename": "initial-planning",
+      "path": "@system/projects/shared/flows/initial-planning.md"
+    },
+    {
+      "basename": "writing-steps",
+      "path": "@system/projects/shared/flows/writing-steps.md"
     },
     {
       "basename": "[T]plan",
       "path": "@system/projects/_templater/[T]plan.md"
     },
     {
-      "basename": "[T]step-start",
-      "path": "@system/projects/_templater/[T]step-start.md"
+      "basename": "on-the-plan",
+      "path": "@system/projects/_reflections/on-the-plan.md"
+    },
+    {
+      "basename": "initial-reflection",
+      "path": "@projects/taras.life/__obsidian__/phases/002/_reflections/initial-reflection.md"
+    },
+    {
+      "basename": "Ideas",
+      "path": "@projects/taras.life/Social/Ideas.md"
+    },
+    {
+      "basename": "parking",
+      "path": "@projects/taras.life/__obsidian__/phases/002/ideas/parking.md"
+    },
+    {
+      "basename": "folder-not-empy",
+      "path": "@projects/taras.life/__obsidian__/artifacts/folder-not-empy.md"
     },
     {
       "basename": "attack-surface-7k2f",
@@ -57,32 +125,12 @@
       "path": "@projects/taras.life/__obsidian__/phases/002/artifacts/possibilities-k4m8.md"
     },
     {
-      "basename": "initial-reflection",
-      "path": "@projects/taras.life/__obsidian__/phases/002/_reflections/initial-reflection.md"
-    },
-    {
-      "basename": "windows-reinstall-notes",
-      "path": "Maintenance/windows-reinstall-notes.md"
-    },
-    {
       "basename": "November 2nd Mon",
       "path": "@journal/01 Daily/2026/11-November/November 2nd Mon.md"
     },
     {
-      "basename": "[T]daily-journaling",
-      "path": "_static/templater/[T]daily-journaling.md"
-    },
-    {
-      "basename": "on-discouragement-again",
-      "path": "Psychoanalysis/_reflections/on-discouragement-again.md"
-    },
-    {
       "basename": "readme",
       "path": "@system/projects/_reflections/readme.md"
-    },
-    {
-      "basename": "LLM",
-      "path": "@system/projects/LLM.md"
     },
     {
       "basename": "refining-reflection",
@@ -91,10 +139,6 @@
     {
       "basename": "[T]phase",
       "path": "@system/projects/_templater/[T]phase.md"
-    },
-    {
-      "basename": "step-template",
-      "path": "@system/projects/shared/templates/step-template.md"
     },
     {
       "basename": "_flow-creation-rules",
@@ -111,10 +155,6 @@
     {
       "basename": "Plugins",
       "path": "@projects/taras.life/__obsidian__/ideas/Plugins.md"
-    },
-    {
-      "basename": "implementing-steps",
-      "path": "@system/projects/shared/flows/implementing-steps.md"
     },
     {
       "basename": "iteration-01",
@@ -159,46 +199,6 @@
     {
       "basename": "code-review",
       "path": "@system/projects/_flows/code-review.md"
-    },
-    {
-      "basename": "writing-steps",
-      "path": "@system/projects/_flows/writing-steps.md"
-    },
-    {
-      "basename": "initial-planning",
-      "path": "@system/projects/_flows/initial-planning.md"
-    },
-    {
-      "basename": "Issues with planning",
-      "path": "@projects/0vibes/__obsidian__/_reflections/Issues with planning.md"
-    },
-    {
-      "basename": "examination",
-      "path": "@system/projects/_flows/examination.md"
-    },
-    {
-      "basename": "refining-reflection",
-      "path": "@system/projects/_flows/refining-reflection.md"
-    },
-    {
-      "basename": "On YouTube",
-      "path": "Temptations/_reflections/On YouTube.md"
-    },
-    {
-      "basename": "[T]project",
-      "path": "_static/templater/[T]project.md"
-    },
-    {
-      "basename": "About",
-      "path": "About.md"
-    },
-    {
-      "basename": "November 1st Sun",
-      "path": "@journal/01 Daily/2026/11-November/November 1st Sun.md"
-    },
-    {
-      "basename": "keep-folder 1",
-      "path": "@journal/03 Monthly/keep-folder 1.md"
     }
   ],
   "omittedPaths": [],

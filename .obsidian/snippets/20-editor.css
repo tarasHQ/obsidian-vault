@@ -1,0 +1,95 @@
+/* ===============================================================
+   20-editor.css
+   Live Preview editing surface: comments, collapse icons,
+   editor-line layout tweaks.
+   =============================================================== */
+
+/* ===============================================================
+   Comments styles %%comment%%
+   =============================================================== */
+
+/* 1. Hide comment tags %% when line is not active */
+.cm-line:not(.cm-active) .cm-comment.cm-comment-start,
+.cm-line:not(.cm-active) .cm-comment.cm-comment-end {
+    display: none;
+}
+
+/* 2. Shrink ONLY the comment text (leaves .cm-hmd-list-indent at 1em so lines stay straight) */
+:not(.templater-command-bg).cm-line .cm-comment {
+    font-size: 0.8em !important;
+}
+
+/* 3. Compress vertical height on lines that contain comments */
+:not(.templater-command-bg).cm-line:has(.cm-comment) {
+    line-height: 0.8 !important; /* Adjust between 1.0 and 1.3 for desired compactness */
+}
+
+/* 4. Inline code inside a comment is styled in 10-typography.css
+   (inline code is a typography feature; the comment context only
+   acts as a trigger). This file keeps only comment mechanics. */
+
+/* ===============================================================
+   Custom styles for Collapse Icon (heading/lists)
+   =============================================================== */
+/* .cm-editor .cm-line.HyperMD-list-line .cm-fold-indicator svg{
+	color: transparent !important;
+} */
+
+.cm-editor .cm-line .cm-formatting-list {
+    cursor: pointer !important;
+}
+
+/* Increase clickable area of collapse icon */
+.collapse-icon svg.svg-icon {
+    width: 20px !important;
+}
+
+/* Make collapse icon always visible ONLY for headers */
+.HyperMD-header .heading-collapse-indicator,
+.HyperMD-header .cm-fold-indicator .collapse-indicator {
+    padding-inline-end: unset !important;
+    opacity: 0.5 !important;
+}
+
+/* Make collapse icon cursor as pointer ONLY for headers
+   Long selectors used to override !important of Outliner plugin  */
+body
+    .app-container
+    .markdown-source-view
+    .cm-scroller
+    .cm-sizer
+    .cm-contentContainer
+    .HyperMD-header
+    .cm-fold-indicator,
+body
+    .app-container
+    .markdown-source-view
+    .cm-scroller
+    .cm-sizer
+    .cm-contentContainer
+    .HyperMD-header
+    .collapse-indicator,
+body
+    .app-container
+    .markdown-source-view
+    .cm-scroller
+    .cm-sizer
+    .cm-contentContainer
+    .HyperMD-header
+    .heading-collapse-indicator {
+    cursor: pointer !important;
+}
+
+/* remove padding of headings in live preview editing */
+.cm-s-obsidian .cm-line.HyperMD-header {
+    padding: 0px !important;
+}
+
+/* ===============================================================
+   Plugin-specific editor quirks
+   =============================================================== */
+
+/* For canvas-smith plugin, offsets cursor to left so it's centered between letters */
+.cm-editor canvas {
+    left: 0px;
+}

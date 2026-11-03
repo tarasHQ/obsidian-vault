@@ -1,7 +1,44 @@
 ## Possible Refinements
-- **Format of the artifacts between refining reflection and steps implementation**
+- **Format of the artifacts between refining reflection and steps implementation** %% fold %%
 	- You basically offloaded walls of text in there, and created an abstraction that structures all of that nicely. BUT it would be even better if you could have more Order in those artifacts as well.
-- **Template for the whole project**
+- **Template for the whole project** %% fold %%
 	- Not hard really. Templater script similar to phase. pre-creates single `_project.md` + folders, and that's it.
-- ### Additional exploration AFTER listing
-	- In this case LLM listed a solution, but partially. Which means it kinda guessed it. So you probably should change ordering of stages in `initial-planning` (and maybe others too), so it does exploration, then writes to file brainstorming, THEN writes to another file list of ideas, THEN does exploration again on those ideas in multiple explore task and only THEN it lists the answer in a manner that is self-sufficient and doesn't rely on user knowledge about previous files.nd
+- ### Additional exploration AFTER listing %% fold %%
+	- In this case LLM listed a solution, but partially. Which means it kinda guessed it. So you probably should change ordering of stages in `initial-planning` (and maybe others too), so it does exploration, then writes to file brainstorming, THEN writes to another file list of ideas, THEN does exploration again on those ideas in multiple explore task and only THEN it lists the answer in a manner that is self-sufficient and doesn't rely on user knowledge about previous files.
+- ### Flow including format of responses %% fold %%
+	- When LLM responds - it can either respond as it wants OR you can have something meaningful included in that response.
+- ### Steps
+	- **Structure of steps in writing-steps should NOT include drafted list of steps** %% fold %%
+		- Instead it should be used as reference/example, and the structure should be drafted from the scratch.
+	- **Clean up drafted steps after all steps are written**
+	- **Issues with ordering steps (should be ascending)**
+	- **Step condensation** %% fold %%
+		-  wording
+			- step condensation wording was a bit too enforcing for the fresh task, llm resisted a bit.
+		- explicit things to remove
+			- OR just  `Implementation Summary` block and remove everything else. (description too, there's one in the plan)
+	- **Implementation should avoid initial-reflections** %% fold %%
+		- And use it only as the kinda reference/docs when there's something unclear. So maybe initial-reflection would have more input on this.
+	- **Step implementation enforce no autonomy** %% fold %%
+		- To make LLM less likely to write not discussed things on its own without the permission of the user.
+	- **Step completion verbosity** %% fold %%
+		- for output into plan - explicitly say what shouldn't get it. Temporary files. Description of changes. Stuff like that. And also explicitly say it should be concise. Like exactly in the flow. 
+- ### Exploration
+	- **Warn about big files** %% fold %%
+		- to not read if unnecessary or to use explore tool. (if files super big, like hundreds kilobytes), for still big files - just warn and suggest using explore tool if it needs some small parts of that code, but if it needs a lot of parts of that code, or it needs to understand whole file - probably should read it whole.
+	- **Tips needs better framing** %% fold %%
+		- It's used as all tips. Should be exploration tips only. But also we need some nuances too. Like how to run things. Where to do it. Stuff like that and more.
+	- **Created/Deleted/Modified FILES** %% fold %%
+		- add this to template. So they won't list deleted sections of code or something. It's meant to be list of files for more efficient exploration. That's it. Concise. 
+- ### Write prompts instead of suggestions %% fold %%
+	- code review, condensation flow, etc. Let llm write the whole thing so you copypaste only
+	- I would also say the same for step finalization. Like templated prompt to start the next step too.
+	- ALSO, for issues, LLM lists like 15 issues - let it write template to answer on those as number + name and bullet point below for user answers, so it's tied by number and name and less likely to be ignored)
+- **List of benefits (code review and others)** %% fold %%
+	- Different structure. describe the issue first, then describe how it's fixed, THEN run usual flow of benefit, complexity, etc. Because it's a bit unclear to me in current manner when it starts from the benefit.
+- ### Plan
+	- **For each step - add indication that it was code-reviewed** %% fold %%
+		- encourages doing those.
+	- **Verbose exploration** %% fold %%
+		- walls of text in exploration. Need more strict rules to not overuse it. Like allow it to describe, but concisely. for steps though - to let it offload those, add a simple prefix for the link like [S02, S05] - `link`, so that you signify which steps are related to the link. But it should be self-explanatory, so maybe `Related steps: 05, 06` ? It needs to be there though, so LLM won't read unrelated files. 
+	- 

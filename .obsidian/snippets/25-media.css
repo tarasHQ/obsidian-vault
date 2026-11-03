@@ -1,0 +1,109 @@
+/* ===============================================================
+   25-media.css
+   Embedded media: mermaid diagrams, audio players.
+   =============================================================== */
+
+/* fit full width of mermaid diagrams */
+.mermaid svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===============================================================
+   Audio player styles
+   =============================================================== */
+/* Make the whole player more compact */
+.markdown-preview-view audio,
+.markdown-source-view.mod-cm6 audio,
+.cm-embed-block audio {
+    height: 32px !important;
+    max-height: 32px !important;
+    border-radius: 8px !important;
+    margin: 0.2em 0 !important;
+    overflow: hidden;
+}
+
+/* Main control panel background */
+audio::-webkit-media-controls-panel {
+    background-color: var(--background-secondary) !important;
+    border-radius: 8px !important;
+    padding: 0 6px !important;
+    height: 32px !important;
+}
+
+/* Outer enclosure */
+audio::-webkit-media-controls-enclosure {
+    background-color: var(--background-secondary) !important;
+    border-radius: 6px !important;
+    border: 1px solid var(--background-modifier-border) !important;
+}
+
+/* Play / Pause button */
+audio::-webkit-media-controls-play-button {
+    background-color: transparent !important;
+    border-radius: 6px !important;
+    height: 20px !important;
+    width: 20px !important;
+    transition:
+        background-color 0.15s ease,
+        transform 0.15s ease;
+}
+
+audio::-webkit-media-controls-play-button:hover {
+    background-color: var(--interactive-accent) !important;
+    transform: scale(1.15);
+}
+
+/* Mute button */
+audio::-webkit-media-controls-mute-button {
+    border-radius: 50% !important;
+    transition: background-color 0.15s ease;
+}
+audio::-webkit-media-controls-mute-button:hover {
+    background-color: var(--background-modifier-hover) !important;
+}
+
+/* Timeline (progress bar) */
+audio::-webkit-media-controls-timeline {
+    background-color: transparent !important;
+    border-radius: 4px !important;
+    margin: 0 6px !important;
+    height: 4px !important;
+}
+
+/* Current time + remaining time */
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: var(--text-muted) !important;
+    font-size: 11px !important;
+    text-shadow: none !important;
+}
+
+/* Slightly reduce the overall visual weight */
+audio {
+    display: block !important;
+    filter: brightness(0.95) contrast(1.05);
+}
+
+/* 1. Turn the parent editor line into a flex container */
+.cm-line:has(.media-embed.audio-embed) {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+/* 2. Allow text node to take its natural size */
+.cm-line:has(audio) > span:not(.media-embed, .cm-formatting-link) {
+    width: 200px !important;
+    flex-grow: 0 !important;
+    flex-shrink: 1 !important; /* Allows it to shrink if necessary */
+    flex-basis: auto !important; /* Takes its natural size */
+}
+.cm-line:has(audio) .cm-formatting-link {
+    display: none !important;
+}
+/* 3. Make the audio embed take all remaining free space */
+.cm-line:has(audio) .media-embed.audio-embed {
+    width: 400px !important;
+}

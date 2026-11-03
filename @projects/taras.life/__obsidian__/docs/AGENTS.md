@@ -26,7 +26,7 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
         - `[NAME](file:///C:/...)` — an **absolute OS path** for the LLM. Strip the `file:///` prefix and read the remaining path directly with the read tool. These files live in the Obsidian vault, outside the repo, but on the same machine and readable.
         - `[[...]]` — an **Obsidian internal link, for the user only** (clickable when the repo folder is opened/symlinked inside Obsidian). The LLM must never follow or resolve it.
 - ##### [LLM.md](file:///C:/Users/Taras/Documents/obsidian-vault/@system/projects/LLM.md)
-    - to be read only during planning phase or implementation of the steps. [[../../../../@system/projects/LLM|internal link for the user]] — user-only, LLM ignores it.
+    - the hub of LLM-targeted knowledge on meta-planning/executing in projects. LLM should always read this file. (flows/structure/templates/etc.) [[../../../../@system/projects/LLM|internal link for the user]] — user-only, LLM should ignore this link.
 - ##### [DEV_RULES.md](__obsidian__/docs/DEV_RULES.md)
     - to be read only before writing the code, there's no information that is helpful during planning phase.
 - ##### [DEV_COMMANDS.md](__obsidian__/docs/DEV_COMMANDS.md)

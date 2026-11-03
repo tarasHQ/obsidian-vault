@@ -1,0 +1,139 @@
+/* ===============================================================
+   40-navigation.css
+   Navigation panels: file explorer, bookmarks, outline,
+   recent files. Includes tree-item hover/active styling, which
+   applies to every tree-based panel (not just the explorer).
+   =============================================================== */
+
+/* hide nav buttons on top of file explorer/bookmarks, you never use them */
+.workspace-leaf-content:is([data-type="file-explorer"], [data-type="bookmarks"], [data-type="outline"])
+    .nav-header {
+    display: none !important;
+}
+
+/* remove left padding on recent files */
+.workspace-leaf-content:is([data-type="recent-files"]) .nav-folder-children {
+    padding-left: 0 !important;
+}
+
+/* remove side padding on outline to make it more dense */
+.workspace-leaf-content:is([data-type="outline"]) .view-content.node-insert-event {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+/* ===============================================================
+   File explorer
+   Desktop only (body:not(.is-mobile)) — the indentation playground
+   would misrender on mobile's file explorer.
+   =============================================================== */
+
+/* Indentation lines alignment with icons */
+body:not(.is-mobile) .workspace-leaf-content:is([data-type="file-explorer"]) .nav-folder-children,
+body:not(.is-mobile) .workspace-leaf-content:is([data-type="file-explorer"]) .tree-item-children {
+    /* Pull the whole block (and its border) to the left */
+    margin-inline-start: 1px;
+    /* Push the content back so text stays in the original place */
+    padding-inline-start: calc(var(--nav-item-children-padding-start) + 10px);
+}
+
+/* folder item/file item - more compact */
+body:not(.is-mobile) .workspace-leaf-content:is([data-type="file-explorer"]) .nav-folder .tree-item-self,
+body:not(.is-mobile) .workspace-leaf-content:is([data-type="file-explorer"]) .nav-file .tree-item-self {
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+    margin-bottom: 0px !important;
+    padding-left: 10px !important;
+}
+
+/* title of folder - more distance from icon */
+body:not(.is-mobile) .workspace-leaf-content:is([data-type="file-explorer"]) .tree-item-inner.nav-folder-title-content {
+    padding-left: 3px !important;
+}
+
+/* folder arrow closer to text */
+body:not(.is-mobile) .workspace-leaf-content:is([data-type="file-explorer"]) .nav-folder .tree-item-icon {
+    width: unset !important;
+    padding-left: 1px !important;
+}
+
+/* Hide the "canvas" and "base" pills, since they're obvious because of their icon */
+body:not(.is-mobile) .workspace-leaf-content:is([data-type="file-explorer"]) .nav-file-title[data-path$=".canvas"] .nav-file-tag,
+body:not(.is-mobile) .workspace-leaf-content:is([data-type="file-explorer"]) .nav-file-title[data-path$=".base"] .nav-file-tag {
+    display: none;
+}
+
+/* folder arrow better color,
+overrides all default icons,
+but iconic plugin overrides this selector */
+body:not(.is-mobile) .workspace-leaf-content:is([data-type="file-explorer"]) .nav-folder > .nav-folder-title > .tree-item-icon svg {
+    color: rgb(79, 79, 79);
+}
+
+/* Iconic plugin offset for files */
+body:not(.is-mobile) .workspace-leaf-content:is([data-type="file-explorer"]) .nav-folder .tree-item.nav-file.iconic-item {
+    margin-left: 4px !important;
+}
+
+/* Moving left ONLY top-level files */
+body:not(.is-mobile) .workspace-leaf-content:is([data-type="file-explorer"]) .nav-files-container > div > .tree-item.nav-file.iconic-item {
+    margin-left: 4px !important;
+}
+
+/* ===============================================================
+   Tree-item hover / active styling
+   (hover stretch + selection pseudo-element form one unit,
+   these rules depend on each other)
+   =============================================================== */
+
+/* things above break hovering container position, this fixes it */
+@media (hover: hover) {
+    /* Make the item a positioning anchor */
+    body:not(.is-grabbing) .tree-item-self.is-clickable {
+        position: relative;
+    }
+
+    body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
+        color: var(--nav-item-color-hover);
+        font-weight: var(--nav-item-weight-hover);
+        background-color: transparent; /* Keep the element background clean */
+    }
+
+    /* Stretch a background layer behind the content */
+    body:not(.is-grabbing) .tree-item-self.is-clickable:hover::before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        /* Adjust these negative values (-10px) to match your exact sidebar padding */
+        left: -50px;
+        right: -20px;
+        background-color: var(--nav-item-background-hover);
+    }
+}
+
+/* remove border for wrong selection size when element is focused */
+body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
+    box-shadow: unset !important;
+}
+
+/* same issue as hovering but also adds for item being actively selected */
+/* makes initial selection transparent */
+body:not(.is-grabbing) .workspace-leaf .tree-item-self.is-clickable.is-active {
+    position: relative;
+    color: var(--nav-item-color-active, var(--nav-item-color-hover));
+    font-weight: var(--nav-item-weight-active, var(--nav-item-weight-hover));
+    background-color: transparent !important;
+}
+
+/* adds pseudo element for highlight instead of previous logic */
+body:not(.is-grabbing) .workspace-leaf .tree-item-self.is-clickable.is-active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -50px;
+    right: -20px;
+    background-color: var(--nav-item-background-active, var(--nav-item-background-hover));
+    border-radius: var(--nav-item-radius, 4px);
+    z-index: -1;
+}
