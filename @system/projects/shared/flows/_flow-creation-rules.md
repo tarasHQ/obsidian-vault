@@ -22,3 +22,8 @@ Every single flow in `_flows/` must adhere to these rules to be of high quality.
 	- Ties into reliability. If the flow is implicit, not a bit verbose - LLM will forget about it. Or importance of the flow will be reduced. 
 - **Controllable Chaos. NOT Overwhelming Tyranny**
 	- As in life. LLMs are chaotic systems. You can't place/expect strict order following. Instead you must at least not fight with it OR, at the very best, make it into a win. 
+
+## Editing Rules
+- **Survivor Bias** 
+	- Some rules may feel useless, but they work exactly because they're useless. For example, doublechecking phase size in critique flow. You may seem to have no issues with that and it's useless rule. But it works because you're constantly reminded and kept in check about the size of the planned step. 
+		- Removing that rule will make you to drift towards unnecessary big phases once again.

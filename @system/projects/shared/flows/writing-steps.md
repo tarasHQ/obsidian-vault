@@ -23,6 +23,7 @@ From initial refined reflection(**what** I want to do) -> to properly explored, 
   %%optional, if the plan already exists, and flow just repeated in another task to write the steps%%
 	- [ ] **B1** - [LLM]
 		- LLM proposes the structure of steps. 
+		- LLM ignores drafted structure of steps in the plan. It's only a rough reference and shouldn't be considered for proper structuring of the steps.
 		- **Requirements:**
 			- [ ] Description block at the start of the proposed structure
 				- Contains HOWs and WHYs this structure is the optimal for the execution.
@@ -49,6 +50,7 @@ From initial refined reflection(**what** I want to do) -> to properly explored, 
 			 2. Updates the plan
 		 - Nuance for updating the plan without re-reading it on every step.
 			 - Use edit tool. And use name of the previous step as the anchor for replacement. new string will contain whole new step + the name of previous step. In that manner whole new block can be safely inserted.
+		 - Steps should be written in descending order in-between existing step-99 and step-00. (highest step is first/above)
 	 - [ ] **C2** - [LLM + USER]
 		 - Discussion. 
 		 - If LLM sees any issues/open questions with the step - it asks user. If everything is straightforward - LLM just waits for user to approve the created step

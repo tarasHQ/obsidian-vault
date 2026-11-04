@@ -138,7 +138,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793778799404
+      "lastSeenAt": 1793783276727
     },
     "dom:tab-header": {
       "signature": "dom:tab-header",
@@ -302,7 +302,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793745395443
+      "lastSeenAt": 1793790252299
     },
     "event:file-menu-folder": {
       "signature": "event:file-menu-folder",
@@ -506,6 +506,33 @@
       "order": [],
       "promoted": [],
       "lastSeenAt": 1793717333314
+    },
+    "view:canvas": {
+      "signature": "view:canvas",
+      "label": "canvas",
+      "entries": [
+        {
+          "type": "item",
+          "title": "Zoom to selection"
+        },
+        {
+          "type": "item",
+          "title": "Swap file...",
+          "icon": "repeat"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Remove",
+          "icon": "trash-2"
+        }
+      ],
+      "hiddenItems": [],
+      "hiddenSeparators": [],
+      "order": [],
+      "lastSeenAt": 1793783121621
     }
   },
   "copyAbsolutePath": false
