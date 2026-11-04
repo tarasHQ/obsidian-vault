@@ -23,6 +23,8 @@
 		- To make LLM less likely to write not discussed things on its own without the permission of the user.
 	- **Step completion verbosity** %% fold %%
 		- for output into plan - explicitly say what shouldn't get it. Temporary files. Description of changes. Stuff like that. And also explicitly say it should be concise. Like exactly in the flow. 
+	- **Step description verbosity in the plan** %% fold %%
+		- gets bigger and bigger. Concise. 3-5 sentences? 
 - ### Exploration
 	- **Warn about big files** %% fold %%
 		- to not read if unnecessary or to use explore tool. (if files super big, like hundreds kilobytes), for still big files - just warn and suggest using explore tool if it needs some small parts of that code, but if it needs a lot of parts of that code, or it needs to understand whole file - probably should read it whole.
@@ -41,4 +43,6 @@
 		- encourages doing those.
 	- **Verbose exploration** %% fold %%
 		- walls of text in exploration. Need more strict rules to not overuse it. Like allow it to describe, but concisely. for steps though - to let it offload those, add a simple prefix for the link like [S02, S05] - `link`, so that you signify which steps are related to the link. But it should be self-explanatory, so maybe `Related steps: 05, 06` ? It needs to be there though, so LLM won't read unrelated files. 
-	- 
+- ### Every Write Into Docs Considers Its Scope %% fold %%
+	- AGENTS.md - doesn't need to know about some details of styling. The phase's plan doesn't need to know about step-scoped detail that won't be worth to know for future steps
+	- You can enforce this through rules on last stage of flows. Like make LLM generate autoregressive context within the same turn it writes to high-level docs, where it'll list what it will write and confirm that it's not messing up with the scope of the document.
