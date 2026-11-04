@@ -7,7 +7,7 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 - **Config surface**: YAML plugin + layout config, bridged into the build. Lives in: `quartz.config.yaml`, `quartz.ts`.
 - **Rendering**: Preact components, rendered to string at build time (no hydration). Lives in: `quartz/components/`.
 - **Content pipeline**: unified → remark (mdast) → rehype (hast) → JSX. Lives in: `quartz/processors/`.
-- **Styling / bundling**: SCSS compiled with esbuild + Lightning CSS. Lives in: `quartz/styles/`.
+- **Styling / bundling**: plain CSS files, composed at build time, minified with Lightning CSS. Lives in: `quartz/styles/`.
 - **Hosting**: Cloudflare Workers, **assets-only** (no `main`, no bindings). Lives in: `wrangler.jsonc`.
 - **Delivery**: Cloudflare **Workers Builds** on push → `npm run build` → `public/`. Lives in: `wrangler.jsonc`. NO PREVIEWS enabled. 
 - **Comments**: Self-hosted Remark42 (external LXC) via a local Quartz plugin. Lives in: `custom-plugins/remark42/`.
@@ -40,8 +40,8 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 - **Runtime**: Node.js ≥ 22, ESM (`"type": "module"`). Notes: declared in `engines`; Workers Builds must satisfy it.
 - **Language**: TypeScript. Notes: typechecked by `tsc --noEmit`, but **never compiled by tsc** — esbuild emits JS.
 - **Package manager**: npm ≥ 10.9.2, committed `package-lock.json`. Notes: CI installs with `npm ci`; lockfile drift fails the build.
-- **Bundler**: esbuild (+ `esbuild-sass-plugin`). Notes: bundles page JS and the local plugin's browser script.
-- **CSS toolchain**: SCSS → Lightning CSS. Notes: compiled and minified at build time.
+- **Bundler**: esbuild. Notes: bundles page JS and the local plugin's browser script; 
+- **CSS toolchain**: plain CSS source files → esbuild text-loader → Lightning CSS minify. 
 - **Quality gates**: Prettier, `tsx --test`, `tsc --noEmit`. Notes: `npm run check`, `npm test`.
 - **Git hooks**: lefthook. Notes: `pre-push` runs types → format → tests → build fast-fail-first; `pre-commit` README-review ported but disabled (`skip: true` in `lefthook.yml`). Wired by root `prepare` → `lefthook install`; bypass with `LEFTHOOK=0`.
 
@@ -57,7 +57,8 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 - **Code**: `Shiki (rehype-pretty-code)`. Notes: build time only; no math engine — the LaTeX plugin was removed.
 - **Search**: `FlexSearch`. Notes: index built at compile time, queried in-browser.
 - **Images**: `sharp`. Notes: resizing and OG image generation.
-- **Fonts**: fully self-hosted woff2 in `quartz/static/fonts/`. 
+- **Fonts**: fully self-hosted woff2 in `quartz/static/fonts/`.
+
 
 **Delivery**
 - **Build trigger**: Cloudflare **Workers Builds** on push. 
@@ -85,28 +86,6 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 	- **OAuth**: Google and Github only, for now.
 	- **Admin**: identified by the internal Remark42 id of the GitHub account.
 	- **Notifications**: no SMTP, Telegram, or other transports.
-
-### 01.3. Removed plugins
-
-| Plugin             | Why removed                                                                                                                        |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
-| `citations`        | No academic citations authored; citation parsing ran over every note for nothing.                                                  |
-| `ox-hugo`          | Org-mode / Hugo export syntax -never authored here.                                                                                |
-| `roam`             | Roam Research syntax (`{{[[TODO]]}}`, `{{embed}}`) never authored here.                                                            |
-| `explicit-publish` | Nothing is filtered on site — the Obsidian sync layer decides what ships.                                                          |
-| `stacked-pages`    | Sliding-pane link navigation not wanted.                                                                                           |
-| `tag-list`         | No tags in use.                                                                                                                    |
-| `tag-page`         | No tags in use; also drops `/tags/*` generation.                                                                                   |
-| `folder-page`      | No folder landing pages planned; `/subfolder/` now 404s instead of listing.                                                        |
-| `canvas-page`      | JSON Canvas unused — Excalidraw is preferred for drawings.                                                                         |
-| `graph`            | Unused; loaded `d3@7` + `pixi.js@8` from jsDelivr on every page load, before any container check.                                  |
-| `latex`            | No math; 11 MB plugin bundle (+19 MB sourcemap) parsed per build, plus a KaTeX CDN stylesheet and `copy-tex` script on every page. |
-| `encrypted-pages`  | No password-gated notes; added a client-side decrypt hook + CSS site-wide.                                                         |
-| `reader-mode`      | Site content is deliberately concise; toggle + CSS on every page for nothing.                                                      |
-| `cname`            | GitHub Pages artifact; hosting is Cloudflare Workers static assets.                                                                |
-| `comments`         | Giscus superseded by self-hosted Remark42 (entry was already `enabled: false`).                                                    |
-| `remove-draft`     | No drafts authored; filtering is the sync layer's job.                                                                             |
-|                    |                                                                                                                                    |
 
 ---
 

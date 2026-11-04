@@ -44,6 +44,8 @@
 	- ctrl+shift for ukr<->rus language switching you should install ukr as additional keyboard (not additional language)
 	- `multitasking` - disable that top bar-snap-layout-thing 
 	- `system sounds` - use custom sound with 500ms silence for `default beep`, so it's not broken in headphones, and more pleasant to the ear.
+	- #### `regedit`
+		- To disable HDCP `[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000]` - create dword `"RMHdcpKeyglobZero"=dword:00000001`, last 4 digits in path `\0000` is id of the gpu, if you have multiple - I added this on both.
 - ### File Explorer Options
 	- 📄 - screenshot all settings. It's pretty useful to configure.
 

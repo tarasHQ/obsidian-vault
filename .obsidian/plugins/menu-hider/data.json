@@ -138,7 +138,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793730680700
+      "lastSeenAt": 1793778799404
     },
     "dom:tab-header": {
       "signature": "dom:tab-header",
@@ -150,12 +150,27 @@
           "icon": "x"
         },
         {
+          "type": "item",
+          "title": "Close others",
+          "icon": "x"
+        },
+        {
+          "type": "item",
+          "title": "Close all",
+          "icon": "x"
+        },
+        {
           "type": "separator"
         },
         {
           "type": "item",
           "title": "Change icon...",
           "icon": "image-plus"
+        },
+        {
+          "type": "item",
+          "title": "Edit rule...",
+          "icon": "image-play"
         },
         {
           "type": "separator"
@@ -177,7 +192,7 @@
         },
         {
           "type": "item",
-          "title": "Copy view type 'folder-spaces-explorer' to clipboard",
+          "title": "Copy view type 'markdown' to clipboard",
           "icon": "info"
         },
         {
@@ -187,16 +202,6 @@
           "type": "item",
           "title": "Move to new window",
           "icon": "picture-in-picture"
-        },
-        {
-          "type": "item",
-          "title": "Split right",
-          "icon": "separator-vertical"
-        },
-        {
-          "type": "item",
-          "title": "Split down",
-          "icon": "separator-horizontal"
         }
       ],
       "hiddenItems": [
@@ -213,28 +218,12 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793704040165
+      "lastSeenAt": 1793745322066
     },
     "event:editor-menu": {
       "signature": "event:editor-menu",
       "label": "Editor",
       "entries": [
-        {
-          "type": "item",
-          "title": "syntax callouts",
-          "icon": "repeat"
-        },
-        {
-          "type": "separator"
-        },
-        {
-          "type": "item",
-          "title": "Add to dictionary",
-          "icon": "folder-tree"
-        },
-        {
-          "type": "separator"
-        },
         {
           "type": "item",
           "title": "Add link",
@@ -313,7 +302,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793713797338
+      "lastSeenAt": 1793745395443
     },
     "event:file-menu-folder": {
       "signature": "event:file-menu-folder",
@@ -450,7 +439,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793704036999
+      "lastSeenAt": 1793778718767
     },
     "dom:unknown": {
       "signature": "dom:unknown",
@@ -458,7 +447,7 @@
       "entries": [
         {
           "type": "item",
-          "title": "All snippets · 8 of 10 on"
+          "title": "All snippets · 4 of 12 on"
         },
         {
           "type": "separator"
@@ -502,95 +491,21 @@
         {
           "type": "item",
           "title": "100-recording-pc"
+        },
+        {
+          "type": "item",
+          "title": "common"
+        },
+        {
+          "type": "item",
+          "title": "vertical"
         }
       ],
       "hiddenItems": [],
       "hiddenSeparators": [],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793731110713
-    },
-    "view:file-explorer": {
-      "signature": "view:file-explorer",
-      "label": "file-explorer",
-      "entries": [
-        {
-          "type": "item",
-          "title": "Enable/disable link",
-          "icon": "link"
-        },
-        {
-          "type": "item",
-          "title": "Remove parent link (cannot be undone)",
-          "icon": "unlink"
-        },
-        {
-          "type": "separator"
-        },
-        {
-          "type": "item",
-          "title": "Set folder space icon",
-          "icon": "image"
-        },
-        {
-          "type": "item",
-          "title": "Open Folder Spaces settings",
-          "icon": "settings"
-        }
-      ],
-      "hiddenItems": [],
-      "hiddenSeparators": [],
-      "order": [],
-      "promoted": [],
-      "lastSeenAt": 1793698451760
-    },
-    "view:markdown": {
-      "signature": "view:markdown",
-      "label": "markdown",
-      "entries": [
-        {
-          "type": "item",
-          "title": "Property type",
-          "icon": "info",
-          "children": []
-        },
-        {
-          "type": "item",
-          "title": "Change icon...",
-          "icon": "image-plus"
-        },
-        {
-          "type": "separator"
-        },
-        {
-          "type": "item",
-          "title": "Cut",
-          "icon": "scissors"
-        },
-        {
-          "type": "item",
-          "title": "Copy",
-          "icon": "copy"
-        },
-        {
-          "type": "item",
-          "title": "Paste",
-          "icon": "clipboard-check"
-        },
-        {
-          "type": "separator"
-        },
-        {
-          "type": "item",
-          "title": "Remove",
-          "icon": "trash-2"
-        }
-      ],
-      "hiddenItems": [],
-      "hiddenSeparators": [],
-      "order": [],
-      "promoted": [],
-      "lastSeenAt": 1793719490672
+      "lastSeenAt": 1793717333314
     }
   },
   "copyAbsolutePath": false

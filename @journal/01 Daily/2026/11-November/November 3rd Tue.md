@@ -8,45 +8,15 @@ journal-date: 2026-11-03
 ```
 
 ---
-
-```meta-bind-button
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-	- [ ] Check audio delay to webcam
-	- [ ] Check TickTick schedule (correct day, scheduled)
-	- [ ] Set time of next sleep for stager timer.
-	- Obsidian
-		- [ ] Write overview of the current day
-		- [ ] Create journal for the next day
-		- [ ] Move uncompleted tasks
-		- [ ] Make sure all day's reflections are linked under reflections
-		- [ ] Delete Dream Analysis block if empty
-		- [ ] Delete other blocks if empty (task/reflections)
-	- [ ] Night scene
-	- [ ] Check IP cam (quality, delay)
-		- [ ] Enable sleep blur
-	- [ ] monitor OFF (seems like keeping on makes him die faster)
-	- Cat
-		- [ ] Clean up cat's litter box
-		- [ ] Food + plate is in my room at the shelf 
-			%%(to feed right away and not be distracted by her)%%
-	- [ ] Make sure there's tomorrow's food out of the freezer.
-	- [ ] ==🔴Right before going to bed - switch to 48kHz audio and restart OBS==
-		- [ ] And run it as admin.
-
----
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-Remove. Goal of the overview is condense a day into a key points. Don't start with reflections/ideas/etc. Just condense.
+Productive morning psychoanalysis from the overwhelming sadness after waking up. Then some work with a bit of friction. Another productive mini-psychoanalysis session after the meal. Seems like I have a media to kinda wake up Father/Mother/Warrior archetypes and communicate with them. More work after. A nap. Meal. More work. Finished phase 002. 
+
+New flows are good. Will be even better on the second iteration. But I still need a lot more speed. I'm not sure how I can achieve this. Progress should be there, and it should be massive, if I want to succeed in the main project.
+
+Weirdly enough - I'm not genuinely happy with days like this. It feels like good-enough baseline. But compared to last weeks - this is a massive win. 
 
 ---
 
@@ -61,26 +31,6 @@ Remove. Goal of the overview is condense a day into a key points. Don't start wi
 
 ## TASKS
 %%Cognitive offload for the day, to not keep these in my mind for the whole time%%
-- ### TODO
-	- [ ] when you go sleep - create and leave big plan and your position in it. That's how you meaningfully will trach higher scope. But be careful so your "cost" scope won't overfocus on this.
-		- Probably in excalidraw?
-	- [ ] Fix outliner plugin issues
-		- [ ] Css. Outline collapse indicators. Hide? Increase size of dots on hover. 
-		- [ ] Remove movable points. 
-	- [ ] Psychoanalysis would probably need separate folder. Not reflections though. Separate. Dream analysis included probably. To keep journals lean but with like easy links to go to these kind of things. 
-		- Why? Feels bloated. And chances are, with proper practice, you would want to expand on dream analysis some days after initial attempt. Same with psychoanalysis "sessions". So they must be like separate things to research/review. 
-			- Backlink to journal would be nice though, so you can see how session is integrated into the day (time log)
-	- [ ] Same hotkeys between two PC. 
-		- Probably try to go native as much as you can, and then have some small ahk helper script for the rest
-	- [ ] Your budget is limited but sync is important. Maybe selfhost livesync? 
-	- [ ] Mouse has 12 buttons. But actually customizable are like 3. Because 2 buttons for tv on/off to preserve organic diodes. And 3 for music control. 2 for back and forward. 1 for win menu. Not much left. 
-		- And if I had a modifier. Either through shift(but check conflicts with ahk) or through mouse buttons. Like rmb (if it's possible), then on rmb you can place rarely used functions. And have more buttons for actively used ones
-	- [ ] **META** Figure out where to accumulate such secondary tasks and where you can prioritize them, because flat list is stupid and limiting. 
-	- [ ] Ideally to go away from the minimal theme. It does add a lot of things that I don't use, and basically a deadweight. Like it's better to have 30 styles in CSS than like 2 plugins with 100 settings + a theme . 
-	- [ ] flow to compress png into webp from screenshot, so it won't harm neither website nor size of the vault. But also figure out if deskflow can do it, because right now it's half-supported. (or don't do it through deskflow)
-		- priority because it adds another dimension to thinking + cognitive offload. 
-	- [ ] Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
-	- [ ] 🔴[[plans/better-schedule-plan|better-schedule-plan]]
 - ### Completed
 	- [x] Obsidian Headings  %% fold %%
 		- They contain a lot of structural potential. The issue is that you need to work on it. 
@@ -100,12 +50,6 @@ Remove. Goal of the overview is condense a day into a key points. Don't start wi
 
 ---
 
-## REFLECTIONS
-%%Thinking through writing is much better - there must be low-friction place to do so%%
-- 
-
----
-
 ## TIME LOG
 ```meta-bind-button {fold}
 label: New Log Entry
@@ -116,6 +60,14 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 00:06
+	- I liked this though. It was complex, but I was in control. I know how shit works. And I made lots of decisions that were worth it. It was slow, but that seems like can be improved by a lot. I was slow today as well with lots of friction. But I did this anyway. 
+	- Refactor + cleanup done. Next steps seems to address actually things that make me feel progress much more, because it's visual and real. So hopefully I'll find more meaning there.
+	- Though, tomorrow I should probably start with addressing second iteration of the projects' system. 
+- ###### 23:49
+	- ~30 min of work left... Won't be able to stop at schedule. I just don't want to leave this for tomorrow.
+- ###### 22:34
+	- Definitely tasks like these won't make me enthusiastic. (refactoring/cleanups/streamlining). But at least tested flows. I like it honestly.
 - ###### 21:54
 	- 9 hours of work only. And I'm so done... Don't know how to measure current progress. Can be slow, can be fast... who knows. 
 	- But I start to see the speed. Like how long I need to launch this websites? It's been weeks. Time flies insanely fast... 
@@ -183,7 +135,7 @@ action:
 		- I'm not sure what are consequences of this, but it's seemingly better than waste half of the day in this sadness?
 	- ==🟡Why I was sad?==
 		- LLM said that it may be about grief. I gave it a thought for a minute, and it instantly resonated. Previous day was good. I did everything I wanted to do. Workflows ready. Docs ready. All meta-planning level is refined and good to go. But I had no one to share this with. 
-		- It's just me. That felt/feels so damn painful, that I just broke down. Like sometimes I don't care about this stuff at all. But maybe that's manly man attitude. Like I may not care on the surface, but being alone is hard, like completely alone. Being alone in my current situation against all the pressure and challenges - triple as hard. And when I win finally arrives - it's also punishing. Because you go to eat alone. You lay in the bed alone. You wake up alone. You live alone. 
+		- It's just me. That felt/feels so damn painful, that I just broke down. Like sometimes I don't care about this stuff at all. But maybe that's manly man attitude. Like I may not care on the surface, but being alone is hard, like completely alone. Being alone in my current situation against all the pressure and challenges - triple as hard. And when a win finally arrives - it's also punishing. Because you go to eat alone. You lay in the bed alone. You wake up alone. You live alone. 
 		- So no shit it comes up from time to time to remind you about it. **And I think it has a compensation** embedded in it, because when I win, I may start thinking (or forget) about that loneliness, that I do not need close relationship in my life. And then such compensation comes - and shows what's what. 
 			- **BUT, it's not only about external relationship** - I start to think that it's primarily about internal relationship with parts of me. Because ==🔴the unconscious knows that I will be alone for very long time==. And I tried many times to rectify relationships with my father, but for the time being I won't be able to go beyond "distant sponsor" depthness of connection. 
 				- LLM pointed about fatalism. Unconscious compensates present attitude - it doesn't know the future. I should be careful with wording.
