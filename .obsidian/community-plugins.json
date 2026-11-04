@@ -12,7 +12,6 @@
   "js-engine",
   "mermaid-zoom",
   "obsidian-meta-bind-plugin",
-  "obsidian-minimal-settings",
   "open-tab-settings",
   "obsidian-outliner",
   "preserve-blank-lines",
@@ -20,12 +19,13 @@
   "recent-files-obsidian",
   "refresh-preview",
   "snipdock",
-  "obsidian-style-settings",
   "syncable-dictionary",
   "templater-obsidian",
   "foldstate-dev",
   "menu-hider",
   "code-block-fold",
   "folder-spaces",
-  "set-to-root"
+  "set-to-root",
+  "obsidian-minimal-settings",
+  "obsidian-style-settings"
 ]

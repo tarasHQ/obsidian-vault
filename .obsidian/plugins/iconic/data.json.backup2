@@ -1,0 +1,100 @@
+{
+  "biggerIcons": "mobile",
+  "clickableIcons": "desktop",
+  "showAllFileIcons": true,
+  "showAllFolderIcons": false,
+  "minimalFolderIcons": true,
+  "showMarkdownTabIcons": true,
+  "showTitleIcons": true,
+  "showTagPillIcons": false,
+  "showMenuActions": true,
+  "showSuggestionIcons": false,
+  "showQuickSwitcherIcons": true,
+  "showMoveFileIcons": true,
+  "showItemName": "desktop",
+  "useSearchKeywords": "on",
+  "maxSearchResults": 100,
+  "colorPicker1": "list",
+  "colorPicker2": "rgb",
+  "uncolorHover": false,
+  "uncolorDrag": false,
+  "uncolorSelect": false,
+  "uncolorQuick": false,
+  "maxBackups": 2,
+  "dialogState": {
+    "iconMode": true,
+    "emojiMode": true,
+    "rulePage": "file"
+  },
+  "appIcons": {},
+  "tabIcons": {},
+  "fileIcons": {},
+  "bookmarkIcons": {},
+  "tagIcons": {},
+  "propertyIcons": {},
+  "ribbonIcons": {},
+  "fileRules": [
+    {
+      "id": "Cpf7e",
+      "name": "_reflections/.md",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "path",
+          "operator": "contains",
+          "value": "_reflections"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-brain",
+      "color": "cyan"
+    },
+    {
+      "id": "HwUDK",
+      "name": ".md",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "extension",
+          "operator": "is",
+          "value": "md"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-file-text",
+      "color": "#506d86"
+    },
+    {
+      "id": "02eGg",
+      "name": "Base",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "extension",
+          "operator": "is",
+          "value": "base"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-database",
+      "color": "cyan"
+    }
+  ],
+  "folderRules": [
+    {
+      "id": "kbM9c",
+      "name": "__obsidian__",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "name",
+          "operator": "is",
+          "value": "__obsidian__"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-binary",
+      "color": "red"
+    }
+  ]
+}

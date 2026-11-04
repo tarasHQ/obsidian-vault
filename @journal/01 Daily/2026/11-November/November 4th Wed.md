@@ -59,6 +59,7 @@ Remove. Goal of the overview is condense a day into a key points. Don't start wi
 
 ## TASKS
 %%Cognitive offload for the day, to not keep these in my mind for the whole time%%
+- ## Test
 - ### TODO
 	- [ ]  when you go sleep - create and leave big plan and your position in it. That's how you meaningfully will track higher scope. But be careful so your "cost" scope won't overfocus on this.
 		- Probably in excalidraw?

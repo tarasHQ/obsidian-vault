@@ -447,65 +447,49 @@
       "entries": [
         {
           "type": "item",
-          "title": "All snippets · 4 of 12 on"
+          "title": "Settings",
+          "icon": "settings"
+        },
+        {
+          "type": "item",
+          "title": "Hotkeys",
+          "icon": "keyboard"
         },
         {
           "type": "separator"
         },
         {
           "type": "item",
-          "title": "00-vars"
+          "title": "View details",
+          "icon": "info"
         },
         {
           "type": "item",
-          "title": "10-typography"
+          "title": "Open community page",
+          "icon": "globe"
+        },
+        {
+          "type": "separator"
         },
         {
           "type": "item",
-          "title": "20-editor"
+          "title": "Show in system explorer",
+          "icon": "folder-open"
+        },
+        {
+          "type": "separator"
         },
         {
           "type": "item",
-          "title": "25-media"
-        },
-        {
-          "type": "item",
-          "title": "30-workspace"
-        },
-        {
-          "type": "item",
-          "title": "40-navigation"
-        },
-        {
-          "type": "item",
-          "title": "50-canvas"
-        },
-        {
-          "type": "item",
-          "title": "60-plugins"
-        },
-        {
-          "type": "item",
-          "title": "99-archive"
-        },
-        {
-          "type": "item",
-          "title": "100-recording-pc"
-        },
-        {
-          "type": "item",
-          "title": "common"
-        },
-        {
-          "type": "item",
-          "title": "vertical"
+          "title": "Uninstall",
+          "icon": "trash-2"
         }
       ],
       "hiddenItems": [],
       "hiddenSeparators": [],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793717333314
+      "lastSeenAt": 1793799303223
     },
     "view:canvas": {
       "signature": "view:canvas",

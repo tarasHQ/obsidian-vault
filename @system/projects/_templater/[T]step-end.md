@@ -58,15 +58,11 @@ state: condensed
 <% CFG.backlinkToPlanPrefix %><% phaseNumber %><% CFG.backlinkToPlanSuffix %>
 
 ## Description
-
-The flow to start the planning in the best state of mind. 
-**Importance shouldn't be understated** 
-- It looks very simple and obvious right NOW, but when your perspective is shifted - you don't see it that way.
-- Without proper following of these rules - you'll end up stranded in the desert. 
-- And overwhelmed on top of it - this is how you start the race you're meant to lose. 
+Routinized finalization of the phase to have low cognitive load on mundane flows.
 
 ## Checklists
 ### Completion
+- [ ] **Checking if phase is in `phases/_archived`, if not - ask user to move it**
 - [ ] **Reflecting completion of the phase in the `_project.md`**
       %%Status. Enveloping whole name in `~~` strikethrough tags %%
 - [ ] **Make sure AGENTS.md (and other docs/) do not contradict new changes** %%if does - concise fixes should be done%%

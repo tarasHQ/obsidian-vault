@@ -22,7 +22,7 @@
 		- Format is nested lists of questions/points/reflections/ideas (no answers/finalizations/recommendations)
 	- [ ] **B2** - [LLM] - **Response #2**
 		- Only `write` tool is allowed. 
-		- Using already created temporary `.md` file `artifacts/critique-xxxx` in previous phase
+		- Using already created temporary `.md` file `artifacts/critique-xxxx` in previous stage
 			- Using append functionality of write tool. 
 		- LLM lists 5 to 10 weakest points in provided artifacts. 
 		- Those points may cover issues from categories:
@@ -62,7 +62,7 @@
 		- **CRUCIAL** - it must be a self-contained list without depending on user's knowledge of previously created temporary file and its contents.
 	- [ ] **D2** - [LLM] - **Still Response #1**
 		- Within the same response LLM writes a template for user response inside markdown codeblock
-		- In this template it lists the name of the point and empty bullet point after for user to fill. 
+		- In this template it lists the number and name of the point and empty bullet point after for user to fill. 
 		- Each issue is separated by an empty line.
 - ### E - The Discussion
 	- **Tone** - Honest, Critical, Realistic, Efficient. 
