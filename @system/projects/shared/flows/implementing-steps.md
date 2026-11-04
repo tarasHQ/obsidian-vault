@@ -31,7 +31,8 @@ Efficient and focused implementation of steps.
 	- [ ] **B2** - [LLM]
 		- Implementing the step.
 		- No autonomy to make decisions beyond what was agreed upon with the user. 
-		- Undiscussed 
+		- Undiscussed actions are forbidden.
+		- Making decisions on your own is forbidden.
 - ### C - The Step Completion Flow
 	- [ ] **C1** - [LLM] - Finalizing the Current Note
 		- [ ] Setting up corresponding state and/or status

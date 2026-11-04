@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "November 4th Wed",
-      "path": "@journal/01 Daily/2026/11-November/November 4th Wed.md"
+      "basename": "step-template",
+      "path": "@system/projects/shared/templates/step-template.md"
     },
     {
-      "basename": "initial-planning",
-      "path": "@system/projects/shared/flows/initial-planning.md"
+      "basename": "implementing-steps",
+      "path": "@system/projects/shared/flows/implementing-steps.md"
     },
     {
       "basename": "scorched-earth-critique",
@@ -17,32 +17,40 @@
       "path": "@system/projects/shared/flows/refining-reflection.md"
     },
     {
+      "basename": "initial-planning",
+      "path": "@system/projects/shared/flows/initial-planning.md"
+    },
+    {
       "basename": "code-review",
       "path": "@system/projects/shared/flows/code-review.md"
     },
     {
-      "basename": "implementing-steps",
-      "path": "@system/projects/shared/flows/implementing-steps.md"
-    },
-    {
-      "basename": "writing-steps",
-      "path": "@system/projects/shared/flows/writing-steps.md"
-    },
-    {
-      "basename": "LLM",
-      "path": "@system/projects/LLM.md"
+      "basename": "[T]step-end",
+      "path": "@system/projects/_templater/[T]step-end.md"
     },
     {
       "basename": "[T]plan",
       "path": "@system/projects/_templater/[T]plan.md"
     },
     {
-      "basename": "step-template",
-      "path": "@system/projects/shared/templates/step-template.md"
+      "basename": "November 4th Wed",
+      "path": "@journal/01 Daily/2026/11-November/November 4th Wed.md"
+    },
+    {
+      "basename": "writing-steps",
+      "path": "@system/projects/shared/flows/writing-steps.md"
+    },
+    {
+      "basename": "readme-template",
+      "path": "@system/projects/shared/templates/readme-template.md"
     },
     {
       "basename": "iteration-02",
       "path": "@system/projects/iterations/iteration-02.md"
+    },
+    {
+      "basename": "LLM",
+      "path": "@system/projects/LLM.md"
     },
     {
       "basename": "iteration-01",
@@ -117,10 +125,6 @@
       "path": "Psychoanalysis/_reflections/I just don't know.md"
     },
     {
-      "basename": "[T]step-end",
-      "path": "@system/projects/_templater/[T]step-end.md"
-    },
-    {
       "basename": "06-docs-final-verification",
       "path": "@projects/taras.life/__obsidian__/phases/002/steps/06-docs-final-verification.md"
     },
@@ -163,10 +167,6 @@
     {
       "basename": "Plugins",
       "path": "@projects/taras.life/__obsidian__/ideas/Plugins.md"
-    },
-    {
-      "basename": "readme-template",
-      "path": "@system/projects/shared/templates/readme-template.md"
     },
     {
       "basename": "_project",

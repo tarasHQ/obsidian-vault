@@ -22,7 +22,7 @@ A task that is purely focused on quality of code of the implemented step.
 			1. proper explanation of implementation first
 			2. Preemptive explanation in simpler terms, in case user won't understand something because of lack of knowledge/experience on the matter. 
 		- The goal of this answer is to ensure the user has good knowledge of what was done. 
-	- [ ] **B3** - [LLM]  - THE EXAM
+	- [ ] **B2** - [LLM]  - THE EXAM
 		- LLM must ensure that user has proper knowledge of what was done on low and high levels. For that, after the explanation - LLM must do an exam for the user and proceed only if user scores 90% correct responses. 
 		- Format of the exam
 			- Goal isn't to catch the user on syntax technicalities, but to make sure he truly understand how things works in code and abstractly. 
@@ -37,7 +37,7 @@ A task that is purely focused on quality of code of the implemented step.
 		- Format is nested lists of questions/points/reflections/ideas (no answers/finalizations/recommendations)
 	- [ ] **C2** - [LLM] - **Response #2**
 		- Only `write` tool is allowed. 
-		- Using already created temporary `.md` file `artifacts/code-review-xxxx` in previous phase
+		- Using already created temporary `.md` file `artifacts/code-review-xxxx` in previous stage
 			- Using append functionality of write tool. 
 		- LLM lists 5 to 15 of the most **(reasonable, low-level, radical, architectural)** implementation possibilities for the implemented step.
 		- Those points may cover categories:
@@ -71,15 +71,15 @@ A task that is purely focused on quality of code of the implemented step.
 			- Max amount of parallel tool calls is **5**
 			- Each exploration subtask should have evenly divided work. For example, if you have 3 small issues and 1 big one, you may give a big one its own exploration, and for small issues explore all 3 of them in a single subtask. 
 			- Follow-ups are allowed. 
-- ### D - Listing Findings
-	- [ ] **D1** - [LLM] - **Response #1**
+- ### E - Listing Findings
+	- [ ] **E1** - [LLM] - **Response #1**
 		- No writing/editing of files is allowed. 
 		- LLM responds to the user with confirmed/validated/refined points of code review.
 		- In the same **FORMAT** that initial drafted list was written. From **FORMAT of every point**.
 		- **CRUCIAL** - it must be a self-contained list without depending on user's knowledge of previously created temporary file and its contents.
-	- [ ] **D2** - [LLM] - **Still Response #1**
+	- [ ] **E2** - [LLM] - **Still Response #1**
 		- Within the same response LLM writes a template for user response inside markdown codeblock
-		- In this template it lists the name of the point and empty bullet point after for user to fill. 
+		- In this template it lists the number and name of the point and empty bullet point after for user to fill. 
 		- Each issue is separated by an empty line.
 - ### F - Action
 	- [ ] **F1** - [LLM + USER]

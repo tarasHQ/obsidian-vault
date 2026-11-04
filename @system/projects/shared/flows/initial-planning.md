@@ -22,7 +22,7 @@ From initial refined reflection(**what** I want to do) -> to properly explored, 
 		- Format is nested lists of questions/points/reflections/ideas (no answers/finalizations/recommendations)
 	- [ ] **B2** - [LLM] - **Response #2**
 		- Only `write` tool is allowed. 
-		- Using already created temporary `.md` file `artifacts/refining-possibilities-xxxx` in previous phase
+		- Using already created temporary `.md` file `artifacts/implementation-possibilities-xxxx` in previous stage
 			- Using append functionality of write tool. 
 		- LLM lists 5 to 10 of the most **(reasonable, high-level, radical, architectural)** implementation possibilities for of provided user's artifacts.
 		- Those points may cover categories:
@@ -60,7 +60,7 @@ From initial refined reflection(**what** I want to do) -> to properly explored, 
 		- **CRUCIAL** - it must be a self-contained list without depending on user's knowledge of previously created temporary file and its contents.
 	- [ ] **D2** - [LLM] - **Still Response #1**
 		- Within the same response LLM writes a template for user response inside markdown codeblock
-		- In this template it lists the name of the point and empty bullet point after for user to fill. 
+		- In this template it lists the number and name of the point and empty bullet point after for user to fill. 
 		- Each issue is separated by an empty line.
 - ### E - The Discussion
 	- [ ] **E1** - [LLM + USER]

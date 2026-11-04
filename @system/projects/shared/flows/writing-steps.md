@@ -42,7 +42,7 @@ From initial refined reflection(**what** I want to do) -> to properly explored, 
 		- If user accepts it - LLM starts writing step, one-by-one.
  - ### [LOOP] C - Writing the Steps
 	 - [ ] **C1** - [LLM]
-		 - Reads template for steps `C:\Users\Taras\Documents\obsidian-vault\@system\projects\shared\step-template.md`
+		 - Reads template for steps `C:\Users\Taras\Documents\obsidian-vault\@system\projects\shared\templates\step-template.md`
 		 - Starts writing steps incrementally. 
 			 - If this flow was run on the job that was done partially (like steps 0-5 is done, and 6-10 need to be written) - LLM just continues from the last step. 
 		 - The writing happens in single response where LLM uses 2 tools to:
