@@ -1,24 +1,96 @@
 {
   "recentFiles": [
     {
-      "basename": "README",
-      "path": "_static/scripts/README.md"
+      "basename": "November 4th Wed",
+      "path": "@journal/01 Daily/2026/11-November/November 4th Wed.md"
+    },
+    {
+      "basename": "initial-planning",
+      "path": "@system/projects/shared/flows/initial-planning.md"
+    },
+    {
+      "basename": "scorched-earth-critique",
+      "path": "@system/projects/shared/flows/scorched-earth-critique.md"
+    },
+    {
+      "basename": "refining-reflection",
+      "path": "@system/projects/shared/flows/refining-reflection.md"
+    },
+    {
+      "basename": "code-review",
+      "path": "@system/projects/shared/flows/code-review.md"
+    },
+    {
+      "basename": "implementing-steps",
+      "path": "@system/projects/shared/flows/implementing-steps.md"
+    },
+    {
+      "basename": "writing-steps",
+      "path": "@system/projects/shared/flows/writing-steps.md"
     },
     {
       "basename": "LLM",
       "path": "@system/projects/LLM.md"
     },
     {
-      "basename": "November 4th Wed",
-      "path": "@journal/01 Daily/2026/11-November/November 4th Wed.md"
+      "basename": "[T]plan",
+      "path": "@system/projects/_templater/[T]plan.md"
     },
     {
-      "basename": "[T]daily-journaling",
-      "path": "_static/templater/[T]daily-journaling.md"
+      "basename": "step-template",
+      "path": "@system/projects/shared/templates/step-template.md"
+    },
+    {
+      "basename": "iteration-02",
+      "path": "@system/projects/iterations/iteration-02.md"
+    },
+    {
+      "basename": "iteration-01",
+      "path": "@system/projects/iterations/iteration-01.md"
+    },
+    {
+      "basename": "windows-reinstall-notes",
+      "path": "Maintenance/windows-reinstall-notes.md"
+    },
+    {
+      "basename": "_flow-creation-rules",
+      "path": "@system/projects/shared/flows/_flow-creation-rules.md"
+    },
+    {
+      "basename": "_system",
+      "path": "@system/_system.canvas"
     },
     {
       "basename": "_project",
       "path": "@projects/taras.life/__obsidian__/_project.md"
+    },
+    {
+      "basename": "attack-surface-7k2f",
+      "path": "@projects/taras.life/__obsidian__/phases/_archived/002/artifacts/attack-surface-7k2f.md"
+    },
+    {
+      "basename": "dead-css-checklist",
+      "path": "@projects/taras.life/__obsidian__/phases/_archived/002/artifacts/dead-css-checklist.md"
+    },
+    {
+      "basename": "implementation-possibilities-a4c7",
+      "path": "@projects/taras.life/__obsidian__/phases/_archived/002/artifacts/implementation-possibilities-a4c7.md"
+    },
+    {
+      "basename": "possibilities-k4m8",
+      "path": "@projects/taras.life/__obsidian__/phases/_archived/002/artifacts/possibilities-k4m8.md"
+    },
+    {
+      "basename": "semantic-review",
+      "path": "@projects/taras.life/__obsidian__/phases/_archived/002/artifacts/semantic-review.md"
+    },
+    {
+      "basename": "README",
+      "path": "_static/scripts/README.md"
+    },
+    {
+      "basename": "[T]daily-journaling",
+      "path": "_static/templater/[T]daily-journaling.md"
     },
     {
       "basename": "November 3rd Tue",
@@ -29,20 +101,12 @@
       "path": "@journal/01 Daily/2026/11-November/November 2nd Mon.md"
     },
     {
-      "basename": "iteration-02",
-      "path": "@system/projects/iterations/iteration-02.md"
-    },
-    {
       "basename": "on-discouragement-again",
       "path": "Psychoanalysis/_reflections/on-discouragement-again.md"
     },
     {
       "basename": "About",
       "path": "About.md"
-    },
-    {
-      "basename": "windows-reinstall-notes",
-      "path": "Maintenance/windows-reinstall-notes.md"
     },
     {
       "basename": "On Discouragement",
@@ -73,28 +137,8 @@
       "path": "@projects/taras.life/__obsidian__/phases/002/steps/01-groundwork.md"
     },
     {
-      "basename": "step-template",
-      "path": "@system/projects/shared/templates/step-template.md"
-    },
-    {
-      "basename": "implementing-steps",
-      "path": "@system/projects/shared/flows/implementing-steps.md"
-    },
-    {
       "basename": "[T]step-start",
       "path": "@system/projects/_templater/[T]step-start.md"
-    },
-    {
-      "basename": "initial-planning",
-      "path": "@system/projects/shared/flows/initial-planning.md"
-    },
-    {
-      "basename": "writing-steps",
-      "path": "@system/projects/shared/flows/writing-steps.md"
-    },
-    {
-      "basename": "[T]plan",
-      "path": "@system/projects/_templater/[T]plan.md"
     },
     {
       "basename": "on-the-plan",
@@ -113,28 +157,12 @@
       "path": "@system/projects/_reflections/readme.md"
     },
     {
-      "basename": "refining-reflection",
-      "path": "@system/projects/shared/flows/refining-reflection.md"
-    },
-    {
       "basename": "[T]phase",
       "path": "@system/projects/_templater/[T]phase.md"
     },
     {
-      "basename": "_flow-creation-rules",
-      "path": "@system/projects/shared/flows/_flow-creation-rules.md"
-    },
-    {
-      "basename": "code-review",
-      "path": "@system/projects/shared/flows/code-review.md"
-    },
-    {
       "basename": "Plugins",
       "path": "@projects/taras.life/__obsidian__/ideas/Plugins.md"
-    },
-    {
-      "basename": "iteration-01",
-      "path": "@system/projects/iterations/iteration-01.md"
     },
     {
       "basename": "readme-template",

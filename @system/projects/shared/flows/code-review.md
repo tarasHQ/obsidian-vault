@@ -2,7 +2,7 @@
 A task that is purely focused on quality of code of the implemented step. 
 
 **Why it's needed?**
-- Implementation flow usually have some additional explorations, discussion, rewrites/updates/etc, by the time it's done - context is too bloated for the proper code review. 
+- Implementation flow usually have some additional explorations, discussion, rewrites/updates/etc., by the time it's done - context is too bloated for the proper code review. 
 - This flow allows to maintain high quality of the written code by fully specializing on a single task. 
 
 ## Rules
@@ -31,8 +31,14 @@ A task that is purely focused on quality of code of the implemented step.
 			- Amount of questions should be sufficient to cover the step.
 - ### C - The Code Review
 	-  **Tone** - Honest, Critical, Realistic, Efficient. 
-	- [ ] **C1** - [LLM]
-		- No writing/editing.
+	- **C1** - [LLM] - **Response #1**
+		- Using `write` tool. 
+		- Writes a temporary self-reflective exploration of all review possibilities in a temporary `.md`  file inside `artifacts/code-review-xxxx`, where last 4 digits are random [a-z0-9] to avoid duplication. 
+		- Format is nested lists of questions/points/reflections/ideas (no answers/finalizations/recommendations)
+	- [ ] **C2** - [LLM] - **Response #2**
+		- Only `write` tool is allowed. 
+		- Using already created temporary `.md` file `artifacts/code-review-xxxx` in previous phase
+			- Using append functionality of write tool. 
 		- LLM lists 5 to 15 of the most **(reasonable, low-level, radical, architectural)** implementation possibilities for the implemented step.
 		- Those points may cover categories:
 			- More streamlined code
@@ -48,17 +54,38 @@ A task that is purely focused on quality of code of the implemented step.
 			- Other, not listed high-impact categories.
 		- **FORMAT of every point**
 			- **Name** - `[CATEGORY] Name-of-the-point`
+			- **Description** - 1-3 sentences description of the point. 
+			- **How To Do This** - 1-3 sentences describing how to do the point. 
 			- **Benefit** - a paragraph on how this point is beneficial
 			- **Complexity** - a paragraph or less about how complex is this point
 			- **Closed Advantageous Doors** - bulleted list of others paths that will get closed/hard to mover/transfer to if this point will be accepted. 
-			- **Description In Simpler Terms** - a paragraph of ELI5 description about this point. Goal is to preemptively explain it in simpler terms too, so if user didn't understand the point - he won't have have to start separate discussion, he'll just read the last block where everything is described in a format that is more understandable 
+			- **Description In Simpler Terms** - a paragraph of description in simpler terms (non-advanced) about this point. Goal is to preemptively explain it in a bit more easier wording, so user won't get stuck on unknown technicalities. 
 		- **THE LAST POINT**
 			- At the end of the list llm adds the last point under which it lists minor issues. Like wrong/outdated comments, importing/exporting issues, typos, ordering of the code in files, and other minor issues that should be fixed, but that aren't big enough to be covered under points above.
-- ### D - Action
-	- [ ] **D1** - [LLM + USER]
+- ### D - Further Exploration
+	- [ ] **D1** - [LLM] 
+		- LLM starts second pass of thorough exploration focused on points it listed, to make sure descriptions/solutions/benefits/etc. is accurate. 
+		- LLM does it by running multiple `explore` tools in parallel to research/validate/confirm/refine listed points that need additional research
+		- **Rules of Execution of the Stage**:
+			- Each explore tool call is a new subtask (without referencing older ones)
+			- Max amount of parallel tool calls is **5**
+			- Each exploration subtask should have evenly divided work. For example, if you have 3 small issues and 1 big one, you may give a big one its own exploration, and for small issues explore all 3 of them in a single subtask. 
+			- Follow-ups are allowed. 
+- ### D - Listing Findings
+	- [ ] **D1** - [LLM] - **Response #1**
+		- No writing/editing of files is allowed. 
+		- LLM responds to the user with confirmed/validated/refined points of code review.
+		- In the same **FORMAT** that initial drafted list was written. From **FORMAT of every point**.
+		- **CRUCIAL** - it must be a self-contained list without depending on user's knowledge of previously created temporary file and its contents.
+	- [ ] **D2** - [LLM] - **Still Response #1**
+		- Within the same response LLM writes a template for user response inside markdown codeblock
+		- In this template it lists the name of the point and empty bullet point after for user to fill. 
+		- Each issue is separated by an empty line.
+- ### F - Action
+	- [ ] **F1** - [LLM + USER]
 		- Discussing the review
-	- [ ] **D2** - [LLM]
+	- [ ] **F2** - [LLM]
 		- Implementing locked-in points from review and fixing the code
-	- [ ] **D3** - [LLM]
+	- [ ] **F3** - [LLM]
 		- Making sure that the plan and steps are aligned with results of the current flow
 - ### The End

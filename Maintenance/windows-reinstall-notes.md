@@ -15,8 +15,10 @@
 - 📄`Obsidian` - download and install fonts `jetbrains mono` & `atkinson hyperlegible next`
 - 📄`Deskflow` - config in program data for monitors location
 - 📄`PotPlayer` - not sure if it's better than re-setting up.
-- 📄`vscode` - supposed to sync those, but maybe do local backup, just to make sure?
-	- you have 2 users, normal and admin(for protected ahk scripts). admin created automatically if not present. you need to copypaste `settings` and `keybindings` in appdata. Change theme though, to distinguish between all instances.
+- 📄`vscode` - supposed to sync those, but maybe do local backup, just to make sure? %% fold %%
+	- you have 2 users, normal and admin(for protected ahk scripts). admin created automatically if not present. you need to copypaste `settings` and `keybindings` in user folder in `roaming`. Change theme though, to distinguish between all instances.
+		- copy `.gitconfig` from user folder before reinstall. For this setup you need to use `dpapi` credentials manager + pat. That's all configured in gitconfig.
+	- So, the idea is - elevated instance uses different user folder + different shared storage folder, to avoid logging me out in non-elevated instance, after I run elevated instance.
 - 📄`kaspersky` - exceptions + activation (deactivate on current windows)
 - 📄`power toys` - has internal backup and restore logic
 - 📄`Windhawk` - mods + their settings (probably best bet is to copy config in text mode?) + your custom mods code and settings

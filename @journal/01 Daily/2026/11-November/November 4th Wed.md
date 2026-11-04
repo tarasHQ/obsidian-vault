@@ -101,6 +101,39 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 15:17
+	- Ok, Done. I might be really pushing the limits with flows. They get a bit complex.
+	- But, at the end of the day - I can always split it into few flows. Since all of them are sequential. So I guess it's fine as long as LLM follows the rules. 
+	- And also it might be a good check for those occasional hallucinated generations.
+- ###### 14:25
+	- I can't even imagine the influence of real rituals like Heilung "imitates?". You look at this through the Ego - it's dumb and primitive. The moment Ego loses its grip on perception - something magical happens. 
+- ###### 14:18
+	- Didn't close the window, was on fresh air all the time. Not really exhausted as I would be previously. Don't want PMO either. 
+- ###### 13:59
+	- That shamanic chanting/screaming in Heilung songs. I figured out part of its symbolism, I guess. It's like shedding of social expectations before the ritual, so the Ego isn't interfering as much with the transformational process of the ritual. 
+- ###### 13:30
+	- Got back into the flow. But seems like won't be able to finish this iteration before the meal...
+- ###### 12:42
+	- Got distracted, now it's a bit harder to go back... oh well.
+- ###### 11:54
+	- This music I listen to now all of a sudden - I think I maybe understand why I'm attracted to it, well, besides other things. It's nowhere near as stimulating as usual pop songs I listen to. Like even techno feels like eating super-sweet food. 
+- ###### 11:20
+	- Man I'm so glad I spend those 2 hours dealing with folding plugin. It now works as intended, and I can actually rely on foldings, which give me another axis of structure. 
+	- Like it really starts to overtake excalidraw's potential I wanted explore for this kind of flows.
+- ###### 11:03
+	- Ok. 3 hours of work left. I need to finish iteration #2 on my project's system. And then after the meal I start working on website's features.
+- ###### 10:45
+	- What if that's performance when I'm frustrated/angry? Not on camera. But the same as with urges, I guess? Like I'm getting possessed by this while reality is much-much simpler. Like it's a problem that needs to be solved. Why I should be angry about how people do things? 
+	- ==🟡I have anger issues generally. Sometimes I watch political videos where there's unexpected very strong negative emotional reaction towards my values, and in my mind I get really violent really fast. That's another part of the unconscious that lives in the Shadow. And needs conscious work.==
+		- Why it needs work practically? - Simple, at the very least to not have times like I had last hour, where I got angry and it threw me off the "work-rails" because of it. 
+		- Like right now I'm imagining with pleasure how I punch the tv. Or like flip the table. That's a lot of anger channeled in there. And that libido can flow elsewhere productively. 
+	- **How to discharge it?**
+		- With pain-relief complex that is tied to PMO - PMO is discharge of that complex. Because it relieves the pain. What if with anger - physical activity is its discharge? Previously I did 31 push ups, which is also kinda like pushing people, so mechanically it's similar to "anger-behavior". Can I do 32? 
+			- Counted on video. 37. Damn. That's all time high.
+			- Am I angry? Doesn't seem like it. So I guess it's a valid thing to discharge the anger until I figure out how to deal with it properly through psychoanalysis. Cuz I can like try to talk with it, but it feels as if it just needs action. Like it's talking through doing something physically hard. 
+- ###### 10:39
+	- Well, that's how time is wasted... But I guess it's worth it, chance to break again is low. Alternative would be to use elevated ahk script with access for a non-elevated user, which would be a major security issue. And now I kinda have it, hopefully, optimally secure, where it won't give me additional headache compared to non-secure path.
+	- But yeah, time is spent on things like this. And its effect is prolonged, because I got frustrated by how things work.
 - ###### 10:22
 	- Yeah, that's 
 - ###### 10:00

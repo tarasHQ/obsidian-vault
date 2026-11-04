@@ -161,22 +161,25 @@ GROUP BY true
 
 ---
 
+## Persistent Storage
+%%Bullet list only for important high-level things that MUST persists between steps. AS CONCISE AS POSSIBLE. %%
+- 
+
 ## Exploration
-- %%Scoped by a phase it is in. %%
-- %%Contains related exploratory knowledge to make initial exploration in the task more efficient.%%
-- %%After each major workflow block - LLM shares its wins and losses in exploration in here. So further planning / implementation tasks in future would be more efficient in exploration part.%%
+%%Contains related exploratory knowledge to make initial exploration in the task more efficient.%%
+
 - ### Links To Related files
-  %%Format is a link inside inline codeblock - 1-2 sentence description of files contents and how it's related to the whole phase.%%
-	- ##### Created
+  %%Format is a link inside inline codeblock [file-size-in-kb-from-explore-tool] - 1-2 sentence description of files contents and how it's related to the whole phase.%%
+	- ##### Created Files
 		- 
-	- ##### Modified
+	- ##### Modified Files
 		- 
-	- ##### Deleted
+	- ##### Deleted Files
 		- 
-	- ##### Context
+	- ##### Context Files
 		- `__obsidian__/docs/AGENTS.md` - entry point to the project for LLMs.
-- ### Universal Tips
-  %%Phase scoped. Free form. Concise. For more precise exploration. Goal is to avoid misleading/wrong/inefficient exploration. Optional. Should be really concise though. Filled only through LLM's experience. %%
+- ### Exploration Tips
+  %%Free form. Concise. For more precise exploration. Goal is to avoid misleading/wrong/inefficient exploration. Optional. Should be really concise though %%
 	- 
 
 ---
@@ -198,12 +201,12 @@ The flow is to start the planning in the right state of mind and with the proper
 
 %%
 ### Info On Steps
-- `status` - `ready/postponed/implemented/skipped` - self-explanatory statuses.
 - `state` - state of the step's contents
-	- `placeholder` - minimal file to just hold the place until there's time to do high-level/implementation blocks
-	- `high-level` or `○` - only top high-level block is written and implementation block is not
-	- `full` or `◎` - high level and implementation blocks are written and step is ready for implementation.
 	- `condensed` or `◉` - after implementation's completion flow, state was condensed to be token-efficient. 
+	- `full` or `◎` - high level and implementation blocks are written and step is ready for implementation.
+	- `high-level` or `○` - only top high-level block is written and implementation block is not
+	- `placeholder` - minimal file to just hold the place until there's time to do high-level/implementation blocks
+- `status` - `ready/postponed/implemented/skipped` - self-explanatory statuses.
 %%
 
 ---
@@ -215,4 +218,5 @@ The flow is to start the planning in the right state of mind and with the proper
 ### User-issues
 - 
 ### LLM-issues
-- 
+- Where LLM had troubles with this "system of projects"? (if it had any)
+	- 
