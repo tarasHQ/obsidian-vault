@@ -19,32 +19,36 @@ action:
   file: _static/scripts/meta-bind/journal-remove-checklist.js
 ```
 - ##### NIGHT CHECKLIST
-	- [ ] Check audio delay to webcam
-	- [ ] Check TickTick schedule (correct day, scheduled)
-	- [ ] Set time of next sleep for stager timer.
+	- [x] Check audio delay to webcam
+	- [x] Check TickTick schedule (correct day, scheduled)
+	- [x] Set time of next sleep for stager timer.
 	- Obsidian
 		- [ ] Write overview of the current day
-		- [ ] Create journal for the next day
-		- [ ] Move uncompleted tasks
-		- [ ] Make sure all day's reflections are linked under reflections
-		- [ ] Delete Dream Analysis block if empty
-		- [ ] Delete other blocks if empty (task/reflections)
-	- [ ] Night scene
-	- [ ] Check IP cam (quality, delay)
-		- [ ] Enable sleep blur
+		- [x] Create journal for the next day
+		- [x] Move uncompleted tasks
+		- [x] Make sure all day's reflections are linked under reflections
+		- [x] Delete Dream Analysis block if empty
+		- [x] Delete other blocks if empty (task/reflections)
+	- [x] Night scene
+	- [x] Check IP cam (quality, delay)
+		- [x] Enable sleep blur
 	- [ ] monitor OFF (seems like keeping on makes him die faster)
 	- Cat
 		- [ ] Clean up cat's litter box
 		- [ ] Food + plate is in my room at the shelf 
 			%%(to feed right away and not be distracted by her)%%
-	- [ ] Make sure there's tomorrow's food out of the freezer.
+	- [x] Make sure there's tomorrow's food out of the freezer.
 
 ---
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-Remove. Goal of the overview is condense a day into a key points. Don't start with reflections/ideas/etc. Just condense.
+Ok day. Too much youtube in the evening, but I guess it makes sense, I'm lacking hope. I can't even have blind faith that it'll work out. There's a mountain of proof that what I'm doing is hopeless. And that made me think about dark thoughts of reducing my life span. But that's how day is going. And a day before this. And a day before that one. 
+
+I have this talent to work for 12+ hours per day, but have efficiency of 3 hour work session... Extremely discouraging and hopeless. 
+
+The main issue is offing is on the table, in my dictionary and I'm getting more and more used to thoughts and visions where I'm, well... But I just don't see other way. I don't have reasons to live that would sustain me. I just don't have to research or order things for my method. Because in moments like this one - I see how much closer this ultimate action is than I think. In a month I may order stuff "just to be there", and on the next one - a bad day again, and maybe I would want to use that stuff and find my peace in the absolute relief from all this pain and pressure. 
 
 ---
 
@@ -54,41 +58,6 @@ Remove. Goal of the overview is condense a day into a key points. Don't start wi
 >Time Spent in Bed - **Low**
 > 
 >Approx. Compensation of Dreams - **A bit inspirational**
-
----
-
-## TASKS
-%%Cognitive offload for the day, to not keep these in my mind for the whole time%%
-- ## Test
-- ### TODO
-	- [ ]  when you go sleep - create and leave big plan and your position in it. That's how you meaningfully will track higher scope. But be careful so your "cost" scope won't overfocus on this.
-		- Probably in excalidraw?
-	- [ ] Fix outliner plugin issues
-		- [ ] Css. Outline collapse indicators. Hide? Increase size of dots on hover. 
-		- [ ] Remove movable points. 
-	- [ ] Psychoanalysis would probably need separate folder. Not reflections though. Separate. Dream analysis included probably. To keep journals lean but with like easy links to go to these kind of things. 
-		- Why? Feels bloated. And chances are, with proper practice, you would want to expand on dream analysis some days after initial attempt. Same with psychoanalysis "sessions". So they must be like separate things to research/review. 
-			- Backlink to journal would be nice though, so you can see how session is integrated into the day (time log)
-	- [ ] Same hotkeys between two PC. 
-		- Probably try to go native as much as you can, and then have some small ahk helper script for the rest
-	- [ ] Your budget is limited but sync is important. Maybe selfhost livesync? 
-	- [ ] Mouse has 12 buttons. But actually customizable are like 3. Because 2 buttons for tv on/off to preserve organic diodes. And 3 for music control. 2 for back and forward. 1 for win menu. Not much left. 
-		- And if I had a modifier. Either through shift(but check conflicts with ahk) or through mouse buttons. Like rmb (if it's possible), then on rmb you can place rarely used functions. And have more buttons for actively used ones
-	- [ ] **META** Figure out where to accumulate such secondary tasks and where you can prioritize them, because flat list is stupid and limiting. 
-	- [ ] Ideally to go away from the minimal theme. It does add a lot of things that I don't use, and basically a deadweight. Like it's better to have 30 styles in CSS than like 2 plugins with 100 settings + a theme . 
-	- [ ] flow to compress png into webp from screenshot, so it won't harm neither website nor size of the vault. But also figure out if deskflow can do it, because right now it's half-supported. (or don't do it through deskflow)
-		- priority because it adds another dimension to thinking + cognitive offload. 
-	- [ ] Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
-	- [ ] 🔴[[plans/better-schedule-plan|better-schedule-plan]]
-- ### Completed
-	- [ ] copy_from_here
-	- [ ] 
-
----
-
-## REFLECTIONS
-%%Thinking through writing is much better - there must be low-friction place to do so%%
-- 
 
 ---
 
@@ -102,6 +71,59 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 00:45
+	- Like sometimes I get too sad and suicidal thoughts visit from that energy source. In this case - it's primarily a cold calculation. There's facts. There's experience. You can't get a 1000 from 2+2 equation.
+	- Without job/education/future in pure isolation - it leads me with the only ultimate path when living will get too harsh. And it will. 
+- ###### 00:26
+	- I just have to look straight in eyes of the dragon. I spent weeks with little to no progress. What do I expect? Like where this will bring me? Spend a year to have a project in the state of claude code at the end of 2025? 
+- ###### 00:12
+	- Yeah, thoughts get a bit dark. It would be a major relief to just be removed from existence. It's interesting because sometimes when things going good I feel like what if I'll just die randomly, in context of being scared that it's all for nothing or something. 
+	- I don't have money for good LLMs. 
+	- I don't have experience to have speed, efficiency and good quality of the project all at the same time. 
+	- Basically I'm royally fucked. And chances are against me. Not in movie-like way. I'm already too comfortable with thoughts of offing myself. I would need the guidance of the unconscious on this one. I will pray for dreams on this. Like I'm just done at this point. 
+- ###### 23:55
+	- Scary thoughts. What if speed isn't achievable? What if I'm already too late and will never catch up?
+	- Seeing visions how that idea to snapshot keyframes from video and make them stream-like. And how those capture me offing myself. Sometimes I forget how thin the ice is.
+- ###### 23:17
+	- Much-much better.
+	- Ok, so the thing with the website. Not much time. BUT. The issue is that those flows are kinda constraining me against fast-paced movement. Like right now I want to do styling only. But the phase would be too small. So I have to add more things to do. Start the whole flow, reflecting, planning, etc. Efficiency is dropping. 
+	- But again. Highlighted in red below. 15 seconds to know what to do. 
+- ###### 22:46
+	- It was interesting to watch more opinions on midterms. US is such a powerful cultural force, that it attracts me into that, even though I'm living kinda on the edge of western civilization. But the issue is I would've been just fine if I spend that time napping, or reading, or watching some lectures. 
+	- Why it has to be youtube? Like stuff I watched for the last, 2-3 hours (sum) - was absolutely worthless to me. I didn't rest or got my mood improved. Like it's boring politics with intentionally emotionally charged commentary to capture my attention. It makes me even more weak. So yeah... 
+	- Should I cut my hair? 2 hours left. I'm tired. I don't have it in me doing some work marathons. Tiredness is false, but by the time I start moving I'll have like an hour. 
+	- And the hair is starting to be distracting. Yeah. Fuck it. If I move, it'll take 20 minutes. I'll have 1.5 hours to do other things.
+- ###### 20:38
+	- Got distracted. US had midterms, it was curious to see how it goes. 
+	- About indulgence though. Like I already lost by the time I was considering PMO. I would argue that the battle ended an hour ago, and I was just moving on the inertia. It's just this speed. I'm so focused on this yet I'm not actually believe in this. I'm not acting accordingly = I don't believe in it. 
+	- Why I don't believe in it? Maybe it's the fear of failure? You know, if I try to go all-in, and then it won't be enough too... oh boy... 
+	- On another side - I have a meal and 3 hours of work ahead. What if I try this? Instead of going all-in for the whole day - I do that for 3 hours before the sleep? When I'm a bit cognitively exhausted, so it would be a realistic test too. Should I? 
+	- ==🟡I know what's true==
+		- ... meaning that I can imagine myself acting properly right now. Decisions I get stuck on - are non-issues and solved in 10 seconds. Like I don't know what to do... oh, how sad and confusing... 
+		- ==🔴upload whole vault, set up styles for typography and site font/background including that gradient idea. then focus on making navigation by doing those index pages I was talking about. Then create index.md as home page and start wiring everything, that's work for maybe 1-2 hours==
+			- I know that now. I knew that 3 hours ago. But instead I was extracting ideas from that other website. Ideas that I won't implement in the near future. So yeah. No shit I got indulgence-seeking.
+- ###### 20:04
+	- PMO felt like sweets or pizza. I just didn't care or saw it as a big issue. 
+- ###### 19:07
+	- ==🔴It's a marker. When I lay down in my chair - I'm ready to indulge. I have lack of energy/meaning to sit upright. I must be a bit more conscious of this. I have to go through this page though, so I won't have to do this later.==
+- ###### 17:59
+	- There's this website "The Pond", `turntrout.com`, the guy did a good job with it. Made everything public. Trying to replicate some ideas. Wrote a brief email to thank him. Took a bit of time, but just felt bad to not even say thanks for this amount of effort (and result, obviously).
+- ###### 17:20
+	- It just feels meaningless with this speed. Like I don't have the speed I need for my ideas to make sense. 
+	- Well, instead of whining and bitching - can I actually do something about it? Like you have next iteration of your flow. Why you won't try it out? Refine further? 
+	- Like the website is basically on the tips of your fingers. You upload whole vault, write a few indexing pages for journals/projects/etc. Write about page and other ones that surround it - and you can push. Features are additive mostly. 
+		- The issue is perspective and timeframe. Focus on today. AND make the most out of it. Like yeah, if you want to do everything perfectly before the launch - it will take months. But What if we do good, before perfect? 
+- ###### 17:07
+	- Maybe the lion king scene will help to kinda see through this state?
+	- Kinda did. 
+	- This state comes from after the meal where I allow myself to watch some random youtube videos for entertainment. Very likely that this state comes from puer. Like it got his fun, but he doesn't want to give it up yet. 
+	- The same way Simba got his fun with that "Hakuna Matata" style of living. When he got conflicted and had to return back to his home, his Father showed up and ask Simba why he forgotten his father? 
+		- Which kinda says that the Father not really as unconscious in me as the Mother. Like everything I'm doing feels like deeply guided by the Father. But I'm still missing something. I deny duty. 
+- ###### 16:58
+	- Have to vacuum..., well, one good thing out of this discouragement is that "might as well", because it won't be easy to get back into the flow.
+- ###### 15:58
+	- Watch that breakdown I had yesterday. Yeah, it definitely should've been on camera. Through watching myself like that - I develop empathy to myself. 
+	- Also, it kinda breaks down the Persona. Like I don't see myself like I think I would've been seen through the camera. Changes perspective a bit. 
 - ###### 15:17
 	- Ok, Done. I might be really pushing the limits with flows. They get a bit complex.
 	- But, at the end of the day - I can always split it into few flows. Since all of them are sequential. So I guess it's fine as long as LLM follows the rules. 

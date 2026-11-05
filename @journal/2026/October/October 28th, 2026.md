@@ -1,8 +1,6 @@
 
 %%[[[T]daily-journaling|Daily Journal Template]]%%
 
----
-
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
 Increasingly more meaning. It was insane that I wanted to watch like a one Peterson's short video from some lecture, and I got on exactly what I needed. For now, these "timeframes" seems to work. 

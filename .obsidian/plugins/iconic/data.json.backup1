@@ -41,7 +41,7 @@
       "conditions": [
         {
           "source": "name",
-          "operator": "contains",
+          "operator": "is",
           "value": "README"
         }
       ],

@@ -148,7 +148,7 @@ isIntegrated: false
 ## Documents
 %%Dataview query for user. Renders list of documents from phase's inner folders. %%
 
-```dataview {fold}
+```dataview
 TABLE WITHOUT ID
   map(filter(rows.file, (f) => startswith(f.folder, this.file.folder + "/_reflections")), (f) => f.link) AS "Reflections",
   map(filter(rows.file, (f) => startswith(f.folder, this.file.folder + "/ideas")), (f) => f.link) AS "Ideas",
