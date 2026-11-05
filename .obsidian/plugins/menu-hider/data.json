@@ -6,23 +6,8 @@
       "entries": [
         {
           "type": "item",
-          "title": "Open in new tab",
-          "icon": "file-plus"
-        },
-        {
-          "type": "item",
-          "title": "Open to the right",
-          "icon": "separator-vertical"
-        },
-        {
-          "type": "item",
-          "title": "Open in new window",
-          "icon": "picture-in-picture-2"
-        },
-        {
-          "type": "item",
-          "title": "Open in duplicate tab",
-          "icon": "files"
+          "title": "Close",
+          "icon": "x"
         },
         {
           "type": "separator"
@@ -37,8 +22,74 @@
         },
         {
           "type": "item",
-          "title": "Make a copy",
+          "title": "Pin",
+          "icon": "pin"
+        },
+        {
+          "type": "item",
+          "title": "Link with tab...",
+          "icon": "link"
+        },
+        {
+          "type": "item",
+          "title": "Reading view",
+          "icon": "book-open"
+        },
+        {
+          "type": "item",
+          "title": "Source mode",
+          "icon": "code-2"
+        },
+        {
+          "type": "item",
+          "title": "Refresh view",
+          "icon": "refresh-cw"
+        },
+        {
+          "type": "item",
+          "title": "Copy view type 'markdown' to clipboard",
+          "icon": "info"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Move to new window",
+          "icon": "picture-in-picture"
+        },
+        {
+          "type": "item",
+          "title": "Split right",
+          "icon": "separator-vertical"
+        },
+        {
+          "type": "item",
+          "title": "Split down",
+          "icon": "separator-horizontal"
+        },
+        {
+          "type": "item",
+          "title": "Open in new window",
+          "icon": "picture-in-picture-2"
+        },
+        {
+          "type": "item",
+          "title": "Open in duplicate tab",
           "icon": "files"
+        },
+        {
+          "type": "item",
+          "title": "Open in opposite tab group",
+          "icon": "split-square-horizontal"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Rename...",
+          "icon": "edit-3"
         },
         {
           "type": "item",
@@ -52,18 +103,26 @@
         },
         {
           "type": "item",
-          "title": "Git: Stage",
+          "title": "Add file property",
           "icon": "plus-circle"
         },
         {
           "type": "item",
-          "title": "Git: Unstage",
-          "icon": "minus-circle"
+          "title": "Export to PDF...",
+          "icon": "file-down"
+        },
+        {
+          "type": "separator"
         },
         {
           "type": "item",
-          "title": "Git: Add to .gitignore",
-          "icon": "file-x"
+          "title": "Find...",
+          "icon": "file-search"
+        },
+        {
+          "type": "item",
+          "title": "Replace...",
+          "icon": "file-search"
         },
         {
           "type": "separator"
@@ -83,6 +142,12 @@
           "icon": "history"
         },
         {
+          "type": "item",
+          "title": "Open linked view",
+          "icon": "link",
+          "children": []
+        },
+        {
           "type": "separator"
         },
         {
@@ -96,16 +161,16 @@
           "icon": "arrow-up-right"
         },
         {
+          "type": "item",
+          "title": "Reveal file in navigation",
+          "icon": "folder-open"
+        },
+        {
           "type": "separator"
         },
         {
           "type": "item",
-          "title": "Rename...",
-          "icon": "edit-3"
-        },
-        {
-          "type": "item",
-          "title": "Delete",
+          "title": "Delete file",
           "icon": "trash-2"
         }
       ],
@@ -138,7 +203,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793783276727
+      "lastSeenAt": 1793853765557
     },
     "dom:tab-header": {
       "signature": "dom:tab-header",
@@ -226,6 +291,42 @@
       "entries": [
         {
           "type": "item",
+          "title": "drape",
+          "icon": "repeat"
+        },
+        {
+          "type": "item",
+          "title": "papa",
+          "icon": "repeat"
+        },
+        {
+          "type": "item",
+          "title": "dapper",
+          "icon": "repeat"
+        },
+        {
+          "type": "item",
+          "title": "dap",
+          "icon": "repeat"
+        },
+        {
+          "type": "item",
+          "title": "dapped",
+          "icon": "repeat"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Add to dictionary",
+          "icon": "folder-tree"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
           "title": "Add link",
           "icon": "link"
         },
@@ -302,7 +403,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793790252299
+      "lastSeenAt": 1793828138066
     },
     "event:file-menu-folder": {
       "signature": "event:file-menu-folder",
@@ -360,21 +461,6 @@
           "icon": "bookmark"
         },
         {
-          "type": "item",
-          "title": "Git: Stage",
-          "icon": "plus-circle"
-        },
-        {
-          "type": "item",
-          "title": "Git: Unstage",
-          "icon": "minus-circle"
-        },
-        {
-          "type": "item",
-          "title": "Git: Add to .gitignore",
-          "icon": "file-x"
-        },
-        {
           "type": "separator"
         },
         {
@@ -382,20 +468,6 @@
           "title": "Copy path",
           "icon": "clipboard",
           "children": []
-        },
-        {
-          "type": "separator"
-        },
-        {
-          "type": "item",
-          "title": "Folder Spaces",
-          "icon": "folders",
-          "children": []
-        },
-        {
-          "type": "item",
-          "title": "Set to root",
-          "icon": "panel-left-open"
         },
         {
           "type": "separator"
@@ -439,7 +511,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793778718767
+      "lastSeenAt": 1793798650946
     },
     "dom:unknown": {
       "signature": "dom:unknown",
@@ -447,76 +519,44 @@
       "entries": [
         {
           "type": "item",
+          "title": "Sync: Indexing..."
+        },
+        {
+          "type": "item",
+          "title": "Pause"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Version history",
+          "icon": "history"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Activity log",
+          "icon": "align-left"
+        },
+        {
+          "type": "item",
+          "title": "Deleted files",
+          "icon": "trash-2"
+        },
+        {
+          "type": "item",
           "title": "Settings",
           "icon": "settings"
-        },
-        {
-          "type": "item",
-          "title": "Hotkeys",
-          "icon": "keyboard"
-        },
-        {
-          "type": "separator"
-        },
-        {
-          "type": "item",
-          "title": "View details",
-          "icon": "info"
-        },
-        {
-          "type": "item",
-          "title": "Open community page",
-          "icon": "globe"
-        },
-        {
-          "type": "separator"
-        },
-        {
-          "type": "item",
-          "title": "Show in system explorer",
-          "icon": "folder-open"
-        },
-        {
-          "type": "separator"
-        },
-        {
-          "type": "item",
-          "title": "Uninstall",
-          "icon": "trash-2"
         }
       ],
       "hiddenItems": [],
       "hiddenSeparators": [],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793799303223
-    },
-    "view:canvas": {
-      "signature": "view:canvas",
-      "label": "canvas",
-      "entries": [
-        {
-          "type": "item",
-          "title": "Zoom to selection"
-        },
-        {
-          "type": "item",
-          "title": "Swap file...",
-          "icon": "repeat"
-        },
-        {
-          "type": "separator"
-        },
-        {
-          "type": "item",
-          "title": "Remove",
-          "icon": "trash-2"
-        }
-      ],
-      "hiddenItems": [],
-      "hiddenSeparators": [],
-      "order": [],
-      "lastSeenAt": 1793783121621
+      "lastSeenAt": 1793805682026
     }
   },
   "copyAbsolutePath": false

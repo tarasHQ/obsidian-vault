@@ -19,6 +19,7 @@
 	- you have 2 users, normal and admin(for protected ahk scripts). admin created automatically if not present. you need to copypaste `settings` and `keybindings` in user folder in `roaming`. Change theme though, to distinguish between all instances.
 		- copy `.gitconfig` from user folder before reinstall. For this setup you need to use `dpapi` credentials manager + pat. That's all configured in gitconfig.
 	- So, the idea is - elevated instance uses different user folder + different shared storage folder, to avoid logging me out in non-elevated instance, after I run elevated instance.
+		- Ok, maybe not, there were issues with pushing. I authed through dpapi + browser and seems like it's working?
 - 📄`kaspersky` - exceptions + activation (deactivate on current windows)
 - 📄`power toys` - has internal backup and restore logic
 - 📄`Windhawk` - mods + their settings (probably best bet is to copy config in text mode?) + your custom mods code and settings

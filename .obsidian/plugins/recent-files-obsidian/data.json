@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "November 5th Thu",
+      "path": "@journal/01 Daily/2026/11-November/November 5th Thu.md"
+    },
+    {
+      "basename": "November 4th Wed",
+      "path": "@journal/01 Daily/2026/11-November/November 4th Wed.md"
+    },
+    {
       "basename": "step-template",
       "path": "@system/projects/shared/templates/step-template.md"
     },
@@ -31,10 +39,6 @@
     {
       "basename": "[T]plan",
       "path": "@system/projects/_templater/[T]plan.md"
-    },
-    {
-      "basename": "November 4th Wed",
-      "path": "@journal/01 Daily/2026/11-November/November 4th Wed.md"
     },
     {
       "basename": "writing-steps",
@@ -191,10 +195,6 @@
     {
       "basename": "[T]reflections",
       "path": "_static/templater/[T]reflections.md"
-    },
-    {
-      "basename": "_sleep",
-      "path": "Sleep/_sleep.canvas"
     }
   ],
   "omittedPaths": [],
