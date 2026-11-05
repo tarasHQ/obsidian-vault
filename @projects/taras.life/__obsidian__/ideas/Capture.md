@@ -70,7 +70,7 @@
 ## Refactor
 - ###### ~~SCSS - Remove it %% fold %%
 	- I didn't really understood any good reason to use it
-- ###### Theming Logic %% fold %%
+- ###### ~~Theming Logic %% fold %%
 	- Discuss its use, because it seems to me it's just redundant code since I'm not like want to use themes neither now nor later
 - ###### Remove CLI entirely %% fold %%
 	- `bootstrap-cli.mjs` + `quartz/cli/*` → thin `scripts/build.mjs` (esbuild transpile + run `build.ts`)
@@ -83,25 +83,15 @@
 	- `quartz/util/emoji.ts` (og-image bundles its own emoji util)
 	- `quartz/components/PageList.tsx` (no importer; recent-notes has its own)
 	- `quartz/components/frames/FullWidthFrame.tsx` (only `minimal` + `default` used)
-- ###### Remove dead npm deps %% fold %%
-	- `@quartz-community/recent-notes` (disabled in config)
-	- `@quartz-themes/core` + `@quartz-themes/default` (disabled)
 - ###### Remove `emojimap.json` (15 MB) %% fold %%
 	- ⚠️ `og-image` bundled code reads it by filesystem path — move file, build, verify OG images before deleting
-- ###### Config pruning (mermaid & co) %% fold %%
-	- `mermaid: false` for now (content has zero mermaid; toggle injects inline script + styles on EVERY page). Reversible — I plan to use mermaid later
-	- Same check: `enableYouTubeEmbed`, `enableVideoEmbed` if never embed
 - ###### Optional: drop workerpool %% fold %%
 	- `workerpool` + `bootstrap-worker.mjs` + worker transpile = parallelism overhead for a tiny content folder; parse inline instead
 - ###### Optional: drop `--watch`/serve deps %% fold %%
 	- `chokidar` used by both CLI watch and `build.ts` incremental watcher — only removable if watch mode is abandoned too
-- ###### Decisions persistence system (README.md per submodule) %% fold %%
-	- Every logical module keeps a local `README.md` with design rationale, quirks, "why removed X but not Y"
-	- So external users of the repo don't have to guess
-	- Already an AGENTS.md convention (§02.1) — audit existing modules, create missing ones
 - ###### Remove unused/redundant styles %% fold %%
 	- After SCSS→CSS migration: audit base/callouts/popover for styles of removed plugins (e.g. things tied to dropped features)
-- ###### Google Fonts code removal %% fold %%
+- ###### ~~Google Fonts code removal %% fold %%
 	- Font-loading logic in `componentResources.ts` (theme typography → generated CSS path) dies together with theming generation
 	- `fontOrigin: local`, `cdnCaching: false` config keys become meaningless — prune
 	- Keep `quartz/static/fonts/` woff2 files (self-hosted is correct); optionally prune Source Sans Pro if no Cyrillic content
@@ -110,14 +100,11 @@
 	- Hardcode palette as CSS custom properties; keep dark/light toggle from `@quartz-community/darkmode` working
 	- Prune `theme:` block from `quartz.config.yaml`
 	- ⚠️ Only *design decision* in the phase (rest is mechanical) — touches vendored emitter
-- ###### Remove dead second sassPlugin instance %% fold %%
+	- UPD. Half done. plugin still there (maybe there's some other stuff left)
+- ###### ~~Remove dead second sassPlugin instance %% fold %%
 	- `filter: /\.inline\.scss$/` instance has no consumer even today
 	- Whole `esbuild-sass-plugin` dep goes with SCSS→CSS migration anyway
 	- ⚠️ Order: styles pass BEFORE CLI removal, so the lean esbuild config is what gets ported into `build.mjs`
-- ###### Keep load-bearing for future features — do NOT remove %% fold %%
-	- `content-page`, `explorer`, `bases-page` (index pages / explorer depth ideas)
-	- mermaid capability in OFM (only toggle off, don't strip code)
-	- `@quartz-community/table-of-contents`, `backlinks` (UX ideas build on them)
 
 ---
 
@@ -248,9 +235,8 @@
 		- brown-ish, golden-ish, dark.
 - ###### Icons & Colors for Files & Folders %% fold %%
 	- Kinda duplicate obsidian idea. The thing is - it allows to have a bit more complex structure without requiring additional cognitive processing of that structure. Like it's easier to abstract it out.
-- ###### Colorful Headings %% fold %% %% fold %%
+- ###### Colorful Headings %% fold %%
 	- Use colors from obsidian + extract those from "minimal's config" to separate css snippet
-	- https://turntrout.com/design#color-scheme
 	- https://turntrout.com/design#color-scheme
 - ###### Links %% fold %%
 	- Underline. Never highlight whole link.

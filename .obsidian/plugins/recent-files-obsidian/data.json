@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "_plan_003",
+      "path": "@projects/taras.life/__obsidian__/phases/003/_plan_003.md"
+    },
+    {
+      "basename": "implementing-steps",
+      "path": "@system/projects/shared/flows/implementing-steps.md"
+    },
+    {
       "basename": "November 5th Thu",
       "path": "@journal/01 Daily/2026/11-November/November 5th Thu.md"
     },
@@ -9,36 +17,72 @@
       "path": "@journal/01 Daily/2026/11-November/November 4th Wed.md"
     },
     {
-      "basename": "step-template",
-      "path": "@system/projects/shared/templates/step-template.md"
+      "basename": "type",
+      "path": "_static/markdown-tests/type.md"
     },
     {
-      "basename": "implementing-steps",
-      "path": "@system/projects/shared/flows/implementing-steps.md"
+      "basename": "lists",
+      "path": "_static/markdown-tests/lists.md"
     },
     {
-      "basename": "scorched-earth-critique",
-      "path": "@system/projects/shared/flows/scorched-earth-critique.md"
+      "basename": "links",
+      "path": "_static/markdown-tests/links.md"
     },
     {
-      "basename": "refining-reflection",
-      "path": "@system/projects/shared/flows/refining-reflection.md"
+      "basename": "index",
+      "path": "_static/markdown-tests/index.md"
+    },
+    {
+      "basename": "code",
+      "path": "_static/markdown-tests/code.md"
+    },
+    {
+      "basename": "bg",
+      "path": "_static/markdown-tests/bg.md"
+    },
+    {
+      "basename": "windows-reinstall-notes",
+      "path": "Maintenance/windows-reinstall-notes.md"
+    },
+    {
+      "basename": "iteration-03",
+      "path": "@system/projects/iterations/iteration-03.md"
     },
     {
       "basename": "initial-planning",
       "path": "@system/projects/shared/flows/initial-planning.md"
     },
     {
+      "basename": "Untitled",
+      "path": "Untitled.md"
+    },
+    {
       "basename": "code-review",
       "path": "@system/projects/shared/flows/code-review.md"
     },
     {
-      "basename": "[T]step-end",
-      "path": "@system/projects/_templater/[T]step-end.md"
-    },
-    {
       "basename": "[T]plan",
       "path": "@system/projects/_templater/[T]plan.md"
+    },
+    {
+      "basename": "refining-reflection",
+      "path": "@system/projects/shared/flows/refining-reflection.md"
+    },
+    {
+      "basename": "scorched-earth-critique",
+      "path": "@system/projects/shared/flows/scorched-earth-critique.md"
+    },
+    {
+      "basename": "Capture",
+      "path": "@projects/taras.life/__obsidian__/ideas/Capture.md"
+    },
+    {
+      "basename": "step-template",
+      "path": "@system/projects/shared/templates/step-template.md"
+    },
+    {
+      "basename": "[T]step-end",
+      "path": "@system/projects/_templater/[T]step-end.md"
     },
     {
       "basename": "writing-steps",
@@ -59,10 +103,6 @@
     {
       "basename": "iteration-01",
       "path": "@system/projects/iterations/iteration-01.md"
-    },
-    {
-      "basename": "windows-reinstall-notes",
-      "path": "Maintenance/windows-reinstall-notes.md"
     },
     {
       "basename": "_flow-creation-rules",
@@ -147,54 +187,6 @@
     {
       "basename": "[T]step-start",
       "path": "@system/projects/_templater/[T]step-start.md"
-    },
-    {
-      "basename": "on-the-plan",
-      "path": "@system/projects/_reflections/on-the-plan.md"
-    },
-    {
-      "basename": "Ideas",
-      "path": "@projects/taras.life/Social/Ideas.md"
-    },
-    {
-      "basename": "attack-surface-7k2f",
-      "path": "@projects/taras.life/__obsidian__/phases/002/artifacts/attack-surface-7k2f.md"
-    },
-    {
-      "basename": "readme",
-      "path": "@system/projects/_reflections/readme.md"
-    },
-    {
-      "basename": "[T]phase",
-      "path": "@system/projects/_templater/[T]phase.md"
-    },
-    {
-      "basename": "Plugins",
-      "path": "@projects/taras.life/__obsidian__/ideas/Plugins.md"
-    },
-    {
-      "basename": "_project",
-      "path": "@projects/0vibes/__obsidian__/_project.md"
-    },
-    {
-      "basename": "on-writing-steps",
-      "path": "@system/projects/_reflections/on-writing-steps.md"
-    },
-    {
-      "basename": "on-initial-planning",
-      "path": "@system/projects/_reflections/on-initial-planning.md"
-    },
-    {
-      "basename": "on-code-review",
-      "path": "@system/projects/_reflections/on-code-review.md"
-    },
-    {
-      "basename": "On Refining Reflection",
-      "path": "@system/projects/_reflections/On Refining Reflection.md"
-    },
-    {
-      "basename": "[T]reflections",
-      "path": "_static/templater/[T]reflections.md"
     }
   ],
   "omittedPaths": [],

@@ -22,7 +22,7 @@
         },
         {
           "type": "item",
-          "title": "Pin",
+          "title": "Unpin",
           "icon": "pin"
         },
         {
@@ -203,7 +203,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793853765557
+      "lastSeenAt": 1793863345589
     },
     "dom:tab-header": {
       "signature": "dom:tab-header",
@@ -291,27 +291,7 @@
       "entries": [
         {
           "type": "item",
-          "title": "drape",
-          "icon": "repeat"
-        },
-        {
-          "type": "item",
-          "title": "papa",
-          "icon": "repeat"
-        },
-        {
-          "type": "item",
-          "title": "dapper",
-          "icon": "repeat"
-        },
-        {
-          "type": "item",
-          "title": "dap",
-          "icon": "repeat"
-        },
-        {
-          "type": "item",
-          "title": "dapped",
+          "title": "possibilities",
           "icon": "repeat"
         },
         {
@@ -337,6 +317,11 @@
         },
         {
           "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Search for “possibillities”",
+          "icon": "search"
         },
         {
           "type": "item",
@@ -403,7 +388,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793828138066
+      "lastSeenAt": 1793863752665
     },
     "event:file-menu-folder": {
       "signature": "event:file-menu-folder",

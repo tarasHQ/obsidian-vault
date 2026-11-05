@@ -6,10 +6,12 @@ From initial refined reflection(**what** I want to do) -> to properly explored, 
 
 ## Rules
 - **STAGE AWARENESS** - Every response to the user should have current stage letter, name and substage letter-number at the first line.
+- **TEMP ARTIFACTS ARE WRITE-ONCE** - planning-flow artifacts (`implementation-possibilities-xxxx` etc.) are never edited or appended in this flow. Their locked decisions were already integrated into the plan/reflection.
 - If there's unexpected additional work - a step can be split into multiple ones.
 	- Decimal points for numbering 05, 05.1, 05.2.
 	- New steps are created using current flow. 
 	- New steps are inserted into the plan
+- **STEP ORDER** - steps are WRITTEN ascending (01→07, dependency order) but LISTED descending (99→00 top-to-bottom): anchor each new step on the previous step's heading (inserts above); first step anchors on the `=== INSERT STEPS HERE ===` marker.
 
 ## Stages
 - ### A - The Exploration
@@ -50,6 +52,7 @@ From initial refined reflection(**what** I want to do) -> to properly explored, 
 			 2. Updates the plan
 		 - Nuance for updating the plan without re-reading it on every step.
 			 - Use edit tool. And use name of the previous step as the anchor for replacement. new string will contain whole new step + the name of previous step. In that manner whole new block can be safely inserted.
+		 - Plan scope: when updating the plan — phase-level knowledge only; step-scoped detail lives in the step files (or planning-flow artifacts they were written from). When updating exploration, remove stale/no-longer-relevant entries in the same pass.
 		 - Steps should be written in descending order in-between existing step-99 and step-00. (highest step is first/above)
 	 - [ ] **C2** - [LLM + USER]
 		 - Discussion. 

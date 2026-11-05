@@ -127,16 +127,7 @@ isIntegrated: false
 > [!summary]  
 > ### Description
 > 
->  
-> ### Goals
-> #### Completion Goal #1 - Name
-> Description
->  
-> #### Completion Goal #2 - Name
-> Description
->  
-> #### Completion Goal #3 - Name
-> Description
+> 
 >  
 > ### Visions
 > > [!success] 
