@@ -9,6 +9,7 @@
 
 ## Rules
 - **STAGE AWARENESS** - Every response to the user should have current stage letter, name and substage letter-number at the first line.
+- **TEMP ARTIFACTS ARE WRITE-ONCE** - `refining-possibilities-xxxx` etc. are written during the brainstorm stages and never edited or appended afterwards. Locked decisions/results go ONLY into durable documents (reflection, plan, steps) — never back into a temp artifact.
 
 ## Stages
 - ### A - Exploration
@@ -28,7 +29,8 @@
 		- Only `write` tool is allowed. 
 		- Using already created temporary `.md` file `artifacts/refining-possibilities-xxxx` in previous stage
 			- Using append functionality of write tool. 
-		- LLM writes in that file 5 to 10 **(reasonable, high-level, radical, architectural)** possibilities for improving user's artifacts.
+        - LLM writes in that file 5 to 10 **(reasonable, high-level, radical, architectural)** possibilities for improving user's artifacts.
+		- **This file is write-once.** After this stage the artifact is never edited again — results/locked decisions go into durable documents in later stages.
 		- Those points may cover categories:
 			- Blind Spots
 			- Security 
@@ -37,7 +39,7 @@
 			- Proper long-term decisions.
 			- Other, not listed and high-impact categories. 
 		- **FORMAT of every point**
-			- **Name** - `[CATEGORY] Name-of-the-point`
+			- **Name** - `### [CATEGORY] Name-of-the-point`
 			- **Description** - 1-3 sentences description of the point. 
 			- **How To Do This** - 1-3 sentences describing how to do the point. 
 			- **Benefit** - a paragraph on how this point is beneficial
@@ -69,8 +71,12 @@
 		- User will respond for clarification
 		- Goal of the discussion is to refine ideas/possibilities/artifacts based on user feedback. 
 - ### F - Filling Out the Plan and Drafting the Steps
-	- [ ] **F1** - [LLM]
+    - [ ] **F1** - [LLM]
 		- LLM fills out the `_plan_xxx.md`'s **exploration section** with concise related links/tips on exploration for future tasks on this plan based on experience with current exploration.
+			- Since no files were touched - related links should only be under "Context Files" section
+			- Plan scope: phase-level knowledge only — step-scoped detail belongs in step files or the flow's artifacts (from which steps are later written), not the plan. When updating exploration, remove stale/no-longer-relevant entries in the same pass.
 	- [ ] **F2** - [LLM + USER]
-		- Through user's approval - LLM updates user's artifacts to be aligned with locked-in decisions/refining from current flow-task. 
+		- LLM asks for user's approval to update user's artifacts to be aligned with locked-in decisions/refining from current flow-task. 
+	- [ ] **F3** - [LLM]
+		- [ ] Writing a prompt for user (inside markdown codeblock) to start critique flow of the initial-reflection in a clean task without current context.
 - ### The End

@@ -35,9 +35,9 @@
 	color: transparent !important;
 } */
 
-.cm-editor .cm-line .cm-formatting-list {
+/* .cm-editor .cm-line .cm-formatting-list {
     cursor: pointer !important;
-}
+} */
 
 /* Increase clickable area of collapse icon */
 .collapse-icon svg.svg-icon {
@@ -53,7 +53,7 @@
 
 /* Make collapse icon cursor as pointer ONLY for headers
    Long selectors used to override !important of Outliner plugin  */
-body
+/* body
     .app-container
     .markdown-source-view
     .cm-scroller
@@ -78,7 +78,7 @@ body
     .HyperMD-header
     .heading-collapse-indicator {
     cursor: pointer !important;
-}
+} */
 
 /* remove padding of headings in live preview editing */
 .cm-s-obsidian .cm-line.HyperMD-header {

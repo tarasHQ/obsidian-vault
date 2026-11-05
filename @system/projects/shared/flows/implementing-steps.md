@@ -51,7 +51,8 @@ Efficient and focused implementation of steps.
 		- In Other Parts of the Plan:
 			- [ ] Making sure plan does not contradict to what was done in the current step. Like situations when fact X in plan says one thing, but implemented fact X in the step does different thing. 
 			- [ ] (Only if necessary) Updating exploration section.
-				- [ ] Only paths to related files with concise 1 sentence description. Nothing else. Concise. 
+				- [ ] Only paths to related files with concise 1 sentence description. Nothing else. Concise.
+				- [ ] Plan scope: phase-level knowledge only — step-scoped detail belongs in step files, not the plan. Remove stale/no-longer-relevant exploration entries in the same pass.
 			- [ ] Updating step in list of steps
 				- Implemented description should be concise. 5 sentences max. Do not include in there implementation nuances or technical details.
 	
@@ -66,4 +67,4 @@ Efficient and focused implementation of steps.
 			- [ ] Make sure note's frontmatter status/states is updated
 			- [ ] Structure of the file should be only `## Description` and `## Implementation Summary`
 	- [ ] **C5** - [LLM]
-		- [ ] Writing a prompt for user (inside markdown codeblock) to start implementation of the next step in a clean task without current context.
+		- [ ] Responding to the user with a prompt (inside markdown codeblock) to start implementation of the next step in a clean task without current context.

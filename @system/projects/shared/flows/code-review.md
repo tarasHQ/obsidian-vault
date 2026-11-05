@@ -7,6 +7,7 @@ A task that is purely focused on quality of code of the implemented step.
 
 ## Rules
 - **STAGE AWARENESS** - Every response to the user should have current stage letter, name and substage letter-number at the first line.
+- **TEMP ARTIFACTS ARE WRITE-ONCE** - `code-review-xxxx` etc. are written during the review stages and never edited or appended afterwards. Locked decisions/results go ONLY into durable documents (code, plan, steps) — never back into a temp artifact.
 
 ## Stages
 - ### A - The Exploration
@@ -39,7 +40,8 @@ A task that is purely focused on quality of code of the implemented step.
 		- Only `write` tool is allowed. 
 		- Using already created temporary `.md` file `artifacts/code-review-xxxx` in previous stage
 			- Using append functionality of write tool. 
-		- LLM lists 5 to 15 of the most **(reasonable, low-level, radical, architectural)** implementation possibilities for the implemented step.
+			- This file is write-once. After this stage the artifact is never edited again — results/locked decisions go into durable documents in later stages.
+        - LLM lists 5 to 15 of the most **(reasonable, low-level, radical, architectural)** implementation possibilities for the implemented step.
 		- Those points may cover categories:
 			- More streamlined code
 			- Reduced lines of code
@@ -53,7 +55,7 @@ A task that is purely focused on quality of code of the implemented step.
 			- Better long-term decisions
 			- Other, not listed high-impact categories.
 		- **FORMAT of every point**
-			- **Name** - `[CATEGORY] Name-of-the-point`
+			- **Name** - `### [CATEGORY] Name-of-the-point`
 			- **Description** - 1-3 sentences description of the point. 
 			- **How To Do This** - 1-3 sentences describing how to do the point. 
 			- **Benefit** - a paragraph on how this point is beneficial

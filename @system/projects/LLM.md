@@ -9,14 +9,14 @@
 	- Main goal though is to reduce cognitive load through having structured planning routines and flows which have increased capacity for planning and implementing complex things.
 - ### Structure of `__obsidian__/`
 	- `_reflections/` - Project-wide reflections. 
-	- `artifacts/` - Storage for additional files/images/sounds/etc., scoped for the whole plan. 
+		- `artifacts/` - Storage for additional files/images/sounds/etc., scoped for the whole plan. Temp brainstorm artifacts (`*-possibilities-xxxx.md`, `critique-xxxx.md`, `code-review-xxxx.md` etc.) are write-once: created during the flow, never edited or referenced afterwards.
 	- `docs/` - Project-related docs, such as `AGENTS.md`, `DEV_RULES`, etc. Described within `AGENTS.md`
 	- `ideas/` - Project-wide capture of ideas of any kind to be implemented later through the phase workflow.
 	- `phases/`
 		- `_archived/` - Completed phases, to avoid long lists with dozens of phases under `phases/`
 		- `XXX/` - Number of a phase, e.g. `003/` or `052/`
 			- `_reflections/` - My phase-scoped reflections. 
-			- `artifacts/` - Storage for additional files/images/sounds/etc. scoped to the phase only.
+			- `artifacts/` - Storage for additional files/images/sounds/etc. scoped to the phase only. Temp brainstorm artifacts (`*-possibilities-xxxx.md`, `critique-xxxx.md`, `code-review-xxxx.md` etc.) are write-once: created during the flow, never edited or referenced afterwards.
 			- `ideas/` - For phase-scoped idea capture, to process them later. 
 				- `parking.md` - empty file for quickly capturing/off-loading ideas
 			- `steps/` - Implementation steps files

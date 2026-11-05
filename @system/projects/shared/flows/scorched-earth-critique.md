@@ -5,6 +5,7 @@
 
 ## Rules
 - **STAGE AWARENESS** - Every response to the user should have current stage letter, name and substage letter-number at the first line.
+- **TEMP ARTIFACTS ARE WRITE-ONCE** - `critique-xxxx` etc. are written during the brainstorm stages and never edited or appended afterwards. Locked decisions/results go ONLY into durable documents (reflection, plan, steps) — never back into a temp artifact.
 
 ## Stages
 - ### A - Initial Exploration
@@ -24,7 +25,8 @@
 		- Only `write` tool is allowed. 
 		- Using already created temporary `.md` file `artifacts/critique-xxxx` in previous stage
 			- Using append functionality of write tool. 
-		- LLM lists 5 to 10 weakest points in provided artifacts. 
+			- This file is write-once. After this stage the artifact is never edited again — results/locked decisions go into durable documents in later stages. 
+        - LLM lists 5 to 10 weakest points in provided artifacts.
 		- Those points may cover issues from categories:
 			- Blind Spots
 			- Security issues
@@ -33,7 +35,7 @@
 			- Short term fixes over proper long-term decisions.
 			- Other, not listed and high-impact categories. 
 		- **FORMAT of every point**
-			- **Name** - `[CATEGORY] Name-of-the-point`
+			- **Name** - `### [CATEGORY] Name-of-the-point`
 			- **Steelman case** for advantages of the point.
 			- **Attacking** the point by providing disadvantages.
 			- **Recommending** another approach

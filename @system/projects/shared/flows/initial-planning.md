@@ -6,6 +6,7 @@ From initial refined reflection(**what** I want to do) -> to properly explored, 
 
 ## Rules
 - **STAGE AWARENESS** - Every response to the user should have current stage letter, name and substage letter-number at the first line.
+- **TEMP ARTIFACTS ARE WRITE-ONCE** - `implementation-possibilities-xxxx` etc. are written during the brainstorm stages and never edited or appended afterwards. Locked decisions/results go ONLY into durable documents (plan, steps) — never back into a temp artifact.
 
 ## Stages
 - ### A - Exploration
@@ -24,6 +25,7 @@ From initial refined reflection(**what** I want to do) -> to properly explored, 
 		- Only `write` tool is allowed. 
 		- Using already created temporary `.md` file `artifacts/implementation-possibilities-xxxx` in previous stage
 			- Using append functionality of write tool. 
+			- This file is write-once. After this stage the artifact is never edited again — results/locked decisions go into durable documents in later stages.
 		- LLM lists 5 to 10 of the most **(reasonable, high-level, radical, architectural)** implementation possibilities for of provided user's artifacts.
 		- Those points may cover categories:
 			- More streamlined code %%(high level, not like a scope of the function)%%
@@ -35,7 +37,7 @@ From initial refined reflection(**what** I want to do) -> to properly explored, 
 			- Better long-term decisions
 			- Other, not listed high-impact categories.
 		- **FORMAT of every point**
-			- **Name** - `[CATEGORY] Name-of-the-point`
+			- **Name** - `### [CATEGORY] Name-of-the-point`
 			- **Description** - 1-3 sentences description of the point. 
 			- **How To Do This** - 1-3 sentences describing how to do the point. 
 			- **Benefit** - a paragraph on how this point is beneficial
@@ -70,8 +72,11 @@ From initial refined reflection(**what** I want to do) -> to properly explored, 
 - ### F - Filling Out the Plan and Drafting the Steps
 	- [ ] **F1** - [LLM]
 		- LLM fills out the `_plan_xxx.md`'s **exploration section** with concise related links/tips on exploration for future tasks on this plan based on experience with current exploration.
+		- Plan scope: phase-level knowledge only — step-scoped detail belongs in step files or this flow's artifacts (from which steps are later written), not the plan. When updating exploration, remove stale/no-longer-relevant entries in the same pass.
 		- **Between** 00 and 99 steps - inserts ### Drafted Steps Recommendation block, with suggested order/granularity of steps as simple bulleted list with one point per list (will be deleted when actual steps arrive)
 			- steps are sorted "Highest step number on the top, lowest on the bottom"
 	- [ ] **F2** - [LLM + USER]
 		- Through user's approval - LLM updates user's artifacts to be aligned with locked-in decisions/refining from current flow-task. 
+	- [ ] **F3** - [LLM]
+		- [ ] Writing a prompt for user (inside markdown codeblock) to run a writing steps flow in a clean task without current context.
 - ### The End
