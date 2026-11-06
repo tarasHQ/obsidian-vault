@@ -19,6 +19,7 @@ action:
     - [ ] Day scene
     - [ ] Check webcam (exposure)
     - [ ] Check IP cam (quality, delay)
+        - [ ] Reconnect to reset delay
         - [ ] Disable sleep blur
     - [ ] Check all elements are present on the canvas
     - [ ] Check TickTick schedule 

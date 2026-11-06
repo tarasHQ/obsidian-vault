@@ -1,28 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "November 5th Thu",
-      "path": "@journal/01 Daily/2026/11-November/November 5th Thu.md"
-    },
-    {
-      "basename": "iteration-03",
-      "path": "@system/projects/iterations/iteration-03.md"
+      "basename": "_plan_003",
+      "path": "@projects/taras.life/__obsidian__/phases/003/_plan_003.md"
     },
     {
       "basename": "November 6th Fri",
       "path": "@journal/01 Daily/2026/11-November/November 6th Fri.md"
     },
     {
-      "basename": "Untitled",
-      "path": "Untitled.md"
+      "basename": "November 5th Thu",
+      "path": "@journal/01 Daily/2026/11-November/November 5th Thu.md"
+    },
+    {
+      "basename": "[T]daily-journaling",
+      "path": "_static/templater/[T]daily-journaling.md"
+    },
+    {
+      "basename": "iteration-03",
+      "path": "@system/projects/iterations/iteration-03.md"
     },
     {
       "basename": "implementing-steps",
       "path": "@system/projects/shared/flows/implementing-steps.md"
-    },
-    {
-      "basename": "_plan_003",
-      "path": "@projects/taras.life/__obsidian__/phases/003/_plan_003.md"
     },
     {
       "basename": "November 4th Wed",
@@ -143,10 +143,6 @@
     {
       "basename": "README",
       "path": "_static/scripts/README.md"
-    },
-    {
-      "basename": "[T]daily-journaling",
-      "path": "_static/templater/[T]daily-journaling.md"
     },
     {
       "basename": "November 3rd Tue",
