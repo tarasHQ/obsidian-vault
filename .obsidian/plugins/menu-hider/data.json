@@ -22,7 +22,7 @@
         },
         {
           "type": "item",
-          "title": "Unpin",
+          "title": "Pin",
           "icon": "pin"
         },
         {
@@ -203,7 +203,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793863345589
+      "lastSeenAt": 1793920626285
     },
     "dom:tab-header": {
       "signature": "dom:tab-header",
@@ -291,22 +291,6 @@
       "entries": [
         {
           "type": "item",
-          "title": "possibilities",
-          "icon": "repeat"
-        },
-        {
-          "type": "separator"
-        },
-        {
-          "type": "item",
-          "title": "Add to dictionary",
-          "icon": "folder-tree"
-        },
-        {
-          "type": "separator"
-        },
-        {
-          "type": "item",
           "title": "Add link",
           "icon": "link"
         },
@@ -317,11 +301,6 @@
         },
         {
           "type": "separator"
-        },
-        {
-          "type": "item",
-          "title": "Search for “possibillities”",
-          "icon": "search"
         },
         {
           "type": "item",
@@ -388,7 +367,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793863752665
+      "lastSeenAt": 1793911013927
     },
     "event:file-menu-folder": {
       "signature": "event:file-menu-folder",
