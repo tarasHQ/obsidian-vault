@@ -6,8 +6,23 @@
       "entries": [
         {
           "type": "item",
-          "title": "Close",
-          "icon": "x"
+          "title": "Open in new tab",
+          "icon": "file-plus"
+        },
+        {
+          "type": "item",
+          "title": "Open to the right",
+          "icon": "separator-vertical"
+        },
+        {
+          "type": "item",
+          "title": "Open in new window",
+          "icon": "picture-in-picture-2"
+        },
+        {
+          "type": "item",
+          "title": "Open in duplicate tab",
+          "icon": "files"
         },
         {
           "type": "separator"
@@ -22,74 +37,8 @@
         },
         {
           "type": "item",
-          "title": "Pin",
-          "icon": "pin"
-        },
-        {
-          "type": "item",
-          "title": "Link with tab...",
-          "icon": "link"
-        },
-        {
-          "type": "item",
-          "title": "Reading view",
-          "icon": "book-open"
-        },
-        {
-          "type": "item",
-          "title": "Source mode",
-          "icon": "code-2"
-        },
-        {
-          "type": "item",
-          "title": "Refresh view",
-          "icon": "refresh-cw"
-        },
-        {
-          "type": "item",
-          "title": "Copy view type 'markdown' to clipboard",
-          "icon": "info"
-        },
-        {
-          "type": "separator"
-        },
-        {
-          "type": "item",
-          "title": "Move to new window",
-          "icon": "picture-in-picture"
-        },
-        {
-          "type": "item",
-          "title": "Split right",
-          "icon": "separator-vertical"
-        },
-        {
-          "type": "item",
-          "title": "Split down",
-          "icon": "separator-horizontal"
-        },
-        {
-          "type": "item",
-          "title": "Open in new window",
-          "icon": "picture-in-picture-2"
-        },
-        {
-          "type": "item",
-          "title": "Open in duplicate tab",
+          "title": "Make a copy",
           "icon": "files"
-        },
-        {
-          "type": "item",
-          "title": "Open in opposite tab group",
-          "icon": "split-square-horizontal"
-        },
-        {
-          "type": "separator"
-        },
-        {
-          "type": "item",
-          "title": "Rename...",
-          "icon": "edit-3"
         },
         {
           "type": "item",
@@ -103,26 +52,18 @@
         },
         {
           "type": "item",
-          "title": "Add file property",
+          "title": "Git: Stage",
           "icon": "plus-circle"
         },
         {
           "type": "item",
-          "title": "Export to PDF...",
-          "icon": "file-down"
-        },
-        {
-          "type": "separator"
+          "title": "Git: Unstage",
+          "icon": "minus-circle"
         },
         {
           "type": "item",
-          "title": "Find...",
-          "icon": "file-search"
-        },
-        {
-          "type": "item",
-          "title": "Replace...",
-          "icon": "file-search"
+          "title": "Git: Add to .gitignore",
+          "icon": "file-x"
         },
         {
           "type": "separator"
@@ -142,12 +83,6 @@
           "icon": "history"
         },
         {
-          "type": "item",
-          "title": "Open linked view",
-          "icon": "link",
-          "children": []
-        },
-        {
           "type": "separator"
         },
         {
@@ -161,16 +96,16 @@
           "icon": "arrow-up-right"
         },
         {
-          "type": "item",
-          "title": "Reveal file in navigation",
-          "icon": "folder-open"
-        },
-        {
           "type": "separator"
         },
         {
           "type": "item",
-          "title": "Delete file",
+          "title": "Rename...",
+          "icon": "edit-3"
+        },
+        {
+          "type": "item",
+          "title": "Delete",
           "icon": "trash-2"
         }
       ],
@@ -203,7 +138,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793920626285
+      "lastSeenAt": 1793952381276
     },
     "dom:tab-header": {
       "signature": "dom:tab-header",
@@ -483,44 +418,54 @@
       "entries": [
         {
           "type": "item",
-          "title": "Sync: Indexing..."
-        },
-        {
-          "type": "item",
-          "title": "Pause"
-        },
-        {
-          "type": "separator"
-        },
-        {
-          "type": "item",
-          "title": "Version history",
-          "icon": "history"
-        },
-        {
-          "type": "separator"
-        },
-        {
-          "type": "item",
-          "title": "Activity log",
-          "icon": "align-left"
-        },
-        {
-          "type": "item",
-          "title": "Deleted files",
-          "icon": "trash-2"
-        },
-        {
-          "type": "item",
           "title": "Settings",
           "icon": "settings"
+        },
+        {
+          "type": "item",
+          "title": "Hotkeys",
+          "icon": "keyboard"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "View details",
+          "icon": "info"
+        },
+        {
+          "type": "item",
+          "title": "Open community page",
+          "icon": "globe"
+        },
+        {
+          "type": "item",
+          "title": "Donate",
+          "icon": "heart"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Show in system explorer",
+          "icon": "folder-open"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Uninstall",
+          "icon": "trash-2"
         }
       ],
       "hiddenItems": [],
       "hiddenSeparators": [],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793805682026
+      "lastSeenAt": 1793952790278
     }
   },
   "copyAbsolutePath": false

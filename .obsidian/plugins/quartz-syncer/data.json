@@ -31,7 +31,7 @@
   "useAutoCardLink": false,
   "useDataview": true,
   "useDatacore": false,
-  "useExcalidraw": true,
+  "useExcalidraw": false,
   "useFantasyStatblocks": false,
   "useBases": false,
   "useCanvas": false,
