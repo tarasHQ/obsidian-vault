@@ -79,14 +79,6 @@
         },
         {
           "type": "item",
-          "title": "Open version history",
-          "icon": "history"
-        },
-        {
-          "type": "separator"
-        },
-        {
-          "type": "item",
           "title": "Open in default app",
           "icon": "arrow-up-right"
         },
@@ -138,7 +130,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793952381276
+      "lastSeenAt": 1793957910965
     },
     "dom:tab-header": {
       "signature": "dom:tab-header",
@@ -440,11 +432,6 @@
           "icon": "globe"
         },
         {
-          "type": "item",
-          "title": "Donate",
-          "icon": "heart"
-        },
-        {
           "type": "separator"
         },
         {
@@ -465,7 +452,7 @@
       "hiddenSeparators": [],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793952790278
+      "lastSeenAt": 1793957742957
     }
   },
   "copyAbsolutePath": false
