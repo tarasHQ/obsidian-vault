@@ -1,20 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "November 5th Thu",
-      "path": "@journal/01 Daily/2026/11-November/November 5th Thu.md"
+      "basename": "November 7th Sat",
+      "path": "@journal/01 Daily/2026/11-November/November 7th Sat.md"
+    },
+    {
+      "basename": "_plan_003",
+      "path": "@projects/taras.life/__obsidian__/phases/003/_plan_003.md"
+    },
+    {
+      "basename": "01-visual-test-pages",
+      "path": "@projects/taras.life/__obsidian__/phases/003/steps/01-visual-test-pages.md"
+    },
+    {
+      "basename": "Ideas",
+      "path": "@projects/taras.life/Social/Ideas.md"
     },
     {
       "basename": "November 6th Fri",
       "path": "@journal/01 Daily/2026/11-November/November 6th Fri.md"
     },
     {
-      "basename": "proxmox",
-      "path": "Maintenance/proxmox.md"
+      "basename": "November 5th Thu",
+      "path": "@journal/01 Daily/2026/11-November/November 5th Thu.md"
     },
     {
-      "basename": "_plan_003",
-      "path": "@projects/taras.life/__obsidian__/phases/003/_plan_003.md"
+      "basename": "proxmox",
+      "path": "Maintenance/proxmox.md"
     },
     {
       "basename": "[T]daily-journaling",
@@ -187,10 +199,6 @@
     {
       "basename": "01-groundwork",
       "path": "@projects/taras.life/__obsidian__/phases/002/steps/01-groundwork.md"
-    },
-    {
-      "basename": "[T]step-start",
-      "path": "@system/projects/_templater/[T]step-start.md"
     }
   ],
   "omittedPaths": [],
