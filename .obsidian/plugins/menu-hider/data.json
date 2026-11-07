@@ -410,49 +410,36 @@
       "entries": [
         {
           "type": "item",
-          "title": "Settings",
-          "icon": "settings"
+          "title": "🪪 Rename"
         },
         {
           "type": "item",
-          "title": "Hotkeys",
-          "icon": "keyboard"
+          "title": "📤 Export"
+        },
+        {
+          "type": "item",
+          "title": "🧬 Duplicate"
         },
         {
           "type": "separator"
         },
         {
           "type": "item",
-          "title": "View details",
-          "icon": "info"
-        },
-        {
-          "type": "item",
-          "title": "Open community page",
-          "icon": "globe"
+          "title": "📡 Fetch remote settings"
         },
         {
           "type": "separator"
         },
         {
           "type": "item",
-          "title": "Show in system explorer",
-          "icon": "folder-open"
-        },
-        {
-          "type": "separator"
-        },
-        {
-          "type": "item",
-          "title": "Uninstall",
-          "icon": "trash-2"
+          "title": "🗑 Delete"
         }
       ],
       "hiddenItems": [],
       "hiddenSeparators": [],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793957742957
+      "lastSeenAt": 1793981949551
     }
   },
   "copyAbsolutePath": false

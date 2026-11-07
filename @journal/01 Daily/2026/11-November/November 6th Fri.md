@@ -8,43 +8,11 @@ journal-date: 2026-11-06
 ```
 
 ---
-
-```meta-bind-button
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-	- [ ] Check audio delay to webcam
-	- [ ] Check TickTick schedule (correct day, scheduled)
-	- [ ] Set time of next sleep for stager timer.
-	- Obsidian
-		- [ ] Write overview of the current day
-		- [ ] Create journal for the next day
-		- [ ] Move uncompleted tasks
-		- [ ] Make sure all day's reflections are linked under reflections
-		- [ ] Delete Dream Analysis block if empty
-		- [ ] Delete other blocks if empty (task/reflections)
-	- [ ] Night scene
-	- [ ] Check IP cam (quality, delay)
-		- [ ] Enable sleep blur
-	- [ ] monitor OFF (seems like keeping on makes him die faster)
-	- Cat
-		- [ ] Clean up cat's litter box
-		- [ ] Food + plate is in my room at the shelf 
-			%%(to feed right away and not be distracted by her)%%
-	- [ ] Make sure there's tomorrow's food out of the freezer.
-
----
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-Remove. Goal of the overview is condense a day into a key points. Don't start with reflections/ideas/etc. Just condense.
+Lots of indulgence. That's pretty much the whole day. Nights as usual get a bit enthusiastic, but it's easy to have hope when you go to sleep, and won't work through the night. 
 
 ---
 
@@ -55,39 +23,6 @@ Remove. Goal of the overview is condense a day into a key points. Don't start wi
 > 
 >Approx. Compensation of Dreams - **No idea**
 >Had 3 dreams. Remember something. But just have it in me to properly analyze. Tried to think about them in the bed. Only one insight came out that I'll do to the template.
-
----
-
-## TASKS
-%%Cognitive offload for the day, to not keep these in my mind for the whole time%%
-- ### TODO
-	- [ ]  when you go sleep - create and leave big plan and your position in it. That's how you meaningfully will track higher scope. But be careful so your "cost" scope won't overfocus on this.
-		- Probably in excalidraw?
-	- [ ] Fix outliner plugin issues
-		- [ ] Css. Outline collapse indicators. Hide? Increase size of dots on hover. 
-		- [ ] Remove movable points. 
-	- [ ] Psychoanalysis would probably need separate folder. Not reflections though. Separate. Dream analysis included probably. To keep journals lean but with like easy links to go to these kind of things. 
-		- Why? Feels bloated. And chances are, with proper practice, you would want to expand on dream analysis some days after initial attempt. Same with psychoanalysis "sessions". So they must be like separate things to research/review. 
-			- Backlink to journal would be nice though, so you can see how session is integrated into the day (time log)
-	- [ ] Same hotkeys between two PC. 
-		- Probably try to go native as much as you can, and then have some small ahk helper script for the rest
-	- [ ] Mouse has 12 buttons. But actually customizable are like 3. Because 2 buttons for tv on/off to preserve organic diodes. And 3 for music control. 2 for back and forward. 1 for win menu. Not much left. 
-		- And if I had a modifier. Either through shift(but check conflicts with ahk) or through mouse buttons. Like rmb (if it's possible), then on rmb you can place rarely used functions. And have more buttons for actively used ones
-	- [ ] **META** Figure out where to accumulate such secondary tasks and where you can prioritize them, because flat list is stupid and limiting. 
-	- [ ] Ideally to go away from the minimal theme. It does add a lot of things that I don't use, and basically a deadweight. Like it's better to have 30 styles in CSS than like 2 plugins with 100 settings + a theme . 
-	- [ ] flow to compress png into webp from screenshot, so it won't harm neither website nor size of the vault. But also figure out if deskflow can do it, because right now it's half-supported. (or don't do it through deskflow)
-		- priority because it adds another dimension to thinking + cognitive offload. 
-	- [ ] Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
-	- [ ] 🔴[[plans/better-schedule-plan|better-schedule-plan]]
-- ### Completed
-	- [x] Your budget is limited but sync is important. Maybe selfhost livesync? 
-	- [ ] 
-
----
-
-## REFLECTIONS
-%%Thinking through writing is much better - there must be low-friction place to do so%%
-- 
 
 ---
 
@@ -105,6 +40,55 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 23:37
+	- Knowledge is true nourishment. I watched video from eternalised on puer aeternus. And it breathed in life into me. Books would do the same. As well as probably Peterson's lectures. Maybe work got boring because of absence of nourishment? Maybe that's why everything lost meaning? I'm not autonomously regulated by the society/community in this isolation. Absence of knowledge/learning kills self-regulation potential. My aim gets skewed. And 
+- ###### 22:37
+	- **What stops me from just working on what I have before me?** 
+		- Futility of such effort. Like ok, if I'm like that on secondary project, then the main project will just swallow me.
+		- And it's not that it's futilism, like it's proven fact, if I continue like that - I burn through this. And end up absolutely demoralized soon enough. Like there's just no good path for this.  
+- ###### 22:00
+	- How to not just stop and drop out from this? 
+	- I don't know what to do here.
+	- Like should I enforce almost tyrannical order?
+	- Should I have a day every 7-10 days where I just fly off the handle indulgence-wise?
+	- Should I just focus on short term what's under my nose?
+	- Should I just stop all indulgence completely? 
+	- And so on. There's  lot of should I. 
+- ###### 21:47
+	- Interesting that I kinda stopped being interested in those nordic music-rituals. Is there a connection or it's coincidence? 
+- ###### 20:01
+	- Jungian way is to sit in this tension OR do a next bit of work. But I would prefer to have a chronic mild toothache than this. Like it really feels as pain. It's hard to sit in this...
+	- Easy in theory by pretty hard in practice. 
+- ###### 19:56
+	- This shit is bad. Absolutely zero of meaning. Periods of meaninglessness get longer. This is an issue. Like I'm now considering gaming. 
+- ###### 19:37
+	- livesync works, now I have to check if it’s reliable
+- ###### 18:21
+	- Had a feast. Watched a movie. Don't know. Do I need to have such "day offs"? l*
+- ###### 15:26
+	- Made a bit of money on the side, and now just want to binge sweets. 0 hope, 0 meaning, so why the hell not?
+	- 
+	- At least the good things is that I order now - they ship it tomorrow, and I'll get it in 3-4 days from now. That at least there's that. But then there's a pizza... so yeah.. and I'm pretty hungry.
+	- So yeah... ordered. Won't dive into the guilt though. It is what it is. I have no meaning, so my perspective on things is different. 
+	- How to avoid it? Meal by 4th hour into the day. I'm at 6th right now. 
+- ###### 13:06
+	- More work... Not angry though. 
+- ###### 12:13
+	- The only issue with these things is that sometimes complexity creates a lot of headache. Like it may work for a month, and then it'll break or wipe my vault, or not save important notes, and I'll have to spend a lot of effort on fixing it.
+- ###### 12:09
+	- Also a bit angry about weight. I'm on this damn restricted diet and still not loosing any. 
+- ###### 12:01
+	- At least it works. Still frustrated. And really unsure about quality of this plugin. Because like there's a lot of things done half-assed in settings/gui. But will see. 
+	- In theory it's much more interesting than obsidian sync. Has higher update intervals. So it's more easier to tinker with snippets precisely, and not wait for a minute to update. And for now seems like it's working. But still scary a bit. Especially when I'll use phone/tablet, who are very often pretty outdated and have significant changes between files. But thanks to already set up git it's safe. 
+- ###### 11:51
+	- Damn I'm angry. 
+- ###### 11:40
+	- Angry, not much time left before that job thing will distract me again. 
+- ###### 11:15
+	- Getting angry a bit. There was issues with configuration live sync. I just allow it to get into my head. And then it messes up with me.
+- ###### 10:34
+	- Decided to have more granular time logs to be a bit more self-aware about this stuff. Starting now. 
+	- Have issues with livesync, seems like it'll be a bit of a headache to setup.
 - ###### 10:04
 	- Discouraged. But Obsidian Sync subscription ended. Now I'll try to do it through selfhosted sync.
 - ###### 02:18
