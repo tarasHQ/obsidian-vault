@@ -137,8 +137,8 @@ Warm brown/golden starting ramp landed in `theme.css` for light and dark, plus t
 ### %% ◉ [STEP 01 - Visual Test Pages](./steps/01-visual-test-pages.md) - IMPLEMENTED
 Vault set created at `C:/Users/Taras/Documents/obsidian-vault/_static/markdown-tests/` — index + 5 grouped pages (type, lists, code/tables/mermaid, callouts/links, background sandbox), all with stable `id` frontmatter and relative-only internal links. Synced into `content/_static/markdown-tests/`, built, confirmed in sitemap, and verified on production: listed, comments widget loading, SPA navigation working. Local serve loop confirmed; content-only, no code touched.%%
 
-### ◎ [STEP 00 - Start Of The Phase](./steps/00-start.md) - READY
-The flow is to start the planning in the right state of mind and with the properly prepared phase
+### %%◎ [STEP 00 - Start Of The Phase](./steps/00-start.md) - IMPLEMENTED
+The flow is to start the planning in the right state of mind and with the properly prepared phase%%
 
 
 

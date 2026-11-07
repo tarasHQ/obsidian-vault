@@ -20,11 +20,11 @@
   "uncolorDrag": false,
   "uncolorSelect": false,
   "uncolorQuick": false,
-  "maxBackups": 2,
+  "maxBackups": 9,
   "dialogState": {
     "iconMode": true,
     "emojiMode": true,
-    "rulePage": "file"
+    "rulePage": "folder"
   },
   "appIcons": {},
   "tabIcons": {},
@@ -41,7 +41,7 @@
       "conditions": [
         {
           "source": "name",
-          "operator": "is",
+          "operator": "contains",
           "value": "README"
         }
       ],
