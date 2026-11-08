@@ -143,10 +143,13 @@
 	- I got this idea from some astro blogs, IIRC. There it was nice. Maybe I can find those and see how it's done in details?
 ---
 
-## Pages & Contents %% fold %%
+## Pages & Contents
 - ### Doing Now
 	- Why?
 		- To connect the website with living human being. You read all those other website and they felt like footprint of dead people. While this "doing now" logic will allow to kinda unconsciously give the website more meaning. 
+	- ##### Fetching latest journaling log
+		- Without git. Probably obsidian cli on proxmox OR utilizing SMB syncing somehow? Like proxmox host only syncs from smb to specific lxc (to have single point of access. While other lxc provides endpoint for worker, or something. )
+		- It's actually beneficial for you too. To have more quality time logs. Where you reflect more. 
 	- ##### Spotify
 		- Sync Options
 			- `last.fm`
@@ -163,9 +166,10 @@
 			- Python script that fetches last recording and with ffmpeg extracts like 1/10 keyframes. Then either single webp OR gif, to have the picture like moving a bit.
 			- Cached with ttl 1-2 minutes.
 			- Worker fetches. OR you do that through website, but not good though, unnecessary traffic. While worker will allow to centralize asset requests.
-- ##### Changelog
+			- If there's no update at expected timestamp (+-5 seconds) - don't keep last image. Have placeholder instead. (if something explicit gets on camera and you shut down the recording? )
+- ##### Changelog %% fold %%
 	- Paged (10-20 entries?) list of git commits to website? 
-- ##### Charts
+- ##### Charts %% fold %%
 	- Types
 		- Weight loss
 		- Subjective life progress
@@ -174,7 +178,7 @@
 	* Logic
 		* PIA. At best you have to make some transformer plugin that manually finds daily journals and parses it into SVG chart. 
 		* Or you can use some lightweight charting library for minimal interactivity? 
-- ###### Decisions
+- ###### Decisions %% fold %%
 	- List of decisions and rationale 
 	- For you to remember.
 	- Examples
@@ -183,7 +187,7 @@
 		- Maybe it's worth to have it in system? So it's in one place?
 		- For readers to understand.
 - ##### Explorer
-	- ###### Limit depth of the explorer?
+	- ###### Limit depth of the explorer? %% fold %%
 		- Issue
 			- You will have pages with lots files. It's super inconvenient to explore them through "explorer". It's narrow and free space is limited.
 		- Solution?
@@ -195,19 +199,19 @@
 			- It's basically about how much you want to use indexes idea. 
 			- Like if - a lot, then explorer could be supplemental, and then it's easier.
 			- if not much - then explorer is main navigation tool, and it's a bit complex. 
-	- ###### Exclude folders & Files
+	- ###### Exclude folders & Files %% fold %%
 		- `@journals`
 			- Too much files and folders. No sense in having explorer navigation. At all. 
 		- `@projects`
 			- Same reasoning?
 		- `README.md` - for github.
-- #### Index Pages
+- #### Index Pages %% fold %%
 	- Issues
 		- Explorer, navigation, ux.
 	- Solution
 		- Example. System index page. Has cards linking to each sub-system folder. you don't have to list collapse/unfold explorer. Everything is on the page to explore and explorer is basically like top-level navigation.
 			- I like this. Very much. Low friction. And fits into my need for reducing cognitive complexity of structures I use.
-- ##### Created/Last updated
+- ##### Created/Last updated %% fold %%
 	- Description
 		- show created/last updated times to know how how old note and whether it's outdated
 		- I would argue that it's worth to do at the obsidian stage. updated though would be a bit harder... 
@@ -215,7 +219,7 @@
 		- Drop both maybe? Or keep only last updated. That's what matters to make old notes more alive. 
 	- ###### Git Sync
 		- There was few websites with this. It was nice, where you can like see commit history on the note. The issue only is with the positioning. Like if you would need to restructure vault - then it may be PIA to preserve commits on the note. But maybe not. Just be aware of it.
-- ###### Mermaid Diagrams
+- ###### Mermaid Diagrams %% fold %%
 	- I plan on using them. Later. 
 	- `pele` package was recommended on one website (with ref link though).
 		- You need fast and lightweight one. 

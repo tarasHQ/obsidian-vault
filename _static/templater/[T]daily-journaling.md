@@ -96,6 +96,7 @@ Remove. Goal of the overview is condense a day into a key points. Don't start wi
 ---
 
 ## TIME LOG
+==REPEAT The Project is dead. Website is priority. Stay in tension by avoiding indulgence==
 ```meta-bind-button {fold}
 label: New Log Entry
 style: default
@@ -105,6 +106,7 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+==REPEAT The Project is dead. Website is priority. Stay in tension by avoiding indulgence==
 
 ---
 

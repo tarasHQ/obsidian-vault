@@ -25,38 +25,6 @@ Awful another day full of indulgence and avoidance.
 
 ---
 
-## TASKS
-%%Cognitive offload for the day, to not keep these in my mind for the whole time%%
-- ### TODO
-	- [ ]  when you go sleep - create and leave big plan and your position in it. That's how you meaningfully will track higher scope. But be careful so your "cost" scope won't overfocus on this.
-		- Probably in excalidraw?
-	- [ ] Fix outliner plugin issues
-		- [ ] Css. Outline collapse indicators. Hide? Increase size of dots on hover. 
-		- [ ] Remove movable points. 
-	- [ ] Psychoanalysis would probably need separate folder. Not reflections though. Separate. Dream analysis included probably. To keep journals lean but with like easy links to go to these kind of things. 
-		- Why? Feels bloated. And chances are, with proper practice, you would want to expand on dream analysis some days after initial attempt. Same with psychoanalysis "sessions". So they must be like separate things to research/review. 
-			- Backlink to journal would be nice though, so you can see how session is integrated into the day (time log)
-	- [ ] Same hotkeys between two PC. 
-		- Probably try to go native as much as you can, and then have some small ahk helper script for the rest
-	- [ ] Mouse has 12 buttons. But actually customizable are like 3. Because 2 buttons for tv on/off to preserve organic diodes. And 3 for music control. 2 for back and forward. 1 for win menu. Not much left. 
-		- And if I had a modifier. Either through shift(but check conflicts with ahk) or through mouse buttons. Like rmb (if it's possible), then on rmb you can place rarely used functions. And have more buttons for actively used ones
-	- [ ] **META** Figure out where to accumulate such secondary tasks and where you can prioritize them, because flat list is stupid and limiting. 
-	- [ ] Ideally to go away from the minimal theme. It does add a lot of things that I don't use, and basically a deadweight. Like it's better to have 30 styles in CSS than like 2 plugins with 100 settings + a theme . 
-	- [ ] flow to compress png into webp from screenshot, so it won't harm neither website nor size of the vault. But also figure out if deskflow can do it, because right now it's half-supported. (or don't do it through deskflow)
-		- priority because it adds another dimension to thinking + cognitive offload. 
-	- [ ] Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
-	- [ ] ==For time logging - maybe it's worth to add input box/completion box for evaluating meaningfulness? Like score 0 to 5==
-		- It'll be a bit hard though to have a precise measurement...
-	- [ ] 🔴[[plans/better-schedule-plan|better-schedule-plan]]
-
----
-
-## REFLECTIONS
-%%Thinking through writing is much better - there must be low-friction place to do so%%
-- 
-
----
-
 ## TIME LOG
 ```meta-bind-button {fold}
 label: New Log Entry

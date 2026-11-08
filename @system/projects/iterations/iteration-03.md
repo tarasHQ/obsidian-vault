@@ -3,8 +3,6 @@
 	- Run LLM task on the projects directory to make sure everything is aligned. Very useful for this amount of details.
 
 ## Issues
-- [ ] **Make LLM output reasoning conclusion to compensate for absent reasoning block** %% fold %%
-	- The issue is that while it's insane context size saver - it kinda makes context too dense even? So maybe through the system prompt you should enforce some kind of reasoning conclusion output on every turn, so LLM won't re-reason on same things.
 - [ ] **Writing temporary artifacts may be distracting** %% fold %%
 	- The issue is that I'm not using auto approval. It's like a swipe for tiktok? A major pathological functionality. But then it means when it runs those first steps of flow where it explores -> brainstorms -> explores -> answers - there's 2 points where it'll ask for confirmation. 
 	- But I doubt I can do anything low-effort about it. 
@@ -21,7 +19,16 @@
 ## Big Issues
 - [ ] **What about code-review explanation/exam when I'm hopeless?** %% fold %%
 	- Right know I don't want to do this. It feels as a chore. I'm not interested. How to deal with it to not just ignore/skip.
-
+- [ ] **Code-review missed a bug**
+	- Maybe it needs separate flows for bug-searching? 
+	- Because if you point it at 15 things - it's easier to miss important ones. 
+- [ ] [HUGE]**Make LLM output reasoning conclusion to compensate for absent reasoning block** %% fold %%
+	- The issue is that while it's insane context size saver - it kinda makes context too dense even? So maybe through the system prompt you should enforce some kind of reasoning conclusion output on every turn, so LLM won't re-reason on same things.
+- [ ] **Update the system prompt** %% fold %%
+	- You didn't reviewed it for a long time. 
+	- [ ] Change default model
+	- [ ] Remove useless stuff
+	- [ ] Autoregressive search + meta answer - useful? Or include reasoning offload in those?
 ## Ideas
 - [ ] **DECISIONS.md** (Questionable) %% fold %%
 	- Idea is to lock some decisions in SSOT. 
