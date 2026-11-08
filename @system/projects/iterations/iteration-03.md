@@ -18,6 +18,10 @@
 	- Right now it doesn't think much. Or explore. It just writes those steps. Add in the loop some context generation. 
 	- Seems like just asking to reason more does the job
 
+## Big Issues
+- [ ] **What about code-review explanation/exam when I'm hopeless?** %% fold %%
+	- Right know I don't want to do this. It feels as a chore. I'm not interested. How to deal with it to not just ignore/skip.
+
 ## Ideas
 - [ ] **DECISIONS.md** (Questionable) %% fold %%
 	- Idea is to lock some decisions in SSOT. 
