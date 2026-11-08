@@ -89,5 +89,13 @@ A task that is purely focused on quality of code of the implemented step.
 	- [ ] **F2** - [LLM]
 		- Implementing locked-in points from review and fixing the code
 	- [ ] **F3** - [LLM]
-		- Making sure that the plan and steps are aligned with results of the current flow
+		- Aligning plan and steps with results of the review:
+			- Step files: unrestricted — record outcomes, decisions, loop items there.
+			- Plan: CONTRADICTION FIXES ONLY. If the plan's description of the step
+			  is factually wrong (e.g. counts of what was done) — correct it to match
+			  the step file, keeping the plan's existing level of detail on HIGH-LEVEL.
+			- NEVER copy review outcomes, open loop items, code-level details
+			  (selectors, values, mechanisms) into the plan or step description —
+			  those live in the step file. If a loop item needs to survive, it goes
+			  into the step file's own section, not the plan.
 - ### The End

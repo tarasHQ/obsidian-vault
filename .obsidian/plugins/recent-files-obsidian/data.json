@@ -1,20 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "November 7th Sat",
-      "path": "@journal/01 Daily/2026/11-November/November 7th Sat.md"
+      "basename": "README",
+      "path": "_static/scripts/README.md"
     },
     {
       "basename": "_plan_003",
       "path": "@projects/taras.life/__obsidian__/phases/003/_plan_003.md"
     },
     {
-      "basename": "01-visual-test-pages",
-      "path": "@projects/taras.life/__obsidian__/phases/003/steps/01-visual-test-pages.md"
+      "basename": "_project",
+      "path": "@projects/taras.life/__obsidian__/_project.md"
+    },
+    {
+      "basename": "implementing-steps",
+      "path": "@system/projects/shared/flows/implementing-steps.md"
+    },
+    {
+      "basename": "code-review",
+      "path": "@system/projects/shared/flows/code-review.md"
+    },
+    {
+      "basename": "Capture",
+      "path": "@projects/taras.life/__obsidian__/ideas/Capture.md"
     },
     {
       "basename": "Ideas",
       "path": "@projects/taras.life/Social/Ideas.md"
+    },
+    {
+      "basename": "November 7th Sat",
+      "path": "@journal/01 Daily/2026/11-November/November 7th Sat.md"
+    },
+    {
+      "basename": "01-visual-test-pages",
+      "path": "@projects/taras.life/__obsidian__/phases/003/steps/01-visual-test-pages.md"
     },
     {
       "basename": "November 6th Fri",
@@ -35,10 +55,6 @@
     {
       "basename": "iteration-03",
       "path": "@system/projects/iterations/iteration-03.md"
-    },
-    {
-      "basename": "implementing-steps",
-      "path": "@system/projects/shared/flows/implementing-steps.md"
     },
     {
       "basename": "November 4th Wed",
@@ -77,10 +93,6 @@
       "path": "@system/projects/shared/flows/initial-planning.md"
     },
     {
-      "basename": "code-review",
-      "path": "@system/projects/shared/flows/code-review.md"
-    },
-    {
       "basename": "[T]plan",
       "path": "@system/projects/_templater/[T]plan.md"
     },
@@ -91,10 +103,6 @@
     {
       "basename": "scorched-earth-critique",
       "path": "@system/projects/shared/flows/scorched-earth-critique.md"
-    },
-    {
-      "basename": "Capture",
-      "path": "@projects/taras.life/__obsidian__/ideas/Capture.md"
     },
     {
       "basename": "step-template",
@@ -133,10 +141,6 @@
       "path": "@system/_system.canvas"
     },
     {
-      "basename": "_project",
-      "path": "@projects/taras.life/__obsidian__/_project.md"
-    },
-    {
       "basename": "attack-surface-7k2f",
       "path": "@projects/taras.life/__obsidian__/phases/_archived/002/artifacts/attack-surface-7k2f.md"
     },
@@ -155,10 +159,6 @@
     {
       "basename": "semantic-review",
       "path": "@projects/taras.life/__obsidian__/phases/_archived/002/artifacts/semantic-review.md"
-    },
-    {
-      "basename": "README",
-      "path": "_static/scripts/README.md"
     },
     {
       "basename": "November 3rd Tue",
