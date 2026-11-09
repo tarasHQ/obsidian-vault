@@ -8,43 +8,11 @@ journal-date: 2026-11-08
 ```
 
 ---
-
-```meta-bind-button
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-	- [ ] Check audio delay to webcam
-	- [ ] Check TickTick schedule (correct day, scheduled)
-	- [ ] Set time of next sleep for stager timer.
-	- Obsidian
-		- [ ] Write overview of the current day
-		- [ ] Create journal for the next day
-		- [ ] Move uncompleted tasks
-		- [ ] Make sure all day's reflections are linked under reflections
-		- [ ] Delete Dream Analysis block if empty
-		- [ ] Delete other blocks if empty (task/reflections)
-	- [ ] Night scene
-	- [ ] Check IP cam (quality, delay)
-		- [ ] Enable sleep blur
-	- [ ] monitor OFF (seems like keeping on makes him die faster)
-	- Cat
-		- [ ] Clean up cat's litter box
-		- [ ] Food + plate is in my room at the shelf 
-			%%(to feed right away and not be distracted by her)%%
-	- [ ] Make sure there's tomorrow's food out of the freezer.
-
----
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-Remove. Goal of the overview is condense a day into a key points. Don't start with reflections/ideas/etc. Just condense.
+A bit better. Managed to have productive work at least for a few hours. Biggest win is that this day wasn't the day when I gave up. 
 
 ---
 
@@ -54,41 +22,6 @@ Remove. Goal of the overview is condense a day into a key points. Don't start wi
 >Time Spent in Bed - **High**
 > 
 >Approx. Compensation of Dreams - **Lots of dreams. No idea though.**
-
----
-
-## TASKS
-%%Cognitive offload for the day, to not keep these in my mind for the whole time%%
-- ### TODO
-	- [ ]  when you go sleep - create and leave big plan and your position in it. That's how you meaningfully will track higher scope. But be careful so your "cost" scope won't overfocus on this.
-		- Probably in excalidraw?
-	- [ ] Fix outliner plugin issues
-		- [ ] Css. Outline collapse indicators. Hide? Increase size of dots on hover. 
-		- [ ] Remove movable points. 
-	- [ ] Psychoanalysis would probably need separate folder. Not reflections though. Separate. Dream analysis included probably. To keep journals lean but with like easy links to go to these kind of things. 
-		- Why? Feels bloated. And chances are, with proper practice, you would want to expand on dream analysis some days after initial attempt. Same with psychoanalysis "sessions". So they must be like separate things to research/review. 
-			- Backlink to journal would be nice though, so you can see how session is integrated into the day (time log)
-	- [ ] Same hotkeys between two PC. 
-		- Probably try to go native as much as you can, and then have some small ahk helper script for the rest
-	- [ ] Mouse has 12 buttons. But actually customizable are like 3. Because 2 buttons for tv on/off to preserve organic diodes. And 3 for music control. 2 for back and forward. 1 for win menu. Not much left. 
-		- And if I had a modifier. Either through shift(but check conflicts with ahk) or through mouse buttons. Like rmb (if it's possible), then on rmb you can place rarely used functions. And have more buttons for actively used ones
-	- [ ] **META** Figure out where to accumulate such secondary tasks and where you can prioritize them, because flat list is stupid and limiting. 
-	- [ ] Ideally to go away from the minimal theme. It does add a lot of things that I don't use, and basically a deadweight. Like it's better to have 30 styles in CSS than like 2 plugins with 100 settings + a theme . 
-	- [ ] flow to compress png into webp from screenshot, so it won't harm neither website nor size of the vault. But also figure out if deskflow can do it, because right now it's half-supported. (or don't do it through deskflow)
-		- priority because it adds another dimension to thinking + cognitive offload. 
-	- [ ] Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
-	- [ ] ==For time logging - maybe it's worth to add input box/completion box for evaluating meaningfulness? Like score 0 to 5==
-		- It'll be a bit hard though to have a precise measurement...
-	- [ ] 🔴[[plans/better-schedule-plan|better-schedule-plan]]
-- ### Completed
-	- [ ] copy_from_here
-	- [ ] 
-
----
-
-## REFLECTIONS
-%%Thinking through writing is much better - there must be low-friction place to do so%%
-- 
 
 ---
 
@@ -102,6 +35,9 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 01:26
+	- Yeah, so towards the night it got worse, indulgence-wise. Those flows or whatever just suck the joy out. That's the issue. Like I had enough meaning to go through the day and that existential crisis without the indulgence. But as soon as I started to actually work - like 90 minutes in and I'm done. It's not looking good.
+	- So what I had to do? Well... usual mantra. Stay in tension. If there's no meaning - it's on purpose. 
 - ###### 23:52
 	- More issues. It's just so discouraging. I'm really tired to have any obstacle just de-rail me. 
 - ###### 23:26

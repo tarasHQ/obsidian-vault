@@ -22,6 +22,8 @@
 - [ ] **Code-review missed a bug**
 	- Maybe it needs separate flows for bug-searching? 
 	- Because if you point it at 15 things - it's easier to miss important ones. 
+	- > push further and refine flows, because there's obvious gap between writing steps/implementing steps. Like you can push it further, and have code review BEFORE implementation. 
+	- I think that maybe writing code should be on writing steps phase? Like what if writing steps will write snippets of code in addition to current description of tasks. Then implementing steps starts from code-review. It refines implementation. And implementation itself becomes purely mechanical. 
 - [ ] [HUGE]**Make LLM output reasoning conclusion to compensate for absent reasoning block** %% fold %%
 	- The issue is that while it's insane context size saver - it kinda makes context too dense even? So maybe through the system prompt you should enforce some kind of reasoning conclusion output on every turn, so LLM won't re-reason on same things.
 - [ ] **Update the system prompt** %% fold %%

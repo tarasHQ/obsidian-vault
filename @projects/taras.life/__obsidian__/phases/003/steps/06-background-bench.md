@@ -58,3 +58,21 @@ The deliverable is a **lived-with verdict, not a feature**. Every variant gets i
 - [ ] **Record verdicts** in the plan's Exploration notes: gradient fixed/scrolling/none; grain yes/no (+ source decision); any per-mode intensity notes.
 - [ ] **Delete the losers**: remove losing variants' CSS and variables; if "none" wins — remove the mechanism entirely and restore the simple solid background; leave `theme.css`/`base.css` cleaner than the experiment found them.
 - [ ] **Final pass**: `npm run check` green; quick full-mode visual sweep after deletions.
+
+---
+
+## Implementation Log
+
+### Done
+- **Baseline read**: base color lived on `body` (`background-color: var(--light)`) — the visibility trap applies; carrier moved to `html`, body left transparent (value still SSOT'd as `var(--light)` in theme.css). Stylesheet-wide checks: no transform/filter/perspective/will-change on html/body (containing-block clear), no other html/body background declarations, no pre-existing print blocks, no existing pseudo-elements on html/body. Progress bar at 9999 confirmed in base.css.
+- **Mechanism implemented**: `body::before` (fixed gradient layer) + `body::after` (fixed grain layer — SVG `feTurbulence` data-URI, desaturated, 160px tile, opacity via var) at `z-index: -1`; per-mode gradient + grain vars in all three theme.css mode blocks; `@media print` hides both layers. Deployed as E1 (fixed gradient, grain off).
+- **VERDICT 1 — grain: DEAD.** Tried on production by the user (incl. hand-tuning `--grain-opacity: 0.05` in dark) — creates more issues than improvements; deleted unconditionally: `body::after`, `--grain-opacity` from all mode blocks, the data-URI, the print-guard half, and all grain mentions from comments. Verdict was by living with it, not by argument.
+- **VERDICT 2 (in progress) — fixed gradient: superseded by the scrolling variant.** E1 lived with; user chose to move on to the scrollable form rather than keep the fixed one.
+- **E3 implemented (variant B, chosen explicitly):** the layer is now `body::before` at `position: absolute`, containing block = `body` (`position: relative` added to body), **one viewport tall** (`height: 100vh`), gradient runs top → bottom from `var(--bg-grad-top)` INTO the base color — the gradient's bottom endpoint IS `--light`, so everything below the initial viewport is seamless solid background (no hard edge). Direction inverted vs E1 per user's choice: darkest at the very top, fading down into solid. `--bg-grad-bottom` and `--grain-opacity` deleted from all mode blocks; only `--bg-grad-top` remains per mode (light `#f0e7d7`, dark `#100e0b`, dark-low `#1b1712` — reused E1 tones as starting points).
+- Containing-block safety for the `body{position:relative}` change verified: the only `position: absolute` elements (theme-toggle icon, checkbox ::after) resolve against their own nearest positioned ancestor, and the popover is fixed inside body without transform-bearing ancestors — nothing re-parents.
+- **Mechanical verification done by LLM** (cascade/stacking reasoning + stylesheet-wide greps). Build/tests NOT run — no shell in this environment: user must run `npm run check` + `npm test` (theme parser pins live-file values; additions are var-only, expected safe) before pushing. Visual verification happens on production.
+
+### Remaining switchboard
+- **Continue judging E3/B**: live with the one-viewport wash on real pages + phone; dark-low's shifted top endpoint specifically.
+- **None wins**: delete `body::before` + the print guard + the `--bg-grad-top` vars; move `background-color: var(--light)` back to `body`, drop it from `html`, drop `position: relative` from body.
+- Open observation for the verdicts: light mode carries the wash too — scoping it to dark modes only is a legitimate outcome.
