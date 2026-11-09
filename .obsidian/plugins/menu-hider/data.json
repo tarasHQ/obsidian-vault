@@ -218,6 +218,37 @@
       "entries": [
         {
           "type": "item",
+          "title": "razzing",
+          "icon": "repeat"
+        },
+        {
+          "type": "item",
+          "title": "razing",
+          "icon": "repeat"
+        },
+        {
+          "type": "item",
+          "title": "frizzing",
+          "icon": "repeat"
+        },
+        {
+          "type": "item",
+          "title": "fizzing",
+          "icon": "repeat"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Add to dictionary",
+          "icon": "folder-tree"
+        },
+        {
+          "type": "separator"
+        },
+        {
+          "type": "item",
           "title": "Add link",
           "icon": "link"
         },
@@ -228,6 +259,11 @@
         },
         {
           "type": "separator"
+        },
+        {
+          "type": "item",
+          "title": "Search for “rizzing”",
+          "icon": "search"
         },
         {
           "type": "item",
@@ -294,7 +330,7 @@
       ],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1794052221781
+      "lastSeenAt": 1794263997774
     },
     "event:file-menu-folder": {
       "signature": "event:file-menu-folder",
@@ -410,36 +446,57 @@
       "entries": [
         {
           "type": "item",
-          "title": "🪪 Rename"
-        },
-        {
-          "type": "item",
-          "title": "📤 Export"
-        },
-        {
-          "type": "item",
-          "title": "🧬 Duplicate"
+          "title": "All snippets · 9 of 10 on"
         },
         {
           "type": "separator"
         },
         {
           "type": "item",
-          "title": "📡 Fetch remote settings"
-        },
-        {
-          "type": "separator"
+          "title": "00-vars"
         },
         {
           "type": "item",
-          "title": "🗑 Delete"
+          "title": "10-typography"
+        },
+        {
+          "type": "item",
+          "title": "20-editor"
+        },
+        {
+          "type": "item",
+          "title": "25-media"
+        },
+        {
+          "type": "item",
+          "title": "30-workspace"
+        },
+        {
+          "type": "item",
+          "title": "40-navigation"
+        },
+        {
+          "type": "item",
+          "title": "50-canvas"
+        },
+        {
+          "type": "item",
+          "title": "60-plugins"
+        },
+        {
+          "type": "item",
+          "title": "99-archive"
+        },
+        {
+          "type": "item",
+          "title": "100-recording-pc"
         }
       ],
       "hiddenItems": [],
       "hiddenSeparators": [],
       "order": [],
       "promoted": [],
-      "lastSeenAt": 1793981949551
+      "lastSeenAt": 1794262855882
     }
   },
   "copyAbsolutePath": false

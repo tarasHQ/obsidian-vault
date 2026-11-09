@@ -10,32 +10,6 @@ journal-date: 2026-11-09
 ---
 
 ```meta-bind-button
-label: Remove Morning Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### MORNING CHECKLIST
-    - [x] Air out the room %%lower oxygen levels and may affect you, triphasic breathing if you're cold%%
-    - [x] Day scene
-    - [x] Check webcam (exposure)
-    - [x] Check IP cam (quality, delay)
-        - [x] Reconnect to reset delay
-        - [x] Disable sleep blur
-    - [x] Check all elements are present on the canvas
-    - [x] Check TickTick schedule 
-        - [x] correct day, scheduled, scaled
-        - [x] red "now" line is there
-    - [x] Start stager timer
-    - Obsidian
-        - [x] Reload.
-        - [x] Fill Context block.
-        - [x] Split down. Have ~10 lines of time log.
-
-```meta-bind-button
 label: Remove Night Checklist
 style: default
 icon: trash-2
@@ -83,7 +57,7 @@ Remove. Goal of the overview is condense a day into a key points. Don't start wi
 >Approx. Compensation of Dreams - **No idea**
 >Woke up with 3/4 of my leg being numb, got anxious, 0 memories of dreams after.
 
----
+---   
 
 ## TASKS
 %%Cognitive offload for the day, to not keep these in my mind for the whole time%%
@@ -131,6 +105,28 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 22:25
+	- Worked a bit on this. But speed is basically absent. Finished the step, fixed few bugs. But it's not true work. This half-assery won't bring me anywhere
+- ###### 19:52
+	- Yeah, it's even harder to get back into the flow. Than to not drop out from it. 
+- ###### 19:31
+	- And you know - it's simple. If you didn't pmo => you wouldn't delay meal => you wouldn't order fast food because you got too hungry and pleasure-seeking => you wouldn't waste 6-7 hours of your life => you wouldn't be completely wasted by this time. But it's damn hard to see/remember it in the moment.
+- ###### 19:28
+	- 4 hours it cost me. Well. 4-5 hours. Or 5-6. 
+	- And I just can't honestly say it wasn't worth it. I forgot my issues/tasks/pressure. I just dissolved into things I was watch watching. And now I'm sad and nostalgic for those times. 
+- ###### 15:30
+	- Eh. Almost managed it. But PMO, then sweets got delayed. Then decided to order fast food again.
+	- Do I now that what I'm doing is bad? Like practically, financially, etc. ? - yeah, it's pretty obviously bad.
+	- Then why you're doing it? - I won't say anything new. There's no reason to NOT do it. It's the same that Peterson said - key question is not why people doing drugs, it's obvious. Key question is why NOT everyone doing drugs all the time. And I don't have an answer to that question.
+	- Like my best best is that I somehow manage to crawl towards the end of website project, then I'll get super lucky and bring some people in my life, and then, hopefully, I'll have enough meaning. That's a long road ahead though. 
+		- But like what can I do right now to not indulge? Like at some point I just stop caring and indulgence becomes an obvious choice. Like I'm hungry, a bit anxious, avoidant. Why wouldn't I indulge to deal with sorrows of my life? 
+		- Long term consequences? - Well. I just don't see long-term right now. Nor believe in it. What can I do? 
+	- Ok. At least can we have a work after? - You know that we can't. Like you already download that tv show + a movie. You'll just dive in and get out probably at late night. So yeah. It is what is.
+	- How can I prevent this? Piece of paper. Draw consequences of single misfire. And pray to God that you can handle it. Like you want to indulge, and it would be perfectly fine if you had meaning, but without that - you indulge and then indulge more, and then more, until the day is wasted. So yeah. ==You can't afford a single sidestep on indulgence front, or everything else crumbles==
+- ###### 14:14
+	- Getting too hungry, might fall into indulgence again. Have to eat now.
+- ###### 14:03
+	- Ok. What happened when I didn't indulge and stayed in the tension?  Buried my project. Remembered why website matters. Hopefully using not better LLM for money. Was it worth it? No idea... I came back right to indulgence again. So seems like I missed the main point...
 - ###### 12:05
 	- Got gpt plus for free. There was an offer.
 	- Here's the thing. My project isn't ready to compensate such LLMs. It's doable, but it just creates too much resistance in my mind. I'll try to work with terra. It may be better value if it'll indeed give me those 500-700mil of tokens per week that someone calculated on reddit recently. 

@@ -10,11 +10,10 @@ Efficient and focused implementation of steps.
 - **99-end.md** can be used also to accumulate phase specific end-phase-task. Checks/evaluations/"things to come back to when the phase is done"/tests/end-of-phase-discussions/etc.
 - **EVERY WRITE INTO HIGH-LEVEL DOCS SHOULD CONSIDER ITS SCOPE** - you don't write about minute details into high-level plan or agents.md. 
 - **HIGH-LEVEL DOCS CARRY NO CODE FACTS** — the plan never contains selectors, property names, values, component names, or mechanisms. It answers "what and why at phase level"; step files answer "how". A plan edit longer than ~5 sentences(of avg. length) for one step is a smell — put it in the step file instead.
-- **No mentioning steps/phases in the code or non-phase .md files** - like "this will be done in step X phase Y", or that is completed in step X. Don't pollute general documents with steps and phases. Even comments in the code should mention those only where they're meaningful.
-
+- **No mentioning steps/phases in the code or non-phase .md files** - like "this will be done in step X phase Y", or that is completed in step X. Don't pollute general documents with steps and phases. Even comments in the code should mention those only where they're meaningful. 
 
 ---
-
+rizzing   
 ## Stages
 - ### A - The Exploration
 	- [ ] **A1** - [USER]

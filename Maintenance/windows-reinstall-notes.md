@@ -26,6 +26,8 @@
 - 📄`Obsidian` - Sync settings, editor settings, maybe per-device plugin settings? It doesn't sync ALL. So check it out.
 - `git` - .gitconfig to use noreplay mail
 - `Kaspersky` - Security settings -> Network Settings -> inject script into web traffic... , alongside with other useless stuff like Anti-Banner or Safe Money
+	- add into network's trusted addresses openrouter.ai / chatgpt.com / etc. so kaspersky won't use self-signed certificates.
+		- Or just disable scanning secure connection (used for useless protection)
 - `Microsoft Office` - https://config.office.com/deploymentsettings (download installer and place xml with `setup.exe /configuration test.xml`)
 
 ## Installation Process
