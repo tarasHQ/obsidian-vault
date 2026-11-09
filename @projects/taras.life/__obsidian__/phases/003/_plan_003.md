@@ -55,8 +55,8 @@ GROUP BY true
 		- `quartz/components/scripts/themeContract.ts` — SSOT of the JS-side theme contract: storage key, attribute, `THEME_MODES`, inline init + toggle scripts; `index.d.ts` points here for the `themechange` union.
 		- `quartz/components/styles/theme-toggle.css` — icon-switching CSS colocated with the toggle.
 	- ##### Modified Files
-		- `quartz/styles/theme.css` — palette SSOT: warm brown/golden starting ramp for light+dark; third hand-written `:root[saved-theme="dark-low"]` block (5 ramp vars overridden, chromatic shared verbatim, OG-contract comment); accent-tier `--heading-1..6` ladder in all three mode blocks (values = temporary starting plumbing, user-tuned).
-		- `quartz/styles/base.css` — link design language rework (pill removed; external solid / internal dashed / broken dashed+opacity / tags chip), per-level heading accent colors referencing the ladder vars, single `::selection` rule.
+		- `quartz/styles/theme.css` — palette, heading accents, and per-mode background colors.
+		- `quartz/styles/base.css` — typography, accent styling, and the chosen scrolling background.
 		- `quartz/styles/syntax.css` — dark Shiki rules widened to the explicit `[saved-theme="dark"], [saved-theme="dark-low"]` two-selector list.
 		- `quartz/util/theme.test.ts` — dark-low fixture block with comment-decoy; 2-palette contract test (`lightMode`/`darkMode` keys only, dark values from the dark block); SSOT real-file pins moved to the new hexes.
 	- ##### Deleted Files
@@ -66,7 +66,6 @@ GROUP BY true
 		- Repo
 			- `quartz/styles/theme.css` — SSOT of palette; will gain third `:root[saved-theme="dark-low"]` block (hand-written minimal derivation: text ramp + lifted `--light` background, chromatic shared with dark); ramp values iterated in browser.
 			- `quartz/styles/syntax.css` — dark Shiki rules get an explicit two-selector list `[saved-theme="dark"], [saved-theme="dark-low"]` (no prefix trick).
-			- `quartz/styles/base.css` — baked type-scale table (html 22px anchor), unitless line-height fix, article-scoped 80ch measure (NO escape hatch — wide blocks scroll internally), `text-wrap: balance` on headings, background experiments (step 06).
 			- `quartz/components/Head.tsx` — theme-color meta, SVG favicon + cheap apple-touch, inline zero-flash theme-init script rendered via `<script dangerouslySetInnerHTML>` (precedent: `quartz/components/pages/404.tsx`); currently links `static/icon.png`.
 			- New `quartz/components/ThemeToggle.tsx` (+ colocated contract module) — single owner of the JS-side theme contract: storage key, attribute, mode list, cycle, OS-seed rule, inline-init snippet, `themechange` dispatch, icon/`color-scheme` CSS.
 			- `quartz/plugins/emitters/componentResources.ts` — stylesheet assembly is `[...globalCss, theme, syntax, callouts, base].join()` wrapped in `@layer quartz-base`; adding a stylesheet file = one import + one array entry; `custom.css` stays outside the layer.
@@ -100,7 +99,6 @@ GROUP BY true
 		- The `unlisted: true` frontmatter flag exists (excluded from explorer/search/sitemap/RSS while still built) — test pages intentionally do NOT use it (published).
 		- Phantom deps post-mortem (step 03 review): `@quartz-community/utils` declares `github-slugger` as an OPTIONAL peer but imports it unconditionally at module top level — a packaging bug upstream. It only worked because darkmode/favicon/excalidraw transitively provided it. Any future dependency removal can re-expose undeclared peers: after removing a package, run the full `npm test` immediately, not just the build.
 	- **Locked HOW decisions (this flow):** toggle inserted via `loadQuartzLayout` (Head precedent) — not YAML, not frame JSX; `themechange` dispatches the RAW mode (remark42 narrows internally); stylesheet organization = hybrid (palette/accent vars in `theme.css`, rules in `base.css` or a new file — a new file costs one import + one array entry in the assembly); type scale BAKED as rem table; measure = 80ch absolute, no escape hatch; favicon/theme-color = JS-refined by the toggle + build-derived values via an additive `ThemeData` field.
-	- **Background bench is NOT a commitment:** the fixed pseudo-element (`body::before { position: fixed; inset: 0; z-index: -1 }`) is only the TESTING mechanism (avoids `background-attachment: fixed` mobile jank); gradient (fixed vs scrolling vs none) and grain (yes/no; doubles as banding dithering via SVG `feTurbulence`) are decided by living with them — verdict recorded, losers deleted. Z-index care: navigation progress bar is `9999`.
 	- **`color-scheme` ownership:** darkmode package's bundled CSS owns `color-scheme: dark/light` + toggle icon switching — must be re-owned by the local component CSS, easy to forget.
 	- **Contrast:** user checks manually (no audit script — rejected as headache given gradient plans). Serve loop already works and is tested.
 
@@ -122,8 +120,8 @@ Finalize the phase — meta-reflection on what worked, long-term knowledge extra
 ### ◎ [STEP 07 - Favicon & Meta](./steps/07-favicon-meta.md) - READY
 Tab favicon + `theme-color` + cheap apple-touch — strictly last, generated from the established look. Media-query pair ships as no-JS default; toggle JS-refines icon href + `theme-color` on every mode change; `theme-color` build-derived via an additive `ThemeData.chrome` field (og-image untouched, test pin added); icon variant granularity = light/dark pair (dark-low→dark, remark42-narrowing philosophy); wiring landed with placeholder icon first, generated art drops in without contract changes; prompt recorded in `ideas/parking.md`; scope guard: no logo, no OG rework, no full favicon pack.
 
-### ◎ [STEP 06 - Background Bench](./steps/06-background-bench.md) - READY
-Experiment step, not a build step — deliverable is a lived-with verdict: gradient (fixed/scrolling/none) + grain (yes/no, doubles as banding dither). Fixed pseudo-element mechanism (testing only, never `background-attachment: fixed`); visibility trap handled consciously (base color may move body→html); experiments sequenced gradient-alone → grain-as-dither → grain-alone; run on production (no previews — same working mode as published test pages); verdicts recorded, losers deleted, "none" is a legitimate outcome.
+### %%◉ [STEP 06 - Background Bench](./steps/06-background-bench.md) - IMPLEMENTED
+The scrolling gradient was chosen and grain discarded; the user observed no banding and reports `npm run check` green. Grain's effect on banding was not established, and print behavior remains unconfirmed.%%
 
 ### %%◉ [STEP 05 - Accent Layers](./steps/05-accent-layers.md) - IMPLEMENTED
 Link design decided explicitly with the user in one pass before any values: external = solid thin underline, internal = dashed (broken = dashed + 0.5 opacity), tag links = chip without underline; the internal-link pill and its images-in-links exception removed. Full h1–h6 heading color ladder landed as `--heading-1..6` accent vars across all three mode blocks (dark & dark-low share one set) with per-level colors in `base.css` — values are deliberate temporary plumbing for the user's own eyeball pass. Selection reworked to a single rule (`--secondary` 35% translucent, `color: inherit`) that composes correctly on all three backgrounds, replacing the white-alpha mix that washed out on dark-low.%%

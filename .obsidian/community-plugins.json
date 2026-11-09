@@ -1,5 +1,4 @@
 [
-  "close-and-switch-to-recent-tab",
   "code-space",
   "cmdr",
   "cursor-smith",
@@ -28,5 +27,6 @@
   "set-to-root",
   "obsidian-minimal-settings",
   "obsidian-style-settings",
-  "obsidian-livesync"
+  "obsidian-livesync",
+  "close-and-switch-to-recent-tab"
 ]
