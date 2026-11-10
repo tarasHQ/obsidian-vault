@@ -15,23 +15,6 @@
       "key": "S"
     }
   ],
-  "editor:fold-all": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "X"
-    }
-  ],
-  "editor:unfold-all": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "X"
-    }
-  ],
   "editor:toggle-numbered-list": [
     {
       "modifiers": [
@@ -161,6 +144,23 @@
         "Alt"
       ],
       "key": "5"
+    }
+  ],
+  "foldstate-dev:fold-list-outline": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "X"
+    }
+  ],
+  "foldstate-dev:unfold-list-outline": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "X"
     }
   ]
 }

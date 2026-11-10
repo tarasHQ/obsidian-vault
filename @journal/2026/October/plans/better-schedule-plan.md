@@ -1,6 +1,6 @@
 
 - Use colors to signify type of block, and use text to explain the block. Much better approach for more detailed schedule. low-friction too.
-- There's something unnatural in how it works right now. Like it helps with meals, but beyond that.... I don't really know. Though it's useful for the cvideo. 
+- There's something unnatural in how it works right now. Like it helps with meals, but beyond that.... I don't really know. Though it's useful for the video. 
 	- But is it? since it's compiled as I go and often updated retrospectively. 
 	- When I'll add timelapse at the beginning - it may be more helpful than I think.
 - Maybe I should try GCal again? 
@@ -41,10 +41,19 @@ And I feel like schedule should play a role here, but I'm not sure how that role
 	- and you can use single file for all. Like you schedule. When day is done -> export to png/svg/webp. And start from scratch (or scrap previous day.)
 - Stay in tick-tick, but optimize around the schedule.
 	- tags - by color, not by categories. So you just write `#red` instead of whatever tag has red color
-	- See if a new account would have selective collapsible night-block, that can hide from 02 to 07, for example
 	- maybe use css styler plugin to optimize web-version of ticktick for recording? 
 		- use css to hide notification popup. It's recording-only window.
 		- gray times don't matter, also they're awful after youtube compression. Hide and have more space for task text
 		- top block with month - too big
 
 ### What are you need from the schedule? 
+
+---
+## New day reflection
+- What if Change view? From calendar to agenda?
+	- Nah, daily is better
+- Ok, why you need schedule here? 
+- Track tasks. So I see how much I did. 
+- Make me more direct, like when I set a task in schedule - I work on it. I don't drift off. Without schedule it's harder because then it won't be honest. 
+- 15minutes granularity kinda limiting though. 
+- 

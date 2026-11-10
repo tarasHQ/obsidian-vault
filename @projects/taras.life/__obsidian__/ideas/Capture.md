@@ -6,7 +6,7 @@
 ![[_attachments/Pasted image 20261029220112.png|215]]![[_attachments/Pasted image 20261029220348.png|336]]
 
 ![[_attachments/Pasted image 20261029215947.png|107]]![[_attachments/Pasted image 20261029184519.png|419]]
-- ### Websites
+- ### Websites %% fold %%
 	- https://oliverfalvai.com/Evergreen/Inspiring-gardens - collections
 	- https://quartz.jzhao.xyz/showcase - collections
 	- https://28mm.coffee/mostly-how-i-built-this-site
@@ -16,14 +16,14 @@
 	- https://notes.dsebastien.net/50+Resources/55+Obsidian+Publish/README
 
 ## To NOT Do
-- ###### ⛔Long Lists (Flat or Not) in Explorer
+- ###### ⛔Long Lists (Flat or Not) in Explorer %% fold %%
 	- Explorer should contain only top-level things, because it's not suited to have like more than 50 entries. 
-- ###### ⛔Long loading of pages
+- ###### ⛔Long loading of pages %% fold %%
 	- A lot of navigation is involved in these kind of websites. So pages should be light. 
 	- Images probably should be loaded async + animation. 
-- ###### ⛔Lots of 404s or "not implemented" pages
+- ###### ⛔Lots of 404s or "not implemented" pages %% fold %%
 	- When I visiting such vault, it feels like the author doesn't care about my user experience of his website. 
-- ###### ⛔Buggy on different scales/layouts
+- ###### ⛔Buggy on different scales/layouts %% fold %%
 	- Some pages had table "getting out" from layout, other have awful reading experience on phones. Don't allow this on your website. Control and test.
 ## General / Meta
 - **Look at the website through the eyes of first-time visitor**
@@ -145,22 +145,22 @@
 
 ## Pages & Contents
 - ### Doing Now
-	- Why?
+	- Why? %% fold %%
 		- To connect the website with living human being. You read all those other website and they felt like footprint of dead people. While this "doing now" logic will allow to kinda unconsciously give the website more meaning. 
-	- ##### Fetching latest journaling log
+	- ##### Fetching latest journaling log %% fold %%
 		- Without git. Probably obsidian cli on proxmox OR utilizing SMB syncing somehow? Like proxmox host only syncs from smb to specific lxc (to have single point of access. While other lxc provides endpoint for worker, or something. )
 		- It's actually beneficial for you too. To have more quality time logs. Where you reflect more. 
-	- ##### Spotify
+	- ##### Spotify %% fold %%
 		- Sync Options
 			- `last.fm`
 			- `nowplaying.site`
 	- ##### TickTick Schedule
-		- ###### Cron on worker
+		- ###### Cron on worker %% fold %%
 			- fetches once per 5 minutes, stores at `KV`(or right away to baking), does baked-in snippet as asset, so it can be read without limits? 
-		- ###### Scheduling database? (LONG TERM)
+		- ###### Scheduling database? (LONG TERM) %% fold %%
 			- you had an idea to show on the side view ticktick schedule, during viewing journal entries. 
 			- what if worker uses r2 or something, and saves each viewed day? so not only you can view "doing now", but also have cached data for all journaling entries? 
-	- ##### 1-minute WebP/Gif Snippets
+	- ##### 1-minute WebP/Gif Snippets %% fold %%
 		- Logic
 			- Use comments infrastructure. 
 			- Python script that fetches last recording and with ffmpeg extracts like 1/10 keyframes. Then either single webp OR gif, to have the picture like moving a bit.
@@ -211,13 +211,14 @@
 	- Solution
 		- Example. System index page. Has cards linking to each sub-system folder. you don't have to list collapse/unfold explorer. Everything is on the page to explore and explorer is basically like top-level navigation.
 			- I like this. Very much. Low friction. And fits into my need for reducing cognitive complexity of structures I use.
-- ##### Created/Last updated %% fold %%
-	- Description
+- ##### Created/Last updated
+  %% folded comment to check if it'll preserve it %%
+	- **Description** %% fold %%
 		- show created/last updated times to know how how old note and whether it's outdated
 		- I would argue that it's worth to do at the obsidian stage. updated though would be a bit harder... 
-	- Opposition
+	- **Opposition** %% fold %%
 		- Drop both maybe? Or keep only last updated. That's what matters to make old notes more alive. 
-	- ###### Git Sync
+	- ###### Git Sync %% fold %%
 		- There was few websites with this. It was nice, where you can like see commit history on the note. The issue only is with the positioning. Like if you would need to restructure vault - then it may be PIA to preserve commits on the note. But maybe not. Just be aware of it.
 - ###### Mermaid Diagrams %% fold %%
 	- I plan on using them. Later. 

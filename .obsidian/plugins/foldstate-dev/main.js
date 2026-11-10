@@ -24,11 +24,6 @@ __export(main_exports, {
 });
 module.exports = __toCommonJS(main_exports);
 var import_obsidian = require("obsidian");
-var import_language2 = require("@codemirror/language");
-
-// src/fold-extension.ts
-var import_view = require("@codemirror/view");
-var import_language = require("@codemirror/language");
 
 // src/marker.ts
 var FOLD_MARKER = "%% fold %%";
@@ -72,7 +67,90 @@ function collectLineEdits(lines, pending) {
   return edits.sort((a, b) => a.line - b.line);
 }
 
+// src/list-outline.ts
+function indentation(whitespace) {
+  let column = 0;
+  for (const char of whitespace) {
+    column += char === "	" ? 4 - column % 4 : 1;
+  }
+  return column;
+}
+function isStructural(content) {
+  const text = removeFoldMarker(content).trim().replace(/^\[[^\]\r\n]\][ \t]+/, "");
+  return /^#{1,6}(?:[ \t]+|$)/.test(text) || /^\*\*(?!\s)(?:(?!\*\*).)+?(?<!\s)\*\*$/.test(text) || /^__(?!\s)(?:(?!__).)+?(?<!\s)__$/.test(text);
+}
+function getOutlineTargets(content, fold) {
+  const lines = content.split("\n");
+  const nodes = [];
+  const stack = [];
+  let inFrontmatter = lines[0]?.trim() === "---";
+  let fence = null;
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    if (inFrontmatter) {
+      if (i > 0 && /^(?:---|\.\.\.)[ \t]*$/.test(line))
+        inFrontmatter = false;
+      continue;
+    }
+    const fenceMatch = /^[ \t]*(`{3,}|~{3,})(.*)$/.exec(line);
+    if (fence) {
+      if (fenceMatch && fenceMatch[1][0] === fence.char && fenceMatch[1].length >= fence.length && !fenceMatch[2].trim()) {
+        fence = null;
+      }
+      continue;
+    }
+    if (fenceMatch) {
+      const indent2 = indentation(/^[ \t]*/.exec(line)[0]);
+      while (stack.length && indent2 <= stack[stack.length - 1].indent)
+        stack.pop();
+      for (const ancestor of stack) ancestor.hasNestedContent = true;
+      fence = { char: fenceMatch[1][0], length: fenceMatch[1].length };
+      continue;
+    }
+    if (!line.trim()) continue;
+    const match = /^([ \t]*)(?:[-*+]|\d{1,9}[.)])[ \t]+(.*)$/.exec(line);
+    const indent = indentation(/^[ \t]*/.exec(line)[0]);
+    while (stack.length && indent <= stack[stack.length - 1].indent)
+      stack.pop();
+    if (!match) {
+      for (const ancestor of stack) ancestor.hasNestedContent = true;
+      continue;
+    }
+    if (!stack.length && indent >= 4) continue;
+    const structural = isStructural(match[2]);
+    for (const ancestor of stack) {
+      ancestor.hasNestedContent = true;
+      if (structural) ancestor.hasStructuralDescendant = true;
+    }
+    const node = {
+      line: i,
+      indent,
+      structural,
+      hasNestedContent: false,
+      hasStructuralDescendant: false
+    };
+    nodes.push(node);
+    stack.push(node);
+  }
+  const targets = /* @__PURE__ */ new Map();
+  for (const node of nodes) {
+    if (!node.structural) continue;
+    if (!fold || node.hasStructuralDescendant)
+      targets.set(node.line, false);
+    else if (node.hasNestedContent) targets.set(node.line, true);
+  }
+  return targets;
+}
+function getOutlineEdits(content, targets) {
+  return collectLineEdits(content.split("\n"), targets);
+}
+
+// src/main.ts
+var import_language2 = require("@codemirror/language");
+
 // src/fold-extension.ts
+var import_view = require("@codemirror/view");
+var import_language = require("@codemirror/language");
 function iterFoldedRanges(rangeSet, lineAt) {
   const lines = /* @__PURE__ */ new Set();
   if (!rangeSet) return lines;
@@ -199,6 +277,22 @@ var CollapsiblePlugin = class extends import_obsidian.Plugin {
   /** Debounce timers for editor-change reconciles, keyed by editor. */
   reconcileTimers = /* @__PURE__ */ new WeakMap();
   onload() {
+    this.addCommand({
+      id: "fold-list-outline",
+      name: "Fold list outline",
+      editorCallback: (editor) => {
+        const cm = getCm(editor);
+        if (cm) this.applyListOutline(cm, true);
+      }
+    });
+    this.addCommand({
+      id: "unfold-list-outline",
+      name: "Unfold list outline",
+      editorCallback: (editor) => {
+        const cm = getCm(editor);
+        if (cm) this.applyListOutline(cm, false);
+      }
+    });
     this.registerEditorExtension([
       buildFoldExtension(
         (view, lineNum, folded) => this.handleFoldChange(view, lineNum, folded)
@@ -227,6 +321,24 @@ var CollapsiblePlugin = class extends import_obsidian.Plugin {
       })
     );
   }
+  /** Update only outline markers, then reconcile those lines immediately. */
+  applyListOutline(cm, fold) {
+    this.flushPendingEdits(cm);
+    const doc = cm.state.doc;
+    const content = doc.toString();
+    const targets = getOutlineTargets(content, fold);
+    const edits = getOutlineEdits(content, targets);
+    if (edits.length) {
+      cm.dispatch({
+        changes: edits.map(({ line, text }) => {
+          const current = doc.line(line + 1);
+          return { from: current.from, to: current.to, insert: text };
+        })
+      });
+    }
+    (0, import_language2.ensureSyntaxTree)(cm.state, cm.state.doc.length, 500);
+    this.reconcileEditor(cm, new Set(targets.keys()));
+  }
   /** Debounced reconcile for one editor; later calls reset the timer. */
   scheduleReconcile(cm, delayMs) {
     const prev = this.reconcileTimers.get(cm);
@@ -252,7 +364,7 @@ var CollapsiblePlugin = class extends import_obsidian.Plugin {
    * When the buffer is stale relative to disk this is a harmless no-op,
    * which is what makes the retry-based fallback below safe.
    */
-  reconcileEditor(cm) {
+  reconcileEditor(cm, onlyLines) {
     if (this.isSyncing) return;
     const markedLines = parseMarkedLines(cm.state.doc.toString());
     const currentFoldMap = getFoldRangeMap(cm.state);
@@ -260,14 +372,14 @@ var CollapsiblePlugin = class extends import_obsidian.Plugin {
     if (setsEqual(markedLines, currentLines)) return;
     const effects = [];
     for (const lineNum of markedLines) {
-      if (!currentLines.has(lineNum)) {
+      if ((!onlyLines || onlyLines.has(lineNum)) && !currentLines.has(lineNum)) {
         const line = cm.state.doc.line(lineNum + 1);
         const range = (0, import_language2.foldable)(cm.state, line.from, line.to);
         if (range) effects.push(import_language2.foldEffect.of(range));
       }
     }
     for (const [lineNum, range] of currentFoldMap) {
-      if (!markedLines.has(lineNum)) {
+      if ((!onlyLines || onlyLines.has(lineNum)) && !markedLines.has(lineNum)) {
         effects.push(import_language2.unfoldEffect.of(range));
       }
     }
