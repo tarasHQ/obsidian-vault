@@ -79,16 +79,6 @@ Remove. Goal of the overview is condense a day into a key points. Don't start wi
 
 ---
 
-## TASKS
-%%Cognitive offload for the day, to not keep these in my mind for the whole time%%
-- ### TODO
-	- [ ] 
-- ### Completed
-	- [ ] copy_from_here
-	- [ ] 
-
----
-
 ## REFLECTIONS
 %%Thinking through writing is much better - there must be low-friction place to do so%%
 - 
@@ -96,7 +86,8 @@ Remove. Goal of the overview is condense a day into a key points. Don't start wi
 ---
 
 ## TIME LOG
-==REPEAT The Project is dead. Website is priority. Stay in tension by avoiding indulgence==
+[[../../../_capturing/ideas|capture ideas]]
+![[../../@journal/_attachments/pmo-consequences.png|228]]
 ```meta-bind-button {fold}
 label: New Log Entry
 style: default

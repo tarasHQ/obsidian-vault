@@ -36,7 +36,7 @@ Day is good. I'm happy with it. Lots of work was done. Sometimes I forget, that 
 
 ## REFLECTIONS
 %%Thinking through writing is much better - there must be low-friction place to do so%%
-- ⭐[[../../../@system/_reflections/On Workflows|On Workflows]]
+- ⭐[[../../../../@system/_reflections/On Workflows|On Workflows]]
 
 ---
 

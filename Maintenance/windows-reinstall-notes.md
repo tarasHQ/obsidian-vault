@@ -74,7 +74,7 @@
 - 📄`Portable apps` - get `startup` folder, get portable apps shortcuts folder, copy documents. 
 - 📄`File explorer quick access` pinned shortcuts state (screenshot)
 - 📄`SMB users` - for recordings/pve-backups
-- 📄`tampermonkey scripts` - export
+- 📄`tampermonkey scripts` - export (from both pc?)
 - 📄`Drivers`, ax210, motherboard, install nvidia after amd
 - `C:/Windows/HelpPane.exe` - make yourself owner, give your user edit rights, and rename it, so accidental f1 presses won't open that help window
 

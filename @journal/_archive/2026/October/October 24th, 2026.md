@@ -56,8 +56,8 @@ I'm walking on the very thin ice, and nights like this one - keep remembering me
 
 ## REFLECTIONS
 %%Thinking through writing is much better - there must be low-friction place to do so%%
-- ⭐[[../../../Productivity/_reflections/Can't start to work in the morning!|Can't start to work in the morning!]] - helped big time. So simple, but really effective.
-- [[../../../@system/_reflections/Project's start and end steps|Project's start and end steps]]
+- ⭐[[../../../../Productivity/_reflections/Can't start to work in the morning!|Can't start to work in the morning!]] - helped big time. So simple, but really effective.
+- [[../../../../@system/_reflections/Project's start and end steps|Project's start and end steps]]
 
 ---
 

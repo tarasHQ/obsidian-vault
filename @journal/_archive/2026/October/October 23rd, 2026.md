@@ -53,7 +53,7 @@ But I need to give myself the credit where credit is due. Day wasn't good indulg
 ## REFLECTIONS
 %%Thinking through writing is much better - there must be low-friction place to do so%%
 - [[@system/_reflections/Obsidian Links and Junctions|Obsidian Links and Junctions]]
-- [[../../../Productivity/_reflections/how-to-approach-resistance|how-to-approach-resistance]]
+- [[../../../../Productivity/_reflections/how-to-approach-resistance|how-to-approach-resistance]]
 
 ---
 

@@ -56,4 +56,4 @@ And I feel like schedule should play a role here, but I'm not sure how that role
 - Track tasks. So I see how much I did. 
 - Make me more direct, like when I set a task in schedule - I work on it. I don't drift off. Without schedule it's harder because then it won't be honest. 
 - 15minutes granularity kinda limiting though. 
-- 
+---
