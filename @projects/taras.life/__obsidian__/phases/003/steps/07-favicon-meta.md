@@ -20,7 +20,7 @@ Scope guard with teeth (the reflection's named trap): favicon silently expands i
 %%which are useful for context%%
 - **Created:** the generated SVG favicon + resized PNG apple-touch icon in `quartz/static/` (alongside the existing `icon.png`, which this step replaces as the Head-referenced icon — it's placeholder-grade).
 - `quartz/components/Head.tsx` — emits the icon `<link>`s (SVG + fallbacks), the static media-query `theme-color` pair; builds values from the build-derived data.
-- `quartz/util/theme.ts` — **additive** extension of the parsed theme data: a `chrome` section (per-mode `themeColor` from each mode's `--light`); og-image contract untouched (validated: it reads specific palette keys only).
+- `quartz/util/theme.ts` — **additive** extension of the parsed theme data: a `chrome` section (per-mode `themeColor` from each mode's `--bg-grad-bottom`); og-image contract untouched (validated: it reads specific palette keys only).
 - `quartz/util/theme.test.ts` — fixture extended to pin the new `chrome` values (same protection pattern as the 2-palette pin).
 - ThemeToggle + contract module (step 03's) — gains the mode-change refinement hook: update icon href + `theme-color` content on every mode change.
 - `__obsidian__/ideas/parking.md` — records the AI-generation prompt (long-lived knowledge; regeneration will happen).
@@ -28,7 +28,7 @@ Scope guard with teeth (the reflection's named trap): favicon silently expands i
 
 ### Intended outcome
 - Tab favicon reflects the visitor's **chosen** mode (not just OS) in JS-enabled browsers; OS-based media-query behavior remains as the no-JS default.
-- `theme-color` (mobile browser chrome) matches the active mode's background exactly, from build-derived values that can't drift from `theme.css`.
+- `theme-color` (mobile browser chrome) matches the active mode's solid background continuation, from build-derived values that can't drift from `theme.css`.
 - Apple-touch icon exists as a cheap resize of the same identity — no separate design effort.
 - The dropped favicon plugin's gap is fully closed: nothing references the removed `favicon.ico`; `Head.tsx` links the new assets.
 - OG image output is untouched (2-palette contract holds; only additive data added).
@@ -52,7 +52,9 @@ Scope guard with teeth (the reflection's named trap): favicon silently expands i
 ---
 
 ## Tasks
-- [ ] **Extend the parser additively**: add the `chrome` section (per-mode `themeColor` derived from each block's `--light`) in `quartz/util/theme.ts`; extend `theme.test.ts` fixture to pin the new values; verify og-image output unchanged on a real build.
+
+**Partial implementation:** Theme-color wiring derives all three modes from `--bg-grad-bottom`, emits OS-based defaults, and refines them for the chosen mode at startup and on toggle. Automated checks/build and browser verification remain unrun. Favicon artwork, prompt, apple-touch icon, and favicon wiring are deferred; this step remains open.
+- [ ] **Extend the parser additively**: add the `chrome` section (per-mode `themeColor` derived from each block's `--bg-grad-bottom`) in `quartz/util/theme.ts`; extend `theme.test.ts` fixture to pin the new values; verify og-image output unchanged on a real build.
 - [ ] **Wire `Head.tsx`**: emit the media-query `theme-color` pair + icon `<link>`s (SVG with internal `prefers-color-scheme` media + PNG fallback) from the build-derived values — placeholder icon acceptable at this stage.
 - [ ] **Add the runtime refinement hook** to ThemeToggle/contract module: on every mode change (including initial seed), update `<link rel="icon">` href (light/dark variant mapping, dark-low→dark) and `theme-color` content; confirm the no-JS default still renders correctly with JS disabled.
 - [ ] **Generate the icon**: AI-generate the site-styled [T] favicon from the established look (steps 02–06 output); iterate until it reads clearly at 16px; record prompt + tool in `ideas/parking.md`; finalize SVG + apple-touch PNG resize in `quartz/static/`.

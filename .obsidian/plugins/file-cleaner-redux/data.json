@@ -9,7 +9,12 @@
     ".*/ideas"
   ],
   "attachmentsExcludeInclude": 1,
-  "attachmentExtensions": [],
+  "attachmentExtensions": [
+    "png",
+    "avif",
+    "jpg",
+    "webp"
+  ],
   "deletionConfirmation": true,
   "runOnStartup": true,
   "removeFolders": true,

@@ -1,0 +1,52 @@
+{
+  "mode": "convert",
+  "quality": 55,
+  "encodingSpeed": 4,
+  "magickPath": "magick",
+  "stripMetadata": true,
+  "limitImageSize": false,
+  "maxImageSize": 2000,
+  "animatedImageAction": "skip",
+  "formats": {
+    "PNG": {
+      "rename": true,
+      "convert": true
+    },
+    "JPEG": {
+      "rename": true,
+      "convert": true
+    },
+    "WEBP": {
+      "rename": true,
+      "convert": true
+    },
+    "HEIC": {
+      "rename": true,
+      "convert": true
+    },
+    "GIF": {
+      "rename": true,
+      "convert": true
+    },
+    "BMP": {
+      "rename": true,
+      "convert": true
+    },
+    "TIFF": {
+      "rename": true,
+      "convert": true
+    },
+    "JXL": {
+      "rename": true,
+      "convert": true
+    },
+    "AVIF": {
+      "rename": true,
+      "convert": false
+    }
+  },
+  "fileNameTemplate": "{title}-{date:YYYYMMDDHHmmssSSS}{counter}",
+  "replaceSpaces": true,
+  "importDroppedFileLinks": false,
+  "showStatusBar": false
+}
