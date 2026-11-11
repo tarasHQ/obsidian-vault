@@ -10,10 +10,11 @@
 		- Fix outliner plugin issues
 		- Css. Outline collapse indicators. Hide? Increase size of dots on hover. 
 		- Remove movable points. 
-	- ###### Psychoanalysis Location %% fold %%
+	- ###### Psychoanalysis Location
 		- Psychoanalysis would probably need separate folder. Not reflections though. Separate. Dream analysis included probably. To keep journals lean but with like easy links to go to these kind of things. 
 			- Why? Feels bloated. And chances are, with proper practice, you would want to expand on dream analysis some days after initial attempt. Same with psychoanalysis "sessions". So they must be like separate things to research/review. 
 				- Backlink to journal would be nice though, so you can see how session is integrated into the day (time log)
+		- Work with LLM would be more efficient if you'll create context note where you offload all of your long-term things. Like isolation. Pressures. History. And so on. To have SSOT on those to avoid writing it over and over again.
 - ### PC-stuff
 	- ###### Same hotkeys between two PC.  %% fold %%
 		- Probably try to go native as much as you can, and then have some small ahk helper script for the rest
