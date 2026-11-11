@@ -10,6 +10,68 @@
   "noteCreation": {
     "devices": "all"
   },
+  "tasksCheckbox": {
+    "enabled": true,
+    "rule": {
+      "mode": "and",
+      "conditions": []
+    },
+    "statusMap": {
+      " ": "todo",
+      "x": "done",
+      "X": "done",
+      "/": "in-progress",
+      "-": "cancelled"
+    },
+    "canonical": {
+      "todo": " ",
+      "done": "x",
+      "in-progress": "/",
+      "cancelled": "-"
+    },
+    "rolledMarker": "#rolled"
+  },
+  "tasksMove": {
+    "mode": "copy",
+    "stamp": true
+  },
+  "tasksNoteProperty": {
+    "enabled": false,
+    "setUp": false,
+    "identify": {
+      "by": "tag",
+      "tag": "#task"
+    },
+    "excludedFolders": [],
+    "archiveTag": "#archived",
+    "dates": {
+      "due": "due",
+      "scheduled": "scheduled",
+      "done": "completedDate",
+      "created": "dateCreated"
+    },
+    "statusProperty": "status",
+    "statusMap": {
+      "none": "todo",
+      "open": "todo",
+      "in-progress": "in-progress",
+      "done": "done"
+    },
+    "canonical": {
+      "todo": "open",
+      "done": "done",
+      "in-progress": "in-progress"
+    },
+    "titleProperty": "title",
+    "modifiedProperty": "dateModified",
+    "recurrenceProperties": [
+      "recurrence",
+      "recurrence_parent"
+    ]
+  },
+  "tasknotesNotice": {
+    "dismissed": false
+  },
   "decorations": {
     "decorations": [],
     "maxMarksPerSlot": 3
@@ -82,7 +144,7 @@
         "allowBefore": false,
         "sources": []
       },
-      "nameTemplate": "{{date:MMMM}} {{date:Do}} {{date:ddd}}",
+      "nameTemplate": "{{date:MMM}}-{{date:Do}}-{{date:ddd}}",
       "folder": "@journal/01 Daily/{{date:YYYY}}/{{date:MM}}-{{date:MMMM}}",
       "templates": [
         "_static/templater/[T]daily-journaling.md"
@@ -114,9 +176,41 @@
       ],
       "prompts": [],
       "notelets": {},
+      "tasks": {
+        "providers": {},
+        "filter": {
+          "mode": "and",
+          "conditions": []
+        },
+        "move": {
+          "source": "note",
+          "targetHeading": "",
+          "lookBack": 1,
+          "automatic": false
+        }
+      },
       "navBlock": {
         "type": "create",
         "lines": [
+          [
+            {
+              "template": "Week {{date:w}}",
+              "fontSize": 1,
+              "bold": false,
+              "italic": false,
+              "color": {
+                "type": "theme",
+                "name": "text-normal"
+              },
+              "background": {
+                "type": "transparent"
+              },
+              "link": "week",
+              "journal": "",
+              "linkDate": "",
+              "addDecorations": true
+            }
+          ],
           [
             {
               "template": "{{date:ddd}}",
@@ -176,25 +270,6 @@
           ],
           [
             {
-              "template": "{{date:[W]w}}",
-              "fontSize": 1,
-              "bold": false,
-              "italic": false,
-              "color": {
-                "type": "theme",
-                "name": "text-normal"
-              },
-              "background": {
-                "type": "transparent"
-              },
-              "link": "week",
-              "journal": "",
-              "linkDate": "",
-              "addDecorations": false
-            }
-          ],
-          [
-            {
               "template": "{{date:MMMM}}",
               "fontSize": 1,
               "bold": false,
@@ -209,7 +284,7 @@
               "link": "month",
               "journal": "",
               "linkDate": "",
-              "addDecorations": false
+              "addDecorations": true
             }
           ],
           [
@@ -268,11 +343,11 @@
         "allowBefore": false,
         "sources": []
       },
-      "nameTemplate": "{{date}}",
+      "nameTemplate": "{{date}}-{{date:MMM}}",
       "folder": "@journal/02 Weekly/{{date:YYYY}}",
-      "templates": [],
-      "prompts": [],
-      "notelets": {},
+      "templates": [
+        "_static/templater/[T]weekly-journaling.md"
+      ],
       "confirmCreation": false,
       "autoCreate": false,
       "decorations": [
@@ -286,7 +361,7 @@
           "styles": [
             {
               "type": "shape",
-              "size": 0.4,
+              "size": 0.6,
               "shape": "triangle-down",
               "color": {
                 "type": "theme",
@@ -298,10 +373,23 @@
           ]
         }
       ],
+      "prompts": [],
+      "notelets": {},
+      "tasks": {
+        "providers": {},
+        "filter": {
+          "mode": "and",
+          "conditions": []
+        },
+        "move": {
+          "source": "note",
+          "targetHeading": "",
+          "lookBack": 1,
+          "automatic": false
+        }
+      },
       "navBlock": {
         "type": "create",
-        "showAdjacent": "all",
-        "decorateWholeBlock": false,
         "lines": [
           [
             {
@@ -309,9 +397,6 @@
               "fontSize": 3,
               "bold": true,
               "italic": false,
-              "link": "self",
-              "journal": "",
-              "linkDate": "",
               "color": {
                 "type": "theme",
                 "name": "text-normal"
@@ -319,6 +404,9 @@
               "background": {
                 "type": "transparent"
               },
+              "link": "self",
+              "journal": "",
+              "linkDate": "",
               "addDecorations": true
             }
           ],
@@ -328,9 +416,6 @@
               "fontSize": 0.7,
               "bold": false,
               "italic": false,
-              "link": "none",
-              "journal": "",
-              "linkDate": "",
               "color": {
                 "type": "theme",
                 "name": "text-normal"
@@ -338,6 +423,9 @@
               "background": {
                 "type": "transparent"
               },
+              "link": "none",
+              "journal": "",
+              "linkDate": "",
               "addDecorations": false
             }
           ],
@@ -347,9 +435,6 @@
               "fontSize": 1,
               "bold": false,
               "italic": false,
-              "link": "month",
-              "journal": "",
-              "linkDate": "",
               "color": {
                 "type": "theme",
                 "name": "text-normal"
@@ -357,6 +442,9 @@
               "background": {
                 "type": "transparent"
               },
+              "link": "month",
+              "journal": "",
+              "linkDate": "",
               "addDecorations": false
             }
           ],
@@ -366,9 +454,6 @@
               "fontSize": 1,
               "bold": false,
               "italic": false,
-              "link": "year",
-              "journal": "",
-              "linkDate": "",
               "color": {
                 "type": "theme",
                 "name": "text-normal"
@@ -376,10 +461,15 @@
               "background": {
                 "type": "transparent"
               },
+              "link": "year",
+              "journal": "",
+              "linkDate": "",
               "addDecorations": false
             }
           ]
-        ]
+        ],
+        "decorateWholeBlock": false,
+        "showAdjacent": "all"
       },
       "intervalBlock": {
         "type": "create",
@@ -740,5 +830,5 @@
       "context": "today"
     }
   },
-  "version": 6
+  "version": 7
 }

@@ -25,7 +25,7 @@ I don't know how a month of such days would look like. Like will it be insanely 
 
 ## TASKS
 %%Cognitive offload for the day, to not keep these in my mind for the whole time%%
-- [!] [better-schedule-plan](better-schedule-plan.md) 
+- [!] [better-schedule-plan](plans/better-schedule-plan.md) 
 - [!] [quartz-website-plan](../../../@projects/taras.life/Web%20(meta)/quartz-website-plan.md) 
 - ### Active
 	- [ ] Youtube - wrong order of timestamps. You need to offset by one chapter
@@ -50,7 +50,7 @@ I don't know how a month of such days would look like. Like will it be insanely 
 	- [x] Start new structure. Phase 001. use the framework to establish the framework flow in the project. Symlink that folder into repo. Use obsidian and LFG
 	- [x] optimizing backup sync job to avoid rehashing dozens of gigabytes every hour. And fixing some bugs.
 	- [x] extract information for future proxmox upgrade. 
-	- [x] [MAJOR] setting up proxmox backups on smb. [proxmox-backup-plan](proxmox-backup-plan.md) 
+	- [x] [MAJOR] setting up proxmox backups on smb. [proxmox-backup-plan](plans/proxmox-backup-plan.md) 
 	- [x] fixing deskflow portable "residue"
 	- [x] Setting up proper and secure smb access to videos and pve backups folders
 		- [x] figuring out sharing settings (to not use NTSF, but properly setup advanced sharing)

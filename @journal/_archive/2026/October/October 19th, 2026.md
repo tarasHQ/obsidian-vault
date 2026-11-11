@@ -28,7 +28,7 @@ Also second day where I worked basically the whole day, which is good.
 	- I have to finish this day in 1080p. Then I should try 1440p. Screen is in 1440p, so downscaling(not integer one) adds a lot additional artifacts. 1440p in much higher CQP(lower quality), should be comparable to 1080p file size but with much better quality (as a bonus, it actually reduces encoder load, because it doesn't have to downscale). and native 1080 is just a mess
 	- also filters I did for higher contrast/lower brightness - proved to be good to. text is more clear
 - [x] [inverter-cooling-rewiring-plan](inverter-cooling-rewiring-plan.md) 
-- [!] [better-schedule-plan](better-schedule-plan.md) 
+- [!] [better-schedule-plan](plans/better-schedule-plan.md) 
 - [!] [quartz-website-plan](../../../@projects/taras.life/Web%20(meta)/quartz-website-plan.md) 
 
 ---

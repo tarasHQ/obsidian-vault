@@ -40,7 +40,7 @@ actions:
 ---
 
 ## TASKS
-- [!] [better-schedule-plan](better-schedule-plan.md) 
+- [!] [better-schedule-plan](plans/better-schedule-plan.md) 
 - [!] [quartz-website-plan](../../../@projects/taras.life/Web%20(meta)/quartz-website-plan.md) 
 - ##### low priority
 	- [x] Add my old python script to monitor the battery on recording pc (always visible)
