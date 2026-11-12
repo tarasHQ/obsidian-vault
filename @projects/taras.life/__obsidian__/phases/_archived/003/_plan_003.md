@@ -1,9 +1,10 @@
 ---
 ctime: 2026-11-05 08:25
-isIntegrated: false
+status: implemented
+isIntegrated: true
 ---
 
-[← Project](../../_project.md)
+[← Project](../../../_project.md)
 
 # P 003 - Visual Identity
 %%[Internal User Link to Template]([T]plan.md) LLMs should ignore both the link and the paths it hints on%%
@@ -66,7 +67,7 @@ GROUP BY true
 		- Repo
 			- `quartz/styles/theme.css` — SSOT of palette; will gain third `:root[saved-theme="dark-low"]` block (hand-written minimal derivation: text ramp + lifted `--light` background, chromatic shared with dark); ramp values iterated in browser.
 			- `quartz/styles/syntax.css` — dark Shiki rules get an explicit two-selector list `[saved-theme="dark"], [saved-theme="dark-low"]` (no prefix trick).
-			- `quartz/components/Head.tsx` — theme-color meta, SVG favicon + cheap apple-touch, inline zero-flash theme-init script rendered via `<script dangerouslySetInnerHTML>` (precedent: `quartz/components/pages/404.tsx`); currently links `static/icon.png`.
+			- `quartz/components/Head.tsx` — theme-color metadata, SVG favicon and Apple touch icon links, and inline zero-flash theme initialization.
 			- New `quartz/components/ThemeToggle.tsx` (+ colocated contract module) — single owner of the JS-side theme contract: storage key, attribute, mode list, cycle, OS-seed rule, inline-init snippet, `themechange` dispatch, icon/`color-scheme` CSS.
 			- `quartz/plugins/emitters/componentResources.ts` — stylesheet assembly is `[...globalCss, theme, syntax, callouts, base].join()` wrapped in `@layer quartz-base`; adding a stylesheet file = one import + one array entry; `custom.css` stays outside the layer.
 			- `quartz/util/theme.ts` + `quartz/util/theme.test.ts` — og-image palette parser keeps exactly 2 palettes (third block unmatchable by exact regexes, verified); extend the test fixture with a realistic dark-low block + `Object.keys(theme.colors).length === 2` assertion — the real-file SSOT test then auto-guards the real third block; favicon step may add an additive `chrome` field (verified safe: og-image reads specific palette keys only).
@@ -98,7 +99,7 @@ GROUP BY true
 			- Mermaid (CDN 11.4.0, bundled in `@quartz-community/obsidian-flavored-markdown`) — CHECKED (step 03, from bundle code): its inline script re-initializes on every `themechange` with `theme = saved-theme === "dark" ? "dark" : "base"`, while `themeVariables` are re-derived live from the CSS custom properties (`--light`, `--darkgray`, `--secondary`, …). So dark-low renders mermaid's light `"base"` theme but with dark-low's own palette variables — imperfect (no true dark mermaid theme) but coherent with the page and no broken/white diagrams. Proper dark-low mermaid theming remains a later change if it ever bothers.
 		- The `unlisted: true` frontmatter flag exists (excluded from explorer/search/sitemap/RSS while still built) — test pages intentionally do NOT use it (published).
 		- Phantom deps post-mortem (step 03 review): `@quartz-community/utils` declares `github-slugger` as an OPTIONAL peer but imports it unconditionally at module top level — a packaging bug upstream. It only worked because darkmode/favicon/excalidraw transitively provided it. Any future dependency removal can re-expose undeclared peers: after removing a package, run the full `npm test` immediately, not just the build.
-	- **Locked HOW decisions (this flow):** toggle inserted via `loadQuartzLayout` (Head precedent) — not YAML, not frame JSX; `themechange` dispatches the RAW mode (remark42 narrows internally); stylesheet organization = hybrid (palette/accent vars in `theme.css`, rules in `base.css` or a new file — a new file costs one import + one array entry in the assembly); type scale BAKED as rem table; measure = 80ch absolute, no escape hatch; favicon/theme-color = JS-refined by the toggle + build-derived values via an additive `ThemeData` field.
+	- **Locked HOW decisions (this flow):** toggle inserted via `loadQuartzLayout` (Head precedent) — not YAML, not frame JSX; `themechange` dispatches the RAW mode (remark42 narrows internally); stylesheet organization = hybrid (palette/accent vars in `theme.css`, rules in `base.css` or a new file — a new file costs one import + one array entry in the assembly); type scale BAKED as rem table; measure = 80ch absolute, no escape hatch; favicon = one fixed icon for all modes; theme-color = JS-refined by the toggle with build-derived values via an additive `ThemeData` field.
 	- **`color-scheme` ownership:** darkmode package's bundled CSS owns `color-scheme: dark/light` + toggle icon switching — must be re-owned by the local component CSS, easy to forget.
 	- **Contrast:** user checks manually (no audit script — rejected as headache given gradient plans). Serve loop already works and is tested.
 
@@ -109,16 +110,16 @@ GROUP BY true
 ## Steps
 
 
-### ◎ [STEP 99 - End Of The Phase](./steps/99-end.md) - READY
-Finalize the phase — meta-reflection on what worked, long-term knowledge extracted so plan info can safely die-off, frontmatter set, phase archived.
+### %%◉ [STEP 99 - End Of The Phase](./steps/99-end.md) - IMPLEMENTED
+The phase was archived, its project record and documentation aligned, and remaining observations left in the phase record by user decision. The user skipped review and retrospective.%%
 
 === INSERT STEPS HERE ===
 
 ### Drafted Steps Recommendation
 %%Deleted — actual steps are being written now.%%
 
-### ◎ [STEP 07 - Favicon & Meta](./steps/07-favicon-meta.md) - READY
-Tab favicon + `theme-color` + cheap apple-touch — strictly last, generated from the established look. Media-query pair ships as no-JS default; toggle JS-refines icon href + `theme-color` on every mode change; `theme-color` build-derived via an additive `ThemeData.chrome` field (og-image untouched, test pin added); icon variant granularity = light/dark pair (dark-low→dark, remark42-narrowing philosophy); wiring landed with placeholder icon first, generated art drops in without contract changes; prompt recorded in `ideas/parking.md`; scope guard: no logo, no OG rework, no full favicon pack.
+### %%◉ [STEP 07 - Favicon & Meta](./steps/07-favicon-meta.md) - IMPLEMENTED
+A single favicon and an Apple touch icon were added, alongside browser-chrome colors that follow the selected theme. The user reports the result green; a locally installed Chrome app showing the old icon was deferred without a confirmed cause.%%
 
 ### %%◉ [STEP 06 - Background Bench](./steps/06-background-bench.md) - IMPLEMENTED
 The scrolling gradient was chosen and grain discarded; the user observed no banding and reports `npm run check` green. Grain's effect on banding was not established, and print behavior remains unconfirmed.%%

@@ -79,8 +79,7 @@ Remove. Goal of the overview is condense a day into a key points. Don't start wi
 
 ---
 
-## REFLECTIONS
-%%Thinking through writing is much better - there must be low-friction place to do so%%
+## CREATED ARTIFACTS
 - 
 
 ---

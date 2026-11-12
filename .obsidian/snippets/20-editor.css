@@ -40,16 +40,16 @@
 } */
 
 /* Increase clickable area of collapse icon */
-.collapse-icon svg.svg-icon {
+/* .tree-item-self .collapse-icon svg.svg-icon {
     width: 20px !important;
-}
+} */
 
 /* Make collapse icon always visible ONLY for headers */
-.HyperMD-header .heading-collapse-indicator,
+/* .HyperMD-header .heading-collapse-indicator,
 .HyperMD-header .cm-fold-indicator .collapse-indicator {
     padding-inline-end: unset !important;
     opacity: 0.5 !important;
-}
+} */
 
 /* Make collapse icon cursor as pointer ONLY for headers
    Long selectors used to override !important of Outliner plugin  */

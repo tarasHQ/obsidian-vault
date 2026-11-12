@@ -80,6 +80,11 @@ body:not(.is-mobile) .workspace-leaf-content:is([data-type="file-explorer"]) .na
     margin-left: 4px !important;
 }
 
+/* move folding icon to right */
+.tree-item-self .collapse-icon svg.svg-icon {
+    width: 20px !important;
+}
+
 /* ===============================================================
    Tree-item hover / active styling
    (hover stretch + selection pseudo-element form one unit,

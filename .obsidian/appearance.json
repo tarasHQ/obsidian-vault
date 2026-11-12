@@ -10,14 +10,14 @@
   "nativeMenus": false,
   "enabledCssSnippets": [
     "rogers-theme",
-    "00-vars",
-    "10-typography",
-    "20-editor",
-    "25-media",
-    "30-workspace",
-    "40-navigation",
     "50-canvas",
-    "60-plugins"
+    "60-plugins",
+    "40-navigation",
+    "30-workspace",
+    "25-media",
+    "20-editor",
+    "10-typography",
+    "00-vars"
   ],
   "showRibbon": false
 }
