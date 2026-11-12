@@ -22,8 +22,8 @@ GROUP BY true
 
 ## Phases
 
-### Phase 003 - Visual Identity [open](./phases/003/_plan_003.md)
-Everything a first-time visitor registers before reading a word: palette + 3 modes, typography, accent layers, background experiments, favicon.
+### %%Phase 003 - Visual Identity [done](./phases/_archived/003/_plan_003.md)
+Palette and three modes, typography, accents, background, favicon, and published visual test pages.%%
 
 ### %%Phase 002 - Removing SCSS, Theming, Fonts plugin [done](./phases/_archived/002/_plan_002.md) 
 SCSS→plain CSS, static theming (theme.css SSOT), generation machinery + Google Fonts + quartz-fonts out, CLI create/git-flow out, README set + AGENTS.md aligned, semantic review.%%

@@ -169,5 +169,4 @@ ctime: <% tp.file.creation_date(CFG.ctimeFormat) %>
 isIntegrated: false
 ---
 
-<% backlink %>
 

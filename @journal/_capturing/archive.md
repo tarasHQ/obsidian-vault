@@ -12,7 +12,12 @@
 		- Opposition
 			- You had those. For a month. You barely looked at it. So I don't see much reason in doing those. To track what you were doing - you can use ipcam recording. Besides that - it's just additional headach.
 			- Another point is something sensitive might be captured. You live like that for months. And then those folders will have tens of thousands images you never will look through. Passwords, api keys, etc. 
-
+	- ###### Psychoanalysis Location %% fold %%
+		- Psychoanalysis would probably need separate folder. Not reflections though. Separate. Dream analysis included probably. To keep journals lean but with like easy links to go to these kind of things. 
+			- Why? Feels bloated. And chances are, with proper practice, you would want to expand on dream analysis some days after initial attempt. Same with psychoanalysis "sessions". So they must be like separate things to research/review. 
+				- Backlink to journal would be nice though, so you can see how session is integrated into the day (time log)
+		- Work with LLM would be more efficient if you'll create context note where you offload all of your long-term things. Like isolation. Pressures. History. And so on. To have SSOT on those to avoid writing it over and over again.
+			- No it useless a bit. You will have it in abouts or somewhere along those lines. Huge overlap. Useless to duplicate.
 - ### Obsidian
 	- ###### Dropping Minimal Theme %% fold %%
 		- Ideally to go away from the minimal theme. It does add a lot of things that I don't use, and basically a deadweight. Like it's better to have 30 styles in CSS than like 2 plugins with 100 settings + a theme. 
@@ -23,6 +28,13 @@
 
 ## Completed
 - ### Obsidian
-	- ###### Tasks/Ideas capture
+	- ###### Tasks/Ideas capture %% fold %%
 		- Current solution of having 2 files seems like good enough. + link in journal to quick access. 
 		- I don't think I need anything beyond that.
+	- ###### Flow of avif/webp conversion %% fold %%
+		- flow to compress png into webp from screenshot, so it won't harm neither website nor size of the vault. But also figure out if deskflow can do it, because right now it's half-supported. (or don't do it through deskflow)
+			- priority because it adds another dimension to thinking + cognitive offload. 
+	- ###### Outliner Issues %% fold %%
+		- Fix outliner plugin issues
+		- Css. Outline collapse indicators. Hide? Increase size of dots on hover. 
+		- Remove movable points. 
