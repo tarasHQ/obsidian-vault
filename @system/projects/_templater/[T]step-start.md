@@ -66,7 +66,7 @@ The flow to start the planning in the best state of mind.
 - And overwhelmed on top of it - this is how you start the race you're meant to lose. 
 
 ## Checklists
-- [ ] **Rename the phase in `_project.md`** 
+- [ ] **Create the phase in `_project.md`** 
 - [ ] **Acknowledge if you're in elevated state of mind**
      %%If you do - everything you plan or execute will be suboptimal to say the least.%%
      %%And also chances of getting overwhelmed will skyrocket%%

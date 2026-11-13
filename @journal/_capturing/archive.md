@@ -7,7 +7,7 @@
 		- Opposition
 			- in good days you want to score. In bad days it'll be an obstacle to type in at least something. So no. I'm not yet ready for this
 			- \
-	- ###### Desktop Screenshots %% fold %%
+	- ###### Desktop Screenshots
 		- Bring back screenshots of desktop. BUT ALSO add analysis routine. (not sure if it's good for the night, but you need to do it after you woke up? Or like after the first meal. So it influences the current day on top of extracting patterns/insights)
 		- Opposition
 			- You had those. For a month. You barely looked at it. So I don't see much reason in doing those. To track what you were doing - you can use ipcam recording. Besides that - it's just additional headach.

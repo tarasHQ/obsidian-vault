@@ -24,7 +24,7 @@
 				- `XX-step-name.md` - List of created step files when the phase is mature enough for implementation.
 				- `99-end.md` - Baked-in phase-end step, created by the phase template. Checklists for the end of the phase (reflections, docs alignment, archiving).
 			- `_plan_NNN.md` - High-level plan of the current phase, also is an entry to the phase. Its "## Exploration" section holds the phase-scoped exploration notes
-	- `/_project.md` - Project's entry point. Overview of phases + reflections & ideas
+	- `/_project.md` - Project's entry point. Overview of phases + reflections & ideas and their categorization
 
 ---
 

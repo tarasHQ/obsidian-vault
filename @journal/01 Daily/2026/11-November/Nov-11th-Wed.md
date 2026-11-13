@@ -8,43 +8,11 @@ journal-date: 2026-11-11
 ```
 
 ---
-
-```meta-bind-button
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-	- [ ] Check audio delay to webcam
-	- [ ] Check TickTick schedule (correct day, scheduled)
-	- [ ] Set time of next sleep for stager timer.
-	- Obsidian
-		- [ ] Write overview of the current day
-		- [ ] Create journal for the next day
-		- [ ] Move uncompleted tasks
-		- [ ] Make sure all day's reflections are linked under reflections
-		- [ ] Delete Dream Analysis block if empty
-		- [ ] Delete other blocks if empty (task/reflections)
-	- [ ] Night scene
-	- [ ] Check IP cam (quality, delay)
-		- [ ] Enable sleep blur
-	- [ ] monitor OFF (seems like keeping on makes him die faster)
-	- Cat
-		- [ ] Clean up cat's litter box
-		- [ ] Food + plate is in my room at the shelf 
-			%%(to feed right away and not be distracted by her)%%
-	- [ ] Make sure there's tomorrow's food out of the freezer.
-
----
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-Remove. Goal of the overview is condense a day into a key points. Don't start with reflections/ideas/etc. Just condense.
+Productive day. But speed is low. Don't understand how to do more in less time. 
 
 ---
 

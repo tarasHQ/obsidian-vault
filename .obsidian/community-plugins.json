@@ -25,7 +25,7 @@
   "set-to-root",
   "obsidian-minimal-settings",
   "obsidian-style-settings",
-  "obsidian-livesync",
   "close-and-switch-to-recent-tab",
-  "avificator"
+  "avificator",
+  "obsidian-livesync"
 ]
