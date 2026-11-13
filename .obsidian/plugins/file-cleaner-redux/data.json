@@ -6,7 +6,8 @@
   "excludedFolders": [
     ".*/artifacts",
     ".*/_reflections",
-    ".*/ideas"
+    ".*/ideas",
+    "_static"
   ],
   "attachmentsExcludeInclude": 1,
   "attachmentExtensions": [

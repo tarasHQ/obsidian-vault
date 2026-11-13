@@ -86,7 +86,6 @@ Remove. Goal of the overview is condense a day into a key points. Don't start wi
 
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
-![[../../@journal/_attachments/pmo-consequences.png|228]]
 ```meta-bind-button {fold}
 label: New Log Entry
 style: default

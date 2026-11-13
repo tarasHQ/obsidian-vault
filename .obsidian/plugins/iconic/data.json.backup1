@@ -24,7 +24,7 @@
   "dialogState": {
     "iconMode": true,
     "emojiMode": true,
-    "rulePage": "file"
+    "rulePage": "folder"
   },
   "appIcons": {},
   "tabIcons": {},
@@ -73,11 +73,6 @@
           "source": "path",
           "operator": "contains",
           "value": "@journal"
-        },
-        {
-          "source": "extension",
-          "operator": "is",
-          "value": "md"
         }
       ],
       "enabled": true,
