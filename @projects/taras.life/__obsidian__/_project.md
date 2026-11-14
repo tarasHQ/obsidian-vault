@@ -111,9 +111,10 @@ GROUP BY true
 				- **Port note for our repo**: natural fit = rehype transformer visiting `img` nodes + sharp metadata; nothing CSS-side needed.
 - ### Refactor
 	- #### IDEAS
-		- ###### Mermaid Diagrams %% fold %%
+		- ###### Mermaid Diagrams
 			- I plan on using them. Later. 
 			- `pele` package was recommended on one website (with ref link though).
+				- Used by Obsidian too now. So worth checking.
 				- You need fast and lightweight one. 
 				- You need to be able to zoom and pan
 			- OR you can consider SVG approach on build time. And cover under image viewer feature.
@@ -138,7 +139,7 @@ GROUP BY true
 - ---
 - 
 - ### 01 Basics
-	- #### IDEAS %% fold %%
+	- #### IDEAS
 		- ##### Collapsible list and headings
 			- ###### `%% fold %%` Parsing %% fold %%
 				- to preserve collapsed states and also to NOT have those markers

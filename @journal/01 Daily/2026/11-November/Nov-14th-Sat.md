@@ -8,43 +8,11 @@ journal-date: 2026-11-14
 ```
 
 ---
-
-```meta-bind-button
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-	- [ ] Check audio delay to webcam
-	- [ ] Check TickTick schedule (correct day, scheduled)
-	- [ ] Set time of next sleep for stager timer.
-	- Obsidian
-		- [ ] Write overview of the current day
-		- [ ] Create journal for the next day
-		- [ ] Move uncompleted tasks
-		- [ ] Make sure all day's reflections are linked under reflections
-		- [ ] Delete Dream Analysis block if empty
-		- [ ] Delete other blocks if empty (task/reflections)
-	- [ ] Night scene
-	- [ ] Check IP cam (quality, delay)
-		- [ ] Enable sleep blur
-	- [ ] monitor OFF (seems like keeping on makes him die faster)
-	- Cat
-		- [ ] Clean up cat's litter box
-		- [ ] Food + plate is in my room at the shelf 
-			%%(to feed right away and not be distracted by her)%%
-	- [ ] Make sure there's tomorrow's food out of the freezer.
-
----
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-OVERVIEW_FOR_VIDEO
+The day is an example on how no indulgence makes me stay in the tension and reach Jung's transcendent function as optimal resolution of internal friction. It's not pleasant. There was some urges. But thankfully my hula-hoops for indulgence discouraged me from actually going through. Though there were also good faith decisions as well to avoid "less protected" ipad. 
 
 ---
 
@@ -59,12 +27,30 @@ OVERVIEW_FOR_VIDEO
 
 ## CREATED ARTIFACTS
 - [[../../../../Psychoanalysis/_reflections/on-changing-timeframes|on-changing-timeframes]]
+- [[../../../../@projects/taras.life/__obsidian__/_reflections/on-navigation-and-structure|on-navigation-and-structure]]
 
 ---
 
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning]`
+- ###### 01:27
+	- Reflection during walking helps big time. But the back - it's just painful. It dies really fast. 30 minutes and I'm in pain. Maybe I try to use that belt that compresses lower back? I'll try.
+- ###### 01:25
+	- Damn, domain expires tomorrow. Will have to transfer local net services on new domain... could take hours... But I have to. I think I can do it in parallel with working on explore? 
+- ###### 01:22 | MEANING: 🟡
+	- Ok. I spent time on reflection. Figured out architectural situation + generated many ideas and covered some edge cases. I'm happy with it. I'm too sleepy to do anything else though. So I'll leave it at that. it was good planning session that prevented me from headache during implementation. Hopefully yesterday it'll be done. 
+- ###### 23:46 | MEANING: 🟡
+	- Not much, but yeah, meaning ahead. I'm still not doing anything meaningful though. So it can disappear at any moment.
+- ###### 23:32
+	- Fake it till you make it? Who knows...
+	- Ok. 20 minutes. I can start by just getting familiar with all the styles. And then I'll see what to do next?
+- ###### 23:28 | MEANING: 🔴
+	- Ok, meaning is in front of me. Here's the deal. 20 minutes of full honest and engage work. If that doesn't get any traction - you call it a day. Well, I can't. Because then it implies I can indulge. Which isn't easy, but for the twitch - kinda is easy.  ipad path isn't as protected as PC's. 
+- ###### 22:11
+	- I'm kinda doing what Peterson did. In some lectures you can see that he's in either pain or significant "discomfort", but people provide him with enough meaning to overcome the struggle + obviously family. Would he be alive if he was alone? 
+- ###### 21:38 | MEANING: 🔴
+	- Don't even have enough meaning to eat. Right now it's basically either twitch or youtube or poe2 game or do nothing.
 - ###### 21:16 | MEANING: 🔴
 	- Reflection went nowhere. Meditation is the best I got. Also I'm tired and sleepy.
 - ###### 19:26 | MEANING: 🟡

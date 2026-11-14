@@ -15,7 +15,7 @@
       "icon": "brain",
       "style": "default",
       "class": "",
-      "cssStyle": "height: 24px; padding: 5px; font-size: 11px;",
+      "cssStyle": "height: 24px; padding: 5px;",
       "backgroundImage": "",
       "tooltip": "",
       "id": "journal-meaning",
@@ -40,9 +40,9 @@
       "hidden": false,
       "actions": [
         {
-        "type": "js",
-        "file": "_static/scripts/meta-bind/journal-time-entry.js",
-        "args": {}
+          "type": "js",
+          "file": "_static/scripts/meta-bind/journal-time-entry.js",
+          "args": {}
         }
       ]
     }

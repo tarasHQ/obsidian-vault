@@ -48,7 +48,7 @@ isIntegrated: false
 - So what now then? Well, there's illusion going on. I kinda surprised myself right now with this. Which means it was a bit in the blind spot. The issue is that often the issue isn't real. Like I can have a dozen of examples where I thought I have 100 hours of work in the task. Then I actually do it - and it's done in like 30 minutes. So on top of using the wrong timeframe for cost calculation, there's also a massive flaw in the equation of cost calculation. 
 - And I guess that's because I'm kinda negative guy. Or pessimistic. So I have automatic downplay on everything I do. 
 - ---
-- ##
+- ## Options?
 - What now though? Like I see that in this scenario brains plays against me. Or the unconscious. All I have left is conscious cost calculation in hopes it'll influence the unconscious? 
 - Because like what else I can do? It's the same as with the indulgence. (seems like). I can do something good only through mechanical and straightforward constraints/routine. Like I wouldn't say I'm taking control, because I'm not. What I actually doing is waiting for compensation and during it I establish positive/productive framework to hold me through the lows. 
 - What if I can do the same for the timeframe? You know, it's as simple as it's hard. If the unconscious is faulty in these aspects - and seems like it is - you have literally 0 choice to do anything in like small enough timeframe where you will actually will be consistent with doing the thing. 
@@ -64,6 +64,9 @@ isIntegrated: false
 	- Like to make this "official and explicit". 
 - Meaning withdraws. I want to PMO or watch the stream. I think about doing it, and then remember hula hoops and decide not to) Though it won't work forever. 
 - I think that the flow is misleading here. I generated a lot of context from this reflection. Maybe LLM will help me here. I'm getting kinda sleepy and tired...
+- ---
+- ## I'm Stuck
+- Will pause, but continue a bit later. This reflection is the priority.
 
 ## PLAN LOW LEVEL TOO
 Puer wants to stop when he's high. Bring him to the ground. 

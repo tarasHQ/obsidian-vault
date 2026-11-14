@@ -6,7 +6,10 @@
 	- ###### The Big Picture %% fold %%
 		-  when you go sleep - create and leave big plan and your position in it. That's how you meaningfully will track higher scope. But be careful so your "cost" scope won't overfocus on this.
 			- Probably in excalidraw?
-
+	- ###### Reflections Autolist
+		- When I create reflection I have to manually link it to journal. I can't use automation, because if I reflect deep into the nigh - it'll have to go to previous day list. not todays. PIA to handle properly.
+		- What are my options? Dataview is wasteful. 
+		- You can automatically insert. Find a journal entry in daily/ closest to current day. Situation like now won't have next day note until I start routine. So it'll use note for previous day. Which is absolutely fine. Maybe also should sort files in daily by creation time to avoid parsing dates? 
 
 - ### PC-stuff
 	- ###### Same hotkeys between two PC.  %% fold %%

@@ -47,10 +47,9 @@ action:
 	- Obsidian
 		- [ ] Write overview of the current day
 		- [ ] Create journal for the next day
-		- [ ] Move uncompleted tasks
-		- [ ] Make sure all day's reflections are linked under reflections
+		- [ ] Make sure all day's reflections are linked artifacts
 		- [ ] Delete Dream Analysis block if empty
-		- [ ] Delete other blocks if empty (task/reflections)
+		- [ ] Delete other blocks if empty
 	- [ ] Night scene
 	- [ ] Check IP cam (quality, delay)
 		- [ ] Enable sleep blur
