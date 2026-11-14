@@ -20,15 +20,16 @@
 		- copy `.gitconfig` from user folder before reinstall. For this setup you need to use `dpapi` credentials manager + pat. That's all configured in gitconfig.
 	- So, the idea is - elevated instance uses different user folder + different shared storage folder, to avoid logging me out in non-elevated instance, after I run elevated instance.
 		- Ok, maybe not, there were issues with pushing. I authed through dpapi + browser and seems like it's working?
-- 📄`kaspersky` - exceptions + activation (deactivate on current windows)
+- 📄`kaspersky` - exceptions + activation (deactivate on current windows) %% fold %%
+	- Security settings -> Network Settings -> inject script into web traffic... , alongside with other useless stuff like Anti-Banner or Safe Money
+	- add into network's trusted addresses openrouter.ai / chatgpt.com / etc. so kaspersky won't use self-signed certificates.
+		- Or just disable scanning secure connection (used for useless protection)
+- 📄`OBS` - plugins and their settings. Scenes. Profiles. Etc. Backup all.
 - 📄`power toys` - has internal backup and restore logic
 - 📄`Windhawk` - mods + their settings (probably best bet is to copy config in text mode?) + your custom mods code and settings
 - 📄`Obsidian` - Sync settings, editor settings, maybe per-device plugin settings? It doesn't sync ALL. So check it out.
 - `git` - .gitconfig to use noreplay mail
-- `Kaspersky` - Security settings -> Network Settings -> inject script into web traffic... , alongside with other useless stuff like Anti-Banner or Safe Money
-	- add into network's trusted addresses openrouter.ai / chatgpt.com / etc. so kaspersky won't use self-signed certificates.
-		- Or just disable scanning secure connection (used for useless protection)
-- `Microsoft Office` - https://config.office.com/deploymentsettings (download installer and place xml with `setup.exe /configuration test.xml`)
+- `Microsoft Office` - https://config.office.com/deploymentsettings (download installer and place xml with `setup.exe /configuration test.xml`) so you can install only word/excel.
 
 ## Installation Process
 - Figure out how to use proper user name and not its BS with cropped email.
@@ -71,7 +72,7 @@
 
 
 ## Other
-- 📄`Portable apps` - get `startup` folder, get portable apps shortcuts folder, copy documents. 
+- 📄`portable-apps` - get `startup` folder, get portable apps shortcuts folder, copy documents. 
 - 📄`File explorer quick access` pinned shortcuts state (screenshot)
 - 📄`SMB users` - for recordings/pve-backups
 - 📄`tampermonkey scripts` - export (from both pc?)

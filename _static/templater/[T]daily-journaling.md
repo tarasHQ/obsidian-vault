@@ -66,7 +66,7 @@ action:
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-Remove. Goal of the overview is condense a day into a key points. Don't start with reflections/ideas/etc. Just condense.
+OVERVIEW_FOR_VIDEO
 
 ---
 
@@ -86,15 +86,8 @@ Remove. Goal of the overview is condense a day into a key points. Don't start wi
 
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
-```meta-bind-button {fold}
-label: New Log Entry
-style: default
-icon: clock
-cssStyle: "height: 24px; padding: 5px; font-size 11px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-time-entry.js
-```
+`BUTTON[journal-time, journal-meaning]`
+- 
 ==REPEAT The Project is dead. Website is priority. Stay in tension by avoiding indulgence==
 
 ---

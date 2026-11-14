@@ -10,32 +10,6 @@ journal-date: 2026-11-13
 ---
 
 ```meta-bind-button
-label: Remove Morning Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### MORNING CHECKLIST
-    - [ ] Air out the room %%lower oxygen levels and may affect you, triphasic breathing if you're cold%%
-    - [ ] Day scene
-    - [ ] Check webcam (exposure)
-    - [ ] Check IP cam (quality, delay)
-        - [ ] Reconnect to reset delay
-        - [ ] Disable sleep blur
-    - [ ] Check all elements are present on the canvas
-    - [ ] Check TickTick schedule 
-        - [ ] correct day, scheduled, scaled
-        - [ ] red "now" line is there
-    - [ ] Start stager timer
-    - Obsidian
-        - [ ] Reload.
-        - [ ] Fill Context block.
-        - [ ] Split down. Have ~10 lines of time log.
-
-```meta-bind-button
 label: Remove Night Checklist
 style: default
 icon: trash-2
@@ -45,46 +19,46 @@ action:
   file: _static/scripts/meta-bind/journal-remove-checklist.js
 ```
 - ##### NIGHT CHECKLIST
-	- [ ] Check audio delay to webcam
-	- [ ] Check TickTick schedule (correct day, scheduled)
-	- [ ] Set time of next sleep for stager timer.
+	- [x] Check audio delay to webcam
+	- [x] Check TickTick schedule (correct day, scheduled)
+	- [x] Set time of next sleep for stager timer.
 	- Obsidian
-		- [ ] Write overview of the current day
-		- [ ] Create journal for the next day
-		- [ ] Move uncompleted tasks
-		- [ ] Make sure all day's reflections are linked under reflections
-		- [ ] Delete Dream Analysis block if empty
-		- [ ] Delete other blocks if empty (task/reflections)
-	- [ ] Night scene
-	- [ ] Check IP cam (quality, delay)
-		- [ ] Enable sleep blur
-	- [ ] monitor OFF (seems like keeping on makes him die faster)
+		- [x] Write overview of the current day
+		- [x] Create journal for the next day
+		- [x] Move uncompleted tasks
+		- [x] Make sure all day's reflections are linked under reflections
+		- [x] Delete Dream Analysis block if empty
+		- [x] Delete other blocks if empty (task/reflections)
+	- [x] Night scene
+	- [x] Check IP cam (quality, delay)
+		- [x] Enable sleep blur
+	- [x] monitor OFF (seems like keeping on makes him die faster)
 	- Cat
-		- [ ] Clean up cat's litter box
-		- [ ] Food + plate is in my room at the shelf 
+		- [x] Clean up cat's litter box
+		- [x] Food + plate is in my room at the shelf 
 			%%(to feed right away and not be distracted by her)%%
-	- [ ] Make sure there's tomorrow's food out of the freezer.
+	- [x] Make sure there's tomorrow's food out of the freezer.
 
 ---
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-Remove. Goal of the overview is condense a day into a key points. Don't start with reflections/ideas/etc. Just condense.
+Sometimes I have to just look into the abyss to get reminded. This is the day of looking into the abyss and remembering why I should avoid indulgence. Hopefully it will last.
 
 ---
 
 >[!tldr] CONTEX
->Sleep Duration - **0:00**
+>Sleep Duration - **7:00**
 > 
->Time Spent in Bed - **TODO**
+>Time Spent in Bed - **Low**
 > 
->Approx. Compensation of Dreams - **TODO**
+>Approx. Compensation of Dreams - **Unknown**
 
 ---
 
 ## CREATED ARTIFACTS
-- [[../../../../Productivity/_reflections/what-i'm-doing-wrong|what-i'm-doing-wrong]]
+- ⭐[[../../../../Productivity/_reflections/what-i'm-doing-wrong|what-i'm-doing-wrong]]
 
 ---
 
@@ -99,6 +73,29 @@ action:
   type: js
   file: _static/scripts/meta-bind/journal-time-entry.js
 ```
+- ###### 01:01
+	- Yeah... Nothing to add honestly. It is what it is. Continuing working on setting up restrictions on indulgence.
+- ###### 21:54
+	- Back is killing me from this walking reflections. 
+	- I also will make a bread. Glycogen stores are as full as they can be. But it'll be good to soften transition back to normal meals. I also got that vital wheat gluten whatever. Hopefully I'll be able to make the bread bigger from the same amount of flour, so I'll need eat less to be as full as currently with normal meals. Ideally 150g per 2 days. or ~40g of whole wheat flour per meal. Which equals to  around 24g of carbs. I will be on the verge of keto. And less high GI carbs = less pronounced hunger when sugar drops in response to spike.
+- ###### 21:50
+	- ==🔴Reflected on lower level implementation too==, that's what is missing from those reflections. Like naming is poor. It shouldn't be reflections only. It's reflections AND THEN PLANNING. I'm writing those under puer complex. It's easy as hell to get stuck in the skies and stop there instead of thinking through the implementation. 
+	- I need update my template for this. After raw. at the very bottom - keep it visible in h2 heading that I need to write grounded implementation as well from those reflection. To avoid getting overwhelmed after the Puer's flight. 
+- ###### 21:50
+	- Ok. I'll stop at this. Seems like enough. That would be a plan for the rest of the day. One last indulgence with that what I left for myself. It's a small portion. like 1/3 of what I had in the morning. After that - I have no money to buy more AND what "reserves" I had - already is in the trash. 
+- ###### 20:53
+	- Naturally focused on removing indulgence mechanically. Forgot to write anything in here. Expanded reflection. Did more things. So yeah. I can't be civilized fully without people. Which means that in matter of indulgence - I'm an animal and have to deal with it accordingly. So I'm creating a bunch of friction around indulgence to make it harder to give in. 
+	- ==🔴The issue is that I stop valuing these constraints when I indulge a bit anyway. But those are keeping me away from full blown indulgence like I had before. ==
+- ###### 18:03
+	- Setting up cold turkey once more. I'm an animal without people. Like yeah, it won't fix all issues. Not even half of it. And I can bypass it too. But at least there will be some resistance, so 5 second impulse won't transform into 2 hours wasted. At least I'll have to work on it for a bit.
+- ###### 17:36
+	- Was the reflection wrong? Probably yes. Like it pushes me into gaming. I want to play that path of exile game or something else. Website is like at 50th place in priority list. 
+- ###### 15:24
+	- I'm documenting indulgence a bit. But to be honest it doesn't matter. The issue is when indulgence cravings hit - perspective changes and experience/documented cases don't matter at all. 
+	- And now I'm playing some dumb games... Feels like I'm spectator on me...
+- ###### 15:11
+	- Yeah, indulged even more. It's just out of control. I have to drink a lot to remove excess glucose from blood. Like this is really too much. 
+	- What to do though? Leave a bit for the evening. The rest goes into the trash. Like yeah, I can indulge, but not like that. 
 - ###### 12:26
 	- Power outage because of weather. Don't know for how long. With both PCs on I have only around 4-5 hours. So I guess I either stop recording OR will keep second pc only. I'll see. This outage can be for a few hours, or for a whole day... So I have to be considerate. Probably I'll turn off all PC. Just to be safe.
 		- UPD. Should be around 3-4 hours. So I guess I'm safe. 

@@ -7,7 +7,10 @@
     ".*/artifacts",
     ".*/_reflections",
     ".*/ideas",
-    "_static"
+    ".*/docs",
+    ".*/phases",
+    "_static",
+    "_private"
   ],
   "attachmentsExcludeInclude": 1,
   "attachmentExtensions": [

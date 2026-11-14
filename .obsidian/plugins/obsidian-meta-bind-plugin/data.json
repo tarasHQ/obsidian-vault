@@ -9,8 +9,43 @@
   "enableSyntaxHighlighting": true,
   "enableEditorRightClickMenu": true,
   "inputFieldTemplates": [],
-  "buttonTemplates": [],
-  "excludedFolders": [
-    "_static/templates"
-  ]
+  "buttonTemplates": [
+    {
+      "label": "Meaning Check",
+      "icon": "brain",
+      "style": "default",
+      "class": "",
+      "cssStyle": "height: 24px; padding: 5px; font-size: 11px;",
+      "backgroundImage": "",
+      "tooltip": "",
+      "id": "journal-meaning",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "js",
+          "file": "_static/scripts/meta-bind/journal-meaning-entry.js",
+          "args": {}
+        }
+      ]
+    },
+    {
+      "label": "New Log Entry",
+      "icon": "clock",
+      "style": "default",
+      "class": "",
+      "cssStyle": "height: 24px; padding: 5px; font-size 11px; margin-right: 10px;",
+      "backgroundImage": "",
+      "tooltip": "",
+      "id": "journal-time",
+      "hidden": false,
+      "actions": [
+        {
+        "type": "js",
+        "file": "_static/scripts/meta-bind/journal-time-entry.js",
+        "args": {}
+        }
+      ]
+    }
+  ],
+  "excludedFolders": []
 }
