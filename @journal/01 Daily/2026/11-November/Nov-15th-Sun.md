@@ -10,32 +10,6 @@ journal-date: 2026-11-15
 ---
 
 ```meta-bind-button
-label: Remove Morning Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### MORNING CHECKLIST
-    - [ ] Air out the room %%lower oxygen levels and may affect you, triphasic breathing if you're cold%%
-    - [ ] Day scene
-    - [ ] Check webcam (exposure)
-    - [ ] Check IP cam (quality, delay)
-        - [ ] Reconnect to reset delay
-        - [ ] Disable sleep blur
-    - [ ] Check all elements are present on the canvas
-    - [ ] Check TickTick schedule 
-        - [ ] correct day, scheduled, scaled
-        - [ ] red "now" line is there
-    - [ ] Start stager timer
-    - Obsidian
-        - [ ] Reload.
-        - [ ] Fill Context block.
-        - [ ] Split down. Have ~10 lines of time log.
-
-```meta-bind-button
 label: Remove Night Checklist
 style: default
 icon: trash-2
@@ -91,59 +65,18 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning]`
-- 
+- ###### 13:31
+	- Was cleaning up the repo from "the project", since I don't want it public yet. And almost removed it with no way to recover it... But thankfully in recycle bin there was backup. Like I did proper backup but for some reason it got deleted as well... man...
+- ###### 13:04
+	- I'll pay for dopaminergic music. How to have both? Music and not pay for it? Not move to it? It feels weird to not act to that music. So yeah, I'll see. Doubt it'll change anything. But maybe?
+- ###### 12:53
+	- New chair ergonomics seems to be much more interesting. Time will tell if it's more "healthy". But it's nice to be able to relax neck. Though it's too far back. Easy to clean from hair oils as well. It has also this interesting feature of being uncomfortable while I'm in strain-prone position. So it makes me naturally be in more "healthy" posture. 
+	- Want to clean. Wash vacuum's filters. Last line of defense)) Do something productive to avoid the main thing in priority)
+- ###### 12:50 | MEANING: 🔴
+	- Didn't listen rap for ages. These Englishmen haw unique flavor to their rap. I like it much more than American.
+	- But I'm still not working on the website... yeah)
+- ###### 12:13
+	- So Chrome wrote 100 gigabytes in 2 days. It just alarms me. Like these drives can live infinitely with adequate usage. Like it's still like a decade worth of resource left. But it just frustrates me... Spotify too. I listened for like 4-5 songs - 1gb written. It's so wasteful it's insane. 
 ==REPEAT The Project is dead. Website is priority. Stay in tension by avoiding indulgence==
 
 ---
-
-## DREAM ANALYSIS
-### Read First
-- **Goal** of the dream isn't only to show you the answer, but also to give meaning to the answer through the story. Peterson's "story" from his Maps of Meaning work. 
-- Not all dreams will **click**.  As LLM put it - drill-sergeant's dream isn't supposed to give me chills. 
-	- I can be rich with meaning but poor with action, in this case I don't need inspiration, I need to have a dream that is grounded in action and persistent day-to-day movement of men's work. 
-
-### Dream #1 - NAME
-
-- #### Raw Dream
-    - ##### Tips
-        - `Ignore mistakes, formatting, structure, goal is to capture the raw fleeting dream without being distracted by all of it`
-    - 
-- #### Location & Environment
-    - ##### Tips
-        - `What you feel when you go/are there in real life?
-        - `If it's unreachable/unknown - how would you feel being there in real life?`
-        - `Is feeling positive/negative?`
-        - `Why would dream use this location/environment and not other ones?`
-    - 
-- #### Analyze figures, what they represent, why they're there? \*\*
-    - ##### Tips
-        - `Why that figure there, how situation would unfold without that figure?`
-        - `Is it positive or negative figure, how you feel about them, which emotions comes up? `
-        - `Can it be the Shadow, or the Anima?`
-        - `Is it internal representation or external relationships?`
-    - 
-- #### Emotional/Rememberable scenes
-    - ##### Tips
-        - `If there's particularly rememberable scenes - analyze why they're rememberable, what's their charge, what's so valuable in them, what they're hinting on? `
-    - 
-- #### Direction/Tendency
-    - ##### Tips
-        - `How it starts and how it ends establishes the direction/tendency of the dream which gives another perspective on it.`
-        - `Direction is overlapping with compensation, but you should focus on positive/negative property`
-    - **First sentence is**
-    - **Last sentence is**
-    - **Direction of the dream is**,
-- #### Final feelings
-    - ##### Tips
-        - `Aftertaste of the dream. Feeling about the dream as a whole.`
-    - 
-- #### Hooks From the Past
-    - ##### Tips
-        - `Your ego was one-sided recently - where/when it might've been like that?`
-        - `If dream is repeatable - then there's reoccuring tendency to behave in a certain manner - find it, look in the past for a pattern, not a one-off fluke`
-    - 
-- #### Likely Compensation
-    - ##### Tips
-        - `Which type of compensation is present? Does it inspire you? Does it deflate over-inflated ego? or does it confronts wrong actions/attitude by showing dreams into opposite direction?`
-        - `Keep remembering that it shows you blind spots, so the answer isn't what's obvious, because you already see it. You must approach compensation from unexpected angle. `
-    - 

@@ -2,10 +2,7 @@
 _private/
 
 # The Project, but not ready yet to make it public.
-0vibes/*
-
-# very small single file, contains a few personal things of other people
-Social/
+**/0vibes/*
 
 # "the project"'s configuration
 .axon/
