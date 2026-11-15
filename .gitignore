@@ -3,7 +3,7 @@ _private/
 
 # The Project, but not ready yet to make it public.
 **/0vibes/*
-
+!**/0vibes/_0vibes.md
 # "the project"'s configuration
 .axon/
 # to exclude workspace cache
