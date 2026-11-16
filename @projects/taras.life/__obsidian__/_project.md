@@ -136,6 +136,8 @@ GROUP BY true
 		- ###### Remove unused/redundant styles %% fold %%
 			- After SCSS→CSS migration: audit base/callouts/popover for styles of removed plugins (e.g. things tied to dropped features)
 - ### Pages
+	- ###### JavaScript-required warning %% fold %%
+		- Show a warning when JavaScript is unavailable, explaining that the website requires JavaScript to work. This is a separate future feature, not an Explorer-specific no-JavaScript fallback.
 	- ##### Buttons
 		- ###### Up/Down Floating Block %% fold %%
 			- On bottom right. Scrolls up/down. Especially useful if you'll have that planned navigation on top of the page.

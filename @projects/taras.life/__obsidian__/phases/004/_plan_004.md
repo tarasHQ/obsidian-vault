@@ -44,9 +44,9 @@ GROUP BY true
 - Root homepage: `index.md`. A folder entry page is `_<folder-name>.md` inside that folder; matching is case-insensitive and otherwise includes all characters (e.g. `@system/_@system.md`).
 - Explorer is a build-time, flat list of matching entry pages in immediate subfolders of the content root only; deeper entry pages are reached through page content. An optional frontmatter title supplies the section label; otherwise use the filename without its extension and first underscore. Sort entries alphabetically and place the homepage as `Home` at the bottom.
 - An optional entry-page frontmatter icon selects a locally maintained SVG; use a default SVG when no icon is specified. Keep only selected icons in the project rather than shipping an entire icon library.
-- Bake the complete Explorer and used icon definitions into each page's HTML. Define each icon once per page and reuse it by namespaced ID; style icons in shared theme-aware CSS. No separate Explorer/icon fetch or browser-side list construction; browser code may handle mobile interaction. Check actual output size and SPA behavior.
-- The original desktop direction is an always-visible Explorer without a heading that folds it. On mobile, use a compact floating button on the right, with room to later add scroll-up/down buttons as a vertical group. The menu opens from the right and fits its content rather than using a fixed percentage or pixel width.
-- Vault structure is the navigation SSOT. Quartz Syncer renders Dataview queries to HTML before syncing content to Quartz; generic entry-page listings provide deeper navigation.
+- Bake the complete Explorer and used icon definitions into each page's HTML. Define each icon once per page and reuse it by namespaced ID; style icons in shared theme-aware CSS. No separate Explorer/icon fetch or browser-side list construction; browser code may handle mobile interaction. Check SPA behavior through practical browsing after implementation.
+- The original desktop direction is an always-visible Explorer without a heading that folds it. On mobile, use a compact floating button on the right, with room to later add scroll-up/down buttons as a vertical group. The menu opens from the right and fits its content rather than using a fixed percentage or pixel width. Choose suitable interaction and accessibility details during implementation and refine them based on testing; a no-JavaScript Explorer fallback is not required.
+- Vault structure is the navigation SSOT. Quartz Syncer renders Dataview queries to HTML before syncing content to Quartz; the user has already verified this works. Generic entry-page listings provide deeper navigation.
 - Own a focused internal Explorer rather than adapt the community package. Beyond optional title and icon presentation metadata, no explicit navigation map, hierarchy overrides, or dedicated navigation-validation system; add capabilities later only if needed.
 
 ## Exploration
@@ -73,7 +73,7 @@ GROUP BY true
 - ### Exploration Tips
   %%Free form. Concise. For more precise exploration. Goal is to avoid misleading/wrong/inefficient exploration. Optional. Should be really concise though %%
 	- Match entry names against original relative paths; use actual published slugs for links. Page data can also include virtual pages, so distinguish them from source entries.
-	- Confirm the internal component's registration path and mobile/SPA interaction details during step-writing; don't assume the community package's design is suitable.
+	- Confirm the internal component's registration path and mobile/SPA interaction details during step-writing; don't assume the community package's design is suitable. After implementation, ask the user to browse the Explorer and check navigation, back/forward, repeated mobile menu use, and relevant edge cases; address issues found through testing.
 
 ---
 ---

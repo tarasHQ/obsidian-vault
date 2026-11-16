@@ -62,7 +62,7 @@ These decisions reflect the later discussion and supersede conflicting ideas in 
 - **Structure and discovery**
 	- The vault's coherent folder structure is the navigation SSOT, avoiding shortcuts and exceptions that need separate maintenance. Build our own focused internal Explorer rather than copying or adapting the community Explorer's configurable tree; existing code is not automatically an optimal solution for this site's needs.
 	- Discover the root homepage `index.md` and matching entry pages in **immediate subfolders of the content root only**. A folder's entry page is `_<folder-name>.md` inside that folder, matched case-insensitively while preserving all other characters.
-	- Explorer is a flat list. Deeper entry pages and notes are reached through entry-page content, not shown in Explorer. Generic Dataview listings provide that deeper navigation; Quartz Syncer renders them to HTML before syncing. Trust this existing behavior; no preparatory Syncer work is planned.
+	- Explorer is a flat list. Deeper entry pages and notes are reached through entry-page content, not shown in Explorer. Generic Dataview listings provide that deeper navigation; Quartz Syncer renders them to HTML before syncing, and the user has already verified this works. Trust this existing behavior; no preparatory Syncer work is planned.
 	- Sort section entries alphabetically and put the root homepage at the bottom as `Home`. There is no separately authored navigation map, hierarchy override system, or dedicated navigation-validation system.
 - **Labels and icons**
 	- An entry page may provide an optional frontmatter title for its Explorer label. Otherwise derive the label from its filename by removing the `.md` extension and the convention's first underscore: `_@system.md` → `@system`, `__static.md` → `_static`.
@@ -74,13 +74,15 @@ These decisions reflect the later discussion and supersede conflicting ideas in 
 	- Keep icon styling in shared CSS rather than repeating presentation attributes on every icon. Use theme-aware colors, such as `currentColor` where appropriate, so icons work with light, dark, and dark-low modes. SVG geometry still lives in the page's icon definitions.
 	- SVG source files can be maintained locally and their selected contents embedded during the build. No icon-load animation or icon-loading script is needed. Browser code may still be needed for mobile menu interaction. Decorative icons should be hidden from screen readers when adjacent link text supplies the name.
 	- Match entry-page names using original source-relative paths; generate links from actual published Quartz slugs rather than guessing URLs from filenames.
-	- The full Explorer markup and its selected icon definitions are still repeated in each page response. Reuse saves most when multiple entries share an icon; check actual generated size and browser/SPA behavior during implementation rather than assuming specific savings.
+	- The full Explorer markup and its selected icon definitions are repeated in each page response. Reuse saves most when multiple entries share an icon; check browser/SPA behavior through practical browsing after implementation.
 - **Desktop, mobile, and future widgets**
 	- The original desktop direction is an always-visible Explorer, without an Explorer heading that folds the entire component.
 	- Use a compact floating Explorer button on the right, leaving room for future scroll-up/down buttons in a vertical group; do not implement those buttons now. The menu opens from the right and fits its content rather than a fixed percentage or pixel width, while remaining usable within the viewport.
 	- Explorer owns its own markup and interaction, not the entire sidebar. Other widgets can use their own build-time or browser-side data and must handle their own SPA lifecycle and state.
+	- Choose suitable mobile interaction and accessibility details during implementation, then refine them based on testing. A no-JavaScript Explorer fallback is not required; a site-wide JavaScript warning is a separate project idea.
+	- After implementation, ask the user to browse the Explorer and check navigation, back/forward, repeated mobile menu use, and relevant edge cases. Address issues found rather than adding speculative fixes in advance.
 - **Still open**
 	- Whether to highlight only the exact Explorer page, the current top-level section, or nothing; verify any chosen behavior with SPA navigation. A client-side active-state hook is not locked in.
 	- Exact frontmatter field names, handling of an unrecognized icon name, and the alphabetical comparison (including whether sorting uses displayed titles).
-	- Mobile dismissal, focus, scrolling, and no-JavaScript behavior; the precise internal component registration boundary.
+	- Mobile dismissal, focus, scrolling, and the precise internal component registration boundary.
 	- Earlier notes suggest background blur and avoiding bottom `dvh` covers for iOS Safari; these visual/compatibility preferences have not been reconfirmed. The earlier fixed half-screen width is superseded by content-based sizing.
