@@ -12,7 +12,7 @@ journal-date: 2026-11-15
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-Another clean day. 
+Another clean day. Did some productive things that I was delaying for awhile. But still no big effort on the website, which is at the priority. But staying clean of indulgence at least gives more tension to work with, at least I spend the time quasi/suboptimally productive instead of just throwing it into the trash. Especially because those small wins kinda help with the meaning/motivation too.
 
 ---
 

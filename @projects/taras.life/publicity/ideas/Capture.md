@@ -14,6 +14,14 @@
 -  Sync youtube video publishing with updates of website? 
 - ### If you do re-encoding path
 	- you may add on the bottom a timeline. So it's like always visible and 1:1 to time in youtube video. Could be more visible. Animated. More interactive? I don't know. Definitely borders "too much". 
+	- Re-encoding settings experiments
+		- `ffmpeg -hwaccel cuda -hwaccel_output_format cuda -i "input.mp4" -c:v hevc_nvenc -preset p1 -split_encode_mode 2 -b:v 1500k -c:a copy "output.mp4"` - split frame NVENC encoding + CUDA decoding (so cpu isn't loaded at all). Fastest so far. (av1 may be even better for storage)
+	- Ideas
+		- You can speed up night. And have day on lower speeds. 
+		- timelapse on keyframes - super fast. 
+		- timelapse for the whole day at the start. 
+			- then you exclude sleeping and insert the rest of the day at lower speed.
+				- When I rewatch videos - that high speed makes some moments feel weird. Unnatural. 
 - ### Thumbnail
 	- Current one is the same for all days = it might as well be a black square = you can do little to nothing to make it better, or give it some effort to make it really better.
 	- Why?

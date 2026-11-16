@@ -73,16 +73,20 @@ These decisions reflect the later discussion and supersede conflicting ideas in 
 	- Define each used icon once per page in an in-page SVG definitions block and reference it by ID where it appears. Reuse the default icon definition across entries that select it. Namespace IDs to avoid collisions with future widgets.
 	- Keep icon styling in shared CSS rather than repeating presentation attributes on every icon. Use theme-aware colors, such as `currentColor` where appropriate, so icons work with light, dark, and dark-low modes. SVG geometry still lives in the page's icon definitions.
 	- SVG source files can be maintained locally and their selected contents embedded during the build. No icon-load animation or icon-loading script is needed. Browser code may still be needed for mobile menu interaction. Decorative icons should be hidden from screen readers when adjacent link text supplies the name.
-	- Match entry-page names using original source-relative paths; generate links from actual published Quartz slugs rather than guessing URLs from filenames.
+	- Match entry-page names using existing source-relative page paths; generate links from actual published Quartz slugs rather than guessing URLs from filenames. Do not add speculative virtual-page tracking; current generated 404 and `.base` page paths do not match the convention.
 	- The full Explorer markup and its selected icon definitions are repeated in each page response. Reuse saves most when multiple entries share an icon; check browser/SPA behavior through practical browsing after implementation.
 - **Desktop, mobile, and future widgets**
 	- The original desktop direction is an always-visible Explorer, without an Explorer heading that folds the entire component.
 	- Use a compact floating Explorer button on the right, leaving room for future scroll-up/down buttons in a vertical group; do not implement those buttons now. The menu opens from the right and fits its content rather than a fixed percentage or pixel width, while remaining usable within the viewport.
 	- Explorer owns its own markup and interaction, not the entire sidebar. Other widgets can use their own build-time or browser-side data and must handle their own SPA lifecycle and state.
 	- Choose suitable mobile interaction and accessibility details during implementation, then refine them based on testing. A no-JavaScript Explorer fallback is not required; a site-wide JavaScript warning is a separate project idea.
+	- Highlight the entry for the current page's top-level section, including when viewing that entry itself; highlight `Home` on the homepage. Verify the result through SPA navigation; a client-side active-state hook is not locked in.
 	- After implementation, ask the user to browse the Explorer and check navigation, back/forward, repeated mobile menu use, and relevant edge cases. Address issues found rather than adding speculative fixes in advance.
+- **Integration and verification**
+	- Implement as an internal Quartz component using existing layout/resource mechanisms, without a separate Explorer package or plugin build process.
+	- Accept existing watch-mode partial rebuild behavior: unchanged pages can retain stale baked Explorer markup after entry additions, changes, or deletions. Document the limitation and full-rebuild remedy in the relevant local README rather than adding invalidation machinery.
+	- Keep tests focused on meaningful behavior, avoiding low-value or speculative tests. Create needed generic entry pages through the appropriate vault-authoring workflow; don't assume edits to synced `content/` update the vault.
 - **Still open**
-	- Whether to highlight only the exact Explorer page, the current top-level section, or nothing; verify any chosen behavior with SPA navigation. A client-side active-state hook is not locked in.
-	- Exact frontmatter field names, handling of an unrecognized icon name, and the alphabetical comparison (including whether sorting uses displayed titles).
+	- Exact frontmatter field names, handling of an unrecognized icon name, and the alphabetical comparison (including whether sorting uses displayed titles). The configured frontmatter transformer supplies missing titles, so distinguish authored titles from that fallback.
 	- Mobile dismissal, focus, scrolling, and the precise internal component registration boundary.
 	- Earlier notes suggest background blur and avoiding bottom `dvh` covers for iOS Safari; these visual/compatibility preferences have not been reconfirmed. The earlier fixed half-screen width is superseded by content-based sizing.

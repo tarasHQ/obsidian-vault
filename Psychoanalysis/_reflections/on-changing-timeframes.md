@@ -67,6 +67,7 @@ isIntegrated: false
 - ---
 - ## I'm Stuck
 - Will pause, but continue a bit later. This reflection is the priority.
+- UPD. Didn't continue. A day or two have passed. 
 
 ## PLAN LOW LEVEL TOO
 Puer wants to stop when he's high. Bring him to the ground. 
