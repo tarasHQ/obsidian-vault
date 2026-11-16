@@ -1,1 +1,5 @@
-![[_attachments/index-20261111173549038000.avif]]
+
+
+
+
+static files - [[_static/_hidden.md|_hidden.md]]

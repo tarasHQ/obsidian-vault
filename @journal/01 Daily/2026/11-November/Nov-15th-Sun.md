@@ -26,11 +26,6 @@ Another clean day.
 
 ---
 
-## CREATED ARTIFACTS
-- 
-
----
-
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning]`
