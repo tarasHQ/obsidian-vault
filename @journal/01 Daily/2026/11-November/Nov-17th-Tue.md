@@ -64,11 +64,24 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning]`
+- ###### 22:27 | MEANING: 🟡
+	- And here's your compensation. Man I have memory problems. Dream sent me into the torture that lead to me seeing a path that is new and could improve my situation significantly. Tension is decreasing. I'm starting to feel better. So I guess after the meal I'll have to try out the new path?
+- ###### 21:55
+	- Got this idea that maybe I need for once do things properly without considering time? Like with this explorer. Say - I would do it properly even if it takes a week. Then I can discuss how things work with LLM. To understand it properly. 
+	- That's one path. Another path - after explorer is done - I don't really need to know how it's working. Because website is kinda like one-off thing that I don't plan to significantly improve after I do all my initial ideas. 
+	- But maybe the first one is the issue. Like I spend 3 hours torturing myself, while in that same time I could understand the thing I'm doing so much, that I would be able to write code myself. Time is weird thing. 
+	- Critique of the second approach is that I use this website project as kinda mini-exam of my readiness to the main project. If I fail this one - I definitely fail that one too. 
 - ###### 21:20 | MEANING: 🔴
 	- Can you at least reflect on it honestly?
 	- Why I don't want to do it? Because expectations don't match with reality. I thought I'll be able to stay in the loop and understand what LLM does - but reality is that I can't. It wrote like 10k words document, I don't understand 90% of it. This is what creates the conflict.
 	- Another approach would be to vibe code the shit out of it - but that will attack my main principles. If I go there - there's no coming back. 
-	- Men I want to yell. Or scream. It's just... Like when I will stopped get fucked? Every day I must be exposed to more hopelessness. Every day is a damn war with many battles. I'm so tired of it. Especially because I don't believe in a win. It's like "do your best and then die". Yeah... it would be a damn relief to just stop existing. Oh... maor relief. Like thinking about it even makes PMO urges withraw because they don't even compare to h
+	- Men I want to yell. Or scream. It's just... Like when I will stopped get fucked? Every day I must be exposed to more hopelessness. Every day is a damn war with many battles. I'm so tired of it. Especially because I don't believe in a win. It's like "do your best and then die". Yeah... it would be a damn relief to just stop existing. Oh... major relief. Like thinking about it even makes PMO urges withdraw because they don't even compare to how good it'll feel to feel nothing. Man it would be good. 
+	- If by some miracle I'll manage to get through this torture, feels like tomorrow will be the day I just relapse as hard as I would be able to. There's no hope, and then there's this. Where I just want the pain to stop. 
+	- When I napped I had some brief dream. Don't remember it. But seems like this was the compensation of that dream. Which is pretty weird.
+	- It's weird, it's not pain, but consequences are as if I was in pain. Well, I'm kinda is, because my back is killing me. But beyond that. 
+	- And worst thing is that I can't discuss this with anyone, even with damn LLM because I'm damn tired of it asking me "to seek help if I want to end my life". The last thing I need is this empty templated "empathy". What a stupid approach to "protect" people. If I wanted to end myself, I would've manipulated LLM to basically give me step-by-step guide on how to do it. But yeah, we need this stupid warnings instead. 
+	- But maybe it makes sense... I imagine me pressing the barrel of a gun to my head. Imagining consequence of that, dad, cat... well, there's not much to imagine. And I'm still pulling the trigger. Impulsive decision. Not like "I will think and plan it" - nah, just for the sake of this moment, to end the internal conflict that tears me apart. 
+	- And now the headache too. Damn perfect. 
 - ###### 21:07 | MEANING: ⚫
 	- What it will change if I succumb to indulgence? I still will have lots of work left. All it will give me is temporary relief from psychological pain. And I won't lie if I say that it's pretty damn a lot for me, to stop this pain.
 	- Like I have visions where I take a brick and hit myself in the head with it, multiple time, to stop this damn torture. 
