@@ -7,7 +7,6 @@ A task that is purely focused on quality of code of the implemented step.
 
 ## Rules
 - **STAGE AWARENESS** - Every response to the user should have current stage letter, name and substage letter-number at the first line.
-- **TEMP ARTIFACTS ARE WRITE-ONCE** - `code-review-xxxx` etc. are written during the review stages and never edited or appended afterwards. Locked decisions/results go ONLY into durable documents (code, plan, steps) — never back into a temp artifact.
 
 ## Stages
 - ### A - The Exploration
@@ -24,28 +23,23 @@ A task that is purely focused on quality of code of the implemented step.
 			2. Preemptive explanation in simpler terms, in case user won't understand something because of lack of knowledge/experience on the matter. 
 		- The goal of this answer is to ensure the user has good knowledge of what was done. 
 	- [ ] **B2** - [LLM]  - THE EXAM
-		- LLM must ensure that user has proper knowledge of what was done on low and high levels. For that, after the explanation - LLM must do an exam for the user and proceed only if user scores 90% correct responses. 
+		- LLM must ensure that user has proper knowledge of what was done on low and high levels. For that, after the explanation - LLM must do an exam for the user.
 		- Format of the exam
 			- Goal isn't to catch the user on syntax technicalities, but to make sure he truly understand how things works in code and abstractly. 
-			- Questions that accept written answer only. 
-			- Expected answer should be under 2-3 sentences (not penalized if longer but correct). 
+			- Multiple-choice exam.
 			- Amount of questions should be sufficient to cover the step.
 - ### C - The Code Review
 	-  **Tone** - Honest, Critical, Realistic, Efficient. 
 	- **C1** - [LLM] - **Response #1**
-		- Using `write` tool. 
-		- Writes a temporary self-reflective exploration of all review possibilities in a temporary `.md`  file inside `artifacts/code-review-xxxx`, where last 4 digits are random [a-z0-9] to avoid duplication. 
-		- Format is nested lists of questions/points/reflections/ideas (no answers/finalizations/recommendations)
+		- Responds with a one-off self-reflective exploration of review possibilities (plain response; no tools except the required final continuation read).
+		- Format is nested lists of questions/points/reflections/ideas (no answers/finalizations/recommendations).
+		- MANDATORY - end the response by reading `C:\Users\Taras\Documents\obsidian-vault\@system\projects\shared\loop-continuation.md` to continue automatically without asking the user to continue.
 	- [ ] **C2** - [LLM] - **Response #2**
-		- Only `write` tool is allowed. 
-		- Using already created temporary `.md` file `artifacts/code-review-xxxx` in previous stage
-			- Using append functionality of write tool. 
-			- This file is write-once. After this stage the artifact is never edited again — results/locked decisions go into durable documents in later stages.
-        - LLM lists 5 to 15 of the most **(reasonable, low-level, radical, architectural)** implementation possibilities for the implemented step.
+		- LLM lists **(reasonable, low-level, radical, architectural)** refinement possibilities (anywhere from 1 to 15) for the implemented step (plain response; no tools except the required final continuation read).
 		- Those points may cover categories:
+			- Top Priority: Bugs
 			- More streamlined code
 			- Reduced lines of code
-			- Bugs
 			- Missed handling edge cases
 			- Code Smells
 			- Quick and dirty solutions instead of proper ones
@@ -64,6 +58,7 @@ A task that is purely focused on quality of code of the implemented step.
 			- **Description In Simpler Terms** - a paragraph of description in simpler terms (non-advanced) about this point. Goal is to preemptively explain it in a bit more easier wording, so user won't get stuck on unknown technicalities. 
 		- **THE LAST POINT**
 			- At the end of the list llm adds the last point under which it lists minor issues. Like wrong/outdated comments, importing/exporting issues, typos, ordering of the code in files, and other minor issues that should be fixed, but that aren't big enough to be covered under points above.
+		- MANDATORY - end the response by reading `C:\Users\Taras\Documents\obsidian-vault\@system\projects\shared\loop-continuation.md` to continue automatically without asking the user to continue.
 - ### D - Further Exploration
 	- [ ] **D1** - [LLM] 
 		- LLM starts second pass of thorough exploration focused on points it listed, to make sure descriptions/solutions/benefits/etc. is accurate. 
@@ -78,7 +73,7 @@ A task that is purely focused on quality of code of the implemented step.
 		- No writing/editing of files is allowed. 
 		- LLM responds to the user with confirmed/validated/refined points of code review.
 		- In the same **FORMAT** that initial drafted list was written. From **FORMAT of every point**.
-		- **CRUCIAL** - it must be a self-contained list without depending on user's knowledge of previously created temporary file and its contents.
+		- **CRUCIAL** - it must be a self-contained list without depending on the user's knowledge of the earlier review responses.
 	- [ ] **E2** - [LLM] - **Still Response #1**
 		- Within the same response LLM writes a template for user response inside markdown codeblock
 		- In this template it lists the number and name of the point and empty bullet point after for user to fill. 

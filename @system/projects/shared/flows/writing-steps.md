@@ -6,7 +6,10 @@ From initial refined reflection(**what** I want to do) -> to properly explored, 
 
 ## Rules
 - **STAGE AWARENESS** - Every response to the user should have current stage letter, name and substage letter-number at the first line.
-- **TEMP ARTIFACTS ARE WRITE-ONCE** - planning-flow artifacts (`implementation-possibilities-xxxx` etc.) are never edited or appended in this flow. Their locked decisions were already integrated into the plan/reflection.
+- **IMPLEMENTATION-READY** - Writing steps resolves and discusses HOW to implement, not just WHAT to achieve. Don't mark a step ready while its central approach is unresolved; ordinary, lowest-level coding details stay for implementation.
+- **COMPLEXITY STOP** - If the approach needs substantially more machinery than agreed, its assumptions fail, or investigation repeatedly stalls without a viable route — stop. Don't silently expand scope or keep layering workarounds.
+	- Explain what changed, why the approach became costly, and reasonable alternatives with trade-offs.
+	- Wait for user approval, then update the affected step before continuing. Until resolved, the step isn't implementation-ready.
 - If there's unexpected additional work - a step can be split into multiple ones.
 	- Decimal points for numbering 05, 05.1, 05.2.
 	- New steps are created using current flow. 
@@ -20,7 +23,8 @@ From initial refined reflection(**what** I want to do) -> to properly explored, 
 		- Artifacts can be anything. Reflections, ideas, plans, implementation steps, etc.
 	- [ ] **A2** - [LLM] 
 		- LLM starts thorough exploration. 
-		- Goal of exploration is to be ready to start planning/writing steps
+		- Goal of exploration is to understand the phase and integration points enough to structure the steps; deeper exploration happens per step in C.
+		- Verify decisive facts in relevant source/docs; don't rely only on exploration summaries. Record those facts in the step so implementation doesn't repeat the investigation.
 - ### B - Planning the Structure of Steps
   %%optional, if the plan already exists, and flow just repeated in another task to write the steps%%
 	- [ ] **B1** - [LLM]
@@ -43,7 +47,17 @@ From initial refined reflection(**what** I want to do) -> to properly explored, 
 		- LLM discusses with user proposed structure
 		- If user accepts it - LLM starts writing step, one-by-one.
  - ### [LOOP] C - Writing the Steps
-	 - [ ] **C1** - [LLM]
+	 - [ ] **C1** - [LLM] - First Pass: Exploration & Approaches
+		 - Understand the step's data flow and constraints, identify reasonable implementation approaches, and provisionally recommend one. Identify assumptions that could make it fail or become disproportionately complex.
+		 - If user priorities determine the direction, or verification itself needs substantial work - discuss first, then continue verification in C2.
+	 - [ ] **C2** - [LLM] - Second Pass: Verify & Challenge
+		 - Verify the decisive assumptions, integration costs and complexity of the provisional recommendation. Check the strongest alternative enough for a credible comparison; change the recommendation if warranted. Don't just seek confirmation.
+		 - Keep both passes proportional to the step; reuse verified facts rather than repeat broad exploration. No exhaustive investigation of every alternative is required.
+	 - [ ] **C3** - [LLM + USER] - Discuss the Approach
+		 - Discuss the grounded recommendation: HOW, WHY, integration points, meaningful alternatives, trade-offs and remaining uncertainty.
+		 - Check whether the proposed approach is proportionate to the requirement. Don't approve complexity merely because it technically works.
+		 - Resolve questions that could substantially change the approach and get user approval before writing. If investigation itself is needed as a step - label it explicitly, don't disguise it as implementation.
+	 - [ ] **C4** - [LLM]
 		 - Reads template for steps `C:\Users\Taras\Documents\obsidian-vault\@system\projects\shared\templates\step-template.md`
 		 - Starts writing steps incrementally. 
 			 - If this flow was run on the job that was done partially (like steps 0-5 is done, and 6-10 need to be written) - LLM just continues from the last step. 
@@ -52,11 +66,11 @@ From initial refined reflection(**what** I want to do) -> to properly explored, 
 			 2. Updates the plan
 		 - Nuance for updating the plan without re-reading it on every step.
 			 - Use edit tool. And use name of the previous step as the anchor for replacement. new string will contain whole new step + the name of previous step. In that manner whole new block can be safely inserted.
-		 - Plan scope: when updating the plan — phase-level knowledge only; step-scoped detail lives in the step files (or planning-flow artifacts they were written from). When updating exploration, remove stale/no-longer-relevant entries in the same pass.
+		 - Plan scope: when updating the plan — phase-level knowledge only; step-scoped detail lives in the step files. When updating exploration, remove stale/no-longer-relevant entries in the same pass.
 		 - Steps should be written in descending order in-between existing step-99 and step-00. (highest step is first/above)
-	 - [ ] **C2** - [LLM + USER]
+	 - [ ] **C5** - [LLM + USER]
 		 - Discussion. 
 		 - If LLM sees any issues/open questions with the step - it asks user. If everything is straightforward - LLM just waits for user to approve the created step
-	 - [ ] **C3** - [LLM]
+	 - [ ] **C6** - [LLM]
 		 - On user approval LLM restarts the loop for the next step and starts from **C1**.
  - ### The End

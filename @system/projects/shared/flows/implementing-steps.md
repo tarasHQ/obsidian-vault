@@ -7,6 +7,9 @@ Efficient and focused implementation of steps.
 
 ## Rules
 - **STAGE AWARENESS** - Every response to the user should have current stage letter, name and substage letter-number at the first line.
+- **COMPLEXITY STOP** - If the approach needs substantially more machinery than agreed, its assumptions fail, or investigation repeatedly stalls without a viable route — stop. Don't silently expand scope or keep layering workarounds.
+	- Explain what changed, why the approach became costly, and reasonable alternatives with trade-offs.
+	- Wait for user approval, then update the affected step before continuing. Until resolved, the step isn't implementation-ready.
 - **99-end.md** can be used also to accumulate phase specific end-phase-task. Checks/evaluations/"things to come back to when the phase is done"/tests/end-of-phase-discussions/etc.
 - **EVERY WRITE INTO HIGH-LEVEL DOCS SHOULD CONSIDER ITS SCOPE** - you don't write about minute details into high-level plan or agents.md. 
 - **HIGH-LEVEL DOCS CARRY NO CODE FACTS** — the plan never contains selectors, property names, values, component names, or mechanisms. It answers "what and why at phase level"; step files answer "how". A plan edit longer than ~5 sentences(of avg. length) for one step is a smell — put it in the step file instead.

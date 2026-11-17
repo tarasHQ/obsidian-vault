@@ -64,6 +64,16 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning]`
+- ###### 14:32 | MEANING: 🟡
+	- Losing meaning a bit. Too much of abstract work. Feels like I need to seek Puer-Senex balance in my flows. Just to lock this idea down. If it'll repeat - maybe it'll make sense to spend effort on this. 
+	- ==Seems like the negative Puer starts to get negative when I want to play games. This is the marker. And the negative Senex leads to PMO/Food? ==
+		- Because games are fantasy world. It's interesting. High-level abstraction of real world. Engaging. Attractive. Plays on my curiosity strings.
+		- And PMO/Food is like "stop suffering" and just completely forget yourself in the middle of the unconscious ocean of indulgence. PMO is a nice first trigger to spin the whole machinery.
+	- Like even writing this feels a bit more meaningful than before, because it got to ground level where it's applicable. While those flows stay high 
+- ###### 14:18 | MEANING: 🟢
+	- Good. Refining flow of steps gives more meaning. Because I believe that it will reduce a lot of that unnecessary friction from this step. 
+- ###### 13:33 | MEANING: 🟡
+	- It has ups and downs. But I'm working on it. 
 - ###### 12:07
 	- And also I did another "burning sacrifice" ritual. It burned well today. Just to lock it down in logs. Maybe it make sense unconsciously?
 - ###### 11:53 | MEANING: 🟢
