@@ -35,6 +35,10 @@ GROUP BY true
 	- #### IDEAS
 		- Why? %% fold %%
 			- To connect the website with living human being. You read all those other website and they felt like footprint of dead people. While this "doing now" logic will allow to kinda unconsciously give the website more meaning. 
+		- Upload mechanism
+			- auth'ed cloudflare R2 upload (private)
+			- worker - downloads from R2 and serves (or serves directly)
+			- R2 here have much-much-much higher limits than KV storage. So you actually can kinda like have timelapses or something though it might be overkill. But like showing last 5 minutes maybe? As like 30 images? I don't know. Seems like overkill. For sure should start with 1-2-3 images. Max. 
 		- ##### Fetching latest journaling log %% fold %%
 			- Without git. Probably obsidian cli on proxmox OR utilizing SMB syncing somehow? Like proxmox host only syncs from smb to specific lxc (to have single point of access. While other lxc provides endpoint for worker, or something. )
 			- It's actually beneficial for you too. To have more quality time logs. Where you reflect more. 

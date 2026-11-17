@@ -65,7 +65,7 @@ These decisions reflect the later discussion and supersede conflicting ideas in 
 	- Explorer is a flat list. Deeper entry pages and notes are reached through entry-page content, not shown in Explorer. Generic Dataview listings provide that deeper navigation; Quartz Syncer renders them to HTML before syncing, and the user has already verified this works. Trust this existing behavior; no preparatory Syncer work is planned.
 	- Sort section entries alphabetically and put the root homepage at the bottom as `Home`. There is no separately authored navigation map, hierarchy override system, or dedicated navigation-validation system.
 - **Labels and icons**
-	- An entry page may provide an optional frontmatter title for its Explorer label. Otherwise derive the label from its filename by removing the `.md` extension and the convention's first underscore: `_@system.md` → `@system`, `__static.md` → `_static`.
+	- Reuse the existing parsed frontmatter title for the Explorer label. If it is missing, empty, or identical to the entry filename stem, remove the `.md` extension and the convention's first underscore: `_@system.md` → `@system`, `__static.md` → `_static`. An explicitly authored title equal to the stem receives the same fallback. This later implementation decision supersedes the authored-title provenance requirement: no additional parser, provenance hook, transformer changes, or separate metadata registry.
 	- An entry page may provide an optional frontmatter icon selection. Maintain a small local collection of selected SVGs instead of shipping an entire icon library. Use the default SVG when no icon is specified.
 	- Title and icon are presentation metadata only: neither changes entry-page inclusion or hierarchy.
 - **Build-time HTML and SVG reuse**
@@ -87,6 +87,6 @@ These decisions reflect the later discussion and supersede conflicting ideas in 
 	- Accept existing watch-mode partial rebuild behavior: unchanged pages can retain stale baked Explorer markup after entry additions, changes, or deletions. Document the limitation and full-rebuild remedy in the relevant local README rather than adding invalidation machinery.
 	- Keep tests focused on meaningful behavior, avoiding low-value or speculative tests. Create needed generic entry pages through the appropriate vault-authoring workflow; don't assume edits to synced `content/` update the vault.
 - **Still open**
-	- Exact frontmatter field names, handling of an unrecognized icon name, and the alphabetical comparison (including whether sorting uses displayed titles). The configured frontmatter transformer supplies missing titles, so distinguish authored titles from that fallback.
+	- Title and icon come from existing parsed frontmatter. Later decisions fix sorting by displayed label, default icons only for absent selections, and no icon for unrecognized or unusable selections; title provenance is deliberately not distinguished.
 	- Mobile dismissal, focus, scrolling, and the precise internal component registration boundary.
 	- Earlier notes suggest background blur and avoiding bottom `dvh` covers for iOS Safari; these visual/compatibility preferences have not been reconfirmed. The earlier fixed half-screen width is superseded by content-based sizing.

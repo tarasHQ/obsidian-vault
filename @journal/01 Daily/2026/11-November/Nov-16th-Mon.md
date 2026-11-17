@@ -65,6 +65,38 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning]`
+- ###### 01:23
+	- I really think I have to stop because if I continue I'll just give in to PMO and then stop anyway but also I won't care about it as much. 
+	- So much fucking planning and for what? When rubber hits the road out of nowhere there's 1km high wall of complexity. Fucking "AGI is here" my ass. I did initial reflection, then refined reflection, then critiqued all created artifacts, then created initial plan with more refinements, then wrote step1, then ran code review, then ran step implementation flow and only fucking here, where LLM got stuck and I stopped it and asked it what's wrong - only fucking here it told "oh actually it's not so simple". 
+- ###### 01:21
+	- I'm fucked with this attitude. I'm so fucked...
+- ###### 01:10
+	- I'm like seriously considering PMO. Because this BS is just depressing and hopeless. 
+- ###### 01:07 | MEANING: 🔴
+	- Man, I just can't. LLM went into exploration of BS approach. Then I picked better one. Sol. It gave me "here's the best long-term solution". I asked it if it's sure - and response is that solution was BS as well. 
+- ###### 00:51 | MEANING: 🟡
+	- Just work on both task. Stopped caring about time. There's problem/question/decision - I act on it. That's it. Don't care if I will finish it today
+- ###### 00:07
+	- Yeah, when I want to PMO - I just get overwhelmed so easily it's not even funny. I read two things I have to decide on - didn't understand them fully - and I'm already done and want to go to sleep... 
+- ###### 00:01 | MEANING: 🟡
+	- Diverge from the task... Was focusing on secondary things again. Avoidance...
+	- Also want to PMO now. It's curious thing I noticed earlier. That I don't want ALL indulgence, and at specific times I crave only for specific indulgence. This can be strong markers of the unconscious state. If I know who and why is possessing me - maybe I can get better at getting control back? 
+- ###### 22:47
+	- I won't rush into the idea to use Claude. When I researched it - I got withdrawal of meaning, not more of it. It seems like the goal was to find that blind spot, or maybe there was something else hidden from me that I kinda missed consciously (but not really unconsciously).
+	- Like those 1.5 hours were by far the best "restoration" of flow of the libido. Usually it would take the rest of the day with itself with the potential to extend to a week of avoidance. 
+	- And right now, pre meal, I'm kinda in fighting spirit towards the main task. I want to get back into it.
+- ###### 22:10
+	- ==🔴Also - idea with having sunday for some indulgence, kinda paying off for now. Like I don't really crave knowing that on sunday I'll have all I want. And it seems a bit more fair than either completely clean forever or infinite indulgence loops on another side of the issue. ==
+- ###### 22:01 | MEANING: 🟡
+	- The issue though, retrospectively, not really in LLMs or flows. Like right now - I see that correct approach isn't to crash out, but to read through it - say like "ignore most of it, and do this one only" in 10-15 minutes, and then you're done. And proceed to the next step.
+	- ==So, again, it wasn't LLM, my project, flows or other things. It was me.==
+	- Why it was me? 
+		- When it started? After I research about artalk comments. There was some wrong attitude. I can't see which one. Puer probably. I got too much into the skies. "Time is my only limitation". It can read as I intended, but also it kinda implicitly says that time is my ONLY limitation, meaning there's no other limits to me. So yeah, it was the Puer that seems like got autonomously compensated into the negative Senex. 
+		- It got so high that the first minor obstacle "on the ground" completely killed it. And seems like puer is tightly linked to the senex. So overly positive Puer got compensated by overly negative Senex? Can it work like that? I know dreams are primary tool for compensations. But experience shows me that in my awaken life I get compensated too. 
+		- Ok. Food first. With Peterson's lecture. Nourishment for the soul and body. And then I'll see.
+- ###### 21:59
+	- So what do I do? 
+	- At least I got out from that destructive state. Now I can eat. Then think. Don't know what to do next though. I'm pretty sure that the phase isn't doable for today...
 - ###### 21:47
 	- There's something to this scene. Especially embedded into the "clip" or "ritual". 
 	- I don't know what.  But at least I'll lock it down here. Maybe it'll make me think a bit more unconsciously on this topic.

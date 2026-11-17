@@ -1,5 +1,5 @@
 ---
-status: ready
+status: implemented
 state: full
 ---
 
@@ -7,58 +7,62 @@ state: full
 
 ## Description
 
-Prepare the build-time navigation model for the internal Explorer. Discover the site's top-level section entries from Quartz page data, preserving the distinction between authored titles and the configured frontmatter transformer's automatic fallback. The next step will consume this model to render and register the Explorer.
+Implemented the build-time navigation model for the internal Explorer. It consumes Quartz's existing processed page data; no additional frontmatter parsing, provenance hook, transformer changes, or metadata registry is needed. Rendering and registration remain outside this step.
+
+Implementation is written; automated verification and the review/completion decision remain pending. Keep this note full until the user approves condensation.
 
 ## High-Level
 
-### List of related files or folders
+### Related files
 
-- `__obsidian__/phases/004/_plan_004.md` — phase-wide decisions and exploration.
-- `__obsidian__/phases/004/_reflections/initial-reflection.md` — agreed behavior and remaining details.
-- `__obsidian__/phases/004/ideas/parking.md` — locked decisions supersede earlier notes.
-- `quartz/components/README.md`, `quartz/components/types.ts` — component conventions and page-data props.
-- `quartz/processors/README.md`, `quartz/processors/parse.ts` — parsing order and worker constraints.
-- `quartz/plugins/pageTypes/dispatcher.ts`, `quartz/plugins/vfile.ts` — processed page data passed to components.
-- `quartz/plugins/loader/config-loader.ts`, `quartz.config.yaml` — transformer configuration and ordering.
-- `node_modules/@quartz-community/note-properties/README.md`, `node_modules/@quartz-community/note-properties/dist/index.js` — configured frontmatter behavior; inspect the installed version rather than modifying it.
-- `quartz/util/path.ts`, `quartz/util/path.test.ts` — existing slug and relative-link utilities and tests.
+- `quartz/components/explorerNavigation.ts` — pure discovery, labels, ordering, published slugs, and icon metadata.
+- `quartz/components/explorerNavigation.test.ts` — focused model tests and integration through the shared Quartz file parser with the configured frontmatter transformer and checked-in options.
+- `quartz/components/README.md`, `quartz/components/types.ts` — component conventions and processed page-data contract.
+- `quartz/processors/README.md`, `quartz/processors/parse.ts`, `quartz/worker.ts` — existing parser shared by in-process and worker builds; unchanged.
+- `quartz.config.yaml` — existing frontmatter configuration and community Explorer; unchanged.
+- `__obsidian__/phases/004/_plan_004.md`, `__obsidian__/phases/004/ideas/parking.md`, `__obsidian__/phases/004/_reflections/initial-reflection.md` — phase decisions aligned with the approved simplification.
 
-Read the relevant local module READMEs before inspecting or modifying their code. Follow `__obsidian__/docs/DEV_RULES.md` before writing code.
+### Approved title simplification
 
-### Intended outcome
+The user approved reusing existing parsed frontmatter rather than recovering authored-title provenance. A missing or empty processed title, or one exactly equal to the source filename stem, uses the filename without its extension and first underscore. An explicitly authored title equal to the stem deliberately receives the same fallback. Other processed titles remain unchanged, including normalization already performed by the configured transformer.
 
-- A focused internal model consumes the processed page data available to a Quartz component and identifies the root `index.md` homepage and matching entry pages in immediate subfolders of the content root.
-- A folder's entry is `_<folder-name>.md` inside that folder, matched case-insensitively while preserving all other characters. Nested entries and ordinary notes are not Explorer sections.
-- Each section carries its source-relative path, actual Quartz published slug, display label, and optional icon-selection information needed by the rendering step. Section labels use an authored frontmatter title when present; otherwise remove `.md` and the convention's first underscore from the entry filename. Sort by the displayed label, with `Home` at the bottom.
-- Authored-title information survives the configured transformer's filename-stem fallback, including when the authored title happens to equal that fallback. No mutable module-level state is used: parsing may run in workers.
-- Icon metadata is presentation only. When absent, the later renderer uses the default icon; an unrecognized or unusable value results in no icon. Do not make icon metadata affect entry inclusion.
-- Focused tests exercise discovery, labels and ordering, actual slugs, and the authored-title distinction through the relevant real parsing/transformer path. Keep tests proportionate to meaningful behavior.
+This replaces the earlier requirement to distinguish an authored title equal to the filename stem from an automatic fallback. The discarded approaches—additional YAML parsing, a second transformer pass, dependency modification, and a separate metadata registry—were not implemented.
 
-### Local invariants
+### Model contract
 
-- Build a local Quartz feature, not a separately packaged plugin or independent plugin build.
-- The folder structure is the navigation source of truth; there is no separately maintained navigation map, hierarchy override, or dedicated navigation-validation system.
-- Match existing source-relative paths; use actual published slugs rather than deriving URLs from filenames. Do not add speculative virtual-page tracking.
-- The configured `@quartz-community/note-properties` transformer currently supplies a filename-stem title fallback on its legacy frontmatter-parsing path. Comparing the resulting title to the filename cannot reliably establish whether it was authored. Preserve or reliably recover the distinction using the actual configured parsing behavior; do not assume that a second YAML parser is semantically identical without verification.
-- The component receives processed page data through `allFiles`; the dispatcher also includes generated pages. Apply the agreed naming convention rather than adding special tracking for hypothetical generated-page collisions.
-- No authored title means the Explorer filename fallback, not the transformer's underscored stem. Treat missing and empty titles consistently with the configured transformer; preserve an explicitly authored nonempty title even when it equals the stem.
-- No new watch invalidation machinery: unchanged pages may retain stale baked Explorer markup until a full rebuild. Step 02 will document this where the Explorer is described.
-
-### Should NOT be done in this step
-
-- Render or register the new Explorer, remove the community Explorer, create SVG assets, or implement styling, mobile interaction, active-state UI, or SPA behavior; those belong to Step 02.
-- Create vault entry pages or assume edits to synced `content/` write back to the vault; entry authorship and the user's practical browsing review belong to Step 03.
-- Build a navigation-validation system, speculative virtual-page tracking, browser-side list construction, or partial-rebuild invalidation.
-- Add broad speculative tests or change unrelated frontmatter behavior.
-
----
+- `buildExplorerNavigation(allFiles)` consumes the same processed page-data contract available to a component and returns a fresh, ordered entry list without changing its input.
+- Recognize the root `index.md` and only immediate-subfolder `_<folder-name>.md` entries, case-insensitively and with punctuation preserved. Nested entries and ordinary notes are excluded.
+- Each entry carries its kind, existing source-relative path, actual published Quartz slug, displayed label, and icon-selection metadata. Links are not derived from filenames.
+- Sort by displayed label using explicit English collation, break equal-label ties by source-relative path, and place Home last. Home always displays `Home`.
+- Preserve `icon` as absent or supplied with its existing parsed value. No icon lookup or validation affects inclusion. The later renderer supplies the default only when absent and no icon for an unrecognized or unusable selection.
+- No rendering, registration, SVG assets, styling, mobile interaction, active-state UI, SPA behavior, vault entry pages, navigation-validation system, speculative virtual-page tracking, or invalidation machinery was added.
 
 ## Tasks
 
-- [ ] Inspect the configured parsing and transformer sequence, including title normalization and arbitrary `icon` metadata. Select a minimal internal way to retain or reliably recover authored-title information before it is lost; account for YAML/frontmatter semantics, configured text transforms, worker parsing, and VFile data typing. If the viable approach would alter a locked decision or requires disproportionate infrastructure, stop and discuss it first.
-- [ ] Implement the internal navigation model using the component's processed page-data contract. Recognize only the agreed source-relative paths, retain actual slugs and icon selection, apply the label fallback, sort by displayed label, and place Home last. Keep the model independent of rendering and browser behavior.
-- [ ] Add focused tests for representative matching and non-matching paths, punctuation/case and nested exclusions, authored versus fallback titles—including an authored title equal to the stem—display-label sorting, Home placement, and preservation of actual slugs and icon metadata. Exercise the configured transformer integration for title provenance rather than testing only invented fixtures.
-- [ ] Run the applicable checks and tests, report the results and any limitations, and leave the existing Explorer functional until Step 02 replaces it.
-- [ ] Update the phase plan with phase-level knowledge only if implementation reveals a durable change; do not copy step-level implementation details into it.
+- [x] Implement the model using existing parsed metadata and actual published slugs; keep the current Explorer functional.
+- [x] Add focused tests for matching and nonmatching paths, case and punctuation, nested exclusions, displayed-title sorting, Home placement, slug preservation, and absent versus supplied icon metadata.
+- [x] Add a real parser/transformer integration test for missing, empty, null, stem-equal, custom, and numeric titles plus icon metadata. The test reads the checked-in frontmatter options and calls `createFileParser` with `createMdProcessor`; it does not substitute a frontmatter parser.
+- [x] Update the phase decisions to record the approved title simplification; keep implementation details in this step.
+- [ ] Execute automated verification and address any failures. No command-execution tool is available in the implementation session, so none of the commands below has been run.
+- [ ] Complete the code-review decision and remaining implementation flow; final plan completion and note condensation await that decision and user approval.
 
----
+## Verification
+
+- Static review: checked the implementation against the processed page-data contract, naming convention, metadata rules, and model-only boundary. This is not a typecheck or runtime test result.
+- Focused tests, type checks, formatting, full tests, and site build: **not run**; this session provides file tools but no command executor.
+- Commands pending in a shell-enabled session:
+
+```sh
+npx prettier quartz/components/explorerNavigation.ts quartz/components/explorerNavigation.test.ts --write
+npx tsx --test quartz/components/explorerNavigation.test.ts
+npm run check
+npm test
+npm run build
+```
+
+## Review and handoff
+
+- Ask whether the user will run the Code Review flow in a clean task, then continue the implementation flow's completion stages after their answer. Do not condense this note without approval.
+- The component's local README should be maintained by the user when documenting its model contract and title exception; do not silently replace user-authored module documentation. Plugin, loader, and page-type module READMEs were absent during exploration; those modules were not modified.
+- Existing watch-mode partial rebuild behavior remains accepted. Document stale baked markup and the full-rebuild remedy with the rendered Explorer in Step 02; no invalidation work belongs here.
+- Practical browser verification remains in Step 03, after the new Explorer is rendered and the needed vault entries exist.
