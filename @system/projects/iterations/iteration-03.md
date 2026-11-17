@@ -27,6 +27,7 @@
 	- Even more. 
 		- Adding two-step exploration. A bit simpler than others. But LLM just needs it. It doesn't know what it'll list as result of exploration. So often it proposes suboptimal things, compared to the task when it runs second exploration pass. 
 		- And also I'm discussing with LLM how to optimally go even lower in steps. To make them much more grounded. Because if they're not - I might as well just have them in the plan. LLM shouldn't guess. Make it detailed. Then code review abstracts issues to "my level". And then when the step aligned with both me and llm (that don't guess) - we write code.
+	- ⭐Biggest thing here is that it offloads a lot of refining on LLM, so it's not one-shot presentation. Which means I can work on secondary task that is more actionable. So there's potential to cover Puer and Senex at the same time. 
 - [x] **Tests** %% fold %%
 	-  I hate creating tests while I'm doing initial implementation. Like I don't know how it'll look like in the end - and an LLM already locks that in with a test. And then I have to maintain both.
 - [x] **List 5-10...** %% fold %%

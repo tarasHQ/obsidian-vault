@@ -69,7 +69,12 @@ OVERVIEW_FOR_VIDEO
 	- ==Seems like the negative Puer starts to get negative when I want to play games. This is the marker. And the negative Senex leads to PMO/Food? ==
 		- Because games are fantasy world. It's interesting. High-level abstraction of real world. Engaging. Attractive. Plays on my curiosity strings.
 		- And PMO/Food is like "stop suffering" and just completely forget yourself in the middle of the unconscious ocean of indulgence. PMO is a nice first trigger to spin the whole machinery.
-	- Like even writing this feels a bit more meaningful than before, because it got to ground level where it's applicable. While those flows stay high 
+	- Like even writing this feels a bit more meaningful than before, because it got to ground level where it's applicable. While those flows stay high. So seems like I overstayed in Puer? 
+	- Wait. The thing is I want to play games a bit. But what I want even more - is to reinstall proxmox completely. It's pending for a while. And that is ground-level actionable work. Which is the domain of Senex. So I get a bit confused. Like it very well may be that current abstract work bored even Senex?) Nah. It started as Puer. Because I was also fantasizing a fair bit. But it got boring, Puer stopped being involved (?) and now it's either proxmox reinstall for Senex or gaming for Puer. But what I'm doing now - doesn't nourish either anymore. 
+	- Or maybe proxmox is Puer too? 
+	- Man this stuff is complex. But I definitely feel like there's distinction.
+	- Ok. I finish steps. Go eat. Then we'll see. For proxmox won't reinstall. But I can go through it as secondary task and capture configs, nuances, backup things, etc. 
+		- And then run LLM on those artifacts to see if I can improve things, and not just 1:1 reinstall. Like for one, I know that I for sure shouldn't use dhcp. So I should go away and id lxcs/vms to their static ips? Well, that's details. 
 - ###### 14:18 | MEANING: 🟢
 	- Good. Refining flow of steps gives more meaning. Because I believe that it will reduce a lot of that unnecessary friction from this step. 
 - ###### 13:33 | MEANING: 🟡
