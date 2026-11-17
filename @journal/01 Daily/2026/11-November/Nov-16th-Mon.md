@@ -8,43 +8,11 @@ journal-date: 2026-11-16
 ```
 
 ---
-
-```meta-bind-button
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-	- [ ] ==Change delivery date to Sunday==
-	- [ ] Check audio delay to webcam
-	- [ ] Check TickTick schedule (correct day, scheduled)
-	- [ ] Set time of next sleep for stager timer.
-	- Obsidian
-		- [ ] Write overview of the current day
-		- [ ] Create journal for the next day
-		- [ ] Make sure all day's reflections are linked artifacts
-		- [ ] Delete Dream Analysis block if empty
-		- [ ] Delete other blocks if empty
-	- [ ] Night scene
-	- [ ] Check IP cam (quality, delay)
-		- [ ] Enable sleep blur
-	- [ ] monitor OFF (seems like keeping on makes him die faster)
-	- Cat
-		- [ ] Clean up cat's litter box
-		- [ ] Food + plate is in my room at the shelf 
-			%%(to feed right away and not be distracted by her)%%
-	- [ ] Make sure there's tomorrow's food out of the freezer.
-
----
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-OVERVIEW_FOR_VIDEO
+I'm just angry. If I would been able to have a wish, anything I want, I would wish to have a damn nuclear strike right on top of the damn building to vaporize everything with this fucking LLMs, PCs, projects and me with it. So I won't even have a chance to get into the afterlife. 
 
 ---
 
@@ -65,6 +33,8 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning]`
+- ###### 01:30 | MEANING: ⚫
+	- Just angry. Like for some reason out of nowhere my flows just don't work. Period. So what now. Another week on rewriting this bullshit? How much fucking time I have to burn to get at least fucking something done. For fuck sake I'm full of it. 
 - ###### 01:23
 	- I really think I have to stop because if I continue I'll just give in to PMO and then stop anyway but also I won't care about it as much. 
 	- So much fucking planning and for what? When rubber hits the road out of nowhere there's 1km high wall of complexity. Fucking "AGI is here" my ass. I did initial reflection, then refined reflection, then critiqued all created artifacts, then created initial plan with more refinements, then wrote step1, then ran code review, then ran step implementation flow and only fucking here, where LLM got stuck and I stopped it and asked it what's wrong - only fucking here it told "oh actually it's not so simple". 

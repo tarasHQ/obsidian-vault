@@ -15,6 +15,8 @@
 - [ ] **Steps needs additional reasoning/exploration/context generation step before writing** %% fold %%
 	- Right now it doesn't think much. Or explore. It just writes those steps. Add in the loop some context generation. 
 	- Seems like just asking to reason more does the job
+- [ ] **Tests**
+	-  I hate creating tests while I'm doing initial implementation. Like I don't know how it'll look like in the end - and an LLM already locks that in with a test. And then I have to maintain both.
 
 ## Big Issues
 - [ ] **What about code-review explanation/exam when I'm hopeless?** %% fold %%
