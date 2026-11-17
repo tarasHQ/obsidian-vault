@@ -13,7 +13,7 @@
 	- one issue of bloater
 - [x] **Initial planning updates plan for locked-down high level, and initial-reflection for low-level** %% fold %%
 	- To avoid bloating the plan. Because it tries to give hints for steps in the plan. Avoid this behavior. Writing steps sources from initial-reflection and plan. Those aren't meant to be huge. So it's safe.
-- [ ] **Steps needs additional reasoning/exploration/context generation step before writing**
+- [x] **Steps needs additional reasoning/exploration/context generation step before writing** %% fold %%
 	- Right now it doesn't think much. Or explore. It just writes those steps. Add in the loop some context generation. 
 	- UPD. Ok, let's reflect on this. 
 		- What is my issue with steps? High/low levels. Like current flow does good job up until steps. High level is of good quality. Edge cases caught and covered. But steps... it's just something wrong with them.

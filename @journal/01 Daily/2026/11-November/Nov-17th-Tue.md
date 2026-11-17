@@ -64,6 +64,30 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning]`
+- ###### 19:09
+	- Well, I'm not sleep. But now I really want to PMO and youtube/twitch after.
+	- Thankfully it's still a bit PIA to do. So it keeps me away from it. But it's just... Fucking resistance. It's so annoying. Like I just don't care about the website. I did in the morning - now I couldn't care less. 
+	- Like I want to PMO not for pleasure. But to just stop this damn civil war in my mind. It's VERY uncomfortable.
+	- It's sudden urge to all kinds of indulgence. Games, media, food, pmo - anything. 
+	- Like I would prefer 5/10 toothache instead of what I'm experiencing right now.
+- ###### 18:01
+	- LLM suggests that it could be genuine hint for me to rest. Ok. Music in this state harms. So I'll just "lay down" and be quite for however long it takes. 
+- ###### 17:49 | MEANING: 🔴
+	- Tried to... no luck. Just can't get into it. Sad.
+	- I'll try LLM. Maybe there'll be some insight. Because I just don't know
+- ###### 17:21 | MEANING: 🔴
+	- Exactly as yesterday. Don't care. Want games. And that's dangerous, because seems like this puts me into state of mind out of which I got super angry.
+	- So what can I do? Maybe I got angry because I was seeking quick indulgence? Or quick reward. And instead it was not PIA, but I had to put some effort.
+	- It's insane how persistent this mid-day post-meal crash.
+- ###### 16:38
+	- Maybe I should start with that proxmox thing? To have kickstart into main work? To throw me into the action. 
+- ###### 16:29 | MEANING: 🟡
+	- There's definitely continuity is going that I was talking about previously. Like by watching previous day - it's like I watching all days. Because on daily basis I connect past with the present. 
+- ###### 15:42 | MEANING: 🟡
+	- Will do occasional mid-meal checks too. While it's cooking. Not discouraged. Not "elevated". Hungry. Though not like avoiding website. I want to work on it.
+- ###### 15:17 | MEANING: 🟡
+	- Ok, tomorrow I lost time by just "getting ready" for the meal. Now I won't do that. I just finished some pending minor task to get some action. Meaning is increased and I'm going to eat right away.
+	- When I'm done - website. step 02 with new flows. Should work on explorer. In parallel - I will continue gathering information out from proxmox, I'll probably will reinstall it soon. To set it up properly for the comments. 
 - ###### 14:32 | MEANING: 🟡
 	- Losing meaning a bit. Too much of abstract work. Feels like I need to seek Puer-Senex balance in my flows. Just to lock this idea down. If it'll repeat - maybe it'll make sense to spend effort on this. 
 	- ==Seems like the negative Puer starts to get negative when I want to play games. This is the marker. And the negative Senex leads to PMO/Food? ==
