@@ -798,67 +798,50 @@ class SelectAllContent {
         return this.updated;
     }
     perform() {
+        this.stopPropagation = false;
+        this.updated = false;
         const { root } = this;
         if (!root.hasSingleSelection()) {
-            return;
+            return false;
         }
-        const selection = root.getSelections()[0];
+        const { anchor, head } = root.getSelection();
+        const from = minPos(anchor, head);
+        const to = maxPos(anchor, head);
         const [rootStart, rootEnd] = root.getContentRange();
-        const selectionFrom = minPos(selection.anchor, selection.head);
-        const selectionTo = maxPos(selection.anchor, selection.head);
-        if (selectionFrom.line < rootStart.line ||
-            selectionTo.line > rootEnd.line) {
+        if (cmpPos(from, rootStart) < 0 || cmpPos(to, rootEnd) > 0) {
             return false;
         }
-        if (selectionFrom.line === rootStart.line &&
-            selectionFrom.ch === rootStart.ch &&
-            selectionTo.line === rootEnd.line &&
-            selectionTo.ch === rootEnd.ch) {
+        let list = root.getListUnderLine(from.line);
+        if (!list) {
             return false;
         }
-        const list = root.getListUnderCursor();
-        const contentStart = list.getFirstLineContentStartAfterCheckbox();
-        const contentEnd = list.getLastLineContentEnd();
-        const listUnderSelectionFrom = root.getListUnderLine(selectionFrom.line);
-        const listStart = listUnderSelectionFrom.getFirstLineContentStartAfterCheckbox();
-        const listEnd = listUnderSelectionFrom.getContentEndIncludingChildren();
+        const ranges = [
+            [
+                list.getFirstLineContentStartAfterCheckbox(),
+                list.getLastLineContentEnd(),
+            ],
+        ];
+        // Ancestors also cover selections spanning several items. The synthetic
+        // root has no List coordinates; its range comes from Root instead.
+        while (list && list !== root.getRootList()) {
+            ranges.push([
+                list.getFirstLineContentStartAfterCheckbox(),
+                list.getContentEndIncludingChildren(),
+            ]);
+            list = list.getParent();
+        }
+        ranges.push([rootStart, rootEnd]);
+        // Skip equal or non-containing ranges, including those that would discard
+        // an already selected bullet, indentation or checkbox.
+        const nextRange = ranges.find(([start, end]) => cmpPos(start, from) <= 0 &&
+            cmpPos(to, end) <= 0 &&
+            (cmpPos(start, from) < 0 || cmpPos(to, end) < 0));
+        if (!nextRange) {
+            return false;
+        }
+        root.replaceSelections([{ anchor: nextRange[0], head: nextRange[1] }]);
         this.stopPropagation = true;
         this.updated = true;
-        if (selectionFrom.line === contentStart.line &&
-            selectionFrom.ch === contentStart.ch &&
-            selectionTo.line === contentEnd.line &&
-            selectionTo.ch === contentEnd.ch) {
-            if (list.getChildren().length) {
-                // select sub lists
-                root.replaceSelections([
-                    { anchor: contentStart, head: list.getContentEndIncludingChildren() },
-                ]);
-            }
-            else {
-                // select whole list
-                root.replaceSelections([{ anchor: rootStart, head: rootEnd }]);
-            }
-        }
-        else if (listStart.ch == selectionFrom.ch &&
-            listEnd.line == selectionTo.line &&
-            listEnd.ch == selectionTo.ch) {
-            // select whole list
-            root.replaceSelections([{ anchor: rootStart, head: rootEnd }]);
-        }
-        else if ((selectionFrom.line > contentStart.line ||
-            (selectionFrom.line == contentStart.line &&
-                selectionFrom.ch >= contentStart.ch)) &&
-            (selectionTo.line < contentEnd.line ||
-                (selectionTo.line == contentEnd.line &&
-                    selectionTo.ch <= contentEnd.ch))) {
-            // select whole line
-            root.replaceSelections([{ anchor: contentStart, head: contentEnd }]);
-        }
-        else {
-            this.stopPropagation = false;
-            this.updated = false;
-            return false;
-        }
         return true;
     }
 }
@@ -1065,6 +1048,9 @@ class DragAndDrop {
         this.contextsByDocument = new Map();
         this.preStart = null;
         this.state = null;
+        // Escape cancels the move, but the gesture's release must still not click
+        // its handle. Only arm click suppression once that same document gets mouseup.
+        this.clickGesture = null;
         this.handleSettingsChange = () => {
             try {
                 if (!this.settings.dragAndDrop) {
@@ -1117,23 +1103,54 @@ class DragAndDrop {
             }
         };
         this.handleMouseUp = (e) => {
+            var _a;
             this.preStart = null;
+            const gesture = this.clickGesture;
+            if (e.button === 0 && (gesture === null || gesture === void 0 ? void 0 : gesture.document) === getEventDocument(e)) {
+                gesture.released = true;
+                // Native click is dispatched with mouseup, before the next timer task.
+                // If there is no click, don't leave suppression armed for later input.
+                gesture.timeout = (_a = gesture.document.defaultView) === null || _a === void 0 ? void 0 : _a.setTimeout(() => {
+                    if (this.clickGesture === gesture) {
+                        this.clearClickGesture();
+                    }
+                }, 0);
+            }
+            else {
+                this.clearClickGesture();
+            }
             if (this.state && getEventDocument(e) === this.state.context.document) {
                 this.stopDragging();
             }
             else {
                 // Releasing in another window cancels; it is not a cross-window drop.
-                this.cancelDragging();
+                // An Escape-cancelled gesture still needs its matching click suppressed.
+                this.cancelDragging(true);
             }
+        };
+        this.handleClick = (e) => {
+            var _a;
+            if (!((_a = this.clickGesture) === null || _a === void 0 ? void 0 : _a.released) ||
+                this.clickGesture.document !== getEventDocument(e) ||
+                !e.isTrusted ||
+                e.button !== 0 ||
+                e.detail === 0) {
+                return;
+            }
+            this.clearClickGesture();
+            e.preventDefault();
+            e.stopImmediatePropagation();
         };
         this.handleKeyDown = (e) => {
             if (e.code === "Escape") {
-                this.cancelDragging();
+                this.cancelDragging(true);
             }
         };
         this.handleWindowBlur = (e) => {
-            var _a, _b;
-            const owner = ((_a = this.state) === null || _a === void 0 ? void 0 : _a.context.document) || ((_b = this.preStart) === null || _b === void 0 ? void 0 : _b.document);
+            var _a, _b, _c;
+            const owner = ((_a = this.state) === null || _a === void 0 ? void 0 : _a.context.document) ||
+                ((_b = this.preStart) === null || _b === void 0 ? void 0 : _b.document) ||
+                ((_c = this.clickGesture) === null || _c === void 0 ? void 0 : _c.document);
             if ((owner === null || owner === void 0 ? void 0 : owner.defaultView) === e.currentTarget) {
                 this.cancelDragging();
             }
@@ -1209,13 +1226,14 @@ class DragAndDrop {
         doc.addEventListener("mousedown", this.handleMouseDown, {
             capture: true,
         });
+        doc.addEventListener("click", this.handleClick, { capture: true });
         doc.addEventListener("mousemove", this.handleMouseMove);
-        doc.addEventListener("mouseup", this.handleMouseUp);
+        doc.addEventListener("mouseup", this.handleMouseUp, { capture: true });
         doc.addEventListener("keydown", this.handleKeyDown);
         (_a = doc.defaultView) === null || _a === void 0 ? void 0 : _a.addEventListener("blur", this.handleWindowBlur);
     }
     unregisterDocument(doc) {
-        var _a, _b, _c;
+        var _a, _b, _c, _d;
         if (!doc) {
             return;
         }
@@ -1225,7 +1243,8 @@ class DragAndDrop {
         }
         try {
             if (((_a = this.preStart) === null || _a === void 0 ? void 0 : _a.document) === doc ||
-                ((_b = this.state) === null || _b === void 0 ? void 0 : _b.context.document) === doc) {
+                ((_b = this.state) === null || _b === void 0 ? void 0 : _b.context.document) === doc ||
+                ((_c = this.clickGesture) === null || _c === void 0 ? void 0 : _c.document) === doc) {
                 this.cancelDragging();
             }
         }
@@ -1233,10 +1252,11 @@ class DragAndDrop {
             doc.removeEventListener("mousedown", this.handleMouseDown, {
                 capture: true,
             });
+            doc.removeEventListener("click", this.handleClick, { capture: true });
             doc.removeEventListener("mousemove", this.handleMouseMove);
-            doc.removeEventListener("mouseup", this.handleMouseUp);
+            doc.removeEventListener("mouseup", this.handleMouseUp, { capture: true });
             doc.removeEventListener("keydown", this.handleKeyDown);
-            (_c = doc.defaultView) === null || _c === void 0 ? void 0 : _c.removeEventListener("blur", this.handleWindowBlur);
+            (_d = doc.defaultView) === null || _d === void 0 ? void 0 : _d.removeEventListener("blur", this.handleWindowBlur);
             doc.body.classList.remove(BODY_CLASS);
             doc.body.classList.remove("outliner-plugin-dragging");
             context.dropZone.remove();
@@ -1275,6 +1295,9 @@ class DragAndDrop {
         }
         const pos = editor.offsetToPos(posOffset);
         const root = this.parser.parse(editor, pos);
+        if (!root) {
+            return;
+        }
         const list = root.getListUnderLine(pos.line);
         if (!list) {
             return;
@@ -1284,13 +1307,24 @@ class DragAndDrop {
             return;
         }
         this.state = state;
+        this.clickGesture = { document: dropContext.document, released: false };
         this.highlightDraggingLines();
     }
     detectAndDrawDropZone(x, y) {
         this.state.calculateNearestDropVariant(x, y);
         this.drawDropZone();
     }
-    cancelDragging() {
+    clearClickGesture() {
+        var _a, _b;
+        if (((_a = this.clickGesture) === null || _a === void 0 ? void 0 : _a.timeout) !== undefined) {
+            (_b = this.clickGesture.document.defaultView) === null || _b === void 0 ? void 0 : _b.clearTimeout(this.clickGesture.timeout);
+        }
+        this.clickGesture = null;
+    }
+    cancelDragging(preserveClickGesture = false) {
+        if (!preserveClickGesture) {
+            this.clearClickGesture();
+        }
         this.stopDragging(false);
     }
     stopDragging(applyChanges = true) {
@@ -1314,7 +1348,7 @@ class DragAndDrop {
             return;
         }
         const newRoot = this.parser.parse(editor, root.getContentStart());
-        if (!isSameRoots(root, newRoot)) {
+        if (!newRoot || !isSameRoots(root, newRoot)) {
             new obsidian.Notice(`The item cannot be moved. The page content changed during the move.`, 5000);
             return;
         }
@@ -1568,7 +1602,8 @@ function isClickOnBullet(e) {
     while (el) {
         if (el.classList.contains("cm-formatting-list") ||
             el.classList.contains("cm-fold-indicator") ||
-            el.classList.contains("task-list-item-checkbox")) {
+            el.classList.contains("task-list-item-checkbox") ||
+            el.hasAttribute("data-outliner-drag-handle")) {
             return true;
         }
         el = el.parentElement;
@@ -1599,6 +1634,63 @@ function isSameRoots(a, b) {
 }
 function isFeatureSupported() {
     return obsidian.Platform.isDesktop;
+}
+
+class ExpandSelectionToFullItems {
+    constructor(root) {
+        this.root = root;
+        this.updated = false;
+    }
+    shouldStopPropagation() {
+        return this.updated;
+    }
+    shouldUpdate() {
+        return this.updated;
+    }
+    perform() {
+        this.updated = false;
+        const { root } = this;
+        if (!root.hasSingleSelection()) {
+            return;
+        }
+        const { anchor, head } = root.getSelection();
+        const from = minPos(anchor, head);
+        const to = maxPos(anchor, head);
+        const [rootStart, rootEnd] = root.getContentRange();
+        if (cmpPos(from, rootStart) < 0 || cmpPos(to, rootEnd) > 0) {
+            return;
+        }
+        // Selection ranges are half-open: column zero does not select that item.
+        const lastSelectedLine = to.ch === 0 ? to.line - 1 : to.line;
+        if (lastSelectedLine <= from.line) {
+            return;
+        }
+        const first = root.getListUnderLine(from.line);
+        const last = root.getListUnderLine(lastSelectedLine);
+        if (!first || !last || first === last) {
+            return;
+        }
+        const expandedStart = minPos(from, first.getFirstLineContentStartAfterCheckbox());
+        let expandedEnd = maxPos(to, first.getContentEndIncludingChildren());
+        // Any intervening item whose subtree extends past the last selected item
+        // must be its ancestor. Include it only if its own content was touched.
+        for (let item = last; item && item !== root.getRootList(); item = item.getParent()) {
+            if (item.getLastLineContentEnd().line < from.line) {
+                break;
+            }
+            expandedEnd = maxPos(expandedEnd, item.getContentEndIncludingChildren());
+        }
+        if (cmpPos(from, expandedStart) === 0 && cmpPos(to, expandedEnd) === 0) {
+            return;
+        }
+        const forward = cmpPos(anchor, head) <= 0;
+        root.replaceSelections([
+            forward
+                ? { anchor: expandedStart, head: expandedEnd }
+                : { anchor: expandedEnd, head: expandedStart },
+        ]);
+        this.updated = true;
+    }
 }
 
 class KeepCursorOutsideFoldedLines {
@@ -1674,7 +1766,9 @@ class EditorSelectionsBehaviourOverride {
         this.parser = parser;
         this.operationPerformer = operationPerformer;
         this.transactionExtender = (tr) => {
-            if (this.settings.keepCursorWithinContent === "never" || !tr.selection) {
+            if (!tr.selection ||
+                (!this.settings.expandSelection &&
+                    this.settings.keepCursorWithinContent === "never")) {
                 return null;
             }
             const editor = getEditorFromState(tr.startState);
@@ -1686,6 +1780,15 @@ class EditorSelectionsBehaviourOverride {
         this.handleSelectionsChanges = (editor) => {
             const root = this.parser.parse(editor);
             if (!root) {
+                return;
+            }
+            if (this.settings.expandSelection) {
+                const { shouldStopPropagation } = this.operationPerformer.eval(root, new ExpandSelectionToFullItems(root), editor);
+                if (shouldStopPropagation) {
+                    return;
+                }
+            }
+            if (this.settings.keepCursorWithinContent === "never") {
                 return;
             }
             {
@@ -1714,11 +1817,12 @@ function isEmptyLineOrEmptyCheckbox(line) {
 }
 
 class CreateNewItem {
-    constructor(root, defaultIndentChars, getZoomRange, after = true) {
+    constructor(root, defaultIndentChars, getZoomRange, after = true, shouldOutdentEmptyLines = true) {
         this.root = root;
         this.defaultIndentChars = defaultIndentChars;
         this.getZoomRange = getZoomRange;
         this.after = after;
+        this.shouldOutdentEmptyLines = shouldOutdentEmptyLines;
         this.stopPropagation = false;
         this.updated = false;
     }
@@ -1739,7 +1843,11 @@ class CreateNewItem {
         }
         const list = root.getListUnderCursor();
         const lines = list.getLinesInfo();
-        if (lines.length === 1 && isEmptyLineOrEmptyCheckbox(lines[0].text)) {
+        // Only skip creation of new items for empty lines if outdenting is enabled
+        // When outdenting is disabled, we want to create new items for empty lines
+        if (lines.length === 1 &&
+            isEmptyLineOrEmptyCheckbox(lines[0].text) &&
+            this.shouldOutdentEmptyLines) {
             return;
         }
         const cursor = root.getCursor();
@@ -1875,13 +1983,15 @@ class OutdentList {
 class OutdentListIfItsEmpty {
     constructor(root) {
         this.root = root;
+        this.stopPropagation = false;
+        this.updated = false;
         this.outdentList = new OutdentList(root);
     }
     shouldStopPropagation() {
-        return this.outdentList.shouldStopPropagation();
+        return this.stopPropagation || this.outdentList.shouldStopPropagation();
     }
     shouldUpdate() {
-        return this.outdentList.shouldUpdate();
+        return this.updated || this.outdentList.shouldUpdate();
     }
     perform() {
         const { root } = this;
@@ -1890,12 +2000,33 @@ class OutdentListIfItsEmpty {
         }
         const list = root.getListUnderCursor();
         const lines = list.getLines();
-        if (lines.length > 1 ||
-            !isEmptyLineOrEmptyCheckbox(lines[0]) ||
-            list.getLevel() === 1) {
+        if (lines.length > 1 || !isEmptyLineOrEmptyCheckbox(lines[0])) {
+            return;
+        }
+        if (list.getLevel() === 1) {
+            this.deleteListIfItIsTheLastAndHasNoChildren(list);
             return;
         }
         this.outdentList.perform();
+    }
+    deleteListIfItIsTheLastAndHasNoChildren(list) {
+        const { root } = this;
+        const parent = list.getParent();
+        const siblings = parent.getChildren();
+        const cursor = root.getCursor();
+        if (!list.isEmpty() ||
+            siblings[siblings.length - 1] !== list ||
+            cursor.ch !== list.getLastLineContentEnd().ch) {
+            return;
+        }
+        this.stopPropagation = true;
+        this.updated = true;
+        parent.removeChild(list);
+        // Closing the list leaves an empty line behind. Root.print() strips
+        // a single trailing newline, so an empty list item is needed to
+        // represent that remaining empty line in the model.
+        parent.addAfterAll(new List(root, "", "", "", "", "", false));
+        root.replaceCursor({ line: cursor.line, ch: 0 });
     }
 }
 
@@ -1918,7 +2049,7 @@ class EnterBehaviourOverride {
                     shouldStopPropagation: false,
                 };
             }
-            {
+            if (this.settings.enterOutdentsEmptyListItem) {
                 const res = this.operationPerformer.eval(root, new OutdentListIfItsEmpty(root), editor);
                 if (res.shouldStopPropagation) {
                     return res;
@@ -1930,7 +2061,7 @@ class EnterBehaviourOverride {
                 const getZoomRange = {
                     getZoomRange: () => zoomRange,
                 };
-                const res = this.operationPerformer.eval(root, new CreateNewItem(root, defaultIndentChars, getZoomRange), editor);
+                const res = this.operationPerformer.eval(root, new CreateNewItem(root, defaultIndentChars, getZoomRange, true, this.settings.enterOutdentsEmptyListItem), editor);
                 if (res.shouldUpdate && zoomRange) {
                     editor.tryRefreshZoom(zoomRange.from.line);
                 }
@@ -2099,6 +2230,7 @@ class MoveListDown {
         return this.updated;
     }
     perform() {
+        var _a, _b;
         const { root } = this;
         if (!root.hasSingleCursor()) {
             return;
@@ -2109,12 +2241,19 @@ class MoveListDown {
         const grandParent = parent.getParent();
         const next = parent.getNextSiblingOf(list);
         const listStartLineBefore = root.getContentLinesRangeOf(list)[0];
+        let indentDiff = 0;
         if (!next && grandParent) {
             const newParent = grandParent.getNextSiblingOf(parent);
             if (newParent) {
+                const oldIndent = list.getFirstLineIndent();
+                const newIndent = (_b = (_a = newParent.getChildren()[0]) === null || _a === void 0 ? void 0 : _a.getFirstLineIndent()) !== null && _b !== void 0 ? _b : newParent.getFirstLineIndent() +
+                    oldIndent.slice(parent.getFirstLineIndent().length);
                 this.updated = true;
                 parent.removeChild(list);
                 newParent.addBeforeAll(list);
+                list.unindentContent(0, oldIndent.length);
+                list.indentContent(0, newIndent);
+                indentDiff = newIndent.length - oldIndent.length;
             }
         }
         else if (next) {
@@ -2130,7 +2269,7 @@ class MoveListDown {
         const cursor = root.getCursor();
         root.replaceCursor({
             line: cursor.line + lineDiff,
-            ch: cursor.ch,
+            ch: cursor.ch + indentDiff,
         });
         recalculateNumericBullets(root);
     }
@@ -2149,6 +2288,7 @@ class MoveListUp {
         return this.updated;
     }
     perform() {
+        var _a, _b;
         const { root } = this;
         if (!root.hasSingleCursor()) {
             return;
@@ -2159,12 +2299,19 @@ class MoveListUp {
         const grandParent = parent.getParent();
         const prev = parent.getPrevSiblingOf(list);
         const listStartLineBefore = root.getContentLinesRangeOf(list)[0];
+        let indentDiff = 0;
         if (!prev && grandParent) {
             const newParent = grandParent.getPrevSiblingOf(parent);
             if (newParent) {
+                const oldIndent = list.getFirstLineIndent();
+                const newIndent = (_b = (_a = newParent.getChildren().last()) === null || _a === void 0 ? void 0 : _a.getFirstLineIndent()) !== null && _b !== void 0 ? _b : newParent.getFirstLineIndent() +
+                    oldIndent.slice(parent.getFirstLineIndent().length);
                 this.updated = true;
                 parent.removeChild(list);
                 newParent.addAfterAll(list);
+                list.unindentContent(0, oldIndent.length);
+                list.indentContent(0, newIndent);
+                indentDiff = newIndent.length - oldIndent.length;
             }
         }
         else if (prev) {
@@ -2180,7 +2327,7 @@ class MoveListUp {
         const cursor = root.getCursor();
         root.replaceCursor({
             line: cursor.line + lineDiff,
-            ch: cursor.ch,
+            ch: cursor.ch + indentDiff,
         });
         recalculateNumericBullets(root);
     }
@@ -2360,8 +2507,23 @@ class ObsidianOutlinerPluginSettingTab extends obsidian.PluginSettingTab {
                 .onChange((value) => __awaiter(this, void 0, void 0, function* () {
                 this.settings.overrideEnterBehaviour = value;
                 yield this.settings.save();
+                this.display(); // Refresh to show/hide the outdent setting
             }));
         });
+        // Only show the outdent setting if Enter enhancement is enabled
+        if (this.settings.overrideEnterBehaviour) {
+            new obsidian.Setting(containerEl)
+                .setName("Outdent empty items with Enter")
+                .setDesc("When enabled, Enter outdents empty items or exits the list at the top level. When disabled, Enter keeps empty bullets and checkboxes and continues the list.")
+                .addToggle((toggle) => {
+                toggle
+                    .setValue(this.settings.enterOutdentsEmptyListItem)
+                    .onChange((value) => __awaiter(this, void 0, void 0, function* () {
+                    this.settings.enterOutdentsEmptyListItem = value;
+                    yield this.settings.save();
+                }));
+            });
+        }
         new obsidian.Setting(containerEl)
             .setName("Vim-mode o/O inserts bullets")
             .setDesc("Create a bullet when pressing o or O in Vim mode.")
@@ -2381,6 +2543,17 @@ class ObsidianOutlinerPluginSettingTab extends obsidian.PluginSettingTab {
                 .setValue(this.settings.overrideSelectAllBehaviour)
                 .onChange((value) => __awaiter(this, void 0, void 0, function* () {
                 this.settings.overrideSelectAllBehaviour = value;
+                yield this.settings.save();
+            }));
+        });
+        new obsidian.Setting(containerEl)
+            .setName("Auto-expand selection to full list items")
+            .setDesc("When selecting across multiple list items, include their full content and children. Selections within one item stay unchanged.")
+            .addToggle((toggle) => {
+            toggle
+                .setValue(this.settings.expandSelection)
+                .onChange((value) => __awaiter(this, void 0, void 0, function* () {
+                this.settings.expandSelection = value;
                 yield this.settings.save();
             }));
         });
@@ -2712,6 +2885,11 @@ class VerticalLinesPluginValue {
             return;
         }
         const coords = this.view.coordsAtPos(fromOffset, 1);
+        if (!coords) {
+            // Skip this subtree while its starting coordinates are unavailable.
+            // A later editor update can redraw it if the coordinates become available.
+            return;
+        }
         if (parentCtx.rootLeft === undefined) {
             parentCtx.rootLeft = coords.left;
         }
@@ -2905,7 +3083,7 @@ class VimOBehaviourOverride {
                 const getZoomRange = {
                     getZoomRange: () => zoomRange,
                 };
-                const res = operationPerformer.eval(root, new CreateNewItem(root, defaultIndentChars, getZoomRange, operatorArgs.after), editor);
+                const res = operationPerformer.eval(root, new CreateNewItem(root, defaultIndentChars, getZoomRange, operatorArgs.after, true), editor);
                 if (res.shouldUpdate && zoomRange) {
                     editor.tryRefreshZoom(zoomRange.from.line);
                 }
@@ -3257,20 +3435,27 @@ class Parser {
             }
             listEndLineLookup++;
         }
+        // Whitespace that cannot be represented as a note separates lists. Resolve
+        // both boundaries before building the model, regardless of cursor position.
+        for (const boundary of this.findWhitespaceBoundaries(editor, listStartLine, listEndLine)) {
+            if (boundary === parsingStartLine) {
+                return null;
+            }
+            if (boundary < parsingStartLine) {
+                listStartLine = boundary + 1;
+            }
+            else {
+                listEndLine = boundary - 1;
+                break;
+            }
+        }
+        // A segment must start with a top-level item, not orphaned notes/children.
+        while (listStartLine <= parsingStartLine &&
+            !this.isListItemWithoutSpaces(editor.getLine(listStartLine))) {
+            listStartLine++;
+        }
         if (listStartLine > parsingStartLine || listEndLine < parsingStartLine) {
             return null;
-        }
-        // if the last line contains only spaces and that's incorrect indent, then ignore the last line
-        // https://github.com/vslinko/obsidian-outliner/issues/368
-        if (listEndLine > listStartLine) {
-            const lastLine = editor.getLine(listEndLine);
-            if (lastLine.trim().length === 0) {
-                const prevLine = editor.getLine(listEndLine - 1);
-                const [, prevLineIndent] = /^(\s*)/.exec(prevLine);
-                if (!lastLine.startsWith(prevLineIndent)) {
-                    listEndLine--;
-                }
-            }
         }
         const root = new Root({ line: listStartLine, ch: 0 }, { line: listEndLine, ch: editor.getLine(listEndLine).length }, editor.listSelections().map((r) => ({
             anchor: { line: r.anchor.line, ch: r.anchor.ch },
@@ -3331,9 +3516,7 @@ class Parser {
                 if (!currentList.getNotesIndent()) {
                     const matches = line.match(/^[ \t]+/);
                     if (!matches || matches[0].length <= currentIndent.length) {
-                        if (/^\s+$/.test(line)) {
-                            continue;
-                        }
+                        // Skipping a line would desynchronize the model and editor ranges.
                         return error(`Unable to parse list: expected some indent, got no indent`);
                     }
                     currentList.setNotesIndent(matches[0]);
@@ -3345,6 +3528,33 @@ class Parser {
             }
         }
         return root;
+    }
+    findWhitespaceBoundaries(editor, fromLine, toLine) {
+        const boundaries = [];
+        let itemIndent = "";
+        let notesIndent = null;
+        for (let l = fromLine; l <= toLine; l++) {
+            const line = editor.getLine(l);
+            const item = parseListItemRe.exec(line);
+            if (item) {
+                itemIndent = item[1];
+                notesIndent = null;
+            }
+            else if (this.isLineWithIndent(line)) {
+                const indent = line.match(/^[ \t]+/)[0];
+                if (/^\s+$/.test(line) &&
+                    (!line.startsWith(notesIndent !== null && notesIndent !== void 0 ? notesIndent : itemIndent) ||
+                        (notesIndent === null && indent.length <= itemIndent.length))) {
+                    boundaries.push(l);
+                    itemIndent = "";
+                    notesIndent = null;
+                }
+                else if (notesIndent === null) {
+                    notesIndent = indent;
+                }
+            }
+        }
+        return boundaries;
     }
     isEmptyLine(line) {
         return line.length === 0;
@@ -3365,9 +3575,11 @@ const DEFAULT_SETTINGS = {
     debug: false,
     stickCursor: "bullet-and-checkbox",
     betterEnter: true,
+    betterEnterOutdent: true,
     betterVimO: true,
     betterTab: true,
     selectAll: true,
+    expandSelection: false,
     listLines: false,
     listLineAction: "toggle-folding",
     dnd: true,
@@ -3403,6 +3615,12 @@ class Settings {
     set overrideEnterBehaviour(value) {
         this.set("betterEnter", value);
     }
+    get enterOutdentsEmptyListItem() {
+        return this.values.betterEnterOutdent;
+    }
+    set enterOutdentsEmptyListItem(value) {
+        this.set("betterEnterOutdent", value);
+    }
     get overrideVimOBehaviour() {
         return this.values.betterVimO;
     }
@@ -3414,6 +3632,12 @@ class Settings {
     }
     set overrideSelectAllBehaviour(value) {
         this.set("selectAll", value);
+    }
+    get expandSelection() {
+        return this.values.expandSelection;
+    }
+    set expandSelection(value) {
+        this.set("expandSelection", value);
     }
     get betterListsStyles() {
         return this.values.styleLists;

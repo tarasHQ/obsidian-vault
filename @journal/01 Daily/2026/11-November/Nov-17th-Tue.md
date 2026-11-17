@@ -64,7 +64,20 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning]`
-- ###### 19:09
+- ###### 21:20 | MEANING: 🔴
+	- Can you at least reflect on it honestly?
+	- Why I don't want to do it? Because expectations don't match with reality. I thought I'll be able to stay in the loop and understand what LLM does - but reality is that I can't. It wrote like 10k words document, I don't understand 90% of it. This is what creates the conflict.
+	- Another approach would be to vibe code the shit out of it - but that will attack my main principles. If I go there - there's no coming back. 
+	- Men I want to yell. Or scream. It's just... Like when I will stopped get fucked? Every day I must be exposed to more hopelessness. Every day is a damn war with many battles. I'm so tired of it. Especially because I don't believe in a win. It's like "do your best and then die". Yeah... it would be a damn relief to just stop existing. Oh... maor relief. Like thinking about it even makes PMO urges withraw because they don't even compare to h
+- ###### 21:07 | MEANING: ⚫
+	- What it will change if I succumb to indulgence? I still will have lots of work left. All it will give me is temporary relief from psychological pain. And I won't lie if I say that it's pretty damn a lot for me, to stop this pain.
+	- Like I have visions where I take a brick and hit myself in the head with it, multiple time, to stop this damn torture. 
+	- So at least I can put a pin on reasons I PMO. It's not so much about the pleasure as it's about analgesic effect. Full 4 days ahead before I get to indulge and relax... it's insane. I don't know if I can handle full 4 days of this.
+- ###### 21:02 | MEANING: 🔴
+	- Got that weird impulse to work. It exhausted itself by now. I don't know how long it lasted. An hour? 
+	- Back to pretty strong PMO urges. 
+	- Raised complexity yells at me that I'm done. If puny explorer needs so much things I don't know anything about - then what the rest of the stuff. 
+- ###### 19:09 | MEANING: 🔴
 	- Well, I'm not sleep. But now I really want to PMO and youtube/twitch after.
 	- Thankfully it's still a bit PIA to do. So it keeps me away from it. But it's just... Fucking resistance. It's so annoying. Like I just don't care about the website. I did in the morning - now I couldn't care less. 
 	- Like I want to PMO not for pleasure. But to just stop this damn civil war in my mind. It's VERY uncomfortable.
