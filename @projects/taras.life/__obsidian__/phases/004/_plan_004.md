@@ -85,7 +85,7 @@ Finalize the phase — meta-reflection on what worked, long-term knowledge extra
 - **03 — Vault entry pages and end-to-end review:** Determine needed generic Dataview entry pages and their vault-authoring workflow with the user; verify synced output and browse navigation, mobile interaction, themes, and SPA history together.
 - **02 — Explorer component:** Consume the navigation model; render and register the internal Explorer, including selected local icons, responsive presentation, current-section indication, and interaction. Remove community Explorer wiring and document the watch-mode limitation.
 
-### ◎ [STEP 01 - Explorer Navigation Model](./steps/01-explorer-navigation-model.md) - IMPLEMENTED — VERIFICATION & REVIEW PENDING
+### ◎ [STEP 01 - Explorer Navigation Model](./steps/01-explorer-navigation-model.md) - IMPLEMENTED — COMPLETION PENDING
 Implemented build-time discovery, existing parsed titles and icons, displayed-label ordering, and preservation of published destinations for the internal Explorer. Accepts the identical-to-filename title fallback without provenance tracking. Verification and the completion flow remain pending.
 
 ### ◎ [STEP 00 - Start Of The Phase](./steps/00-start.md) - READY

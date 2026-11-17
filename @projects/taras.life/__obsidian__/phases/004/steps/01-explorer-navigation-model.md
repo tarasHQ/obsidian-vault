@@ -9,7 +9,7 @@ state: full
 
 Implemented the build-time navigation model for the internal Explorer. It consumes Quartz's existing processed page data; no additional frontmatter parsing, provenance hook, transformer changes, or metadata registry is needed. Rendering and registration remain outside this step.
 
-Implementation is written; automated verification and the review/completion decision remain pending. Keep this note full until the user approves condensation.
+Implementation and code review are complete. The user reported the original verification commands green; verification of the review's subsequent test change and the remaining completion flow are pending. Keep this note full until the user approves condensation.
 
 ## High-Level
 
@@ -43,14 +43,16 @@ This replaces the earlier requirement to distinguish an authored title equal to 
 - [x] Add focused tests for matching and nonmatching paths, case and punctuation, nested exclusions, displayed-title sorting, Home placement, slug preservation, and absent versus supplied icon metadata.
 - [x] Add a real parser/transformer integration test for missing, empty, null, stem-equal, custom, and numeric titles plus icon metadata. The test reads the checked-in frontmatter options and calls `createFileParser` with `createMdProcessor`; it does not substitute a frontmatter parser.
 - [x] Update the phase decisions to record the approved title simplification; keep implementation details in this step.
-- [ ] Execute automated verification and address any failures. No command-execution tool is available in the implementation session, so none of the commands below has been run.
-- [ ] Complete the code-review decision and remaining implementation flow; final plan completion and note condensation await that decision and user approval.
+- [x] Run the original automated verification commands; the user reported all green.
+- [x] Complete code review and apply the agreed test refinement; no production-code defects were found.
+- [ ] Verify the review's subsequent test change and address any failures.
+- [ ] Complete the remaining implementation flow; note condensation awaits user approval.
 
 ## Verification
 
-- Static review: checked the implementation against the processed page-data contract, naming convention, metadata rules, and model-only boundary. This is not a typecheck or runtime test result.
-- Focused tests, type checks, formatting, full tests, and site build: **not run**; this session provides file tools but no command executor.
-- Commands pending in a shell-enabled session:
+- Code review found no production-code defects. The user approved adding a focused test for a processed title that differs from its filename stem only by case.
+- Before that test was added, the user reported all five original commands below green. The assistant did not run them or inspect their output.
+- The new test has not been executed or format-checked. The original green results do not verify this subsequent edit; rerun these commands in a shell-enabled session:
 
 ```sh
 npx prettier quartz/components/explorerNavigation.ts quartz/components/explorerNavigation.test.ts --write
@@ -62,7 +64,7 @@ npm run build
 
 ## Review and handoff
 
-- Ask whether the user will run the Code Review flow in a clean task, then continue the implementation flow's completion stages after their answer. Do not condense this note without approval.
-- The component's local README should be maintained by the user when documenting its model contract and title exception; do not silently replace user-authored module documentation. Plugin, loader, and page-type module READMEs were absent during exploration; those modules were not modified.
+- Code review is complete; the agreed test refinement is in place and awaits verification. Continue the remaining implementation flow afterward. Do not condense this note without approval.
+- The component's local README briefly documents the model and title exception, added at the user's request. Plugin, loader, and page-type module READMEs were absent during exploration; those modules were not modified.
 - Existing watch-mode partial rebuild behavior remains accepted. Document stale baked markup and the full-rebuild remedy with the rendered Explorer in Step 02; no invalidation work belongs here.
 - Practical browser verification remains in Step 03, after the new Explorer is rendered and the needed vault entries exist.
