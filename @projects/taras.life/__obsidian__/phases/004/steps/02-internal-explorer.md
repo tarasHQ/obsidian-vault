@@ -1,5 +1,5 @@
 ---
-status: ready
+status: implemented
 state: full
 ---
 
@@ -253,6 +253,11 @@ Preserve this supplied geometry:
 - [ ] Reuse existing grouping/collection tests where they establish unchanged behavior. The site build is the real configuration/schema/resource-loading integration check; do not add redundant assertions over hardcoded source text.
 
 ### 06 — Documentation and verification handoff
+
+- Verification: the user reported `npm run check`, `npm test`, and `npm run build` green after the final 404-link and test-fixture fixes. No command output was supplied. The user previously reported the mobile button and menu are present and work, and accepted that as sufficient for this step; no more detailed browser checks were reported.
+- Generated HTML inspection: the built default-frame homepage and 404 each contain one Explorer list, matching icon references/definitions, one toggle, and the title/Search/theme widgets. The 404 Home link is `/`; a generated sidebar-free or explicitly cleared-left page was not inspected.
+- Step 03 browser handoff: check desktop/tablet placement; mobile stickiness, full-viewport slide/blur and bar coverage; long-panel scrolling, safe areas and browser chrome; resize, navigation/back/forward, three themes, icons after repeated SPA navigation, missing entries and 404 links. On a default frame with an explicitly cleared left slot, check for mobile gaps, implicit tracks and horizontal overflow.
+- Search remains unconfirmed in the browser: click the top-bar trigger with the panel closed, and use Ctrl/Cmd+K with it closed and open. Check overlay stacking, Escape ordering and preserved panel state, result navigation, and dismissal from a scrolled page without unexpected scrolling or an unusable toggle. Stop and discuss failures rather than adding custom Search/focus machinery.
 
 #### `quartz/components/README.md` — modify
 - [ ] Document Explorer's model → SSR rendering/icon flow, supported keys/default-versus-invalid behavior, and how to add one trusted local geometry entry. Include the intended frontmatter examples, noting these do not hardcode folder mappings.

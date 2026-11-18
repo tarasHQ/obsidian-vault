@@ -8,42 +8,14 @@ journal-date: 2026-11-17
 ```
 
 ---
-
-```meta-bind-button
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-	- [ ] Check audio delay to webcam
-	- [ ] Check TickTick schedule (correct day, scheduled)
-	- [ ] Set time of next sleep for stager timer.
-	- Obsidian
-		- [ ] Write overview of the current day
-		- [ ] Create journal for the next day
-		- [ ] Make sure all day's reflections are linked artifacts
-		- [ ] Delete Dream Analysis block if empty
-		- [ ] Delete other blocks if empty
-	- [ ] Night scene
-	- [ ] Check IP cam (quality, delay)
-		- [ ] Enable sleep blur
-	- [ ] monitor OFF (seems like keeping on makes him die faster)
-	- Cat
-		- [ ] Clean up cat's litter box
-		- [ ] Food + plate is in my room at the shelf 
-			%%(to feed right away and not be distracted by her)%%
-	- [ ] Make sure there's tomorrow's food out of the freezer.
-
----
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-OVERVIEW_FOR_VIDEO
+Repetitive... clean day. Lots and lots of tension. I don't know where it leads me and if it leads me at all. 
+Close call on PMO. Really close call. I have no good and meaningful reason to NOT pmo. I just don't. The best I've got is statistics and vague chances from my experience. Which is pretty weak. 
+
+Especially for days like today. You go clean. And in result you get a torture. Fun. 
 
 ---
 
@@ -56,14 +28,15 @@ OVERVIEW_FOR_VIDEO
 
 ---
 
-## CREATED ARTIFACTS
-- 
-
----
-
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning]`
+- ###### 01:27
+	- ==It's like when voting happens, millions vote, and a party wins by 1 one vote. So it's like 50.0001% vs 49.9999%. I won't give in today. But tomorrow it'll be even harder==
+- ###### 01:17 | MEANING: 🔴
+	- Was like considering PMO for 5 minutes. I don't know. It starts small, but also like people have sex on daily basis which has much more stronger effect on all levels. It's tough. I don't have much to NOT give in. Like all I have is that I ate a lot of sweets, and then pmo + youtube + twitch + whatever else.
+	- And today is especially hard day. So it feels like I need something pleasureful and relaxing. 
+	- I'm definitely pushing boundaries on "clean" life. If I had meaning... but without it - it gets pretty hard to resist. Because like what can I say now? There's a chance that if you PMO today - you'll want to PMO tomorrow? Even without that I would want it tomorrow. I have urges every day. 
 - ###### 01:01
 	- Gets boring when using high reasoning LLMs. Don't know what to do... 
 - ###### 00:56
