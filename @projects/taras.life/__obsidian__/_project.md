@@ -192,7 +192,7 @@ GROUP BY true
 - ---
 - ### 02 Basic Functionality
 	- #### Phase 004 - Structure & Explorer [plan](./phases/004/_plan_004.md)
-	  Custom Explorer side menu and a focused vault-structure update: create needed entry pages with generic Dataview listings. Refined, specialized pages are future work.
+	  Custom Explorer and a focused vault-structure update: create needed entry pages with generic Dataview listings. Keep the complete desktop sidebar; on mobile retain a sticky title/Search/theme bar and slide navigation/widgets separately. Refined entry pages and scroll-aware header behavior are future work.
 	- **Ideas**
 		- Widgets ideas
 		- Pages category of ideas

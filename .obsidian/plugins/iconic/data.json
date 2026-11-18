@@ -199,6 +199,20 @@
       "enabled": true,
       "color": "#878580",
       "icon": "lucide-stone"
+    },
+    {
+      "id": "fph1o",
+      "name": "@atlas",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "name",
+          "operator": "is",
+          "value": "@atlas"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-map"
     }
   ]
 }

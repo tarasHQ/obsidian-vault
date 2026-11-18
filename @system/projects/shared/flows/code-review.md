@@ -42,6 +42,7 @@ A task that is purely focused on quality of code of the implemented step.
 			- Reduced lines of code
 			- Missed handling edge cases
 			- Code Smells
+			- Styling overlapping or unnecessary/redundant rules
 			- Quick and dirty solutions instead of proper ones
 			- Avoiding writing unnecessary files
 			- More performant or secure code

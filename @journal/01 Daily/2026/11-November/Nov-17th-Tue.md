@@ -64,6 +64,32 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning]`
+- ###### 01:01
+	- Gets boring when using high reasoning LLMs. Don't know what to do... 
+- ###### 00:56
+	- Bigger issue is that a massive step creeped in on me. If that's a correct saying. Started small, and then BAM - like 3-4 steps within one. 
+- ###### 00:54
+	- I'm starting to think that I should've go with astro. Because right now quartz is fighting me. That kinda creates lots of issues that suck out the meaning out of the work. 
+- ###### 00:33 | MEANING: 🟢
+	- 30 minutes to understand it, did even more beyond that. It's time pressure that puts me in the wrong state of mind. Like if I don't rush this and work on it properly - it's kinda meaningful. 
+	- And turned out I'm not as stupid as I expected too. I understood those tasks. I might not understand all code that will be written, but that's miles better than what I was expecting.
+- ###### 00:07
+	- As I read through it - turns out I can understand it. And meaning is slightly but steadily is increasing. 
+- ###### 23:58
+	- Discussing with LLM how much I should understand. 
+	- I don't know how much exactly I need to understand to be efficient. Like one pole is I don't read anything and trust LLM completely (I mean I stay on the level of abstraction where I provide reflections/plans/feedback) and another pole is me like spending an hour trying to understand everything there is.
+- ###### 23:54
+	- Instantly as I started to read implementation I got an impulse of "it's not it, I need something else", but I will continue pursuing current path. 
+- ###### 23:48 | MEANING: 🟡
+	- Ok. My assumption is that I don't understand what LLM is doing and this makes me indirectly hopeless. Ok. I will try to understand now. For my current task. And see:
+		- How much time it'll take?
+		- Will that make me meaningful?
+- ###### 22:56 | MEANING: 🟡
+	- ==🟡Pride==
+	-  That's the compensation. Or whatever. I kinda got intellect, but I used it very poorly. Here's the kicker - it doesn't mean I don't have the temptations of this gift. Pride and falling in love with my own creations. Can I say that it's the pride that sabotages my work? 
+	- Like maybe you're too good to go to work in code? Or maybe you want to create something superior without humility? Or maybe you see LLMs as your servants that must guess your whims correctly? there's something, for sure
+- ###### 22:39
+	- Is it real? All of this? Compensations and so on? Or am I just wasting time and confuse myself? 
 - ###### 22:27 | MEANING: 🟡
 	- And here's your compensation. Man I have memory problems. Dream sent me into the torture that lead to me seeing a path that is new and could improve my situation significantly. Tension is decreasing. I'm starting to feel better. So I guess after the meal I'll have to try out the new path?
 - ###### 21:55
