@@ -1,5 +1,5 @@
 ---
-ico: stone
+icon: stone
 ---
 
 index

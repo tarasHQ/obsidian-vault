@@ -65,6 +65,16 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning]`
+- ###### 00:16 | MEANING: 🟡
+	- ==🟡I sleep a lot. I'm always tired. Always have headache. In constant tension. All I have to hope is that it's the consequences of underlying unconscious changes. Like if I continue staying in tension - and confront it to the best of my ability - it'll lead to something potentially positive. 
+	- The issue is that I having a major blind spot that really suffocates me. Feels like the Self knows that but it's hard to communicate to the ego over the conscious/rational barrier. Or maybe, if that's a thing - the Self kinda changes my unconscious? 
+	- Like what I'm living through right now is rather uncomfortable. And my "usual" response would be to give up and play games/jerk off on like each of 10-20 separate occurrences so far. That promise of unrestricted indulgence really holds me so far. It's been awhile when I went cold-turkey on all indulgence for more than a day. 
+	- So, I guess all I can do right now - is to keep cold turkey and start the damn dream analysis. With so much tension I would've expected that it's obvious, but seems like not. It's top priority. Basically this is the most coherent answer from the unconscious that I can get. 
+- ###### 00:13 | MEANING: 🔴
+	- Lost meaning to even expand on the idea below. Tired of this. Very tired.
+	- 
+- ###### 22:46
+	- creating bad draft purposefully, without expecting completed product
 - ###### 22:05 | MEANING: 🟡
 	- Yeah, I get discouraged at the moment when I not only think about future, but start to live in it as fantasy. It's just I didn't know that fantasy can be negative too. I thought that Puer might want to live positive fantasy only. But it's not that. It's provisional life as tendency to live in fantasies. Bad and good. 
 - ###### 21:49
