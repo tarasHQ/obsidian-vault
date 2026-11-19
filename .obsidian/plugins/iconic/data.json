@@ -197,11 +197,11 @@
         }
       ],
       "enabled": true,
-      "color": "#878580",
+      "color": "#a1977d",
       "icon": "lucide-stone"
     },
     {
-      "id": "fph1o",
+      "id": "fctew",
       "name": "@atlas",
       "match": "all",
       "conditions": [
@@ -212,7 +212,8 @@
         }
       ],
       "enabled": true,
-      "icon": "lucide-map"
+      "icon": "lucide-map",
+      "color": "#a1977d"
     }
   ]
 }

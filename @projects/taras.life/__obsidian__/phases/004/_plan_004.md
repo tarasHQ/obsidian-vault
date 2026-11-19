@@ -56,20 +56,20 @@ GROUP BY true
 
 - ### Context Files
 	- `__obsidian__/docs/AGENTS.md` - project instructions and module README conventions.
-	- `__obsidian__/phases/004/steps/02-internal-explorer.md` - selected component/sidebar implementation and supplied Lucide geometry. Latest decision: complete desktop sidebar; mobile sticky title/Search/theme bar plus a separate full-viewport navigation/widgets panel. This supersedes both the earlier narrow Explorer-only menu and the later whole-sidebar/offscreen-Search workaround.
+	- `__obsidian__/phases/004/steps/02-internal-explorer.md` - condensed implementation record, verification limits, and Step 03 handoff for the internal Explorer and two-region sidebar.
 	- `__obsidian__/phases/004/_reflections/initial-reflection.md`, `__obsidian__/phases/004/ideas/parking.md` - historical direction and decisions; mobile ownership/width and accessibility notes there are superseded by this plan and Step 02.
-	- `quartz/components/README.md`, `quartz/plugins/loader/config-loader.ts`, `quartz.config.yaml` - component conventions, internal layout placement, and current community Explorer registration.
+	- `quartz/components/README.md`, `quartz/plugins/loader/config-loader.ts`, `quartz.config.yaml` - component conventions, internal Explorer placement, and sidebar region configuration.
 	- `quartz/components/explorerNavigation.ts`, `quartz/components/types.ts`, `quartz/plugins/pageTypes/dispatcher.ts` - navigation model and processed page-data handoff.
 	- `quartz/build.ts`, `quartz/cli/handlers.js` - full and watch build behavior; partial rendering does not refresh every page's baked Explorer.
-	- `quartz/components/frames/DefaultFrame.tsx`, `quartz/components/scripts/spa.inline.ts`, `quartz/styles/base.css` - left-sidebar rendering, SPA lifecycle, and responsive layout. Add explicit top/panel wrappers without duplicating widgets; retain the mobile top-bar row, replace community Explorer overrides, and explicitly preserve mobile stickiness formerly supplied by that package.
-	- `node_modules/@quartz-community/search/README.md`, `node_modules/@quartz-community/search/dist/components/index.js` - current Search overlay is nested inside the sidebar; preserve its fixed positioning and shortcut until a separate future relocation.
+	- `quartz/components/frames/DefaultFrame.tsx`, `quartz/components/scripts/spa.inline.ts`, `quartz/styles/base.css` - two-region sidebar rendering, SPA lifecycle, and responsive layout.
+	- `node_modules/@quartz-community/search/README.md`, `node_modules/@quartz-community/search/dist/components/index.js` - Search overlay and shortcut behavior; Search remains in the stationary sidebar region.
 	- `node_modules/@quartz-community/note-properties/README.md`, `node_modules/@quartz-community/note-properties/dist/index.js` - installed frontmatter transformer; supplies a filename-stem title when the authored title is missing or empty.
 - ### Exploration Tips
 	- Match existing page data's source-relative paths and use Quartz's published slugs for links. Current generated 404 and `.base` page paths do not match the entry convention; don't add speculative virtual-page tracking.
 	- Reuse existing parsed title and icon metadata. Accept the identical-to-filename title fallback rather than introducing provenance tracking, additional parsing, or a separate registry; keep tests focused.
 	- Watch rebuilds may leave stale Explorer copies on unchanged pages; document the full-rebuild remedy rather than adding invalidation machinery.
 	- Trust the already-verified Dataview/Syncer workflow. Determine vault authorship and needed entries with the user rather than assuming synced `content/` is the authoring source.
-	- Step 02 includes an early, narrow layout/Search browser smoke check before relying on the two-region structure: desktop placement, sticky mobile bar, panel toggling, Search click/shortcut, layering, Escape/focus, and result navigation. Step 03 owns comprehensive review/refinement: navigation/back/forward, repeated panel use, resizing, themes, icons, phone scrolling/safe areas, cleared left slots, and Search shortcuts with panel closed/open. Source inspection and automated checks are not browser proof.
+	- Step 02 records the observed mobile menu and Search scroll-fix checks, but detailed outcomes for the other Search smoke checks were not reported. Step 03 owns comprehensive review: navigation/back/forward, repeated panel use, resizing, themes, icons, phone scrolling/safe areas, cleared left slots, and Search click/shortcut, layering, Escape/focus, and result navigation. Source inspection and automated checks are not browser proof.
 
 ---
 ---
@@ -84,8 +84,8 @@ Finalize the phase — meta-reflection on what worked, long-term knowledge extra
 ### Remaining Step — Draft Structure
 - **03 — Vault entry pages and end-to-end review:** Determine needed generic Dataview entry pages and their vault-authoring workflow with the user; apply title/icon selections, verify synced output, and browse navigation, sticky mobile top controls/separate widgets panel, existing Search, themes, and SPA history together.
 
-### ◎ [STEP 02 - Internal Explorer & Mobile Sidebar](./steps/02-internal-explorer.md) - READY
-Consume the existing model to render the internal Explorer with selected local icons and current-section indication. Preserve the complete desktop sidebar; on mobile keep sticky title/Search/theme controls separate from a non-modal full-viewport navigation/widgets panel. Render widgets once, remove community Explorer wiring, and document the accepted watch limitation. Include an early layout/Search browser checkpoint; comprehensive review remains in Step 03.
+### %%◉ [STEP 02 - Internal Explorer & Mobile Sidebar](./steps/02-internal-explorer.md) - IMPLEMENTED
+Implemented the internal Explorer and two-region mobile sidebar. Verification limits and the comprehensive browser review handoff are recorded in the condensed step.%%
 
 ### %%◉ [STEP 01 - Explorer Navigation Model](./steps/01-explorer-navigation-model.md) - IMPLEMENTED
 Implemented the build-time navigation model for the internal Explorer, including entry discovery, labels, ordering, destinations, and icon selections. The implementation was reviewed and passed automated verification.%%

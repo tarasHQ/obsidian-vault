@@ -39,7 +39,7 @@
   "usePluginSettings": false,
   "showOwnPlugins": false,
   "showStatusOnEditor": false,
-  "showStatusOnStatusbar": true,
+  "showStatusOnStatusbar": false,
   "showOnlyIconsOnEditor": false,
   "hideFileWarningNotice": false,
   "networkWarningStyle": "",
@@ -75,15 +75,15 @@
   "useDynamicIterationCount": false,
   "syncAfterMerge": false,
   "configPassphraseStore": "",
-  "encryptedPassphrase": "%$XHXdSrCwbsbXoLfPIDxe879FfZG9p4ecLQg7ntOsTUuM+4ZmttPtfaPFX2z2W87OcPEe9iQqgTHC08fOsnWZHra5A3SOgcJqaX+o9GW3dee1rj3pq6d3567ludNy98dIW/G9iFw=",
-  "encryptedIdDerivationKey": "%$XHXdSrCwbsbXoLfPIDxe879FfZG9p4ecLQg7ntOsTUsjMZfCKMjw9es8668P8fu508yiocRQ20/9I0OnHPA+6QFBHUVTTSlcIZKzRcVXvgyAujzg04Sw5RqAjs0a+xRrTT0hH5m3EBymexIPA19sJ2weaUiPkUWxUIPq8vlIsDqrok1hkBXD0XlQlZuH/xguC08tIkul4SRLy/qS",
-  "encryptedCouchDBConnection": "%$XHXdSrCwbsbXoLfPIDxe879FfZG9p4ecLQg7ntOsTUuDN44V2Fe78180aq6H/Wet+uYfCETU7BsRZFV23qHS0hgaTXp8wDPupAbCfNHIU2J211f1LYmTh1SMl58WEN+NG56WRW8/qHQuAjnkE4fNptuZvjhLBfHbSzLC1DPnHLgxupzAC+5K6iTAQ2MEOfBskfnD9Th9dbpa6z2R+ihLPvLFyiXIDYzAhsXCvTAIThxj6OyIF0SUJqaoarn6gBg7YFU68cEKJQj4222+eORJZkZy6DKHRMV5B6PBNz/IL0ZikpM6UNS7fIX6WDJ4hvJFDj8/NuTE/YO7d1CHooNA3SbR6TUKaYj1TWvcqyupYCzs05eFeRtefTic9jG4xTjwrbjLNNoLtxRqiAs2fC/tIc4E/kh272idjCru0Jr0bZ81cgtRce4NrqIswQavDwPbtPVLSwHgtBF1t40FtfQxrfGW04/WJMGxctwcMAQqSV9O3sQc1iK3Y2D14AFE1Kj3",
+  "encryptedPassphrase": "%$SZ8S4k4a3AWEg8SQKKVXe4N9y4x5eaLIsQWjAMCnuoEqFmQb6VrbK68UijfUKdrSXPBq34mmNYTKuOhZbntg5TH0Cyichxn0O4PdDPS8GRLcsJcfI6Z9CDuBFW/Y5j9Q/Znz3Rs=",
+  "encryptedIdDerivationKey": "%$SZ8S4k4a3AWEg8SQKKVXe4N9y4x5eaLIsQWjAMCnuoFEB9n3UPo++aIvJrQlJCdHPzhyYC4yO2GJkF4oiqIEA6MYyI89ruUGYn5WXXCnNj0f3Ip/pmx6MYn0wJgtwbCYrPEEWCV4EG/k2gNrZXgQ93gi64M6mP9HAJwus/9IKhbB5SRgWBysT19SXZs3/FnprmTzdLH5sArLP/Aq",
+  "encryptedCouchDBConnection": "%$SZ8S4k4a3AWEg8SQKKVXe4N9y4x5eaLIsQWjAMCnuoFpHLzv8zcBOwvaYU4DuDpyeNWwcFzimnXG4xUANKRuSzvg7jbyFXslC+o2eHopT+Ks0jmc3cN8gCIgxkTY/Xslw9IPJusbgKsPusEw1UPWeXXBi3qgsagPOUxxWwZ8P2L0grNO7esSIYJfp0KuD22idzNBtMDvWc7D6iXO5cmL9tdb6IqShtvnFhL30sXv8+3TASL+IPai25D6Y3wfrGvN8DEkORuPbiriJ7b/MWrmbwu1FoMvlbsW0krmWPHxUvIjnHl35DWz2ycMqT7xG6MRC+4ja9LthZnsRmZaJ84Ih7GSXtcX9hEYw25sAiXtuEC/O/w7s+yeu9vFr9i/SbwqXjVwTahdhLpHT5iAFS6F73Q4i0C6XA6FcVuclhLdgKtp/q38X+V66K44Zjak5nKK2pHiabDXG81neHjOba2vw3TarJEZSGjpiahBXjWMo1kGgus/IHaRat/BKCojez7h",
   "permitEmptyPassphrase": false,
   "remoteConfigurations": {
     "remote-mw4sgyv9-mltsna": {
       "id": "remote-mw4sgyv9-mltsna",
       "name": "CouchDB livesync.taras.life",
-      "uri": "%$XHXdSrCwbsbXoLfPIDxe879FfZG9p4ecLQg7ntOsTUsa0FiL32yHyxOMh1fHg0eTqB+I8abZhAa/Hgz6vX6j83arY8EJNpznz3mom/aXYn8GDzRegRDJO9VSUiF+6Px8kjRH46ZctUYJJCRVeX4CLGhLzLTt8Z5wqbgGGcRwDaqWyrfzcUUVtOLurN1XURk4LE95MeMAX7czQqsdfQ==",
+      "uri": "%$SZ8S4k4a3AWEg8SQKKVXe4N9y4x5eaLIsQWjAMCnuoFYIzkAxnxCF7GNwIYgdGzxDqD41ZqqaykwRM5naN3fMqd+C8Rvrra0uXfPIKUpzmxHy0GMEfB9eL+qKLriYjWRSAz5KGOf9fKTV4e39nvSBJrj3GO1Wx/PFw+Oyw3SX4/VPaKoUThg7RmB+j+PftefHB45Yx3cC7utcf0BEg==",
       "isEncrypted": true
     }
   },
@@ -138,7 +138,7 @@
   "sendChunksBulkMaxSize": 1,
   "useSegmenter": false,
   "useAdvancedMode": true,
-  "usePowerUserMode": false,
+  "usePowerUserMode": true,
   "useEdgeCaseMode": true,
   "enableDebugTools": false,
   "suppressNotifyHiddenFilesChange": false,

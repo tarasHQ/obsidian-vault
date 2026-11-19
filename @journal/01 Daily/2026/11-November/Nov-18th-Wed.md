@@ -8,42 +8,11 @@ journal-date: 2026-11-18
 ```
 
 ---
-
-```meta-bind-button
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-	- [ ] Check audio delay to webcam
-	- [ ] Check TickTick schedule (correct day, scheduled)
-	- [ ] Set time of next sleep for stager timer.
-	- Obsidian
-		- [ ] Write overview of the current day
-		- [ ] Create journal for the next day
-		- [ ] Make sure all day's reflections are linked artifacts
-		- [ ] Delete Dream Analysis block if empty
-		- [ ] Delete other blocks if empty
-	- [ ] Night scene
-	- [ ] Check IP cam (quality, delay)
-		- [ ] Enable sleep blur
-	- [ ] monitor OFF (seems like keeping on makes him die faster)
-	- Cat
-		- [ ] Clean up cat's litter box
-		- [ ] Food + plate is in my room at the shelf 
-			%%(to feed right away and not be distracted by her)%%
-	- [ ] Make sure there's tomorrow's food out of the freezer.
-
----
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-OVERVIEW_FOR_VIDEO
+Staying in the tension. Not resigning. Not indulging. Not hiding/running away. Not ignoring. A little bit of believe that this poor physical and mental health is a sign of constructive and positive unconscious changes that will manifest consciously soon(?)
 
 ---
 
