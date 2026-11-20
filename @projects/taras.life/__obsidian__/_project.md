@@ -140,6 +140,10 @@ GROUP BY true
 		- ###### Remove unused/redundant styles %% fold %%
 			- After SCSS→CSS migration: audit base/callouts/popover for styles of removed plugins (e.g. things tied to dropped features)
 - ### Pages
+	- ###### Refined entry pages
+		- Replace temporary folder-tree listings with more specific, visually refined navigation as each section develops; consider how entry pages and existing READMEs should relate.
+	- ###### Scroll-aware mobile header
+		- Revisit showing or hiding the mobile top bar based on scrolling; the current sticky bar is deliberately simpler.
 	- ###### JavaScript-required warning %% fold %%
 		- Show a warning when JavaScript is unavailable, explaining that the website requires JavaScript to work. This is a separate future feature, not an Explorer-specific no-JavaScript fallback.
 	- ##### Buttons
@@ -191,7 +195,7 @@ GROUP BY true
 
 - ---
 - ### 02 Basic Functionality
-	- #### Phase 004 - Structure & Explorer [plan](./phases/004/_plan_004.md)
+	- #### ~~Phase 004 - Structure & Explorer~~ [plan](./phases/_archived/004/_plan_004.md)
 	  Custom Explorer and a focused vault-structure update: create needed entry pages with generic Dataview listings. Keep the complete desktop sidebar; on mobile retain a sticky title/Search/theme bar and slide navigation/widgets separately. Refined entry pages and scroll-aware header behavior are future work.
 	- **Ideas**
 		- Widgets ideas
@@ -201,11 +205,11 @@ GROUP BY true
 			- selective refactoring in parallel
 			- probably also remark42 backend side (anon logic, emails, more oauth, etc.)
 - ### 01 Fundamentals
-	- #### ~~Phase 003 - Visual Identity [done](./phases/_archived/003/_plan_003.md)
+	- #### ~~Phase 003 - Visual Identity [plan](./phases/_archived/003/_plan_003.md)
 	  Palette and three modes, typography, accents, background, favicon, and published visual test pages.
-	- #### ~~Phase 002 - Removing SCSS, Theming, Fonts plugin [done](./phases/_archived/002/_plan_002.md) 
+	- #### ~~Phase 002 - Removing SCSS, Theming, Fonts plugin [plan](./phases/_archived/002/_plan_002.md) 
 	  SCSS → plain CSS, static theming (theme.css SSOT), generation machinery + Google Fonts + quartz-fonts out, CLI create/git-flow out, README set + AGENTS.md aligned, semantic review.
-	- #### ~~Phase 001 - Remark42 plugin rewrite [done](phases/_archived/001/_plan_001.md)
+	- #### ~~Phase 001 - Remark42 plugin rewrite [plan](phases/_archived/001/_plan_001.md)
 	  Remark42 plugin rewritten from scratch as a self-contained compiled package (`custom-plugins/remark42/`), shipped and documented. Deferred to future work: visual polish
 
 

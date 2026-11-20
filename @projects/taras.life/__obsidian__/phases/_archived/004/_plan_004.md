@@ -1,9 +1,10 @@
 ---
 ctime: 2026-11-16 10:40
+status: implemented
 isIntegrated: false
 ---
 
-[← Project](../../_project.md)
+[← Project](../../../_project.md)
 
 # P 004 - Structure & Explorer
 %%[Internal User Link to Template]([T]plan.md) LLMs should ignore both the link and the paths it hints on%%
@@ -46,7 +47,7 @@ GROUP BY true
 - An optional entry-page frontmatter icon selects a locally maintained SVG; use a default SVG when no icon is specified, and no icon for an unrecognized or unusable selection. Keep only selected icons in the project rather than shipping an entire icon library.
 - Bake the complete Explorer and used icon definitions into each page whose resolved frame/layout renders Explorer; preserve sidebar-free frames and explicitly cleared left slots. Define each icon once per page and reuse it by namespaced ID; style icons in shared theme-aware CSS. No separate Explorer/icon fetch or browser-side list construction; browser code may handle mobile interaction. Check SPA behavior through practical browsing after implementation.
 - Desktop retains the complete visible left sidebar (title, Search/theme toolbar, Explorer, future widgets), without an Explorer folding heading. On mobile, keep a simple always-sticky top bar for title/Search/theme and use a lower-right floating toggle to open only navigation/widgets as a full-viewport non-modal panel sliding from the right over a translucent blurred background. The open panel covers the bar. Render each widget once: explicit top-control metadata distinguishes the stationary region from default left-slot panel contents; controls are outside the moving panel. Search stays unchanged and outside its transform/hiding; no use of the main-column `header` slot, duplicate Search, or browser-time widget relocation. The frame/sidebar controller, not Explorer, owns this presentation. No focus-management/accessibility-specific work, page-scroll lock, gestures, or no-JavaScript fallback. Scroll-aware header behavior and extra floating buttons remain deferred.
-- Vault structure is the navigation SSOT. Quartz Syncer renders Dataview queries to HTML before syncing content to Quartz; the user has already verified this works. Generic entry-page listings provide deeper navigation.
+- Vault structure is the navigation SSOT. Quartz Syncer renders DataviewJS listings during sync; generic entry-page trees provide deeper navigation. The trees exclude `@projects/0vibes` and need to be re-synced to reflect vault changes.
 - Own a focused internal Quartz component rather than adapt or package the community Explorer. Beyond optional title and icon presentation metadata, no explicit navigation map, hierarchy overrides, or dedicated navigation-validation system; add capabilities later only if needed.
 - Highlight the current top-level section's entry, including when viewing that entry itself; highlight `Home` on the homepage.
 - Accept existing watch-mode partial rebuild behavior: unchanged pages can retain stale baked Explorer markup after entry changes, additions, or deletions. Document this limitation and the full-rebuild remedy in the relevant local README; do not add invalidation machinery for it.
@@ -56,8 +57,8 @@ GROUP BY true
 
 - ### Context Files
 	- `__obsidian__/docs/AGENTS.md` - project instructions and module README conventions.
-	- `__obsidian__/phases/004/steps/02-internal-explorer.md` - condensed implementation record, verification limits, and Step 03 handoff for the internal Explorer and two-region sidebar.
-	- `__obsidian__/phases/004/_reflections/initial-reflection.md`, `__obsidian__/phases/004/ideas/parking.md` - historical direction and decisions; mobile ownership/width and accessibility notes there are superseded by this plan and Step 02.
+	- `__obsidian__/phases/_archived/004/steps/02-internal-explorer.md` - condensed implementation record, verification limits, and Step 03 handoff for the internal Explorer and two-region sidebar.
+	- `__obsidian__/phases/_archived/004/_reflections/initial-reflection.md`, `__obsidian__/phases/_archived/004/ideas/parking.md` - historical direction and decisions; mobile ownership/width and accessibility notes there are superseded by this plan and Step 02.
 	- `quartz/components/README.md`, `quartz/plugins/loader/config-loader.ts`, `quartz.config.yaml` - component conventions, internal Explorer placement, and sidebar region configuration.
 	- `quartz/components/explorerNavigation.ts`, `quartz/components/types.ts`, `quartz/plugins/pageTypes/dispatcher.ts` - navigation model and processed page-data handoff.
 	- `quartz/build.ts`, `quartz/cli/handlers.js` - full and watch build behavior; partial rendering does not refresh every page's baked Explorer.
@@ -68,8 +69,7 @@ GROUP BY true
 	- Match existing page data's source-relative paths and use Quartz's published slugs for links. Current generated 404 and `.base` page paths do not match the entry convention; don't add speculative virtual-page tracking.
 	- Reuse existing parsed title and icon metadata. Accept the identical-to-filename title fallback rather than introducing provenance tracking, additional parsing, or a separate registry; keep tests focused.
 	- Watch rebuilds may leave stale Explorer copies on unchanged pages; document the full-rebuild remedy rather than adding invalidation machinery.
-	- Trust the already-verified Dataview/Syncer workflow. Determine vault authorship and needed entries with the user rather than assuming synced `content/` is the authoring source.
-	- Step 02 records the observed mobile menu and Search scroll-fix checks, but detailed outcomes for the other Search smoke checks were not reported. Step 03 owns comprehensive review: navigation/back/forward, repeated panel use, resizing, themes, icons, phone scrolling/safe areas, cleared left slots, and Search click/shortcut, layering, Escape/focus, and result navigation. Source inspection and automated checks are not browser proof.
+	- Entry pages are authored in the vault and synced to `content/`; the user reported that the trees and browser review worked, without detailed individual results.
 
 ---
 ---
@@ -81,8 +81,8 @@ GROUP BY true
 ### ◎ [STEP 99 - End Of The Phase](./steps/99-end.md) - READY
 Finalize the phase — meta-reflection on what worked, long-term knowledge extracted so plan info can safely die-off, frontmatter set, phase archived.
 
-### Remaining Step — Draft Structure
-- **03 — Vault entry pages and end-to-end review:** Determine needed generic Dataview entry pages and their vault-authoring workflow with the user; apply title/icon selections, verify synced output, and browse navigation, sticky mobile top controls/separate widgets panel, existing Search, themes, and SPA history together.
+### %%◉ STEP 03 - Vault Entry Pages & End-to-End Review - IMPLEMENTED
+Added temporary folder-tree listings and clean titles to the vault's top-level entry pages, preserving existing icon choices and excluding the private project. The user reported the synced trees work and the requested browser review was done; individual review outcomes were not supplied.%%
 
 ### %%◉ [STEP 02 - Internal Explorer & Mobile Sidebar](./steps/02-internal-explorer.md) - IMPLEMENTED
 Implemented the internal Explorer and two-region mobile sidebar. Verification limits and the comprehensive browser review handoff are recorded in the condensed step.%%
