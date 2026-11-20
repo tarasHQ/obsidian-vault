@@ -19,24 +19,24 @@ action:
   file: _static/scripts/meta-bind/journal-remove-checklist.js
 ```
 - ##### NIGHT CHECKLIST
-	- [ ] Check audio delay to webcam
-	- [ ] Check TickTick schedule (correct day, scheduled)
-	- [ ] Set time of next sleep for stager timer.
+	- [x] Check audio delay to webcam
+	- [x] Check TickTick schedule (correct day, scheduled)
+	- [x] Set time of next sleep for stager timer.
 	- Obsidian
-		- [ ] Write overview of the current day
-		- [ ] Create journal for the next day
-		- [ ] Make sure all day's reflections are linked artifacts
-		- [ ] Delete Dream Analysis block if empty
-		- [ ] Delete other blocks if empty
-	- [ ] Night scene
-	- [ ] Check IP cam (quality, delay)
-		- [ ] Enable sleep blur
-	- [ ] monitor OFF (seems like keeping on makes him die faster)
+		- [x] Write overview of the current day
+		- [x] Create journal for the next day
+		- [x] Make sure all day's reflections are linked artifacts
+		- [x] Delete Dream Analysis block if empty
+		- [x] Delete other blocks if empty
+	- [x] Night scene
+	- [x] Check IP cam (quality, delay)
+		- [x] Enable sleep blur
+	- [x] monitor OFF (seems like keeping on makes him die faster)
 	- Cat
-		- [ ] Clean up cat's litter box
-		- [ ] Food + plate is in my room at the shelf 
+		- [x] Clean up cat's litter box
+		- [x] Food + plate is in my room at the shelf 
 			%%(to feed right away and not be distracted by her)%%
-	- [ ] Make sure there's tomorrow's food out of the freezer.
+	- [x] Make sure there's tomorrow's food out of the freezer.
 
 ---
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
@@ -56,17 +56,19 @@ OVERVIEW_FOR_VIDEO
 
 ---
 
-## CREATED ARTIFACTS
-- 
-
----
-
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning]`
 - ###### 03:22 | MEANING: 🟡
 	- Yeah. Have to be honest. And transparent. When camera got off - got a huge feeling of freedom, and yup, indulged. Not proud of it. Took too long. Not feeling physically good after it. How long? 5-6 days? Better than 0. 
-	- Added bypasses I found to 
+	- Added bypasses I found to create more friction there. It's not bulletproof. Still. And never will be. But I can't do more without like significantly harming productivity (e.g. by blocking browsers period)
+	- In previous time after long abstinence I did second time in X hours. I won't today. Sunday still stays. And I will leave with this uncomfortable feeling. 
+	- Why I gave in? Good question
+		- I wouldn't say it was related to the events from the evening night. I kinda processed it. It was the update. PC is off - the judge is off too. 
+		- Also was the night, so there's little chance to prolonged consequences that can F-up the day. Also tomorrow will have some legal research to do to see if I can get some cheap lawyer and cancel that fine. So I thought that since I won't be able to work/reflect/stay in tension anyway, then might as well just do it. 
+		- Also got images of sex alternative. Like people have highly pleasurable moments on daily basis, and I can't have mine? But yeah, I can't. Because people - plural, and me is singular. If I indulge I don't have the people to regulate/guide/constraint me. 
+	- Ok, it's too late, wake up in 6-7 hours. I'll stop here. 
+	- It is what it is. The worst thing I can do is have guilt about it and even more than that - to have it poison the next day. I'll see how urges will be tomorrow. I don't plan to repeat it. Wait till Sunday, then I'll see.
 - ###### 02:02
 	- Will run update.
 - ###### 01:16
@@ -168,15 +170,7 @@ OVERVIEW_FOR_VIDEO
 - ###### 12:44
 	- Get prideful when using LiveSync. It's very distracting. And menu is really, really poorly written. Like it's not pride, but an objective fact. 
 	- Should I return to obsidian sync or other means to sync? Because this plugin just makes me angry and prideful. Like it's simple as that. I would pay 5$ to NOT use it because of how disruptive it is to my life. 
-- **Tasks from reflection**
-	- #1 - Humiliation ritual "PRIDE HUMILIATION" merged with processing recording task. (so you can also kinda look at where you were prideful yesterday)
-		- Also additional button in time log for time-stamped template? as callout maybe? To have it distinctly visible.
-	- #2 - Update template of time log's meaning button. 
-		- Rename to awareness
-		- update js code to also include mandatory pride check. 
-			- without submit button though. When both selected - modal is automatically closed and inserted. 
-		- Pride is kinda binary? Like you either prideful or not? That's the question. Are you prideful. And the answer would be 2 options. Emojis. And then if you are you press third button for pride humiliation template. So it'll kinda be thought modification thing. 
-	- Don't strive for perfection, or you'll waste your time/energy again. Description above will do for what I seek. 
+
 ==REPEAT The Project is dead. Website is priority. Stay in tension by avoiding indulgence==
 
 ---
