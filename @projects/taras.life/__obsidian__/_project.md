@@ -195,7 +195,7 @@ GROUP BY true
 
 - ---
 - ### 02 Basic Functionality
-	- #### ~~Phase 004 - Structure & Explorer~~ [plan](./phases/_archived/004/_plan_004.md)
+	- #### ~~Phase 004 - Structure & Explorer~~ [plan](./phases/_archived/004/_plan_004.md) %% fold %%
 	  Custom Explorer and a focused vault-structure update: create needed entry pages with generic Dataview listings. Keep the complete desktop sidebar; on mobile retain a sticky title/Search/theme bar and slide navigation/widgets separately. Refined entry pages and scroll-aware header behavior are future work.
 	- **Ideas**
 		- Widgets ideas
@@ -204,6 +204,11 @@ GROUP BY true
 		- Non-phased, in parallel
 			- selective refactoring in parallel
 			- probably also remark42 backend side (anon logic, emails, more oauth, etc.)
+		- Minor fixes
+			- Size of menu button to iOS safari buttons size
+			- Make menu button transparent maybe even glass like from iOS
+			- bug when I’m scrolled down on the page, then pick another explorer page it scrolls up, which is bad and wrong
+			- indentation of lists should be 1/3 of now for phones(in obsidian too)
 - ### 01 Fundamentals
 	- #### ~~Phase 003 - Visual Identity [plan](./phases/_archived/003/_plan_003.md)
 	  Palette and three modes, typography, accents, background, favicon, and published visual test pages.

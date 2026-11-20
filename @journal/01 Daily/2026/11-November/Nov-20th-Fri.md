@@ -10,32 +10,6 @@ journal-date: 2026-11-20
 ---
 
 ```meta-bind-button
-label: Remove Morning Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### MORNING CHECKLIST
-    - [ ] Air out the room %%lower oxygen levels and may affect you, triphasic breathing if you're cold%%
-    - [ ] Day scene
-    - [ ] Check webcam (exposure)
-    - [ ] Check IP cam (quality, delay)
-        - [ ] Reconnect to reset delay
-        - [ ] Disable sleep blur
-    - [ ] Check all elements are present on the canvas
-    - [ ] Check TickTick schedule 
-        - [ ] correct day, scheduled, scaled
-        - [ ] red "now" line is there
-    - [ ] Start stager timer
-    - Obsidian
-        - [ ] Reload.
-        - [ ] Fill Context block.
-        - [ ] Split down. Have ~10 lines of time log.
-
-```meta-bind-button
 label: Remove Night Checklist
 style: default
 icon: trash-2
@@ -74,11 +48,11 @@ OVERVIEW_FOR_VIDEO
 ---
 
 >[!tldr] CONTEX
->Sleep Duration - **0:00**
+>Sleep Duration - **6:30**
 > 
->Time Spent in Bed - **TODO**
+>Time Spent in Bed - **Low**
 > 
->Approx. Compensation of Dreams - **TODO**
+>Approx. Compensation of Dreams - **Don't remember. Don't feel any strong one. **
 
 ---
 
@@ -98,60 +72,25 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning]`
-- 
+- ###### 14:02
+	- There was an option to get some friendly talk started. I missed it. Was too anxious and under inferiority complex so didn't see that through sadly. But at least worth noting. 
+	- But it still distracts me a bit. It was a good friend of my mother. She could help me with navigating in legal side of these things. So because I kinda missed her attempt to start a small talk, it feels now as if I just "used" her. You know, like you don't talk for 10 years (though we were not close at all before), and then out of the blue you ask for help/advice, and when you get it - "Thank you very much, bye-bye." This was very impolite. Which is funny, because I tried to be as polite as possible. 
+	- Which kinda makes me think about politeness. It comes from the inferiority complex. It's kinda like wolfs in the fight for "domination" at some point fall on their back and expose the neck to show the alpha that they're won, to prevent like killing their whole pack in such "conflicts". 
+		- And I'm kinda doing the same here when I talk with "superior" people. Absolute resignation into the unconscious defense to show myself and harmless. Which is not respected anywhere. Like it's the worst? ... nah, the worst is to be rude. But after that - this mode of behavior is the worst) 
+		- But that's the thing. It's hard to track when one is ready to start such talk, and when they want to end it. Hard to not overdo. And also what to say? Like if they ask me how am I doing? "yeah, I'm living shitty life without meaning, have thoughts of suicide on daily basis, moving on fumes in my last ditch effort to do anything, and if I fail - I'm done"... or just lie and say I'm ok? But lie is always bad. So what then? That's a good question, but I'm too hungry to follow this through. 
+- ###### 13:56
+	- Man, how it would be great to not have a massive inferiority complex going on when I contact with people... But also I feel there's life in those contacts. So much of it. And meaning too. Very vital thing. That's why I MUST proceed with taras.life idea. I need people. Like I don't believe I can get out from it by myself. 
+- ###### 13:24 | MEANING: 🟡
+	- So. Had some things done to figure out how to reduce the negative impact of those fines if they'll stay long term and/if accumulate. 
+	- There's too much to describe precisely, but in short terms - decided to do an unpleasant and anxious and tedious thing though dad was volunteering to do it himself. But I know, if there's path where I will integrate the Father archetype - it should start with, at least, not offloading responsibility on my dad. And at best - taking as much of it as possible
+		- Why? Because it grounds me. Like right now I have to make a bunch of kinda tough calls/contacts I would prefer to not have and stay in my comfort zone. 
+	- One thing I can say though is that I start to develop faith in this kind of things. Like I know it'll suck, but the price to delegate it to my dad will be much much higher.  So yeah...
 ==REPEAT The Project is dead. Website is priority. Stay in tension by avoiding indulgence==
 
 ---
 
 ## DREAM ANALYSIS
-### Read First
-- **WRITE THEM DOWN**. if you don't want to analyze them - the best next thing is to just write them down and re-live while you're doing so. This increases their effectiveness.
-- **Goal** of the dream isn't only to show you the answer, but also to give meaning to the answer through the story. Peterson's "story" from his Maps of Meaning work. 
-- Not all dreams will **click**.  As LLM put it - drill-sergeant's dream isn't supposed to give me chills. 
-	- I can be rich with meaning but poor with action, in this case I don't need inspiration, I need to have a dream that is grounded in action and persistent day-to-day movement of men's work. 
 
-### Dream #1 - NAME
-
-- #### Raw Dream
-    - ##### Tips
-        - `Ignore mistakes, formatting, structure, goal is to capture the raw fleeting dream without being distracted by all of it`
-    - 
-- #### Location & Environment
-    - ##### Tips
-        - `What you feel when you go/are there in real life?
-        - `If it's unreachable/unknown - how would you feel being there in real life?`
-        - `Is feeling positive/negative?`
-        - `Why would dream use this location/environment and not other ones?`
-    - 
-- #### Analyze figures, what they represent, why they're there? \*\*
-    - ##### Tips
-        - `Why that figure there, how situation would unfold without that figure?`
-        - `Is it positive or negative figure, how you feel about them, which emotions comes up? `
-        - `Can it be the Shadow, or the Anima?`
-        - `Is it internal representation or external relationships?`
-    - 
-- #### Emotional/Rememberable scenes
-    - ##### Tips
-        - `If there's particularly rememberable scenes - analyze why they're rememberable, what's their charge, what's so valuable in them, what they're hinting on? `
-    - 
-- #### Direction/Tendency
-    - ##### Tips
-        - `How it starts and how it ends establishes the direction/tendency of the dream which gives another perspective on it.`
-        - `Direction is overlapping with compensation, but you should focus on positive/negative property`
-    - **First sentence is**
-    - **Last sentence is**
-    - **Direction of the dream is**,
-- #### Final feelings
-    - ##### Tips
-        - `Aftertaste of the dream. Feeling about the dream as a whole.`
-    - 
-- #### Hooks From the Past
-    - ##### Tips
-        - `Your ego was one-sided recently - where/when it might've been like that?`
-        - `If dream is repeatable - then there's reoccuring tendency to behave in a certain manner - find it, look in the past for a pattern, not a one-off fluke`
-    - 
-- #### Likely Compensation
-    - ##### Tips
-        - `Which type of compensation is present? Does it inspire you? Does it deflate over-inflated ego? or does it confronts wrong actions/attitude by showing dreams into opposite direction?`
-        - `Keep remembering that it shows you blind spots, so the answer isn't what's obvious, because you already see it. You must approach compensation from unexpected angle. `
-    - 
+### Dream #1 - Girls in Dresses
+- I guess one sentence is better than nothing. 
+- I was following and/or looking at and or just passively spectating girls in long dresses. Like from Medieval times. Dresses were colorful. But also was accent on hair. There was one with bright red/orange hair. They looked beautiful. They were walking somewhere.
