@@ -180,12 +180,14 @@ GROUP BY true
 ## Steps
 
 
-### ◎ [STEP 99 - End Of The Phase](./steps/99-end.md) - READY
+### ◎ [99 - End Of The Phase](./steps/99-end.md) 
+**READY**
 Finalize the phase — meta-reflection on what worked, long-term knowledge extracted so plan info can safely die-off, frontmatter set, phase archived.
 
 === INSERT STEPS HERE ===
 
-### ◎ [STEP 00 - Start Of The Phase](./steps/00-start.md) - READY
+### ◎ [00 - Start Of The Phase](./steps/00-start.md) 
+**READY**
 The flow is to start the planning in the right state of mind and with the properly prepared phase
 
 

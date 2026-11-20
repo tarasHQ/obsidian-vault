@@ -8,42 +8,15 @@ journal-date: 2026-11-19
 ```
 
 ---
-
-```meta-bind-button
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-	- [x] Check audio delay to webcam
-	- [x] Check TickTick schedule (correct day, scheduled)
-	- [x] Set time of next sleep for stager timer.
-	- Obsidian
-		- [x] Write overview of the current day
-		- [x] Create journal for the next day
-		- [x] Make sure all day's reflections are linked artifacts
-		- [x] Delete Dream Analysis block if empty
-		- [x] Delete other blocks if empty
-	- [x] Night scene
-	- [x] Check IP cam (quality, delay)
-		- [x] Enable sleep blur
-	- [x] monitor OFF (seems like keeping on makes him die faster)
-	- Cat
-		- [x] Clean up cat's litter box
-		- [x] Food + plate is in my room at the shelf 
-			%%(to feed right away and not be distracted by her)%%
-	- [x] Make sure there's tomorrow's food out of the freezer.
-
----
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-OVERVIEW_FOR_VIDEO
+So in the evening got fined by the military. Wasn't a sum I can afford in the beginning. Now it went to "enforcement proceedings", so it's double of that + 10%. Expecting that additional sanctions will apply shortly after that. Shit got real. 
+
+And since I got the fine once, chances are now I'll get those on quarterly basis. There's a possibility to cancel them through the court, but I can't afford lawyers either. 
+
+But thankfully managed to see this as a positive gift from God to force me into the ground reality instead of flying in the skies. 
 
 ---
 
