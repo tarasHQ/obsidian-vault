@@ -90,6 +90,24 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
+- ###### 16:31 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- PMO urges again. Like mad. But this time there's one particular image. It's as if the anima tries to break through the barrier by using what it can. 
+	- It started when I laid down. And still persists. Really big one. I won't give in (hopefully), I know that tomorrow I'll have all I want. But still. And it's weird also, because like a few hours before I thought that maybe I have to limit tomorrow's indulgence. Maybe to the second half of the day, or like plan work inside the day. Because it's just not possible to indulge for 14 hours, and to watch some stupid stuff will hurt even if it'll be dopaminergic. 
+	- And then something changes - and I want to just give in. Weird. 
+- ###### 15:48
+	- What if I won't push myself? Just relax a bit now, instead of "napping" for 6 hours later in the day?
+- ###### 15:36 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- ==🟡What if my flows are projections of mother complex?==
+		- I suffocate without action. What those flows are purposefully done to suffocate me? Because like yeah, it got expanded a bit. But it's just so much planning it's insane. Like 2 hours on planning and I'm still far away from the action. And I wouldn't say that I added much of interesting stuff. Some of it though is important. But really doubtful that it's "2 hours of work" -kind of important.
+		- It really feels like it's a designed web by mother complex to catch me in it, and then devour when I get discouraged by that. Also then makes lots of meaning why I had so much friction doing those flows...
+- ###### 15:25 | MEANING:🔴 | PRIDE:🤷‍♂️
+	- Ok. 25 minutes of rap. Meaning is gone. Is it rap or that I diverged to testing obsidian memory leaks? 
+	- drifted a bit into youtube for like 5 minutes too. 
+	- It's insane though how long I can go on 4 hours of sleep. I thought I would be dead by this point. But seems like I have guaranteed few hours in me. And probably even more after. 
+- ###### 15:04
+	- I look those videos where I get "bad news" and I kinda start to feel proud for myself in third person. Like I see that guy just constantly being hit in the nuts by the life, but somehow he still aims up. Still trying to keep the spirit up. It's worth something. 
+- ###### 15:01 | MEANING:🟢 | PRIDE:🤷‍♂️
+	- Thought that maybe rap on the contrast after church choir will discourage me, but instead got actionable. Issues popup non-stop but I just move through them as bulldozer. "cognitive load is non-issue", though I slept like what, 4 hours? 
 - ###### 14:13 | MEANING:🟡 | PRIDE:🙏
 	- There's still a bit of friction. Like it writes an answer I poorly understand, and it makes me to resign a bit. Instead of just asking to explain it. Weird. 
 	- Also don't want to PMO in presence of this music. Maybe because it's meaningful already or maybe this kind of music creates meaning?
