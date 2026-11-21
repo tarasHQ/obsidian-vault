@@ -64,6 +64,44 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
+- ###### 20:36 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Truly something profound happens here. Like I was never been able to handle this kind of tension for so long without resigning into another kind of indulgence or distracting myself. And now not only that - but I also actually work with all this tension. Here's a miracle for ya...
+- ###### 20:24 | MEANING:🔴 | PRIDE:🤷‍♂️
+	- Damn, like I didn't established that if PMO urges are hard - then all other things that stem from this complex would be hard too. I'm starting to ask stupid questions on forking quartz syncer plugin to not strip comments from my notes. Like "should I fork it" - stupid. Questions for the sake of questions. No. You ACT. You already now what you need to know. 
+- ###### 19:57
+	- It's kinda nice though that I can... nope. 
+	- Called my dad to give news about all this additional sanctions. Thought that I can maintain good spirit, but seems like just loaded him a bit. Why I called? Mother Complex. Fucking hell.. no why's. Don't answer on damn questions. 
+	- You called to have a contact with him, because in recent months you were kinda distant. So a small talk goes a long way. And you shared only news you had, didn't go as planned, but who cares, it was a mistake, I won't repeat it. There's no need to reason and philosophize. 
+	- If you PMO - you're done. That's all you need to reason about. 
+	- Only if I was more conscious with talking. Too stressful for me, but oh well. Stop writing for God's sake. 
+- ###### 19:45
+	- It just doesn't leave me alone this urge. I think because I don't act. I'm like checking things on how to write that custom plugin... so yeah... 
+- ###### 19:30
+	- And PMO urges again. With visions too. 
+	- It's so funny though. I want to think about how to approach current issue with the project. And I know that by doing so - I will do the worst thing in trying to solve this issue. Damn. Fucked)) Reasoning is my main tool, and now I can't use it when it's surrounded with mother complex's scent. 
+	- Ivan answers on baba yaga's question by not answering on it.
+> [!tldr] Ivan Answers to Baba Yaga
+> "O, thou old mischief! Is it the way in holy Russia to ask questions before the tired guest gets something to eat, something to drink, and some hot water to wash the dust off?"
+- ###### 19:25
+	- ###### 🕸️ The Devouring Mother:
+		- Interesting is this futilism is the negative senex or the devouring mother? 
+		- Or maybe you need to optimize flows? 
+		- Or there is always proxmox reinstall that is kinda interesting, instead of boring work on the website, why won't you work on it?
+		- Or even better - why won't you try to think about why you want to work on the proxmox task and not on the website? 
+	- Yeah. That's the blind spot. When I start to reason - I'm already trapped with baba yaga. 
+- ###### 19:25
+	- Ok. Well. I want to think on futilism. But yeah. Guess what?
+- ###### 19:14
+	- ==🟡It's lowly to fight/have this urges==
+		- What I need here is the opposite. Because if you fight a major dragon, and no one cares including you - then what's the point fighting it. So I must clarify - I fight a major dragon. This PMO urge which stems from seemingly mother complex - is a major dragon. In 100% of cases I would've indulge by now. It's persistent as hell. Like for how long I'm fighting it? - 3 hours. It just doesn't bulge. 
+		- It doesn't matter that other people have "respectable" dragons to slay. That's why the hero is the archetype. Everyone can be a hero. I'm a hero as long as this dragon doesn't win. And well, I'll still be a hero after, if after the setback I prepare and confront it again. 
+		- But the thing is tough and real. If I lock it down - maybe it'll be easier to comprehend/remember this notion. 
+- ###### 19:04 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- ==🟡Experiencing the Devouring Mother==
+		- Peterson in his lecture said that Jung had profound revelatory experiences => got me thinking for some reason that what would one can achieve if he fully commit to it => instantly got an impulse for PMO => NOW I see how devouring mother complex works. 
+		- Like as soon as I got I thought to get away from the mother's nest - I got the strong impulse that should keep me with her if I indulge in it. 
+	- I was struggling to understand how it's applies in my experience - that's how. I had to get more experience with awareness, and now can define/see how it works. It's not that the impulse is the complex, but underlying cause for the impulse = is the complex. So all I have to do is to see on which reaction I got the urge. 
+	- On another hand. When I work and got bored and then get an urge - that's kinda different animal. One can propose that it may be the mother pushing the child closer, devouring it, so they won't even try to work in the first place, like it's not only about don't go away from me, it's pathological, which means it gets worse unattended. 
 - ###### 18:00
 	- flow explore optimize time?
 	- Love into that girl image/fantasy?

@@ -26,6 +26,8 @@
 	- New ones
 		- [http://taurusxin.com/minecraft-mods/](https://www.taurusxin.com/artalk-comment/)
 		- https://blog.sobigrice.com/
+		- https://devbook.zip/ - on quartz
+			- https://github.com/grafanaKibana/devbook.zip
 
 ## TIPS
 - **Look at the website through the eyes of first-time visitor**
