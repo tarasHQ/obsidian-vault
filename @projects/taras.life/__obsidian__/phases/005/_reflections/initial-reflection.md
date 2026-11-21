@@ -116,23 +116,23 @@ Do not manufacture every illustrated file. Split by meaningful responsibility, n
 
 ### Module boundaries that make the folders useful
 
-- Features should expose small, intentional entry points rather than allowing consumers to reach into their event handlers or internal state.
-- Build-time and browser entry points should remain separate. A browser import must not accidentally pull Markdown-processing or other build-only code into the browser bundle through a catch-all export file.
+- Features should expose small, intentional entry points rather than allowing consumers to reach into their event handlers or internal state. The current loader may construct and connect features, but feature internals should not depend on the loader or read its YAML configuration.
+- Build-time and browser entry points should remain separate. A browser import must not accidentally pull Markdown-processing or other build-only code into the browser bundle through a catch-all export file. Use direct entry points suited to each feature, not a mandatory identical file structure; briefly document intended consumers in the feature README.
 - A feature may contain both kinds of code without requiring its own npm package, committed build output, or independent build system.
 - Reuse the existing component, transformer, layout, and resource APIs. Do not introduce automatic feature discovery, another registry, or an event framework without a concrete need.
 - Existing community plugins can remain supported. Owning this site's features locally does not require replacing the plugin system or packaging every local feature as a plugin.
 
 ### Site wiring and configuration
 
-Recommendation: introduce one small, explicit site-composition module. `quartz/site.ts` was suggested as an example name, not a settled path.
+**Revised direction after refinement:** the long-term preference is explicit site configuration in code instead of YAML-based configuration and automatic plugin discovery. Replacing the current configuration system is deferred; it is not a deliverable of this foundation.
 
-Its role would be to assemble this site's local features and their connections. The general layout loader should retain ordering, grouping, validation, and page-type layout handling rather than containing an expanding list of feature-specific decisions.
+For this phase, keep the existing loader as the temporary connection point. In particular, do not require a new site-composition module just to move its existing feature construction and placement instructions elsewhere. The later configuration rewrite can inspect those instructions in the loader. A small helper is acceptable if a concrete integration needs it, but do not introduce a general assembly or registration system.
 
-Preserve the configuration principle: **do not introduce TypeScript on/off switches or options that compete with YAML as an editable source of truth.** The exact way local feature configuration fits the current YAML schema remains to be designed. In particular, distinguish enabling Folding from enabling marker-based initial states.
+Keep the current configuration path working and make only the connections this phase needs. Avoid investing in a broader YAML configuration model that is expected to be retired, and do not introduce competing editable switches. Folding is always enabled for this site; marker interpretation should be easy to disable in code, ideally by commenting out a single line, rather than adding YAML settings. Its exact connection and processing order remain to be designed.
 
 Content processing needs deliberate ordering. Marker interpretation cannot simply be appended to the end of the transformer list if the comments have already been removed.
 
-The current system supports directly constructed local transformers and component resources; separate plugin packaging is not a prerequisite. We still need an explicit integration design, rather than adding one-off wiring in several places.
+The current system supports directly constructed local transformers and component resources; separate plugin packaging is not a prerequisite. The integration still needs a concrete design, without making feature internals depend on the loader or scattering unnecessary one-off wiring.
 
 ### Styles and the three-mode theme
 
@@ -151,7 +151,7 @@ Theme behavior also has a broader contract: a stored reader choice wins; the OS 
 
 #### Foundation A — Set the convention and connection point
 
-Define the feature/shared-infrastructure boundary, the minimal site-composition mechanism, and how local feature options fit YAML. Document the convention concisely. Avoid building a speculative framework.
+Define and document the feature/shared-infrastructure boundary and intentional feature entry points. Retain the current loader as the temporary connection point, without requiring an intermediate site-composition module. Determine only the configuration and wiring needed for this phase; do not design a broader YAML interface or speculative framework.
 
 #### Foundation B — Move the relevant existing feature clusters
 
@@ -161,7 +161,7 @@ Recommended scope:
 - Theme: toggle, shared initialization/switching contract, styles, and tests; update Head's imports without changing its initialization timing.
 - Mobile sidebar controls: component, browser behavior, styles, and tests, because they participate in the same local layout wiring.
 
-These moves should preserve behavior. Update real consumers and import paths, preserve placement metadata and attached resources, and move each cluster coherently. Do not leave duplicate implementations or compatibility files at old paths just to avoid updating imports. Any actual external compatibility requirement needs evidence.
+These moves should preserve behavior. Update real consumers and import paths, preserve placement metadata and attached resources, and move each cluster coherently. Explorer owns its component, navigation model, icons, CSS and tests; Theme owns its toggle, initialization/switching contract, toggle CSS and tests; Sidebar owns its controls, browser setup and entry point, CSS and tests. Shared Head, the default frame, SPA navigation, shared event types and global `theme.css` stay outside those feature folders and remain consumers or shared infrastructure. Check actual imports and consumers during the moves. Do not leave duplicate implementations or compatibility files at old paths just to avoid updating imports. Any actual external compatibility requirement needs evidence.
 
 #### Foundation C — Adopt Search locally
 
@@ -181,12 +181,6 @@ After this foundation, implement the Folding feature and its marker support, the
 
 If the foundation expands into a general loader redesign or a whole-repository migration, split that larger work into another phase instead of making Folding wait for it.
 
-### Spacer and other cleanup candidates
-
-The local `Spacer.tsx` has a public barrel export, but no in-repository runtime consumer was found in the searched source/configuration. A separately installed community Spacer package also exists; do not confuse the two.
-
-This is a cleanup candidate, not a reason to delete it automatically or hold up this phase. A public export is not proof of use, and a bounded search is not proof that no external consumer exists. Other previously identified dead-code candidates likewise do not become part of this phase by association.
-
 ### Migration constraints and verification
 
 - `.inline.ts` is a filename-based browser-entry convention, not a requirement to remain under `components/scripts/`. Preserve that convention where it is needed.
@@ -199,8 +193,8 @@ This is a cleanup candidate, not a reason to delete it automatically or hold up 
 
 ### Foundation questions for refining and critique
 
-- What is the smallest useful site-composition boundary, and how does it fit the current YAML configuration without another configuration source?
-- Which existing files truly belong to Explorer, Theme, or Sidebar, and which remain shared infrastructure?
+- How can always-enabled Folding and easily disabled marker interpretation be connected with minimal code wiring, including the required processing order, without introducing YAML settings?
+- Which existing files truly belong to Explorer, Theme, or Sidebar, and which remain shared infrastructure? Keep feature internals independent of the temporary configuration loader.
 - Are the proposed first migrations enough, or is there another tightly related dependency that must move with them?
 - Can each migration remain behavior-preserving and independently reviewable?
 - What exact feature entry points keep browser imports free of build-time code?
@@ -309,16 +303,17 @@ The second part can be a small module inside the Folding feature. It does not ne
 
 The implementation sequence may establish the general behavior first and then add marker defaults, but both need to be designed together. The folding system must have a clear way to receive initial state, and marker information must survive long enough to be used.
 
-Desired configuration behavior:
+**Decision: Folding is always enabled for this site.** Do not add a Folding on/off switch or YAML settings for it.
+
+Marker interpretation should be easy to disable in code, ideally by commenting out a single line where it is connected. Its precise connection and processing order remain to be designed; avoid creating configuration machinery for it.
 
 - Disabling marker support leaves ordinary folding working, with eligible content initially open.
 - Stopping the use of markers should not break existing pages or require removing the folding system.
-- Consider what disabling all folding should do: normal readable content, no dead fold controls, and no leaked comment text. The exact switch and resource behavior still need design.
 - Turning marker support off must not turn ordinary Obsidian comments into visible text.
 
 ### Marker processing and content pipeline constraints
 
-Current code finding: Obsidian-flavored Markdown is enabled with comment handling, and its Markdown transform removes `%% ... %%` comment nodes before HTML emission. An ordinary later HTML transform cannot recover a removed marker.
+**Critical ordering requirement:** Obsidian-flavored Markdown is enabled with comment handling, and its Markdown transform removes `%% ... %%` comment nodes before HTML emission. Marker interpretation must capture the marker's meaning **before that removal**; a later HTML transform cannot recover it. Verify the actual processing order and connection during design rather than appending marker handling at the end.
 
 Therefore:
 
@@ -394,7 +389,7 @@ Recommendation for refining/critique: a small set of checks around the most erro
 - Headings inside items, with only one control.
 - Independently nested folds and additional list-item blocks.
 - Marker recognition, ordinary comments, and marker text inside code.
-- Marker support disabled and Folding disabled.
+- Marker support disabled while ordinary Folding remains enabled.
 - Keyboard/mobile interaction, all theme modes, and repeated page navigation.
 - Nested target revealing, Search previews, browser Find, and page history as covered in section 3.
 
@@ -553,7 +548,7 @@ Desired sequence:
 
 Search should know how to locate a passage. Folding should know how to expose its closed parents. Navigation should coordinate reaching a linked target. Neither Search nor the router should manipulate Folding's private state or arrow classes directly.
 
-A small direct function/interface may be sufficient. Do not introduce a general event bus unless there is an actual need. It must also behave sensibly when Folding or marker support is disabled.
+A small direct function/interface may be sufficient. Do not introduce a general event bus unless there is an actual need. It must also behave sensibly when marker interpretation is disabled; Folding itself remains enabled.
 
 For independent nested folds, reveal only the ancestors necessary to reach the target rather than expanding every fold on the page or all children of a parent.
 

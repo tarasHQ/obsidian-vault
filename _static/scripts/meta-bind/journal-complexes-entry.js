@@ -145,7 +145,7 @@ if (
 }
 
 const now = window.moment().format("HH:mm");
-const text = `- ###### ${now}\n\t- ${voice}:\n\t\t- `;
+const text = `- ###### ${now}\n\t- ###### ${voice}:\n\t\t- `;
 const anchor = editor.getLine(insertLine);
 if (/^-\s*$/.test(anchor)) {
   editor.replaceRange(text, { line: insertLine, ch: 0 }, {

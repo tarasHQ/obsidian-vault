@@ -59,7 +59,7 @@ const originalContent = editor.getValue();
 const meaningEmojis = ["⚫", "🔴", "🟡", "🟢", "🌟"];
 const prideChoices = [
   { emoji: "👑", label: "Prideful" },
-  { emoji: "🤷", label: "Unsure" },
+  { emoji: "🤷‍♂️", label: "Unsure" },
   { emoji: "🙏", label: "Humble" },
 ];
 
@@ -187,7 +187,7 @@ if (
 }
 
 const now = window.moment().format("HH:mm");
-const text = `- ###### ${now} | MEANING: ${selection.meaning} | PRIDE: ${selection.pride}\n\t- `;
+const text = `- ###### ${now} | MEANING:${selection.meaning} | PRIDE:${selection.pride}\n\t- `;
 
 // Replace an empty placeholder; preserve existing entries below new ones.
 const anchor = editor.getLine(insertLine);

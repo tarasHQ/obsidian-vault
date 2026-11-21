@@ -8,42 +8,11 @@ journal-date: 2026-11-20
 ```
 
 ---
-
-```meta-bind-button
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-	- [ ] Check audio delay to webcam
-	- [ ] Check TickTick schedule (correct day, scheduled)
-	- [ ] Set time of next sleep for stager timer.
-	- Obsidian
-		- [ ] Write overview of the current day
-		- [ ] Create journal for the next day
-		- [ ] Make sure all day's reflections are linked artifacts
-		- [ ] Delete Dream Analysis block if empty
-		- [ ] Delete other blocks if empty
-	- [ ] Night scene
-	- [ ] Check IP cam (quality, delay)
-		- [ ] Enable sleep blur
-	- [ ] monitor OFF (seems like keeping on makes him die faster)
-	- Cat
-		- [ ] Clean up cat's litter box
-		- [ ] Food + plate is in my room at the shelf 
-			%%(to feed right away and not be distracted by her)%%
-	- [ ] Make sure there's tomorrow's food out of the freezer.
-
----
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-OVERVIEW_FOR_VIDEO
+First half of the day spent on the possibility to cancel fines through the court - too expensive, can't afford. But a win was in me taking responsibility here. Then a nap for 4-5 hours. Another win in catching mother complex trick I just read about in von Franz's book on Puer Aeternus. That lead me to productive session despite exhaustion and "not feeling like it". So a good day as result. 
 
 ---
 
@@ -53,14 +22,6 @@ OVERVIEW_FOR_VIDEO
 >Time Spent in Bed - **Low**
 > 
 >Approx. Compensation of Dreams - **Don't remember. Don't feel any strong one. **
-
----
-
-## CREATED ARTIFACTS
-- **Tasks from reflection**
-	- #3 - Separate button for complexes talk
-		- (like emoji for mother complex, kid for puer, old guy for senex) - because this journal isn't about me talking. It's about my subpersonalities talking.
-	- Don't strive for perfection, or you'll waste your time/energy again. Description above will do for what I seek. 
 
 ---
 

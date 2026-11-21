@@ -133,7 +133,6 @@ GROUP BY true
 			- Keep `en-US` + `definition.ts` only; external plugins don't import `quartz/i18n` (verified)
 		- ###### Remove verified-dead code files %% fold %%
 			- `quartz/util/emoji.ts` (og-image bundles its own emoji util)
-			- `quartz/components/PageList.tsx` (no importer; recent-notes has its own)
 			- `quartz/components/frames/FullWidthFrame.tsx` (only `minimal` + `default` used)
 		- ###### Remove `emojimap.json` (15 MB) %% fold %%
 			- ⚠️ `og-image` bundled code reads it by filesystem path — move file, build, verify OG images before deleting
@@ -195,6 +194,8 @@ GROUP BY true
 
 - ---
 - ### 02 Basic Functionality
+	- #### Phase 005 - Site Structure, Search & Foldings [plan](./phases/005/_plan_005.md)
+	  Establish explicit TypeScript site assembly in place of YAML-driven plugin loading; organize the affected local features; adopt Search locally; implement marker-aware folding and navigation/search revealing.
 	- #### ~~Phase 004 - Structure & Explorer~~ [plan](./phases/_archived/004/_plan_004.md) %% fold %%
 	  Custom Explorer and a focused vault-structure update: create needed entry pages with generic Dataview listings. Keep the complete desktop sidebar; on mobile retain a sticky title/Search/theme bar and slide navigation/widgets separately. Refined entry pages and scroll-aware header behavior are future work.
 	- **Ideas** %% fold %%
@@ -210,11 +211,11 @@ GROUP BY true
 			- bug when I’m scrolled down on the page, then pick another explorer page it scrolls up, which is bad and wrong
 			- indentation of lists should be 1/3 of now for phones(in obsidian too)
 - ### 01 Fundamentals
-	- #### ~~Phase 003 - Visual Identity [plan](./phases/_archived/003/_plan_003.md) %% fold %%
+	- #### ~~Phase 003 - Visual Identity~~ [plan](./phases/_archived/003/_plan_003.md) %% fold %%
 	  Palette and three modes, typography, accents, background, favicon, and published visual test pages.
 	- #### ~~Phase 002 - Removing SCSS, Theming, Fonts plugin [plan](./phases/_archived/002/_plan_002.md) %% fold %%
 	  SCSS → plain CSS, static theming (theme.css SSOT), generation machinery + Google Fonts + quartz-fonts out, CLI create/git-flow out, README set + AGENTS.md aligned, semantic review.
-	- #### ~~Phase 001 - Remark42 plugin rewrite [plan](phases/_archived/001/_plan_001.md) %% fold %%
+	- #### ~~Phase 001 - Remark42 plugin rewrite~~ [plan](phases/_archived/001/_plan_001.md) %% fold %%
 	  Remark42 plugin rewritten from scratch as a self-contained compiled package (`custom-plugins/remark42/`), shipped and documented. Deferred to future work: visual polish
 
 

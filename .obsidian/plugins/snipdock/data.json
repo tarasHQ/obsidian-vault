@@ -7,7 +7,12 @@
   "rememberedEnabled": [
     "00-vars",
     "10-typography",
-    "common"
+    "20-editor",
+    "25-media",
+    "30-workspace",
+    "40-navigation",
+    "50-canvas",
+    "60-plugins"
   ],
   "anchorToStatusBar": false,
   "enableSearch": false,

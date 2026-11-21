@@ -5,7 +5,7 @@ isIntegrated: false
 
 [← Project](../../_project.md)
 
-# P 005 - Foldings
+# P 005 - Site Structure, Search & Foldings
 %%[Internal User Link to Template]([T]plan.md) LLMs should ignore both the link and the paths it hints on%%
 
 ## Description & Meaning
@@ -56,9 +56,12 @@ GROUP BY true
 		- 
 	- ##### Context Files
 		- `__obsidian__/docs/AGENTS.md` - entry point to the project for LLMs.
+		- `__obsidian__/phases/005/_reflections/initial-reflection.md` - phase discussion, agreed direction, recommendations, and unresolved questions for the feature foundation, Folding, Search, and navigation.
+		- `quartz/plugins/loader/README.md` - current configuration and layout-loading boundary; consult before investigating the temporary feature wiring.
+		- `quartz/components/README.md` - current component, theme, and sidebar contracts relevant to the feature migrations.
 - ### Exploration Tips
   %%Free form. Concise. For more precise exploration. Goal is to avoid misleading/wrong/inefficient exploration. Optional. Should be really concise though %%
-	- 
+	- The loader remains the temporary connection point; code-based site configuration is a later direction, not a Phase 005 configuration rewrite. Check the reflection for unresolved integration choices.
 
 ---
 ---
