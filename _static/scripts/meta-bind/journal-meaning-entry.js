@@ -1,4 +1,4 @@
-// Prompt for a meaning score before adding a timestamped journal entry.
+// Prompt for meaning and pride before adding a timestamped journal entry.
 const editor = app.workspace.activeEditor?.editor;
 const file = app.workspace.getActiveFile();
 
@@ -56,13 +56,18 @@ if (insertLine === -1) {
 
 // A line position is not a persistent anchor if the document changes.
 const originalContent = editor.getValue();
-const emojis = ["⚫", "🔴", "🟡", "🟢", "🌟"];
+const meaningEmojis = ["⚫", "🔴", "🟡", "🟢", "🌟"];
+const prideChoices = [
+  { emoji: "👑", label: "Prideful" },
+  { emoji: "🤷", label: "Unsure" },
+  { emoji: "🙏", label: "Humble" },
+];
 
 // Capture the visible button before the modal takes focus.
 const viewEl = app.workspace.activeLeaf?.view?.containerEl;
 const buttonCandidates = viewEl
   ? Array.from(viewEl.querySelectorAll(".mb-button-inner")).filter((element) =>
-      element.textContent.trim() === "Meaning Check" && element.getClientRects().length > 0
+      element.textContent.trim() === "Awareness Check" && element.getClientRects().length > 0
     )
   : [];
 const buttonRect = buttonCandidates.length === 1
@@ -70,8 +75,8 @@ const buttonRect = buttonCandidates.length === 1
   : null;
 
 // A custom modal keeps the question and choices compact and centered.
-const score = await new Promise((resolve) => {
-  class MeaningModal extends obsidian.Modal {
+const selection = await new Promise((resolve) => {
+  class AwarenessModal extends obsidian.Modal {
     onOpen() {
       this.modalEl.style.width = "fit-content";
       this.modalEl.style.maxWidth = "calc(100vw - 16px)";
@@ -82,29 +87,49 @@ const score = await new Promise((resolve) => {
       const closeButton = this.modalEl.querySelector(".modal-header-button.mod-raised.clickable-icon");
       if (closeButton) closeButton.style.display = "none";
 
-      const question = this.contentEl.createEl("h2", {
-        text: "Are you doing something wrong?",
-      });
-      question.style.textAlign = "center";
-      question.style.margin = "0 0 12px";
-      question.style.padding = "0";
-      question.style.fontSize = "1em";
+      const selected = { meaning: null, pride: null };
+      const addRow = (questionText, key, options) => {
+        const question = this.contentEl.createEl("h2", { text: questionText });
+        question.style.textAlign = "center";
+        question.style.margin = key === "meaning" ? "0 0 12px" : "16px 0 12px";
+        question.style.padding = "0";
+        question.style.fontSize = "1em";
 
-      const choices = this.contentEl.createDiv();
-      choices.style.display = "flex";
-      choices.style.justifyContent = "center";
-      choices.style.flexWrap = "wrap";
-      choices.style.gap = "12px";
+        const choices = this.contentEl.createDiv();
+        choices.style.display = "flex";
+        choices.style.justifyContent = "center";
+        choices.style.flexWrap = "wrap";
+        choices.style.gap = "12px";
 
-      emojis.forEach((emoji, index) => {
-        const button = choices.createEl("button", { text: emoji });
-        button.style.fontSize = "1.3em";
-        button.style.padding = "4px 8px";
-        button.addEventListener("click", () => {
-          resolve(index);
-          this.close();
+        const buttons = options.map((option) => {
+          const button = choices.createEl("button", { text: option.emoji });
+          button.style.fontSize = "1.3em";
+          button.style.padding = "4px 8px";
+          button.setAttribute("aria-label", option.label);
+          button.setAttribute("title", option.label);
+          button.setAttribute("aria-pressed", "false");
+          button.addEventListener("click", () => {
+            selected[key] = option.emoji;
+            buttons.forEach((other) => {
+              const isSelected = other === button;
+              other.setAttribute("aria-pressed", String(isSelected));
+              other.style.outline = isSelected ? "2px solid var(--interactive-accent)" : "";
+              other.style.outlineOffset = isSelected ? "2px" : "";
+            });
+            if (selected.meaning !== null && selected.pride !== null) {
+              resolve({ ...selected });
+              this.close();
+            }
+          });
+          return button;
         });
-      });
+      };
+
+      addRow("Are you doing something wrong?", "meaning", meaningEmojis.map((emoji) => ({
+        emoji,
+        label: emoji,
+      })));
+      addRow("Are you prideful?", "pride", prideChoices);
 
       // Keep the popup near the button without letting it leave the window.
       if (buttonRect) {
@@ -120,6 +145,17 @@ const score = await new Promise((resolve) => {
         this.modalEl.style.top = `${Math.max(margin, Math.min(top, win.innerHeight - modalRect.height - margin))}px`;
         this.modalEl.style.margin = "0";
       }
+
+      const win = this.modalEl.ownerDocument.defaultView;
+      if (win && !win.matchMedia("(prefers-reduced-motion: reduce)").matches && this.modalEl.animate) {
+        this.modalEl.animate(
+          [
+            { opacity: 0, transform: "translateY(6px)" },
+            { opacity: 1, transform: "translateY(0)" },
+          ],
+          { duration: 180, easing: "ease-out" }
+        );
+      }
     }
 
     onClose() {
@@ -128,13 +164,16 @@ const score = await new Promise((resolve) => {
     }
   }
 
-  new MeaningModal(app).open();
+  new AwarenessModal(app).open();
 });
 
-// Dismissal must not insert anything; index zero is the first choice.
-if (score === undefined || score === null) return;
-if (!Number.isInteger(score) || score < 0 || score >= emojis.length) {
-  new Notice("Invalid meaning score; entry was not inserted");
+// Dismissal or an incomplete selection must not insert anything.
+if (!selection) return;
+if (
+  !meaningEmojis.includes(selection.meaning) ||
+  !prideChoices.some((choice) => choice.emoji === selection.pride)
+) {
+  new Notice("Invalid awareness selection; entry was not inserted");
   return;
 }
 
@@ -148,7 +187,7 @@ if (
 }
 
 const now = window.moment().format("HH:mm");
-const text = `- ###### ${now} | MEANING: ${emojis[score]}\n\t- `;
+const text = `- ###### ${now} | MEANING: ${selection.meaning} | PRIDE: ${selection.pride}\n\t- `;
 
 // Replace an empty placeholder; preserve existing entries below new ones.
 const anchor = editor.getLine(insertLine);

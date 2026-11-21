@@ -53,7 +53,7 @@ rizzing
 		- In the List of Steps:
 			- [ ] Settings an icon to corresponding frontmatter status of the step.  
 			- [ ] Rewriting description from "what should've been implemented" to what "what was implemented"
-			- [ ] Commenting the step inside single `%%comment-block%%`placing first `%%` tag right after the icon in heading, and placing second `%%` tag at the end of the new "implemented" step description.
+			- [ ] Commenting the step description inside single `%%comment-block%%`placing first `%%` tag right after the icon in heading, and placing second `%%` tag at the end of the new "implemented" step description.
 				- This will render for user in smaller dimmed font, hence, signifying completion of the phase.
 				- Example of where first `%%` should be placed `### %%◉ [STEP XX... `
 		- In Other Parts of the Plan:

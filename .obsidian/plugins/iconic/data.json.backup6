@@ -197,8 +197,23 @@
         }
       ],
       "enabled": true,
-      "color": "#878580",
+      "color": "#a1977d",
       "icon": "lucide-stone"
+    },
+    {
+      "id": "fctew",
+      "name": "@atlas",
+      "match": "all",
+      "conditions": [
+        {
+          "source": "name",
+          "operator": "is",
+          "value": "@atlas"
+        }
+      ],
+      "enabled": true,
+      "icon": "lucide-map",
+      "color": "#a1977d"
     }
   ]
 }

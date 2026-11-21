@@ -58,13 +58,6 @@ OVERVIEW_FOR_VIDEO
 
 ## CREATED ARTIFACTS
 - **Tasks from reflection**
-	- #1 - Humiliation ritual "PRIDE HUMILIATION" merged with processing recording task. (so you can also kinda look at where you were prideful yesterday)
-		- Also additional button in time log for time-stamped template? as callout maybe? To have it distinctly visible.
-	- #2 - Update template of time log's meaning button. 
-		- Rename to awareness
-		- update js code to also include mandatory pride check. 
-			- without submit button though. When both selected - modal is automatically closed and inserted. 
-		- Pride is kinda binary? Like you either prideful or not? That's the question. Are you prideful. And the answer would be 2 options. Emojis. And then if you are you press third button for pride humiliation template. So it'll kinda be thought modification thing. 
 	- #3 - Separate button for complexes talk
 		- (like emoji for mother complex, kid for puer, old guy for senex) - because this journal isn't about me talking. It's about my subpersonalities talking.
 	- Don't strive for perfection, or you'll waste your time/energy again. Description above will do for what I seek. 
@@ -73,7 +66,18 @@ OVERVIEW_FOR_VIDEO
 
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
-`BUTTON[journal-time, journal-meaning]`
+`BUTTON[journal-time, journal-meaning, journal-complexes]`
+- ###### 03:28
+	- Key thing for the work session - I kinda managed to get grounded and avoided expectations/predictions from the future. So when complexity of the task increased ten-fold - I wasn't discouraged at all, I see a big treasure in that Chaos that jumped on me out of nowhere. That's a one way to learn to survive in the Chaos. Hopefully) 
+- ###### 03:22 | MEANING: 🟢 | PRIDE: 🙏
+	- In the Bible God said to Abraham something like if Sodom has at least 10 righteous people - he will spare the city. 
+	- This day was kinda bad as total sum, but there was on moment when I avoided delegating responsibility and another one when I caught the negative mother complex sending me into the stagnation through philosophizing the issue instead of acting on it. But instead I had a productive work session while I was also tired and sleepy.
+	- And so these two events justified the day, and I can go to sleep while being meaningful and hopeful. 
+- ###### 02:51 | MEANING: 🟢 | PRIDE: 🙏
+	- Yeah, it was massive thing that I read von Franz properly, and not for like for 15 minutes before the sleep. That tip on mother complex helped me today. When I started to do it properly - lots of issues came up that not only justified the phase's overhead, but now I'm not sure I can fit all of it under the single phase. So yeah. Thank God and Jung + Jungians for psychoanalysis)
+- ###### 02:15 | MEANING: 🟢
+	- Even though I'm sleepy. And in a real way, not false tiredness - it's still meaningful enough for now. 
+	- And also maybe having fixed sleep time is bad as well? Because I kinda then go to sleep before I should. Like today. I laid down, figured that I can work more - and did so. Without thinking that I missed the schedule and it'll be an issue... 
 - ###### 01:34
 	- I kinda started discussion on this topic during task. And found out, that it was very toxic idea. Like I need to have the whole phase for folding. Because that's the thing - when you do stuff properly - there's infinite depth to them. Folding included. That's why I need the whole thing. 
 	- So, in result - not only I shouldn't think about this, but the issue is a non-issue in the first place. But because I read about tricks of mother complex for puer aeternus - now I can identify it and act accordingly. Key word - **act**.
@@ -82,7 +86,7 @@ OVERVIEW_FOR_VIDEO
 		- ==🔴But instead I just started to plan it. Like I can think about it but WHILE I'm making the action. Not INSTEAD of acting.==
 - ###### 01:19 | MEANING: 🟡
 	- ==🔴MASSIVE insight - I was laying down thinking about what beckons to me in the website. I thought that I may check out foldings. Like how to do them and such. And then I started to think "why I'm not motivated?", "what can I do to get motivated?", "why it's like that?", "what am I missing?" and I remembered von Franz's lecture 7 or 8. That this is exactly devouring mother complex that sucks the masculine. Like I know EXACTLY what to do next - foldings (or many other features/tasks I defined in the project), but mother complex seems to diverge me into intellectualism and philosophizing at the wrong moment, because I need an action right now. Clearly==
-- ###### 01:13
+- ###### 01:13 | MEANING: 🔴
 	- Sleepy and want to PMO. 
 - ###### 00:18
 	- ==I got an idea about monthly/weekly reviews. I need some way in daily journaling to track accomplishments on meta level. And then abstract them out in higher-order journaling. Why? - Because I don't remember shit about what I did a month ago and whether it was productive at all. That's the issue. I really feel like I have to remember. ==

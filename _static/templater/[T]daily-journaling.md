@@ -85,7 +85,7 @@ OVERVIEW_FOR_VIDEO
 
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
-`BUTTON[journal-time, journal-meaning]`
+`BUTTON[journal-time, journal-meaning, journal-complexes]`
 - 
 ==REPEAT The Project is dead. Website is priority. Stay in tension by avoiding indulgence==
 

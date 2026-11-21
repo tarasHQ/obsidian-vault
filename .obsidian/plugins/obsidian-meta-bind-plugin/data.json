@@ -11,8 +11,8 @@
   "inputFieldTemplates": [],
   "buttonTemplates": [
     {
-      "label": "Meaning Check",
-      "icon": "brain",
+      "label": "Awareness Check",
+      "icon": "eye",
       "style": "default",
       "class": "",
       "cssStyle": "height: 24px; padding: 5px;",
@@ -24,6 +24,24 @@
         {
           "type": "js",
           "file": "_static/scripts/meta-bind/journal-meaning-entry.js",
+          "args": {}
+        }
+      ]
+    },
+    {
+      "label": "Complexes Talk",
+      "icon": "messages-square",
+      "style": "default",
+      "class": "",
+      "cssStyle": "height: 24px; padding: 5px; margin-left: 10px;",
+      "backgroundImage": "",
+      "tooltip": "",
+      "id": "journal-complexes",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "js",
+          "file": "_static/scripts/meta-bind/journal-complexes-entry.js",
           "args": {}
         }
       ]
