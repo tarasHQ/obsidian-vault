@@ -58,15 +58,21 @@ GROUP BY true
 		- `__obsidian__/docs/AGENTS.md` - entry point to the project for LLMs.
 		- `__obsidian__/phases/005/_reflections/initial-reflection.md` - phase discussion, agreed direction, recommendations, and unresolved questions for the feature foundation, Folding, Search, and navigation.
 		- `quartz/plugins/loader/README.md` - current configuration and layout-loading boundary; consult before investigating the temporary feature wiring.
-		- `quartz/components/README.md` - current component, theme, and sidebar contracts relevant to the feature migrations.
-		- `quartz/components/scripts/README.md` - browser entry points and component resource conventions.
+		- `quartz/features/README.md` - local feature ownership and boundaries, with links to feature documentation.
+		- `quartz/components/README.md` - shared rendering and page-structure boundaries.
+		- `quartz/components/scripts/README.md` - shared browser entry points and resource conventions.
 		- `quartz/plugins/emitters/README.md` - component resource collection and stylesheet assembly.
 		- `quartz/components/frames/README.md` - shared frame and sidebar-region responsibilities.
+		- `quartz/processors/README.md` - Markdown-to-HTML processing and worker constraints; consult before investigating comment and marker handling.
+		- `quartz/components/renderPage.tsx` - section and block transclusion, relevant when introducing folding structure.
+		- `C:/Users/Taras/Documents/obsidian-vault/.obsidian/plugins/quartz-syncer/` - installed Syncer artifact; locate maintainable source before planning its fork.
 - ### Exploration Tips
   %%Free form. Concise. For more precise exploration. Goal is to avoid misleading/wrong/inefficient exploration. Optional. Should be really concise though %%
 	- The loader remains the temporary connection point; code-based site configuration is a later direction, not a Phase 005 configuration rewrite.
-	- Move Explorer, Theme, and mobile sidebar controls as coherent feature clusters; shared frames, Head, SPA navigation, and the global theme palette remain outside them. Preserve resources, placement, behavior, and test discovery.
-	- Folding and Search are later blocks; their integration choices and open questions remain in the reflection.
+	- Explorer, Theme, and mobile sidebar controls live in feature clusters; shared frames, Head, SPA navigation, and the global theme palette remain outside them.
+	- Folding and Search are later blocks. Review the reflection and subsequent refinement for agreed behavior and remaining integration choices.
+	- Syncer currently strips comments before publishing; the developer wants a separate fork block to preserve them. Website processing must show ordinary comment contents without delimiters and distinguish fold markers.
+	- Fold structure must preserve section embeds and coordinate revealing with router scrolling; the router scrolls before its final `nav` event.
 
 ---
 ---
@@ -79,12 +85,8 @@ GROUP BY true
 **READY**
 Finalize the phase — meta-reflection on what worked, long-term knowledge extracted so plan info can safely die-off, frontmatter set, phase archived.
 
-### Drafted Steps Recommendation
-
-- **04 — Move mobile sidebar controls:** Relocate the controls, browser behavior, styles, and existing tests together; preserve their integration with the shared frame and loader.
-- **03 — Move Theme:** Relocate the toggle, initialization and switching contract, styles, and existing tests; preserve Head's early initialization and the global palette.
-- **02 — Move Explorer:** Relocate its component, navigation logic, icons, styles, and existing tests; preserve placement and resources.
-- **01 — Establish the feature boundary:** Document feature ownership and entry points, keeping the existing loader as the temporary connection point without a new configuration system.
+### %%◉ STEP 01 - Local Feature Boundary - IMPLEMENTED
+Established a boundary for complete local features and reorganized Explorer, Theme, and mobile sidebar controls into coherent clusters while preserving their existing behavior and shared page structure. Updated the boundary documentation; the existing loader remains the connection point. Checks and the rebuilt site's user experience were confirmed by the developer.%%
 
 Folding and Search steps are intentionally deferred to their own planning discussions.
 

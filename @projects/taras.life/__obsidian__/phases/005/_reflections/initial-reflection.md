@@ -189,7 +189,7 @@ If the foundation expands into a general loader redesign or a whole-repository m
 - Update imports and existing test paths, and verify that relocated tests are still discovered. No tests or builds have been run during this discussion.
 - Keep existing checks meaningful rather than adding an elaborate new testing system just for a file move.
 - Each logical feature should have a concise README. Existing documentation needs to point to the new owners. Missing `quartz/plugins/README.md` and `quartz/plugins/transformers/README.md` were noted during exploration; determine the final module boundaries before creating documentation for unused locations.
-- Update architectural guidance when the feature boundary or JavaScript-support policy changes; avoid filling AGENTS.md with temporary migration notes.
+- Update architectural guidance when the feature boundary or JavaScript-support policy changes; avoid filling AGENTS.md with temporary migration notes.c
 
 ### Foundation questions for refining and critique
 
@@ -222,7 +222,7 @@ Do not describe the marker as native Obsidian syntax or infer its exact rules fr
 
 The described intended coverage includes headings and ordinary bullet, numbered, and task list items. The developer's explanation also contained an 'only headings' phrase, so confirm the exact plugin behavior against real notes or its source before locking the parser's supported placements. The agreed website scope is not headings-only.
 
-**Exact spelling is unresolved:** the supplied project examples use `%% fold %%`, while the plan and some discussion use `%% folding %%`. Below, `%% fold %%` is shorthand for the intended marker, not a decision to support both spellings or silently normalize them. Confirm what the plugin actually writes, placement rules, whitespace variants, and whether more than one real syntax exists.
+**Marker evidence:** the accessible `foldstate-dev` plugin writes trailing `%% fold %%` and recognizes headings and bullet/numbered list-item lines, including task items, with whitespace variations and repeated trailing markers. It asks the editor for an actual foldable range; a recognized marker does not itself prove a range exists. The plugin identifies itself as a test clone, so confirm its relationship to the author's current plugin before treating its exact rules as definitive. The plan also uses `%% folding %%`; that is not evidence that both spellings need support. Below, `%% fold %%` is shorthand for the intended marker.
 
 ### Core scope and agreed behavior
 
@@ -309,34 +309,39 @@ Marker interpretation should be easy to disable in code, ideally by commenting o
 
 - Disabling marker support leaves ordinary folding working, with eligible content initially open.
 - Stopping the use of markers should not break existing pages or require removing the folding system.
-- Turning marker support off must not turn ordinary Obsidian comments into visible text.
+- Ordinary comments remain visible regardless of whether marker interpretation is connected.
+- **Open:** when interpretation is disconnected, decide whether marker-looking comments remain hidden or are displayed as ordinary comments. Do not silently decide this by accident.
 
-### Marker processing and content pipeline constraints
+### Separate block: preserve comments through Quartz Syncer
 
-**Critical ordering requirement:** Obsidian-flavored Markdown is enabled with comment handling, and its Markdown transform removes `%% ... %%` comment nodes before HTML emission. Marker interpretation must capture the marker's meaning **before that removal**; a later HTML transform cannot recover it. Verify the actual processing order and connection during design rather than appending marker handling at the end.
+**Developer-confirmed finding:** Quartz Syncer strips comments before notes reach the website. The source `__obsidian__/_project.md` contains active fold markers while its current `content/` copy lacks them; the files also differ in other respects, so that comparison alone does not establish exactly when the change occurred.
 
-Therefore:
+**Direction:** fork Quartz Syncer as a separate block of work and disable comment stripping so ordinary comments and fold markers reach `content/`. Establish a maintainable custom-plugin workflow rather than editing only the installed bundle. The installed artifact is under `C:/Users/Taras/Documents/obsidian-vault/.obsidian/plugins/quartz-syncer/`; the maintainable source and fork workflow still need to be located and planned. This is a publishing-plugin change, separate from the custom fold-state plugin that writes the markers.
 
-- Capture the marker's meaning before it is discarded, using a deliberate position in the processing pipeline.
-- Preserve ordinary Obsidian comment behavior.
-- Do not interpret marker examples inside fenced or inline code as real instructions.
-- Confirm whether markers must be on the label line, whether surrounding whitespace is significant, and how they behave on unsupported or nonfoldable content.
-- Preserve heading IDs, author links, and the content text needed for search and other transforms.
-- Fold controls and marker-processing artifacts should not pollute the searchable content.
-- Decide the actual processing technique after inspecting the custom plugin's rules and Markdown trees. Do not assume a global text replacement is sufficient.
-- Content parsing can use workers; avoid shared mutable build-time state that assumes one page is processed at a time.
+Preserving comments means their contents enter the website repository. The developer accepts this. Comments are not private and must not be relied on as an access-control mechanism.
+
+### Visible ordinary comments and marker processing
+
+**Decision:** ordinary Obsidian comments are website content. Display their contents without the `%%` delimiters and attach a dedicated CSS class, such as `obsidian-comment`, so they can be styled. Preserve their intended Markdown structure; inline and multi-block comments may need different suitable HTML structures. The exact rendering technique and behavior of complex comment contents remain to be designed.
+
+Fold markers are different: when interpreted on supported labels, they provide an initial closed state and are not displayed as ordinary comment text. Marker-like examples in inline or fenced code remain code, not instructions.
+
+**Current pipeline constraint:** the enabled Obsidian-flavored Markdown transformer currently removes parsed `%% ... %%` comment nodes during Markdown processing. The Syncer fork alone cannot make comments visible or markers usable: website processing must also change. Coordinate marker recognition and ordinary-comment rendering before any existing removal would discard their contents; do not assume that simply disabling a setting automatically provides the desired rendering.
+
+- Confirm actual authoring-plugin syntax and placement, and decide how unsupported or nonfoldable marker locations behave.
+- Preserve heading IDs, author links, and content text needed for search and other transforms.
+- Fold controls and marker-processing artifacts should not pollute searchable content; ordinary visible comment content is part of the published page.
+- Do not assume a global text replacement is sufficient. Content parsing can use workers, so avoid shared mutable build-time state that assumes one page is processed at a time.
 
 ### Temporary reader state and page lifecycle
 
-**Decision:** no storage of reader fold choices in localStorage, sessionStorage, or another persistence mechanism. A full reload restores the author's defaults.
+**Decision:** do not store reader fold choices in localStorage, sessionStorage, or another persistence mechanism. A freshly loaded page, including fresh content fetched through SPA navigation, starts from the author's defaults; a full reload also restores them. If the browser restores an existing document as it was, its temporary view may remain without adding storage to recreate it.
 
-Still to decide explicitly:
+Details still to design:
 
-- Whether navigating away and back through SPA navigation also resets to defaults.
-- What browser back/forward should do, especially when the browser restores a document rather than the SPA fetching fresh markup.
 - When initial closed state is applied and how to avoid an unnecessary flash of expanded content or scroll movement.
 - How reveal requests interact with initialization so opening a target is not immediately undone by reapplying defaults.
-- How setup and cleanup avoid duplicate handlers across navigation.
+- How setup and cleanup avoid duplicate handlers across navigation, including morphing and back/forward paths.
 
 These lifecycle questions are not permission to add reader-state persistence. Search's temporary handoff of a query to a destination page is a separate mechanism, discussed in section 3.
 
@@ -346,13 +351,15 @@ Many foldable lines can exist on one page. Avoid repeating elaborate SVG geometr
 
 Current Explorer approach: it defines each selected icon once per generated page using SVG symbols, then individual links reference those definitions with `<use>`. This is per-page reuse, not one external sprite shared across every page.
 
-Options worth comparing for folds:
+Possible lightweight options for folds include:
 
 - One simple reusable SVG definition and compact references.
 - A CSS-drawn arrow whose orientation follows state.
 - Another comparably lightweight approach if it is simpler and meets appearance/accessibility needs.
 
-Do not import a full icon system merely to draw one arrow, and do not assume page-size growth is catastrophic without checking the actual output. The button still needs an accessible purpose, visible keyboard focus, and correct expanded/collapsed state regardless of the drawing technique.
+Choose an implementation during planning; a separate mechanism-comparison exercise is not required. Do not import a full icon system merely to draw one arrow, and do not assume page-size growth is catastrophic without checking the actual output. The button still needs an accessible purpose, visible keyboard focus, and correct expanded/collapsed state regardless of the drawing technique.
+
+**Print decision:** include all content in printouts, regardless of the current on-screen fold states.
 
 The dedicated arrow is preferable to making heading text clickable because labels may contain links or be selected/copied. Its mobile hit area can be larger than the visible glyph without obscuring adjacent content.
 
@@ -362,7 +369,7 @@ The dedicated arrow is preferable to making heading text clickable because label
 
 Desired behavior:
 
-- When JavaScript is unavailable, show a clear, closable, modal-like warning that the website requires JavaScript and may not work correctly without it.
+- When JavaScript is unavailable, show a clear, closable, nonmodal notice that the website requires JavaScript and may not work correctly without it. A prominent stripe at the top is a suitable direction; the rest of the page need not be blocked.
 - Closing the warning must itself work without JavaScript.
 - Record in `AGENTS.md` that the site does not commit to a non-JavaScript fallback, so every feature discussion does not reopen that requirement.
 - Update the existing project idea when the warning is delivered so it no longer appears as unimplemented future work.
@@ -370,7 +377,7 @@ Desired behavior:
 Constraints to resolve before implementation:
 
 - A normal JavaScript-powered close button cannot satisfy this requirement.
-- Choose a suitable native HTML/CSS mechanism and evaluate actual keyboard operation, dismissal, and background interaction. Do not call a visually centered overlay an accessible modal unless it has the necessary behavior.
+- Choose a suitable native HTML/CSS mechanism and ensure dismissal is keyboard-operable without JavaScript. The notice is nonmodal; do not imply that it blocks background interaction.
 - A warning for disabled/unavailable JavaScript is not automatically detection of every runtime or network failure. Be clear about what is detected.
 - No current `<noscript>` warning was found during exploration.
 
@@ -378,33 +385,22 @@ The policy removes a required no-JavaScript fallback; it does not require delibe
 
 The warning should be implemented as its own focused change, not entangled with file moves or Search adoption.
 
-### Testing and verification: deliberately undecided scope
+### Verification scope remains open
 
-The developer is not yet committed to an automated testing approach for Folding. Do not translate the discussion into a requirement for a large test suite or new browser-testing framework.
-
-Recommendation for refining/critique: a small set of checks around the most error-prone rules, plus manual browser verification. Real note structures are especially valuable fixtures:
-
-- Heading level boundaries and empty sections.
-- Bullet, numbered, and task items.
-- Headings inside items, with only one control.
-- Independently nested folds and additional list-item blocks.
-- Marker recognition, ordinary comments, and marker text inside code.
-- Marker support disabled while ordinary Folding remains enabled.
-- Keyboard/mobile interaction, all theme modes, and repeated page navigation.
-- Nested target revealing, Search previews, browser Find, and page history as covered in section 3.
-
-No tests or manual browser checks have been run during this discussion. Existing tests for other features are not evidence that Folding works.
+The developer declined a prescribed verification block or proof gate during this refinement. Do not introduce a required test suite, browser-testing framework, or formal verification plan on that basis. No Folding tests or manual browser checks were run during this discussion; existing tests for other features are not evidence that Folding works.
 
 ### Folding questions for refining and critique
 
 - What exact marker syntax and line placements does the custom Obsidian plugin produce?
 - What are the precise content boundaries for mixed headings, lists, paragraphs, code blocks, and task items?
-- How should ordinary navigation and browser history reset temporary state?
+- Where is Quartz Syncer's maintainable source, and how should the fork be maintained and delivered?
+- How should ordinary comments be rendered with their own class while retaining inline and block structure? What happens to marker-looking comments when interpretation is disconnected?
+- How should the agreed fresh-view and browser-restoration behavior be implemented across navigation and morphing?
 - Which initial-render technique avoids distracting expansion/collapse while preserving correct reveal ordering?
 - What minimal interface lets Search, links, and TOC reveal a target without depending on Folding internals?
 - Which arrow implementation is simplest and sufficiently compact?
-- What no-JavaScript warning can genuinely be dismissed without JavaScript, and how accurately can it act like a modal?
-- What is the smallest useful verification set for these risks?
+- What native HTML/CSS mechanism makes the nonmodal no-JavaScript notice dismissible by keyboard without JavaScript?
+- How can print output include all folded content without changing the reader's on-screen choices?
 
 ## 3. Search and navigation: make hidden destinations discoverable and reachable
 
@@ -572,14 +568,9 @@ These are destination-revealing changes, not a general navigation redesign. The 
 
 ### Preview and copied content need an explicit scope
 
-A Search preview is a copy of page content inside a different container. Opening its folded parents must operate inside that preview, not accidentally on the underlying article. Preview highlighting and scrolling must use that same scope.
+Search previews and link popovers are copies of page content inside different containers. **Decision:** start each copy from author defaults, then open the folded ancestors necessary to reveal its chosen destination. Revealing, highlighting, scrolling, and any interactive fold controls must operate inside that copy, not on the underlying article. This does not require a general preview or popover redesign.
 
-Still to decide:
-
-- Whether previews start from author defaults and reveal only the chosen match, or deliberately show content expanded.
-- Whether fold controls inside previews are interactive, and who initializes them.
-- How copied IDs and nested content are handled without confusing page-level target lookup.
-- Whether ordinary link popovers need a related adjustment when they contain folded content. Investigate if applicable; it was not agreed as a separate popover redesign.
+Still to decide how controls are initialized and how copied IDs and nested content are scoped without confusing page-level target lookup. Preserve existing whole-page, heading-section, and block embeds as well: `renderTranscludes` selects heading sections from the target tree's top-level headings, so introducing folding wrappers too early could affect extraction. Decide processing order or otherwise preserve that behavior; the implementation is not yet selected.
 
 ### Browser Find is a separate investigation
 
@@ -635,7 +626,7 @@ Recommended focus, subject to the developer's unresolved testing preference:
 - What should happen when a returned page has no suitable body passage to reveal?
 - How should Search's temporary navigation handoff behave for new tabs and failed/interrupted navigation? Is exact new-tab passage navigation required now or deferred?
 - At what concrete lifecycle point are initial fold states applied and target ancestors revealed before router/Search scrolling?
-- What preview folding behavior is clearest, and how are all operations scoped to the preview container?
+- How are the agreed preview and popover defaults, destination revealing, and controls scoped to each copied container?
 - Which native browser Find behavior can the chosen fold markup support, and which limitations are acceptable?
 - Which current Search capabilities should remain unchanged during adoption, and which unused packaging/runtime features can be left out with evidence?
 - Can the phase retain the current page index and UI while solving nested revealing, postponing structured passage indexing and new discovery features?

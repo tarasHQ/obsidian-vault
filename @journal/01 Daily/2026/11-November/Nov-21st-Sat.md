@@ -10,32 +10,6 @@ journal-date: 2026-11-21
 ---
 
 ```meta-bind-button
-label: Remove Morning Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### MORNING CHECKLIST
-    - [x] Air out the room %%lower oxygen levels and may affect you, triphasic breathing if you're cold%%
-    - [x] Day scene
-    - [x] Check webcam (exposure)
-    - [x] Check IP cam (quality, delay)
-        - [x] Reconnect to reset delay
-        - [x] Disable sleep blur
-    - [x] Check all elements are present on the canvas
-    - [ ] Check TickTick schedule 
-        - [ ] correct day, scheduled, scaled
-        - [ ] red "now" line is there
-    - [ ] Start stager timer
-    - Obsidian
-        - [ ] Reload.
-        - [ ] Fill Context block.
-        - [ ] Split down. Have ~10 lines of time log.
-
-```meta-bind-button
 label: Remove Night Checklist
 style: default
 icon: trash-2
@@ -90,6 +64,18 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
+- ###### 18:00
+	- flow explore optimize time?
+	- Love into that girl image/fantasy?
+- ###### 17:27 | MEANING:🔴 | PRIDE:👑
+	- Or maybe the urges come from a little of sleep. So impulse control is lacking? 
+	- Also pride. Was watching myself. And snoring felt shameful. There was a few more cases, don't remember which ones. But the thing is - maybe when I'm prideful, I'm more likely to be ashamed by that? Because like what's shameful in snoring, it's not like I'm doing it on purpose. It's not under my control. 
+	- But if I'm prideful and have too big of an image of myself - then such little details hit hard? I don't know. but something is there for sure. 
+	- And yup - still want to PMO pretty badly. Argumentation is I'm dead already. It's evening already. I had, what, 9 hours into the day? And soon I should go to the sleep. And tomorrow is the indulgence day, so why the hell not? And it's hard to reason against it. And also I have to keep awake till midnight, to not mess up my sleep schedule. And that's 6 hours. With indulgence more likely to push through it. But yeah, the argument against is "it's not Sunday yet". 
+	- And another good argument is that I'll spoil tomorrow a bit, so it won't be like explosion of dopamine. Don't know. Will eat first to delay it. 
+	- Ideal approach, obviously, is to work for 6 more hours, but easier said than done. 
+- ###### 17:07
+	- Yeah, the issue with the indulgence on the Sunday - is anticipation on the Saturday. Maybe a week is too much? And I need like 4 days? Still a lot. Like the idea is to just move me through the website without falling into indulgence loops. If the project will get some traction - hopefully I'll get more meaning and it'll be easier to reduce/discard most of the indulgence. But for now - it's really distracting. 
 - ###### 16:31 | MEANING:🟡 | PRIDE:🤷‍♂️
 	- PMO urges again. Like mad. But this time there's one particular image. It's as if the anima tries to break through the barrier by using what it can. 
 	- It started when I laid down. And still persists. Really big one. I won't give in (hopefully), I know that tomorrow I'll have all I want. But still. And it's weird also, because like a few hours before I thought that maybe I have to limit tomorrow's indulgence. Maybe to the second half of the day, or like plan work inside the day. Because it's just not possible to indulge for 14 hours, and to watch some stupid stuff will hurt even if it'll be dopaminergic. 

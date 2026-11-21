@@ -5,10 +5,10 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 - **Site generator**: Quartz v5, but this repo went rogue with no goal to support upstream mergeability.
 - **Content**: Obsidian plugin syncs vault with repo's `content/`. Lives in: `content/`.
 - **Config surface**: YAML plugin + layout config, bridged into the build. Lives in: `quartz.config.yaml`, `quartz.ts`.
-- **Rendering**: Preact components, rendered to string at build time (no hydration). Lives in: `quartz/components/`.
+- **Rendering**: Preact components, rendered to string at build time (no hydration). Shared page structure lives in `quartz/components/`; complete local features live in `quartz/features/`. The existing loader connects and places features.
 - **Content pipeline**: unified → remark (mdast) → rehype (hast) → JSX. Lives in: `quartz/processors/`.
 - **Styling / bundling**: plain CSS files, composed at build time, minified with Lightning CSS. Lives in: `quartz/styles/`.
-- **Theme**: local three-mode system (light, dark, dark-low); a stored reader choice takes precedence over the OS preference, which only seeds the initial mode. The component contract lives in `quartz/components/`, and palette values in `quartz/styles/theme.css`.
+- **Theme**: local three-mode system (light, dark, dark-low); a stored reader choice takes precedence over the OS preference, which only seeds the initial mode. Theme behavior lives in `quartz/features/theme/`, shared Head initializes it early, and palette values remain in `quartz/styles/theme.css`.
 - **Hosting**: Cloudflare Workers, **assets-only** (no `main`, no bindings). Lives in: `wrangler.jsonc`.
 - **Delivery**: Cloudflare **Workers Builds** on push → `npm run build` → `public/`. Lives in: `wrangler.jsonc`. NO PREVIEWS enabled. 
 - **Comments**: Self-hosted Remark42 (external LXC) via a local Quartz plugin. Lives in: `custom-plugins/remark42/`.
