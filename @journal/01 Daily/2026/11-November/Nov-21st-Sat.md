@@ -48,11 +48,11 @@ OVERVIEW_FOR_VIDEO
 ---
 
 >[!tldr] CONTEX
->Sleep Duration - **0:00**
+>Sleep Duration - **03:00**
 > 
->Time Spent in Bed - **TODO**
+>Time Spent in Bed - **Low**
 > 
->Approx. Compensation of Dreams - **TODO**
+>Approx. Compensation of Dreams - **I need to analyze those...**
 
 ---
 
@@ -64,6 +64,22 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
+- ###### 22:37 | MEANING:🔴 | PRIDE:👑
+	- It's just frustrating. Like you write sync for media files. You list what's popular extensions on web - avif is pretty popular on web (not as much as webp, but still). And they just don't add it. Don't care. 
+	- It's really hard to not be prideful. It's literally just add avif to the list. No hula-hoops... But they made it for less technical users for low-friction interaction with quartz. And instead it's PIA through a bunch of such minute "cuts".
+- ###### 22:23
+	- I don't want to PMO, so I guess it's safe to think a bit? Here's facts. Current fix works. You now have to prepare it on quartz's side. And hopefully it'll be good. 
+	- Again. You're kinda highly templated. Which means there won't be like 10 new edge cases every day. You do it properly once and then it'll be fixed forever (hopefully, until obsidian will have some breaking changes I guess)
+- ###### 22:09
+	- Critical mass of issues. Turns out new lines aren't preserved. And there's like whole big issue with it. 
+	- Got me discouraged. It's just to much issues. I want closer to obsidian format. But kinda get a bit overwhelmed with all this complex parsing of markdown notes. Thankfully the vault supposed to be highly "templated", but still - I don't like this complexity, especially when it's vibecoded.
+- ###### 21:50
+	- ==🔴Absolutely perplexed. I slept like 3 hours? What the hell? How can I feel so "normal" on 3 hours after like what, 14 hours work day? Not 14 hours of work, but a day of "work day" kind, where I work a lot. ==
+	- No shit I was so tempted. And I managed to overcome it, by the work(!), of all things. That's truly a first one like in my life. 
+- ###### 21:44 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- No PMO urges. Work goes. Tedious though...
+- ###### 21:00 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Stuff got more actionable. Urge disappeared. Mostly. 
 - ###### 20:36 | MEANING:🟡 | PRIDE:🤷‍♂️
 	- Truly something profound happens here. Like I was never been able to handle this kind of tension for so long without resigning into another kind of indulgence or distracting myself. And now not only that - but I also actually work with all this tension. Here's a miracle for ya...
 - ###### 20:24 | MEANING:🔴 | PRIDE:🤷‍♂️

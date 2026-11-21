@@ -14,7 +14,6 @@
   "open-tab-settings",
   "obsidian-outliner",
   "preserve-blank-lines",
-  "quartz-syncer",
   "refresh-preview",
   "snipdock",
   "syncable-dictionary",
@@ -27,5 +26,7 @@
   "obsidian-style-settings",
   "close-and-switch-to-recent-tab",
   "avificator",
-  "obsidian-livesync"
+  "obsidian-livesync",
+  "hot-reload",
+  "quartz-syncer-dev"
 ]

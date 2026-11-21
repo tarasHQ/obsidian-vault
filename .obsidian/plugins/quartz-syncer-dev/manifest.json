@@ -1,0 +1,15 @@
+{
+	"id": "quartz-syncer-dev",
+	"name": "Quartz Syncer (Dev)",
+	"version": "2.2.1",
+	"minAppVersion": "1.13.0",
+	"description": "Development fork of Quartz Syncer.",
+	"author": "Emile Bangma",
+	"authorUrl": "https://github.com/saberzero1",
+	"fundingUrl": {
+	  "Buy Me a Coffee": "https://buymeacoffee.com/saberzero1",
+	  "GitHub Sponsor": "https://github.com/sponsors/saberzero1",
+	  "Ko-Fi": "https://ko-fi.com/saberzero1"
+	},
+	"isDesktopOnly": false
+  }
