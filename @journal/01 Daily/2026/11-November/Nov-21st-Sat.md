@@ -8,42 +8,12 @@ journal-date: 2026-11-21
 ```
 
 ---
-
-```meta-bind-button
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-	- [ ] Check audio delay to webcam
-	- [ ] Check TickTick schedule (correct day, scheduled)
-	- [ ] Set time of next sleep for stager timer.
-	- Obsidian
-		- [ ] Write overview of the current day
-		- [ ] Create journal for the next day
-		- [ ] Make sure all day's reflections are linked artifacts
-		- [ ] Delete Dream Analysis block if empty
-		- [ ] Delete other blocks if empty
-	- [ ] Night scene
-	- [ ] Check IP cam (quality, delay)
-		- [ ] Enable sleep blur
-	- [ ] monitor OFF (seems like keeping on makes him die faster)
-	- Cat
-		- [ ] Clean up cat's litter box
-		- [ ] Food + plate is in my room at the shelf 
-			%%(to feed right away and not be distracted by her)%%
-	- [ ] Make sure there's tomorrow's food out of the freezer.
-
----
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-OVERVIEW_FOR_VIDEO
+Huge day. A lot of work. And first time when I was on 3 hours of sleep, and 12-14 hours into the work day, tired, got under the negative mother complex had massive urges to PMO, but based on learned symbolism and technical knowledge - not only avoided very strong urge, but also avoided it through the work, and not resigning into the lesser evil or going to sleep or something. 
+Going to sleep right now - tired, a bit of anger residue from the work - but the day is absolutely justified. Didn't have such meaningful days for a long time. 
 
 ---
 
@@ -56,14 +26,15 @@ OVERVIEW_FOR_VIDEO
 
 ---
 
-## CREATED ARTIFACTS
-- 
-
----
-
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
+- ###### 01:16 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Indulged at the end. Technicality. Today is the Sunday. But I don't know. Felt good, feel good. No shame. So why not. Wasn't from the mother complex either. As "healthy" as indulgence get. Nothing to add. And I'm transparent here. It was fucked previous time. This time - ... well, this time I worked a lot. And did a lot. So yeah. 
+	- ==🔴But why this day happened? - Because I fought the negative mother complex. Because the Devouring Mother lost, today, though. I wanted to avoid, but I stayed in the tension, used stories and symbolism, and managed to create stronger pull into the work. Weirdly enough. ==
+- ###### 00:23
+	- A good dat. Thank God I was been able to not give in to the mother complex. 
+	- ==🔴This kinda changes the perspective. I mean instead of simple and meaningless PMO - there's now mother complex talk and symbolism from myths and "fairy tales". It's not like a huge thing, but when I'm on the verge of giving in - it's deciding factor that pushes the scale into the right direction. ==
 - ###### 00:12 | MEANING:🟡 | PRIDE:🤷‍♂️
 	- Perception shifts in this state. Not hard things are perceived hard. Like yeah, PIA. But now I have established flow for patching modules. If there will be another such issue (which I'm sure it'll be) - then it's relatively easy to patch it. 
 - ###### 23:55

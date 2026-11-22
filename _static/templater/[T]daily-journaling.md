@@ -91,7 +91,7 @@ OVERVIEW_FOR_VIDEO
 
 ---
 
-## DREAM ANALYSIS
+## DREAMS
 ### Read First
 - **WRITE THEM DOWN**. if you don't want to analyze them - the best next thing is to just write them down and re-live while you're doing so. This increases their effectiveness.
 - **Goal** of the dream isn't only to show you the answer, but also to give meaning to the answer through the story. Peterson's "story" from his Maps of Meaning work. 

@@ -176,7 +176,7 @@ GROUP BY true
 		- ###### Folding logic %% fold %%
 					- create one. there's none. Since the plugin you will use foldings a lot, which means without them - there will be huge walls of text on website. Which is suboptimal, obviously.
 - ### Widgets
-	- ###### **CALENDAR**
+	- ###### **CALENDAR** %% fold %%
 		- sidebar on pc(widget), top bar on mobile (button + modal with the same widget)
 		- But how to figure out all types of intervals. Daily can be on dates, weekly can be on side row with weeks numbers, monthly on month name and quarterly? well, month can have Q1 near it + year. So everything will be accessible. 
 		- I'm not sure I'll do all of those but it's better to be prepared and stay flexible
@@ -198,7 +198,7 @@ GROUP BY true
 	  Establish explicit TypeScript site assembly in place of YAML-driven plugin loading; organize the affected local features; adopt Search locally; implement marker-aware folding and navigation/search revealing.
 	- #### ~~Phase 004 - Structure & Explorer~~ [plan](./phases/_archived/004/_plan_004.md) %% fold %%
 	  Custom Explorer and a focused vault-structure update: create needed entry pages with generic Dataview listings. Keep the complete desktop sidebar; on mobile retain a sticky title/Search/theme bar and slide navigation/widgets separately. Refined entry pages and scroll-aware header behavior are future work.
-	- **Ideas** %% fold %%
+	- **Ideas**
 		- Widgets ideas
 		- Pages category of ideas
 		- scroll restoration
@@ -210,6 +210,7 @@ GROUP BY true
 			- Make menu button transparent maybe even glass like from iOS
 			- bug when I’m scrolled down on the page, then pick another explorer page it scrolls up, which is bad and wrong
 			- indentation of lists should be 1/3 of now for phones(in obsidian too)
+			- During scroll menu button isn’t clickable but should be
 - ### 01 Fundamentals
 	- #### ~~Phase 003 - Visual Identity~~ [plan](./phases/_archived/003/_plan_003.md) %% fold %%
 	  Palette and three modes, typography, accents, background, favicon, and published visual test pages.
