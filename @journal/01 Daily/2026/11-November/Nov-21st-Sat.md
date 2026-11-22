@@ -64,9 +64,28 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
+- ###### 00:12 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Perception shifts in this state. Not hard things are perceived hard. Like yeah, PIA. But now I have established flow for patching modules. If there will be another such issue (which I'm sure it'll be) - then it's relatively easy to patch it. 
+- ###### 23:55
+	- There's a new skill needed. It throws me off because of emotions attached. It should be pure problem solving. 
+- ###### 23:40
+	- Turned out that for some reason previous update of plugins got reset. Updated and prepared to be shamed that it got fixed. But no. It did not. 
+	- So much headache for 6 letters... Get angry again. Tried to fix it with cool head, but 
+- ###### 23:21 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- No wonder being toxic is called toxic. It really is toxic, by definition. Too much pressure, and issues... Like they have a bunch of community plugins. I barely started, and already have need to rewrite like 6 of them, while also already rewritten 3 of them. And again - barely started. But most of them I rewrite for convenience, to be honest. 
+	- Ok. Fuck it. It is what it is. Should thank them that I don't start from scratch. That's 100x bigger than these issues I stumble upon. That's the main focus. 
+	- False advertisement? The thing is - there's an obstacle. You either bypass
+- ###### 23:15
+	- And now out of sudden there was done a bunch of updates, when I went rogue on it. So it'll be PIA to include some of those. I would want to have a few. It's just PIA. And clearly I can't be fast doing thigs to the best of my ability. 
+- ###### 22:56
+	- I'm just pissed. It's hard enough to do things for me as is. And now there's also a bunch of careless decisions that make things harder. I would say that being angry is justified. False advertisement. It's "so great" unless you will actually would want to do non-generic thing, and then it fights you a lot. And I just started. 
+	- In repo a guy created PR to add avif support on July 14th. Hate this kind of open source. Like archive it if you don't care about it. Why keep it on life support and create problems for yourself and users but creating illusion of it being alive. 
 - ###### 22:37 | MEANING:🔴 | PRIDE:👑
 	- It's just frustrating. Like you write sync for media files. You list what's popular extensions on web - avif is pretty popular on web (not as much as webp, but still). And they just don't add it. Don't care. 
 	- It's really hard to not be prideful. It's literally just add avif to the list. No hula-hoops... But they made it for less technical users for low-friction interaction with quartz. And instead it's PIA through a bunch of such minute "cuts".
+	- Frustrating. Especially knowing that this thing has been out there for like a year or something? I mean plugin. But I guess that's why I have to avoid claude code/codex they dissolve will to do things properly. It's not easy initially, but with those temptation it's barely doable. 
+	- But how to push pride back into the middle zone at least? Like am I wrong here? Ok, let's at first implement fix and see if that's as easy as it seems to be.
+	- yeah, one line missed on quartz side in the obsidian-flavored plugin, not even a full line, like 7 letters. It's a damn joke. 
 - ###### 22:23
 	- I don't want to PMO, so I guess it's safe to think a bit? Here's facts. Current fix works. You now have to prepare it on quartz's side. And hopefully it'll be good. 
 	- Again. You're kinda highly templated. Which means there won't be like 10 new edge cases every day. You do it properly once and then it'll be fixed forever (hopefully, until obsidian will have some breaking changes I guess)

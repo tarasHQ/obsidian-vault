@@ -14,7 +14,7 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 - **Comments**: Self-hosted Remark42 (external LXC) via a local Quartz plugin. Lives in: `custom-plugins/remark42/`.
 - **CI**: GitHub Actions on PRs and `main` — `npm ci`, `npm run check`, `npm test`, `npm run build`. Lives in: `.github/workflows/ci.yaml`. Notes: doubles as the clean-checkout proof that the site build consumes committed plugin output without compiling it.
 - **Analytics**: Cloudflare Web Analytics, injected **at the edge** by a dashboard rule. Lives: ⚠️ outside this repo.
-- **Runtime**: Node ≥ 22, npm ≥ 10.9.2, ESM + TypeScript. Lives in: `package.json`.
+- **Runtime**: Node ^22.22.2, ^24.15.0, or ≥26; npm ≥12.2.1 and <13, with npm 12.2.1 selected for builds. ESM + TypeScript. Lives in: `package.json`, `.node-version`.
 
 ---
 
@@ -38,9 +38,9 @@ Personal blog built with **Quartz v5**, deployed to **Cloudflare Workers**.
 ## 01. Tech Stack / Key Libraries, Plugins, Services
 ### 01.1. Overview
 **Runtime & toolchain**
-- **Runtime**: Node.js ≥ 22, ESM (`"type": "module"`). Notes: declared in `engines`; Workers Builds must satisfy it.
+- **Runtime**: Node.js ^22.22.2, ^24.15.0, or ≥26, ESM (`"type": "module"`). Notes: declared in `engines`; Workers Builds must satisfy it.
 - **Language**: TypeScript. Notes: typechecked by `tsc --noEmit`, but **never compiled by tsc** — esbuild emits JS.
-- **Package manager**: npm ≥ 10.9.2, committed `package-lock.json`. Notes: CI installs with `npm ci`; lockfile drift fails the build.
+- **Package manager**: npm ≥12.2.1 and <13, with npm 12.2.1 selected for builds; committed `package-lock.json` and native dependency patches. Notes: CI installs with `npm ci`; lockfile drift fails the build. For creating, updating, and verifying patches, read [dependency-patching.md](../artifacts/dependency-patching.md) (`__obsidian__/artifacts/dependency-patching.md` from repo root).
 - **Bundler**: esbuild. Notes: bundles page JS and the local plugin's browser script; 
 - **CSS toolchain**: plain CSS source files → esbuild text-loader → Lightning CSS minify. 
 - **Quality gates**: Prettier, `tsx --test`, `tsc --noEmit`. Notes: `npm run check`, `npm test`.
