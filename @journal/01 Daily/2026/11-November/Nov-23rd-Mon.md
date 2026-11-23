@@ -64,6 +64,11 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
+- ###### 18:24
+	- That's the hardest thing. Like I have pleasure right now, not only that, but unconscious absence too. And at the other side of the argument I have promise that if I'll struggle through current state - maybe I'll have a day worth living at the end of it.
+- ###### 18:19 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Played with cat. Sudden drop of meaning. Sadness a bit. 
+	- Want to PMO.
 - ###### 16:25 | MEANING:🟢 | PRIDE:🙏
 	- Had a few strong "good vision feelings" about my main project. Like there's still hope. 
 - ###### 16:18
