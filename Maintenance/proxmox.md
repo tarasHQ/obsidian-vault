@@ -1,3 +1,135 @@
+## PVE
+- ###### Network & SSH
+	- Hostname `pve.home.arpa`
+	- IP `192.168.1.9`
+	- Web UI `https://192.168.1.9:8006`
+- ###### Security
+	- `IPv6` disabled
+		- %%Don't use. Potentially can be missed through firewall rules or something. %%
+	- `firewall` enabled
+		- %%default deny inbound policy for only specific addresses, don't need access from devices that I don't use to access.%%
+	- `rpc services` disabled `rpcbind` and `nfs-blkmap`
+		- %%don't use, don't need %%
+	- `public`-facing services are in isolated VMs with isolated subnet. 
+		- `caddy` covers only private 
+- ###### CPU Power management
+	- intel_pstate + powersave + balance_power. Old one was disabled pstate + cpufreq with conservative governor. 
+	- [[#^9c77c9|Snippets]]
+	- **Issues/Requirements**
+		- Keep internal temperatures low
+		- Keep power usage low
+		- Less heat/current = longer lifespan of components. 
+- ###### Maintenance
+	- `Updates`
+		- Manual with notifications. 
+		- **Reasoning:** since I'll have services I don't want to break randomly - I won't update automatically. Also a good addition for less tested updates to have some time after release instead of installing it right away.
+		- `package-updates=always` for availability of updates on no-subscription repository
+	- `Notifications` through custom gmail smtp. 
+		- `backup failure`
+		- `package updates`
+		- `system-mail` - can be lots of things, but explicitly setup for SMART errors of ssd. 
+- ###### Backups
+	- `local` - 
+	- `another machine` - `rsync` mirror
+	- `cloud` - another machine backups to cloud
+- ###### Other
+	- `Customizations`
+		- `pve-mods` - for removing subscription nag screen
+		- `/root/pve-four-core-temperatures.py` - for showing cpu temperature sensors on dashboard
+			- `python3 /root/pve-four-core-temperatures.py status/install/uninstall` - if got reset on upgrade
+			- nag screen works through pve-mods, don't want to address it with custom script
+			- but pve-mods doesn't support minimal addition of cpu temps, looks awful, hence script
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Snippets
+### Power Management Snippets %% fold %%
+^9c77c9
+#### Script
+```bash
+cat > /usr/local/sbin/set-cpu-power-policy.sh <<'EOF'
+#!/bin/sh
+set -eu
+
+for cpu in /sys/devices/system/cpu/cpu[0-9]*; do
+    dir="$cpu/cpufreq"
+    [ -f "$dir/scaling_governor" ] || continue
+
+    echo powersave > "$dir/scaling_governor"
+
+    if [ -w "$dir/energy_performance_preference" ]; then
+        echo balance_power > "$dir/energy_performance_preference"
+    fi
+done
+EOF
+
+chmod 755 /usr/local/sbin/set-cpu-power-policy.sh
+```
+
+#### Service
+```bash
+cat > /etc/systemd/system/cpu-power-policy.service <<'EOF'
+[Unit]
+Description=Apply Intel N100 CPU power policy
+After=systemd-udev-trigger.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/set-cpu-power-policy.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+
+#### Enable Service
+```bash
+systemctl daemon-reload
+systemctl enable --now cpu-power-policy.service
+systemctl status cpu-power-policy.service --no-pager
+```
+
+###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+# Legacy
+
 ## Notes
 - Proxmox host always-on mini PC (N100) + on like 3kWh battery.
 - Caddy + AdGuard + Domain = local websites with https:// access (so no warnings/popups + some advantages for PWA apps)

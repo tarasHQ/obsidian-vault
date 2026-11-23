@@ -8,37 +8,6 @@ journal-date: 2026-11-22
 ```
 
 ---
-
-```meta-bind-button
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-	- [ ] Check audio delay to webcam
-	- [ ] Check TickTick schedule (correct day, scheduled)
-	- [ ] Set time of next sleep for stager timer.
-	- Obsidian
-		- [ ] Write overview of the current day
-		- [ ] Create journal for the next day
-		- [ ] Make sure all day's reflections are linked artifacts
-		- [ ] Delete Dream Analysis block if empty
-		- [ ] Delete other blocks if empty
-	- [ ] Night scene
-	- [ ] Check IP cam (quality, delay)
-		- [ ] Enable sleep blur
-	- [ ] monitor OFF (seems like keeping on makes him die faster)
-	- Cat
-		- [ ] Clean up cat's litter box
-		- [ ] Food + plate is in my room at the shelf 
-			%%(to feed right away and not be distracted by her)%%
-	- [ ] Make sure there's tomorrow's food out of the freezer.
-
----
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW
@@ -70,8 +39,24 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
-- ###### 16:14
-	- 
+- ###### 06:05 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Yeah... the thing is - I think - it got monotonous. Why it's slow? I don't know really. Like I can say I did a lot of things and also I can say I did not do much. In the same sentence. 
+	- Indulgence. PMO? - yeah, when it's not used for avoidance - it's kinda not bad. Youtube? - could've stay in silence for that matter. Like it was just placing talking head out there on another monitor, to generate noise. Food? 
+	- Food is a big one. Oily skin. Headache. Upset stomach. It's really nice to have source of energy that makes me go for hours upon hours of full focus state. 
+		- But the biggest thing is pleasure. I crave a lot. But the process itself... From what I ordered (and I was conservative a bit) - now I can say that 1/2 would be plenty. And if I oriented towards pleasure only - 1/4 of what I ordered would've carried me through the day.
+		- I can shame myself. But the thing is - what if I didn't order for pleasure? Then there was intentional effort to stay unconscious. To just drown in it. And it's 6am already... oh boy... sleep schedule is done basically. Maybe I'll be able to backtrack with shorter sleeps and an early bed. But yeah. 
+	- Was it worth it? - Hard to say honestly. On its merits - no. Diving into the hell to regain appreciation of my usual routine - yeah. 
+	- Also that background videos while working - probably that's time dump. There's nothing major, but there's hundreds of 1-minute drifts into those video and then getting back to work. 
+	- ==🔴Background videos place me in a specific state of mind. When there's no "distractions" - you're forced to work meaningfully, because otherwise it gets boring fast. With distractions though, it creates outlet for boredom, which allows to half-ass the task at 10% efficiency. Probably that's a biggest issue==
+		- And it adds up to the whole "being unconscious" idea. With all the pressure, I may not even feel it consciously, but unconsciously my brain just screams. And seems like ....
+		- what a load of BS, to be honest. It's only maybe like 20% true. 80% is a 2 decades of solving problem by games/youtube/porn. Brain learned it and didn't know anything better for those 2 decades. So yeah. Now it's too hard to NOT use it, because I just got used to that kind of behavior. 
+- ###### 05:28 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- no wonder I didn't want to do it... Spend like what, 10 hours today? And still did probably 75% of what's left + one additional new self-hosted thing to do.
+- ###### 22:14 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Man time flies. Like I research a bit. But man it's a lot of time spent on this... 
+- ###### 19:13 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Almost got locked out from router cuz of bug that cut the password. Scary) I don't want to configure more shit. 
+	- Long road ahead with proxmox though.
 - ###### 15:41 | MEANING:🟡 | PRIDE:🤷‍♂️
 	- So, food-wise indulged a lot. This temptation to shut-off conscious man... I don't remember much from like last 4 hours. 
 	- But here's the thing - sweets/snacks started to be nauseating at like 1/4 of what I ate. Won't say it's compulsion though. It as if I just wanted to stay unconscious. Feels like that's how animals are? I was just pursuing next goal. I had tasty food, I had curiosity fulfilled through the youtube. At some point when it got boring - idea of PMO came to mind. When I was done with that - youtube got interesting a bit once again. 
