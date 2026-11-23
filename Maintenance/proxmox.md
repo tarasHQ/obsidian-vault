@@ -1,44 +1,59 @@
 ## PVE
-- ###### Network & SSH
-	- Hostname `pve.home.arpa`
-	- IP `192.168.1.9`
-	- Web UI `https://192.168.1.9:8006`
-- ###### Security
-	- `IPv6` disabled
-		- %%Don't use. Potentially can be missed through firewall rules or something. %%
-	- `firewall` enabled
-		- %%default deny inbound policy for only specific addresses, don't need access from devices that I don't use to access.%%
-	- `rpc services` disabled `rpcbind` and `nfs-blkmap`
-		- %%don't use, don't need %%
-	- `public`-facing services are in isolated VMs with isolated subnet. 
-		- `caddy` covers only private 
-- ###### CPU Power management
-	- intel_pstate + powersave + balance_power. Old one was disabled pstate + cpufreq with conservative governor. 
-	- [[#^9c77c9|Snippets]]
-	- **Issues/Requirements**
-		- Keep internal temperatures low
-		- Keep power usage low
-		- Less heat/current = longer lifespan of components. 
-- ###### Maintenance
-	- `Updates`
-		- Manual with notifications. 
-		- **Reasoning:** since I'll have services I don't want to break randomly - I won't update automatically. Also a good addition for less tested updates to have some time after release instead of installing it right away.
-		- `package-updates=always` for availability of updates on no-subscription repository
-	- `Notifications` through custom gmail smtp. 
-		- `backup failure`
-		- `package updates`
-		- `system-mail` - can be lots of things, but explicitly setup for SMART errors of ssd. 
-- ###### Backups
-	- `local` - 
-	- `another machine` - `rsync` mirror
-	- `cloud` - another machine backups to cloud
-- ###### Other
-	- `Customizations`
-		- `pve-mods` - for removing subscription nag screen
-		- `/root/pve-four-core-temperatures.py` - for showing cpu temperature sensors on dashboard
-			- `python3 /root/pve-four-core-temperatures.py status/install/uninstall` - if got reset on upgrade
-			- nag screen works through pve-mods, don't want to address it with custom script
-			- but pve-mods doesn't support minimal addition of cpu temps, looks awful, hence script
+- ##### VMs & LXCs
+	- ###### Notes
+		- Decided to not go through docker approach. It's better on paper, but also adds additional hula-hoops instead of those it removes. So LXC is just easier and adds less headache. 
+		- VMs only for things that need either security benefits over LXC or HA OS which recommends VM installation.
+	- ###### List
+		- LXC - Caddy
+		- LXC - Adguard
+		- LXC - Telegram Black Out Charts Bot
+		- LXC - LiveSync Coach DB
+			- For obsidian live sync
+		- VM - Home Assistant OS
+			- Decide to have self-contained approach without other LXCs. Super easy to backup/restore. Proxmox backup is like 3 gigs as is for like 100 megabytes of HA data. 
+		- VM - Artalk
+			- Security purposes, isolation is main one (including strictly firewalled subnet)
+- ##### Notes
+	- ###### Network & SSH
+		- Hostname `pve.home.arpa`
+		- IP `192.168.1.9`
+		- Web UI `https://192.168.1.9:8006`
+	- ###### Security
+		- `IPv6` disabled
+			- %%Don't use. Potentially can be missed through firewall rules or something. %%
+		- `firewall` enabled
+			- %%default deny inbound policy for only specific addresses, don't need access from devices that I don't use to access.%%
+		- `rpc services` disabled `rpcbind` and `nfs-blkmap`
+			- %%don't use, don't need %%
+		- `public`-facing services are in isolated VMs with isolated subnet. 
+			- `caddy` covers only private 
+	- ###### CPU Power management
+		- intel_pstate + powersave + balance_power. Old one was disabled pstate + cpufreq with conservative governor. 
+		- [[#^9c77c9|Snippets]]
+		- **Issues/Requirements**
+			- Keep internal temperatures low
+			- Keep power usage low
+			- Less heat/current = longer lifespan of components. 
+	- ###### Maintenance
+		- `Updates`
+			- Manual with notifications. 
+			- **Reasoning:** since I'll have services I don't want to break randomly - I won't update automatically. Also a good addition for less tested updates to have some time after release instead of installing it right away.
+			- `package-updates=always` for availability of updates on no-subscription repository
+		- `Notifications` through custom gmail smtp. 
+			- `backup failure`
+			- `package updates`
+			- `system-mail` - can be lots of things, but explicitly setup for SMART errors of ssd. 
+	- ###### Backups
+		- `local` - 
+		- `another machine` - `rsync` mirror
+		- `cloud` - another machine backups to cloud
+	- ###### Other
+		- `Customizations`
+			- `pve-mods` - for removing subscription nag screen
+			- `/root/pve-four-core-temperatures.py` - for showing cpu temperature sensors on dashboard
+				- `python3 /root/pve-four-core-temperatures.py status/install/uninstall` - if got reset on upgrade
+				- nag screen works through pve-mods, don't want to address it with custom script
+				- but pve-mods doesn't support minimal addition of cpu temps, looks awful, hence script
 
 
 

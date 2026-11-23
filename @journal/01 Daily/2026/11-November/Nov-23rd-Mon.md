@@ -64,6 +64,13 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
+- ###### 22:16 | MEANING:🔴 | PRIDE:🤷‍♂️
+	- I gave in to the negative mother complex, and now it just chews through me. Absolute withdrawal of the meaning. "Stay with mom" thing. 
+	- Different kind of fights - but to win current one is kinda even harder than the fight that got me into this situation. At least there was some tension there, which means lots of energy. Now - "I don't care". 
+- ###### 21:56 | MEANING:🔴 | PRIDE:🤷‍♂️
+	- Had to cut indulgence, so will explicitly mark it in log. Yeah... 
+- ###### 21:24 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Man... 5 hours... how time flies it's insane...
 - ###### 18:24
 	- That's the hardest thing. Like I have pleasure right now, not only that, but unconscious absence too. And at the other side of the argument I have promise that if I'll struggle through current state - maybe I'll have a day worth living at the end of it.
 - ###### 18:19 | MEANING:🟡 | PRIDE:🤷‍♂️
