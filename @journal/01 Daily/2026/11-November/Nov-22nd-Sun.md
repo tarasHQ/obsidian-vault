@@ -70,6 +70,14 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
+- ###### 16:14
+	- 
+- ###### 15:41 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- So, food-wise indulged a lot. This temptation to shut-off conscious man... I don't remember much from like last 4 hours. 
+	- But here's the thing - sweets/snacks started to be nauseating at like 1/4 of what I ate. Won't say it's compulsion though. It as if I just wanted to stay unconscious. Feels like that's how animals are? I was just pursuing next goal. I had tasty food, I had curiosity fulfilled through the youtube. At some point when it got boring - idea of PMO came to mind. When I was done with that - youtube got interesting a bit once again. 
+	- ==🔴What I really hate about indulgence, is that it's exhaustive. With work, when you stay in tension there's this Sisyphus effort that, yeah, is hard and crushing and "meaningless", but compared to that - indulgence is like sitting near the rock and looking at it. Like at least with bringing the rock up the mountain you get stronger, you overcome obstacles, you can time it, you can compete with yourself, mountains can get bigger - but that's the thing, that's what humans are built for.==
+		- Like I had 0 limits basically, and with maximum harm (through unhealthy food) to my health, I would say sugar levels will be sky rocketing soon if they're not now.
+	- But also I would say that maybe I need this indulgence periods to appreciate the work? Like it's pleasureful neurochemically, but it's very punishing afterwards. Sometimes guilt is there, but it's not the main thing. Punishes by showing futility of indulgence, and then you hit the ground after few hours of flight. 
 - ###### 11:28
 	- So what is the plan? Youtube/Sweets/Chips/Twitch/PMO. No limits. 
 	- At the same time - try to moderate "no limits" and add some work if you'll want it. 
