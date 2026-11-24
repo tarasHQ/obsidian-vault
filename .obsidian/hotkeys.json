@@ -178,5 +178,13 @@
       ],
       "key": "R"
     }
+  ],
+  "command-palette:open": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "Q"
+    }
   ]
 }

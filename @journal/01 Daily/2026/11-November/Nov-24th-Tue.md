@@ -10,32 +10,6 @@ journal-date: 2026-11-24
 ---
 
 ```meta-bind-button
-label: Remove Morning Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### MORNING CHECKLIST
-    - [ ] Air out the room %%lower oxygen levels and may affect you, triphasic breathing if you're cold%%
-    - [ ] Day scene
-    - [ ] Check webcam (exposure)
-    - [ ] Check IP cam (quality, delay)
-        - [ ] Reconnect to reset delay
-        - [ ] Disable sleep blur
-    - [ ] Check all elements are present on the canvas
-    - [ ] Check TickTick schedule 
-        - [ ] correct day, scheduled, scaled
-        - [ ] red "now" line is there
-    - [ ] Start stager timer
-    - Obsidian
-        - [ ] Reload.
-        - [ ] Fill Context block.
-        - [ ] Split down. Have ~10 lines of time log.
-
-```meta-bind-button
 label: Remove Night Checklist
 style: default
 icon: trash-2
@@ -85,68 +59,68 @@ OVERVIEW_FOR_VIDEO
 ## CREATED ARTIFACTS
 - 
 
+## TASK EXECUTION
+- ##### 13:49
+	 - **cleanup done** back to **artalk** + **backups encryption**
+- ##### 13:37
+	 - **bitwarden cleanup** to have things less chaotic. Text messages have additional encryption.
+- ##### 13:31
+	 - yeah, I'll **do backup encryption** since I can stream encryption to another machine, instead of writing/overwriting/duplicating things on main machine. I don't want to kill SSD disk by writing like 100gb per day. it's only 500gb one, so yeah...
+- ##### 13:24
+	 - **backups encryption** exploration
+- ##### 13:21
+	 - **muxing/speeding up recordings** for previous day
+- ##### 13:15
+	 - exploring **proxmox backup server**, it seems like it may be much better that limited backup situation in proxmox. 
+- ##### 13:12
+	 - **obs done 5 minutes ago** and now finalizing **backup scripts for artalk**
+- ##### 12:53
+	 - still working on both **obs privacy hotkeys** and **artalk internal backups**
+- ##### 12:40
+	 - also working on **OBS privacy flow** to have it through hotkey in low-friction kind of way
+- ##### 12:33
+	 - there was/are **issues with temperature sensor**. it's pretty cold and it shows 20 degrees. 
+- ##### 12:22
+	 - so now I'm focused on artalk, yesterday I did backups through proxmox, of the whole VM. Now I'm **doing internal backups**, so each vm backup has like 10 days of database copies inside
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
-- 
+- ###### 13:49 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Want to PMO. Weird. Was it because I spent too much time on bitwarden cleanup?
+- ###### 13:05 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- LLM are definitely make things tougher meaning-wise. But it's just so helpful it's insane. Like I did this privacy script in obs in 10 minutes or something? It would've take me an hour at least without LLMs. So yeah. I'm kinda conservative towards LLMs, but it would be stupid to deny their usefulness AND not use it to my benefit...
+- ###### 12:04 | MEANING:🟢 | PRIDE:🙏
+	- Ok, hold on. You start to sing. It'll cost ya in a few hours. Don't get too high up. Ground yourself in NOW. Don't go into fantasy/day-dreaming worlds. 
+	- Probably back to that nordic folk/shamanic music? Less dopaminergic. Current kind of music did its job - you spirit is up and you're ready to fight. Now, well, you have to fight)
+- ###### 11:56 | MEANING:🟢 | PRIDE:🙏
+	- Music man... I woke up discouraged. Pretty much I wake up discouraged every day now. And music kinda upped my spirit. Significantly. Made me want to thank God for this day/life.
+	- So, today I plan to make server-side of artalk production ready, then proceed to work on website. There's a lot to do with foldings. Then I'll integrate artalk. 
 ==REPEAT The Project is dead. Website is priority. Stay in tension by avoiding indulgence==
-
----
-
-## DREAMS
-### Read First
-- **WRITE THEM DOWN**. if you don't want to analyze them - the best next thing is to just write them down and re-live while you're doing so. This increases their effectiveness.
-- **Goal** of the dream isn't only to show you the answer, but also to give meaning to the answer through the story. Peterson's "story" from his Maps of Meaning work. 
-- Not all dreams will **click**.  As LLM put it - drill-sergeant's dream isn't supposed to give me chills. 
-	- I can be rich with meaning but poor with action, in this case I don't need inspiration, I need to have a dream that is grounded in action and persistent day-to-day movement of men's work. 
-
-### Dream #1 - NAME
-
-- #### Raw Dream
-    - ##### Tips
-        - `Ignore mistakes, formatting, structure, goal is to capture the raw fleeting dream without being distracted by all of it`
-    - 
-- #### Location & Environment
-    - ##### Tips
-        - `What you feel when you go/are there in real life?
-        - `If it's unreachable/unknown - how would you feel being there in real life?`
-        - `Is feeling positive/negative?`
-        - `Why would dream use this location/environment and not other ones?`
-    - 
-- #### Analyze figures, what they represent, why they're there? \*\*
-    - ##### Tips
-        - `Why that figure there, how situation would unfold without that figure?`
-        - `Is it positive or negative figure, how you feel about them, which emotions comes up? `
-        - `Can it be the Shadow, or the Anima?`
-        - `Is it internal representation or external relationships?`
-    - 
-- #### Emotional/Rememberable scenes
-    - ##### Tips
-        - `If there's particularly rememberable scenes - analyze why they're rememberable, what's their charge, what's so valuable in them, what they're hinting on? `
-    - 
-- #### Direction/Tendency
-    - ##### Tips
-        - `How it starts and how it ends establishes the direction/tendency of the dream which gives another perspective on it.`
-        - `Direction is overlapping with compensation, but you should focus on positive/negative property`
-    - **First sentence is**
-    - **Last sentence is**
-    - **Direction of the dream is**,
-- #### Final feelings
-    - ##### Tips
-        - `Aftertaste of the dream. Feeling about the dream as a whole.`
-    - 
-- #### Hooks From the Past
-    - ##### Tips
-        - `Your ego was one-sided recently - where/when it might've been like that?`
-        - `If dream is repeatable - then there's reoccuring tendency to behave in a certain manner - find it, look in the past for a pattern, not a one-off fluke`
-    - 
-- #### Likely Compensation
-    - ##### Tips
-        - `Which type of compensation is present? Does it inspire you? Does it deflate over-inflated ego? or does it confronts wrong actions/attitude by showing dreams into opposite direction?`
-        - `Keep remembering that it shows you blind spots, so the answer isn't what's obvious, because you already see it. You must approach compensation from unexpected angle. `
-    - 
-
-
-

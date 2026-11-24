@@ -8,11 +8,11 @@
 		- LXC - Adguard
 		- LXC - Telegram Black Out Charts Bot
 		- LXC - LiveSync Coach DB
-			- For obsidian live sync
+			- %%For obsidian live sync%%
 		- VM - Home Assistant OS
-			- Decide to have self-contained approach without other LXCs. Super easy to backup/restore. Proxmox backup is like 3 gigs as is for like 100 megabytes of HA data. 
+			- %%Decided to have self-contained approach without other LXCs. Super easy to backup/restore. Proxmox backup is like 3 gigs as is for like 100 megabytes of HA data. %%
 		- VM - Artalk
-			- Security purposes, isolation is main one (including strictly firewalled subnet)
+			- %%Security purposes, isolation is main one (including strictly firewalled subnet)%%
 - ##### Notes
 	- ###### Network & SSH
 		- Hostname `pve.home.arpa`
@@ -26,7 +26,9 @@
 		- `rpc services` disabled `rpcbind` and `nfs-blkmap`
 			- %%don't use, don't need %%
 		- `public`-facing services are in isolated VMs with isolated subnet. 
-			- `caddy` covers only private 
+			- %%`caddy` covers only private %%
+		- `nftables` firewall
+			- %%gives more flexibility for my purposes%%
 	- ###### CPU Power management
 		- intel_pstate + powersave + balance_power. Old one was disabled pstate + cpufreq with conservative governor. 
 		- [[#^9c77c9|Snippets]]
@@ -44,9 +46,9 @@
 			- `package updates`
 			- `system-mail` - can be lots of things, but explicitly setup for SMART errors of ssd. 
 	- ###### Backups
-		- `local` - 
+		- `local` - multiple copies with different intervals
 		- `another machine` - `rsync` mirror
-		- `cloud` - another machine backups to cloud
+		- `cloud` - `another machine` backups to cloud
 	- ###### Other
 		- `Customizations`
 			- `pve-mods` - for removing subscription nag screen
