@@ -210,3 +210,48 @@ OVERVIEW_FOR_VIDEO
 	- Music man... I woke up discouraged. Pretty much I wake up discouraged every day now. And music kinda upped my spirit. Significantly. Made me want to thank God for this day/life.
 	- So, today I plan to make server-side of artalk production ready, then proceed to work on website. There's a lot to do with foldings. Then I'll integrate artalk. 
 ==REPEAT The Project is dead. Website is priority. Stay in tension by avoiding indulgence==
+- i was going home from the school. There was a long wait about where to go, but I decided something unhealthy. Indulgence?
+- I was lie considering. The same I consider with PMO
+- Then I went on my way
+- wmet some friendly guy,then an American, I was kinda accidentally pushing my arm into his face when I tried to squeeze between crowd.
+- Then something happened.
+- Oh, I know
+- I met my school crush, seems like she is'was the the anima I didn't see for awhile in my dreams.
+- We were talking. I found out that she kinda have another guy that has a hummer car. I thought that he projects masculinity
+- and in that moment my neighbor met me. Which a really first one with him.
+- He was an alcoholic very loud and a bit violent. in his 30-40s. 
+- Died recently which took me by surprise.
+- So I found out that during talking with the school crush, I went back to school, like I was walking with here in the opposite direction from where I was walking when I started,.
+- I was going away from school and now I was walking back.
+- And I meet my neighbor.
+- And suddenly find a lot of people from military around me. Start to panic a bit.
+- Try to get out.
+- and again in the moment they almost caught me - I fly away. Like I start levitate. Guy talks to me,. I don't remember tone. But it was like apologetic and kinda inevitable.Association is like "yeah, yeah, you don't want to join military, but you kinda have too and I will find a way to make you)
+- One guy catches me by feet but then weirdly enough releases me
+- so I levitate higher, like it's tough to control attitude.
+- oh, by the way, that neighbor that passed away, he was in military too. 
+- So I go and fly higher, maybe like 500 meters. and I fly abive the wallse of buildings, I thought I'll make them loose me, but they're like crawl above the buildings I still very much on my tail. 
+- It feels like a manhunt. They yell and curse at me. 
+- I'm kinda distrubed, trying to run away
+- But then they somehow catch me
+- 
+- And then they like talk very shamefully about us. Us because there was a few guys caught too, they forced us on knees in a row.. Which kinda now seems like as if they were execute us, though I'm not sure.
+- And then I wake up.so I wake up and immediately have an vision when my "sky parents" save me by sending like a beam of high energy that vaporized everyone around me, including those 2 strangers, but kept me safe. Not sure whether it was to bring me to them, or like last ditch effort to save me.Or maybe it was the thing that dream was compensation - fight back to dreams message by  another fantasy when I get saved aby killing everyone.
+- 
+- 
+- 
+- 
+- - And before that dream, I had one more, I was walking alongthe river and met random guy that was leaving the country. He was hidign from military as well. I asked him where he is going, and he said that like he's goingto shore or something to leave the country. We had a small talk, he wanted to help me to continue hiding, but I didn't think of it as serious "want", but he than like was concerned, like how we would connect and how he would transfer knowledge about how he got to the freedom. Then he showed me where he was hiding
+- It was like in a gym, familiart place for me from high school. He went in there, took keys and said that he was hiding like that for years.
+- 
+- Then we went outsid, there was some girl in distress? I remember this very-very poorly. 
+- 
+- 
+- 
+- 
+- 
+- 
+- So the thing is - these kind of dreams with military and me flying away from them (or police) is now like 5-6th dream I had on the same theme in the last 2-3 months. 
+- I have a feeling that it happens oftenwhen I'm kinda discouraged to work, or avoidant or osmething.
+- but I wasn't been able to crack it. so far.
+- The isue with old template is that kinda ocks "
