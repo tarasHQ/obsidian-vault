@@ -60,6 +60,12 @@ OVERVIEW_FOR_VIDEO
 - 
 
 ## TASK EXECUTION
+- ##### 16:21
+	 - seems like some issues were transient. Now also checking some **ram efficiency options for proxmox** 
+- ##### 16:13
+	 - issues with **telegram notification**, additional security added more hula-hoops to jump through
+- ##### 15:57
+	 - Ok, there's a few ways of abuse. Chances of "bad apples" in this project is low, but I'll still set some safe guards + telegram notifications.
 - ##### 15:39
 	 - **downloaded artalk local repo to inspect few image uploading security issues**
 - ##### 15:32
@@ -125,6 +131,15 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
+- ###### 17:44 | MEANING:🔴 | PRIDE:🤷‍♂️
+	- And this is considered "fun" and "pleasureful".
+	- And yeah, want sweets now too.
+	- That's the worst one... aftermath. Like not only it withdraw energy, but also it now distracts me with further temptations. 
+		- I can order a pizza, watch rings of power, relax. Yeah. Tuesday. It's been like what 36 hours since my indulgence binge ended? And now I need to relax? 
+		- And the impulse pretty strong too. Like I really consider it, if I didn't moved all money to dad's account - I would order it right now. 
+		- 
+- ###### 16:27 | MEANING:🔴 | PRIDE:🤷‍♂️
+	- Yeah... getting tired. PMO comes back. And I will probably give in. Not clear mother complex. Just tired. Nothing to avoid. This, then meal, then back to work. 
 - ###### 14:13 | MEANING:🟡 | PRIDE:🤷‍♂️
 	- PMO urge disappeared after I went back to the main tasks. 
 	- ==About LLMs. Seems like it's effort is what matters. I was on two poles of interfacing with LLMs. One is vibe coding when you just delegate as much as possible and steer it based on result feedback. Another pole is very conservative use where you do as much as possible yourself. But, as always, truth is in the middle. Meaningfulness right now signifies that - because yeah, most of my work is copypaste, but at the same time I don't delegate, I read everything and stay in the process and make decisions or ask for clarifications, and because I'm doing that - it doesn't have that "detachment" that vibe coding has, because then it feels as if I was a parasite on someone else's work = no meaning whatsoever.==
