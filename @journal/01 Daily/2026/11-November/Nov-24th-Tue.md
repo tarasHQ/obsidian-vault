@@ -131,6 +131,16 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
+- ###### 18:46 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- So that 15 minutes fluke cost me like what, 2 hours? Yeah. But seems like I managed to restore my spirit. I just didn't want to go eat being in low mood. Because then when work comes back again - I would be massively discouraged.  Ok. Meal and then back in to the second fight.
+- ###### 17:51
+	- ###### 🕸️ The Devouring Mother:
+		- Why you shouldn't indulge? Why not give in just today? You still can work after. 
+		- Or at least you can philosophize this issue. 
+	- Yeah. It feels like if I stay in this, answer questions - I would order a pizza. Why? Because you can't answer questions when you're low and want indulgence. Like what answer would you get with this aim? - "Nothing matters, so let's have a pizza".
+	- That's the issue with indulgence. Yesterday it was 30 minutes and then I ate and continue the work. Now it's 1.5 hours. And now I want MORE. Tomorrow it'll be like 4 hours with pizza and everything else. 
+- ###### 17:49 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Why I shouldn't order? Good question. 
 - ###### 17:44 | MEANING:🔴 | PRIDE:🤷‍♂️
 	- And this is considered "fun" and "pleasureful".
 	- And yeah, want sweets now too.
