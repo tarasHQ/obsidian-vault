@@ -194,10 +194,6 @@ GROUP BY true
 
 - ---
 - ### 02 Basic Functionality
-	- #### Phase 005 - Site Structure, Search & Foldings [plan](./phases/005/_plan_005.md)
-	  Establish explicit TypeScript site assembly in place of YAML-driven plugin loading; organize the affected local features; adopt Search locally; implement marker-aware folding and navigation/search revealing.
-	- #### ~~Phase 004 - Structure & Explorer~~ [plan](./phases/_archived/004/_plan_004.md) %% fold %%
-	  Custom Explorer and a focused vault-structure update: create needed entry pages with generic Dataview listings. Keep the complete desktop sidebar; on mobile retain a sticky title/Search/theme bar and slide navigation/widgets separately. Refined entry pages and scroll-aware header behavior are future work.
 	- **Ideas**
 		- Widgets ideas
 		- Pages category of ideas
@@ -211,6 +207,10 @@ GROUP BY true
 			- bug when I’m scrolled down on the page, then pick another explorer page it scrolls up, which is bad and wrong
 			- indentation of lists should be 1/3 of now for phones(in obsidian too)
 			- During scroll menu button isn’t clickable but should be
+	- #### Phase 005 - Site Structure, Search & Foldings [plan](./phases/005/_plan_005.md)
+	  Establish explicit TypeScript site assembly in place of YAML-driven plugin loading; organize the affected local features; adopt Search locally; implement marker-aware folding and navigation/search revealing.
+	- #### ~~Phase 004 - Structure & Explorer~~ [plan](./phases/_archived/004/_plan_004.md) %% fold %%
+	  Custom Explorer and a focused vault-structure update: create needed entry pages with generic Dataview listings. Keep the complete desktop sidebar; on mobile retain a sticky title/Search/theme bar and slide navigation/widgets separately. Refined entry pages and scroll-aware header behavior are future work.
 - ### 01 Fundamentals
 	- #### ~~Phase 003 - Visual Identity~~ [plan](./phases/_archived/003/_plan_003.md) %% fold %%
 	  Palette and three modes, typography, accents, background, favicon, and published visual test pages.

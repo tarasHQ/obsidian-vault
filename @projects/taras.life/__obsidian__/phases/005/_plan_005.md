@@ -71,7 +71,7 @@ GROUP BY true
 	- The loader remains the temporary connection point; code-based site configuration is a later direction, not a Phase 005 configuration rewrite.
 	- Explorer, Theme, and mobile sidebar controls live in feature clusters; shared frames, Head, SPA navigation, and the global theme palette remain outside them.
 	- Folding and Search are later blocks. Review the reflection and subsequent refinement for agreed behavior and remaining integration choices.
-	- Syncer currently strips comments before publishing; the developer wants a separate fork block to preserve them. Website processing must show ordinary comment contents without delimiters and distinguish fold markers.
+	- Syncer now exports comments, and `%% fold %%` markers are present in `content/`. Website processing must show ordinary comment contents without delimiters and distinguish fold markers.
 	- Fold structure must preserve section embeds and coordinate revealing with router scrolling; the router scrolls before its final `nav` event.
 
 ---
@@ -86,14 +86,21 @@ GROUP BY true
 Finalize the phase — meta-reflection on what worked, long-term knowledge extracted so plan info can safely die-off, frontmatter set, phase archived.
 
 ### %%◉ STEP 01 - Local Feature Boundary - IMPLEMENTED
-Established a boundary for complete local features and reorganized Explorer, Theme, and mobile sidebar controls into coherent clusters while preserving their existing behavior and shared page structure. Updated the boundary documentation; the existing loader remains the connection point. Checks and the rebuilt site's user experience were confirmed by the developer.%%
+Established a boundary for complete local features and reorganized Explorer, Theme, and mobile sidebar controls into coherent clusters while preserving their existing behavior and shared page structure. Updated the boundary documentation; the existing loader remains the connection point. Checks and the rebuilt site's user experience were confirmed by the developer.
+### Drafted Steps Recommendation
 
-Folding and Search steps are intentionally deferred to their own planning discussions.
+Draft structure only; exact boundaries and implementation details remain to be discussed in the writing-steps flow. Listed in reverse implementation order to match the phase plan.
 
-### ◎ [00 - Start Of The Phase](./steps/00-start.md) 
-**READY**
-The flow is to start the planning in the right state of mind and with the properly prepared phase
+- **06 — Search adoption and Folding integration:** Adopt Search locally, retain the existing engine and page-level index initially, and connect result and preview revealing to Folding.
+- **05 — Popovers and copied content:** Apply author defaults and reveal destinations within each copy, independently of the underlying page.
+- **04 — Visible comments and marker defaults:** Render ordinary Obsidian comments as content and interpret supported `%% fold %%` markers as initially closed folds. Decide during step writing whether these shared processing concerns warrant one step or two.
+- **03 — Navigation and reveal:** Open the necessary folded ancestors before navigating or scrolling to destinations, including links and browser history. Design the reveal capability alongside general Folding.
+- **02 — General Folding:** Establish heading and list-item fold boundaries, controls, and independent nested behavior, while preserving embedded content and existing list behavior. Initially, folds start open; split further if implementation planning shows this is too large.
 
+The site-wide JavaScript warning remains separate phase work. Syncer comment export is complete and does not need another implementation step. Intermediate milestones may not yet support every Search or popover interaction; implementation order need not dictate release grouping.%%
+
+### %%◉ [00 - Start Of The Phase](./steps/00-start.md) - IMPLEMENTED
+The flow is to start the planning in the right state of mind and with the properly prepared phase%%
 
 
 %%
