@@ -170,5 +170,13 @@
       ],
       "key": "R"
     }
+  ],
+  "templater-obsidian:_static/templater/inline/[T]task-execution-insert-log.md": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "R"
+    }
   ]
 }

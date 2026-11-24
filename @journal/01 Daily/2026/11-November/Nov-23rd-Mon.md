@@ -8,42 +8,11 @@ journal-date: 2026-11-23
 ```
 
 ---
-
-```meta-bind-button
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-	- [ ] Check audio delay to webcam
-	- [ ] Check TickTick schedule (correct day, scheduled)
-	- [ ] Set time of next sleep for stager timer.
-	- Obsidian
-		- [ ] Write overview of the current day
-		- [ ] Create journal for the next day
-		- [ ] Make sure all day's reflections are linked artifacts
-		- [ ] Delete Dream Analysis block if empty
-		- [ ] Delete other blocks if empty
-	- [ ] Night scene
-	- [ ] Check IP cam (quality, delay)
-		- [ ] Enable sleep blur
-	- [ ] monitor OFF (seems like keeping on makes him die faster)
-	- Cat
-		- [ ] Clean up cat's litter box
-		- [ ] Food + plate is in my room at the shelf 
-			%%(to feed right away and not be distracted by her)%%
-	- [ ] Make sure there's tomorrow's food out of the freezer.
-
----
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-OVERVIEW_FOR_VIDEO
+Overview gets repeating. But each fight withing a day is unique. Today was a good day too. I'm going to sleep with meaning and hope. But the biggest challenge is after I wake up, since that would be time when the website will have to be put back into the priority work
 
 ---
 
@@ -60,8 +29,14 @@ OVERVIEW_FOR_VIDEO
 - 
 
 ## TASK EXECUTION
+- ##### 04:01
+	 - **first log in to artalk** phew. 
+- ##### 03:37
+	 - **initial setup of artal** is done, now moving to **setting up cloudflare tunnel**
+- ##### 03:31
+	 - seems like I'm **done with home assistant** 
 - ##### 03:17
-	 - **installed artalk + configuring it** and also **setup most automations in HA, and working on**
+	 - **installed artalk + configuring it** and also **setup most automations in HA, and working on home bridgekit** to have all my home assistant devices synced with apple home, so I can control them through homepod+siri
 - ##### 02:43
 	 - **removing internet access for some devices** and **discussing installation of artalk**
 - ##### 02:24
@@ -121,6 +96,19 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
+- ###### 04:55 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Unclear if I would pay for today. On the next day. Usually it's what happens. Don't understand mechanism. But if I stay in the flow for too long, which I did "today" - it backfires. 
+	- Another insight - is that what I need with the website is what I had now. Like this shit was a bit complex, but not too much. Challenging mostly. Hence I was staying in the flow for so long. While in the website for some reason I just get wiped out by the emerging complexity. Don't know how and why... or don't I?
+		- like in this case - I was executing primarily. Planning vs action probably was like 50:50. While with the website - planning vs action is like 90:10. Maybe that's what causes overwhelm and not complexity? Latter is just used as justification for avoidance then? 
+- ###### 04:37 | MEANING:🟢 | PRIDE:🤷‍♂️
+	- It was tedious. But so much is done in a better way... It was worth it. It's just like 5x better all around. So much more secure... notifications are proper. Full backup flow with proper redundancy (if that's correct word). home assistant - done properly from the scratch. No more unnecessary headache. Self contained too. Million small things. But in result - I constantly stumble on one of those and it makes me happy. Because they work and make my life easier. Hopefully they won't break))
+- ###### 04:27 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- That's the worst thing about PMO. Arbitrary nature of consequences. I did PMO, but then I ate and like the day is pretty productive. Which creates thoughts that "maybe I can have a cake and eat it too?"
+- ###### 04:24 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Going to eat. Like the main issue is if I eat in the morning - I lose initial boost for 4-5 hours of work. So I have to eat now. Even though the sleep is in 1 hour. 
+- ###### 03:32 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Yeah. time log of execution of tasks is kinda interesting. Not sure if it'll stay though. But just a bit appreciation for things I did. Like that's a lot) 
+	- Also have to eat soon. And also sleep in 1.5 hours. Not sure if worth it... But I have to... Otherwise I'll pay with decreased energy in the first half of the next day.
 - ###### 01:19 | MEANING:🟡 | PRIDE:🤷‍♂️
 	- There's something to that idea to have execution of tasks listed. Like it really does structure time and work. Does so really nicely. Not sure if it's beneficial though
 - ###### 23:39 | MEANING:🟡 | PRIDE:🤷‍♂️

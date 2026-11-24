@@ -12,7 +12,7 @@ journal-date: 2026-11-22
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-OVERVIEW_FOR_VIDEO
+
 
 ---
 

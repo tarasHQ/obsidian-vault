@@ -8,38 +8,6 @@ journal-date: 2026-11-13
 ```
 
 ---
-
-```meta-bind-button
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-	- [x] Check audio delay to webcam
-	- [x] Check TickTick schedule (correct day, scheduled)
-	- [x] Set time of next sleep for stager timer.
-	- Obsidian
-		- [x] Write overview of the current day
-		- [x] Create journal for the next day
-		- [x] Move uncompleted tasks
-		- [x] Make sure all day's reflections are linked under reflections
-		- [x] Delete Dream Analysis block if empty
-		- [x] Delete other blocks if empty (task/reflections)
-	- [x] Night scene
-	- [x] Check IP cam (quality, delay)
-		- [x] Enable sleep blur
-	- [x] monitor OFF (seems like keeping on makes him die faster)
-	- Cat
-		- [x] Clean up cat's litter box
-		- [x] Food + plate is in my room at the shelf 
-			%%(to feed right away and not be distracted by her)%%
-	- [x] Make sure there's tomorrow's food out of the freezer.
-
----
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW

@@ -15,7 +15,7 @@
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
     {
-      "template": "_static/templater/inline/task-execution-insert-log.md",
+      "template": "_static/templater/inline/[T]task-execution-insert-log.md",
       "insert_enabled": true,
       "create_enabled": false
     }
