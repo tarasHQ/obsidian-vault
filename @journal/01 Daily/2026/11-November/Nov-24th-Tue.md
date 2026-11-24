@@ -48,11 +48,11 @@ OVERVIEW_FOR_VIDEO
 ---
 
 >[!tldr] CONTEX
->Sleep Duration - **0:00**
+>Sleep Duration - **4:45**
 > 
->Time Spent in Bed - **TODO**
+>Time Spent in Bed - **Mid**
 > 
->Approx. Compensation of Dreams - **TODO**
+>Approx. Compensation of Dreams - **Don't remember. Was a bit low, but now I'm always low when wake up...**
 
 ---
 
@@ -60,6 +60,18 @@ OVERVIEW_FOR_VIDEO
 - 
 
 ## TASK EXECUTION
+- ##### 15:39
+	 - **downloaded artalk local repo to inspect few image uploading security issues**
+- ##### 15:32
+	 - what I did? **security hardening, against brutforce especially, image uploading** also updated **uptime checks with notifications**... miscellaneous things
+- ##### 15:02
+	 - So, **added google + github OAuth, set up anonymous comments, and telegram notifications** for artalk. doing **security hardening**
+- ##### 14:31
+	 - checking how long I slept and also uploading muxed/sped-up recording to youtube (picking thumbnail) + checked remark42 old backup to get going with **artalk google oauth**
+- ##### 14:24
+	 - **encryption for proxmox backups done** now working on **cloudflare captcha for artalk**, since website doesn't support artalk - I only prepare backend. 
+- ##### 14:00
+	 - **artalk backups done** but it listed me 79 tasks left))) that's only on backend...yeah...
 - ##### 13:49
 	 - **cleanup done** back to **artalk** + **backups encryption**
 - ##### 13:37
@@ -113,6 +125,9 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
+- ###### 14:13 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- PMO urge disappeared after I went back to the main tasks. 
+	- ==About LLMs. Seems like it's effort is what matters. I was on two poles of interfacing with LLMs. One is vibe coding when you just delegate as much as possible and steer it based on result feedback. Another pole is very conservative use where you do as much as possible yourself. But, as always, truth is in the middle. Meaningfulness right now signifies that - because yeah, most of my work is copypaste, but at the same time I don't delegate, I read everything and stay in the process and make decisions or ask for clarifications, and because I'm doing that - it doesn't have that "detachment" that vibe coding has, because then it feels as if I was a parasite on someone else's work = no meaning whatsoever.==
 - ###### 13:49 | MEANING:🟡 | PRIDE:🤷‍♂️
 	- Want to PMO. Weird. Was it because I spent too much time on bitwarden cleanup?
 - ###### 13:05 | MEANING:🟡 | PRIDE:🤷‍♂️
