@@ -60,6 +60,18 @@ OVERVIEW_FOR_VIDEO
 - 
 
 ## TASK EXECUTION
+- ##### 03:17
+	 - **installed artalk + configuring it** and also **setup most automations in HA, and working on**
+- ##### 02:43
+	 - **removing internet access for some devices** and **discussing installation of artalk**
+- ##### 02:24
+	 - **installing additional integration on home assistant** and **preparing debian vm for artalk**
+- ##### 02:05
+	 - Working on both further **recovery/restoration of old HA automations/scripts/etc**. And now **configured installed debian os for artalk**
+- ##### 01:35
+	 - Takes a bit of time. Getting bored. 
+- ##### 01:23
+	 - **installing debian on VM**
 - ##### 01:14
 	 - got stuck a bit on **creation config** but now vm is created.
 - ##### 00:56
@@ -109,6 +121,8 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
+- ###### 01:19 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- There's something to that idea to have execution of tasks listed. Like it really does structure time and work. Does so really nicely. Not sure if it's beneficial though
 - ###### 23:39 | MEANING:🟡 | PRIDE:🤷‍♂️
 	- I thought about execution. And got interesting idea I didn't implement before. Previous task list is just like cognitive offload I'm not really interested in. It was "fire and forget". Now though, what if I'll actively write in top split window on what I'm doing? To like have a sense of it, and avoid being completely in the unconscious flow? 
 	- Timed log would be good. For task execution. I need that. Really need that. Hotkeyed to be able to lot without touching mouse
