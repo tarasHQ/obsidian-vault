@@ -20,7 +20,7 @@
 			- `ideas/` - For phase-scoped idea capture, to process them later. 
 				- `parking.md` - empty file for quickly capturing/off-loading ideas
 			- `steps/` - Implementation steps files
-				- `00-start.md` - Baked-in phase-start step, created by the phase template. Checklist to start planning in the right state of mind.
+				- `00-start.md` - Baked-in phase-start step, created by the phase template. Phase-start checks, plan filling and project registration; completed and condensed during initial planning.
 				- `XX-step-name.md` - List of created step files when the phase is mature enough for implementation.
 				- `99-end.md` - Baked-in phase-end step, created by the phase template. Checklists for the end of the phase (reflections, docs alignment, archiving).
 			- `_plan_NNN.md` - High-level plan of the current phase, also is an entry to the phase. Its "## Exploration" section holds the phase-scoped exploration notes
@@ -54,10 +54,10 @@
 		- [[shared/flows/_flow-creation-rules.md]] - internal rules for the creation of the flow, to make sure the flow isn't a bad one.
 	- [[shared/flows/refining-reflection.md]] - to refine user's raw reflections, by showing all possibilities of that reflection 
 	- [[shared/flows/scorched-earth-critique.md]] - to discuss user's reflections/plans/ideas and separate the wheat from the chaff 
-	- [[shared/flows/initial-planning.md]] - to discuss and lock down user's ideas into the implementable form
+	- [[shared/flows/initial-planning.md]] - to discuss and structure existing scope into a high-level plan and locked-in step list, then complete and condense step 00.
 	- [[shared/flows/writing-steps.md]] - to discuss and create implementable low-level steps. 
 	- [[shared/flows/implementing-steps.md]] - to properly implement steps and keep the whole phase up-to-date with changes. 
-	- [[shared/flows/code-review.md]] - to make sure implemented code is properly understood by the user and is of high quality.
+	- [[shared/flows/code-review.md]] - to review implemented code for quality and implement agreed fixes.
 	  
 - ### Templates
   %%Templates that are used by the LLM when user asks to%%
@@ -73,7 +73,7 @@
 	- [[_templater/[T]plan.md]]
 		- a template of the phase's plan
 	- [[_templater/[T]step-start.md]]
-		- a template of the 00 step, with checks and preparations before the work starts.
+		- a template of step 00, covering phase-start checks, plan filling and project registration.
 	- [[_templater/[T]step-end.md]]
 		- a template of the 99 step, with checks and completions of the phase. 
 	- [[_templater/[T]ideas.md]]

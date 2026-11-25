@@ -19,7 +19,7 @@ From existing scope (**what** to do) -> to a discussed and locked-in high-level 
 	- [ ] **A1** - [USER]
 		- Provides the existing scope and related artifacts: reflections, ideas, decisions, plan, etc.
 	- [ ] **A2** - [LLM]
-		- Explore the relevant project docs/source, phase plan, `00-start.md` and `_project.md`.
+		- Explore the relevant project docs/source.
 		- Goal is to understand the scope, constraints, dependencies and integration points enough to propose a step structure. Verify decisive facts in relevant source/docs, not only exploration summaries.
 - ### B - Drafting the Step Structure
 	- [ ] **B1** - [LLM]
@@ -43,12 +43,10 @@ From existing scope (**what** to do) -> to a discussed and locked-in high-level 
 		- Present a self-contained, grounded step structure in the same format as B1, including reasoning, dependencies, worthwhile parallel groups and decisions needing discussion.
 		- Also propose the plan's Description (leave Visions to the user), concise Exploration entries, any high-value Persistent Storage entries, and the phase's `_project.md` entry/update.
 		- Shared phase-wide agreements belong concisely in Persistent Storage; detailed agreements belong in step files when written. Don't fill storage for its own sake.
-	- [ ] **D2** - [LLM] - Same Response
-		- Include a response template inside a markdown codeblock: numbered step/decision names, each followed by an empty bullet for the user to fill. Separate entries with empty lines.
 - ### E - Discussion and Locking In
 	- [ ] **E1** - [LLM + USER]
 		- Discuss and lock in the step boundaries, order, descriptions, parallel groups and other proposed document changes. Resolve questions affecting the structure, exploring further where necessary.
-		- Ensure the user understands how implementation will proceed. Discuss remaining `00-start.md` checks, including those requiring the user's personal confirmation; don't infer answers or check them automatically.
+		- Ensure the user understands how implementation will proceed. Don't infer answers or check them automatically.
 		- Continue until the user approves the agreed structure and document changes before proceeding to F.
 - ### F - Implementing and Completing Step 00
 	- [ ] **F1** - [LLM] - Filling Out the Plan

@@ -8,42 +8,13 @@ journal-date: 2026-11-24
 ```
 
 ---
-
-```meta-bind-button
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-	- [ ] Check audio delay to webcam
-	- [ ] Check TickTick schedule (correct day, scheduled)
-	- [ ] Set time of next sleep for stager timer.
-	- Obsidian
-		- [ ] Write overview of the current day
-		- [ ] Create journal for the next day
-		- [ ] Make sure all day's reflections are linked artifacts
-		- [ ] Delete Dream Analysis block if empty
-		- [ ] Delete other blocks if empty
-	- [ ] Night scene
-	- [ ] Check IP cam (quality, delay)
-		- [ ] Enable sleep blur
-	- [ ] monitor OFF (seems like keeping on makes him die faster)
-	- Cat
-		- [ ] Clean up cat's litter box
-		- [ ] Food + plate is in my room at the shelf 
-			%%(to feed right away and not be distracted by her)%%
-	- [ ] Make sure there's tomorrow's food out of the freezer.
-
----
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-Massive dream analysis...
+A massive dream analysis. I'm still all over the place though. It feels like something accumulates behind the curtains. I have to learn to work on complex things in a optimally rushed manner. I tried to just work, but it seems like only the part of the solution. I need something more/else. 
+
+No idea honestly about what to do. It's just sad. All I can do is to stay in the tension and avoid falling out from it into days of indulgence binges. And to also do some inner work when I'm inclined to. 
 
 ---
 
@@ -59,7 +30,6 @@ Massive dream analysis...
 	 - Will run my completed analysis on LLMs. Curious if it'll bring any insights.
 	 - UPD.
 	 - GLM was interesting but not really insightful 
-	 - 
 - ##### 02:18
 	 - Now let's try to make sense out of that dream. It repeats very often dream-wise, so it has to say about something I'm missing in my life repeatedly.
 - ##### 02:13
@@ -114,8 +84,17 @@ Massive dream analysis...
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
+- ###### 08:08 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- ==🔴For the "next day" - try to really rush for an hour or two. This is another issue with meaning withdrawal from the work. What if I put 100% into it? For 1-2 hours. Maybe I can implement it faster? Like if I really stay in rush and on time? I would also need some timer that beeps every 10 minutes, to kinda keep being attached to the time. ==
+- ###### 07:44 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Ok, so here's the thing. I figured out multiple ways to improve stuff + now I add support for controllable parallelism. With those tasks on proxmox - maybe what made them meaningful - was that I was often working on 2 in parallel. So what if I can do the same here as well? 
+	- Planning becomes more important though, because unexpected drift during implementation can create a bit of issues. But I'll cover that through two types of parallelism. Either isolated one, where steps written and implemented in parallel and in isolation from other steps. OR where there's sense to implement one big chunk of related work in multiple steps that are written together, so they're internally coherent. 
+- ###### 06:59
+	- Ok, I maybe get a bit of understanding about what I wanted. It gave me enough meaning to delay the sleep for a bit. initial planning flow was a mistake in old format. It was another refining pass. No. It should be a high level implementation pass. Where I discuss how to implement things globally. Otherwise there's a gap. When I refine-refine-refine, and the bam - instant shift to low level implementation. 
+- ###### 06:48 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Ok, it won't work. I go to sleep. Either I'm too tired or conclusion of dream analysis wasn't right. Those clicks still there, but conclusion especially... something feels off. 
 - ###### 06:38 | MEANING:🟡 | PRIDE:🤷‍♂️
-	- 
+	- Don't know if I was unto something in dream analysis. Maybe I just have to sleep right now? Like meaning is kinda there, but I'm just dead. 
 - ###### 06:22 | MEANING:🟡 | PRIDE:🤷‍♂️
 	- Want to sleep bad. A bit teared apart by that and the need to work for a bit. 
 - ###### 06:02 | MEANING:🟡 | PRIDE:🤷‍♂️
