@@ -207,6 +207,8 @@ GROUP BY true
 			- bug when I’m scrolled down on the page, then pick another explorer page it scrolls up, which is bad and wrong
 			- indentation of lists should be 1/3 of now for phones(in obsidian too)
 			- During scroll menu button isn’t clickable but should be
+				- iOS Safari consumes the first tap during page momentum scrolling. A standalone test on iPhone worked: make the content an independently scrollable area (`overflow-y: auto`) and place the floating button outside it, so tapping the button during scrolling registers immediately.
+				- Test this approach in the actual site later; changing the main scroll area also requires checking SPA navigation, heading links, scroll restoration, and the sticky header.
 	- #### Phase 005 - Site Structure, Search & Foldings [plan](./phases/005/_plan_005.md)
 	  Establish explicit TypeScript site assembly in place of YAML-driven plugin loading; organize the affected local features; adopt Search locally; implement marker-aware folding and navigation/search revealing.
 	- #### ~~Phase 004 - Structure & Explorer~~ [plan](./phases/_archived/004/_plan_004.md) %% fold %%

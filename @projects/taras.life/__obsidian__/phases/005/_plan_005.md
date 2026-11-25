@@ -41,7 +41,7 @@ GROUP BY true
 
 ## Persistent Storage
 %%Bullet list only for important high-level things that MUST persists between steps. AS CONCISE AS POSSIBLE. %%
-- General Folding is implemented with initially open, independent heading and list folds. Developer reports checks and build green and basic behavior working; arrow positioning needs refinement. Marker defaults, destination revealing, and copied-content integration remain open.
+- General Folding is complete with initially open, independent heading and list folds. Marker defaults, destination revealing, and copied-content integration remain open.
 
 ## Exploration
 %%Contains related exploratory knowledge to make initial exploration in the task more efficient.%%
@@ -72,7 +72,7 @@ GROUP BY true
   %%Free form. Concise. For more precise exploration. Goal is to avoid misleading/wrong/inefficient exploration. Optional. Should be really concise though %%
 	- The loader remains the temporary connection point; code-based site configuration is a later direction, not a Phase 005 configuration rewrite.
 	- Explorer, Theme, and mobile sidebar controls live in feature clusters; shared frames, Head, SPA navigation, and the global theme palette remain outside them.
-	- Folding and Search are later blocks. Review the reflection and subsequent refinement for agreed behavior and remaining integration choices.
+	- General Folding is complete; Search and the remaining Folding integrations are later work. Review the reflection and subsequent refinement for agreed behavior and remaining integration choices.
 	- Syncer now exports comments, and `%% fold %%` markers are present in `content/`. Website processing must show ordinary comment contents without delimiters and distinguish fold markers.
 	- Fold structure must preserve section embeds and coordinate revealing with router scrolling; the router scrolls before its final `nav` event.
 
@@ -87,6 +87,9 @@ GROUP BY true
 **READY**
 Finalize the phase — meta-reflection on what worked, long-term knowledge extracted so plan info can safely die-off, frontmatter set, phase archived.
 
+### %%◉ [02 - General Folding](./steps/02-general-folding.md) - IMPLEMENTED
+Implemented initially open, independent heading and list folds with separate controls. The developer confirmed browser checks and reported checks and build green; marker defaults, destination revealing, and copied-content integration remain later work.%%
+
 ### %%◉ STEP 01 - Local Feature Boundary - IMPLEMENTED
 Established a boundary for complete local features and reorganized Explorer, Theme, and mobile sidebar controls into coherent clusters while preserving their existing behavior and shared page structure. Updated the boundary documentation; the existing loader remains the connection point. Checks and the rebuilt site's user experience were confirmed by the developer.
 ### Drafted Steps Recommendation
@@ -97,7 +100,6 @@ Draft structure only; exact boundaries and implementation details remain to be d
 - **05 — Popovers and copied content:** Apply author defaults and reveal destinations within each copy, independently of the underlying page.
 - **04 — Visible comments and marker defaults:** Render ordinary Obsidian comments as content and interpret supported `%% fold %%` markers as initially closed folds. Decide during step writing whether these shared processing concerns warrant one step or two.
 - **03 — Navigation and reveal:** Open the necessary folded ancestors before navigating or scrolling to destinations, including links and browser history. Design the reveal capability alongside general Folding.
-- **02 — General Folding:** Implemented and initially checked; refine arrow positioning and review remaining behavior before completion. Headings and list items start open and support independent nested folds.
 
 The site-wide JavaScript warning remains separate phase work. Syncer comment export is complete and does not need another implementation step. Intermediate milestones may not yet support every Search or popover interaction; implementation order need not dictate release grouping.%%
 

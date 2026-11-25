@@ -92,6 +92,11 @@
 
 # ARCHIVED
 
+- ## Issues
+	- ###### Folding: first-block list boundaries %% fold %%
+		- A first block such as a quote may be the visible label or foldable content. Block type alone may not determine the intended boundary; revisit if this becomes a real problem.
+		- In simpler words - it's kinda basically related to how folding processes children, and different types of blocks such as codeblock or quote may have unexpected folding behavior that needs to be checked. I delayed this because I don't use those much. And this issue is kinda open flood gates to explicitly defining lots of possible combinations of blocks that may bypass this. 
+
 - ## LLMs
 	- ###### LLMS.txt
 	- ###### Ability to serve raw .md webpages

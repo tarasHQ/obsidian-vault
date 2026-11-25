@@ -104,8 +104,57 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
+- ###### 19:17
+	- So here's the thing. 
+		- reflection first
+		- refining reflection 
+		- critique
+		- initial planning that drafts steps
+		- steps loop
+			- **planning implementation of a step**
+				- This is a new one
+				- idea is to make LLM list every minor decisions there is. 
+					- and heavily rely on explore subtask, instead of file reads, to reduce the size of the context.
+				- This must be VERY token efficient so it's cheap to have fast paced back and forth. 
+				- Goal - on example with foldings. 
+					- how icon placed into the layout
+					- how it's aligned (manual offsets or alignment rules)
+					- is that border-trick icon or svg
+					- how it is adapted for mobile layout
+					- how it's shown - is it on hover or always visible, if on hover then on hover of what
+				- And not only it records those questions - it records my answers and reasoning. 
+				- This is questions that kinda can be answered without knowing much about codebase. 
+				- Ok, I see it now. Yes. Implementation details (mostly code agnostic) of the what's being implemented. 
+			- **writing a step**
+				- and writing a step should take all past docs and now discuss with me about how exactly implementation goes. Key thing - not dumping all at once. But block by block. Like writing out the new code - and discussing it before proceeding to the next step. THAT'S IT. I mean this is what maybe I was looking for.
+				- discuss if it makes sense to split step into multiple parts. 
+				- after writing - one last run of explore on only docs. written step and initial files, to make sure nothing is missed.
+			- implementing a step
+- ###### 19:02
+	- I prayed for 10 minutes, on my knees, outside of cameras FOV, to not make it performative. And the only vision I got - I don't need opus, all I need is there already, I just have to open my eyes. 
+	- So let's try to follow this through. 
+	- It seems like I need to go even lower in planning. 
+	- I need LLM to write an actual code in the steps planning. Code that it will implement. 
+	- Like it's simple - staying on high level doesn't help, and I really doubt that moving to opus will solve it, because it's an internal issue. If I wanted the result - I would've left with the first approach, did some cheap and dirty fixes to make it look ok, and moved on. 
+	- My plan was detailed though, but it was detailed on features, not implementation. 
+	- With foldings I had to go to the bottom of it. 
+	- And I need very specific flow for that. It seems like. Context efficient. So it doesn't read whole codebase and then burns through usage on each turn. For writing steps/implementation it's good, BUT. 
+	- **Thank God for Heilung and their Anoana clip and Traust performance** - in the moment I had thoughts of like my father and other manly men that would laugh at this crying bitch that can't work. But, again, I start to see masculine energy in exactly my kind of behavior. I don't allow the pride to get in front of the task completion. I was mistaken. I got seriously depressed. Manly man drunk/jerk off/snore/etc. at this point. Because I know them and see that there's difference between the persona and what's underneath. But instead of doing that - I publicly humiliated myself by crying on camera, but it was needed to shed the pride and depression. And now I'm preparing a new charge at the Dragon of death, and will meet him again voluntarily. I'm not trying to jerkoff myself by saying this, I just lack that masculine energy, a lot, and on the rare occasions when it glimmers through - I need to acknowledge it, so it's more likely to be accepted the next time. 
+	- ==Crying is good. Period. It keeps me flexible. Without crying I would've de-railed the whole day or even more. And well, that what I was doing exactly before.==
+		- **Only rule of crying is that it has to lead to confrontation with dragon again. You don't cry to be a victim - you cry to dissolve established rigidity that proved to be useless but at the same time it's too painful to shed naturally**
+- ###### 18:49
+	- Ok, the rush was meaningful. It wasn't stupid. It had to show me something. And it did. Exactly why I'm avoidant so much. 
+	- Because there's death at my doors and I don't want to die. But at the same time I'm trapped, and only option I see to get out - is to die. 
+	- So what I'm gonna do about it?
+	- Claude Code path - it's simple, I can't afford the opus, without the opus I might as well stay on current plan. And also I don't know if it's that good, because he was super good like 8 months ago when I used it - and it also caused a lot of headache. 
+	- So what's the issue right no?
+		- It adds logic, styles, structure, etc. to the code that I know nothing about. And it's pretty hard to learn it. 
+		- I still fly in skies. Seems like the Rush was meaningful because of the Puer's fantasy. I envisioned like I'll do lots of things and finally break through the chains of avoidance and will be able to work properly - that was a failure. 
+		- I tried to understand what it does, and it felt as if I did - but I didn't. ==Actionability seems to be a wrong path.==
+		- Because I though that yeah - it'll be so good to have result visible fast. So it will more like a progress - but in reality - here's how I feel: there are some changes done that have consequences through many places of the codebase. And on top if it - I wrote over them like 3 times on refining the thing. So current intention is different from the first intention under which the code was written. And LLM asks me for another round of "refinements". I just can't be bothered with it. 
 - ###### 18:07
-	- I tried the "action" approach on this damn foldings. But at first it positioned them badly, then it messed up layout of lists, then it did it again in the different way. And now 
+	- I tried the "action" approach on this damn foldings. But at first it positioned them badly, then it messed up layout of lists, then it did it again in the different way. And now I see that under such simple thing was a gorge of chaos I didn't "orderized" 
+	- I need to dissolve this state. I just don't see anything beside my death. So yeah, the usual menu. Anoana, Traust, high volume to break through the barrier. 
 - ###### 18:02
 	- This whole speed thing, it's not about what it is on the surface though. No speed = no website = no people = 0 chances to finish the main project = not getting out from the hell and misery I'm in = suicide at some point in the future. 
 	- So yeah... maybe that's the reason I give up so quickly on this, because any significant failure/obstacle gets to my death so fast, that it feels like a strong punch to my psyche. 
