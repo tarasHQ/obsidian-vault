@@ -12,7 +12,7 @@ journal-date: 2026-11-23
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-Overview gets repeating. But each fight withing a day is unique. Today was a good day too. I'm going to sleep with meaning and hope. But the biggest challenge is after I wake up, since that would be time when the website will have to be put back into the priority work
+Overview gets repeating. But each fight withing a day is unique. Today was a good day too. I'm going to sleep with meaning and hope. Reinstalling proxmox and all of its containers/VMs. Making everything properly now. Increasing security substantially on all levels. This is what I would want to have/live through with the main work on the website and then on the main project, but for some reason I can't have it right now...
 
 ---
 
