@@ -43,7 +43,7 @@ action:
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-OVERVIEW_FOR_VIDEO
+Massive dream analysis...
 
 ---
 
@@ -55,6 +55,8 @@ OVERVIEW_FOR_VIDEO
 >Approx. Compensation of Dreams - **Don't remember. Was a bit low, but now I'm always low when wake up...**
 
 ## TASK EXECUTION
+- ##### 05:47
+	 - Will run my completed analysis on LLMs. Curious if it'll bring any insights.
 - ##### 02:18
 	 - Now let's try to make sense out of that dream. It repeats very often dream-wise, so it has to say about something I'm missing in my life repeatedly.
 - ##### 02:13
@@ -109,6 +111,8 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
+- ###### 04:40 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Done with dream analysis. Meal next. I pray I would have enough meaning to work after. 
 - ###### 02:13 | MEANING:🟡 | PRIDE:🤷‍♂️
 	- I have this repeating motif for dreams of me flying away from police/military, who are trying to catch me. And it feels to me it happens during these "mental blocks" when I can't start to work...
 		- That made me want to write down dreams and now I want to try to analyze them. Not with my old "template", for some reason it doesn't help really because it makes creative and naturally chaotic process - bureaucratized. As if I'm filling some forms. So yeah. 
@@ -153,39 +157,40 @@ OVERVIEW_FOR_VIDEO
 	- Music man... I woke up discouraged. Pretty much I wake up discouraged every day now. And music kinda upped my spirit. Significantly. Made me want to thank God for this day/life.
 	- So, today I plan to make server-side of artalk production ready, then proceed to work on website. There's a lot to do with foldings. Then I'll integrate artalk. 
 ==REPEAT The Project is dead. Website is priority. Stay in tension by avoiding indulgence==
-- ## Dreams
-	- ### Flying away from the authority
-		- i was going home from the school. There was a long wait about where to go, but I decided something unhealthy. Indulgence?
-		- I was lie considering. The same I consider with PMO
-		- Then I went on my way
-		- wmet some friendly guy,then an American, I was kinda accidentally pushing my arm into his face when I tried to squeeze between crowd.
-		- Then something happened.
-		- Oh, I know
-		- I met my school crush, seems like she is'was the the anima I didn't see for awhile in my dreams.
-		- We were talking. I found out that she kinda have another guy that has a hummer car. I thought that he projects masculinity
-		- and in that moment my neighbor met me. Which a really first one with him.
-		- He was an alcoholic very loud and a bit violent. in his 30-40s. 
-		- Died recently which took me by surprise.
-		- So I found out that during talking with the school crush, I went back to school, like I was walking with here in the opposite direction from where I was walking when I started,.
-		- I was going away from school and now I was walking back.
-		- And I meet my neighbor.
-		- And suddenly find a lot of people from military around me. Start to panic a bit.
-		- Try to get out.
-		- and again in the moment they almost caught me - I fly away. Like I start levitate. Guy talks to me,. I don't remember tone. But it was like apologetic and kinda inevitable.Association is like "yeah, yeah, you don't want to join military, but you kinda have too and I will find a way to make you)
-		- One guy catches me by feet but then weirdly enough releases me
-		- so I levitate higher, like it's tough to control attitude.
-		- oh, by the way, that neighbor that passed away, he was in military too. 
-		- So I go and fly higher, maybe like 500 meters. and I fly abive the wallse of buildings, I thought I'll make them loose me, but they're like crawl above the buildings I still very much on my tail. 
-		- It feels like a manhunt. They yell and curse at me. 
-		- I'm kinda distrubed, trying to run away
-		- But then they somehow catch me
-		- 
-		- And then they like talk very shamefully about us. Us because there was a few guys caught too, they forced us on knees in a row.. Which kinda now seems like as if they were execute us, though I'm not sure.
-		- And then I wake up.so I wake up and immediately have an vision when my "sky parents" save me by sending like a beam of high energy that vaporized everyone around me, including those 2 strangers, but kept me safe. Not sure whether it was to bring me to them, or like last ditch effort to save me.Or maybe it was the thing that dream was compensation - fight back to dreams message by  another fantasy when I get saved aby killing everyone.
-	- ### Helpful Stranger
-		- - And before that dream, I had one more, I was walking alongthe river and met random guy that was leaving the country. He was hidign from military as well. I asked him where he is going, and he said that like he's goingto shore or something to leave the country. We had a small talk, he wanted to help me to continue hiding, but I didn't think of it as serious "want", but he than like was concerned, like how we would connect and how he would transfer knowledge about how he got to the freedom. Then he showed me where he was hiding
-		- It was like in a gym, familiart place for me from high school. He went in there, took keys and said that he was hiding like that for years.
-		- Then we went outsid, there was some girl in distress? I remember this very-very poorly. 
+
+## Dreams
+- ### Flying away from the authority
+	- i was going home from the school. There was a long wait about where to go, but I decided something unhealthy. Indulgence?
+	- I was lie considering. The same I consider with PMO
+	- Then I went on my way
+	- wmet some friendly guy,then an American, I was kinda accidentally pushing my arm into his face when I tried to squeeze between crowd.
+	- Then something happened.
+	- Oh, I know
+	- I met my school crush, seems like she is'was the the anima I didn't see for awhile in my dreams.
+	- We were talking. I found out that she kinda have another guy that has a hummer car. I thought that he projects masculinity
+	- and in that moment my neighbor met me. Which a really first one with him.
+	- He was an alcoholic very loud and a bit violent. in his 30-40s. 
+	- Died recently which took me by surprise.
+	- So I found out that during talking with the school crush, I went back to school, like I was walking with here in the opposite direction from where I was walking when I started,.
+	- I was going away from school and now I was walking back.
+	- And I meet my neighbor.
+	- And suddenly find a lot of people from military around me. Start to panic a bit.
+	- Try to get out.
+	- and again in the moment they almost caught me - I fly away. Like I start levitate. Guy talks to me,. I don't remember tone. But it was like apologetic and kinda inevitable.Association is like "yeah, yeah, you don't want to join military, but you kinda have too and I will find a way to make you)
+	- One guy catches me by feet but then weirdly enough releases me
+	- so I levitate higher, like it's tough to control attitude.
+	- oh, by the way, that neighbor that passed away, he was in military too. 
+	- So I go and fly higher, maybe like 500 meters. and I fly abive the wallse of buildings, I thought I'll make them loose me, but they're like crawl above the buildings I still very much on my tail. 
+	- It feels like a manhunt. They yell and curse at me. 
+	- I'm kinda distrubed, trying to run away
+	- But then they somehow catch me
+	- 
+	- And then they like talk very shamefully about us. Us because there was a few guys caught too, they forced us on knees in a row.. Which kinda now seems like as if they were execute us, though I'm not sure.
+	- And then I wake up.so I wake up and immediately have an vision when my "sky parents" save me by sending like a beam of high energy that vaporized everyone around me, including those 2 strangers, but kept me safe. Not sure whether it was to bring me to them, or like last ditch effort to save me.Or maybe it was the thing that dream was compensation - fight back to dreams message by  another fantasy when I get saved aby killing everyone.
+- ### Helpful Stranger
+	- - And before that dream, I had one more, I was walking alongthe river and met random guy that was leaving the country. He was hidign from military as well. I asked him where he is going, and he said that like he's goingto shore or something to leave the country. We had a small talk, he wanted to help me to continue hiding, but I didn't think of it as serious "want", but he than like was concerned, like how we would connect and how he would transfer knowledge about how he got to the freedom. Then he showed me where he was hiding
+	- It was like in a gym, familiart place for me from high school. He went in there, took keys and said that he was hiding like that for years.
+	- Then we went outsid, there was some girl in distress? I remember this very-very poorly. 
 ---
 ## Dream Analysis
 ### WHY?
@@ -301,4 +306,55 @@ OVERVIEW_FOR_VIDEO
 - ---
 ### The Story
 - Peterson said it. Was kind of main topic of his work. Objective facts don't matter. They're not real. For people. Unless they're wrapped in the story. Which was the basic form of survival through shared experience that made humans capable to destroy the planet. 
-- Like all those atheists/super objective scientists and all other "rational" people got into that field because they had a story that gave meaning to their path. it wasn't pure cold calculation. That path beckoned to them with meaning. And all scientific breakthroughs happens with scientist living in a story that gives meaning to their research. And because they have lots of meaning  - they're very productive. Like my example with website is clear demonstration of productivity when you have coldly calculated conclusion that is 100% corre
+- Like all those atheists/super objective scientists and all other "rational" people got into that field because they had a story that gave meaning to their path. it wasn't pure cold calculation. That path beckoned to them with meaning. And all scientific breakthroughs happens with scientist living in a story that gives meaning to their research. And because they have lots of meaning  - they're very productive. Like my example with website is clear demonstration of productivity when you have coldly calculated conclusion that is 100% correct. But without the story it's just nothing. Like it might be the holy grail to success, but still - without a story it's just shit.
+	- Does that what Jung/Alchemists meant for "nigredo" is? Like you decompose (or maybe start from) "objective" primal elements of something. I'm way way out of my league here. And probably talk nonsense, but I want to lock it down still. Like process of transformation is when you decompose  thing on basic elements and then re-assemble it in a better manner. What if a story is what makes those basic things re-assemble instead of staying apart?
+	- because here's the thing. That idea that I need more action. When I was writing it down before the nap and then deleted it because it was just meaningless yapping - what if that was the basic element. And the dream gave a story to it? So now I can transform through assembling it.
+		- Why? - because I have meaning to assemble it. Like shit won't assemble if it doesn't make sense. And before the nap - it didn't make sense. Like during that yapping I was aware that I was yapping. But objectively it was a great idea. 
+---
+- Man... those clicks, It's like the whole brain clicked)
+- ### Action
+- Ok, so heres' the deal. I will accept current analysis of the dream. Compensation was to give me story. So I follow through on that idea of action. Like it beckons with meaning for me, if I can avoid burning tokens and like 6-12 hours of theoretical planning before actually doing the thing. 
+- Does it removes tyranny? This is crucial question I need to answer, not during walking
+- **Dream analysis isn't brainstorm** - I need to clarify this. So pacing doesn't help. I need to have very concentrated mind with eyes closed, so visions are there too. 
+- Tyranny comes from the Ego's will that wants to follow the flows, even though they have no sense. Like there's good example with previous work with chatgpt, on proxmox - I was dead asked how many things left to do - it said 79. And I was just done, but then continued the work anyway. And when woke up - did the same work. Like it didn't matter. 
+- If the same happened with my usual setup and flows... oh boy... I would've been done for a week) 
+- So tyranny happens when the unconscious says - this flows are BS you're wasting time and energy. And the Ego says - this flows are a must, I have to follow the routine.
+- Routine is good when it makes sense. Morning routine makes sense. I wake up, I clean cat's fort the word, "toilet box", I give her eat, I go to the toilet, I make coffee and wash myself - everything I do has a meaning and it reduces the chaos so I have bigger capacity to confront it during the day. So having a routine isn't enough, it must be meaningful.
+- Now. Routine with the flows - not meaningful. Like there's multiple cases of that experience when I'm just tired of chewing the same thing with LLMs giving me shit time because it has an issue with like a thing that is at 35th place in priority list, And the issue itself is kinda secondary on top of it. 
+- So, I can lock that down. Flows became tyrannical. They don't help me, because they fight the unconscious. At the same time I still need them, because I need that routine. 
+- Like I had no issues running refining reflection flow on my folding ideas. I had no issues with critique. Like it really did help me establish many good additions to the initial thing. 
+- I started to get issues when it went into the implementation planning/doing. So I guess the issue is there. initial-planning > writing-steps > implementing-steps. Probably somewhere here. 
+---
+### Recalibrate
+- I drifted a bit from dream analysis. Just want to make sure it's still alive. So here's the story. Flows/ego become tyrannical when I work on the website. It makes me want to run away. But it always catches me because this projects are my only way out. Not project. No. Diligent work. Yeah. 
+- So my solution is that I need to remove that tyranny. And bring more action. Different things. Tyranny of doing unnecessary work. Military is the example. There's even saying, that in military round objects are moved like by lifting it up and moving, while square objects are rolled. Or something like that. This is what I'm doing with those flows. 
+- So the dream gave me compensation + story (or through the story) to fix that and change my approach to the work. 
+- **Action**
+	- Means I see results(rewards) more often. I'm more grounded in reality, instead of infinitely writing/refining plans. 
+- **De-tyranization**
+	- Means I don't do shit that I don't need to do.
+- **Story**
+	- Means that those two objective things above have underlying meaning to actually follow them through and make it real. 
+---
+### Specifics
+- #### Action
+	- how to make this more actionable? Well, by cleaning up things I don't use like exam in code review. 
+	- **Completion flow in the same task** - make automatic in the same step. Do not delegate to the next step, because LLM completes the step by updating step + plan. And then has to do the same edits again to condense/finalize. 
+	- what else I can do to make it more actionable? Hm...
+	- the flow right now is you reflect/write initial ideas.
+		- then you run refining reflection to figure out the scope of the ideas
+		- then you run critique as safety net against something that is too hard to do or other blind spots. AND to refine the artifacts as well
+		- so far it makes sense. Yeah, it's a bit tedious but it's fine. Like I shouldn't go from one extreme and into another one, and sacrifice quality over speed/actionability. 
+		- initial planning - here's when it gets confusing. **Here's what I need from this flow - it takes the scope of work, and splits it into digestible chunks/steps . fills up the plan too.** Simple. I do not know how to structure implementation - by the end of this flow I know it. 
+		- now writing-steps and implementing-steps
+		- The overlap of material is kinda big. Like it reads the same things. My issue though is with big files. and context sizes. And also, the thing is - it's better to write and implement as separate tasks, because very often it happens that I need to change/discuss things during writing steps. So context size explodes
+		- But I can say to LLM after exploration to create an artifact (or just write a response) with pre-made tool calls for specific huge files. Feels wrong. Like sadly there's big files in quartz, I will remove/dissolve those at some point, but before that - I'll have to just deal with it. 
+	- But as result of this I don't think there's much of actionability to be unlocked. 
+	- Maybe the dream's compensation was to just give me a story? And to tell me that "be aware of tyranny"? 
+- #### De-Tyranization
+	- exam - rarely use - get it out. Should I? Well, yeah. Explanation too. It's not the job of code-review to do this kind of things. Like I must understand shit before it's implemented. Not post factum. 
+	- **code-review = remove exam/explanation stages**
+- I'm done right now. Damn coffee made me sleepy as hell. Probably will go back to sleep, to not mess up the schedule. another 4-5 hours will do the job. And then yeah - hopefully I cracked this one more or less, and it'll help me to move through the work.
+- Nah, I feel like I have to do something before the sleep. I'm hungry though. So I guess I'll have a meal, than a few hours of work (or more). Current tiredness is false. I slept plenty to keep going for at least another 3-4 hours, especially after the meal. 
+- And meaningfulness would be proven by whether I can push through this tiredness. If I'll do it - then it'll be meaningful and worthwhile. 
+- But also I forgot that before that nap I slept for like 4 hours and I'm in pretty big sleep debt right now... So I guess I'll see.
