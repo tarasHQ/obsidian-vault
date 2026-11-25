@@ -6,12 +6,11 @@ setTimeout(() => {
     if (!view) return;
 
     const editor = view.editor;
-    const heading = "## TASK EXECUTION";
 
     // Find target heading
     let line = -1;
     for (let i = 0; i < editor.lineCount(); i++) {
-        if (editor.getLine(i).trim() === heading) {
+        if (editor.getLine(i).includes("TASK EXECUTION")) {
             line = i;
             break;
         }
@@ -35,13 +34,27 @@ setTimeout(() => {
     editor.setCursor({ line: line + 2, ch: 4 });
     editor.focus();
 
-    // Align heading with top of editor viewport
+    // Scroll heading to top (same method as journal-time-entry.js)
     requestAnimationFrame(() => {
-        const cm = editor.cm;
-        if (!cm) return;
+        editor.scrollIntoView(
+            {
+                from: { line, ch: 0 },
+                to: { line, ch: 0 }
+            },
+            false
+        );
 
-        const pos = cm.state.doc.line(line + 1).from;
-        cm.scrollDOM.scrollTop = cm.lineBlockAt(pos).top;
+        const cm = editor.cm;
+        const scroller = cm?.scrollDOM;
+        const coords = cm?.coordsAtPos(
+            cm.state.doc.line(line + 1).from
+        );
+
+        if (scroller && coords) {
+            scroller.scrollTop +=
+                coords.top - scroller.getBoundingClientRect().top;
+        }
     });
+
 }, 50);
 %>

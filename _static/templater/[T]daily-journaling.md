@@ -92,54 +92,29 @@ OVERVIEW_FOR_VIDEO
 ---
 
 ## DREAMS
+%%Don't fix errors to make it low-friction%%
 ### Read First
 - **WRITE THEM DOWN**. if you don't want to analyze them - the best next thing is to just write them down and re-live while you're doing so. This increases their effectiveness.
 - **Goal** of the dream isn't only to show you the answer, but also to give meaning to the answer through the story. Peterson's "story" from his Maps of Meaning work. 
 - Not all dreams will **click**.  As LLM put it - drill-sergeant's dream isn't supposed to give me chills. 
-	- I can be rich with meaning but poor with action, in this case I don't need inspiration, I need to have a dream that is grounded in action and persistent day-to-day movement of men's work. 
+### Tips
+- `First sentence and last sentence - where the dream is directed?`
+- `Ignore mistakes, formatting, structure, goal is to capture the raw fleeting dream without being distracted by all of it`
+- `What you feel when you go/are there in real life?
+- `If it's unreachable/unknown - how would you feel being there in real life?`
+- `Is feeling positive/negative?`
+- `Why would dream use this location/environment and not other ones?`
+- `Why that figure there, how situation would unfold without that figure?`
+- `Is it positive or negative figure, how you feel about them, which emotions comes up? `
+- `Can it be the Shadow, or the Anima?`
+- `Is it internal representation or external relationships?`
+- `If there's particularly rememberable scenes - analyze why they're rememberable, what's their charge, what's so valuable in them, what they're hinting on? `
+- `How it starts and how it ends establishes the direction/tendency of the dream which gives another perspective on it.`
+- `Direction is overlapping with compensation, but you should focus on positive/negative property`
+- `Aftertaste of the dream. Feeling about the dream as a whole.`
+- `Your ego was one-sided recently - where/when it might've been like that?`
+- `If dream is repeatable - then there's reoccuring tendency to behave in a certain manner - find it, look in the past for a pattern, not a one-off fluke`
+- `Which type of compensation is present? Does it inspire you? Does it deflate over-inflated ego? or does it confronts wrong actions/attitude by showing dreams into opposite direction?`
+- `Keep remembering that it shows you blind spots, so the answer isn't what's obvious, because you already see it. You must approach compensation from unexpected angle. `
 
 ### Dream #1 - NAME
-
-- #### Raw Dream
-    - ##### Tips
-        - `Ignore mistakes, formatting, structure, goal is to capture the raw fleeting dream without being distracted by all of it`
-    - 
-- #### Location & Environment
-    - ##### Tips
-        - `What you feel when you go/are there in real life?
-        - `If it's unreachable/unknown - how would you feel being there in real life?`
-        - `Is feeling positive/negative?`
-        - `Why would dream use this location/environment and not other ones?`
-    - 
-- #### Analyze figures, what they represent, why they're there? \*\*
-    - ##### Tips
-        - `Why that figure there, how situation would unfold without that figure?`
-        - `Is it positive or negative figure, how you feel about them, which emotions comes up? `
-        - `Can it be the Shadow, or the Anima?`
-        - `Is it internal representation or external relationships?`
-    - 
-- #### Emotional/Rememberable scenes
-    - ##### Tips
-        - `If there's particularly rememberable scenes - analyze why they're rememberable, what's their charge, what's so valuable in them, what they're hinting on? `
-    - 
-- #### Direction/Tendency
-    - ##### Tips
-        - `How it starts and how it ends establishes the direction/tendency of the dream which gives another perspective on it.`
-        - `Direction is overlapping with compensation, but you should focus on positive/negative property`
-    - **First sentence is**
-    - **Last sentence is**
-    - **Direction of the dream is**,
-- #### Final feelings
-    - ##### Tips
-        - `Aftertaste of the dream. Feeling about the dream as a whole.`
-    - 
-- #### Hooks From the Past
-    - ##### Tips
-        - `Your ego was one-sided recently - where/when it might've been like that?`
-        - `If dream is repeatable - then there's reoccuring tendency to behave in a certain manner - find it, look in the past for a pattern, not a one-off fluke`
-    - 
-- #### Likely Compensation
-    - ##### Tips
-        - `Which type of compensation is present? Does it inspire you? Does it deflate over-inflated ego? or does it confronts wrong actions/attitude by showing dreams into opposite direction?`
-        - `Keep remembering that it shows you blind spots, so the answer isn't what's obvious, because you already see it. You must approach compensation from unexpected angle. `
-    - 

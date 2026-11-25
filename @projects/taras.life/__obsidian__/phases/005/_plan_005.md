@@ -41,7 +41,7 @@ GROUP BY true
 
 ## Persistent Storage
 %%Bullet list only for important high-level things that MUST persists between steps. AS CONCISE AS POSSIBLE. %%
-- 
+- General Folding is implemented with initially open, independent heading and list folds. Developer reports checks and build green and basic behavior working; arrow positioning needs refinement. Marker defaults, destination revealing, and copied-content integration remain open.
 
 ## Exploration
 %%Contains related exploratory knowledge to make initial exploration in the task more efficient.%%
@@ -49,9 +49,11 @@ GROUP BY true
 - ### Links To Related files
   %%Format is a link inside inline codeblock [file-size-in-kb-from-explore-tool] - 1-2 sentence description of files contents and how it's related to the whole phase.%%
 	- ##### Created Files
-		- 
+		- `quartz/features/folding/` — general Folding tree transform, browser behavior, styles, tests, and README.
 	- ##### Modified Files
-		- 
+		- `quartz/plugins/pageTypes/dispatcher.ts` — connects Folding after page transforms for full and partial builds.
+		- `quartz/plugins/emitters/componentResources.ts` — includes Folding browser behavior and styles.
+		- `quartz/features/README.md` — lists the Folding feature.
 	- ##### Deleted Files
 		- 
 	- ##### Context Files
@@ -95,7 +97,7 @@ Draft structure only; exact boundaries and implementation details remain to be d
 - **05 — Popovers and copied content:** Apply author defaults and reveal destinations within each copy, independently of the underlying page.
 - **04 — Visible comments and marker defaults:** Render ordinary Obsidian comments as content and interpret supported `%% fold %%` markers as initially closed folds. Decide during step writing whether these shared processing concerns warrant one step or two.
 - **03 — Navigation and reveal:** Open the necessary folded ancestors before navigating or scrolling to destinations, including links and browser history. Design the reveal capability alongside general Folding.
-- **02 — General Folding:** Establish heading and list-item fold boundaries, controls, and independent nested behavior, while preserving embedded content and existing list behavior. Initially, folds start open; split further if implementation planning shows this is too large.
+- **02 — General Folding:** Implemented and initially checked; refine arrow positioning and review remaining behavior before completion. Headings and list items start open and support independent nested folds.
 
 The site-wide JavaScript warning remains separate phase work. Syncer comment export is complete and does not need another implementation step. Intermediate milestones may not yet support every Search or popover interaction; implementation order need not dictate release grouping.%%
 
