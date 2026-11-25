@@ -178,7 +178,8 @@ GROUP BY true
 ---
 
 ## Steps
-
+%%Initial Planning records agreed high-level entries here: ○ heading + link to the future step file, with 1-4 paragraphs of scope/context. No step files created or READY labels yet. List steps descending between 99 and 00.%%
+%%Only where naturally useful, add "### Parallel Implementation Groups" above the step list with columns: Group | Steps | Writing | Start after. One row per group (P1, P2, etc.), any number of member steps. Writing: Together = one writing task, then parallel implementation; Separately = separate writing tasks allowed. Start after = implemented prerequisites. Add [P1], etc. to member headings. Writing Steps verifies feasibility; don't reshape cohesive work just to create groups. Omit the table/tags when no groups are worthwhile.%%
 
 ### ◎ [99 - End Of The Phase](./steps/99-end.md) 
 **READY**
@@ -197,7 +198,7 @@ The flow is to start the planning in the right state of mind and with the proper
 - `state` - state of the step's contents
 	- `condensed` or `◉` - after implementation's completion flow, state was condensed to be token-efficient. 
 	- `full` or `◎` - high level and implementation blocks are written and step is ready for implementation.
-	- `high-level` or `○` - only top high-level block is written and implementation block is not
+	- `high-level` or `○` - high-level scope is agreed, but low-level implementation is not written. A plan entry may exist before its step file is created.
 	- `placeholder` - minimal file to just hold the place until there's time to do high-level/implementation blocks
 - `status` - `ready/postponed/implemented/skipped` - self-explanatory statuses.
 %%

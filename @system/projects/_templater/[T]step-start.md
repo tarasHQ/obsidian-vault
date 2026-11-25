@@ -66,7 +66,12 @@ The flow to start the planning in the best state of mind.
 - And overwhelmed on top of it - this is how you start the race you're meant to lose. 
 
 ## Checklists
-- [ ] **Create the phase in `_project.md`** 
+- [ ] **Ensure the phase is listed in `_project.md` without duplicating an existing entry**
+- [ ] **Fill out the phase plan from the discussed and approved decisions**
+	- Description (leave Visions to the user) and concise Exploration.
+	- High-value Persistent Storage entries, only where needed.
+	- Agreed, digestible steps with links and high-level descriptions; no step files created yet.
+	- Parallel-group table/tags only where naturally useful, including whether members should be written together or separately.
 - [ ] **Acknowledge if you're in elevated state of mind**
      %%If you do - everything you plan or execute will be suboptimal to say the least.%%
      %%And also chances of getting overwhelmed will skyrocket%%

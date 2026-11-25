@@ -57,6 +57,9 @@ Massive dream analysis...
 ## TASK EXECUTION
 - ##### 05:47
 	 - Will run my completed analysis on LLMs. Curious if it'll bring any insights.
+	 - UPD.
+	 - GLM was interesting but not really insightful 
+	 - 
 - ##### 02:18
 	 - Now let's try to make sense out of that dream. It repeats very often dream-wise, so it has to say about something I'm missing in my life repeatedly.
 - ##### 02:13
@@ -111,6 +114,15 @@ Massive dream analysis...
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
+- ###### 06:38 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- 
+- ###### 06:22 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Want to sleep bad. A bit teared apart by that and the need to work for a bit. 
+- ###### 06:02 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- The issue though is that I have visual artifacts from lack of sleep. Like as if vision becomes kinda dreamy, not static, fluid. But I have to work for a bit. I have to at least give my best try. 
+- ###### 06:00 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Previously I thought that it's hard to get back to work after I watched Peterson's lecture during the meal. But seems like it's just hard to cut it in the middle. Like if I watch it towards the logical end - it's much easier to move on. 
+	- Which kinda helps with discouragement after meals thing. 
 - ###### 04:40 | MEANING:🟡 | PRIDE:🤷‍♂️
 	- Done with dream analysis. Meal next. I pray I would have enough meaning to work after. 
 - ###### 02:13 | MEANING:🟡 | PRIDE:🤷‍♂️

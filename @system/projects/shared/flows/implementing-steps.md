@@ -42,14 +42,14 @@ rizzing
 		- Undiscussed actions are forbidden.
 		- Making decisions on your own is forbidden.
 - ### C - The Step Completion Flow
-	- [ ] **C1** - [LLM] - Finalizing the Current Note
-		- [ ] Setting up corresponding state and/or status
-	- [ ] **C2** - [LLM]
-		- [ ] Writing prompts inside markdown codeblock. Should Include links to main documents `AGENTS.md` and `LLM.md`
-			- First one for Code Review flow in a clean task without current context.
-			- Second one for Step Completion flow in a clean task without current context.
-		- [ ] **Asking if the user will run Code Review flow and waiting for the answer** 
-	- [ ] **C3** - [LLM] - Finalizing the Step In the Plan
+	- [ ] **C1** - [LLM + USER] - Finalizing and Condensing the Current Note
+	  %%Goal is to finalize the note once and shed useless things, so this step can be token-efficiently read for context in the future. %%
+		- [ ] Resolve temporary notes/open questions (if any) with the user. Ask him about what to do about them.
+		- [ ] Remove temporary notes/investigations (if any)
+		- [ ] Condense each task + subtasks to a single '- Task Name - Task Description in 1-3 sentences' bullet point
+		- [ ] Update the note's frontmatter status/states as part of the same finalization.
+		- [ ] Structure of the file should be only `## Description` and `## Implementation Summary`
+	- [ ] **C2** - [LLM] - Finalizing the Step In the Plan
 		- In the List of Steps:
 			- [ ] Settings an icon to corresponding frontmatter status of the step.  
 			- [ ] Rewriting description from "what should've been implemented" to what "what was implemented"
@@ -64,15 +64,8 @@ rizzing
 			- [ ] Updating step in list of steps
 				- Implemented description should be concise. 5 sentences max. Do not include in there implementation nuances or technical details.
 	
-	- [ ] **C4** - [LLM + USER] - Condensation of Current note
-	  %%Goal is to shed all useless things, so this step can be token-efficiently read for context in the future. %%
-		- [ ] **LLM SHOULD ASK FOR USER APPROVAL BEFORE PROCEEDING**, in case other flows are still working on this step.
-			- [ ] Additionally LLM should propose to the user to run a code review flow in parallel to this task.
-		- If previous conditions are met:
-			- [ ] Resolve temporary notes/open questions (if any) with the user. Ask him about what to do about them.
-			- [ ] Remove temporary notes/investigations (if any)
-			- [ ] Condense each task + subtasks to a single '- Task Name - Task Description in 1-3 sentences' bullet point
-			- [ ] Make sure note's frontmatter status/states is updated
-			- [ ] Structure of the file should be only `## Description` and `## Implementation Summary`
-	- [ ] **C5** - [LLM]
-		- [ ] Responding to the user with a prompt (inside markdown codeblock) to start implementation of the next step in a clean task without current context.
+	- [ ] **C3** - [LLM]
+		- [ ] Write prompts inside markdown codeblocks, including links to the main documents `AGENTS.md` and `LLM.md`:
+			- One for Code Review flow in a clean task without current context.
+			- One to start implementation of the next step in a clean task without current context.
+		- [ ] Ask if the user will run Code Review flow and wait for the answer.
