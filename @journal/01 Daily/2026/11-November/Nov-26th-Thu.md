@@ -64,6 +64,23 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
+- ###### 15:22 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- 
+- ###### 14:03
+	- But here's what I'll try if I will still be discourage after the meal, which probably I will. 
+	- ==🟡Write a short and honest reflection on realistic aspect of the work that is in front of you==
+		- If this futilism stems from the negative Senex complex, I have the notion that maybe approach of those monks/saints wasn't precise? The fought this. But what resists - persists. So what if I have to write that reflection/essay/whatever in a spirit of the Wise Old Man? Does enantiodromia works this way too? 
+		- Like only thinking about that - made me feel better. Because I might not put it in words, but the unconscious already went through this path and it sees that there may be something good at the end of this "exercise".
+		- And then I can adopt it for every occurrence of discouragement/resignation/futilism. 
+		- Like I'm actually out of that state right now. I feel normal. 
+	- Drawbacks of "pushing through"
+		- Like I have this masculine judge for this, which says that I can just do it. But that's the issue - it feels like projection of the puer on the masculine. "Just do it"... It always end up in completely depleted capacity to stay in control, and then I "just indulge" as result. 
+		- I definitely have my issues with inner masculine manly man. And I really think that he turned very sour on me. But that's the issue of isolation. I have no one to tell me whether they think I'm wrong or right. That's what Peterson means but inability to stay sane in prolonged isolation. All I can say that in this moment I hope that I'm possessed by something benevolent and upward aiming, and my answer to that manly man issue is right. If not - I'll find out soon enough by another time-block of torment. 
+- ###### 13:42 | MEANING:🔴 | PRIDE:🤷‍♂️
+	- Dad called asked to order him few things online. Still am discouraged. And now also think about ordering sweets too... This time without snacks. So maybe... I wish I wouldn't have to. But yeah...In states like this there's just nothing to stop me. Ordered. Half of what I did previously. On sunday. Sweets only, so I'll have to cook some food too. 
+	- Snacks/Chips/etc. are the worst, because they're loaded with carbs as well. Now at least I'll put something healthy in before the sweets. But yeah. This order signifies complete absence of any meaning whatsoever. 
+	- But at the same time feels good. Like I get that feeling of hope in the future. I'm so depraved of it, that this stupid order even makes me feel better about the future. Like at least there's a single positive thing going on in there. 
+	- Reflection got interrupted also. And I don't want to continue it. 
 - ###### 13:16
 	- What can I do to start the work? 
 	- I feel a bit bad right now. Headache. Nose is running. Maybe getting usual winter's portion of covid or something. 
@@ -75,7 +92,7 @@ OVERVIEW_FOR_VIDEO
 	- Citing the Bible to ask God to help me with haste - doesn't feel right. Because who am I to command God. Or to ask him for something. Especially without sacrifice. 
 	- I probably need to eat. Because the window when I can avoid hunger but being engaged is missed. 
 	- But also  - I'm missing some foundation when I walk into this place full of snakes and dragons. Like thank God I can at least walk in, and do so. Actually do so. But it's not the proper solution
-	- I need visions, I need framework, I need thought corrections or chants or mntras. Or something. Something that can be used as a shiled and weapon against those inner attacks. Because right now I go in there head first without anything. And no shit I get bitten, teared apart and poisoned. 
+	- I need visions, I need framework, I need thought corrections or chants or mantras. Or something. Something that can be used as a shield and weapon against those inner attacks. Because right now I go in there head first without anything. And no shit I get bitten, teared apart and poisoned. 
 	- Ok, that eternalised video - there was some cognitive behavioral therapy going on. with those saints/monks. They were modifying thoughts. What if I try that? 
 - ###### 13:05 | MEANING:🟡 | PRIDE:🤷‍♂️
 	- Functions idea kinda wrong, because it's too confusing and overlaps with all my inner snakes and bugs. So there's just no chance I can untangle that. 
