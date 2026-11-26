@@ -8,42 +8,15 @@ journal-date: 2026-11-25
 ```
 
 ---
-
-```meta-bind-button
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-	- [ ] Check audio delay to webcam
-	- [ ] Check TickTick schedule (correct day, scheduled)
-	- [ ] Set time of next sleep for stager timer.
-	- Obsidian
-		- [ ] Write overview of the current day
-		- [ ] Create journal for the next day
-		- [ ] Make sure all day's reflections are linked artifacts
-		- [ ] Delete Dream Analysis block if empty
-		- [ ] Delete other blocks if empty
-	- [ ] Night scene
-	- [ ] Check IP cam (quality, delay)
-		- [ ] Enable sleep blur
-	- [ ] monitor OFF (seems like keeping on makes him die faster)
-	- Cat
-		- [ ] Clean up cat's litter box
-		- [ ] Food + plate is in my room at the shelf 
-			%%(to feed right away and not be distracted by her)%%
-	- [ ] Make sure there's tomorrow's food out of the freezer.
-
----
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-OVERVIEW_FOR_VIDEO
+Started on 3-4 hours of sleep, then a failure happened that just devastated me because I'm pretty negative guy living pretty negative life. Retrospectively can't say the failure was devastating, but maybe that's because I did proper inner-work after? Because in other times, before this whole thing I'm doing right now - that would've been the final straw that broken the camel's spine, and I would've avoided the shit out this whole venture for weeks. In some games likely. 
+
+One thing I can say for sure - I get better at recoveries from failures. Peterson said in his recent lecture I watched, that the sacrifice is not only to give to the future something that you deeply value now, but also to be able to recover from that sacrifice, because the risk is to NOT recover and get stuck in misery and take the sacrifice back in one form or another. 
+
+I'm hoping that these days of inner-work will pay off at some point. Maybe I'm so deeply messed up, that the pay off is pretty delayed, because I have to work through a decade of shit accumulation in my mind. 
 
 ---
 

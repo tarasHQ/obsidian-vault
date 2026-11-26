@@ -10,32 +10,6 @@ journal-date: 2026-11-26
 ---
 
 ```meta-bind-button
-label: Remove Morning Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### MORNING CHECKLIST
-    - [ ] Air out the room %%lower oxygen levels and may affect you, triphasic breathing if you're cold%%
-    - [ ] Day scene
-    - [ ] Check webcam (exposure)
-    - [ ] Check IP cam (quality, delay)
-        - [ ] Reconnect to reset delay
-        - [ ] Disable sleep blur
-    - [ ] Check all elements are present on the canvas
-    - [ ] Check TickTick schedule 
-        - [ ] correct day, scheduled, scaled
-        - [ ] red "now" line is there
-    - [ ] Start stager timer
-    - Obsidian
-        - [ ] Reload.
-        - [ ] Fill Context block.
-        - [ ] Split down. Have ~10 lines of time log.
-
-```meta-bind-button
 label: Remove Night Checklist
 style: default
 icon: trash-2
@@ -74,11 +48,11 @@ OVERVIEW_FOR_VIDEO
 ---
 
 >[!tldr] CONTEX
->Sleep Duration - **0:00**
+>Sleep Duration - **9:00**
 > 
->Time Spent in Bed - **TODO**
+>Time Spent in Bed - **Low**
 > 
->Approx. Compensation of Dreams - **TODO**
+>Approx. Compensation of Dreams - **Wasn't discouraged, that's a new one**
 
 ---
 
@@ -90,7 +64,40 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
-- 
+- ###### 13:16
+	- What can I do to start the work? 
+	- I feel a bit bad right now. Headache. Nose is running. Maybe getting usual winter's portion of covid or something. 
+	- But is there a way then I work in this state and not like have a meal and then fall asleep in a bed? 
+	- Peterson said about visions. Like if you don't have one explicit- you will live through one implicitly. Maybe I need that? 
+	- Why I don't want to work on the website?- Because I have no hope to go through it. I just don't believe it. And this is self-fulfilling prophecy. 
+	- But also I don't really believe that simple good vision would be worth it. Implicit vision though, is the one where each failure leads to death. And every time I have to recover from death sentence. 
+	- So, what's next. 
+	- Citing the Bible to ask God to help me with haste - doesn't feel right. Because who am I to command God. Or to ask him for something. Especially without sacrifice. 
+	- I probably need to eat. Because the window when I can avoid hunger but being engaged is missed. 
+	- But also  - I'm missing some foundation when I walk into this place full of snakes and dragons. Like thank God I can at least walk in, and do so. Actually do so. But it's not the proper solution
+	- I need visions, I need framework, I need thought corrections or chants or mntras. Or something. Something that can be used as a shiled and weapon against those inner attacks. Because right now I go in there head first without anything. And no shit I get bitten, teared apart and poisoned. 
+	- Ok, that eternalised video - there was some cognitive behavioral therapy going on. with those saints/monks. They were modifying thoughts. What if I try that? 
+- ###### 13:05 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Functions idea kinda wrong, because it's too confusing and overlaps with all my inner snakes and bugs. So there's just no chance I can untangle that. 
+	- But also I just can't push through the work. Like it's simple. Without the underlying foundation - it always ends the same way. I need the damn ground to stand on when I venture in that pit of snakes and dragons. 
+	- And it was a mistake to use chatgpt. GLM was much more helpful. But now I burned through my reserves and don't want to do it at all. 
+- ###### 12:15
+	- **The feeling function**
+		- Ok, maybe not feeling. I will try to discuss with LLM that. To make sure. 
+		- But here's the thing. I watched [Eternalised's youtube video on "Spiritual Warfare"](https://www.youtube.com/watch?v=U-uB_2xpXao) and it was a bit meaningful but not much useful. Because it wasn't Jungian approach. It was deeply religious one. Like when you cite bible verses to fight the demon of lust, and actually mean it. 
+		- And it made me think. I read this from von Franz's book probably, on puer, where she said that the inferior function is the one which one avoids, and sees it meaningless and stupid and not worth the attention, but that inferior function contains a whole life within itself, and the ocean of vitality or unlocked libido. 
+		- And it got me thinking - what if THAT's where I need to go? Like I'm inclined to think that my primary function is Thinking. Intuition/Sensation probably 2nd/3rd. And inferior one is Feeling. 
+		- What if I explore this path and start to use inferior function on my projects? 
+		- Again, as Peterson said in his example - when kings of the round table was trying to find holy grail - they all went into the places that were the deepest and darkest for each one. What if this is what this mean partially? 
+		- Materialistically - my projects is pretty dark **outer** place for me, because those are infested with dragons and poisonous snakes. And seems like the Feeling function is the darkest **inner** place. 
+	- This suicide warning really start to bother me) Dishonest empathy that keeps remembering me about suicide more than my negative complexes. What a BS solution on this one... or maybe it's not BS if you take it on global scale.
+- ###### 12:12 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Yeah, those responses didn't stick with me ... There was some insights. But for some reason I just don't want to do anything.
+	- But I also know that sometimes I just need to humble myself, and take the first piece of ground-work to get started. 
+- ###### 11:53 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- So, still don't want to work. I have two paths here that are good. Dream analysis. Or work on the website. 
+	- I guess I'll do dream analysis then? Because it's this "running from the military" thing again. First time it repeated itself so soon. 
+	- I'll probably start with LLM, maybe it'll have some sentences that invoke enthusiasm? 
 ==REPEAT The Project is dead. Website is priority. Stay in tension by avoiding indulgence==
 
 ---
@@ -121,10 +128,8 @@ OVERVIEW_FOR_VIDEO
 - `Which type of compensation is present? Does it inspire you? Does it deflate over-inflated ego? or does it confronts wrong actions/attitude by showing dreams into opposite direction?`
 - `Keep remembering that it shows you blind spots, so the answer isn't what's obvious, because you already see it. You must approach compensation from unexpected angle. `
 
-
-black snickers
-
-### Trying to suck myself off - (2nd dream)
+### Trying to suck myself off 
+- 2nd dream on this topic in last 2-3 months
 - Yeah, sexual thing. Had this dream long time ago.
 - But here's the thing. Right now thinking about - I'm disgusted by it. 
 - In the dream though - felt good. 

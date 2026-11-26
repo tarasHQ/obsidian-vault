@@ -65,6 +65,7 @@
 		* Logic
 			* PIA. At best you have to make some transformer plugin that manually finds daily journals and parses it into SVG chart. 
 			* Or you can use some lightweight charting library for minimal interactivity? 
+		* More on implementation side - https://chatgpt.com/c/6b00acbb-f230-83eb-b095-257bbe2a9ed1
 	- ##### Created/Last updated/Commit %% fold %%
 	  %% folded comment to check if it'll preserve it %%
 		- **Description** %% fold %%
