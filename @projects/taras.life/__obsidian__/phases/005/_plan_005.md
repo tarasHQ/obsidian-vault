@@ -3,7 +3,7 @@ ctime: 2026-11-21 01:37
 isIntegrated: false
 ---
 
-[← Project](../../_project.md)
+[[../../_project.md|← Project]]
 
 # P 005 - Site Structure, Search & Foldings
 %%[Internal User Link to Template]([T]plan.md) LLMs should ignore both the link and the paths it hints on%%
@@ -87,22 +87,26 @@ GROUP BY true
 **READY**
 Finalize the phase — meta-reflection on what worked, long-term knowledge extracted so plan info can safely die-off, frontmatter set, phase archived.
 
-### ~~◉ [03 - Navigation and reveal](./steps/03-navigation-and-reveal.md) - IMPLEMENTED~~
-%%Made closed folds available to native browser Find and revealed destination ancestors during fragment navigation while preserving existing history behavior. The developer confirmed checks, browser behavior, and print preview were a go; marker defaults and their initialization remain later work.%%
-
-### ~~◉ [02 - General Folding](./steps/02-general-folding.md) - IMPLEMENTED~~
-%%Implemented initially open, independent heading and list folds with separate controls. The developer confirmed browser checks and reported checks and build green; marker defaults, destination revealing, and copied-content integration remain later work.%%
-
-### ◉ ~~STEP 01 - Local Feature Boundary - IMPLEMENTED~~
-%%Established a boundary for complete local features and reorganized Explorer, Theme, and mobile sidebar controls into coherent clusters while preserving their existing behavior and shared page structure. Updated the boundary documentation; the existing loader remains the connection point. Checks and the rebuilt site's user experience were confirmed by the developer.%%
-
 ### Drafted Steps Recommendation
 Draft structure only; exact boundaries and implementation details remain to be discussed in the writing-steps flow. Listed in reverse implementation order to match the phase plan.
 - **06 — Search adoption and Folding integration:** Adopt Search locally, retain the existing engine and page-level index initially, and connect result and preview revealing to Folding.
 - **05 — Popovers and copied content:** Apply author defaults and reveal destinations within each copy, independently of the underlying page.
-- **04.5 — List indentation guides: IMPLEMENTED.** Clickable guides follow each list item's foldable content and close the parent fold; the arrow remains available to reopen it. Guides start after the full parent label, including wrapped labels. The developer accepted the appearance and interaction; automated checks have not been confirmed in this task.
-- **04 — Visible comments and marker defaults:** Render ordinary Obsidian comments as content and interpret supported `%% fold %%` markers as initially closed folds. Decide during step writing whether these shared processing concerns warrant one step or two.
 The site-wide JavaScript warning remains separate phase work. Syncer comment export is complete and does not need another implementation step. Intermediate milestones may not yet support every Search or popover interaction; implementation order need not dictate release grouping.
+
+### ~~◉ 04.5 — List indentation guides - IMPLEMENTED~~
+%%Clickable guides follow each list item's foldable content and close the parent fold; the arrow remains available to reopen it. Guides start after the full parent label, including wrapped labels. The developer accepted the appearance and interaction; automated checks have not been confirmed in this task.%%
+
+### ◎ [04 - Visible comments and marker defaults](./steps/04-visible-comments-and-marker-defaults.md) - READY
+Render ordinary Obsidian comments as styled inline-formatted content and interpret supported `%% fold %%` markers as initially closed folds.
+
+### ~~◉ [03 - Navigation and reveal](./steps/03-navigation-and-reveal.md) - IMPLEMENTED~~
+%%Made closed folds available to native browser Find and revealed destination ancestors during fragment navigation while preserving existing history behavior. The developer confirmed checks, browser behavior, and print preview were a go; marker defaults and their initialization remain later work.%%
+
+### ◉ ~~[02 - General Folding](./steps/02-general-folding.md) - IMPLEMENTED~~
+%%Implemented initially open, independent heading and list folds with separate controls. The developer confirmed browser checks and reported checks and build green; marker defaults, destination revealing, and copied-content integration remain later work.%%
+
+### ◉ ~~STEP 01 - Local Feature Boundary - IMPLEMENTED~~
+%%Established a boundary for complete local features and reorganized Explorer, Theme, and mobile sidebar controls into coherent clusters while preserving their existing behavior and shared page structure. Updated the boundary documentation; the existing loader remains the connection point. Checks and the rebuilt site's user experience were confirmed by the developer.%%
 
 ### ~~◉ [00 - Start Of The Phase](./steps/00-start.md) - IMPLEMENTED~~
 %%The flow is to start the planning in the right state of mind and with the properly prepared phase%%
@@ -125,10 +129,10 @@ The site-wide JavaScript warning remains separate phase work. Syncer comment exp
 ## Meta-Plan Reflection
 %%Plan structure, navigation, planning workflows, exploration, execution. Meta stuff. To improve meta plan%%
 ### User-issues
-- 
+- 1
 ### LLM-issues
 - Where LLM had troubles with this "system of projects"? (if it had any)
-	- 
+	- 1
 
 
 

@@ -64,6 +64,13 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-remove-last-entry, journal-time, journal-meaning, journal-complexes]`
+- ###### 01:21 | MEANING:🔴 | PRIDE:🤷‍♂️
+	- Urges strong. And I have nothing to say against them. The day ends on a bittersweet note. Because 
+- ###### 01:11 | MEANING:🔴 | PRIDE:🤷‍♂️
+	- Burn like mad through the meaning when confronted with another bugs of that vibecoded quartz syncer plugin. Insanely discouraging. Because like 
+- ###### 00:38 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Meaning drops. Step took too much than I can chew through. Getting overwhelmed. Context size get a bit too big. Lots of minor issues to refine...
+- ###### 23:53 | MEANING:🟢 | PRIDE:🤷‍♂️
 - ###### 23:17
 	- There's some issues. I'm a bit loosing the energy. But also neck and headache. Usual suspects. Killing me. 
 - ###### 22:45

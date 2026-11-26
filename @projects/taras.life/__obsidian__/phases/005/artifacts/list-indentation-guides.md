@@ -14,12 +14,13 @@ Step 04.5 was implemented directly, without a separate implementation step: show
 - **Center the pointer target on the line:** both sides of the visible line are clickable, rather than only the space to one side. This is a convenience, but nearby text, controls and nested guides should still be checked for interference.
 - **Use theme-specific guide colors:** the developer tuned colors in `quartz/styles/theme.css`; the guide uses the accent color on hover. The guide is hidden in print, alongside fold controls.
 - **Lists only:** guides belong to list-item folds, not heading folds. Heading and list folding remain separate.
+- **Shared bullet and guide axis:** native browser bullets and independently positioned guides drifted relative to each other at different zoom levels. Unordered content lists now use solid, theme-aware gray bullets positioned from the same CSS coordinate as the guide. Numbered lists retain their markers, and task checkboxes do not gain a custom bullet. This removes reliance on independently positioned browser bullets; browser verification is still needed.
 
 The initial discussion contrasted a continuous child-list guide with a parent guide. For a simple nested list these can look identical; the meaningful distinction is whether the line represents only the list or the parent's entire foldable region. The latter makes the chosen click behavior clearer, but is not inherently easier to align.
 
 ## Implementation and verification
 
-- `quartz/features/folding/foldingTree.ts` adds a guide inside each list fold body; `folding.inline.ts` maps a guide click to that body's existing control.
+- `quartz/features/folding/foldingTree.ts` marks unordered content lists for custom bullets and adds a guide inside each list fold body; `folding.inline.ts` maps a guide click to that body's existing control.
 - `quartz/features/folding/folding.css` positions the guide and centered pointer target; `foldingTree.test.ts` checks representative generated list structures. Theme colors live in `quartz/styles/theme.css`.
 - The developer accepted the appearance and interaction. Automated checks and build were **not confirmed in this task**; the assistant could not run them. There is no automated browser test for guide hit areas or clicks. Check nested lists, text selection, links, task checkboxes, mobile layouts and print if further changes affect the geometry.
 - Step 04 marker defaults and later copied-content integration are separate work; coordinate with them rather than assuming their behavior was settled by this artifact.

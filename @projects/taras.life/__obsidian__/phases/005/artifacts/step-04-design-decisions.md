@@ -10,8 +10,8 @@ Keep visible comments and marker defaults together as one step: both depend on p
 
 - Publish ordinary Obsidian comments without the `%%` delimiters, as self-contained, styled inline-formatted content rather than full block Markdown. Preserve supported inline formatting and links, including bold, Markdown links, Obsidian wikilinks, highlights, and strikethrough; verify their final processing.
 - Heading and list syntax inside comments is ordinary text, not headings or lists: for example, `##` and `-` remain visible, with no heading styling, navigation, embedding, or folding. This replaces the earlier decision to make comment-contained headings participate in the page's heading hierarchy.
-- Apply the comment treatment on top of the underlying inline styling: initially **80% of the corresponding normal font size and 50% opacity** in light, dark, and dark-low modes. No border or background. Check appearance and readability visually; these values are starting points.
-- Determine and discuss how multi-line comments preserve line and blank-line spacing before finalizing the implementation approach.
+- Apply the comment treatment on top of the underlying inline styling: initially **70% of the corresponding normal font size and 50% opacity** in light, dark, and dark-low modes. No border or background. Check appearance and readability visually; these values are starting points.
+- Preserve line and blank-line breaks inside multi-line comments, removing only extra outer breaks caused by delimiter-only opening and closing lines. Check the result visually.
 
 ## Marker interpretation
 
