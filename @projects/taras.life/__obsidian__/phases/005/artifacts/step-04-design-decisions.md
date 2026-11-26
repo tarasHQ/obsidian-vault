@@ -8,9 +8,10 @@ Keep visible comments and marker defaults together as one step: both depend on p
 
 ## Ordinary comments
 
-- Publish ordinary Obsidian comments as Markdown content without the `%%` delimiters, with a dedicated class for styling. Preserve normal content behavior, including links, formatting, and heading structure.
-- Apply the comment treatment on top of the underlying Markdown styling: initially **80% of the corresponding normal font size and 50% opacity** in light, dark, and dark-low modes. No border or background. Check appearance and readability visually; these values are starting points.
-- A heading inside a comment is an ordinary heading, including its folding and heading-navigation behavior. Its section continues to the next heading of the same or higher level even if the comment ends first; comment styling stops at the comment boundary. Do not accidentally constrain the heading's section to a comment wrapper.
+- Publish ordinary Obsidian comments without the `%%` delimiters, as self-contained, styled inline-formatted content rather than full block Markdown. Preserve supported inline formatting and links, including bold, Markdown links, Obsidian wikilinks, highlights, and strikethrough; verify their final processing.
+- Heading and list syntax inside comments is ordinary text, not headings or lists: for example, `##` and `-` remain visible, with no heading styling, navigation, embedding, or folding. This replaces the earlier decision to make comment-contained headings participate in the page's heading hierarchy.
+- Apply the comment treatment on top of the underlying inline styling: initially **80% of the corresponding normal font size and 50% opacity** in light, dark, and dark-low modes. No border or background. Check appearance and readability visually; these values are starting points.
+- Determine and discuss how multi-line comments preserve line and blank-line spacing before finalizing the implementation approach.
 
 ## Marker interpretation
 
@@ -30,13 +31,13 @@ Keep visible comments and marker defaults together as one step: both depend on p
 
 ## Verification
 
-- Add automated checks for comment and marker processing, including representative inline and multi-block Markdown, heading and link behavior, marker placement and exact spelling, code examples, and disconnected marker interpretation.
+- Add automated checks for comment and marker processing, including inline and multi-line comments, inline formatting and links, literal heading and list syntax inside comments, marker placement and exact spelling, code examples, and disconnected marker interpretation.
 - Use manual visual checks for the rest: the comment treatment in all three themes and representative folding/navigation behavior, including direct links into nested closed folds, fresh SPA views, Back/Forward, and unrelated folds. No new browser-testing framework or exhaustive browser matrix is required by this decision.
 
 ## Verified context and writing-step questions
 
 - `quartz/processors/parse.ts` runs the configured Markdown transformers before converting to HTML. The enabled Obsidian plugin uses its default **legacy** parser; its public option types expose `comments` but not the underlying parser's comment-retention options. The exact processing approach and its behavior in the configured legacy path still need investigation; do not assume disabling `comments` preserves parsed comment contents.
-- Determine how to preserve ordinary comment Markdown early enough for heading IDs, heading navigation, links, searchable content, and other relevant transforms, while supporting the agreed comment-style boundary and normal heading sections. Preserve transclusion extraction: `quartz/components/renderPage.tsx` selects heading sections from top-level parsed HTML before the folding tree transform runs.
+- Determine how to expose and style the legacy parser's inline-parsed comment contents early enough for links, searchable content, and other relevant transforms. The legacy block-comment tokenizer also parses its body as inline content, so block reparsing is no longer required by the revised decision. Verify formatting and multi-line spacing; preserve normal headings outside comments and transclusion extraction in `quartz/components/renderPage.tsx`.
 - Check the installed micromorph and router timing when writing the step: micromorph returns a promise and the current router does not await it. The inspected implementation appears to apply patches synchronously before its internal awaits, but the required reveal-before-scroll ordering should not rest on an unexamined assumption.
 - User-supplied web research reports that initial fragment revealing and `beforematch` can occur before DOM-ready listeners, and reports differing native `hidden="until-found"` support. It cites the [HTML ancestor-revealing algorithm](https://html.spec.whatwg.org/multipage/interaction.html#ancestor-revealing-algorithm), [HTML fragment scrolling](https://html.spec.whatwg.org/multipage/browsing-the-web.html#scroll-to-the-fragment), and [Mozilla bug 2081502](https://bugzilla.mozilla.org/show_bug.cgi?id=2081502). These live sources and browser behavior were not independently verified in this discussion; the research supports reconciliation and conditional correction, not guarantees about every browser.
 - Exact marker-adjacent edge cases beyond the agreed rule, and concrete processing and rendering mechanisms, remain for step writing. Surface any new result-affecting decisions rather than silently expanding the agreed syntax or scope.

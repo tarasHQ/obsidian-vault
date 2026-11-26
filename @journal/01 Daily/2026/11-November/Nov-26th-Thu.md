@@ -64,6 +64,13 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-remove-last-entry, journal-time, journal-meaning, journal-complexes]`
+- ###### 23:17
+	- There's some issues. I'm a bit loosing the energy. But also neck and headache. Usual suspects. Killing me. 
+- ###### 22:45
+	- ###### 🪦 The Sick Théoden:
+		- -
+	- Well, turns out there's nothing to say about this discouragement from that negative complex. Which kinda means this discouragement was probably out of habit. No real source for it. Like I imagined that energy that the Sick Theoden represents - and he was like looking at me like "what do you want from me?")) So yeah, that's an interesting experience. 
+	- Because usually if it sources from that sick king or negative senex or whatever it is - there's willingness to talk.
 - ###### 20:28
 	- **On parallel work**
 		- Initially I thought about main task/secondary task relationship. That was wrong. If I switch context (of my brain) - I proceed until it's resolved. What creates overwhelm is when I try to focus on main task, and then switch back and forth between it and secondary one, only when main task is researching. That's wrong approach. 
