@@ -87,21 +87,22 @@ GROUP BY true
 **READY**
 Finalize the phase — meta-reflection on what worked, long-term knowledge extracted so plan info can safely die-off, frontmatter set, phase archived.
 
+### ◎ [03 - Navigation and reveal](./steps/03-navigation-and-reveal.md)
+**READY**
+Open the necessary folded ancestors before navigating or scrolling to destinations, including links and browser history. Switch closed folds to `hidden="until-found"` while preserving the existing same-page navigation and history behavior.
+
 ### %%◉ [02 - General Folding](./steps/02-general-folding.md) - IMPLEMENTED
 Implemented initially open, independent heading and list folds with separate controls. The developer confirmed browser checks and reported checks and build green; marker defaults, destination revealing, and copied-content integration remain later work.%%
 
 ### %%◉ STEP 01 - Local Feature Boundary - IMPLEMENTED
-Established a boundary for complete local features and reorganized Explorer, Theme, and mobile sidebar controls into coherent clusters while preserving their existing behavior and shared page structure. Updated the boundary documentation; the existing loader remains the connection point. Checks and the rebuilt site's user experience were confirmed by the developer.
+Established a boundary for complete local features and reorganized Explorer, Theme, and mobile sidebar controls into coherent clusters while preserving their existing behavior and shared page structure. Updated the boundary documentation; the existing loader remains the connection point. Checks and the rebuilt site's user experience were confirmed by the developer.%%
+
 ### Drafted Steps Recommendation
-
 Draft structure only; exact boundaries and implementation details remain to be discussed in the writing-steps flow. Listed in reverse implementation order to match the phase plan.
-
 - **06 — Search adoption and Folding integration:** Adopt Search locally, retain the existing engine and page-level index initially, and connect result and preview revealing to Folding.
 - **05 — Popovers and copied content:** Apply author defaults and reveal destinations within each copy, independently of the underlying page.
 - **04 — Visible comments and marker defaults:** Render ordinary Obsidian comments as content and interpret supported `%% fold %%` markers as initially closed folds. Decide during step writing whether these shared processing concerns warrant one step or two.
-- **03 — Navigation and reveal:** Open the necessary folded ancestors before navigating or scrolling to destinations, including links and browser history. Design the reveal capability alongside general Folding.
-
-The site-wide JavaScript warning remains separate phase work. Syncer comment export is complete and does not need another implementation step. Intermediate milestones may not yet support every Search or popover interaction; implementation order need not dictate release grouping.%%
+The site-wide JavaScript warning remains separate phase work. Syncer comment export is complete and does not need another implementation step. Intermediate milestones may not yet support every Search or popover interaction; implementation order need not dictate release grouping.
 
 ### %%◉ [00 - Start Of The Phase](./steps/00-start.md) - IMPLEMENTED
 The flow is to start the planning in the right state of mind and with the properly prepared phase%%

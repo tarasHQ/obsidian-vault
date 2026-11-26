@@ -64,6 +64,25 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-remove-last-entry, journal-time, journal-meaning, journal-complexes]`
+- ###### 19:05
+	- But I still didn't read final implementation doc. Feels like scope is small enough to delegate at this point - **will that burn me**? 
+	- Still don't really understand the code... It's not the code. It's attitude.  Like I read it right now. And can understand. So it's the attitude of not wanting to understand it. Mostly though. There's a bit of complexity too.
+- ###### 18:57
+	- There's like 5-10% of time to work in parallel. At least. So yeah, at some point I would like to start multitask a bit. 
+- ###### 18:48
+	- AWESOME idea for that additional flow to focus on design decisions. Like it's just awesome. And in combination with a new tool - like some of those decisions are implemented right away without being a PIA in the middle of the step with like 120k context size. I'm happy on both occasions. 
+	- But I'm afraid that the main thing here is the attitude. Because I actually go into details and low level, and I actually curious about them. Instead of giving it off to LLM.
+	- But it's so good when those flows for once just simply reduce headache instead of increasing it. 
+- ###### 18:43
+	- Started bread maker. And thought about PMO. That is kinda like anxious thing even. I'm at unease. And it's distracting. But thankfully I have a few documented cases of that, and now that if I discharge this energy through PMO - what follows is the low state of mood. So like whatever I do - PMO is the worst if I want to continue the work. And since then it kinda dissipated, and I'm back to the normal self, not really enthusiastic, but also not futile either.
+- ###### 18:21 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Also seems like I have some minor improvement with that idea of context efficiency. It helped a fair bit. Because context size put a pressure on me as well. 
+- ###### 18:13 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Want to PMO, but this time it is the reason that I almost forgot. When things going ok or good, I want to top it off with PMO. There's definitely a bit of "doing wrong thing discouragement" too. It's been 3 days without PMO? I didn't yesterday and... 48 hours exactly. Not bad. 
+- ###### 17:52
+	- Now that I did all those setting up in proxmox... man... feels great. you open it - everything of optimal. It works. Secure (as much as I was able to do it in reasonable constraints). CPU got 10 degrees lower too. ram usage low. backups now much-much-much in a better flow. It's just pure bliss) 
+- ###### 17:23 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- It worked. I got positive emotion at the end. The thing is - I was thinking hard on picking the right words. This must be personal. Not some generic shit. And honest too. Which is especially hard because under the influence of the complex that prevents the work - it's hard to be honest, because it's wrapped into that complex. So like you're honest within the possession - but dishonest in totality of the psyche. 
 - ###### 16:11
 	- ###### 🪦 The Sick Théoden:
 		- Everything is futile. You tried many times and failed many times. You're yet to succeed even once. Hence, the website doesn't make any sense, because you will never finish it. You need something else. 

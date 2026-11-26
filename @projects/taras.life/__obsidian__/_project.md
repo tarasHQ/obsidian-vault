@@ -26,7 +26,7 @@ GROUP BY true
 			- **Key insight — user vs layout-shift disambiguation**: script can't tell user scroll from layout shift by deltas; instead treats causes as disjoint: `wheel`/`touchstart`/`pointerdown`/`keydown` listeners, `passive: true` + `once: true`, set `userInteracted` → cancel adjustment loop. Layout shifts cannot emit input events.
 			- **SPA interplay**: with micromorph SPA nav, back/forward = `popstate` → `navigate(isBack)` which doesn't scroll (body patched in place, scroll preserved naturally) → restoration script only matters on full page loads (first visit, refresh, external back); safe to always run (no-op when nothing stored).
 			- **Port note for our repo**: inline via `additionalHead` in Head.tsx; complements image aspect-ratio feature (that one shrinks the 3s correction need).
-		- ###### Private config properties %% fold %%
+		- ###### Private config properties
 			- Make your remark42 config url private. It's not a secret to see the address, and it's protected(rejected) but to just not confuse people? Though it may be PIA. Cuz you theoretically need to configure variables in github AND cloudflare. So it's like 2-3 sources of truth. On another hand, do you need those locally, since localhost origin banned as well, and also on github, since you just build to test/check that it builds. 
 				- it's just unclear. If I will build locally and worker will only run it - then it's easier, I guess? I don't know. 
 		- ###### SEO - Worth to research %% fold %%
@@ -170,11 +170,7 @@ GROUP BY true
 			- ⭐But we need exclusions here, so I can avoid processing phases. 
 			- ⭐I would lock in 2 buttons. Back up one level or go to home. Pages will load fast, most of them will be cached. So it'll be fine on both phones and PCs. Styling would be an issue though, but I'll figure something out. 
 				- Either look for inspiration/examples OR copy like windows explorer. 
-	- ##### Collapsible list and headings
-		- ###### `%% fold %%` Parsing %% fold %%
-						- to preserve collapsed states and also to NOT have those markers
-		- ###### Folding logic %% fold %%
-					- create one. there's none. Since the plugin you will use foldings a lot, which means without them - there will be huge walls of text on website. Which is suboptimal, obviously.
+
 - ### Widgets
 	- ###### **CALENDAR** %% fold %%
 		- sidebar on pc(widget), top bar on mobile (button + modal with the same widget)
@@ -195,12 +191,16 @@ GROUP BY true
 - ---
 - ### 02 Basic Functionality
 	- **Ideas**
+		- ##### Collapsible list and headings
+			- ###### `%% fold %%` Parsing %% fold %%
+				- to preserve collapsed states and also to NOT have those markers
+			- ###### Folding logic %% fold %%
+				- create one. there's none. Since the plugin you will use foldings a lot, which means without them - there will be huge walls of text on website. Which is suboptimal, obviously.
 		- Widgets ideas
 		- Pages category of ideas
 		- scroll restoration
 		- Non-phased, in parallel
 			- selective refactoring in parallel
-			- probably also remark42 backend side (anon logic, emails, more oauth, etc.)
 		- Minor fixes
 			- Size of menu button to iOS safari buttons size
 			- Make menu button transparent maybe even glass like from iOS
@@ -209,6 +209,7 @@ GROUP BY true
 			- During scroll menu button isn’t clickable but should be
 				- iOS Safari consumes the first tap during page momentum scrolling. A standalone test on iPhone worked: make the content an independently scrollable area (`overflow-y: auto`) and place the floating button outside it, so tapping the button during scrolling registers immediately.
 				- Test this approach in the actual site later; changing the main scroll area also requires checking SPA navigation, heading links, scroll restoration, and the sticky header.
+				- There's also this thing...  I don't remember what, but it's setting "manipulation" on the button which allows to bypass 300ms timeout for click
 	- #### Phase 005 - Site Structure, Search & Foldings [plan](./phases/005/_plan_005.md)
 	  Establish explicit TypeScript site assembly in place of YAML-driven plugin loading; organize the affected local features; adopt Search locally; implement marker-aware folding and navigation/search revealing.
 	- #### ~~Phase 004 - Structure & Explorer~~ [plan](./phases/_archived/004/_plan_004.md) %% fold %%
@@ -218,7 +219,7 @@ GROUP BY true
 	  Palette and three modes, typography, accents, background, favicon, and published visual test pages.
 	- #### ~~Phase 002 - Removing SCSS, Theming, Fonts plugin [plan](./phases/_archived/002/_plan_002.md) %% fold %%
 	  SCSS → plain CSS, static theming (theme.css SSOT), generation machinery + Google Fonts + quartz-fonts out, CLI create/git-flow out, README set + AGENTS.md aligned, semantic review.
-	- #### ~~Phase 001 - Remark42 plugin rewrite~~ [plan](phases/_archived/001/_plan_001.md) %% fold %%
+	- #### ~~Phase 001 - Remark42 plugin rewrite~~ [plan](phases/_archived/001/_plan_001.md)
 	  Remark42 plugin rewritten from scratch as a self-contained compiled package (`custom-plugins/remark42/`), shipped and documented. Deferred to future work: visual polish
 
 
