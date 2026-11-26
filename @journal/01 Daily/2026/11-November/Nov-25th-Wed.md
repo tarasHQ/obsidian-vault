@@ -60,50 +60,26 @@ OVERVIEW_FOR_VIDEO
 ## CREATED ARTIFACTS
 - 
 
-## TASK EXECUTION (RUSHED)
-- ##### 17:32
-	 - Ok, folding seems to start being implementing. There'll be some back and forth. Idea with caching will be delayed for now. Don't want to think about it now. 
-	 - Code review pending too... Will also start next step discussion in the third/forth task in parallel?
-- ##### 17:24
-	 - so folding icon positioning got a bit more complicated. 
-	 - code review is kinda easier
-	 - also research about caching svg icons instead of embedding them into html, though not sure if it's worth the hustle
-- ##### 17:01
-	 - have few tasks in parallel
-	 	 - folding arrow positioning issue
-	 	 - code-review refinements
-- ##### 17:00
-	 - Catching up with what I did with foldings
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`
+- ###### 22:30 | MEANING:🟡 | PRIDE:🙏
+	- I'll finish this idea with adding a new tool to my llm project. Then a nap. Hopefully won't shut down for 6 hours. And will do another few hours of work. And sleep would be ideal around 2-4 am. So I will get back on the good-enough schedule. 
+	- or well. maybe I will fall asleep? Like why I should push in this state with a massive sleep debt? No reason. 
+- ###### 22:07 | MEANING:🟢 | PRIDE:🙏
+	- It's what von Franz said in a bit latter lectures. There's state of conscious when it's objective and one isn't pinned down by the prejudices. And it feels to me that's what crying does, and that's what brings such ideas like below. Because I was not being continuously tortured by that failure. In brought me to my knees into the objectivity, and out of that I extracted lots of improvements that I think should help me. 
+	- And even beyond that - I just work now. Like I picked up the "burden" of failed task, and have no issues working on it though it's even more complex and tedious. But this dissolved state of objectivity allows me to see it as it is - a problem that needs to be solved properly. Not like a "death marker" or something.
+- ###### 21:47 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Issue is context size. Not only price, but also context poisoning. Like I want to discuss shit without paying the price of huge context. Example now with not making foldable sections if their children is comment, em space, br tag, etc. I would want to discuss such clarifications BEFORE it's implemented, but at the same time - the issue is that when llm lists multiple things - and I go one by one through all of them - it's like 20% of 5 hour window is done. So now I'm thinking about maybe patching my llm project for that a bit old idea of additional subtask-like tool that will cover me on this issue? 
+	- code review, for example, can research things, and then instead of listing everything - it can spin up X parallel subtasks where it'll include all context and where it'll wait for me to enter task, and research it. 
+	- This may be huge. Like actually huge. Because then it's cheap. And I can have quick back and forth. I need to research this.
+- ###### 21:05 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Struggle to see through that idea below. Want to finish this folding step first because removing and re-doing it may cause even more issues. 
+	- Do I think that was wrong idea? - No. I'm just too relaxed maybe? Something is not right here. 
+	- Structure. Ok, so here's the plan. I finish current step. Stop. Then update flows based on the thing below. And then get back to the next step with proper flows. 
+	- Or maybe I need a nap? 15 minutes, not like 5 hours)
 - ###### 19:17
 	- So here's the thing. 
 		- reflection first
