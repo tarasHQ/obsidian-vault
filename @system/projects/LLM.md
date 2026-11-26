@@ -50,7 +50,7 @@
   %%LLMs: resolve wikilinks below to the base `C:/Users/Taras/Documents/obsidian-vault/@system/projects/` + the relative path.%%
 	- #### Rules
 		- LLMs should always interact with `@projects/` files through absolute paths, cuz it's in another external non-project location — resolve the relative wikilinks below against the base from the category comment.
-		- LLMs are forbidden to read files with flows unless explicitly asked by the user.
+		- LLMs are forbidden to read files that contain flows unless explicitly asked by the user.
 		- [[shared/flows/_flow-creation-rules.md]] - internal rules for the creation of the flow, to make sure the flow isn't a bad one.
 	- [[shared/flows/refining-reflection.md]] - to refine user's raw reflections, by showing all possibilities of that reflection 
 	- [[shared/flows/scorched-earth-critique.md]] - to discuss user's reflections/plans/ideas and separate the wheat from the chaff 

@@ -26,7 +26,7 @@ GROUP BY true
 			- **Key insight — user vs layout-shift disambiguation**: script can't tell user scroll from layout shift by deltas; instead treats causes as disjoint: `wheel`/`touchstart`/`pointerdown`/`keydown` listeners, `passive: true` + `once: true`, set `userInteracted` → cancel adjustment loop. Layout shifts cannot emit input events.
 			- **SPA interplay**: with micromorph SPA nav, back/forward = `popstate` → `navigate(isBack)` which doesn't scroll (body patched in place, scroll preserved naturally) → restoration script only matters on full page loads (first visit, refresh, external back); safe to always run (no-op when nothing stored).
 			- **Port note for our repo**: inline via `additionalHead` in Head.tsx; complements image aspect-ratio feature (that one shrinks the 3s correction need).
-		- ###### Private config properties
+		- ###### Private config properties %% fold %%
 			- Make your remark42 config url private. It's not a secret to see the address, and it's protected(rejected) but to just not confuse people? Though it may be PIA. Cuz you theoretically need to configure variables in github AND cloudflare. So it's like 2-3 sources of truth. On another hand, do you need those locally, since localhost origin banned as well, and also on github, since you just build to test/check that it builds. 
 				- it's just unclear. If I will build locally and worker will only run it - then it's easier, I guess? I don't know. 
 		- ###### SEO - Worth to research %% fold %%
@@ -59,7 +59,7 @@ GROUP BY true
 				- Cached with ttl 1-2 minutes.
 				- Worker fetches. OR you do that through website, but not good though, unnecessary traffic. While worker will allow to centralize asset requests.
 				- If there's no update at expected timestamp (+-5 seconds) - don't keep last image. Have placeholder instead. (if something explicit gets on camera and you shut down the recording? )
-- ### Remark42
+- ### Remark42(obsolete) => Artalk(new one)
 	- #### IDEAS
 		- ###### Match website style
 		- ###### Anon Login %% fold %%

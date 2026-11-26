@@ -64,6 +64,32 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-remove-last-entry, journal-time, journal-meaning, journal-complexes]`
+- ###### 20:28
+	- **On parallel work**
+		- Initially I thought about main task/secondary task relationship. That was wrong. If I switch context (of my brain) - I proceed until it's resolved. What creates overwhelm is when I try to focus on main task, and then switch back and forth between it and secondary one, only when main task is researching. That's wrong approach. 
+		- So, again. Multi-tasking works if you switch until you resolve or have to wait. But not through constantly being pulled back into the main task.
+- ###### 20:25
+	- So damn good that discuss flow. Like that's what happens when one achieves that objective state of consciousness...
+- ###### 19:59
+	- Why shouldn't I write bread recipes here? Perfect place to track it. I'm getting close to what I want. 
+		- So. 150g of whole wheat flour, 30g of vital gluten (or whatever it's called in English) - mixed thoroughly. 
+		- 120ml of 40-50° water to quickly melt coconut oil, by the time I start to mix - it's like between 30-40, so yeast is fine. 
+		- 10-15g of coconut oil, sugar-like taste without sugar + the dough less likely to be too sticky, so it then spread in donut-like shaped by the "mixer-thing"
+		- 5g of yeast - maybe 4g would be optimal, a bit PIA to measure
+	- Why I'm doing this? Because it seems like when I drop bread - I just can't handle the whole day of tension/cognitive work on ketosis. So my best is to just decrease carbs. And I plan to do so by making bread super puffy. So it's high in volume, low in carbs/bite. Since I have same bites = less carbs per meal. 
+	- Whole wheat also considerably lower in glycemic index (though still not really in low-medium range) and more fiber, which is not clear if necessary, but why not. Makes digestion a bit more complex and prolonged. 
+	- So ideally I plan to have 150g of flour. Wholewheat has roughly 55g of net carbs (excluding fiber) per 100g. so 82.5g per whole bread. Divide it by 4 meals in 2 days = 20g of carbs per meal = ketosis AND I have lots of bites of bread to not want more. 
+	- Until I did the math, I didn't eve knew I was so close to ketosis, and even in current size of bread I have like only 80g of carbs per day. That's actually huge. And healthy too. But I feel that I can get 30-40% lower on meat and a few more iterations of the bread recipe will get me to the "puffiness" I seek.
+	- Cheaper and tastier and much healthier than buying one too. 
+- ###### 19:38
+	- Drifted off in visions if this idea will get some traction... Would be really nice to have some like-minded people and transform this venture from me-centered into some kind of community.
+- ###### 19:33 | MEANING:🟡 | PRIDE:🤷‍♂️
+	- Getting a bit tired though. That's when I need to truly work. Because everything else is set up properly and does not cause friction. So no inner work, reflections, etc. are needed here. Only pushing through and working. 
+- ###### 19:23
+	- Ok, this step with navigation logic and improved browser-supported folding went smoothly. Thank God. So that's what I meant when scope is low enough. It doesn't overwhelm. 
+	- Yeah, for sure it's better. Yes - there's overhead. But not being overwhelmed and dropping the thing in frustration is a bigger overhead. 
+	- And also, to be honest - is there really an overhead? Like I don't repeat things. I discuss them, refine, improve, fix, prevent future headache. Overhead only if I want to vibecode with short-term gratification. But that's the problem of wrong attitude, not suboptimal procedures.
+	- Ok, let's see how it'll do with the next step. 
 - ###### 19:05
 	- But I still didn't read final implementation doc. Feels like scope is small enough to delegate at this point - **will that burn me**? 
 	- Still don't really understand the code... It's not the code. It's attitude.  Like I read it right now. And can understand. So it's the attitude of not wanting to understand it. Mostly though. There's a bit of complexity too.
