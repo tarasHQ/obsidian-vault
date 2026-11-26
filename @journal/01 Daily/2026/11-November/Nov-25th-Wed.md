@@ -30,11 +30,6 @@ I'm hoping that these days of inner-work will pay off at some point. Maybe I'm s
 
 ---
 
-## CREATED ARTIFACTS
-- 
-
----
-
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-time, journal-meaning, journal-complexes]`

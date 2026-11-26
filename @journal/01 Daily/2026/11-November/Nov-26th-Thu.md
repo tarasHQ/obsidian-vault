@@ -63,9 +63,21 @@ OVERVIEW_FOR_VIDEO
 
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
-`BUTTON[journal-time, journal-meaning, journal-complexes]`
-- ###### 15:22 | MEANING:🟡 | PRIDE:🤷‍♂️
-	- 
+`BUTTON[journal-remove-last-entry, journal-time, journal-meaning, journal-complexes]`
+- ###### 16:11
+	- ###### 🪦 The Sick Théoden:
+		- Everything is futile. You tried many times and failed many times. You're yet to succeed even once. Hence, the website doesn't make any sense, because you will never finish it. You need something else. 
+		- Even when you think about being in the moment - you always suffer because of it. 
+		- And now you have headache. And neck hurts. To lay down and read von Franz is the best you can do. Maybe sleep a little too. 
+	- ##### 🌄 The Answer
+		- Do you remember those moments when you and Puer was unified on the task, and the result was good, and all our miseries were justified just for that day? 
+		- Do you want to tyrannize and oppress the kid? Wise old people love kids because they bring life to them, they make them remember youth and be young again. You need the vitality as much as I do. 
+		- We can both agree, that we don't know what is possible if you, the kid and me would put our best into the website, and then into the main project. All three of us needs like-minded humans in our life. The kid needs to be civilized, and the old grumpy man needs another soul to listen or at least be present in your life. 
+		- At the worst we will go down swinging, instead of just slowly withering away in misery.
+		- So would you agree that it's worth the shot?  Fuck the future. We have now that can be stretched infinitely. 
+- ###### 15:56
+	- Was a bit enthusiastic, but wanted to finish the lecture. Now I'm not. But that's actually good. Because what I'll try next - should get me out from this state, not from the one when I'm striving to work anyway.
+	- And also there's a big and helpful nuance, that came from my reflection. - I know the dictionary of that state. Since it seems to be the negative Senex, at least for now, it theoretically also should mean that he's more susceptible to reason. When Puer having its way - it's more like "I don't care I do what I want to do", the Senex on another hand (I mean here puer and senex in negative aspect) - says the future is futile *because*, this and this and this. So my goal is to write something meaningful that justifies miseries. And maybe even proves him wrong. 
 - ###### 14:03
 	- But here's what I'll try if I will still be discourage after the meal, which probably I will. 
 	- ==🟡Write a short and honest reflection on realistic aspect of the work that is in front of you==

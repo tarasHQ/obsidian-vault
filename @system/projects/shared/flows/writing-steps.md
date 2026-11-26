@@ -7,6 +7,7 @@ From the agreed high-level plan (**what each step owns and its place in the phas
 ## Rules
 - **STAGE AWARENESS** - Every response to the user should have current stage letter, name and substage letter-number at the first line.
 - **AGREED STRUCTURE** - Use the step structure locked in during Initial Planning; don't discard it or plan it again. If new findings require changed boundaries, order or grouping, explain why and get user approval before updating the affected entries.
+- **DECISION HANDOFF** - Read the selected step or joint-writing group's approved decision note in the phase's `artifacts/`. Build on its agreements and delegation rather than repeating or silently replacing them. If it is missing, stop and hand off to Step Design Decisions first. If technical findings materially change a decision's cost or feasibility, discuss alternatives and get user approval before updating the decision note and step.
 - **IMPLEMENTATION-READY** - Writing steps resolves and discusses HOW to implement, not just WHAT to achieve. Don't mark a step ready while its central approach is unresolved; ordinary, lowest-level coding details stay for implementation.
 - **COMPLEXITY STOP** - If the approach needs substantially more machinery than agreed, its assumptions fail, or investigation repeatedly stalls without a viable route — stop. Don't silently expand scope or keep layering workarounds.
 	- Explain what changed, why the approach became costly, and reasonable alternatives with trade-offs.
@@ -22,7 +23,7 @@ From the agreed high-level plan (**what each step owns and its place in the phas
 ## Stages
 - ### A - The Exploration
 	- [ ] **A1** - [USER]
-		- Provides the phase plan and selected steps, with related artifacts as needed.
+		- Provides the phase plan, selected steps and their approved decision note, with related artifacts as needed.
 	- [ ] **A2** - [LLM]
 		- Explore enough to understand the phase, the agreed scope of the selected step or joint-writing group, its dependencies and integration points. Deeper exploration happens in B.
 		- Verify decisive facts in relevant source/docs; don't rely only on exploration summaries. Record those facts in the step so implementation doesn't repeat the investigation.
@@ -37,14 +38,14 @@ From the agreed high-level plan (**what each step owns and its place in the phas
 		- Verify the decisive assumptions, integration costs and complexity of the provisional recommendation. Check the strongest alternative enough for a credible comparison; change the recommendation if warranted. Don't just seek confirmation.
 		- Keep both passes proportional to the step/group; reuse verified facts rather than repeat broad exploration. No exhaustive investigation of every alternative is required.
 	- [ ] **B3** - [LLM + USER] - Discuss the Approach
-		- Discuss the grounded recommendation: HOW, WHY, integration points, meaningful alternatives, trade-offs and remaining uncertainty.
+		- Discuss the grounded recommendation in manageable related blocks: HOW, WHY, integration points, meaningful alternatives, trade-offs and remaining uncertainty. Build on the approved decision note (if present).
 		- Check whether the proposed approach is proportionate to the requirement. Don't approve complexity merely because it technically works.
 		- Resolve questions that could substantially change the approach and get user approval before writing. If investigation itself is needed as a step - label it explicitly, don't disguise it as implementation.
 		- For parallel implementation, agree on each step's ownership and shared agreements before writing. Any necessary change to the planned structure/grouping needs approval too.
 - ### [LOOP] C - Writing the Steps
 	- [ ] **C1** - [LLM]
 		- Read the step template `C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/templates/step-template.md`.
-		- **SELF-SUFFICIENT** - Each step file must contain the relevant knowledge, source links, verified facts, locked decisions, invariants and shared agreements needed to implement it in a clean task.
+		- **SELF-SUFFICIENT** - Each step file must contain the relevant knowledge, source links, verified facts, locked decisions, invariants and shared agreements needed to implement it in a clean task. Transfer relevant decisions and reasoning from the decision note; retain that note as a record.
 		- **LOW-LEVEL IMPLEMENTATION** - Write the selected approach and concrete changes per affected file, not just requirements like "implement X." A fresh implementing LLM shouldn't need to choose the mechanism or repeat design exploration.
 			- Specify what is added/changed/removed, important functions/data and their responsibilities, and how files connect. Include relevant ordering and fallback/error behavior.
 			- Group tightly connected files under one task when useful. Include meaningful tests with scenarios and expected results.
@@ -57,5 +58,5 @@ From the agreed high-level plan (**what each step owns and its place in the phas
 	- [ ] **C2** - [LLM + USER]
 		- Discuss the written step or group. Ask about any issues/open questions; otherwise wait for the user to approve the created files.
 	- [ ] **C3** - [LLM]
-		- On user approval, restart at B1 for the next step or joint-writing group.
+		- On user approval, provide a clean-task prompt for Step Design Decisions for the next step or joint-writing group, linking `AGENTS.md`, `LLM.md`, the phase plan and `C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/flows/step-design-decisions.md`
 - ### The End

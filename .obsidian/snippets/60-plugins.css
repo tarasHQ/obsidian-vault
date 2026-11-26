@@ -10,3 +10,7 @@
 .notes-calendar-cell.notes-month-view__day > span {
     font-size: 0.8rem !important;
 }
+
+.mb-icon-wrapper{
+   height: 16px !important;
+}

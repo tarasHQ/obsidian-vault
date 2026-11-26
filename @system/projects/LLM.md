@@ -55,6 +55,7 @@
 	- [[shared/flows/refining-reflection.md]] - to refine user's raw reflections, by showing all possibilities of that reflection 
 	- [[shared/flows/scorched-earth-critique.md]] - to discuss user's reflections/plans/ideas and separate the wheat from the chaff 
 	- [[shared/flows/initial-planning.md]] - to discuss and structure existing scope into a high-level plan and locked-in step list, then complete and condense step 00.
+	- [[shared/flows/step-design-decisions.md]] - to discuss step-level decisions and practical trade-offs before writing steps.
 	- [[shared/flows/writing-steps.md]] - to discuss and create implementable low-level steps. 
 	- [[shared/flows/implementing-steps.md]] - to properly implement steps and keep the whole phase up-to-date with changes. 
 	- [[shared/flows/code-review.md]] - to review implemented code for quality and implement agreed fixes.

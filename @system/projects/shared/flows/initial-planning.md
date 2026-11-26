@@ -59,7 +59,7 @@ From existing scope (**what** to do) -> to a discussed and locked-in high-level 
 	- [ ] **F2** - [LLM] - Completing Step 00
 		- Complete the agreed `00-start.md` work, including ensuring the phase is listed in `_project.md` without duplicating an existing entry. Don't mark unresolved checklist items complete.
 		- Apply the note-condensation and plan-alignment rules from **The Step Completion Flow** in `C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/flows/implementing-steps.md`.
-		- Finalize and condense step 00 immediately, updating its status/state and plan entry in the same pass; no transient completed-but-uncondensed note. This handoff goes to writing steps, not directly to implementation.
+		- Finalize and condense step 00 immediately, updating its status/state and plan entry in the same pass; no transient completed-but-uncondensed note. This handoff goes to Step Design Decisions, not directly to implementation.
 	- [ ] **F3** - [LLM]
-		- Provide a prompt inside a markdown codeblock to run Writing Steps in a clean task. Include links to `AGENTS.md`, `LLM.md`, the phase plan and `C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/flows/writing-steps.md`; identify the next step or joint-writing group.
+		- Provide a prompt inside a markdown codeblock to run Step Design Decisions in a clean task. Include links to `AGENTS.md`, `LLM.md`, the phase plan and `C:/Users/Taras/Documents/obsidian-vault/@system/projects/shared/flows/step-design-decisions.md`; identify the next step or joint-writing group.
 - ### The End
