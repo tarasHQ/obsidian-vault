@@ -1,6 +1,6 @@
 # List indentation guides
 
-[← Phase plan](../_plan_005.md) · [Folding feature](../../../quartz/features/folding/README.md)
+[← Phase plan](../_plan_005.md)
 
 ## Purpose and outcome
 

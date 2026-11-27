@@ -26,15 +26,37 @@ isIntegrated: false
 ## Documents
 %%Dataview query for user. Renders list of documents from phase's inner folders. %%
 
-```dataview
-TABLE WITHOUT ID
-  map(filter(rows.file, (f) => startswith(f.folder, this.file.folder + "/_reflections")), (f) => f.link) AS "Reflections",
-  map(filter(rows.file, (f) => startswith(f.folder, this.file.folder + "/ideas")), (f) => f.link) AS "Ideas",
-  map(filter(rows.file, (f) => startswith(f.folder, this.file.folder + "/artifacts")), (f) => f.link) AS "Artifacts"
-FROM ""
-WHERE startswith(file.folder, this.file.folder + "/") AND file.path != this.file.path
-SORT file.name ASC
-GROUP BY true
+```dataviewjs
+const current = dv.current();
+const base = current.file.folder;
+const prefix = base ? base + "/" : "";
+
+const sections = ["_reflections", "ideas", "artifacts"];
+
+const files = dv.pages()
+  .where(p =>
+    p.file.path !== current.file.path &&
+    p.file.path.startsWith(prefix)
+  )
+  .sort(p => p.file.name, "asc")
+  .array();
+
+const relativeLinks = (folder) =>
+  files
+    .filter(p => p.file.folder.startsWith(prefix + folder))
+    .map(p => {
+      const relative = p.file.path.slice(prefix.length);
+      return `[${p.file.name}](${relative.split("/").map(encodeURIComponent).join("/")})`;
+    })
+    .join(", ");
+
+const markdown = [
+  "| Reflections | Ideas | Artifacts |",
+  "| --- | --- | --- |",
+  "| " + sections.map(relativeLinks).join(" | ") + " |"
+].join("\n");
+
+dv.paragraph(markdown);
 ```
 
 ---

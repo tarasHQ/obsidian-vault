@@ -64,8 +64,12 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-remove-last-entry, journal-time, journal-meaning, journal-complexes]`
+- ###### 01:40
+	- I would maybe even assume that, again, maybe, it's a tactic to make PMO? Because if yes - then it's a damn good tactic. 
 - ###### 01:21 | MEANING:🔴 | PRIDE:🤷‍♂️
-	- Urges strong. And I have nothing to say against them. The day ends on a bittersweet note. Because 
+	- Urges strong. And I have nothing to say against them. The day ends on a bittersweet note.
+	- Because it's just an issue after issue with this quartz situation. Now some links don't work too. New lines issues. Using gui feels like as if someone spits in my face every time I open it. 
+	- And it's been out there for 4 damn years. Hate situations like these. When I get invested into the promise, and the reality progressively gets worse and worse, but I can't leave, because I already invested a lot. 
 - ###### 01:11 | MEANING:🔴 | PRIDE:🤷‍♂️
 	- Burn like mad through the meaning when confronted with another bugs of that vibecoded quartz syncer plugin. Insanely discouraging. Because like 
 - ###### 00:38 | MEANING:🟡 | PRIDE:🤷‍♂️
