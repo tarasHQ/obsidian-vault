@@ -8,42 +8,11 @@ journal-date: 2026-11-26
 ```
 
 ---
-
-```meta-bind-button
-label: Remove Night Checklist
-style: default
-icon: trash-2
-cssStyle: "height: 22px; min-height: 0; padding: 0 6px; font-size: 11px; line-height: 1; gap: 4px;"
-action:
-  type: js
-  file: _static/scripts/meta-bind/journal-remove-checklist.js
-```
-- ##### NIGHT CHECKLIST
-	- [ ] Check audio delay to webcam
-	- [ ] Check TickTick schedule (correct day, scheduled)
-	- [ ] Set time of next sleep for stager timer.
-	- Obsidian
-		- [ ] Write overview of the current day
-		- [ ] Create journal for the next day
-		- [ ] Make sure all day's reflections are linked artifacts
-		- [ ] Delete Dream Analysis block if empty
-		- [ ] Delete other blocks if empty
-	- [ ] Night scene
-	- [ ] Check IP cam (quality, delay)
-		- [ ] Enable sleep blur
-	- [ ] monitor OFF (seems like keeping on makes him die faster)
-	- Cat
-		- [ ] Clean up cat's litter box
-		- [ ] Food + plate is in my room at the shelf 
-			%%(to feed right away and not be distracted by her)%%
-	- [ ] Make sure there's tomorrow's food out of the freezer.
-
----
 %%[[../../../../_static/templater/[T]daily-journaling|Daily Journal Template]]%%
 
 ## OVERVIEW
 %%Block to easily skim through journal entries and remember/identify which day it is based on key things that happened%%
-OVERVIEW_FOR_VIDEO
+1 step forward - 1 step backward. When this will stop? o
 
 ---
 
@@ -64,6 +33,24 @@ OVERVIEW_FOR_VIDEO
 ## TIME LOG
 [[../../../_capturing/ideas|capture ideas]]
 `BUTTON[journal-remove-last-entry, journal-time, journal-meaning, journal-complexes]`
+- ###### 03:22
+	- and also - like it can't be a damn coincidence that when you have too big steps - you get overwhelmed and discouraged. Chances are - size of steps is wrong.
+	- So yeah. Someone in you want to dramatize this. But there's nothing to dramatize. You was productive. Then minor shit happened. You sleep on it and continue the fight.
+- ###### 03:15 | MEANING:🔴 | PRIDE:🤷‍♂️
+	- So where it went wrong?
+	- I don't have it in me to analyze it even.
+	- Where it went wrong... 
+	- Like honestly - day was kinda productive, it feels like I'm placing a requirements I can't deliver. But well. That's what you do when you think about death too much. To get out from this - I truly need to pull a damn miracle.
+	- nah. Ok. All of that is BS. BS. BS. 
+	- here's the truth - you missed the moment of starting to get possessed by the complex. That's a fact. 
+	- And then it just jumped on you and caught off guard. That's another fact.
+	- At 2 am - you had to go to sleep, not to think about pushing more. Which got you over the edge. 
+	- So nothing bad happened. Yeah you indulged, and so what, are you too drunk for the next day? Or to high? Or too else? No. that indulgence wasn't ... don't want to even clarify it. 
+	- You start a new day. A new fight. Focus on that unity of the Puer and the Senex.
+	- Slowly you're moving towards resolution
+- ###### 02:01
+	- And even all those hula-hoops don't matter. Like it's decided. I just steadily solve the problems to get the bypass.
+	- Worst thing is that I understand that it's not good. And because I give in to this temptation - it'll persist. But like I just don't care. My perception is set in a such manner that it just doesn't see consequences as bad things. Doesn't see anything at all, to be honest. 
 - ###### 01:40
 	- I would maybe even assume that, again, maybe, it's a tactic to make PMO? Because if yes - then it's a damn good tactic. 
 - ###### 01:21 | MEANING:🔴 | PRIDE:🤷‍♂️
